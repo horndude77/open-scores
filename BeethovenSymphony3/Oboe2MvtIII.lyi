@@ -1,0 +1,9 @@
+\include "defs.lyi"
+
+oboeTwoMvtIII = \relative c'
+{
+  \key ees \major
+  r4
+  R2.*30 |
+}
+

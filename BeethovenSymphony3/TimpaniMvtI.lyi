@@ -1,0 +1,221 @@
+\include "defs.lyi"
+
+timpaniMvtI = \relative c
+{
+  \time 3/4
+  \key ees \major
+  \clef bass
+  ees4-.\f r r |
+  ees4-. r r |
+  R2.*2 |
+  \repeat volta 2
+  {
+    R2.*32 |
+
+    %page 3
+    ees4\ff r r |
+    ees r bes |
+    ees ees ees |
+    ees r ees\sf |
+    ees ees ees |
+    ees r ees\sf |
+    ees2.\trill |
+    bes\trill |
+    R2.*20 | %page 4
+    ees4-.\f ees-. r |
+    r r r8 ees-. |
+    bes4-. bes-. r |
+    R2.*5 |
+    r4 bes bes |
+    bes bes bes |
+    bes r r |
+
+    %page 5
+    ees4 r r |
+    R2.*32 | %page 6
+    bes4\f r r |
+    bes r r |
+    ees r r |
+    ees r r |
+    bes\ff bes r |
+    r bes r |
+    r ees r |
+    r ees r |
+    bes bes bes |
+
+    %page 7
+    bes8 r r4 r |
+    R2.*5 |
+    r4 r ees-. |
+    R2. |
+    r4 r bes-. |
+    r r ees-. |
+    \repeat unfold 6 {r bes-.\sf} |
+    R2.*12 | %page 8
+    bes4-. r r |
+    bes-. r r |
+    bes-. r r |
+    bes-. bes-. bes-. |
+    bes r r |
+    R2.*3 |
+  }
+  \alternative
+  {
+    { R2.*4 | }
+    { R2.*2 | }
+  }
+  R2.*44 | %page 9, page 10, page 11
+  bes4-.\ff r r |
+  bes-. r r |
+  bes-. r r |
+  bes-. r r |
+  R2.*58 | %page 12, page 13, page 14
+  r4 ees2~\sf\startTrillSpan |
+  ees2.\stopTrillSpan |
+  ees4 ees\sf r |
+  ees\sf r ees~\sf\startTrillSpan |
+  ees\stopTrillSpan ees\sf r |
+  ees\sf r ees\sf |
+  r bes2~\sf\startTrillSpan |
+  bes2.\stopTrillSpan |
+  bes4 bes\sf r |
+  bes\sf r bes~\sf\startTrillSpan |
+  bes\stopTrillSpan bes\sf r |
+  bes\sf r bes\sf |
+
+  %page 15
+  R2.*44 | %page 16, page 17
+  bes4\f bes bes |
+  bes bes bes |
+  bes2.~\startTrillSpan |
+  bes\stopTrillSpan |
+  bes4\ff bes bes |
+  bes ees ees |
+  ees r r |
+  R2.*39 | %page 18, page 19
+  ees2.~\ff\startTrillSpan |
+  ees2.~ |
+  ees4\stopTrillSpan ees ees |
+  ees ees ees |
+  ees r r |
+  R2.*29 | %page 20
+  bes2.\f\startTrillSpan |
+  bes\ff\stopTrillSpan |
+  ees4 r r |
+  R2.*29 | %page 21
+  r4 r bes_\mCresc |
+  bes bes bes |
+  ees2.:8 |
+  ees2.:8 |
+  ees4 ees ees |
+  ees r r |
+  r ees ees |
+  ees r ees\sf |
+  ees_\mPiuF r r |
+  ees r r |
+  ees r r |
+  ees ees ees |
+  ees2.~\ff\startTrillSpan |
+  ees2\stopTrillSpan bes4\sf |
+  ees bes bes |
+  ees r ees\sf |
+
+  %page 22
+  ees ees ees |
+  ees r r |
+  R2. |
+  ees4 r r |
+  bes r r |
+  R2.*9 |
+  r4 bes4.\ff bes8 |
+  bes4 bes bes |
+  ees\p r r |
+  R2.*9 | %page 23
+  ees4-.\f ees-. r |
+  r r r8 ees |
+  bes4-. bes-. r |
+  R2.*3 |
+  r4 ees ees |
+  ees ees ees |
+  ees r r |
+  R2.*3 | %page 24
+  bes4 r r |
+  R2. |
+  bes2.~\ff\startTrillSpan |
+  bes\stopTrillSpan |
+  ees4 r r |
+  R2.*25 | %page 25
+  r4 bes\sf r |
+  r bes\sf r |
+  r bes\sf r |
+  r bes\sf bes |
+  bes\ff r r |
+  bes\sf r r |
+  bes\sf r r |
+  bes bes bes |
+  ees r ees:16 |
+  ees r r |
+  R2.*5 | %page 26
+  r4 ees-.\ff ees-. |
+  r ees-. bes-. |
+  R2. |
+  r4 ees-. ees-. |
+  \repeat unfold 6 {r ees-.\sf} |
+  R2.*11 | %page 27
+  bes2.\ff |
+  ees4\f r r |
+  ees\f r r |
+  ees\f r r |
+  ees-. ees-. ees-. |
+  ees r r |
+  R2.*37 | %page 28
+  ees4\p r r
+
+  %page 29
+  r4 ees ees |
+  bes r r |
+  r bes bes |
+  ees r r |
+  r ees ees |
+  bes r r |
+  R2.*31 | %page 30, page 31
+  bes4\pp r r |
+  bes_\mCresc r r |
+  bes r r |
+  bes\p r r |
+  ees r r |
+  R2.*14 |
+  r4 r \times 2/3 {bes8\p bes bes} |
+  bes4_\mCresc r \times 2/3 {bes4.:8} |
+  \repeat unfold 7 {bes4 r \times 2/3 {bes4.:8} |} %page 32
+  ees2.~\f\startTrillSpan |
+  ees~ |
+  ees~ |
+  ees\stopTrillSpan |
+  bes2.~\startTrillSpan |
+  bes~
+  bes~
+  bes\stopTrillSpan
+  bes4 bes bes |
+  bes r r |
+  ees\sf r r |
+  ees\sf r r |
+  ees\sf r r |
+  R2. |
+  ees4 r r |
+
+  %page 33
+  ees r r |
+  bes2.~\ff\startTrillSpan |
+  bes\stopTrillSpan |
+  R2.*8 |
+  r4 bes\f r |
+  r bes\sf r |
+  r bes\sf r |
+  bes\sf r bes\sf |
+  bes-. bes-.\ff \repeat unfold 10 {bes-.} |
+  ees r r |
+  ees r r |
+  ees r r | \bar "|."
+}
+

@@ -1,0 +1,8 @@
+\include "defs.lyi"
+
+bassoonsMvtII = \relative c''
+{
+  r8^"Tacit"
+  R2.*141 |
+}
+

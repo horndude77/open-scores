@@ -1,0 +1,14 @@
+viola = \relative c'
+{
+  \key f \major
+  \clef alto
+  r8
+  r4 r8 << s8\p << {f~ | f2} \\ {a,8( | bes2)} >> >> |
+  r8 a16( c f4~\> |
+  f8)\! r r4 |
+  R2 |
+
+  %6/8
+  R2.*6 |
+}
+

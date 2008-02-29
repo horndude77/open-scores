@@ -1,0 +1,19 @@
+\include "defs.lyi"
+
+violinOneMvtII = \relative c'
+{
+  \time 2/4
+  \key ees \major
+  \partial 8 g16.\pp g32 |
+  g4 \acciaccatura d'8\( c16. b32 c16. d32\) |
+  ees4( c8) r |
+  g'4 f32( ees16.) d32( c16.) |
+  e4( d8) r |
+  d4 d16.( ees32 f16. g32) |
+  a4.(\sf\> g16 f)\! |
+  f16( ees) f-.( d-.) c8( d16. b32) |
+  c8 c16. c32 c8 r16 \times 2/3 {ees32 ees ees} |
+  \repeat unfold 2 {ees8 r r8. \times 2/3 {ees32 ees ees}} |
+  ees8 r16 \times 2/3 {ees32 ees ees} g8 r16 \times 2/3 {g32 g g} |
+}
+

@@ -1,0 +1,18 @@
+\include "defs.lyi"
+
+violinOneMvtIV = \relative c'
+{
+  \key c \minor
+  \appoggiatura {d16[ d']} d'4~\ff d16 c bes a |
+  bes a g fis g f ees d |
+  ees d c bes c bes a g |
+  \repeat tremolo 8 aes 16 |
+  aes4 r8. d16 |
+  d8 r16 f f8 r16 aes |
+  aes4-.\ff r |
+  <aes bes, d,>-. <aes bes, d,>-. |
+  <aes bes, d,>-.\sf r |
+  <f bes, d,>\sf r |
+  d,2\sf\fermata |
+}
+

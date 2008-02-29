@@ -1,0 +1,19 @@
+\include "defs.lyi"
+
+violaMvtIV = \relative c'
+{
+  \clef alto
+  \key c \minor
+  <d d,>4~\ff <d d,>16 c bes a |
+  bes a g fis g f' ees d |
+  ees d c bes c bes a g |
+  aes8 aes'16 g f g f ees |
+  d ees f g f ees d c |
+  bes8 r16 d d8 r16 f |
+  f4-.\ff r |
+  d-. f-. |
+  bes-.\sf r |
+  <bes f bes,>\sf r |
+  bes,2\sf\fermata |
+}
+

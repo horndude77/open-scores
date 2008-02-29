@@ -1,0 +1,9 @@
+\include "defs.lyi"
+
+timpaniMvtIII = \relative c'
+{
+  \clef bass
+  r4
+  R2.*30 |
+}
+

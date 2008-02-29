@@ -1,0 +1,30 @@
+\include "defs.lyi"
+
+oboeOneMvtIII = \relative c'''
+{
+  \key ees \major
+  r4
+  R2.*6 |
+  bes4-.\pp bes-. bes-. |
+  bes-. bes-. bes-. |
+  bes( c8 bes a g) |
+  f2. |
+  ees |
+  d4( f) d-. |
+  c( ees) c-. |
+  bes r r |
+  R2.*3 |
+  r4 r d-.\pp |
+  ees-. f-. fis-. |
+  g-. aes-. a-. |
+  bes4-.\pp bes-. bes-. |
+  bes-. bes-. bes-. |
+  bes( c8 bes a g) |
+  f2. |
+  ees |
+  d4( f) d-. |
+  c( ees) c-. |
+  bes r r |
+  R2.*2 |
+}
+

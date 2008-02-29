@@ -1,0 +1,34 @@
+tempoMark = #(define-music-function (parser location markp) (string?)
+#{
+  \once \override Score . RehearsalMark #'self-alignment-X = #left
+  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \mark \markup { \smaller \bold $markp }
+#})
+
+mcresc = \markup{\italic cresc.}
+ffz = #(make-dynamic-script "ffz")
+
+outlineMvtI =
+{
+  \time 3/4
+  \tempoMark "Allegro moderato"
+  s2. |
+  \repeat volta 2
+  {
+    s2.*108 |
+  }
+  \alternative
+  {
+    {s2. |}
+    {s2. |}
+  }
+  s2.*258 | \bar "|."
+}
+
+outlineMvtII =
+{
+  \time 3/8
+  \tempoMark "Andante con moto"
+  s4.*312 | \bar "|."
+}
+

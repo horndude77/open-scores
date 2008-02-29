@@ -1,0 +1,14 @@
+\include "defs.lyi"
+
+bassoonOneMvtIV = \relative c'
+{
+  \clef bass
+  \key c \minor
+  R2*6 |
+  d4\ff r |
+  d-. d-. |
+  d-. d-.\sf |
+  r f\sf |
+  f2\sf\fermata |
+}
+

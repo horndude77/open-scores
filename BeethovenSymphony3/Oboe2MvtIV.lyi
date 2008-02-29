@@ -1,0 +1,13 @@
+\include "defs.lyi"
+
+oboeTwoMvtIV = \relative c''
+{
+  \key c \minor
+  R2*6 |
+  f4\ff r |
+  f-. f-. |
+  f-. f-.\sf |
+  r f\sf |
+  d2\sf\fermata |
+}
+

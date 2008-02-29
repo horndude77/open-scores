@@ -1,0 +1,9 @@
+\include "defs.lyi"
+
+trumpetOneMvtIII = \relative c'
+{
+  \transposition ees 
+  r4
+  R2.*30 |
+}
+

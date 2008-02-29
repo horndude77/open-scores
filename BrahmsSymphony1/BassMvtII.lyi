@@ -1,0 +1,6 @@
+\include "defs.lyi"
+
+bassMvtII = \relative c'
+{
+}
+

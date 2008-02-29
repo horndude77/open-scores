@@ -1,0 +1,26 @@
+\version "2.11.37"
+
+\include "defs.lyi"
+
+\paper
+{
+  %#(define page-breaking ly:minimal-breaking)
+  #(define page-breaking ly:page-turn-breaking)
+  ragged-last-bottom = ##f
+}
+
+\book
+{
+  \include "header.lyi"
+  \score
+  {
+    \new Staff \with { \consists "Page_turn_engraver" }
+    {
+      \override Score.PaperColumn #'keep-inside-line = ##t
+      \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+      \set Score.skipBars = ##t
+      << \notes \outline >>
+    }
+  }
+}
+

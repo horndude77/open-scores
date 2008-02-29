@@ -1,0 +1,13 @@
+\include "defs.lyi"
+
+oboeOneMvtIV = \relative c'''
+{
+  \key c \minor
+  R2*6 |
+  aes4\ff r |
+  aes-. aes-. |
+  aes-. aes-.\sf |
+  r aes\sf |
+  aes2\sf\fermata |
+}
+

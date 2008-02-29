@@ -1,0 +1,6 @@
+\include "defs.lyi"
+
+oboeOneMvtIII = \relative c'
+{
+}
+

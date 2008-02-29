@@ -1,0 +1,10 @@
+\include "defs.lyi"
+
+bassoonTwoMvtIII = \relative c'
+{
+  \key ees \major
+  \clef bass
+  r4
+  R2.*30 |
+}
+

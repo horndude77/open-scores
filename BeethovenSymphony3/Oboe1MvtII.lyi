@@ -1,0 +1,14 @@
+\include "defs.lyi"
+
+oboeOneMvtII = \relative c''
+{
+  \time 2/4
+  \key ees \major
+  \partial 8 r8 |
+  R2*7 |
+  r4 r8 g16.\p g32 |
+  g4 \acciaccatura d'8\( c16. b32 c16. d32\) |
+  ees4( c8) r |
+  g'4 f32( ees16.) d32( c16.) |
+}
+

@@ -1,0 +1,15 @@
+\include "defs.lyi"
+
+bassoonOneMvtIII = \relative c'
+{
+  \key ees \major
+  \clef bass
+  r4
+  R2.*24 |
+  ees2.\p |
+  d4( f) d-. |
+  c( ees) c-. |
+  bes r r |
+  R2.*2 |
+}
+

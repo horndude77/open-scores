@@ -1,0 +1,101 @@
+hornTwoMvtII =  \relative c'
+{
+  \clef treble
+  \time 3/4
+  \key c \major
+  R2.^\markup{\bold{in E}} |
+  r4 r8 g-.(\p g-. g-.) |
+  << fis2.^\markup{(gestopft)} {s8\< s s s\> s s}>> |
+  g4.\! r8 r4 |
+  R2.*13 |
+  g4(\p\< g g\> |
+  g4 g)\! r |
+  g4(\< g g\> |
+  g4 g)\! r |
+  c8\< c4 c4 c8\> |
+  g8 g4 g8\! r4 |
+  fis2.\pp |
+  r4\mf g(\> c) |
+  c2\p g4 |
+
+  \mark \default
+  g2 r4 |
+  R2.*2
+  g2.\p |
+  c,2 r4 |
+  r r c'8[\p r16 c] |
+  c8[\< r16 c] c8[ r16 c] c8[ r16 c] |
+  c8[\f r16 c] c8 r b'\mf r |
+  c,8[ r16 c] c8 r b'\p r |
+  c,8 r b' r c, r |
+  b'8 r r4 r |
+  R2. |
+
+  \mark \default
+  R2.*12 |
+  r4 r c,\sf |
+  r4 r c\sf |
+  c4\sf e~\sfp e~ |
+  e4 r r |
+  R2.*8 |
+
+  \mark \default
+  r8 g4\p g, c8~ |
+  c c,4\< c'\> c'8~ |
+  c\! c,~_\markup{\italic dim.} c2~ |
+  c8 r r4 g4~\pp |
+  g\< c2 |
+  g4\> g\! r |
+  c2. |
+  c'4( g) r |
+  R2. |
+  r4 r c,\< |
+  g'\f g r |
+  d' d r |
+  R2. |
+
+  \mark \default
+  R2. |
+  c,4.\pp r8 r4 |
+  g'4.\ppp r8 r4 |
+  c,8\f\< c4 c\> c8\! |
+  R2.* 11
+
+  \mark \default
+  g4-.(\p\< g-. g-.) |
+  g-.(\> g-.)\! r |
+  g4-.(_\markup{\italic cresc.} g-. g-.) |
+  c,-.(\> g'-.)\! r |
+  c8\mf c4 c c8 |
+  g4 c r |
+  c,2.\pp |
+  r4 c'(\mf\> g) |
+  c,2\p g'4~ |
+  g2( c,4~) |
+  c2.~ |
+  c2.~_\markup{\italic cresc.} |
+  c2.~ |
+  c4. e''8(\mf\> c g) |
+
+  \mark \default
+  e\! r r4 r |
+  R2.*6
+  c2.~_\markup{\dynamic p \italic dolce} |
+  c4 c'8( g4 c,8) |
+  g4.( c,8) c4~ |
+  c2.~ |
+  c4 r r |
+  R2. |
+  c'2.\mf\> |
+  g |
+  g2(\p c,4~) |
+  c2.~ |
+  c4 r c'~\pp\< |
+  c2.\> |
+  c'2\pp e,4~ |
+  e c'2 |
+  e,2.~ |
+  e |
+  e\fermata | \bar "|."
+}
+

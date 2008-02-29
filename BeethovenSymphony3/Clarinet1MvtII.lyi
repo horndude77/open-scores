@@ -1,0 +1,15 @@
+\include "defs.lyi"
+
+clarinetOneMvtII = \relative c''
+{
+  \time 2/4
+  \key f \major
+  \transposition bes
+  \partial 8 r8 |
+  R2*8 |
+  a2\p | a |
+  a4 d8 d |
+
+  %page 2
+}
+

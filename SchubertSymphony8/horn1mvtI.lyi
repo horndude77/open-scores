@@ -1,0 +1,222 @@
+\version "2.11.39"
+
+\include "defs.lyi"
+
+hornOneMvtI = \relative c''
+{
+  \transposition d
+  R2. |
+  %repeat
+  R2.*18 |
+  r4 f4.( \fz \> e8 |
+  f4 e2) \p |
+  R2. |
+  e2~->( e8 f |
+  e4) r4 r4 |
+  e2~->( e8 f |
+  e4) c2~ \p |
+  c2~ _\markup{\italic cresc.} c8( d) |
+  d2 e4 \fz |
+  f4 \fz f4.( \fp \> e8 |
+  f4 e2) \! |
+  r4 c2 \p |
+  c2~ _\markup{\italic cresc.} c8( d) |
+  d2~ d8( e) |
+  e2~\f e8 e8 |
+  e2~ e8 e8\ff |
+  e2.~ |
+  e2. |
+  e4 \fz c2~ \fp \> |
+  c2.~\! |
+  c2.~ |
+  c4( d e) |
+  f4 \pp r4 r4 |
+  R2.*10 |
+  r4 r4 r8 c8~ \pp |
+  c8 c4 r8 r8 c8~ |
+  c8 c4 r8 r8 c8~ |
+  c8 c4 r8 r8 c8~ |
+  c8 c4 r8 r8 c8~ |
+  c8 d4 r8 r8 d8~ |
+  d8 d4 r8 r4 |
+  R2.*2 |
+  R2. |
+
+  f2.~\ffz \> |
+  f4 \! r4 r4 |
+  c2.~ \fz \> |
+  c4 \! r4 r4 |
+  f2.~ \fz \> |
+  f4 \! f4 \fz f4 \fz |
+  f4 \fz f4 \fz f4 \fz |
+  f4 \fz f4 f4 |
+  f4 \fz r4 r4 |
+  R2.*5 |
+  d4 \f r4 r4 |
+  d4 r4 r4 |
+  c4 r4 r4 |
+  c4 r4 r4 |
+  f2. \fz |
+  r8 f4 f4 f8 |
+  f2. \fz |
+  r8 f4 f4 f8~ |
+  f8 r8 f2~-> \fz |
+  f8 r8 f2~-> \fz |
+  f8 r8 f2~-> \fz |
+  f4 c-. c-. |
+  c8 r8 f2~-> \fz |
+  f8 r8 f2(-> \fz |
+  d8) r8 d2~-> \fz |
+  d4 c4-. c4-. |
+  c4 r4 r4 |
+  R2.*3 |
+  \clef "bass^8" c,2.~ \p |
+  c2. |
+  R2.*3 |
+  \clef treble c'2.~ \< |
+  c2. \> |
+  r4 \! a2~ \ff \> |
+  a2.~ |
+  a2.~ \pp |
+  a2.~ |
+  a2.( |
+  e2.~)\> |
+  %first ending
+  e4 \! r4 r4 |
+  %second ending
+  a2.~\repeatTie \> |
+  a2.~ \! |
+  a2.~ |
+  a2.~ |
+  a4 r4 r4 |
+  R2.*19
+
+  d2.\f |
+  e2( f4) |
+  d2. |
+  e2( f4) |
+  d2( e4) |
+  \setTextCresc
+  f2(\< d4) |
+  e2( f4) |
+  d2( e4) |
+  f4 d e |
+  f4 d e |
+  f4 d e |
+  f4 d d |
+  d2.~\ff\> | d2.\! |
+  d2.~\> | d2.\! |
+  R2.*4 |
+  c2.~\ff\> | c2.\! |
+  c2.~\> | c2.\! |
+  R2.*4 |
+  f2.~\ff\> | f2.\! |
+  f2.~\> | f2.\! |
+  R2.*4 |
+  d2.\ff |
+  d2. |
+  d2. |
+  d4 d d |
+  d2.\fz |
+  g\fz |
+  f4 r r |
+  R2. |
+  e2.\> |
+  e2\! e4 |
+  e r r |
+
+  R2.*3 |
+  \repeat unfold 6 {e8. e16} |
+  e4 r r |
+  R2. |
+  \repeat unfold 6 {a,8. a16} |
+  \repeat unfold 6 {e'8. e16} |
+  \repeat unfold 6 {d8. d16} |
+  d2.~\ffz\> | d2.\! |
+  d2.~\fz\> | d2.\! |
+  R2.*4 |
+  e2.\ff |
+  d2.\fz |
+  e2.~\fp\> | e2. |
+  e2.\ff |
+  d2.\fz |
+  e2.~\fp |
+  \setTextDecr
+  e2.~ | e~ | e~\> | e~ | e~ | e~\pp | e~ | e~ | e~ | e4 r r |
+  R2.*10 |
+  e4(\p\< f4. e8 |
+  f4\> e2)(\! |
+  f4) r r |
+  R2.*9 |
+  \setTextCresc
+  r4 r r8 e8\< |
+  e4( d) a-.\f |
+  c-.\fz r r |
+  R2. |
+  g'2.~\p | g2~ g8 g\< | g4(\> f)\! r |
+  R2.*4 |
+  e4\fz g,2~\fp\> |
+  g2.~\! |
+  g~ |
+  g4(\pp\< a d\> |
+  c4)\! r r |
+  R2.*10 |
+  r4 r r8 g8~\pp |
+  g g4 r8 r g~ |
+  g g4 r8 r g~ |
+  g g4 r8 r g~ |
+  g g4 r8 r g~ |
+  a a4 r8 r a~ |
+  a a4 r8 r4 |
+  R2.*7 |
+  d2.~\ff\> | d4\! r r |
+  e2.~\ff\> | e4\! r r |
+  c2.~\fz\> | c4\! c\fz c\fz |
+  c\fz c\fz c\fz |
+  c\fz c\fz c\fz |
+  c\fz r r |
+  R2.*5 |
+  e4\f r r |
+  d r r|
+  e r r |
+  e r r |
+  c2.\fz | a\fz |
+  c\fz | a\fz |
+  e'8 r e2(\fz |
+  d8) r d2(\fz |
+  e8) r e2(\fz |
+  d4) e-. e-. |
+  e8 r e2(\fz |
+  d8) r d2(\fz |
+  e8) r e2(\fz |
+  d4) e-. e-. |
+  e r r |
+  R2.*3 |
+  e2.~->\p | e~ | e4 r r |
+  R2.*2 |
+  \clef "bass^8" |
+  e,2.~\> | e~\! |
+  e8 r \clef treble a2~\ffz\> |
+  a2.~\p | a~\pp |
+  a~ | a( | e~)\> | e4\! r r |
+  R2.*5 |
+  e'2.~\pp | e~ | e4 r r |
+  R2.*7 |
+  e4_\mcresc r r |
+  e r r |
+  e r e\< |
+  r e\! r |
+  e e\f e |
+  e\< e e |
+  e2.\ff |
+  e |
+  a,2.~\pp | a~\< | a~\> | a\! |
+  e'~\mf\< | e( | f~)\> | f |
+  e~\pp\< | e( | f~)\> | f |
+  e4\ff r r |
+  e r r |
+  e r r |
+  e2.~\> |
+  e4\! r r |
+} 
+

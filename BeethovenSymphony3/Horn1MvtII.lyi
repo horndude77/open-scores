@@ -1,0 +1,166 @@
+\include "defs.lyi"
+
+hornOneMvtII = \relative c'''
+{
+  \time 2/4
+  \key c \major
+  \transposition c,
+  \partial 8 r8 |
+  R2*8 |
+  g2\p | g |
+  g4 g8 g |
+
+  %page 2
+  g4. r8 |
+  R2 |
+  f2~_\mPCresc |
+  f8 r r4 |
+  R2*5 |
+  r4 c8-.( c-.) |
+  c4. c8 |
+  g'2\pp | g | g~\< |
+  g4.\> g8\! |
+  g8 r r4 |
+  R2*2 |
+  r4 c,\sf |
+  c\p r |
+  R2*9 | %page 3
+  c2~\fp |
+  c8 c\> c c |
+  g'2 | g | g\< | g~\> |
+
+  %page 4
+  g8\! r r4 |
+  R2*3 |
+  f2\p | f |
+  f4.\< f8 |
+  c-.\f c-. r4 |
+  r8 g'4\sf\> g8 |
+  c,\p r r4 |
+  R2*3 |
+  c4\f c8.. c32 |
+  c4.\sf\> c8 |
+  c4(\p d) |
+
+  %page 5
+  c8 r r4 |
+  c4( d) |
+  c8 r r4 |
+  r4 r8 g'-.\f |
+  c,-.\p r c-. r |
+  c-. r r4 |
+
+  %maggiore
+  R2*2 |
+  d2~\p | d |
+  d2~ |
+  d8 r r e~ |
+  e r r d |
+
+  %page 6
+  d4.\ff d8-.\sf |
+  d4. d8-.\sf |
+  d-. d-.\sf d-. d-.\sf |
+  d-. r r4 |
+  c2~\p |
+  c8 c c c |
+  c4_\mCresc c |
+  c c~ |
+  c8 r r4 |
+  R2 |
+  \repeat unfold 2 {d4 e8 \times 2/3 {c16 e c} |} %page 7
+  d2~ | d |
+  c4(\p e | g2) |
+  c,2~_\mCresc |
+  c8 c16. c32 c8 c |
+  r e r d |
+  r c r c |
+  c\f e4_\mSemprePiuF g16( e) |
+
+  %page 8
+  d4. d8 |
+  c4.\ff e8-.\sf |
+  c4. e8-.\sf |
+  c8-. e-.\sf c-. e-.\sf |
+  c-. r r4 |
+  R2*3
+
+  %minore
+  R2*20 %page 9
+  r8 g'4\f g8 |
+  g,4 g8 g |
+  g4.\sf g8 |
+  g g g g'~ |
+
+  %page 10
+  g c, c c |
+  c\ff r f4 |
+  f2 |
+  c4. c8 |
+  c r r4 |
+  R2*6 |
+  c2~\ff |
+  c4 f~\sf |
+  f d~ |
+
+  %page 11
+  d g~ |
+  g g |
+  d8 d4.~\sf |
+  d2~ d~ d~ |
+  d8 g-. g-. g-. |
+  g-. r r4 |
+  R2*8 |
+  c,2\ff | c |
+  c4 c8.. c32 |
+
+  %page 12
+  c2\sf |
+  c4 c8.. c32 |
+  c2~\sf |
+  c8 c c c |
+  f2~\ff |
+  f8 f f f |
+  f r r4 |
+  R2*4 | %page 13
+  r8 g16.\p g32 g8 g |
+  \repeat unfold 3 {r8 g16. g32 g8 g |}
+  r8 f16. f32 f8 f |
+  r8 f16._\mCresc f32 f8 f |
+  f8\p r r4 |
+  R2*7 | %page 14
+  g,2\p | g g\< |
+  g4.\> g8 |
+  g\! r r4 |
+  R2*2 |
+  r4 c\sf\> |
+
+  %page 15
+  c8\p f16. f32 f8 f |
+  r8 f16. f32 f8 f |
+  r8 f16. f32 f8 f16. f32 |
+  c8-.\f c-. r c~\p |
+  c c4\> d8\! |
+  c r r4 |
+  R2*3 | %page 16
+  c4\f c8.. c32 |
+  c2\sf\> |
+  c4(\p d |
+  c8) r r4 |
+  c4(_\mCresc d8) g |
+  c,\f r r4 |
+  R2*13 | %page 17
+  c2\pp | c |
+  c4._\mCresc c8 |
+  c4 c8 c |
+  c c c c |
+  c2_\mPCresc |
+  r4 c8\p r |
+  r4 c8 r |
+  R2*11 |
+  d2(\pp | c4) r |
+  d2( | c4) r |
+  r8 g4\sf\> g8 |
+  g4.\p\fermata
+}
+

@@ -1,0 +1,32 @@
+\include "defs.lyi"
+
+violinTwoMvtIII = \relative c'
+{
+  \key ees \major
+  g4-._\mSemprePianissimoStaccato
+  \repeat unfold 6 {g-. aes-.} |
+  bes-. bes-. bes-. |
+  bes-. f'-. ees-. |
+  d-. f-. ees-. |
+  d-. f-. ees-. |
+  d-. d-. ees-. |
+  f-. c-. d-. |
+  ees-. bes'-. c-. |
+  d-. a-. bes-. |
+  g-. g-. ees-. |
+  d r g,-._\mSempreStaccato |
+  \repeat unfold 5 {g-. aes-.} g bes |
+  bes bes bes |
+  bes f' ees |
+  d f' ees |
+  d f ees |
+  d d ees |
+  f c d |
+  ees bes c |
+  d a bes |
+  g g ees |
+  d r r |
+  r aes'-. ees-. |
+  aes-. ees-. aes-. |
+}
+

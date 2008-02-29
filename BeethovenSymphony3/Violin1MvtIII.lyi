@@ -1,0 +1,33 @@
+\include "defs.lyi"
+
+violinOneMvtIII = \relative c'
+{
+  \key ees \major
+  bes4-._\mSemprePianissimoStaccato |
+  bes-. c-. bes-. |
+  c-. bes-. c-. |
+  bes-. c-. bes-. |
+  c-. bes-. d-. |
+  ees-. f-. fis-. |
+  g-. aes-. a-. |
+  \repeat unfold 6 {bes-.} |
+  bes4( c8 bes a g) |
+  f2. |
+  ees |
+  d4( f) d-. |
+  c( ees) c-. |
+  bes r bes-._\mSempreStaccato |
+  \repeat unfold 5 {bes-. c-.} bes-. d-. |
+  ees-. f-. fis-. |
+  g-. aes-. a-. |
+  \repeat unfold 6 {bes-.} |
+  bes4( c8 bes a g) |
+  f2. |
+  ees |
+  d4( f) d-. |
+  c( ees) c-. |
+  bes-. r bes-. |
+  bes-. ces-. bes-. |
+  ces-. bes-. ces-. |
+}
+

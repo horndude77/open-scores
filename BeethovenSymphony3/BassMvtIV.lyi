@@ -1,0 +1,19 @@
+\include "defs.lyi"
+
+bassMvtIV = \relative c'
+{
+  \clef bass
+  \key c \minor
+  d4.\ff r8 |
+  r4 g,16 f ees d |
+  ees d c bes c bes a g |
+  aes8 aes'16 g f g f ees |
+  d ees f g f ees d c |
+  bes4 bes |
+  bes\ff r |
+  d-. f-. |
+  bes-.\sf r |
+  bes,\sf r |
+  bes2\sf\fermata |
+}
+

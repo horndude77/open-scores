@@ -1,0 +1,21 @@
+\header
+{
+  title = \markup{Symphony No. 3 in E\flat Major}
+  subtitle = "Eroica"
+  opus = "Op. 55"
+  composer = "Ludwig van Beethoven (1770-1827)"
+  copyright = "Creative Commons Attribution-ShareAlike 3.0"
+  instrument = \instrument
+
+  mutopiatitle = ""
+  mutopiacomposer = "BeethovenLV"
+  mutopiaopus = "Op. 55"
+  mutopiainstrument = \instrument
+  date = ""
+  source = ""
+  style = ""
+  maintainer = "Jay Anderson"
+  maintainerEmail = "horndude77@gmail.com"
+  lastupdated = "2006/July/31"
+}
+

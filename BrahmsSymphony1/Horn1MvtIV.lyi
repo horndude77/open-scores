@@ -1,0 +1,374 @@
+hornOneMvtIV = \relative c'
+{
+  \transposition c
+  \clef treble
+  \time 4/4
+  \key c \major
+  \partial 4*3 r4^\markup{\bold {in C}} r c'(\< |
+  \set Score.currentBarNumber = #2
+  g'2\fp\< fis4 g) |
+  ees2.(\> d4)\! |
+  R1*4 |
+  R1*4 |
+  r2 r4 g4(\< |
+  aes4\fp\< g f e! |
+  f4\> ees d e)\! |
+  R1*3 |
+  R1*2^\markup{\italic {string. molto}} |
+  r4\p e(\< f\> e)\! |
+  r4 << {g2( f4)} {s4\< s4\> s4\!} >> |
+
+  \mark \default
+  R1 |
+  r16 c(\p des8~_\markup{\italic cresc.} des16 c g'8~
+  g16 f bes8~ bes16 aes g8~) |
+  g16\f f-. c8-. r16 c-.\p c-. r r2 |
+  r2 c16-.\f c-. f8-. r16 f-.\p f-. r |
+  R1 |
+  c2_\markup{\dynamic p \italic cresc.} ees4( ges) |
+  r16 a8.\sf r16 bes8.\sf r16 c-|\sf r8 r4 |
+  R1 \bar "||"
+
+  \mark \default
+  e,2.^\markup{\bold{Più Andante}}_\markup{\dynamic f \italic{sempre e passionato}}
+  d16( c8.) |
+  g2. r4 |
+  d'2.( e4) |
+  c2. r4 |
+  g'2.( fis4) |
+  d2. r4 |
+  g,1 |
+  d'2.( e4) |
+  c2 r2 |
+  g1~\pp | g2 r2 | R1
+  c4.(\pp\< d8) << ees2 {s4..\> s16\!}>> |
+  f4.(\< g8) << aes2 {s4..\> s16\!}>> |
+  R1*3 |
+
+  \mark \default
+  R1*2
+  r4 r c,\p^\markup{\italic dolce} c |
+  c1 |
+  g4 r r2 |
+  e'2. d16( c8.) |
+  g2. r4 |
+  e'2. d16( c8.) |
+  g2. r4 |
+  g'2.( fis4) |
+  d2 r2 |
+  g,2 d'4.( e8) |
+  d4.(_\markup{\italic dim.} e8) d4. r8 |
+  R1 | r2 r4\fermata \bar "||"
+
+  g,4~\p^\markup{\bold {Allegro non troppo, ma con brio}} |
+  g2 g4\< c~ |
+  c2\> c4\! g~ |
+  g2 g4 c( |
+  d2) d4 g,~ |
+  g2 g4\< c~ |
+  c2\> c4\! g~ |
+  g2 g4 c( |
+  d2) c4 r |
+  R1*3 |
+  r2 c2\sf\> |
+  d4.(\! e8) f4( d) |
+  e4( d) d r |
+  R1 |
+  r2 r4 g,4~\p |
+  g2 g4 c4~ |
+  c2 c4 c( |
+  d4 e8 d e4 c) |
+  d2 d4 g,4~ |
+  g2 g4 c4~ |
+  c2 c4 c( |
+  d4 e8 f e4 c) |
+  d2( c4) g( |
+  d'4 e8 f e4 d4~) |
+  d4( e8 f e4 d4~)\< |
+  d4( e8 f e4 b4) |
+  c2 c2\sf\> |
+  d4._\markup{\italic cresc.}(\! e8 f4) d( |
+  e4) d~ d g,(\f |
+  a2_\markup{\italic cresc.}) f'4 e~ |
+  e4 d r g\f |
+
+  \mark \default
+  c,2 d4 e |
+  f2 e4 r |
+  R1 |
+  r2 r4 g, |
+  c4 e2 e4 |
+  c2 e4 r |
+  R1 |
+  r4 g-> g-> f-> |
+  f4 f2 f4~ |
+  f4 f2 d4-. |
+  e-. e2 e4~ |
+  e4 e2 e4-. |
+  d4-. r r d-. |
+  d4-. e-. d-. r |
+  R1*3 |
+
+  \mark \default
+  e4-. e-. d4.-> d8-. |
+  e4-. e-. d4.-> d8-. |
+  e4. e8 e4. e8 |
+  e1(\fp |
+  g4) r r2 |
+  d1~ |
+  d4 r r2 |
+  R1*6 |
+  r4 e(\f f) c( |
+  b4) d8( e g f) c( d) |
+  b4 r r2 |
+  R1 |
+
+  \mark \default
+  R1*17
+  r2 g4\f r8 g | c4\sf r r2 |
+  R1 |
+  e2\f e | e g, |
+  e'2\sf d4 r | e2\sf d4 r |
+  r2 e | c c |
+  e2\sf dis4 r | e2\sf dis4 r |
+  R1*2 |
+  e4.\sf e8 d4-. r | e4.\sf e8 d4-. r |
+  R1*8 |
+
+  \mark \default
+  \times 2/3 {e8-. fis-. g-.} \times 2/3 {g8-. fis-. g-.}
+    \times 2/3 {e8-. fis-. g-.} \times 2/3 {g8-. fis-. g-.} |
+  \times 2/3 {e8-. fis-. g-.} \times 2/3 {g8-. fis-. g-.}
+    \times 2/3 {g8-. fis-. g-.} \times 2/3 {g8-. fis-. g-.} |
+  R1*2 |
+  \times 2/3 {e8-. fis-. g-.} \times 2/3 {g8-. fis-. g-.}
+    \times 2/3 {e8-. fis-. g-.} \times 2/3 {g8-. fis-. g-.} |
+  \times 2/3 {e8-. fis-. g-.} \times 2/3 {g8-. fis-. g-.}
+    \times 2/3 {g8-. fis-. g-.} \times 2/3 {g8-. fis-. g-.} |
+  g4( fis e d) | c( b) c-. b-. |
+  e-. c2-> c4-. |
+  R1 |
+  r4 c2-> c4-. | r4 c2-> c4-. |
+  R1*3 |
+
+  \mark \default
+  R1*2 |
+  r2 r4 g4~\mp |
+  g2 g4\< c4~ |
+  c2\> c4\! c( |
+  d4 e8 d e4 c) |
+  d2 d4 g,4~ |
+  g2 g4\< c4~ |
+  c2\> c4\! c( |
+  d4 e8 f e4 c) |
+  d2( c4) g( |
+  d'4 e8 f e4 d4~) |
+  d4( e8 f e4 d4~)\< |
+  d4( e8 f e4\! b4) |
+  c2 c2\sf |
+  d4.(\> e8 f4)\! d( |
+  e4) d~ d r |
+  r2 r4 b(\< | c2.\> b4)\! |
+  r2 r4 bes(\< | c2\> f) |
+
+  \mark \default
+  bes,4\p bes r bes |
+  ees4 ees r ees |
+  bes4 bes r ees( |
+  f4 ges8 f ges4 ees) |
+  f2-> f-> | f-> \< f-> |
+  f2-> bes-> | bes->\f bes-> |
+  R1*7 |
+  r2 g,4-. g'-. |
+
+  \mark \default
+  c,2 d4 e | f2 e4 r |
+  R1 |
+  r4 ees-> ees-> d-> |
+  c4 e2 e4 |
+  c2 e4 r |
+  R1 |
+  r4 g-> g-> f-> |
+  f4 f2 f4~ | f f2 d4-. |
+  e4-. e2 e4~ | e e2 e4-. |
+  ees4-. r r2 |
+  R1 |
+  f2 f4-. g-. | g-. r r2 |
+  e2 f4-. r |
+  r4 g-. g2 |
+  r4 c,-. c-. c-. |
+  r4 c-. f-. f-. |
+  r4 g,-. g'-. g-. |
+  R1 |
+  r4 d-. d-. d-. |
+  e-. r e-. r |
+
+  \mark \default
+  r2 f(\p |
+  e8) r r4 f2( |
+  e8) r r4 e2(\< |
+  g\> f) |
+  e2( d4)\! r |
+  g2(\p aes8) r r4 |
+  g2( aes8) r r4 |
+  R1*3 |
+  c,2(\pp\< e |
+  g2\> f) |
+  e2( d)\! |
+  R1*2 |
+  r4 c_\markup{\dynamic f \italic marc.} aes' f |
+  d2 g | c, r |
+  R1*4 |
+  g'4\f g2 g4~ | g r r8 bes(\ff a bes) |
+
+  \mark \default
+  g2\sf g8 bes[( a bes]) |
+  g2\sf g8 c,4 c8 |
+  c2\sf c8 c4 c8 |
+  c2\sf c8 r8 r4 |
+  f2\sf f8 r8 r4 |
+  f2\sf f8 r8 r8 d8~-> |
+  d8 d-. r ees4-> ees8-. r e~-> |
+  e8 e-. r g4-> g8-. r d-. |
+  r8 ees-. r ees-. d-. r r4 |
+  R1*2
+  r8 c4\f c8 r c4 g8 |
+  r8 c4 c8 r c4 g8 |
+  r8 c4 c8 r c4 c8 |
+  r8 c4 c8 r c4 c8 |
+  r8 c4 des8 r c4 des8 |
+  r8 g,4 c8 r g4 c8 |
+
+  \mark \default
+  r4 c2.(\ff | e1)_\markup{\italic dim.}( |
+  g4)\p r c,2~_\markup{\italic dim.} |
+  c2( g) |
+  e'2._\markup{\dynamic pf \italic cresc.} d16( c8.) | g2 r |
+  e'2. d16( c8.) | g2 r |
+  g'2.(\f fis4) | d1 |
+  g,2 d'4.(_\markup{\italic dim.} e8) |
+  d4.( e8) d4\p r |
+  \once \override MultiMeasureRestText #'springs-and-rods
+    = #ly:multi-measure-rest::set-text-rods
+  R1*4^\markup{\italic calando} |
+  \once \override MultiMeasureRestText #'springs-and-rods
+    = #ly:multi-measure-rest::set-text-rods
+  R1*7^\markup{\italic animato} |
+  r4 c2\mf c4~ |
+  c4 c2 c4~ |
+  c4 r r2 |
+  R1*5 |
+
+  \mark \default
+  R1*4 |
+  r4 g'(\p aes2) | r4 fis( g2) |
+  r4 g( aes2) | r4 fis( g2) |
+  r4 e(_\markup{\italic dim.} f2) |
+  r4 cis( d2~) |
+  d4 r8 g,\p g4 r |
+  r4 r8 g_\markup{\italic cresc.} g4 r |
+  r4 r8 g' g4 r8 g |
+  f4 r8 f ees4\f r8 ees |
+  d4\sf r r2 |
+  R1 |
+  c2\f g | c, g'' |
+  f2\sf f4 r | f2\sf f4 r |
+  f2 ees | ees d |
+  c2\sf g4 r | c2\sf g4 r |
+  R1*2 |
+
+  \mark \default
+  ees'4.\f ees8 d4-. r |
+  ees4.\sf ees8 d4-. r8 f-.\mf |
+  aes4.( g8) f4.( ees8) |
+  d4.(\> c8) f4.( d8)\! |
+  R1*6 |
+  c2\f c |
+  c4 \times 2/3 {ees8-. d-. ees-.}
+  \times 2/3 {ees8-. d-. ees-.} \times 2/3 {ees8-. d-. ees-.} |
+  g4( f ees d) |
+  g4( f ees d) |
+  c2 c |
+  c4 \times 2/3 {ees8-. d-. ees-.}
+  \times 2/3 {ees8-. d-. ees-.} \times 2/3 {ees8-. d-. ees-.} |
+  g2 ees | c f4-. g-. | c,-. r r2 |
+  r4 c-| ees-| d-| |
+  c4-| r r2 |
+  R1 |
+  r4 c-| g'-| c,-| |
+  r4 bes-| ees-| d-| |
+  c4-| r g-| r |
+
+  \mark \default
+  c,4-| r r ees'(\p\< |
+  << g1) {s4\> s4 s4 s8 s8\!}>> |
+  R1*6 |
+  g,1\p\< | g\sf\> |
+  g\< | g\sf\> |
+  g\< | g\sf\> |
+  g\sf |
+  g2_\markup{\italic cresc.} g~ |
+  g2_\markup{\italic string.} g~ |
+  g2 g'2~ |
+  g4 g2 g4~ |
+  g4 g2 g4~ |
+  g4 g2 g4~ |
+  g4 g2 g4~ |
+  g4 g-| g-| g-| |
+  g4-| g-| g-| g-| \bar "||"
+
+  \time 2/2
+  \once \override TextScript #'extra-offset = #'(-2.0 . 1.0)
+  c,4-.^\markup{\bold{Più Allegro}} r r2 |
+  c'1\f |
+  c,4 r r2 |
+  c'1\f |
+  c,4 r r2 |
+  r4 b8_\markup{\italic marc.} c d4 e8 f |
+  e4 r r2 |
+  r4 dis8 e e4 dis |
+  e4 r r2 |
+  R1*3 |
+  e4->\f d8-. e-. e4-> d8-. e-. |
+  e4->\f d8-. e-. e4-> d8-. e-. |
+  f!4->\f e8-. f-. f4-> e8-. f-. |
+  g4->\f fis8-. g-. g4-> fis8-. g-. |
+  e1\ff |
+  e2 r4 e |
+  f1~ |
+  f2 d | ees d | c e! |
+  f1~ | f | d~ | d |
+  \times 2/3 { r4 r f~(\ff} \times 2/3 { f2 d4) } |
+  \times 2/3 { r4 r f~(} \times 2/3 { f2 d4) } |
+  \times 2/3 { r4 r d~} \times 2/3 { d2 d4 } |
+  \times 2/3 { r4 r g~} \times 2/3 { g2 g4 } |
+  \times 2/3 { r4 r e~} \times 2/3 { e2 e4 } |
+  \times 2/3 { r4 r c~} \times 2/3 { c4 c-. g'~ } |
+  g1~ | g2~ \times 2/3 {g4 g-. c,-.} |
+  c2 c | g' f |
+  e4 r d2 | e4 r d2 |
+  e4 r e2 | f4 r dis2 |
+  e4 r c2~-> |
+  c2 c~-> |
+  c2 c-| |
+  c2-| c-| |
+  r2 c2~-> |
+  c2 c~-> |
+  c2 c-| |
+  c2-| c-| |
+  R1 |
+  c1~ | c~ | c~ | c2 r |
+  e4-| r r2 |
+  d4-| r r2 |
+  d4-| r r2 |
+  c4-| r r2 |
+  c'1\sf |
+  c,4 r r2 |
+  c'1~\sf | c~ | c |
+  c,4-. r r2 |
+  g'4-. r r2 |
+  g4-. r r2 |
+  g4-. r r2 |
+  e1\fermata \bar "|."
+}
+

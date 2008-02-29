@@ -1,0 +1,6 @@
+To build full score:
+> lilypond ScoreMvt<Movement>.ly
+
+To build individual part:
+> lilypond <name of part>.ly
+

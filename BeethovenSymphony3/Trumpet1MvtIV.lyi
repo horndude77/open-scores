@@ -1,0 +1,14 @@
+\include "defs.lyi"
+
+trumpetOneMvtIV = \relative c''
+{
+  \transposition ees
+  \key c \minor
+  R2*6 |
+  g4\ff r |
+  g-. g-. |
+  g-. r |
+  g\sf r |
+  g2\sf\fermata |
+}
+

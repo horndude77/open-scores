@@ -1,0 +1,418 @@
+\include "defs.lyi"
+
+hornOneMvtI = \relative c''
+{
+  \time 3/4
+  \transposition ees
+  \key c \major
+  c4-.\f r r |
+  c4-. r r |
+  R2.*2 |
+  \repeat volta 2
+  {
+    R2.*8 |
+    e2.(_\mPCresc |
+    f4 e d) |
+    c2(-\tag #'part \p e4 |
+    c2 g4) |
+    c4( e g |
+    c,) r r |
+    R2.*3 |
+    r4 c_\mCresc c |
+    g2.~-\tag #'part \fp |
+    g2 d'4\p |
+    c-. c2\sf |
+    c2\sf c4\sf |
+    g2.~\fp |
+    g2 d'4~\sf |
+    d d2\sf |
+    d\sf d4~\sf |
+    d e2\sf |
+    e\sf e4~\sf |
+    e d-. d~\sf |
+    d e-. e\sf |
+    f2.~-\tag #'part _\mCresc |
+    f4 f f |
+
+    %page 3
+    e4\ff c e |
+    c2 g4 |
+    c e g |
+    c,2 e4\sf |
+    e e e |
+    e2 c4\sf |
+    c2. |
+    g |
+    d'4 r r |
+    R2. |
+    d2.~\p |
+    d4 d d |
+    d r r |
+    R2. |
+    d2.~ |
+    d4 d d |
+    d r r |
+    R2. |
+    r4 d4.\ff d8 |
+    d4-. d-. d-. |
+    g,2.~\p\< | g2.~\> | g2\! d'4-.( |
+    d-. d-. d-.) |
+
+    %page 4
+    g,2.~_\mCresc |
+    g~ |
+    g4 r r |
+    r r8 c c c |
+    c4\f-. c-. r |
+    r r r8 c-. |
+    g4-. g-. r |
+    r r r8 e'-. |
+    f4-. f-. r |
+    r r8 f-. f-. f-. |
+    e4 r r |
+    R2. |
+    r4 g g |
+    g g g |
+    g e e |
+
+    %page 5
+    e2. |
+    d4 r r |
+    R2. |
+    d2.~ |
+    d~ |
+    d4 d d |
+    d d d |
+    g r r |
+    R2.*8 |
+    r4 c,-.(_\mPCresc c-.) |
+    c-.( c-. c-.) |
+    c2.\f\> |
+    R2.*12\! | %page 6
+    r4 r d8-._\mCresc d-. |
+    d2.:8 |
+    d4\f g2\sf |
+    r4 g2\sf |
+    r4 a2\sf |
+    r4 a2\sf |
+    g4\ff g g |
+    g g g |
+    a2. |
+    a |
+    g4 g g |
+
+    %page 7
+    g8 r r4 r |
+    R2.*3 |
+    r4 r8 e-. e-. e-. |
+    R2. |
+    r4 f-. e-. |
+    r e-. d-. |
+    r r e-. |
+    r f-. e-. |
+    \repeat unfold 6 {r4 g-.\sf} |
+    R2.*4 |
+    r4 r c,-.\p |
+    r c-. r |
+    c-. r c-. |
+
+    %page 8
+    r d-. r |
+    e2.~_\mCresc |
+    e4. e8 e e |
+    d4. d8 d d |
+    d2.\ff |
+    \repeat unfold 3 {g,4\f r r |}
+    ees'-. ees-. ees-. |
+    d r r |
+    R2.*3 |
+  }
+  \alternative
+  {
+    {
+      R2. |
+      r4 r d(\sfp |
+      c) r r |
+      R2. |
+    }
+    {
+      R2.*2 |
+    }
+  }
+  R2.*12 | %page 9
+  e2.~\p |
+  e~ |
+  e~ |
+  e4 e e |
+  e2.~ |
+  e~ |
+  e~ |
+  e4 e e |
+  e2.~ |
+  e~ |
+  e4 e e |
+  e e e |
+  e\pp r r |
+  R2.*7 | %page 10
+  r4 d-.\ff d-. |
+  d-. d-. d-. |
+  d2.~ |
+  d( |
+  e4) e-. e-. |
+  e-. e-. e-. |
+  e2.~ |
+  e |
+  R2.*4 | %page 11
+  e4-.\ff e-. e-. |
+  e-. e-. e-. |
+  e2.~ |
+  e |
+  R2.*4 |
+  r4 r8 e\p e r |
+  r4 r8 e e r |
+  r e_\mCresc e2:8 |
+  e4 r r |
+  R2.*5 | %page 12
+  g2.\f |
+  e |
+  f |
+  f\ff |
+  f |
+  e4 c2~\p | c2.~ | c~ | c4 c c |
+  c2.~ | c~ | c~ | c4 c c |
+  c2.~ |
+
+  %page 13
+  c~ | c4 c c | c c c |
+  c8 a-. bes-. c-. d-. e-. |
+  f2.~\sf |
+  f4( e) e |
+  e e e |
+  d r r |
+  R2.*11 | %page 14
+  r4 f2~\ff |
+  f2. |
+  f4 f2\sf |
+  f\sf f4~\sf |
+  f f2\sf |
+  f\sf f4\sf |
+  R2.*6 |
+  r4 ees2~\sf |
+  ees2.~ |
+  ees4 ees2\sf |
+  ees\sf ees4~\sf
+  ees ees2\sf |
+  ees\sf ees4\sf |
+  r4 e2~\sf |
+  e2.~ |
+  e4 e2\sf |
+  e\sf e4~\sf |
+  e e2\sf |
+  e\sf e4\sf |
+
+  %page 15
+  r4 c2\sf |
+  c\sf c4\sf |
+  r4 e2\sf |
+  e\sf e4\sf |
+  d2\f r4 |
+  d2\f r4 |
+  d2\f r4 |
+  d2\f d4 |
+  R2.*24 | %page 16
+  r4 e-.\f e-. |
+  e-. e-. e~\sf |
+  e2.~ |
+  e~ |
+  e4 e-. e-. |
+  e-. e-. e4~\sf |
+  e2.~ |
+  e~ |
+  e4 r r |
+  R2.*3 | %page 17
+  r4 g, g |
+  g g g~\sf |
+  g2.~ |
+  g~ |
+  g4\ff g g |
+  g c c |
+  c r r |
+  R2.*20 | %page 18
+  c2(\p ees4 |
+  c2 g4) |
+  c( ees g) |
+  f r r |
+  ees2( f4 |
+  ees2 c4) |
+  c( ees f) |
+  f2.~ | f~ | f~ | f4 f f |
+  g2.~_\mCresc | g~ | g~ | g4 g g |
+  g2.~_\mSempreCresc | g~ |
+
+  %page 19
+  g |
+  c,2\sf ees4 |
+  ees2.~\ff | ees~ | ees4 ees ees | ees ees ees | ees r r |
+  R2.*41 | %page 20
+  \transposition f
+  c2(_\mDolce^\markup{\bold {in F}} e4 |
+  c2 g4) |
+  c( e g) |
+  g2.~ |
+  g4 g g |
+  g2.~ | g~_\mCresc | g( | aes4)\p r r |
+  \transposition ees
+  R2.*89 | %page 21, page 22, page 23, page 24
+
+  %page 25
+  g,2.~\pp^\markup{\bold {in E\flat}} | g~ | g~_\mCresc | g~ |
+  g8 g'_\mCresc g g g g |
+  g2.:8 |
+  g,4\f e'2\sf |
+  r4 e2\sf |
+  r4 f2\sf |
+  r4 d\sf d |
+  e\ff g4.\sf e8 |
+  c4-. e4.\sf g,8 |
+  d'4-. f4.\sf g,8 |
+  d'4 d4.\sf g,8 |
+  c2.~ |
+  c4 r r |
+  R2.*2 |
+  r4 r r8 e |
+
+  %page 26
+  e2.:8 |
+  e4-. e-.\ff e-. |
+  r4 c-. c-. |
+  r d-. d-. |
+  r e-. e-. |
+  r c-. c-. |
+  \repeat unfold 6 {r c-.\sf} |
+  c(\p e g) |
+  c,2.~\sfp |
+  c4( e g) |
+  c,2.~\sfp |
+  c4 c r |
+  r d-. r |
+  d-. r d-. |
+  r e-. r |
+  R2.*2 |
+
+  %page 27
+  r8 g_\mCresc g g e c |
+  d2.\ff |
+  c4\f r r |
+  c4\f r r |
+  c4\f r r |
+  c-. c-. c-. |
+  c r r |
+  R2.*2 |
+  r4 r8 c,(\p e g) |
+  c4 r r |
+  R2. |
+  f2.~\f |
+  f |
+  R2.*2 |
+  e2.:8\ff |
+  e2.:8 |
+  e4\p r r |
+  R2.*5 |
+  e2.~\pp |
+
+  %page 28
+  e~ | e~ | e~ | e4 r r |
+  R2.*13 |
+  g,2.~_\mCresc | g |
+  g:8\p |
+
+  %page 29
+  \repeat unfold 5 {g2.:8 |}
+  g4 r r |
+  R2.*9 |
+  g2.~\pp | g~ | g4 r r |
+  R2. |
+  g2.~\pp | g~ | g~ |
+
+  %page 30
+  g4 g g |
+  g2.~ |
+  g4 g g |
+  c r r |
+  R2.*3 |
+  d2 f4 |
+  R2. |
+  d2 f4 |
+  f2( d4) |
+  c\p c-. r |
+  c-. r c-. |
+  r c-. r |
+  c-. r c-. |
+  c r r |
+  c2.(_\mCresc |
+  d4) d-. d-. |
+  r r g, |
+  c2( e4 |
+  c2 g4) |
+
+  %page 31
+  c( e) g |
+  g2. |
+  d2( f4 |
+  d2 g,4) |
+  d'4( f) g-. |
+  g2.~ |
+  g~ |
+  g4 c,( e) |
+  c2( g4) |
+  c( e) g-. |
+  g2. |
+  d2( f4) |
+  d2( g,4) |
+  d'4( f) g-. |
+  g2.~_\mCresc |
+  g~ |
+  g4 g g |
+  g g g |
+
+  %page 32
+  g2.~ |
+  g~ |
+  g4 g g |
+  g g g |
+  g\f c,8 c e e |
+  c2:8 g8 g |
+  c c e e g g |
+  g2.:8 |
+  d8 g, g2:8 |
+  g2.:8 |
+  g:8 |
+  g:8 |
+  g8 g e' e e e |
+  e2. |
+  d4 d8\sf d d4 |
+  r4 c8\sf c c4 |
+  r4 c8\sf c c4 |
+  r4 d8 d d4 |
+  r4 c8 c c4 |
+
+  %page 33
+  r4 d8 d d4 |
+  e2.:8\ff |
+  d:8 |
+  c~\p\< |
+  c~\> |
+  c4(\! g) g-.( |
+  g-. g-. g-.) |
+  c4 r r |
+  R2.*3 |
+  r4 d2~\f |
+  d4 d2~\f |
+  d4 d2\f |
+  d2\f d4-.\f |
+  d4-. f-.\ff \repeat unfold 10 {f-.} |
+  e4 r r |
+  e r r |
+  c r r | \bar "|."
+}
+

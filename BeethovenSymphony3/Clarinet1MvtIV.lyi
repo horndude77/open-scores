@@ -1,0 +1,14 @@
+\include "defs.lyi"
+
+clarinetOneMvtIV = \relative c''
+{
+  \transposition bes
+  \key d \minor
+  R2*6 |
+  bes4\ff r |
+  bes-. bes-. |
+  bes-. bes-.\sf |
+  r bes\sf |
+  e2\sf\fermata |
+}
+

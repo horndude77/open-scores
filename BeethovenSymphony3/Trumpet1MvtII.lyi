@@ -1,0 +1,11 @@
+\include "defs.lyi"
+
+trumpetOneMvtII = \relative c'
+{
+  \time 2/4
+  \key c \major
+  \transposition c
+  \partial 8 r8 |
+  R2*11 |
+}
+

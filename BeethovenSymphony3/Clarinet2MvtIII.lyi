@@ -1,0 +1,10 @@
+\include "defs.lyi"
+
+clarinetTwoMvtIII = \relative c'
+{
+  \transposition ees
+  \key bes \major
+  r4
+  R2.*30 |
+}
+

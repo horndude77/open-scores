@@ -1,0 +1,34 @@
+\include "defs.lyi"
+
+celloMvtIII = \relative c
+{
+  \key ees \major
+  \clef bass
+  ees4-._\mSemprePianissimoStaccato
+  \repeat unfold 4 {ees-. ees-. ees-.} |
+  ees-. ees-. d-. |
+  ees-. d-. c-. |
+  bes-. d'-. c-. |
+  bes-. d-. c-. |
+  bes-. bes-. c-. |
+  d-. a-. b-. |
+  c-. g-. a-. |
+  bes-. f-. g-. |
+  ees-. c-. f-. |
+  bes,-.\p bes-. bes-._\mSempreStaccato |
+  \repeat unfold 3 {bes-. bes-. bes-.} |
+  bes-. bes-. aes'-. |
+  g-. d-. d-. |
+  ees-. d-. c-. |
+  bes-. d'-. c-. |
+  bes-. d-. c-. |
+  bes-. bes-. c-. |
+  d-. a-. b-. |
+  c-. g-. a-. |
+  bes-. f-. g-. |
+  ees-. c-. f-. |
+  bes,-. bes-. bes-. |
+  bes-. ces-. bes-. |
+  ces-. bes-. ces-. |
+}
+

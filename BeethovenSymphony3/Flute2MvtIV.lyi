@@ -1,0 +1,13 @@
+\include "defs.lyi"
+
+fluteTwoMvtIV = \relative c'''
+{
+  \key c \minor
+  R2*6 |
+  bes4\ff r |
+  d-. d-. |
+  d-. d-.\sf |
+  r d\sf |
+  aes2\sf\fermata |
+}
+

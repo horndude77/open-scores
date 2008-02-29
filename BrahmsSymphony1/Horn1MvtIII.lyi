@@ -1,0 +1,103 @@
+hornOneMvtIII =  \relative c'
+{
+  \clef treble
+  \time 2/4
+  \key c \major
+  a'4(_\markup{\dynamic p \italic dolce}^\markup{\bold {in Es}} bes |
+  c d | c d) |
+  << c2~ {s8\< s4 s8\>} >> | c2\! |
+  c4( d8 e) |
+  f4(\< e | f e)\! |
+  d4 g,~\> | g2~ | g~\! |
+  g4( c~) | c2~ | c |
+  e2( | d)( | e)( | c~) |
+
+  \mark \default
+  c8 r r4 |
+  R2*2 |
+  c2~\p | c2 |
+  bes2( | c) |
+  c4( d8 e) |
+  f4( e | f e) |
+  d8( c) f4~\< | f2~ | f2\!_\markup{\italic dim.} |
+  g,2~ | g~ |
+  g4( c~) | c2~ | c |
+  e,8.[(\pp g16 c8. e16]) | f4( d) |
+  e,8.[(\ppp g16 c8. e16]) | f4( d) |
+  g,2~ | g |
+  R2*2 |
+
+  \mark \default
+  R2*11 |
+  ees'4\mf e |
+  a,8(\< ees') d( bes) | g-.\f g-. r4 |
+  R2 |
+  f'2\p\> |
+  R2\! |
+
+  \mark \default
+  a,4(\p bes | c d) | c( d) | c e~(\< |
+  e8\> d) e4~\< |
+  e8(\> f) e4~^\markup{\italic dim.}\< | e\> d |
+  e2(\pp | c4) r | \bar "||"
+
+  \mark \default
+  \time 6/8
+  R2.*4
+  r8 ees(\p ees ees4.) |
+  r8 ees( ees ees4.) |
+  r8 ees(_\markup{\italic cresc.} f g f ees |
+  d8 ees f ees d c) |
+  ees4.\mf ees |
+  R2.*7 |
+
+  \repeat volta 2
+  {
+    r8 ees\mf ees ees4. |
+    r8 des des des4. |
+    r8 des des ces4. |
+    R2.*2
+    r8 ees_\markup{\italic cresc.} ees ees4. |
+    r8 c c des4. |
+    R2.*2
+    r4. g\f | g g | g ees4 r8 |
+    R2. *7 |
+    r8 bes4~\sf bes8 bes4~\sf |
+    bes8 bes4~\sf bes bes8-.
+  }
+  \alternative
+  {
+    {c8-. r r r4.}
+    {c8-. r r r4.}
+  }
+
+  \bar "||"
+  \time 2/4
+  R2*6 |
+
+  \mark \default
+  a4(\p bes | c d) | c( d) |
+  c2~\< | c2(\> | g4)\! r |
+  R2*5 |
+  c2~\pp | c~ | c4 r |
+  R2 |
+  \setTextCresc
+  c,2~\pp | c~ | c\< |
+  c2~ | c~ | c |
+  c2 | c' | ees4(\f d8 c) |
+  R2 |
+  << des2^\markup{\italic dim.} {s8\> s4 s8\!} >>|
+  R2 |
+  aes'2(\p\> | g4 f) |
+  c2~\p | c~ | c4 ees( |
+  d4) f(\< | e!2~)( |
+  e8 f) g4(\! |
+  c,8) r r4 |
+  R2 |
+  c2~^\markup{\smaller \italic {\column {\line{poco a poco} \line{più tranquillo}}}}\p | c \bar "||"
+  R2*4 |
+  r4 \times 2/3 { r8 c(^\markup{\italic dolce} c} |
+  c4 \times 2/3 { r8 c( c} |
+  c4)(\< c | c c) | c2~\> | c~ | c4\! r \bar "|."
+}
+

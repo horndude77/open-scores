@@ -1,0 +1,14 @@
+\include "defs.lyi"
+
+timpaniMvtIV = \relative c
+{
+  \clef bass
+  \key c \minor
+  R2*6 |
+  bes4\ff r |
+  bes-. bes-. |
+  bes-. r |
+  bes\sf r |
+  bes8\sf r4.\fermata |
+}
+

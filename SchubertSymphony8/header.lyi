@@ -1,0 +1,21 @@
+\header
+{
+  title = \markup{Symphony No.8}
+  subtitle = "Unfinished"
+  opus = "Op.?"
+  composer = "Franz Schubert"
+  copyright = "Creative Commons Attribution-ShareAlike 3.0"
+  instrument = \instrument
+
+  mutopiatitle = ""
+  mutopiacomposer = "SchubertFS"
+  mutopiaopus = "Op.?"
+  mutopiainstrument = \instrument
+  date = ""
+  source = ""
+  style = ""
+  maintainer = "Jay Anderson"
+  maintainerEmail = "horndude77@gmail.com"
+  lastupdated = "2008/Feb/20"
+}
+

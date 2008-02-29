@@ -1,0 +1,202 @@
+hornEight = \relative c''
+{
+  %4/8
+  r8
+  R2*5 |
+
+  %6/8
+  R2.*2
+  %"allmählich lebhafter"
+  R2.*5 |
+  %"Volles Zeitmass. (sehr lebhaft)"
+  R2.*8
+
+  %1
+  R2.*10
+
+  %2
+  R2.*15
+  %"Immer sehr lebhaft"
+  R2.*4
+  R2. %"poco rit."
+
+  %3
+  R2.*12 %"a tempo"
+
+  %4
+  R2.*8
+
+  %5
+  R2.*10
+
+  %6
+  R2.*16
+
+  %7
+  R2.*8
+
+  %8
+  R2.*24
+
+  %9
+  R2.*14
+
+  %10
+  R2.*12 |
+
+  %11
+  R2.*12 |
+
+  %12
+  R2.*12 |
+  %2/4
+  R2*8 |
+
+  %13
+  R2*9 |
+
+  %14
+  R2 |
+  %\markup{"doppelt so schnell"}
+  R2*6 |
+  %\markup{"weider noch einmal so langsam"}
+  R2*5 |
+  %6/8
+  %"Erstes Zeitmass (sehr lebhaft)"
+  R2.*11 |
+
+  %15
+  R2.*6 |
+
+  %16
+  R2.*20 |
+
+  %17
+  R2.*12 |
+
+  %18
+  R2.*14 |
+
+  %19
+  R2.*22 |
+
+  %20
+  R2.*15 |
+
+  %21
+  R2.*11 |
+
+  %22
+  R2.*10 |
+
+  %23
+  R2.*15 |
+
+  %24
+  R2.*14 |
+
+  %25
+  R2.*12 |
+  %\markup{(lang)}
+  R2.*2 |
+  %\markup{accelerando}
+  R2.*3 |
+
+  %26
+  %2/4
+  R2*18 |
+  %\markup{schnell und schattenhaft}
+  R2*9 |
+
+  %27
+  R2*6 |
+  %\markup{poco rit.}
+  R2*2 |
+
+  %6/8
+  %"etwas gemächlicher"
+  R2.*8 |
+
+  %28
+  R2.*11 |
+  %"allmählich lebhafter"
+  R2.*7 |
+  %"Volles Zeitmass (sehr lebhaft)"
+  R2.*13 |
+
+  %29
+  R2.*16 |
+
+  %30
+  R2.*20 |
+
+  %31
+  R2.*15 |
+
+  %32
+  R2.*8 |
+
+  %33
+  R2.*16 |
+
+  %34
+  R2.*8 |
+
+  %35
+  R2.*12 |
+
+  %36
+  R2.*14 |
+
+  %37
+  R2.*9 |
+  \transposition d
+  g8\ff^"(in D)" g16 g g8 g g g |
+  \repeat unfold 5 {g8 g16 g g8 g g g |}
+  e8\fff r r r4. |
+  R2.*3 |
+
+  %38
+  \repeat unfold 2
+  {
+    r4. fis,~->\ff |
+    \repeat unfold 3 {fis fis~-> |}
+    fis2.\fermata |
+  }
+  \alternative
+  {
+    {R2.*3 |}
+    {R2.*4 |}
+  }
+  r4. fis~->\ff |
+  fis fis~-> |
+  fis2. |
+  R2. |
+  r4. fis~->\ff |
+  fis fis~-> |
+  fis2. |
+  R2.
+
+  %39
+  r4. fis~->\ff |
+  fis\< fis~-> |
+  %"(kläglich)"
+  fis8\fff r r r4. |
+  %2/4
+  R2*10 |
+
+  %40
+  R2*17 |
+  %4/8
+  %"Epilog"
+  R2*18 |
+  %6/8
+  %"Sehr lebhaft"
+  R2.*3 |
+  gis'2.\ff |
+  R2. |
+  ees8\ff r r r4. |
+  ees8 r r r4. |
+  ees8 r r ees\fff r r |
+}
+

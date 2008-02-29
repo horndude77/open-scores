@@ -1,0 +1,22 @@
+\version "2.11.40"
+
+\include "defs.lyi"
+
+\paper
+{
+  ragged-last-bottom = ##f
+}
+
+\book
+{
+  \include "header.lyi"
+  \score
+  {
+    \new Staff
+    {
+      \set Score.skipBars = ##t
+      << \notes \outline >>
+    }
+  }
+}
+

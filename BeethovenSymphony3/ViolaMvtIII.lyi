@@ -1,0 +1,33 @@
+\include "defs.lyi"
+
+violaMvtIII = \relative c'
+{
+  \key ees \major
+  \clef alto
+  ees4-._\mSemprePianissimoStaccato
+  \repeat unfold 3 {ees-. ees-. ees-.} |
+  ees-. ees-. f-. |
+  g-. ees'-. d-. |
+  ees-. d-. c-. |
+  \repeat unfold 2 {bes-. d-. c-.} |
+  bes-. bes-. c-. |
+  d-. a-. b-. |
+  c-. g-. a-. |
+  bes-. f-. g-. |
+  ees-. c-. a'-. |
+  bes r ees,-._\mSempreStaccato |
+  \repeat unfold 3 {ees-. ees-. ees-.} |
+  ees ees f |
+  g aes d, |
+  ees bes' c |
+  d f ees |
+  d f ees |
+  d d ees |
+  f c d |
+  ees bes c |
+  d a bes |
+  g g a |
+  bes r r |
+  R2. |
+}
+

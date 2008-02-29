@@ -1,0 +1,20 @@
+\include "defs.lyi"
+
+violaMvtII = \relative c
+{
+  \time 2/4
+  \key ees \major
+  \clef alto
+  \partial 8 r8
+  ees4\pp r |
+  ees r |
+  ees ees |
+  ees4( d8) r |
+  f4 r |
+  f4.(\sf\> f16 g)\! | %EDIT: made slur same as other strings.
+  g8( d) ees f |
+  ees8 f16. f32 ees8 r16 \times 2/3 {g32 g g} |
+  \repeat unfold 2 {g8 r r8. \times 2/3 {g32 g g}} |
+  g8 r16 \times 2/3 {g32 g g} g8 r16 \times 2/3 {g32 g g} |
+}
+

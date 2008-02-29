@@ -1,0 +1,50 @@
+\version "2.11.39"
+
+\include "defs.lyi"
+
+\paper
+{
+  ragged-last-bottom = ##f
+}
+
+\book
+{
+  \include "header.lyi"
+  \score
+  {
+    \new Staff
+    {
+      \set Score.skipBars = ##t
+      \notesMvtI
+    }
+    \header { piece = \MvtI }
+  }
+  \score
+  {
+    \new Staff
+    {
+      \set Score.skipBars = ##t
+      \notesMvtII
+    }
+    \header { piece = \MvtII }
+  }
+  \score
+  {
+    \new Staff
+    {
+      \set Score.skipBars = ##t
+      \notesMvtIII
+    }
+    \header { piece = \MvtIII }
+  }
+  \score
+  {
+    \new Staff
+    {
+      \set Score.skipBars = ##t
+      \notesMvtIV
+    }
+    \header { piece = \MvtIV }
+  }
+}
+

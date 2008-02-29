@@ -1,0 +1,23 @@
+mdim = \markup {\italic dim.}
+rall = \markup {\italic rall.}
+pocorall = \markup {\italic {poco rall.} }
+sempref = \markup {\italic sempre \dynamic f}
+
+tempoMark = #(define-music-function (parser location markp) (string?)
+#{
+  \once \override Score . RehearsalMark #'self-alignment-X = #left
+  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \mark \markup { \bold $markp }
+#})
+
+outline =
+{
+  \time 3/4
+  \tempoMark "Andantino"
+}
+
+midiOutline =
+{
+  \tempo 4=66
+}
+

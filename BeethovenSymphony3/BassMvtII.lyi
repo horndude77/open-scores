@@ -1,0 +1,20 @@
+\include "defs.lyi"
+
+bassMvtII = \relative c
+{
+  \time 2/4
+  \key ees \major
+  \clef bass
+  \partial 8 r8
+  \appoggiatura {g32[ a b]} c8-.\pp r8 r4 |
+  \appoggiatura {g32[ a b]} c8-.\pp r8 r4 |
+  \appoggiatura {g32[ a b]} c8-.\pp r16 c32( d ees8-.) r16 ees32( f |
+  g4.) r16 f32( g |
+  a4) r8 f32( ees d c) |
+  b4\sf r8. \times 2/3 {g32( a b)} |
+  c8-. r16 \times 2/3 {f,32 f f} g8-. r16 \times 2/3 {g32 g g} |
+  c8 f16. f32 c8 r16 \times 2/3 {c32 c c} |
+  \repeat unfold 2 {c8 r r8. \times 2/3 {c32 c c}} |
+  c8 r16 \times 2/3 {c32 c c} ees8 r16 \times 2/3 {ees32 ees ees} |
+}
+
