@@ -1,0 +1,21 @@
+\header
+{
+  title = "Horn Quintet, K.407"
+  subtitle = ""
+  opus = ""
+  composer = "W.A. Mozart"
+  copyright = "Creative Commons Attribution-ShareAlike 3.0"
+  instrument = \instrument
+
+  mutopiatitle = ""
+  mutopiacomposer = "WAMozart"
+  mutopiaopus = "K.407"
+  mutopiainstrument = \instrument
+  date = ""
+  source = ""
+  style = "Classical"
+  maintainer = "Jay Anderson"
+  maintainerEmail = "horndude77@gmail.com"
+  lastupdated = "2008/Feb/18"
+}
+
