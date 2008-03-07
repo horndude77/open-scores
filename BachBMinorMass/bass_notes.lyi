@@ -1,0 +1,15 @@
+bassAria = \relative c
+{
+  \clef bass
+  \key d \major
+  R2.*12 |
+  d4( a') b |
+  cis, e g~ |
+  g fis e |
+  cis4.\trill e16( cis a4) |
+  r8 a b cis d e |
+  fis e g fis e( d16 cis |
+  d8) b' \appoggiatura a16 g4.\trill fis8 |
+  fis2 r4 |
+}
+

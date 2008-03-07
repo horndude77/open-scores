@@ -1,0 +1,21 @@
+\header
+{
+  title = "B Minor Mass - Aria"
+  subtitle = ""
+  opus = ""
+  composer = "J.S. Bach"
+  copyright = "Creative Commons Attribution-ShareAlike 3.0"
+  instrument = \instrument
+
+  mutopiatitle = ""
+  mutopiacomposer = "JSBach"
+  mutopiaopus = ""
+  mutopiainstrument = "Horn, 2 Bassoons, Bass, Continuo"
+  date = ""
+  source = "BGA"
+  style = "Baroque"
+  maintainer = "Jay Anderson"
+  maintainerEmail = "horndude77@gmail.com"
+  lastupdated = "2008/Feb/18"
+}
+

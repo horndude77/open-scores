@@ -1,0 +1,13 @@
+bassoonTwoAria = \relative c
+{
+  \clef bass
+  \key d \major
+  fis8( d) d( e) e(\trill d16 e) |
+  fis8 e16 fis g8( fis e d) |
+  e( cis) cis( d) d(\trill cis16 d) |
+  e8 d16 e fis8( e d cis) |
+  d4 r8 b'16 a b8 cis16 b |
+  a4 r8 a16 g a8 b16 a |
+  g8( g g g g) d |
+}
+
