@@ -6,7 +6,7 @@
 {
   %first-page-number = 2
   %#(define page-breaking ly:minimal-breaking)
-  #(define page-breaking ly:page-turn-breaking)
+  %#(define page-breaking ly:page-turn-breaking)
   ragged-last-bottom = ##f
 }
 
@@ -15,7 +15,7 @@
   \include "header.lyi"
   \score
   {
-    \new Staff \with { \consists "Page_turn_engraver" }
+    \new Staff %\with { \consists "Page_turn_engraver" }
     {
       \override Score.PaperColumn #'keep-inside-line = ##t
       \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
@@ -25,7 +25,7 @@
   }
   \score
   {
-    \new Staff \with { \consists "Page_turn_engraver" }
+    \new Staff %\with { \consists "Page_turn_engraver" }
     {
       \override Score.PaperColumn #'keep-inside-line = ##t
       \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
@@ -35,7 +35,7 @@
   }
   \score
   {
-    \new Staff \with { \consists "Page_turn_engraver" }
+    \new Staff %\with { \consists "Page_turn_engraver" }
     {
       \override Score.PaperColumn #'keep-inside-line = ##t
       \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t

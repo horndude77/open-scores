@@ -9,10 +9,16 @@
 
 \paper
 {
-  #(define page-breaking ly:minimal-breaking)
+  %#(define page-breaking ly:minimal-breaking)
   %#(define page-breaking ly:page-turn-breaking)
   ragged-last-bottom = ##f
+  between-system-space = 0.5\cm
+  between-system-padding = #0
+  page-limit-inter-system-space = ##t
+  page-limit-inter-system-space-factor = 1.5
 }
+
+#(set-global-staff-size 16)
 
 instrument = "Score"
 

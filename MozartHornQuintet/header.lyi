@@ -10,9 +10,9 @@
   mutopiatitle = ""
   mutopiacomposer = "WAMozart"
   mutopiaopus = "K.407"
-  mutopiainstrument = \instrument
+  mutopiainstrument = "Horn, Violin, 2 Violas, Cello"
   date = ""
-  source = ""
+  source = "Serie 13 (Quintette für Streichinstrumented) Wolfgang Amadeus Mozart's Werke. B&H, 1883"
   style = "Classical"
   maintainer = "Jay Anderson"
   maintainerEmail = "horndude77@gmail.com"
