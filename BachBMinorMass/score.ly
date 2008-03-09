@@ -34,20 +34,28 @@ instrument = "Score"
         \set Staff.instrumentName = "Horn in D"
         << \hornAria \outlineAria >>
       }
-      \new Staff
-      {
-        \set Staff.instrumentName = "Bassoon I"
-        \bassoonOneAria
-      }
-      \new Staff
-      {
-        \set Staff.instrumentName = "Bassoon II"
-        \bassoonTwoAria
-      }
+      \new GrandStaff
+      <<
+        \new Staff
+        {
+          \set Staff.instrumentName = "Bassoon I"
+          \bassoonOneAria
+        }
+        \new Staff
+        {
+          \set Staff.instrumentName = "Bassoon II"
+          \bassoonTwoAria
+        }
+      >>
       \new Staff
       {
         \set Staff.instrumentName = "Bass"
-        \bassAria
+        \new Voice = "bass" \bassAria
+      }
+      \new Lyrics \lyricsto "bass"
+      {
+        \override Score . LyricText #'font-size = #-0.5
+        \textAria
       }
       \new Staff
       {
@@ -84,7 +92,7 @@ instrument = "Score"
       }
       \new Staff
       {
-        \set Staff.midiInstrument = "string ensemble 1"
+        \set Staff.midiInstrument = "voice oohs"
         \bassAria
       }
       \new Staff
@@ -93,7 +101,14 @@ instrument = "Score"
         \continuoAria
       }
     >>
-    \midi {}
+    \midi
+    {
+      \context
+      {
+        \Voice
+        \remove "Dynamic_performer"
+      }
+    }
   }
 }
 
