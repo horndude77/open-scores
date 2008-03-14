@@ -1,0 +1,42 @@
+rightMvtI = \relative c'
+{
+  \repeat unfold 4
+  {
+    r4 <e c>8( f,) r4 <c'' e>4 |
+  }
+}
+
+leftMvtI = \relative c,
+{
+  \clef bass
+  \repeat unfold 4
+  {
+    << {a8( e') r4} \\ {a,2} >> <a' e'>2 |
+  }
+}
+
+dynamicsMvtI =
+{
+}
+
+pedalsMvtI =
+{
+}
+
+%==============================================
+rightMvtII = \relative c'
+{
+}
+
+leftMvtII = \relative c,
+{
+  \clef bass
+}
+
+dynamicsMvtII =
+{
+}
+
+pedalsMvtII =
+{
+}

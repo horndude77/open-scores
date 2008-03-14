@@ -1,0 +1,649 @@
+\include "defs.lyi"
+
+hornMvtI = \relative c'
+{
+  \transposition f
+  R1*2 |
+
+  %repeat
+  e2 r |
+  R1*3 |
+  b'1~\pp\< | b~ |
+  b2 ais4.(\p cis8) |
+  b2. c4~->\f |
+  c a2-> fis4 |
+  b-> b2 c8. fis16 |
+  c4 a8. fis16 a4 fis8. a,16 |
+  b4 b2 r4 |
+  r4 b'8.\mf\> e16 b4 g8. e16 |
+  g4 g2 r4\! |
+  r4 b8.\p e16 b4 g8. e16 |
+  g2 r |
+  R1 |
+  r4 a8. fis16 a2~ |
+  a1 |
+  r4 b8.\mf g16 b2~ |
+  b cis4.( d8) |
+  d2 r |
+  R1 |
+  r4 b8.\mf\> g16 b4 g8. b,16\! |
+  \setTextDecr
+  e1\> | d~ | d2 r\! |
+  R1*6 |
+  g4(--_\mdolce a-- g-- a--) |
+  c4( b8.) d16 b2~( |
+  b4 a) g e |
+  e( fis) a2~(\< |
+  a4 g) g a |
+  c4(\> b8.) d16 b2~( |
+  b4( \acciaccatura b8 d4)->\p cis4. fis,8 |
+  cis'1( |
+  b4) r r2 |
+  R1*6 |
+  r4 c8.\f a16 c4 a8. c,16 |
+  fis1 |
+  r4 cis'8. bes16 cis4 bes8. cis,16 |
+  g'1~\> |
+  g4\p a_\mdolce g a |
+  c4( b8.) d16 b2~ |
+  b4 a-.( g-. e-.) |
+  g( fis) d2 |
+  g4\< a g a |
+  c4(\! b8.) e16 d2~( |
+  d4 c b) e, |
+  a1(\> |
+  g4)\! r r2 |
+  R1 |
+  r2 r4 e'4(\p |
+  d) r r d,~ |
+  d r r d~\pp |
+  d ees( d) ees(
+
+  %first ending
+  d1)( | dis) |
+
+  %second ending
+  d2.\repeatTie d8.\mf e16 |
+
+  d2. d'8.\f e16 |
+  d4 c8. a16 c4 a8. gis16 |
+  b4 b2 f'8. g16 |
+  f4 e8. c16 e4 g8. a16 |
+  g4 f8. d16 f4 r |
+  r e,8.\ff d16 f4 r |
+  r e8. d16 f4 r |
+  \setTextDim
+  r8 e-.\ff^\markup{\italic "un poco pesante"} d-. f-. e-. d-. f-.\> e-. |
+  e4\p r r2 |
+  R1*2 |
+  r2 r4 gis(\p |
+  a) e'2 f4~( |
+  f e8) b d4( c8) b |
+  a4. a,8\< c( e) a c |
+  c2(\> b4)\! r |
+  R1 |
+  r2 r8 f\mf\< f f |
+  \repeat tremolo 4 f8\f \repeat tremolo 4 f8 |
+  \repeat tremolo 4 f8 \repeat tremolo 4 f8 |
+  e4 r r2 |
+  des'4\f c des c |
+  ees( d8.) f16 e2 |
+  f4 e f e |
+  g fis8. fis16 f2 |
+  R1*2 |
+  R1 | %cal.
+  R1*3 |
+  r2 a,2~\p |
+  a4 b a b |
+  d( cis8.) e16 cis2~( |
+  cis4 b) a-.( fis-.) |
+  \setTextCresc
+  a(\< gis) b-.( a-.) |
+  cis( b) fis'2~ |
+  fis4 a2(\f c,4) |
+  cis r r2 |
+  R1*5 |
+  r4 b4.->\ff b,8-> d-> f-> |
+  \times 2/3 {gis8(\> d) f-.} \times 2/3 {gis8( b) ais-.} cis8( b) ais b |
+  b4(\p cis) b--(\< c--) |
+  e( dis) gis2~(\f |
+  gis4\> fis) dis b |
+  dis2( cis)\! |
+  R1*2 |
+  c4-.(\pp b-. c-. b-.) |
+  \setTextCresc
+  d c2\< b8. d16 |
+  b4 a2 g4 |
+  e'4 d2 c8. e16 |
+  c4 b2 a4 |
+  fis'8(\f e4) e8 d( c4) c8 |
+  b8( a) b-. g-. fis( e) g-. e-. |
+  dis4 r r2 |
+  R1*4 |
+  r2 b'~\pp |
+  b1~ | b~\< |
+  b2 ais4.( cis8) |
+  b2. c4~\f |
+  c a2 fis4 |
+  b4 b2 c8. fis16 |
+  c4 a8. fis16 a4 fis8. a,16 |
+  b4 b2 r4 |
+  R1*10 |
+  r4 dis'8.\f\> b16 dis4 b8. dis,16 |
+  fis2\! r |
+  R1 |
+  \times 2/3 {r4 fis\p b} \times 2/3 {ais4( g) ais} |
+  b1~ |
+  b4( a8.) c16 a2~( |
+  a4 g) fis c |
+  e2( dis) |
+  R1 | %cal.
+  R1*6 | %a tempo
+  dis1~(\p |
+  dis2 gis4) r |
+  R1*7 |
+  cis4\pp dis_\mdolce cis dis |
+  fis4( f8.) aes16( f2~) |
+  f4 ees des bes |
+  bes( c) ees r |
+  R1*5 |
+  r2 r4 c~->\f |
+  c a2-> f4 |
+  c'1~ | c~ | c~ |
+  c2 e~\mf |
+  e2 e~\mf |
+  \setTextDecr
+  e2\> e |
+  e1~\p |
+  e4 e( b) g4~ |
+  g g( e) g, |
+  b1 |
+  e,~\pp | e~ | e~ | e~ | e~ |
+  e2 r |
+  r4 b''(\pp g b,) |
+  e1~ |
+  e2 r |
+}
+
+hornMvtII = \relative c''
+{
+  \transposition f
+  r8 r |
+  r8 d-.\pp d-. d-. r r |
+  r d-. d-. d-. r r |
+
+  %repeat
+  r8 e-.\pp e-. e-. r r |
+  d4. r8 d-. d-. |
+  d2.~ |
+  d4.~ d8 d-.\mf d-. |
+  d(-> g,) g-. g-. r r |
+  r4. r8 e'-. e-. |
+  e(-> a,) a-. a-. r r |
+  R2. |
+  r4. g8-.\p cis-. e-. |
+  d-. r r d,-. f-. b-. |
+  a-. r r r4. |
+  r8 d-. d-. d-. r r |
+
+  %end repeat
+  R2. |
+  f,,2.~\p\< | f~ | f |
+  f~\f | f |
+  R2.*2 |
+  r4. r8 d''-.\p d-. |
+  d-. r r r4. |
+  R2.*2 |
+  r4. r8 d-.\pp d-. |
+  d-. r r r4. |
+  r8 d-.\pp d-. d-. r r |
+  r d-. d-. d-. r r |
+  r e-. e-. e-. r r |
+  d4. r8 d-. d-. |
+  d2.~ |
+  d4. r8 d-.\mf d-. |
+  d(-> g,) g-. g-. r r |
+  r4. r8 e'-. e-. |
+  e(-> a,) a-. a-. r r |
+  R2. |
+  r4. g8-.\p cis-. e-. |
+  d-. r r d,-. f-. b-. |
+  a-. r r r4. |
+  r8 d-. d-. d-. r r |
+  R2. |
+  f,,2.~\p | f~ | f~ | f~\f | f4. r |
+  R2.*2 |
+  r4. r8 d''-.\p d-. |
+  d-. r r r4. |
+  R2.*2 |
+  r4. r8 d-. d-. |
+  d-. r r r4. |
+  r8 d-. d-.d-.\pp r r |
+  r d-. d-. d-. r r |
+  r8 e-. e-. e-. r r |
+  d4. r8 d-. d-. |
+  d2.~ |
+  d4. r8 d-.\mf d-. |
+  d(-> g,) g-. g-. r r |
+  r4. r8 e'-. e-. |
+  e(-> a,) a-. a-. r r |
+  g'(-> g,) g-. g-. r r |
+  r4. c |
+  b8-. e-. g-. fis4( e8) |
+  d4.( c) |
+  b8 r r r g-. g-. |
+  g-. r r r4. |
+  R2.*2 |
+
+  g,4.(\mf\< bes) |
+  g'( ees) |
+  c(\f f4 c'8) |
+  c4.~ c8 r r |
+  R2.*8 |
+  d,2.~\p | d |
+  g,~ |
+  g4 r8 g'4.~->\mf |
+  g(\< aes) |
+  c(\> aes)\! |
+  g2.~ |
+  g4 r8 bes4.~\f |
+  bes2. |
+  cis |
+  e~ | e~\< |
+
+  %2/4
+  \set Staff.timeSignatureFraction = #'(2 . 4)
+  \compressMusic #'(3 . 2)
+  {
+    e8(_\mespr f fis a) |
+    g4.(\> f8)\! |
+  }
+
+  %6/8
+  \set Staff.timeSignatureFraction = #'(6 . 8)
+  f2.(\> bes,~) |
+  bes2.~\p |
+  bes4. r |
+  g,4.(\f bes |
+  g' ees) |
+  c4.( f4 c'8) |
+  c2.~\> |
+  c(\p |
+  bes) |
+  bes~ |
+  bes4 r8 bes,4.~(\f |
+  bes des) |
+  bes'( g) |
+  d(\> g4 d'8) |
+  d2.\! |
+  R2.*3 |
+  r4. r8 d-.\p d-. |
+  d-. r r r4. |
+  r r8 d-.\pp d-. |
+  d-. r r r d-. d-. |
+  d-. r r r4. |
+  r8 d-. d-. d-. r r |
+  r8 d-. d-. d-. r r |
+  r8 e-. e-. e-. r r |
+  d4.~ d8 d-. d-. |
+  d2.~ |
+  d4.~ d8\p d-. d-. |
+  d(-> g,) g-. g-. r r |
+  r4. r8 e'-. e-. |
+  e(-> a,) a-. a-. r r |
+  R2. |
+  r4. g8-. cis-. e-. |
+  d-. r r d,-. f-. b-. |
+  a-. r r r4. |
+  r8 d-. d-. d-. r r |
+  R2. |
+  f,,2.~\p\< | f~ | f~ | f~\f | f |
+  R2.*2 |
+  r4. r8 d''-. d-. |
+  d-. r r r4. |
+  R2.*2 |
+  r4. r8 d-. d-. |
+  d-. r r r4. |
+  r8 d-. d-. d-.\pp r r |
+  r8 d-. d-. d-. r r |
+  r8 e-. e-. e-. r r |
+  d4. r8 d-. d-. |
+  d2.~ |
+  d4. r8 d-.\mf d-. |
+  d(-> g,) g-. g-. r r |
+  r4. r8 e'-. e-. |
+  e(-> a,) a-. a-. r r |
+  g'(-> g,) g-. g-. r r |
+  r4. c |
+  b8-. e-. g-. fis4( e8) |
+  d4.( c) |
+  b8 r r r4. |
+  r8 g,-. g-. g-. r r |
+}
+
+hornMvtIII = \relative c
+{
+  \transposition f
+  R1*4 |
+  \clef "bass^8"
+  g1~\f\> | g2. r4\! |
+  \clef treble
+  e''2\p^\mespr d4.( f8) |
+  f4(\< e) e g |
+  g(\> f4. g8\<) b-.( e-.) |
+  d4(\f\> c) g8(\p a e g) |
+  f2( b,4.) a'8 |
+  a4(\< g) g--( c--) |
+  c2\> b8( c e, b') |
+  a2(\p g4) f |
+  e2(\mf d4.) f8 |
+  f4( e) e\< g |
+  g(\> f4. g8)\< b-.( e-. |
+  d4(\> c) g8(\!_\mdolce a e g) |
+  f2( b,4.) a'8 |
+  a4( g) g c |
+  d,2 f4( e8) d |
+  c2. r4 |
+  R1*7 |
+  c2\< b8( c d g) |
+  f2\f r |
+  e2 c8( d e a) |
+  aes4( g8.) c16 f,2 |
+  g ees8( f g c) |
+  des2-> c-> |
+  b4(-> f8.) b16 c2 |
+  r4 fis,2( g4) |
+  gis4( f8.) g16 a2 |
+  bes4( e,8.) a16 bes2 |
+  bes4(\> e,8.) a16 bes2 |
+  b1~\p | b2.( a4) |
+
+  %a tempo
+  gis2_\mespr^\mdolce fis4.( a8) |
+  a4( gis) gis b |
+  b( a4. b8)\< dis( gis) |
+  gis4(\f\> e2) d4 |
+  cis2.\mf a4 |
+  b2 cis |
+  d2\f r4 gis,-^\f |
+  d'1-^ |
+  R1*4
+
+  %rit
+  R1 |
+
+  %a tempo
+  e,2\ff d4. f8 |
+  f4( e) e g |
+  g( f4. g8)\< b-.( e-.) |
+  d4(\> c) g8(\! a e g) |
+  f2( b,4.) a'8 |
+  a4( g) g c |
+  c2 b8( c e, b') |
+  a2(\> g4) f |
+  e1\p |
+  a4( g f e) |
+  d2 e4.( c8) |
+  b4( a b2) |
+  c8( d e g) g2 |
+  a( g) |
+  g1 |
+  c,8 c4 c c c8 |
+  c2( b) |
+  c1 |
+  c2( b4) g |
+  g2 r8 g'(\p\<^\mmaespr b e) |
+  d4(\> c)\! g8( a e g) |
+  \setTextDecr
+  f2\< b,4.( c8) |
+  c1~\pp | c\fermata |
+}
+
+hornMvtIV = \relative c
+{
+  \transposition f
+  r4 |
+  e1~\p | e~ | e~ | e2. r4 |
+  gis'4(\mf g fis)\f dis |
+  e4. f8 fis4 b, |
+  gis'( g fis dis |
+  e) b-. e,-. r |
+  r4 cis'8\f r fis2~\> |
+  f2. r4\! |
+  r4 cis8 r fis2~\> |
+  fis4 r4 r2 |
+  gis4(\mf g fis dis |
+  e4.) f8 fis4 b, |
+  gis'( g fis dis |
+  e) b-. e,-. r |
+  r4 cis'8(\f a') a4. gis8 |
+  fis4. e8 dis4 r |
+  r4 gis,8( gis') gis4( fis8-.) e-. |
+  e4(\> dis8-.) cis-. c4\! r |
+  R1*2 |
+  r4 cis8(\f a') a4. gis8 |
+  fis4. e8 dis4 r |
+  r4 gis,8( gis') gis4( fis8-.) e-. |
+  e4(\> dis8-.) cis-. c4\! r |
+  R1*2 |
+  r4 c'8(\f cis) cis2 |
+  r4 dis8( e) e2 |
+  e1~\sfpp | e |
+  b,~\p | b~ |
+  b4 gis'8(\mf b) b,2~ |
+  b2. r4 |
+  r4 gis'8( b) cis,2~ |
+  cis2. r4 |
+  r4 f8( fis) fis2 |
+  r4 g8(\f\> gis) gis4 f |
+  fis dis e fis |
+  gis fis e f |
+  e2.\! r4 |
+  R1*2 |
+  r2 r4 fis4\f |
+  g4.-> gis8 gis4 dis' |
+  dis4.-> cis8 cis4 fis |
+  fis4.-> b,8 b4 cis |
+  fis,2. r4 |
+  R1*3 |
+  r2 r4 b4\f |
+  c4.-> cis8 cis4 gis' |
+  gis4.-> fis8 fis4 b, |
+  c4.-> cis8 cis4 gis' |
+  gis4.-> fis8 fis4 r |
+  R1*2 |
+  r2 r4 f,\mf |
+  bes4.-> bes8 bes4 r |
+  r2 r4 f |
+  bes4.-> bes8 bes4 r |
+  R1*3 |
+  r4 fis\p f( fis) |
+  r fis( f) fis\< |
+  g4.->\f gis8 gis4 dis' |
+  dis4.-> cis8 cis4 fis |
+  fis4.-> b,8 b4 cis |
+  fis,2. r4 |
+  r2 r4 b\mf |
+  b4. b8 b4 dis |
+  fis,4. fis8 fis4 fis, |
+  b2. r4 |
+  r4 f'2(_\mdolce fis4) |
+  dis2. r4 |
+  r4 f'2( fis4) |
+  dis4 fis,( dis') fis,( |
+  dis1~) |
+  dis2. r4 |
+  b'1~\pp | b~ |
+  %poco cal.
+  b~ | b2. r4 |
+
+  %a tempo
+  R1*4 |
+  r4 cis,8\mf r fis2~ |
+  fis2. r4 |
+  r cis8 r fis2~ |
+  fis2. r4 |
+  R1*2 |
+  cis1~ |
+  cis2. c4\f |
+  a'2. a4 |
+  fis'4.-> fis8 fis4 fis, |
+  b4.-> b8 b2~ |
+  b2. r4 |
+  r4 b\f g( fis) |
+  e d( c) b |
+  a e'' c( b) |
+  a g fis r |
+  r c'( ees) r |
+  r fis,( c') fis,, |
+  b2 r |
+  e,1~\f | \repeat unfold 5 e~ | e4. r8 r2 |
+  r2 r4 a4\f |
+  dis4.-> dis8 dis4 r |
+  r2 r4 a |
+  f'4.-> f8 f4 r |
+  r f8(\mf aes) aes4 r |
+  r4 aes8( b) b2~( |
+  \setTextDecr
+  b1~\> |
+  b2 bes~ |
+  bes4) r r f(\p^\mdolce |
+  d c bes) r |
+  r2 r4 e |
+  cis( b bes) r |
+  r2 r4 dis'\pp |
+  b( ais gis) d |
+  gis( ais b) r |
+  R1 |
+  r4 b( dis) r |
+  r4 b( dis) r |
+  R1 |
+  r4 gis,( b) r |
+  r4 gis( b) r |
+  gis(\pp b) r gis(-> |
+  b) r r2 |
+  R1*4 |
+  r4 cis,8\f r fis2~ |
+  fis2. r4 |
+  r4 cis8 r fis2~ |
+  fis4 r r2 |
+  gis( g) fis dis |
+  e4. f8 fis4 b, |
+  gis'( g) fis dis |
+  e b-. e,-. r |
+  r4 cis'8(\f a') a4. gis8 |
+  fis4. e8 dis4 r |
+  r4 gis,8( gis') gis4( fis8) e-. |
+  e4( dis8) cis-. c4 r |
+  R1*2 |
+  r4 cis8(\f a') a4. gis8 |
+  fis4. e8 dis4 r |
+  r4 gis,8( gis') gis4( fis8) e-. |
+  e4( dis8) cis-. c4 r |
+  R1*2 |
+  r4 c'8(\mf cis) cis2~ |
+  cis2. r4 |
+  \setTextCresc
+  r c8(\< cis) cis2~ |
+  cis2. r4 |
+  r gis8-.\f gis-. gis( fis) fis( cis') |
+  cis2->( c) |
+  r4 fis,8-. fis-. fis( e) e( dis') |
+  dis4( cis) gis e |
+  r4 d8( dis) dis2 |
+  r4 dis8( e) e2~\> |
+  e( g) |
+  gis( fis) |
+  f1\!^\mdolceespr |
+  ees2.( ges4) |
+  ges2( f) |
+  f aes |
+  aes( ges~ |
+  ges4\< aes) c f |
+  ees2(\> des) |
+  aes4(\!_\mdolce bes f aes) |
+  ges1( |
+  c,2.)\< bes'4 |
+  bes2(\> aes) |
+  aes2\! des |
+  des1 |
+  c4( des f, c') |
+  \setTextDim
+  bes1\> |
+  aes2( ges) |
+  f1(\p |
+  ees2.) ges4 |
+  ges2( f) |
+  f aes |
+  aes(\< ges~ |
+  ges4 aes) c f |
+  ees2(\> des) |
+  aes4(\! bes f aes) |
+  ges2. r4 |
+  R1*3 |
+  gis1(\mf |
+  fis2.) a4 |
+  a2( gis) |
+  gis b |
+  a r |
+  R1 |
+  r2 r4 c\f |
+  c4.-> fis,8 fis4 r |
+  r2 r4 d' |
+  d4.-> gis,8 gis4 r |
+  r2 r4 e' |
+  e4.-> e,8 e4 r |
+  r2 e~\mf\< |
+  e g~ |
+  g bes~ |
+  bes e\! |
+  r4 b,8(\mf b') b2~ |
+  b4 a8( gis) gis4 r |
+  r4 b,8(\< cis') cis2~\> |
+  cis4 b8( a) a4 g\p |
+  \setTextCresc
+  gis b, b'2~\< |
+  b4 a8( gis) gis4\! r |
+  \set crescendoText = \markup {\italic "cresc. molto"}
+  \set crescendoSpanner = #'dashed-line
+  r4 b,8(\< cis') cis2~ |
+  cis4 b8( a) a4 gis8( fis) |
+  e4\f r r2 |
+  r2 a2\mf |
+  gis r |
+  \set decrescendoText = \markup {\italic "sempre dim."}
+  \set decrescendoSpanner = #'dashed-line
+  r a\p\> |
+  aes2.( g4 |
+  aes g aes g) |
+  aes2.\! r4 |
+  R1*2 |
+  r2 gis\mf |
+  cis1~ |
+  \setTextCresc
+  cis2 c\< |
+  b1~ | b~ |
+  b2 gis |
+  a1~ |
+  a2 g |
+  gis1~ |
+  gis2\! r |
+  r d->\f |
+  g1~-> |
+  g2 g |
+  cis a |
+  d cis |
+  gis' gis |
+  a1\ff |
+  r4 a,( b) c |
+  c1\> |
+  b2( a) gis2.\! r4 |
+  r2 a\p |
+  gis2. r4 |
+  r2 a |
+  gis1 |
+  b,\ff |
+  e~ |
+  e4 r r2 |
+}
+

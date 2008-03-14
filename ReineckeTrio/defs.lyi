@@ -1,0 +1,124 @@
+tempoMark = #(define-music-function (parser location markp) (string?)
+#{
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \mark \markup { \bold $markp }
+#})
+
+mdolce = \markup{\italic dolce}
+mdolceespr = \markup{\italic "dol. espress."}
+mespr = \markup{\italic espress.}
+mmaespr = \markup{\italic "ma espress."}
+ppdolce = #(make-dynamic-script (markup "pp" #:normal-text #:italic "dolce"))
+pcongrazia = #(make-dynamic-script (markup "p" #:normal-text #:italic "con grazia"))
+pcalando = #(make-dynamic-script (markup "p" #:normal-text #:italic "calando"))
+sfpp = #(make-dynamic-script "sfpp")
+
+outlineMvtI =
+{
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.skipBars = ##t
+  \time 4/4
+  \tempoMark "Allegro moderato"
+  s1*2 |
+  \repeat volta 2
+  {
+    s1*66 |
+  }
+  \alternative
+  {
+    {s1*2 |}
+    {s1 |}
+  }
+  s1*92 | \bar "||"
+
+  %a major
+  s1*24 | \bar "||"
+
+  %a minor
+  s1*21 | \bar "|."
+}
+
+midiOutlineMvtI =
+{
+  \tempo 4 = 120
+  s1*2 |
+  %repeat
+  s1*66 |
+  %first ending
+  s1*2 |
+  %second ending
+  s1 |
+
+  s1*92 |
+
+  %a major
+  s1*24 |
+
+  %a minor
+  s1*21 |
+}
+
+outlineMvtII =
+{
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.skipBars = ##t
+  \time 6/8
+  \tempoMark "Scherzo" %TODO Molto vivace
+  \partial 8*2 s8 s |
+  s2.*2 |
+  \repeat volta 2
+  {
+    s2.*12 |
+  }
+  s2.*59 | \bar "||"
+  s2.*93 | \bar "|."
+}
+
+midiOutlineMvtII =
+{
+  \tempo 4. = 108
+  s8 s |
+  s2.*2 |
+  %repeat
+  s2.*12 |
+
+  %end repeat
+  s2.*59 |
+  s2.*93 |
+}
+
+outlineMvtIII =
+{
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.skipBars = ##t
+  \time 4/4
+  \tempoMark "Adagio"
+  s1*42 |
+
+  %a tempo
+  s1*12 |
+
+  %rit
+  s1 |
+
+  %a tempo
+  s1*24 | \bar "|."
+}
+
+outlineMvtIV =
+{
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.skipBars = ##t
+  \time 4/4
+  \tempoMark "Allegro ma non troppo"
+  \partial 4 s4 |
+  s1*76 |
+
+  %a tempo
+  s1*190 | \bar "|."
+}
