@@ -20,6 +20,7 @@ instrument = "Oboe"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
+      #(set-accidental-style 'modern)
       << \oboeMvtI \outlineMvtI >>
     }
   }
@@ -27,7 +28,24 @@ instrument = "Oboe"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
+      #(set-accidental-style 'modern)
       << \oboeMvtII \outlineMvtII >>
+    }
+  }
+  \score
+  {
+    \new Staff %\with { \consists "Page_turn_engraver" }
+    {
+      #(set-accidental-style 'modern)
+      << \oboeMvtIII \outlineMvtIII >>
+    }
+  }
+  \score
+  {
+    \new Staff %\with { \consists "Page_turn_engraver" }
+    {
+      #(set-accidental-style 'modern)
+      << \oboeMvtIV \outlineMvtIV >>
     }
   }
 }

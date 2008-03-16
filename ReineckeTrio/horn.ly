@@ -20,6 +20,7 @@ instrument = "Horn"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
+      #(set-accidental-style 'modern)
       << \hornMvtI \outlineMvtI >>
     }
   }
@@ -27,6 +28,7 @@ instrument = "Horn"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
+      #(set-accidental-style 'modern)
       << \hornMvtII \outlineMvtII >>
     }
   }
@@ -34,6 +36,7 @@ instrument = "Horn"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
+      #(set-accidental-style 'modern)
       << \hornMvtIII \outlineMvtIII >>
     }
   }
@@ -41,6 +44,7 @@ instrument = "Horn"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
+      #(set-accidental-style 'modern)
       << \hornMvtIV \outlineMvtIV >>
     }
   }

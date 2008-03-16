@@ -331,3 +331,280 @@ oboeMvtII = \relative c''
   c-. r r r4. |
 }
 
+oboeMvtIII = \relative c''
+{
+  \key f \major
+  R1*2 |
+  c2\p\< d4.( f8) |
+  f4( e) f( a)
+  a2(\f\> g4) b, |
+  d2( c4 bes) |
+  a\p r r2 |
+  R1*15 |
+  g2\mfsempre e8( f g c) |
+  f,4( e8. g16 d4 c) |
+  b2 c8( d e a |
+  g8.) e16( fis8.) d16( g2) |
+  g2\< e8( f g e') |
+  d4(\> c8. a16 c4) g |
+  e2\! d8( e f g) |
+  g2( c,4) r |
+  R1*2 |
+  f2\f des8( ees f bes) |
+  aes4( g8. c16 f,2) |
+  r4 c8.( ges'16 f2) |
+  e2 f |
+  aes-> g |
+  bes-> a |
+  c2~( c8 b a) dis, |
+  c'2(\> b8 a g) f |
+  e2.\p r4 |
+  R1*5 |
+  fis2\mf gis4.( b8) |
+  b4(\< ais) b( d) |
+  d(\f cis) g'2~ |
+  g4 r r2 |
+  r4 d(\pp cis g') |
+  g2. r4 |
+  R1*2 |
+
+  %rit
+  R1 |
+
+  %a tempo
+  R1*8 |
+  c,2\mf a8( bes c f) |
+  bes,4( a8. c16 g4 f) |
+  e2 f8( g a d |
+  c8.) a16( b8.) g16( c2) |
+  c2(\< a8( bes c a') |
+  g4->(\> f8. d16 f4-> c)\! |
+  a2_\mdolce g8( a bes c) |
+  f,1 |
+  bes2\mf g8( a bes g') |
+  f1 |
+  d2 c8( d e a) |
+  g4(\> f) c2~ |
+  c1~\p |
+  \setTextDecresc
+  c4\> c bes4.( a8) |
+  a1~\pp |
+  a |
+}
+
+oboeMvtIV = \relative c'
+{
+  \key a \major
+  r4 |
+  R1*4 |
+  e4(\mf dis d bis) |
+  cis2 d |
+  e4( dis d bis |
+  cis) d-. cis-. r |
+  R1 |
+  r4 e'(\p b) r |
+  R1 |
+  r4 e e,2~ |
+  e4(\mf dis d bis) |
+  cis2 d |
+  e4( dis d bis) |
+  cis e a-. a8(\f cis) |
+  cis2.-> b8-. a-. |
+  a4(\> gis8) fis-. eis4 eis8( a) |
+  a2.->\p gis8-. fis-. |
+  fis4( e8-.) d-. cis4 r |
+  r dis8-.\p fis-. fis(-> eis) r4 |
+  r fis8-.\mf a-. a(\> gis) gis(\f cis) |
+  cis2.-> b8-. a-. |
+  a4( gis8) fis eis4 eis8( a) |
+  a2.-> gis8-. fis-. |
+  fis4( e8-.) d-. cis4 r |
+  \setTextCresc
+  r g'8-.\p\< g-. g( fis) r4\! |
+  r b8-.\mf b-. b(\< ais) ais( b) |
+  b2.\f b8( bis) |
+  bis2. bis8( a') |
+  a1\sfpp |
+  R1*2 |
+  r2 r4 bis,8( e) |
+  e,2. dis8(^\mespr\< e) |
+  gis4(\> fis8 e) e4\! cis'8( e) |
+  fis,2.-> eis8(\< fis) |
+  ais4(\> gis8 fis) fis4\! fisis8(\< gis) |
+  gis2. gis8( e') |
+  e2.\f dis8( cis) |
+  b4\> bis8( cis) cis4 gis8( a) |
+  a4\! eis8( fis) fis4 cis(\p |
+  e4.->) dis8 dis4 r |
+  R1*6 |
+  r2 r4 b''(\pdolce |
+  gis e b) gis'( |
+  e cis gis) e'(\< |
+  b gis e) gis |
+  gis2\> fis4 e |
+  b2.\! r4 |
+  R1*2 |
+  r2 r4 gis''(\f |
+  \setTextDecresc
+  e cis gis) e'(\> |
+  b gis e) gis |
+  gis2( fis4) e |
+  dis4\p r r2 |
+  R1*10 |
+  r2 r4 b''(\mf |
+  gis e b) gis'( |
+  e\> cis gis) e'( |
+  b gis e) \acciaccatura gis8 fis4 |
+  e2\! r2 |
+  r4 cis'(_\mdolce e dis) |
+  e2. r4 |
+  r4 cis(\p\> e dis |
+  e) dis( e) dis( |
+  e1)\pp |
+  R1*3 |
+
+  %calando
+  R1*2 |
+
+  %a tempo
+  R1*5 |
+  r4 e(\mf b) r |
+  R1 |
+  r2 r4 e |
+  e,( dis d) bis |
+  cis2. fis'4\< |
+  fis,( e d) cis |
+  bis2.\! b4\f |
+  f'4.-> f8 f4 f |
+  d'4.-> d8 d4 r |
+  r2 r4 e, |
+  b'4.-> b8 b4 e |
+  c( b a) a |
+  f( e) d a'' |
+  f( e) d c |
+  b( a) gis r |
+  r b( d) r |
+  r d( b) d,~ |
+  d2 r4 e'\fsempre |
+  cis( bes a) g |
+  f( e) d a'' |
+  f( e d) c |
+  bes( a) g2~ |
+  g1~ |
+  g2. r4 |
+  R1*8 |
+  r2 r4 ees'\pdolce |
+  c( bes aes) r |
+  r2 r4 dis |
+  b( ais gis) r |
+  r2 r4 gis'\pp |
+  e( dis cis) r |
+  R1 |
+  r2 r4 g |
+  c( dis e) fisis |
+  gis2. r4 |
+  r2 r4 fisis( |
+  gis) fis( e) dis( |
+  cis) r r2 |
+  R1*8 |
+  r4 e(\p b) r |
+  R1 |
+  r4 e e,2~ |
+  e4(\mf dis d bis) |
+  cis2 d |
+  e4( dis d) bis( |
+  cis) e-. a-. a8(\f cis) |
+  cis2.-> b8-. a-. |
+  a4( gis8-.) fis-. eis4 eis8( a) |
+  a2.-> gis8-. fis-. |
+  fis4( e8-.) d-. cis4 r |
+  r dis8-. fis-. fis( eis) r4 |
+  r4 fis8-.\mf a-. a(-> gis) gis(\f cis) |
+  cis2.-> b8-. a-. |
+  a4( gis8-.) fis-. eis4 eis8( a) |
+  a2.-> gis8-. fis-. |
+  fis4( e8-.) d-. cis4 r |
+  r g'8-.\mf g-. g( fis) r4 |
+  \setTextDecr
+  r b8-. b-. b(\> ais) ais( b) |
+  b2. r4 |
+  r2 r4 b8( bis) |
+  bis1~ |
+  bis2. r4 |
+  cis1(\f |
+  b2.) d4 |
+  d2->( cis) |
+  cis fis |
+  fis->( eis~) |
+  eis bis |
+  dis1( |
+  cis2) r |
+  R1*23 |
+  r2 r4 cis,4\f |
+  d4.-> dis8 dis4 ais' |
+  ais4.-> gis8 gis4 cis |
+  cis4.-> fis,8 fis4 gis |
+  cis,2 r |
+  R1*3 |
+  r2 r4 e |
+  eis4.->\f fis8 fis4 cis' |
+  cis4.-> b8 b4 e |
+  e4. a,8 a4 r |
+  R1 |
+  r4 d( cis g') |
+  g2 r |
+  r4 e( dis a') |
+  fis4 dis \times 2/3 {c4 a fis} |
+  e4->( dis2) c'4 |
+  b->( a2) fis'4 |
+  e4->( dis2) c'4 |
+  b->( a2) dis,4 |
+  e2.\> d8(\mf cis) |
+  cis4( b8 ais) ais4 fis8(\< fis') |
+  fis2.\> e8( d) |
+  d4(\! cis8 b) b4 e,8(\p e') |
+  \setTextCresc
+  e2.\< d8( cis) |
+  cis4 b8( ais) ais4 fis8(\f fis') |
+  fis2. e8( d) |
+  d4->(\f cis8 b) b4.->( a8) |
+  a4 r r2 |
+  r4 fis\mf a( gis) |
+  a2 r |
+  r4 fis\p a( gis) |
+  \set decrescendoText = \markup {\italic "sempre dim."}
+  \set decrescendoSpanner = #'dashed-line
+  a2.( gis4\> |
+  a gis a gis |
+  a1 |
+  bis,)\pp |
+  cis1~ |
+  cis2 r |
+  R1*3 |
+  r2 cis'(\mf |
+  fis1~ |
+  fis2 f) |
+  e1~ |
+  e2 eis( |
+  fis) fis |
+  g1~-> |
+  \setTextCresc
+  g2 gis\< |
+  a1~-> |
+  a2 ais( |
+  b) bis( |
+  cis) cis |
+  d1\ff |
+  r4 f,( e d) |
+  d1\> |
+  gis,2.( a4) |
+  a2.\! r4 |
+  r fis\p a( gis) |
+  a2. r4 |
+  r fis a( gis) |
+  a2 r |
+  e1\ff |
+  cis~ |
+  cis4 r r2 |
+}
+

@@ -9,7 +9,10 @@ mdolce = \markup{\italic dolce}
 mdolceespr = \markup{\italic "dol. espress."}
 mespr = \markup{\italic espress.}
 mmaespr = \markup{\italic "ma espress."}
+mfsempre = #(make-dynamic-script (markup "mf" #:normal-text #:italic "sempre"))
+fsempre = #(make-dynamic-script (markup "f" #:normal-text #:italic "sempre"))
 ppdolce = #(make-dynamic-script (markup "pp" #:normal-text #:italic "dolce"))
+pdolce = #(make-dynamic-script (markup "p" #:normal-text #:italic "dolce"))
 pcongrazia = #(make-dynamic-script (markup "p" #:normal-text #:italic "con grazia"))
 pcalando = #(make-dynamic-script (markup "p" #:normal-text #:italic "calando"))
 sfpp = #(make-dynamic-script "sfpp")
@@ -109,6 +112,21 @@ outlineMvtIII =
   s1*24 | \bar "|."
 }
 
+midiOutlineMvtIII =
+{
+  \tempo 4 = 60
+  s1*42 |
+
+  %a tempo
+  s1*12 |
+
+  %rit
+  s1 |
+
+  %a tempo
+  s1*24 |
+}
+
 outlineMvtIV =
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
@@ -120,5 +138,16 @@ outlineMvtIV =
   s1*76 |
 
   %a tempo
-  s1*190 | \bar "|."
+  s1*189 | \bar "|."
 }
+
+midiOutlineMvtIV =
+{
+  \tempo 4 = 132
+  s4 |
+  s1*76 |
+
+  %a tempo
+  s1*189 |
+}
+
