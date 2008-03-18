@@ -4,6 +4,70 @@ rightMvtI = \relative c'
   {
     r4 <e c>8( f,) r4 <c'' e>4 |
   }
+  r4 <d, b>8( g,) r4 <d'' f>4 |
+  \repeat unfold 2
+  {
+    r4 <e, c>8( f,) r4 <c'' e>4 |
+  }
+  r4 <e, c>8( fis,) r2 |
+  r4 <g' e>8( b,) <b a>2 |
+  e,8( g b g' e4) r |
+  \clef bass
+  << {f4->} \\ {\times 2/3 {f8( b, f)} } >> r4
+    << {d'4->} \\ {\times 2/3 {d8( b d,)} } >> r4 |
+  \clef treble
+  \times 2/3 {r8 e( gis} \times 2/3 {b e b'} \times 2/3 {e b e,)} r4 |
+  \clef bass
+  << {f4->} \\ {\times 2/3 {f8( b, f)} } >> r4
+    << {d'4->} \\ {\times 2/3 {d8( b d,)} } >> r4 |
+  r4 \clef treble s2. |
+  \repeat unfold 2
+  {
+    r4 <c' a>8( f,) r4 <c'' e>4 |
+  }
+  r4 <c, e>8( a) r4 <c' e>8( a) |
+  r4 <c, e>8( a) r4 \clef bass << {<b d>8( <a c>) | b2} \\ {fis4 | f2} >>
+    <fis c'>8( d a' d |
+  \clef treble
+  b8 d g b d4) f,8.( e16) |
+  \times 2/3 {e8( ais b} \times 2/3 {cis d f)}
+    << {e4~( \times 2/3 {e4 b8)}} \\ {\times 2/3 {e8( e, f} \times 2/3 {fis d gis)} } >> |
+  << {c4( e,)} \\ {a( e)} >> r2 |
+  \clef bass
+  \times 2/3 {r8 c,( e} \times 2/3 {a c g')} <fis c a>2 |
+  \clef treble
+  \times 2/3 {r8 g,( b} \times 2/3 {e g b)} <e b gis e>2~ |
+  <e b gis e> <c a e> |
+  << {b2( a~) | a} \\ {<e c>1~ | <e c>2} >> <fis c a>2 |
+  <<
+    {\times 2/3 {g'4( d) g} \times 2/3 {\times 2/3 {fis8( g fis} d4) fis}}
+    \\
+    {d2 c}
+  >>
+  \times 2/3 {g'4( b,) e} \times 2/3 {c fis, d'} |
+  \times 2/3 {b4( d,) b'} \times 2/3 {\times 2/3 {c8->( d c} g4) c} |
+  \times 2/3 {b4( g) b} \times 2/3 {a( ees) a} |
+  \times 2/3 {d,4( b) d} \times 2/3 {\times 2/3 {a'8->( b a} ees4) a} |
+  \times 2/3 {g4( d) g} \times 2/3 {f( c) f} |
+  \times 2/3 {b,4( g) b} \times 2/3 {f'( c) f} |
+  \times 2/3 {a,( f a} \times 2/3 {<b f> f b)} |
+  <e, g c>4 <a d> <e g c> <a d> |
+  <f' c a>4 <e c>2 <e b>8.( g16 |
+  <e c g>4) <d a> <c g> <e, a> |
+  <c e a>( <d g b>) <f b d>2~ |
+  <f b d>4 <g c> <e g c> <a d> |
+  <a c f> <g c e>2 <g ais e'>8.( g'16 |
+  <g, b e>4) <b e g>( <a dis fis>) <fis a b> |
+  <a b fis'>1 |
+  <g b e>4 r r2 |
+  <<
+    {<c e>1 | <d e>1~ | <d e>8}
+    \\
+    {r8 e,4 e e e8~ | e e4 e e e8~ | e8}
+  >>
+  <e e'>4 <e e'> <e e'> <e e'>8~ |
+  <e e'> <e e'>4 <f a b f'> <f a b f'> <f a b f'>8 |
+  r <a b>4 <a b d> <a bis> <a cis>8 |
 }
 
 leftMvtI = \relative c,
@@ -13,6 +77,66 @@ leftMvtI = \relative c,
   {
     << {a8( e') r4} \\ {a,2} >> <a' e'>2 |
   }
+  << {a,8( f') r4} \\ {a,2} >> <a' f'>2 |
+  \repeat unfold 2
+  {
+    << {a,8( e') r4} \\ {a,2} >> <a' e'>2 |
+  }
+  << {ais,8( g') r4} \\ {ais,2} >> <ais' e' g>2 |
+  << {b8( g') r4} \\ {b,2} >> <b b,>2 |
+  e2. << {\times 2/3 {f8( b f')}} \\ {f,4->} >> |
+  r4 << {\times 2/3 {d8( b' d)}} \\ {d,4->} >>
+    r4 << {\times 2/3 {b8( f' b)}} \\ {b,4->} >> |
+  e,2. << {\times 2/3 {f8( b f')}} \\ {f,4->} >> |
+  r4 << {\times 2/3 {d8( b' d)}} \\ {d,4->} >>
+    r4 << {\times 2/3 {b8( f' b)}} \\ {b,4->} >> |
+  <<
+    {
+      \times 2/3 {e8->_( b' e} %NOTE: Cross staff weirdness here if we let the slur be above. Accent and slur endpoint both end up in right hand.
+        \change Staff="RH" \times 2/3 {e' b' e} b8) e,-.( d-. b-.) |
+        \change Staff="LH"
+    }
+    \\
+    {
+      e,,1 |
+    }
+  >> |
+  \repeat unfold 2
+  {
+    << {a,8( e') r4} \\ {a,2} >> <a' e'>2 |
+  }
+  << {g,8( e') r4} \\ {g,2} >>
+    << {<g' a>8( e') r4} \\ {<g, a>2} >> |
+  << {fis,8( e') r4} \\ {fis,2} >>
+    << {d'8( d') r4} \\ {d,2} >> |
+  << {gis2( a | b2.) <a f'>4} \\ {gis4 d a' d, | r d2.} >> |
+  << {<gis e'>2. r4} \\ {r4 d2 d4} >> |
+  \times 2/3 {d8( a' c} \times 2/3 {e8 a c} e4) r |
+  d,,2 \grace {cisis16[( dis]} \afterGrace dis2\trill {cisis16[ dis]} |
+  e2) \times 2/3 {c8( gis' e'} \times 2/3 {gis b e)} |
+  << {<gis, b>2->( <a c>)} \\ {c,1} >> |
+  d1 |
+  d, |
+  \clef treble
+  << {g''2( a) | g( a)} \\ {<d, g,>1 | <d g,>} >> |
+  \clef bass
+  << {\times 4/6 {g,,8 d' g b d g} e2( | d2)} \\ {g,,2( g'~) | g} >>
+    \times 2/3 {c,,8( fis c' fis c'4)} |
+  <b d, g,>2 \times 2/3 {c,,8( fis c' fis c'4)} |
+  <g b>2 \times 2/3 {a8( d, g,4) r} |
+  \times 2/3 {g8( d g,4) r} \times 2/3 {a''8( d, g,4) r} |
+  d'2 g, |
+  c,8( g' f' g, c, g' f' g, |
+  c, g' g' g,~ g) g( g' g, |
+  c, g' f' g, e' g, c g |
+  g,8) g'4 g g g8( |
+  c, g' e' g, c, g' f' g, |
+  c, g' g' g,~ g) g( c g |
+  b,) b'4 b b b8 |
+  << {r8 b4 b8( fis b cis dis)} \\ {e,1} >>
+  e'8( ais, c b \times 2/3 {ais8 b fis} \times 2/3 {a g e)} |
+  a,1~ |
+  a4
 }
 
 dynamicsMvtI =
