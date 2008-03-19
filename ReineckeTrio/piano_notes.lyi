@@ -68,6 +68,48 @@ rightMvtI = \relative c'
   <e e'>4 <e e'> <e e'> <e e'>8~ |
   <e e'> <e e'>4 <f a b f'> <f a b f'> <f a b f'>8 |
   r <a b>4 <a b d> <a bis> <a cis>8 |
+  r8 <a e'>4 <a cis> <a d> <d f>8 |
+  <d f b>1~ |
+  <d f b>8 <b d f>4 <b d e> <b d f> <d f b>8 |
+  <ees fis c'>1~ |
+  <ees fis c'>2 \clef bass <dis, c'>2 |
+  <e g c>4( <f a d> <e g c> <f a d>) |
+  \clef treble
+  <a c f> << {e'2.~ | e4} \\ {<c g>2 <b g>4 | <c g>} >>
+  \clef bass
+  <f, a d>4-.( <e g c>-. <c e a>-.) |
+  <e g c>( <d g b>) <b d g>2 |
+  <e g c>4( <a d> <e g c> <a d>) |
+  \clef treble
+  <bes d f>4 <c e>8. a'16 <bes, e g>2~( |
+  <bes e g>4 <a d f>) <g cis e> a |
+  <<
+    \new Voice {<f a d>4}
+    {
+      \change Staff=LH
+      \voiceOne
+      \times 2/3 {r8 r d(} \times 2/3 {f a \oneVoice \change Staff=RH c} \times 2/3 {b d f} \times 2/3 {b d b')} |
+    }
+  >> |
+  <e, c'>4 \times 2/3 {e8( g e'} \times 2/3 {d f, a} \times 2/3 {b, d a'} |
+  \times 2/3 {g e c} \times 2/3 {fis, c' e} \times 2/3 {d b f} \times 2/3 {d g f} |
+  \times 2/3 {e g c} \times 2/3 {e8 g e'} \times 2/3 {d f, a} \times 2/3 {b, d a'} |
+  \times 2/3 {g e c} \times 2/3 {fis, c' e} \times 2/3 {d b f} \times 2/3 {d g f} |
+  \times 2/3 {e g e'} \times 2/3 {fis, c' e} \times 2/3 {d b f} \times 2/3 {d g f} |
+  \times 2/3 {e g e'} \times 2/3 {d, g f} \times 2/3 {e g e'} \times 2/3 {d, g f}
+
+  %first ending
+  \times 2/3 {e8 c' e} \times 2/3 {c e, c} e2) |
+  r8 e'( d d, e2) |
+
+  %second ending
+  \times 2/3 {e8( c' e} \times 2/3 {c e, c} e2) |
+
+  \times 2/3 {r8 d'( e} \times 2/3 {d e, d} e2) |
+  \times 2/3 {r8 cis'( e} \times 2/3 {d bes f)} \times 2/3 {r8 bes( c} \times 2/3 {bes d, cis} |
+  \times 2/3 {e8( cis e,} \times 2/3 {a c e} \times 2/3 {a cis e)} \times 2/3 {g( e a} |
+  \times 2/3 {g e a,} \times 2/3 {f' d g} \times 2/3 {f d a)} \times 2/3 {a'8( fis bes} |
+  \times 2/3 {a fis c} \times 2/3 {bes' g c} \times 2/3 {bes g d)} <d e g d'>8. <cis cis'>16 |
 }
 
 leftMvtI = \relative c,
@@ -136,7 +178,68 @@ leftMvtI = \relative c,
   << {r8 b4 b8( fis b cis dis)} \\ {e,1} >>
   e'8( ais, c b \times 2/3 {ais8 b fis} \times 2/3 {a g e)} |
   a,1~ |
-  a4
+  a4 <b b'>( <ais e' ais> <b b'>) |
+  <d d'> <c c'>8.( e16) <c c'>2~ |
+  <c c'>4 <d d'> <cis cis'> <d d'>8.( f16) |
+  <d d'>4 <f f'>( <dis dis'>) <e e'> |
+  <g g'>( <e e'>) <f f'> a |
+  <gis gis,>1~ |
+  <gis gis,>4 <fisis fisis,>4( <gis gis,>) <d d'> |
+  <a a'>1~ |
+  <a a'>2 <aes aes'> |
+  <<
+    \new Voice {\voiceTwo g1}
+    {\voiceOne r8 g'4 g g g8~}
+  >> | \oneVoice
+  g8 g4 g g g8~ |
+  <<
+    {
+      \voiceOne
+      g8 g4 g g g8~ |
+      g8 g4 g g g8 |
+    }
+    \new Voice
+    {
+      \voiceTwo
+      c,1 | g |
+    }
+  >> | \oneVoice
+  c8( g' f' g, c, g' f' g, |
+  c, g' g' g,~) g( g cis, bes' |
+  <<
+    {\voiceTwo d,2) e4 f | g1 |}
+    \new Voice {\voiceOne r8 a4 a a a8 | s2 g'|}
+  >> | \oneVoice
+  <g c,>4
+  <<
+    {g4( a <f d'>) | <e c'> d2. |}
+    \\
+    {c2.~ | c4 a( aes2) |}
+  >>
+  <<
+    {
+      c4 g'( a <f d'>) |
+      <e c'> a,( aes g) |
+      r a( aes g) |
+      g( aes g aes) |
+    }
+    \\
+    {
+      <g c,>4 c2.~ |
+      c4 c,2. |
+      c1 |
+      c |
+    }
+  >>
+
+  %first ending
+  <c g'>1 |
+  <b e> |
+
+  %second ending
+  <c g'> |
+  <bes d g> |
+  <a a'>2
 }
 
 dynamicsMvtI =
