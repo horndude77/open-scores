@@ -138,7 +138,7 @@ oboeMvtI = \relative c''
   e,( a) c-.( e-.) d4.( b8) |
   e4.( c8) fis4.( dis8) |
   gis1~\f\> |
-  \times 2/3 {gis4(\pcongrazia b,) e} \times 2/3 { \times 2/3 {dis8( e dis} c4) d} |
+  \times 2/3 {gis4(\pcongrazia b,) e} \times 2/3 { \times 2/3 {dis8( e dis} c4) dis} |
   e1~\> |
   e4\pp r r2 |
   R1*4 |
@@ -151,8 +151,8 @@ oboeMvtI = \relative c''
   fis( gis) b2~(\< |
   b4 a) a b |
   d4(\f cis8.) e16 cis2~ |
-  cis4\> g'( fis8 e) dis-.( cis-.) |
-  b4.(\mf dis8) cis4 r |
+  cis4\> gis'( fis8 e) dis-.( cis-.) |
+  bis4.(\mf dis8) cis4 r |
   R1*7 |
   cis1~\pp |
   cis2. ais8.(\ppp cis16 |
