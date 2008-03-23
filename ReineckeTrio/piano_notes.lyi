@@ -110,6 +110,192 @@ rightMvtI = \relative c'
   \times 2/3 {e8( cis e,} \times 2/3 {a c e} \times 2/3 {a cis e)} \times 2/3 {g( e a} |
   \times 2/3 {g e a,} \times 2/3 {f' d g} \times 2/3 {f d a)} \times 2/3 {a'8( fis bes} |
   \times 2/3 {a fis c} \times 2/3 {bes' g c} \times 2/3 {bes g d)} <d e g d'>8. <cis cis'>16 |
+  <e g cis e>4 \times 2/3 {a,,8( cis e} \times 2/3 {g e g)} <d' e g d'>8. <cis cis'>16 |
+  <e g cis e>4 \times 2/3 {a,,8( cis e} \times 2/3 {g e g)} <d e g d'>8. <cis cis'>16 |
+  <e g cis e>2. \clef bass <g, cis>4 |
+  \repeat tremolo 6 <f d'>8 <f bes d> <f bes d> |
+  <f bes d> <f bes d> \repeat tremolo 4 <e a cis>8 <g cis> <g cis> |
+  \repeat tremolo 8 <f a d>8 |
+  \repeat tremolo 4 <f gis d'> \repeat tremolo 4 <e a cis> |
+  \repeat tremolo 6 <f a d> <f bes d> <f bes d> |
+  <f bes d> <f bes d> <e a cis> <e a cis> <g bes cis> <g bes cis> <f a cis> <e g cis> |
+  \repeat tremolo 8 <f a d>8 |
+  \repeat tremolo 4 <f gis b d> <e a cis> <e a cis> <e g cis> <e g cis> |
+  \repeat tremolo 6 <f bes d> <f cis'> <f cis'> |
+  \repeat tremolo 6 <f bes d> \clef treble <d' bes' d>8. <ees bes' ees>16 |
+  <ees bes' ees>4 <bes bes'>8. <bes' ees bes'>16 <bes ees bes'>4 <ees, bes' ees>8. <e bes' e>16 |
+  <e bes' e>4 <bes bes'>8. <bes' ees bes'>16 <bes ees bes'>4 <bes, c>4 |
+  \clef bass
+  \repeat unfold 2 {r16 f( c' f,) r ges( c ges)} |
+  \clef treble
+  \repeat unfold 2 {r16 c( <ees ges> c) r c( <ees f> c)} |
+  r d( <f aes> d) r d( <f g> d) r d( <f aes> d) r d( <f aes> d) |
+  r f( <g bes> f) r e( <g a> e) r e( <g bes> e) r e( <g a> e) |
+  r fis( <a c> fis) r fis( <a b> fis) r gis( <b d> gis) r gis( <b cis> gis) |
+  r a( <c e> a) r a( <b dis> a) r c( <ees g> c) r c( <e fis> bes') |
+  <bes, ees ges bes>8-. <a a'>-. <c ges' a c>4. r8 r4 |
+  R1 |
+
+  %a tempo
+  <g, bes ees>4 <c f> <g bes ees> <c f> |
+  <c ees aes> <ees g>2 <d g>8.( bes'16 |
+  <bes, ees g>4) <c f>( <bes ees>) <aes c> |
+  <g bes ees>2
+  <<
+    {\voiceOne <f d'~>2 | d'4}
+    \new Voice {\voiceTwo bes4( gis)( | \voiceOne <fis a>)}
+  >> \oneVoice <g b e> <fis a d> <g b e> |
+  <b d g>( <a d fis>2) <cis fis>8.( a'16 |
+  <a, d fis>4) <g b e>( <fis a d>) <g b> |
+  \times 2/3 {d'8( e, g} \times 2/3 {e g cis} \times 2/3 {e g, cis} \times 2/3 {fis, c' dis)} |
+  \times 2/3 {fis( c dis} \times 2/3 {b e g} \times 2/3 {b e g} \times 2/3 {b e b')} |
+  b4 r4 \clef bass <d,,,, eis b'>2 |
+  r16 fis( cis' fis,) r g( cis g) r fis( cis' fis,) r g( cis g) |
+  \clef treble
+  r16 cis( <e g> cis) r cis( <e fis> cis) r cis( <e g> cis) r cis( <e fis> cis) |
+  r dis( <fis a> dis) r dis( <fis gis> dis) r dis( <fis a> dis) r dis( <fis a> dis) |
+  r fis( <gis b> fis) r dis( <gis ais> eis) r eis( <gis b> eis) r eis( <gis ais> eis) |
+  r g( <bes des> g) r g( <bes c> g) r a( <c ees> a) r a( <c d> a) |
+  r bes( <des f> bes) r bes( <des e> bes) r des( <fes aes> des) r des( <fes g> b) |
+  <b, e g b>8-. <ais ais'>-. <cis g' ais cis>4. r8 r4 |
+  R1 |
+
+  %a tempo
+  <gis, b e>4 <a b fis'> <gis b e> <a b fis'> |
+  <b dis a'> <b e gis> <cis d cis'>2~ |
+  <cis d cis'>4 <b e b'> <ais e' gis>2 |
+  << {<e' gis>2( <dis fis>)} \\ {b2.( a4)} >> |
+  << {e'2 e} \\ {<b d>4( <a c>) <b d>4( <a c>)} >>
+  \clef bass
+  << {<f a>4( <e gis>) <f a>( <e gis>)} \\ {b2 b} >> |
+  \clef treble
+  <d' f>4-.( <c a'>-. <d f>-. <c a'>-.) |
+  <g' a e'> <f a d>2 <e g c>4~ |
+  <e g c> <d f b>2 <c e a>4 |
+  <a' c f> <g b e>2 <f a d>4~ |
+  <f a d> <e g c>2 <d f b>4 |
+  <b' d>8( <a c>4) <a c>8 <g b>( <f a>4) <f a>8 |
+  <e g>8( <d f>) <e g>-. <c e>-. <b d>( <a c>) <c e>-. <a c>-. |
+  <gis b>4 r16 f'[ r d] r c[ r b r d r b] |
+  \clef bass
+  r a[ r gis r b r f] r e[ r d r c r b] |
+  \clef treble
+  \repeat unfold 2
+  {
+    \times 2/3 {r8 e''( a} \times 2/3 {e c a} \times 2/3 {c a c,} e4) |
+  }
+  \times 2/3 {r8 f'( b} \times 2/3 {f d b} \times 2/3 {d b d,} e4) |
+  \times 2/3 {r8 c''( e} \times 2/3 {c a e} \times 2/3 {a e c} e4) |
+  \times 2/3 {r8 e( a} \times 2/3 {e c a} \times 2/3 {c a c,} e4) |
+  \times 2/3 {r8 e'( g} \times 2/3 {e g, e'} \times 2/3 {g, e g)} r4 |
+  \times 2/3 {r8 e'( g)} b,4 \times 2/3 {r8 dis( b'} \times 2/3 {a, b fis)} |
+  \times 2/3 {g8( b e} \times 2/3 {e, b' b,} \times 2/3 {g' g, e')} r4 |
+  << {\times 2/3 {f8( b, f)}} \\ {f'4->} >> r4
+    \clef bass
+    << {d4->} \\ {\times 2/3 {d8( b d,)}} >> r4 |
+  \clef treble
+  \times 2/3 {r8 e( gis} \times 2/3 {b e b'} \times 2/3 {e b e,)} r4 |
+  \clef bass
+  << {f4->} \\ {\times 2/3 {f8( b, f)}} >> r4
+    << {d'4->} \\ {\times 2/3 {d8( b d,)}} >> r4 |
+  r4 \clef treble \times 2/3 {e'8( b' e} b8 e, d b) |
+  r4 <c e>8( f,) r4 <c'' e>4 |
+  r4 <c, e>8( f,) r4 <c'' e>4 |
+  r4 <bes, cis e>8( fis) r4 <g' bes e>4 |
+  r4 <bes, d>8( g) r4 <d'' f>4 |
+  r4 <d, f>8( f,) r4 <d'' f>4 |
+  r4 <d, f>8( f,) r2 |
+  r4 <e' a c> r <d f gis b> |
+  r <e a c> r <f b d> |
+  r <a c e> r < b d> |
+  e,8->( a c e) r4 <a, cis d fis> |
+  <gis b e gis>1~ |
+  <gis b e gis>4 r <fis c' dis>2 |
+  <gis b e>1~ |
+  <gis b e>2 <a, c> |
+  <gis b>4 <a c> <gis b> <a c> |
+  e'( <a, d>2.~) |
+  <a d>2 <b f' b> |
+  << e2. \\ {c2( b4)} >> e'4 |
+  << e1 \\ {<a, a'>2( <gis gis'>)} >> |
+
+  \key a \major
+  <cis, e a>4 <fis b> <cis e a> <fis b> |
+  <fis a d> <a cis>2 <gis cis>8.( e'16 |
+  <a, cis>4) <fis b> <e a> <cis fis> |
+  <a cis fis>( <b e gis>) <d gis b>2~ |
+  <d b gis>4 <e a> <e a> <fis b> |
+  <fis a d> <a cis>2 <fisis cis'>8.( e'16 |
+  <e, gis cis>4) <gis cis e gis>2 <e gis>4 |
+  <fis gis>2 <e gis>4 \times 2/3 {r8 gis e'} |
+  \times 2/3 {dis cis gis} \times 2/3 {e dis cis} \times 2/3 {gis e dis} r4 |
+  <<
+    {
+      d'4->( dis) d4->( dis) |
+      fis->( eis8.) gis16 eis2~ |
+      eis4 fis( eis fis) |
+      a( gis8.) b16( gis2~) |
+      gis4 <ais ais,> <cis cis,>( <b b,>) |
+      <ais ais,>( <b b,>) <bis bis,>4.( <cis cis,>8) |
+    }
+    \\
+    {
+      d,8 <cis a> dis <cis a> d <cis a> dis <cis a> |
+      fis <d b> eis <d b> eis[ <d b> r <d b>] |
+      eis <d b> fis <cis a> eis <cis a> fis <cis a> |
+      a' <fis cis> gis <f d> g[ <fis d> r <fis d>] |
+      gis <f d> ais, <e' g> cis <g' a> b, fis' |
+      ais, fis' b, fis' r <fis a>4. |
+    }
+  >>
+  <cis' fis, ais,>4 eis8( dis' bis cis cis, eis |
+  gis fis ais fis dis cis fis ais, |
+  cis fis, dis gis fis cis ais dis |
+  ais dis cis eis \acciaccatura e8 g8) e cis gis |
+  <<
+    {
+      gis'4( a gis a) |
+      cis( b2.) |
+      r4 b( cis b) |
+      d( cis2) d4 |
+      f cis( d) fis |
+    }
+    \\
+    {
+      gis,8 <eis d b> a <fis d a> gis <e d b> a <fis d a> |
+      cis'[ <a f d> r <a f d>] r <a f d>[ r <a f d>] |
+      r <a f d> b <a f d> ais <a f d> b <a f d> |
+      d <g, e> cis <g e> r <g e> d' <a f> |
+      f' <a, f> c <g e> d' <a f> f' <a, f> |
+    }
+  >>
+
+  \key a \minor
+  <bes f' bes>2 <bes f bes,>~ |
+  <bes f bes,>1 |
+  r2 r4 f'8.( b16 |
+  f4)
+  <<
+    {b,8.( f16 b4) f8.( b,16 | f'4)}
+    \\
+    {b,2 f4~ | f}
+  >> f8.( b16 f4) r |
+  \times 2/3 {r8 c''( f} \times 2/3 {c a f} \times 2/3 {a f a,} c4) |
+  \times 2/3 {r8 cis'( f} \times 2/3 {cis a f} \times 2/3 {a f a,} cis4) |
+  \times 2/3 {r8 d'( f} \times 2/3 {d a f)} \times 2/3 {r8 f'( a} \times 2/3 {f c a)} |
+  \times 2/3 {r8 e'( a} \times 2/3 {e c e} \times 2/3 {c a e} \times 2/3 {a e c} |
+  \times 2/3 {e c a} \times 2/3 {c a \change Staff=LH e} \times 2/3 {a e c} \times 2/3 {e c a)} |
+  \change Staff=RH
+  r2 <e' c' e>2~ |
+  <e c' e>4 r <b' d e gis> r |
+  <c e a> \times 2/3 {e'8( a c} \times 2/3 {bes f d} \times 2/3 {cis d f}
+  \times 2/3 {e c a} \times 2/3 {fis a c} \times 2/3 {<gis b> e f} \times 2/3 {fisis gis c} |
+  \times 2/3 {a c dis)} \times 2/3 {e( a c} \times 2/3 {bes f d} \times 2/3 {cis d f} |
+  \times 2/3 {e c a} \times 2/3 {fis a c} \times 2/3 {<gis b> e f} \times 2/3 {fisis gis c} |
+  \times 2/3 {a e f} \times 2/3 {fisis gis c} \times 2/3 {a e f} \times 2/3 {fisis gis c} |
+  \times 2/3 {a e c} \times 2/3 {dis e a)} r4 \times 2/3 {b,8( c e)} |
+  r4 \clef bass \times 2/3 {gis,8( a c)} r4 \times 2/3 {b,8( c e)} |
+  R1*2 |
 }
 
 leftMvtI = \relative c,
@@ -371,10 +557,14 @@ leftMvtI = \relative c,
   << {e,8( e'4) e e e8} \\ e,1 >> |
   a8( e' d' e, a, e' d' e, |
   a, e' e' e,~ e) e( e' e, |
-  << {gis,8( gis'4) gis gis gis8} \\ gis,1 >> |
-  gis8( dis' fis bis) \times 2/3 {cis,8( gis' cis} e4 |
+  << {gis,8( gis'4) gis gis gis8} \\ gis,1 >> | \break
+  gis8( dis' fis bis)
+    \once \override Slur #'cross-staff = ##t
+    \once \override Slur #'control-points =
+    #'((0 . 2) (10 . 22) (55 . 22) (58 . 2))
+    \times 2/3 {cis,8( gis' cis} e4 | \noBreak
   r2 r4 \times 2/3 {cis,8 gis cis,)} |
-  <fis fis,>2 <fis fis,>~ |
+  <fis fis,>2 <fis fis,>~ | \break
   <fis fis,>4 <gis gis,> <fisis fisis,> <gis gis,> |
   <b b,>4 <a a,>8. <cis cis,>16 <a a,>2~ |
   <a a,>4 <b b,> <ais ais,> <b b,>8. <d d,>16 |
@@ -468,11 +658,48 @@ pedalsMvtI =
 %==============================================
 rightMvtII = \relative c'
 {
+  r8 r |
+  R2.*2 |
+
+  %repeat
+  c4.( <ais e'> |
+  <b f'> d) |
+  g( <bes, e> |
+  <b f'> d) |
+  <g, g'>( c) |
+  <gis gis'>->( <a a'>) |
+  cis->( d) |
+  << {<ais ais'>4.->( <b b'>)} \\ <d f>2. >> |
+  <c e c'>8 r r <c fis>4.( |
+  <b g'>8) r r <g ais>4. |
+  <g b>8 r r <a' c> r r |
+  <g b> r r r4. |
+
+  %end repeat
 }
 
 leftMvtII = \relative c,
 {
   \clef bass
+  r8 r |
+  R2.*2 |
+
+  %repeat
+  <e e'>4.( <cis cis'> |
+  <d d'> f) |
+  e( <cis cis'> |
+  <d d'> f) |
+  <<
+    {b4.( c) | c2. | cis4.->( d) | d2. |}
+    \\
+    {e,2. | f | f | gis |}
+  >>
+  <a e' a>8 r r <dis, dis'>4.( |
+  <e e'>8) r r <cis cis'>4. |
+  <d d'>8 r r <d' d'> r r |
+  <g d'> r r r4. |
+
+  %end repeat
 }
 
 dynamicsMvtII =
