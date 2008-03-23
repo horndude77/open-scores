@@ -279,7 +279,6 @@
       }
     }
   }
-  %{
   \score
   {
     \new Staff
@@ -315,6 +314,19 @@
       }
     }
   }
+  \score
+  {
+    \new Staff
+    \with
+    {
+      fontSize = #-3
+      \override StaffSymbol #'staff-space = #(magstep -3)
+    }
+    {
+      \koppNineArticulations
+    }
+  }
+  %{
   \score
   {
     \new Staff
