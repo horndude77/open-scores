@@ -1,0 +1,35 @@
+righthand = \relative c
+{
+  \key bes \minor
+  \repeat unfold 4 {r16 f( aes des f des aes f)} |
+  r ges( aes c ees c aes ges) r f( aes f' aes aes, des aes') |
+  r aes,( c ees aes ees c aes) r aes( des aes') r f,( aes f') |
+  r ees,( ges aes ees' aes, ges ees) r aes( c ees aes ges f ees) |
+  des( f, aes des f des aes f) r f( aes des f des aes f) |
+  r f( c' ees f ees c f,) r f( des' f) r aes,( des f) |
+  r aes,( c f aes f c aes) r bes( c e g e c bes) |
+}
+
+lefthand = \relative c
+{
+  \clef bass
+  \key bes \minor
+  \repeat unfold 2 {des2( des,) |}
+  aes'2( des,4 f) |
+  ges( ges') f( des) |
+  c2 aes4( bes8 c) |
+  des2( des,4 des') |
+  a2 bes4( b) |
+  c2 c,4( c') |
+}
+
+dynamics =
+{
+  s1\p
+}
+
+pedals =
+{
+  s1
+}
+
