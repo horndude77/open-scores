@@ -29,7 +29,7 @@ horn = \relative c''
   bes'4.( g8 aes16-.) ees-.(\< f-. g-. aes-. bes-. c-. des-.) |
   ees4.\! b8 c4 c~ |
   c8 e,\( g bes des16\< c b c b c \acciaccatura ees8 des16 c\) |
-  f4.\f g8 \times 2/3 {aes8( e f} \times 2/3 {c d bes)} |
+  f4.\f g8 \times 2/3 {aes8( e f} \times 2/3 {c des bes)} |
   aes4~ aes16 ees( d ees c'4. bes8) |
   aes2 r |
   R1 |
