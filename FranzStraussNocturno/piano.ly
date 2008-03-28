@@ -37,6 +37,7 @@ instrument = "Piano"
       \new PianoStaff
       <<
         \set PianoStaff.instrumentName = "Piano"
+        \set PianoStaff.connectArpeggios = ##t
         \new Staff="RH"
         {
           #(set-accidental-style 'modern)
