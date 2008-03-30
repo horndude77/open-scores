@@ -80,7 +80,9 @@ righthand = \relative c
   r ges( bes des ges des bes ges) r bes( des ees) r bes( c e) |
   r a,( c f a f c a) r a( c f a f c a) |
   r bes( c e g e c bes) a( c f a) c4 |
-  <g g'>4.( <e e'>8 <f f'>4) <ges aes c ges'>4\arpeggio |
+  <g g'>4.( <e e'>8 <f f'>4)
+    \once \override PianoStaff.Arpeggio #'infinite-spacing-height = ##t
+    <ges aes c ges'>4\arpeggio |
   <f aes des f>2\arpeggio r4 <f, aes des f>\arpeggio |
   <bes des ees bes'>2\arpeggio r4 <bes des ees ges>8\arpeggio r |
   <aes des f>16 f( aes des f des aes f) <ges aes c>4 <aes' c aes'>\arpeggio |
@@ -176,8 +178,8 @@ lefthand = \relative c
   <bes bes'>4 <bes' f' des'>->\arpeggio \times 2/3 {r8 <bes, bes'> <c c'>} \times 2/3 {<des des'> <c c'> <bes bes'>} |
   <ees ees'>4( <des des'>8 <c c'> <des des'>4) <bes bes'> |
   <des des'>8( <c c'> <bes bes'> <a a'> <bes bes'>4) <bes' bes'> |
-  r4 <bes, bes'>-> <c c'>-> <d d'>-> |
-  <ees ees'>-> r <ees ees'>-> r8 <f f'>-> |
+  r4 <bes, bes'>->\arpeggio <c c'>->\arpeggio <d d'>->\arpeggio |
+  <ees ees'>->\arpeggio r <ees ees'>->\arpeggio r8 <f f'>-> |
   r8 <ges ges'>-> r <f f'>-> r <ees ees'>-> <des des'>-> <bes bes'>-> |
   <f' f'>2 f |
   c'2( c,4 c') |
@@ -269,7 +271,84 @@ lefthand = \relative c
 
 dynamics =
 {
-  s1\p
+  s1\p |
+  s1*5 |
+  s2 s\< |
+  s1\mf |
+  s2 s4\< s\> |
+  s1\pp |
+  s1*2 |
+  \setTextCresc
+  s2 s\< |
+  s1 |
+  s\f |
+  s1 |
+  s2 s\> |
+  s1\p |
+  s1 |
+  s\< |
+  s2\> s\! |
+  s1\< |
+  s\f |
+  s2 s\< |
+  s\> s\p |
+  s1*4 |
+  s4 s2.\< |
+  s1\ff |
+  s |
+  s\ff |
+  s1*2 |
+  s2. s4-\markup{\italic risoluto} |
+  s1*3 |
+  s1 | %accel.
+  s1 |
+
+  %Tempo I
+  s2\> s\pp |
+  s1*2 |
+  s4 s\< s\> s\pp |
+  s2. s4\mf |
+  s1\< |
+  s\ff |
+  s\p |
+  s4 s2.\< |
+  s4\! s2\> s4\! |
+  s2. s4\p |
+  s1*3 |
+  s2. s4\ff |
+  s1 |
+  \setTextDim
+  s8 s\> s2. |
+  s1\p |
+  s1*4 |
+  s4 s\< s\> s\! |
+  s1 |
+  s2 s\< |
+  s1\mf |
+  s2 s\> |
+  s1\pp |
+  s1 |
+  s2 s\< |
+  s1\f |
+  s2. s4\pp |
+  s2. s4\ff |
+  s1*2 |
+  s1\mf |
+  \setTextDim
+  s4 s2.\> |
+  s1\pp |
+  s1 |
+  s4 s2\< s8. s16\! |
+  s4 s2\> s8. s16\! |
+  s4 s2\< s8. s16\! |
+  s4 s2\> s8. s16\! |
+  s1 |
+  s4 s4.\< s4\> s16 s\! |
+  s1 |
+  s4 s4.\< s4\> s16 s\! |
+  s8*7 s8\pp\< |
+  s4 s8.\> s16\! \repeat unfold 3 {s4\< s8.\> s16\!} |
+  s1*2 |
 }
 
 pedals =

@@ -8,10 +8,7 @@ instrument = "Piano"
 
 \paper
 {
-  %between-system-space = #0.0
-  %between-system-padding = #0.0
   ragged-last-bottom = ##f
-  %ragged-bottom = ##f
 }
 
 #(set-global-staff-size 18)
@@ -42,19 +39,15 @@ instrument = "Piano"
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \righthand \dynamics >>
+          << \righthand \dynamics \outline >>
         }
-
-        %\new Dynamics = "dynamics" \dynamics
 
         \new Staff="LH"
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \lefthand \pedals \outline >>
+          << \lefthand \pedals >>
         }
-
-        %\new Dynamics = "pedals" \pedals
       >>
     >>
     \layout { }

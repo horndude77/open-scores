@@ -3,7 +3,7 @@ horn = \relative c''
   \transposition f
   \key f \minor
   R1 |
-  aes2( g8\< aes des c) |
+  aes2(_\markup{\italic dolce} g8\< aes des c) |
   c4.(\> bes8 aes4)\! ees( |
   ees' g,) bes8(\< aes g aes) |
   bes2.\> ees,4~\! |
@@ -25,7 +25,7 @@ horn = \relative c''
   ees8 r fis(\< g bes4.\> d,8) |
   ees2\! r |
   aes2(\p g8\< aes des c) |
-  c4.(\> bes8 aes4) ees |
+  c4.(\> bes8 aes4)\! ees |
   bes'4.( g8 aes16-.) ees-.(\< f-. g-. aes-. bes-. c-. des-.) |
   ees4.\! b8 c4 c~ |
   c8 e,\( g bes des16\< c b c b c \acciaccatura ees8 des16 c\) |
@@ -42,7 +42,7 @@ horn = \relative c''
   f,4~\ff f16 g-. aes-. bes-. c4 f~->( |
   f4. des8 bes4) \times 2/3 {g4( f8)} |
   e8 g'4->( e8 c4) \times 2/3 {g8( aes bes)} |
-  aes4~ aes16 bes( b c) f,8 r f4( |
+  aes4~ aes16 bes( b c) f,8 r f4(_\markup{\italic risoluto} |
   aes8 g f e f) c( f aes |
   c bes aes g aes) r f4 |
   a8. f16 e( f) a-. c-. f4.( ees8) |
@@ -70,7 +70,7 @@ horn = \relative c''
 
   %a tempo
   R1 |
-  aes2( g8\< aes des c) |
+  aes2(_\markup{\italic dolce} g8\< aes des c) |
   c4.(\> bes8 aes4) ees(\! |
   ees' g,) bes8(\< aes g aes) |
   bes2.\> ees,4~\! |
