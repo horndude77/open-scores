@@ -1,0 +1,215 @@
+\include "defs.lyi"
+
+hornOneMvtI = \relative c'
+{
+  \transposition f
+  R1*19 |
+  R1^\fermataMarkup |
+
+  %A
+  R1*16 |
+  R1^\fermataMarkup |
+
+  %6/8
+  R2.*19 |
+
+  %B |
+  R2. |
+  fis8\p r r g r r |
+  fis r r g r r |
+  fis r r b r r |
+  fis' r r g r r |
+  fis r r e r r |
+  b r r g r r |
+  fis r r b r r |
+  fis' r r r fis\mf fis |
+
+  %C
+  e r r r4. |
+  \repeat unfold 3
+  {
+    R2.*2 |
+    r4. r8 fis\mf fis |
+    e r r r4. |
+  }
+  R2.*4 |
+  b8(\ff a gis fis) a b |
+
+  %D
+  fis' r r r4. |
+  r fis\ff |
+  R2. |
+  r4. fis\ff |
+  r4. fis,8._\sempreff fis16 fis8 |
+  \lss fis' \lss cis |
+  R2. |
+  r4. g' |
+  R2. |
+  r4. g |
+  r4. \lss b, |
+  \lss b \lss fis' |
+  \repeat unfold 2 {\lss cis r4. |}
+  cis8 cis r r cis cis |
+  r cis r cis r cis |
+
+  %E
+  b8[\fff r16 b b8]~ b cis d |
+  e->( d) cis b r r |
+  d8[ r16 d d8]~ d e fis |
+  g->( fis) e d cis b |
+  R2.*2 |
+  b2.~\sff |
+  b8 fis' fis fis fis fis |
+  fis4. fis\fff |
+  e fis4 d8 |
+  d4. r |
+  R2. |
+  fis4. fis |
+  e fis |
+  g4 e8 f4 f8 |
+
+  %F
+  fis4 fis8 f8 r r |
+  R2.*12 |
+
+  %poco meno animato
+  R2.*3 |
+
+  %stringendo
+  R2. |
+
+  %tempo I
+  r4. r8 r a,(\p\< |
+  gis4.) cis4 cis8 |
+  cis4.\mf\> d |
+  cis2.\p\< |
+  r4.\! r8 r a8(\mp\< |
+  gis4.) cis4 cis8 |
+  cis4.\f\> d |
+  cis2.\mf\> |
+
+  %G
+  fis4.~->\p fis8 e-.( fis-.) |
+  b,2.\> |
+  e4.~->\pp e8 d-.( e-.) |
+  a,2. |
+  d4.\pp r |
+  cis r |
+  b r |
+  a r |
+  gis4.~\pp gis8 fis-.( gis-.) |
+  R2. |
+  b4.~\p b8 ais-.( b-.) |
+  R2. |
+
+  %un pochettino più animato
+  \repeat unfold 4
+  {
+    R2.*2 |
+    e,8\mf e4 e8 e4 |
+    e8 e4 e8 e4 |
+  }
+  R2.*2 |
+
+  %Molto più tranquillo
+  R2.*2 |
+  a4.\p\< cis |
+  b2.\> |
+  s4*0\! R2.*8 |
+
+  %H
+  \setTextCresc
+  r8 e4~\p\< e8 e,( e') |
+  r8 e4~ e8 e,( e') |
+  r8 e,( e'~) e\f e,( e') |
+  r b( b,) b'( b, b') |
+  e\f r r r4. |
+  R2. |
+  a,4_\pcrescmolto a8~ a b4 |
+  b b8~ b b4 |
+  \setTextCresc
+  e\mf\< e8 d d4 |
+  dis4 dis8 d d4 |
+  \setTextCresc
+  cis4\f\< cis8 cis cis cis |
+  d4 d8~ d b4 |
+
+  %tempo I
+  a8[\fff r16 a a8] a b cis |
+  d cis b a b cis |
+  a2. |
+  gis |
+  e'8[\fff r16 e e8] e e e |
+  e e e e e e |
+  r8 a,4~\f a e'8~ |
+  e4.\< a, |
+
+  %I
+  e'8[\fff r16 e e8] e e e |
+  e e e e e e |
+  R2. |
+  r4 e8~\f\< e4 dis8 |
+  e8[\fff r16 e e8] e e e |
+  r4. a,4(\ff e'8) |
+  e8[ r16 e e8] e e e |
+  r4. e8(\f a,) a |
+  a8[ r16 cis cis8] cis cis cis |
+  cis8 r r r4. |
+  e,8 r r r4. |
+  e8 r r r4. |
+
+  %K
+  e'4\f^"soli" a,8 \repeat unfold 3 {e'4 a,8} |
+  R2.*2 |
+  e'4\mf a,8 \repeat unfold 3 {e'4 a,8} |
+  R2.*2 |
+  e'4\p e8 \repeat unfold 3 {e4 e8} |
+  R2.*4 |
+  d4->(\p d,8) d'4->( d,8) |
+  g8 r r r4. |
+  R2. |
+  c8\mf r r r4. |
+  g'4->(\mf c,8) g'4->( c,8) |
+  R2.*4 |
+  f4->(\mf f,8) f'4->( f,8) |
+  bes8 r r r4. |
+  R2. |
+
+  %L
+  ees8\f r r r4. |
+  R2.*10 |
+  cis2.\p |
+  R2.*2 |
+  cis2.\f |
+
+  %M
+  \repeat unfold 2
+  {
+    e8[\ff r16 e e8] r b r |
+    e r e~ e e cis |
+  }
+  \repeat unfold 2 {e8[ r16 e e8] \lss e |} |
+  \repeat unfold 2
+  {
+    ees8[ r16 ees ees8] r fis r |
+    fis r c~ c c c |
+  }
+  \repeat unfold 2 {ees8[ r16 ees ees8] \lss ees |} |
+  << \repeat unfold 4 {\lss ees} {s2.\ff\> | s} >> |
+
+  %N
+  << {\lss ees} {s4.\mf} >> ees8. ees16 f8 |
+  \repeat unfold 4 {\lss f} |
+}
+
+hornOneMvtII = \relative c'
+{
+}
+
+hornOneMvtIII = \relative c'
+{
+}
+
+hornOneMvtIV = \relative c'
+{
+}

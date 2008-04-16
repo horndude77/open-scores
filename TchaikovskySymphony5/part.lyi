@@ -1,0 +1,46 @@
+\version "2.9.17"
+
+\include "defs.lyi"
+
+\paper
+{
+  ragged-last-bottom = ##f
+}
+
+\book
+{
+  \include "Header.lyi"
+  \score
+  {
+    \new Staff
+    {
+      \set Score.skipBars = ##t
+      << \notesMvtI \outlineMvtI >>
+    }
+  }
+  \score
+  {
+    \new Staff
+    {
+      \set Score.skipBars = ##t
+      << \notesMvtII \outlineMvtII >>
+    }
+  }
+  \score
+  {
+    \new Staff
+    {
+      \set Score.skipBars = ##t
+      << \notesMvtIII \outlineMvtIII >>
+    }
+  }
+  \score
+  {
+    \new Staff
+    {
+      \set Score.skipBars = ##t
+      << \notesMvtIV \outlineMvtIV >>
+    }
+  }
+}
+
