@@ -49,6 +49,9 @@ pcrescmolto = \markup{\dynamic p \italic "cresc. molto"}
 
 outlineMvtI =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+
   \tempoMark "Andante"
   \time 4/4
   s1*20 |
@@ -75,11 +78,13 @@ outlineMvtI =
   \mark \default
   s2.*13 |
 
-  \tempoMark "Poco meno animato"
+  \textLengthOn
+  s1*0^\markup{\bold \bigger "Poco meno animato"}
   s2.*3 |
 
-  \tempoMark "string."
+  s1*0^\markup{\bold \bigger "string."}
   s2. |
+  \textLengthOff
 
   \tempoMark "Tempo I"
   s2.*8 |
@@ -115,6 +120,72 @@ outlineMvtI =
   s2.*14 |
 
   \mark \default
+  s2.*24 |
+
+  \mark \default
+  s2.*16 |
+
+  \mark \default
+  s2.*11 |
+
+  \mark \default
+  s2.*17 |
+
+  \mark \default
+  s2.*16 |
+
+  \mark \default
+  s2.*12 |
+
+  \mark \default
+  s2.*20 |
+
+  \textLengthOn
+  s1*0^\markup{\bold \bigger "Poco meno animato"}
+  s2.*3 |
+
+  s1*0^\markup{\bold \bigger "string."}
+  s2. |
+  \textLengthOff
+
+  \tempoMark "Tempo I"
+  s2.*8 |
+
+  \mark \default
+  s2.*12 |
+
+  \tempoMark "Un pochettino più mosso"
+  s2.*18 |
+
+  \tempoMark "Molto più tranquillo come sopra"
+  s2.*12 |
+
+  \mark \default
+  s2.*6 |
+
+  \tempoMark "stringendo"
+  s2.*6 |
+
+  \tempoMark "Tempo I"
+  s2.*8 |
+
+  \mark \default
+  s2.*12 |
+
+  \mark \default
+  s2.*16 |
+
+  \mark \default
+  s2.*16 |
+
+  \mark \default
+  s2.*12 |
+
+  \mark \default
+  s2.*8 |
+
+  \mark \default
+  s2.*20 | \bar "|."
 }
 
 outlineMvtII =

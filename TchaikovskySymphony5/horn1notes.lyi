@@ -200,6 +200,233 @@ hornOneMvtI = \relative c'
   %N
   << {\lss ees} {s4.\mf} >> ees8. ees16 f8 |
   \repeat unfold 4 {\lss f} |
+  \lss c \lss ees |
+  \lss bes \lss bes |
+  \lss ees des8. des16 c8 |
+  \lss f \lss f |
+  \lss c \lss ees |
+  f8 r r r4. |
+  R2.*2 |
+  b,8[\f r16 b b8]~( b cis-.) d-. |
+  R2.*6 |
+  e4\ff e8 e4 e8 |
+  R2.*3 |
+  e4 e8 e4 e8 |
+  R2. |
+
+  %O
+  R2. |
+  e4\ff e8 r4. |
+  R2. |
+  e4 e8 r4. |
+  r8 a,4\fff a a8 |
+  r8 c4 c c8 |
+  r8 a4 a a8 |
+  \repeat unfold 3
+  {
+    r8 d4 d d8 |
+    a8. a16 a8~ a a a |
+  }
+  d8[ r16 d d8]~ d d d |
+  a8. a16 a8~ a a a |
+  f'8[ r16 f f8]~ f f f |
+
+  %P
+  a,8.\ff a16 a8~ a4. |
+  a8. a16 a8~ a4. |
+  gis8.\f gis16 gis8~ gis4. |
+  gis8. gis16 gis8~ gis4. |
+  g8.\mf g16 g8~ g4. |
+  g8. g16 g8~ g4. |
+  \setTextDim
+  g4.\> g |
+  g g |
+  g2.\p |
+  g |
+  R2. |
+
+  %Q
+  R2.*17 |
+
+  %R
+  fis8\p r r g r r |
+  fis r r g r r |
+  fis r r b r r |
+  fis' r r g r r |
+  fis\p r r e r r |
+  b r r g r r |
+  fis r r b r r |
+  fis' r r r fis\mf fis |
+  e r r r4. |
+  R2.*2 |
+  r4. r8 fis\mf fis |
+  e r r r4. |
+  R2.*2 |
+  r4. r8 fis\mf fis |
+
+  %S
+  e r r r4. |
+  R2.*4 |
+  r4. r8 b--\mf b-- |
+  gis4.~-> gis8 r r |
+  R2.*2 |
+  r4. r8 fis--\f fis-- |
+  dis4.~-> dis8 gis4~\ff |
+  gis8 dis'4~ dis8 gis,4 |
+
+  %T
+  gis4.\fff gis |
+  fis e4 cis'8 |
+  cis4. c |
+  gis a8 r r |
+  gis4. gis |
+  fis gis |
+  a4 a8 bes4 bes8 |
+  b4 b8 bes r r |
+  R2.*12 |
+
+  %poco meno animato
+  R2.*3 |
+
+  %string
+  R2. |
+
+  %tempo I
+  r4. r8 r b(\p\< |
+  bes4.) ees4 ees8 |
+  ees4.\mf\> e |
+  ees2.\p\< |
+  r4.\! r8 r b(\mp\< |
+  bes4.) ees4 ees8 |
+  ees4.\f\> e |
+  ees2.\mf\> | s4*0\!
+
+  %U
+  R2.*8 |
+  bes4.~\pp bes8 aes-.( bes-.) |
+  R2. |
+  cis4.~\pp cis8 bis-.( cis-.) |
+  R2. |
+
+  %un pochettino più mosso
+  R2.*5 |
+  b4.~(\mf\< b4\> bes8)\! |
+  R2.*3 |
+  b4.(\mf\< cis)\> | s4*0\!
+  R2.*3 |
+  b4.~(\mf\< b4\> bes8)\! |
+  R2.*3 |
+  b4.(\mf\< cis)\> | s4*0\!
+
+  %molto più tranquillo come sopra
+  R2.*2 |
+  b4.\p\< dis |
+  cis2.\> | s4*0\!
+  R2.*5 |
+  g4.\f\> gis\! |
+  R2.*2 |
+
+  %V
+  \setTextCresc
+  r8 fis'4~\p\< fis8 fis,( fis') |
+  \repeat unfold 2 {r8 fis4~ fis8 fis,( fis') |}
+  r8 cis(\f cis,) cis'( cis, cis') |
+  fis8 r r r4. |
+  R2. |
+
+  %stringendo
+  b,4_\pcrescmolto b8~ b cis4 |
+  cis4 cis8~ cis cis4 |
+  fis4 fis8 e e4 |
+  f4 f8 e e4 |
+  \setTextCresc
+  dis4\f\< dis8~ dis dis dis |
+  e4 e8~ e cis4 |
+
+  %tempo I
+  b8[\fff r16 b b8] b cis dis |
+  e dis cis b cis dis |
+  b2. |
+  bes |
+  fis'8[\fff r16 fis fis8] \repeat unfold 9 fis |
+  r8 b,4~\f b( fis'8~) |
+  fis4.\< b, |
+
+  %W
+  fis'8[\fff r16 fis fis8] \repeat unfold 9 fis |
+  R2. |
+  r8 r fis~\f\< fis4 f8 |
+  fis8[\fff r16 fis fis8] \repeat unfold 3 fis |
+  r4. b,4(\ff fis'8) |
+  fis8[ r16 fis fis8] \repeat unfold 3 fis |
+  r4. fis8(\f b,) b |
+  b8[\f r16 dis dis8] dis dis dis |
+  dis r r r4. |
+  fis,8 r r r4. |
+  fis8 r r r4. |
+
+  %X
+  fis'4\f b,8 \repeat unfold 3 {fis'4 b,8} |
+  R2.*2 |
+  fis'4\mf b,8 \repeat unfold 3 {fis'4 b,8} |
+  R2.*2 |
+  b4\p b8 b4 b8 |
+  R2. |
+  b4\mf b8 b4 b8 |
+  R2. |
+  b4\f b8 r4. |
+  b4\f b8 r4. |
+  f'4\ff f8 \repeat unfold 3 {f4 f8} |
+
+  %Y
+  fis8 r r d\p r r |
+  dis r r dis r r |
+  e r r fis r b, |
+  b r r e r r |
+  R2. |
+  fis8 r r fis r r |
+  e r r fis r b, |
+  b r r fis' r r |
+  \setTextCresc
+  r4. a,8\< r r |
+  cis r r b r r |
+  g' r r a, r r |
+  b r r d r r |
+  \setTextCresc
+  fis8\f\< r r d r r |
+  d r r b r r |
+  fis' r r fis r r |
+  e r r g r r |
+
+  %Z
+  fis8[\fff r16 fis fis8]~ fis fis fis~ |
+  fis d d d fis fis |
+  e8[ r16 e e8]~ e g g~ |
+  g e e~ e cis cis |
+  b r r fis'\ff r r |
+  e r r fis r r |
+  fis r r fis r r |
+  e r r fis r r |
+  fis r r fis\f r r |
+  e r r e r r |
+  d r r fis r r |
+  e r r e r r |
+
+  %AA
+  d r r fis,\mf r r |
+  \setTextDim
+  b\> r r fis r r |
+  fis r r fis r r |
+  b r r fis r r |
+  fis r r fis\p r r |
+  e r r e r r |
+  d r r fis r r |
+  e r r e r r |
+
+  %BB
+  d r r r4. |
+  R2.*18 |
+  R2.^\fermataMarkup |
 }
 
 hornOneMvtII = \relative c'
