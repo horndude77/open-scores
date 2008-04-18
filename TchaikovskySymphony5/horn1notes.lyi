@@ -431,6 +431,112 @@ hornOneMvtI = \relative c'
 
 hornOneMvtII = \relative c'
 {
+  R1.*7 |
+  r2. r4.
+
+  %phrase one
+  a'8(_\markup{\italic {dolce con molto express.}} gis) fis-- |
+  a4.->( gis2.) e8(\< fis) gis--\! |
+  b4.( a2.) a8(\> b) cis-- |
+  d4.\< d4 d8 d4.~ d4 d8 |
+  d4.(\> cis) r4.\!
+
+  %phrase two
+  a8( gis) fis-- |
+  a4.->( gis2.) e8(\< fis) gis-- |
+  b4.(\> a2.) a8( b) cis-- |
+  dis4.\< dis4 dis8 dis4.~ dis4 dis8 \! |
+
+  %A
+  dis8(\mf fis) e-- e2. cis8--(\p\< d-- e--) |
+  e4.(\> fis,2.) b8--(\< cis-- d--) |
+  d4.(\> e,2.) a8--(\! b-- cis--) |
+  cis4.\< cis4 cis8 cis4.~ cis4 b8 |
+  \times 3/2 {fis'8\!\mf\> e8~} e8 e,-.(\!\p fis-.) gis-.( a-. b-. cis--\< d-- e--) |
+  e4.(\> fis,2.) b8--(\< cis-- d--) |
+  d4.(\> e,2.) a8--(\! b-- cis--) |
+  cis4.\< cis4 cis8 cis4.~\> cis4 b8\! |
+  a4.(\p\> gis8~\! gis16) r16 r8 dis'4. ais4( bis8) |
+  cis4.~ cis8 r8 r8 dis4. ais4( bis8) |
+  cis4.~ cis8 r8 r8 r2. |
+  \times 3/2 {gis8--\mp\< ais--} \times 3/2 {bis-- cis--}
+  \times 3/2 {eis--( dis--)} \times 3/2 {d-- dis--} |
+  fis4.(\> eis4.\!) r2. |
+  R1.*10 |
+
+  %poco più animato
+  R1.*2 |
+  c4.\f cis dis r |
+  c cis dis2. |
+  d d |
+  r4. d2.\p\> d4. |
+
+  %B
+  cis8\pp \fivex cis8 b\< b b cis cis d |
+  cis\p\< \fivex cis r2. |
+  fis8\mf\< \fivex fis fis\f\> cis cis fis\mf fis fis |
+  fis \fivex fis b, b d \threex d |
+  cis8\pp \fivex cis8 b\< b b b cis d |
+  cis\p\< \fivex cis r2. |
+  fis8\mf \fivex fis \sixx a, |
+
+  %C
+  \set crescendoText = \markup {\italic "cresc. poco a poco"}
+  \set crescendoSpanner = #'dashed-line
+  b\mf\< \fivex b \sixx c |
+  \twelvex cis |
+  \sixx cis \threex fis \threex f |
+  \sixx f \sixx fis |
+  fis\fff fis fis a,\> a c d\ff\> \fivex d |
+  d\f\> d d \threex a \threex cis \threex c |
+  b\mf \fivex b b4.\> c |
+  \repeat unfold 2
+  {
+    cis\p e\< dis\> d |
+  }
+  e8\p \fivex e e r r r4. |
+  \sixx cis8 cis r r r4. |
+  R1.*3 |
+
+  %4/4
+  R1*9 |
+
+  %D
+  fis,8\mf fis4 fis8( gis) gis r4 |
+  fis'8 fis4 fis8( eis) eis4 eis8~ |
+  eis eis( fis) fis r2 |
+  r2 r8 bes,( des) des |
+  aes\mf aes4 aes8( bes) bes r4 |
+  R1*2 |
+  r2 r8 c(\mf ees) ees |
+
+  %E
+  R1*4 |
+  \repeat tremolo 4 b8 \repeat tremolo 4 bes |
+  R1 |
+  \repeat tremolo 4 e8 \repeat tremolo 4 ees |
+  \repeat tremolo 4 des8 \repeat tremolo 4 des |
+
+  %F
+  R1*4 |
+  r2 dis2\f |
+  gis, dis'\< |
+  gis,\ff b |
+  gis dis4 b |
+  b'1\ff
+  b8 b~ b2. |
+  b1 |
+  b8 b~ b2 b4 |
+  b b e d |
+  e8 e r4 r b |
+  b b e d |
+  e8 e r4 r e8 r |
+  r4 e8 r r4 e8 r\fermata |
+
+  %12/8
+  R1.*8 |
+
+  %G
 }
 
 hornOneMvtIII = \relative c'
