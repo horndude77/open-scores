@@ -42,6 +42,11 @@ threex =  #(define-music-function (parser location x) (ly:music?)
   \repeat unfold 3 $x
 #})
 
+fourx =  #(define-music-function (parser location x) (ly:music?)
+#{
+  \repeat unfold 4 $x
+#})
+
 fivex =  #(define-music-function (parser location x) (ly:music?)
 #{
   \repeat unfold 5 $x
@@ -50,6 +55,11 @@ fivex =  #(define-music-function (parser location x) (ly:music?)
 sixx =  #(define-music-function (parser location x) (ly:music?)
 #{
   \repeat unfold 6 $x
+#})
+
+eightx =  #(define-music-function (parser location x) (ly:music?)
+#{
+  \repeat unfold 8 $x
 #})
 
 twelvex =  #(define-music-function (parser location x) (ly:music?)
@@ -66,9 +76,12 @@ tempoMark = #(define-music-function (parser location markp) (string?)
 
 sempreff = \markup{\italic sempre \dynamic ff}
 pcrescmolto = \markup{\dynamic p \italic "cresc. molto"}
+mfespr = \markup{\dynamic mf \italic "espr."}
 
 outlineMvtI =
 {
+  #(set-accidental-style 'modern)
+  \set Score.skipBars = ##t
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
 
@@ -210,6 +223,8 @@ outlineMvtI =
 
 outlineMvtII =
 {
+  #(set-accidental-style 'modern)
+  \set Score.skipBars = ##t
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
 
@@ -297,6 +312,56 @@ outlineMvtII =
 
   \mark \default
   s1*0^\markup{\bold \bigger "animando"} s1.*2 |
+  s2. \tempoMark "riten." s2. |
+  \tempoMark "sostenuto" s1.*3 |
+  \tempoMark "animando" s1. |
+  \tempoMark "sostenuto" s1. |
+
+  \mark \default
+  s1.*2 |
+  \tempoMark "animando"
+  s1. |
+  s2. \tempoMark "riten." s2. |
+  \tempoMark "Più mosso"
+  s1.*6 |
+  \tempoMark "Un poco più animato"
+  s1.*4 |
+
+  \mark \default
+  s1.*2 |
+  \tempoMark "ritenuto"
+  s1.*2 |
+  \tempoMark "Andante mosso"
+  s1.*2 |
+  \tempoMark "animando"
+  s1. |
+  s2. \tempoMark "riten." s2. |
+  s1. |
+  \tempoMark "animando un poco"
+  s1.*4 |
+
+  \mark \default
+  s1.*2 |
+  \tempoMark "Molto più andante"
+  s1. |
+  \tempoMark "animando"
+  s1. |
+  s2. \tempoMark "riten." s2. |
+  \tempoMark "Più animato"
+  s2. \tempoMark "riten." s2. |
+  s1. | \bar "||"
+
+  \time 4/4
+  \tempoMark "Allegro non troppo"
+  s1*8 |
+  \tempoMark "ritenuto"
+  s1*4 | \bar "||"
+
+  \time 12/8
+  \tempoMark "Tempo I"
+  s1.*13 |
+  \tempoMark "ritenuto molto"
+  s1.*2 | \bar "|."
 }
 
 outlineMvtIII =

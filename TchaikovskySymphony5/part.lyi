@@ -14,7 +14,6 @@
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \notesMvtI \outlineMvtI >>
     }
   }
@@ -22,7 +21,6 @@
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \notesMvtII \outlineMvtII >>
     }
   }
@@ -30,7 +28,6 @@
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \notesMvtIII \outlineMvtIII >>
     }
   }
@@ -38,7 +35,6 @@
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \notesMvtIV \outlineMvtIV >>
     }
   }
