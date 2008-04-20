@@ -431,6 +431,7 @@ hornOneMvtI = \relative c'
 
 hornOneMvtII = \relative c'
 {
+  \transposition f
   R1.*7 |
   r2. r4.
 
@@ -626,10 +627,246 @@ hornOneMvtII = \relative c'
   R1.^\fermataMarkup |
 }
 
-hornOneMvtIII = \relative c'
+hornOneMvtIII = \relative c''
 {
+  \transposition f
+  r4 r b\p^\ten |
+  R2. |
+  r4 r bes^\ten |
+  r r b^\ten |
+  r r b^\ten |
+  r r cis^\ten |
+  r r fis,^\ten |
+  r r fis^\ten |
+  R2.*3 |
+
+  %A
+  r4 b\p b |
+  r b b |
+  fis(\< ais cis) |
+  fis,2\> fis4\p |
+  R2.*2 |
+  e2\p r4 |
+  r4 b'8 r r4 |
+  R2.*8 |
+  \override TextSpanner #'bound-details #'left #'text = "sons bouchés/gestopft"
+  fis2\startTextSpan r4 |
+  b2 r4 |
+  fis2 r4 |
+  b2\stopTextSpan r4 |
+  R2.*5 |
+
+  %B
+  R2.*8 |
+
+  %C
+  R2.*6 |
+  e2.\mf |
+  fis4~-> fis8 r r4 |
+  R2.*2 |
+
+  %D
+  e2.\mf |
+  fis4~-> fis8 r r4 |
+  R2.*15 |
+  r4 e8\f r r4 |
+  R2.*2 |
+  c2.\p\< |
+  cis\> |
+  s1*0\p R2.*2 |
+  c2.\p\< |
+  cis~\mf\> |
+
+  %E
+  cis8\p r r4 r |
+  R2. |
+  r4 r fis,8\mp r |
+  fis2\mf\> r4\! |
+  R2.*2 |
+  r4 r fis8\mp r |
+  fis2\mf\> r4\! |
+  R2. |
+  r4 r fis->( |
+  fis'8) r r4 r |
+  R2.*2 |
+  r4 r fis,->( |
+  fis'8) r r4 r |
+
+  %F
+  R2.*8 |
+
+  %G
+  R2. |
+  r8 cis-.\mp cis-. cis-. r4 |
+  R2. |
+  r8 cis-. cis-. cis-. r4 |
+  R2.*4 |
+  r4 r gis8-.\pp gis-. |
+  fis-. r gis-. gis-. fis r |
+  r4 r bes8-.\mp bes-. |
+  bes-. r r4 r |
+  R2.*2 |
+
+  %H
+  r4 r dis4->( |
+  e8) r r4 r |
+  r4 r dis4->( |
+  e8) r r4 r |
+  R2.*7 |
+  c2.\mf\< |
+  cis\f\> |
+  s1*0\! R2.*2 |
+  c2.\mf\< |
+  cis2.~\f\> |
+  cis8\! r r4 r |
+  R2. |
+  r4 r fis,8\mf r |
+  fis2\f\> r4\! |
+  R2.*2 |
+  r4 r fis8\mf r |
+
+  %I
+  fis\f r r4 r |
+  R2. |
+  r4 r b~->\p |
+  b8\pp r r4 r |
+  R2.*7 |
+
+  %K
+  r4 b\p b |
+  r b b |
+  fis(\< ais cis) |
+  fis,2\> fis4\p |
+  R2.*2 |
+  e2\p r4 |
+  r b'8 r r4 |
+  R2.*8 |
+  fis2\p\startTextSpan r4 |
+  b2 r4 |
+  fis2 r4 |
+  b2\stopTextSpan r4 |
+  R2.*5 |
+
+  %L
+  R2.*8 |
+
+  %M
+  R2.*6 |
+  e2.\mf |
+  fis4~-> fis8 r r4 |
+  R2.*2 |
+
+  %N
+  e2.\mf |
+  fis4~-> fis8 r r4 |
+  R2.*16 |
+  d2.\p |
+  dis |
+  d\< |
+  dis |
+  e~\mf\< |
+
+  %O
+  e8\! r e4\f e |
+  e f_\pesante f |
+  \setTextCresc
+  e f\< f |
+  e f f |
+  e8\! r r4 r |
+  R2.*2 |
+  e2\p dis4 |
+  e4 r r |
+  d2.\p |
+  dis |
+  d\< |
+  dis |
+  e~\mf\> |
+  e8\! r e4\f e |
+  e f_\pesante f |
+  \setTextCresc
+  e f\< f |
+  e f f |
+  e8\! r r4 r |
+  R2.*2 |
+  e2\p dis4 |
+
+  %P
+  e4\pp r r |
+  R2.*14 |
+
+  %Q
+  R2.*8 |
+  r4 e\ff e |
+  e e e |
+  e r r\fermata |
 }
 
-hornOneMvtIV = \relative c'
+hornOneMvtIV = \relative c''
 {
+  \transposition f
+  R1*15 |
+
+  %A
+  fis4.\sf\> fis16\pp fis fis4. fis16 fis |
+  \set crescendoText = \markup {\italic "cresc. poco a poco"}
+  \set crescendoSpanner = #'dashed-line
+  fis8\< r fis2. |
+  fis4. fis16 fis fis4. fis16 fis |
+  fis8 r fis2. |
+  g2\sfp fis |
+  g2\pp fis |
+  R1*2 |
+  fis,2_\pmamarcato b2~ |
+  b8 r gis4-- fis-- e-- |
+  dis--_\piuf b2.~ |
+  b8 r fis'2 f4--\mf |
+  cis'-- dis-- ais--\> b-- |
+  fis_\simile\< gis ais dis,8.\f eis16 |
+  cis'4 dis ais eis |
+  fis~\> fis8. gis16 ais8. b16 ais8. fis16 |
+
+  %B
+  \setTextCresc
+  gis2\pp ais\< |
+  b fis8. gis16 ais8. b16 |
+  e2 e, |
+  dis' dis,8.\f d16 dis8. eis16 |
+  cis'4-- dis-- ais-- b-- |
+  fis\<_\simile gis ais dis,8.\ff eis16 |
+  cis'4-> dis-> ais-> cis-> |
+  fis,4.\f fis16 fis fis4. fis16 fis |
+  fis8 fis fis2. |
+  cis'8 r r4 r2 |
+  R1 |
+  g'2\ff r |
+  g r |
+  cis,2 d4 e |
+
+  %C
+  d1~\> |
+  d2~ d8\! r r4 |
+  e2\f d4 cis |
+  fis2.\> fis8 r |
+  e2\mf d4 cis |
+  fis4~\> fis8\! r r2 |
+  r4 e\p\< d cis |
+  fis~\> fis8\! r r2 |
+  R1*4 |
+
+  %allegro vivace
+  %2/2
+  R1*2 |
+  b,8\f r r4 r2 |
+  R1 |
+  b8 r r4 r2 |
+  R1 |
+  b8\ff r r4 r2 |
+  R1 |
+  b8\ff r b r cis r d r |
+  fis r b, r b r b r |
+  fis' r b, r cis r d r |
+  fis r b, r b r b r |
+
+  %D
+  fis' r d4\sf( cis\mf)
 }

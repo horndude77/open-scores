@@ -1,41 +1,50 @@
-#(define (make-note-req p d)
-  (make-music 'NoteEvent
-   'duration d
-   'pitch p))
+#(define (make-note pitch chordevent)
+  (let* ((skip (car (ly:music-property chordevent 'elements)))
+         (duration (ly:music-property skip 'duration)))
+    (make-music 'EventChord
+      'elements (list (make-music 'NoteEvent
+                        'duration duration
+                        'pitch pitch)))))
 
-#(define (make-note p d)
-  (make-music 'EventChord
-   'elements (list (make-note-req p d))))
+#(define (make-rhythm pitch template)
+  (cond ((null? template) '())
+        ((pair? pitch)
+          (cons
+            (make-note (car pitch) (car template))
+            (make-rhythm (cadr pitch) (cdr template))))
+        (else
+          (cons
+            (make-note pitch (car template))
+            (make-rhythm pitch (cdr template))))))
 
-#(define (seq-music-list elts)
-  (make-music 'SequentialMusic
-   'elements elts))
+% Returns two pitches from the input:
+%  - The original pitch
+%  - a pitch in octave '-1'
+% This makes the function work in \relative sections
+% To make it work outside of \relative only return p.
+% (currently only work on single pitches... not chords.
+#(define (get-pitch mus)
+  (let* ((p (ly:music-property
+           (car (ly:music-property mus 'elements))
+           'pitch))
+         (pitch (ly:pitch-notename p))
+         (alteration (ly:pitch-alteration p))
+         (octave -1)
+         (px (ly:make-pitch octave pitch alteration)))
+    (list p px)))
 
-#(define (make-triplet elt)
-  (make-music 'TimeScaledMusic
-   'denominator 3
-   'numerator 2
-   'element elt))
+#(define (rhythm-template template)
+  (define-music-function (parser location mus) (ly:music?)
+    (make-music
+      'SequentialMusic
+      'elements (make-rhythm
+                  (get-pitch mus)
+                  (ly:music-property template 'elements)))))
 
 %Better name? long short short => lss
 %This method should only be used within a \relative section. Only the octave of
 %the first note is set.
-%TODO: Create a rhythm template function
-%  i.e.: lss = \rhythmTemplate {s8. s16 s8}
-%  then "\lss c" would result in "c8. c16 c8"
-lss = #(define-music-function (parser location note) (ly:music?)
-          "Make {x8. x16 x8} rhythm"
-          (let* ((p (ly:music-property
-                      (car (ly:music-property note 'elements))
-                      'pitch))
-                 (pitch (ly:pitch-notename p))
-                 (alteration (ly:pitch-alteration p))
-                 (octave -1)
-                 (px (ly:make-pitch octave pitch alteration)))
-          (seq-music-list (list
-            (make-note p (ly:make-duration 3 1))
-            (make-note px (ly:make-duration 4 0))
-            (make-note px (ly:make-duration 3 0))))))
+lss = #(rhythm-template #{s8. s16 s8 #} )
 
 threex =  #(define-music-function (parser location x) (ly:music?)
 #{
@@ -76,7 +85,12 @@ tempoMark = #(define-music-function (parser location markp) (string?)
 
 sempreff = \markup{\italic sempre \dynamic ff}
 pcrescmolto = \markup{\dynamic p \italic "cresc. molto"}
+pmamarcato = \markup{\dynamic p \italic "ma marcato"}
+piuf = \markup{\italic "più" \dynamic f}
 mfespr = \markup{\dynamic mf \italic "espr."}
+ten = \markup{\italic "ten."}
+pesante = \markup{\italic "pesante"}
+simile = \markup{\italic "simile"}
 
 outlineMvtI =
 {
@@ -366,9 +380,89 @@ outlineMvtII =
 
 outlineMvtIII =
 {
+  #(set-accidental-style 'modern)
+  \set Score.skipBars = ##t
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \time 3/4
+  \tempoMark "Allegro moderato"
+  s2.*11 |
+
+  \mark \default
+  s2.*25 |
+
+  \mark \default
+  s2.*8 |
+
+  \mark \default
+  s2.*10 |
+
+  \mark \default
+  s2.*26 |
+
+  \mark \default
+  s2.*15 |
+
+  \mark \default
+  s2.*8 |
+
+  \mark \default
+  s2.*14 |
+
+  \mark \default
+  s2.*24 |
+
+  \mark \default
+  s2.*11 |
+
+  \mark \default
+  s2.*25 |
+
+  \mark \default
+  s2.*8 |
+
+  \mark \default
+  s2.*10 |
+
+  \mark \default
+  s2.*23 |
+
+  \mark \default
+  s2.*22 |
+
+  \mark \default
+  s2.*15 |
+
+  \mark \default
+  s2.*11 | \bar "|."
 }
 
 outlineMvtIV =
 {
+  #(set-accidental-style 'modern)
+  \set Score.skipBars = ##t
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \time 4/4
+  \tempoMark "Andante maestoso"
+  s1*15 |
+
+  \mark \default
+  s1*16
+
+  \mark \default
+  s1*14 |
+
+  \mark \default
+  s1*12 | \bar "||"
+
+  \tempoMark "Allegro vivace (alla breve)"
+  \time 2/2
+  s1*12 |
+  
+  \mark \default
+  s1*12 |
+
+  \mark \default
 }
 
