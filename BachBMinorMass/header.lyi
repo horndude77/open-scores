@@ -1,7 +1,7 @@
 \header
 {
   title = "B Minor Mass - Aria"
-  subtitle = ""
+  subtitle = "Quoniam tu solus sanctus"
   opus = ""
   composer = "J.S. Bach"
   copyright = "Creative Commons Attribution-ShareAlike 3.0"
@@ -12,10 +12,10 @@
   mutopiaopus = ""
   mutopiainstrument = "Horn, 2 Bassoons, Bass, Continuo"
   date = ""
-  source = "BGA"
+  source = "BGA Band 6 pp.118-125, 1900"
   style = "Baroque"
   maintainer = "Jay Anderson"
   maintainerEmail = "horndude77@gmail.com"
-  lastupdated = "2008/Feb/18"
+  lastupdated = "2008/Apr/20"
 }
 

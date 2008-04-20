@@ -3,9 +3,9 @@
 \include "defs.lyi" 
 \include "horn_notes.lyi" 
 
-instrument = "Horn in D"
+instrument = "Horn in F"
 
-notes = \hornAria
+notes = \transpose f d \hornAria
 
 \include "part.lyi"
 
