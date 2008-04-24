@@ -1,3 +1,23 @@
+%Custom markup stuff
+%A, B, ..., H, I, K, ..., Z, AA, BB, .., ZZ, AAA, ...
+#(define (num->tchaik-letter num)
+  (let ((n (modulo num 25)))
+    (cond ((< n 9) (integer->char (+ n 65)))
+          ((< n 25) (integer->char (+ n 66))))))
+
+#(define (repeat item times)
+  (cond ((= 0 times) '())
+        (else (cons item (repeat item (1- times))))))
+
+#(define (make-tchaik-markletter-markup num)
+  (let ((char (num->tchaik-letter num))
+        (times (+ 1 (quotient num 25))))
+    (list->string (repeat char times))))
+
+#(define (tchaik-mark-formatter mark context)
+  (make-bold-markup (make-tchaik-markletter-markup (1- mark))))
+
+%Rhythm template stuff
 #(define (create-note pitch duration)
   (make-music 'NoteEvent
      'duration duration
@@ -119,6 +139,7 @@ outlineMvtI =
   \set Score.skipBars = ##t
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.markFormatter = #tchaik-mark-formatter
 
   \tempoMark "Andante"
   \time 4/4
@@ -262,6 +283,7 @@ outlineMvtII =
   \set Score.skipBars = ##t
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.markFormatter = #tchaik-mark-formatter
 
   \tempoMark "Andante cantabile, con alcuna licenza"
   \time 12/8
@@ -405,6 +427,8 @@ outlineMvtIII =
   \set Score.skipBars = ##t
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.markFormatter = #tchaik-mark-formatter
+
   \time 3/4
   \tempoMark "Allegro moderato"
   s2.*11 |
@@ -464,6 +488,8 @@ outlineMvtIV =
   \set Score.skipBars = ##t
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.markFormatter = #tchaik-mark-formatter
+
   \time 4/4
   \tempoMark "Andante maestoso"
   s1*15 |
