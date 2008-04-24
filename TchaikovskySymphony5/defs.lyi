@@ -1,50 +1,63 @@
-#(define (make-note pitch chordevent)
-  (let* ((skip (car (ly:music-property chordevent 'elements)))
-         (duration (ly:music-property skip 'duration)))
-    (make-music 'EventChord
-      'elements (list (make-music 'NoteEvent
-                        'duration duration
-                        'pitch pitch)))))
+#(define (create-note pitch duration)
+  (make-music 'NoteEvent
+     'duration duration
+     'pitch pitch))
 
-#(define (make-rhythm pitch template)
+#(define (make-note chord-pitches chordevent)
+  (let* ((skip (car (ly:music-property chordevent 'elements)))
+         (rest (cdr (ly:music-property chordevent 'elements)))
+         (duration (ly:music-property skip 'duration)))
+    (if (eq? (ly:music-property skip 'name) 'SkipEvent)
+      (make-music 'EventChord
+        'elements (append
+                    (map (lambda (x) (create-note x duration)) chord-pitches)
+                    rest))
+      chordevent)))
+
+#(define (make-rhythm pitches template)
   (cond ((null? template) '())
-        ((pair? pitch)
+        ((ly:pitch? (car pitches))
           (cons
-            (make-note (car pitch) (car template))
-            (make-rhythm (cadr pitch) (cdr template))))
+            (make-note pitches (car template))
+            (make-rhythm pitches (cdr template))))
         (else
           (cons
-            (make-note pitch (car template))
-            (make-rhythm pitch (cdr template))))))
+            (make-note (car pitches) (car template))
+            (make-rhythm (cadr pitches) (cdr template))))))
 
 % Returns two pitches from the input:
 %  - The original pitch
 %  - a pitch in octave '-1'
 % This makes the function work in \relative sections
 % To make it work outside of \relative only return p.
-% (currently only work on single pitches... not chords.
-#(define (get-pitch mus)
-  (let* ((p (ly:music-property
-           (car (ly:music-property mus 'elements))
-           'pitch))
-         (pitch (ly:pitch-notename p))
-         (alteration (ly:pitch-alteration p))
+#(define (get-pitches mus)
+  (let* ((p (map
+              (lambda (x) (ly:music-property x 'pitch))
+              (ly:music-property mus 'elements)))
+         (first-p (car p))
+         (pitch (ly:pitch-notename first-p))
+         (alteration (ly:pitch-alteration first-p))
          (octave -1)
          (px (ly:make-pitch octave pitch alteration)))
-    (list p px)))
+    (list p (cons px (cdr p)))))
 
 #(define (rhythm-template template)
   (define-music-function (parser location mus) (ly:music?)
     (make-music
       'SequentialMusic
       'elements (make-rhythm
-                  (get-pitch mus)
+                  (get-pitches mus)
                   (ly:music-property template 'elements)))))
 
 %Better name? long short short => lss
 %This method should only be used within a \relative section. Only the octave of
 %the first note is set.
 lss = #(rhythm-template #{s8. s16 s8 #} )
+
+twox =  #(define-music-function (parser location x) (ly:music?)
+#{
+  \repeat unfold 2 $x
+#})
 
 threex =  #(define-music-function (parser location x) (ly:music?)
 #{
@@ -66,6 +79,11 @@ sixx =  #(define-music-function (parser location x) (ly:music?)
   \repeat unfold 6 $x
 #})
 
+sevenx =  #(define-music-function (parser location x) (ly:music?)
+#{
+  \repeat unfold 7 $x
+#})
+
 eightx =  #(define-music-function (parser location x) (ly:music?)
 #{
   \repeat unfold 8 $x
@@ -84,6 +102,7 @@ tempoMark = #(define-music-function (parser location markp) (string?)
 #})
 
 sempreff = \markup{\italic sempre \dynamic ff}
+semprefff = \markup{\italic sempre \dynamic fff}
 pcrescmolto = \markup{\dynamic p \italic "cresc. molto"}
 pmamarcato = \markup{\dynamic p \italic "ma marcato"}
 piuf = \markup{\italic "più" \dynamic f}
@@ -91,6 +110,8 @@ mfespr = \markup{\dynamic mf \italic "espr."}
 ten = \markup{\italic "ten."}
 pesante = \markup{\italic "pesante"}
 simile = \markup{\italic "simile"}
+marcatissimo = \markup{\italic "marcatissimo"}
+sfff = #(make-dynamic-script "sfff")
 
 outlineMvtI =
 {
@@ -464,5 +485,108 @@ outlineMvtIV =
   s1*12 |
 
   \mark \default
+  s1*16 |
+
+  \mark \default
+  s1*16 |
+
+  \mark \default
+  s1*14 |
+
+  \mark \default
+  s1*20 |
+
+  \mark \default
+  s1*16 |
+
+  \mark \default
+  s1*16 |
+
+  \mark \default
+  s1*22 |
+
+  \mark \default
+  s1*8 |
+
+  \mark \default
+  s1*20 |
+
+  \mark \default
+  s1*28 |
+
+  \mark \default
+  s1*24 |
+
+  \mark \default
+  s1*14 |
+
+  \tempoMark "Poco più animato"
+  s1*16 |
+
+  \tempoMark "Tempo I"
+  s1*12 |
+
+  \mark \default
+  s1*16 |
+
+  \mark \default
+  s1*16 |
+
+  \mark \default
+  s1*12 |
+
+  \mark \default
+  s1*22 |
+
+  \mark \default
+  s1*8 |
+
+  \mark \default
+  s1*16 |
+
+  \mark \default
+  s1*12 |
+
+  \tempoMark "Poco meno messo"
+  s1*10 |
+
+  \tempoMark "Molto vivace"
+  s1*16 |
+
+  \mark \default
+  s1*16 |
+
+  \tempoMark "riten. molto"
+  s1*4 | \bar "||"
+
+  \time 4/4
+  \tempoMark "Moderato assai e molto maestoso"
+  s1*10 |
+
+  \mark \default
+  s1*8 |
+
+  \mark \default
+  s1*9 |
+
+  \mark \default
+  s1*5 | \bar "||"
+
+  \time 2/2
+  \tempoMark "Presto"
+  s1*8 |
+
+  \mark \default
+  s1*14 |
+
+  \mark \default
+  s1*20 | \bar "||"
+
+  \time 6/4
+  \tempoMark "Molto meno mosso"
+  s1.*8 |
+
+  \mark \default
+  s1.*12 | \bar "|."
 }
 

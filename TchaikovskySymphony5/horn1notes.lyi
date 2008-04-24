@@ -835,7 +835,7 @@ hornOneMvtIV = \relative c''
   fis\<_\simile gis ais dis,8.\ff eis16 |
   cis'4-> dis-> ais-> cis-> |
   fis,4.\f fis16 fis fis4. fis16 fis |
-  fis8 fis fis2. |
+  fis8 r fis2. |
   cis'8 r r4 r2 |
   R1 |
   g'2\ff r |
@@ -846,7 +846,7 @@ hornOneMvtIV = \relative c''
   d1~\> |
   d2~ d8\! r r4 |
   e2\f d4 cis |
-  fis2.\> fis8 r |
+  fis2.~\> fis8\! r |
   e2\mf d4 cis |
   fis4~\> fis8\! r r2 |
   r4 e\p\< d cis |
@@ -868,5 +868,426 @@ hornOneMvtIV = \relative c''
   fis r b, r b r b r |
 
   %D
-  fis' r d4\sf( cis\mf)
+  fis' r d4\sf( cis\mf) e\sf( |
+  b\mf) d4\sf( a\mf) cis\sf( |
+  g\mf) d'4\sf( cis\mf) e\sf( |
+  b\mf) d4\sf( a\mf) cis\sf( |
+  g8\mf) r d'4\ff d d |
+  d e d e |
+  fis r r2 |
+  r4 e d e |
+  b8 r r4 r e\ff |
+  d r r2 |
+  r4 g d r |
+  r fis fis fis |
+
+  %E
+  fis8 r r4 r2 |
+  R1*5 |
+  r4 a,(\mf\< bes) cis |
+  fis2\> fis,~ |
+  fis8\! r r4 r2 |
+  R1*7 |
+  b8\p \sevenx b |
+  \eightx b |
+  b\< \sevenx b |
+  \fourx d cis\mf \threex cis |
+  dis\> \threex dis \fourx b |
+  b\p \sevenx b |
+  b\< \sevenx b |
+  \fourx d cis\mf \threex cis |
+  \eightx e |
+  \eightx e |
+  \fourx e e\< \threex e |
+  \fourx g fis\> fis fis, fis |
+  \fourx gis e\mf \threex e' |
+  \setTextCresc
+  \twelvex e e\< \threex e |
+  \fourx g \fourx fis |
+
+  %G
+  e\ff \sevenx e
+  \fourx e \fourx fis |
+  \eightx fis |
+  fis\< \sevenx fis |
+  \fourx fis fis4\fff fis |
+  r4 fis r fis |
+  r b, r fis |
+  r b, r2 |
+  R1*6 |
+
+  %H
+  r2 e\p\< |
+  gis b |
+  e1~->\mf | \threex e~ | e |
+  b2\> gis |
+  e\p r |
+  R1*10 |
+  r2 b'4\mf cis |
+
+  %I
+  \twox
+  {
+    \fourx {d4 b} |
+    \twox {fis' fis,} |
+    \twox {d' d,} |
+  }
+  R1*8 |
+
+  %K
+  R1 |
+  r4 e'2.~\f |
+  e8 r r4 r2 |
+  r4 fis2. |
+  R1*3 |
+  d2\ff a |
+  r2 b8\ff r r4 |
+  r2 g'8 r e, e |
+  d r r4 d8 r r4 |
+  R1 |
+  g2. g8 g |
+  g2. g8 a |
+  g r r4 b8 r r4 |
+  r2 e |
+
+  %L
+  d b |
+  d cis |
+  b4~ b8 r r2 |
+  r e |
+  d b d cis |
+  b4~ b8 r r2 |
+  R1 |
+  r2 b8\ff r r4 |
+  r2 g'8 r e, e |
+  d8 r r4 d8 r r4 |
+  R1 |
+  g2. g8 g |
+  g2. g8 a |
+  g r r4 b8 r r4 |
+  r2 cis |
+  d b |
+  fis' e |
+  d4~ d8 r r2 |
+  r cis |
+  d b |
+  fis' e |
+
+  %M
+  d4 cis\ff d cis |
+  d b fis' e |
+  d4 cis d cis |
+  d b fis' e |
+  d r r2 |
+  R1*3 |
+
+  %N
+  r4 g\ff g g |
+  fis d g g |
+  b, g' g g |
+  d d d d |
+  g d g e |
+  fis d e b |
+  d d g e |
+  fis d e b |
+  g'8 r r4 r2 |
+  g,1\f |
+  d' |
+  b2. g4 |
+  d r r2 |
+  R1*3 |
+  r2 d2~\fff |
+  d f~ |
+  f aes~ |
+  aes c |
+
+  %O
+  f1~ |
+  f2 r |
+  R1*26 |
+
+  %P
+  R1*8 |
+  fis1~->\f |
+  \setTextDim
+  fis~\> | fis~ | fis\> |
+  r2\! fis\mf |
+  fis fis |
+  fis g |
+  g g |
+  \setTextDim
+  g1~\sf\> | g~ | g~ | g\> | s1*0\!
+  R1*2 |
+  r2 e\p |
+  e e |
+
+  %Q
+  \setTextDim
+  e1~->\> | e1~ | e~ | e | s1*0\!
+  R1*10 |
+
+  %pocp più animato
+  fis4\ff r fis,2\f |
+  fis2. fis'4 |
+  fis cis d2~ |
+  d4 e fis fis |
+  d r fis,2 |
+  fis' fis |
+  fis,2.\sff fis4 |
+  fis2 r |
+  r fis\fff |
+  fis2. fis'4 |
+  fis g fis2 |
+  b,4 e fis g |
+  d2 fis, |
+  fis fis |
+  fis1 |
+  b4 a b fis |
+
+  %tempo i
+  e8 r d'4\sf( cis\mf) e\sf( |
+  b\mf) d4\sf( a\mf) cis\sf( |
+  g\mf) d'4\sf( cis\mf) e\sf( |
+  b\mf) d4\sf( a\mf) cis\sf( |
+  g8\mf) r d'4\ff d d |
+  d e d e |
+  fis r r2 |
+  r4 e d e |
+  b8 r r4 r e\ff |
+  d r r2 |
+  r4 g d r |
+  r fis fis fis |
+
+  %R
+  fis8 r r4 r2 |
+  R1*5 |
+  r4 a,(\mf\< bes) cis |
+  fis2\> fis,~ |
+  fis8\! r r4 r2 |
+  R1*7 |
+
+  %S
+  b8\p \sevenx b |
+  \eightx b |
+  b\< \sevenx b |
+  \fourx d cis\mf \threex cis |
+  dis\> \threex dis \fourx b |
+  b\p \sevenx b |
+  b\< \sevenx b |
+  \fourx d cis\mf \threex cis |
+  \eightx e |
+  \eightx e |
+  e\< \sevenx e |
+  \fourx g fis\> fis fis, fis |
+  \fourx gis e e' e e\! |
+  \setTextCresc
+  \twelvex e e\< \threex e |
+  \fourx g \fourx fis |
+
+  %T
+  e\ff \sevenx e
+  \fourx e fis fis e e |
+  \fourx cis \fourx fis, |
+  \fourx fis \threex d cis |
+  fis fis'\ff \sixx fis |
+  \fourx fis, \fourx fis' |
+  \fourx c \fourx gis |
+  \fourx gis cis cis c c |
+  gis \threex e' dis dis cis cis |
+  c c gis gis \fourx dis' |
+  \fourx d \fourx bes |
+  \fourx bes ees ees d d |
+
+  %U
+  ees r ees2\fff ees4~ |
+  ees ees2 ees4~ |
+  ees ees r bes |
+  r ees, r2 |
+  R1*18 |
+
+  %V
+  g1(\mf |
+  f) |
+  \setTextCresc
+  aes1(\< |
+  ges) |
+  bes2( aes) |
+  c( bes) |
+  g4(\f aes) r2 |
+  R1 |
+
+  %W
+  R1*16 |
+
+  %X
+  R1 |
+  r4 gis2.~\f |
+  gis8 r r4 r2 |
+  r4 ais2. |
+  R1*3 |
+  fis'2\ff cis |
+  fis b, |
+  e b |
+  b1 |
+  g\ff |
+
+  %poco meno mosso
+  b2\f d, |
+  b' e |
+  d2.\ff d8 d |
+  e2. e8 e |
+  d2 fis~\f |
+  fis8 r r4 r2 |
+  fis2.\ff fis8 fis |
+  g2. g8 g |
+  fis2.\fff fis8 fis |
+  g4 fis e d |
+
+  %molto vivace
+  fis2._\semprefff fis8 fis |
+  fis2. fis8 fis |
+  fis2 fis~ |
+  fis fis |
+  fis2. fis8 fis |
+  fis2. fis8 fis |
+  fis2 fis~ |
+  fis fis |
+  fis2. fis8 fis |
+  fis2. fis8 fis |
+  fis4 fis2 fis4~ |
+  fis fis2 fis4 |
+  fis2. fis8 fis |
+  fis2. fis8 fis |
+  fis4 fis2 fis4~ |
+  \times 2/3 {fis4 fis fis} \times 2/3 {fis fis fis} |
+
+  %Y
+  g2\fff fis~ |
+  fis8 r r4 r2 |
+  g2 fis~ |
+  fis8 r r4 r2 |
+  g4 r fis r |
+  e r fis r |
+  cis r d r |
+  e r g r |
+  e r d r |
+  cis r fis r |
+  e r f r |
+  fis r r2 |
+  r fis4 r |
+  R1 |
+  r2 fis4 r |
+  R1 |
+
+  %riten. molto
+  R1 |
+  fis2.. fis8 |
+  fis1~ |
+  fis8 r r4 r2\fermata |
+
+  %4/4
+  %moderato assai
+  fis8\f r b, r fis' r b, r |
+  fis'8 r b, r fis' r b, r |
+  R1*3 |
+  r4 fis'~\f fis8 r b,4 |
+  cis dis cis b |
+  ais2( dis8) r dis4( |
+  fis) gis, ais eis'( |
+  fis8) r r4 r2 |
+
+  %Z
+  b,2\ff cis |
+  dis1 |
+  e2 e |
+  dis2. eis4 |
+  fis dis cis b |
+  ais2. dis4 |
+  cis,4 dis ais' b |
+  ais8 r r4 r2 |
+
+  %AA
+  fis4\fff fis b b |
+  fis fis fis fis |
+  dis' dis e e |
+  dis dis dis dis |
+  fis dis cis fis8. eis16 |
+  dis2. dis4 |
+  fis dis cis dis8. eis16 |
+  dis8^\marcatissimo dis fis dis fis4. eis8 |
+  dis8 dis fis dis fis4. eis8 |
+
+  %BB
+  dis8 fis e d cis b bis cis |
+  b fis' cis eis fis r r e |
+  dis4 cis dis b |
+  b8. dis16 fis4~ fis8 dis dis dis |
+  gis,2\sfff cis\sfff |
+
+  %2/2
+  %presto
+  b4 r dis\p r |
+  fis r gis, r |
+  \setTextCresc
+  gis\< r gis r |
+  gis r cis r |
+  cis r cis r |
+  dis2\f b\ff |
+  fis'4\fff r r2 |
+  r2 fis4 r |
+
+  %CC
+  fis r dis\f r |
+  fis r gis, r |
+  \setTextCresc
+  gis\< r gis r |
+  gis r cis r |
+  cis r cis r |
+  dis2\f b\ff |
+  g4\fff a g b |
+  g a g c |
+  g a g b |
+  g a g c |
+  b d r g |
+  fis fis r dis |
+  dis dis r gis |
+  gis gis r cis, |
+
+  %DD
+  cis r fis2~ |
+  fis g~ |
+  g gis,~ |
+  gis a~ |
+  a fis' |
+  fis fis |
+  fis fis |
+  e e |
+  fis4 r r2 |
+  r2 r4 e4 |
+  fis r r2 |
+  r2 r4 e4 |
+  fis_\semprefff fis r2 |
+  \sevenx {fis4 fis r2 |}
+
+  %6/4
+  %molto meno mosso
+  fis4 r r e r r|
+  fis4 r r e r r|
+  b4. b8 b4 b cis dis |
+  e dis cis b ais gis |
+  \fourx {fis' r r e r r |}
+
+  %EE
+  fis4 r r r2. |
+  dis4 r r r2. |
+  b4 r r r2. |
+  fis'4 r r r2. |
+  dis4 r r b r r |
+  b r r dis r r |
+  fis r r b, r r |
+  fis' r r r2. |
+  b,1. |
+  b~ |
+  b2. b4 b b |
+  b r r r2. |
 }
