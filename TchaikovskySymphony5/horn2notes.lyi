@@ -1,0 +1,149 @@
+\include "defs.lyi"
+
+hornTwoMvtI = \relative c'
+{
+  \transposition f
+  R1*19 |
+  R1^\fermataMarkup |
+
+  %A
+  R1*16 |
+  R1^\fermataMarkup |
+
+  %6/8
+  R2.*19 |
+
+  %B |
+  R2. |
+  b8\p r r b r r |
+  b r r b r r |
+  b r r g' r r |
+  fis r r g r r |
+  fis\p r r g r r |
+  fis r r b, r r |
+  b r r g' r r |
+  fis r r r b\mf a |
+  a r r r4. |
+
+  %C
+  R2.*2 |
+  r4. r8 b\mf a |
+  a r r r4. |
+  R2. |
+  fis2.~\mf\< |
+  fis8\ff r r r b8\mf a |
+  a r r r4. |
+  R2.*2 |
+  r4. r8 b\mf a |
+  a r r r4. |
+  R2. |
+  fis2.~\mf\< |
+  fis8\ff r r r4. |
+  R2. |
+  f8\ff( fis gis a) e d |
+
+  %D
+  fis8 r r r4. |
+  r4. b\ff |
+  R2. |
+  r4. b\ff |
+  r4. cis,8._\sempreff cis16 cis8 |
+  \lss fis \lss cis |
+  R2. |
+  r4. e' |
+  R2. |
+  r4. e |
+  r4. \lss fis, |
+  \lss b, \lss fis' |
+  \lss cis r4. |
+  \lss cis r4. |
+  cis8 cis r r cis cis |
+  r cis r cis r cis |
+
+  %E
+  b'8[\fff r16 b b8]~ b cis d |
+  e->( d) cis b r r |
+  d8[ r16 d d8]~ d e fis |
+  g->( fis) e d cis b |
+  b,2.\sff |
+  b2.\sff |
+  b2.~\sff |
+  b8 \fivex fis' |
+  fis r r d'4.\fff |
+  cis d4 fis,8 |
+  d4. r |
+  R2. |
+  d'4. d |
+  cis d |
+  e4 g,8 gis4 gis8 |
+
+  %F
+  a4 a8 gis r r |
+  R2.*12 |
+
+  %poco meno animato
+  R2.*4 |
+
+  %tempo i
+  R2. |
+  d4.\p\< cis4 cis8 |
+  cis4.\mf\> d |
+  f2.\p\< | s1*0\!
+  R2. |
+  d4.\mp\< cis4 cis8 |
+  cis4.\f\> d |
+  f2.\mf\< |
+
+  %G
+  fis4.~->\p fis4 e8 |
+  d2.\> |
+  e4.~->\pp e4 d8 |
+  cis2. |
+  d4.\pp r |
+  cis4. r |
+  b r |
+  a r |
+  b2.\pp |
+  R2. |
+  d2.\p |
+  R2. |
+
+  %un pochettino più animato
+  \fourx
+  {
+    R2.*2 |
+    a8\mf a4 \threex {a8 a4} |
+  }
+  R2.*2 |
+
+  %molto più tranquillo
+  R2.*9 |
+  f'4.(\f\> fis) |
+  dis( e)\! |
+  R2. |
+
+  %H
+  \setTextCresc
+  r8 e4~\p\< e8 e'( e,) |
+  r8 e4~ e8 e'( e,) |
+  r8 e'( e,~) e\f e'( e,) |
+  r8 b( b') b,( b' b,) |
+  e4\f e8~ e e4 |
+  e4 e8~ e e4 |
+}
+
+hornTwoMvtII = \relative c'
+{
+  \transposition f
+}
+
+hornTwoMvtIII = \relative c'
+{
+  \transposition f
+}
+
+hornTwoMvtIV = \relative c'
+{
+  \transposition f
+}
+

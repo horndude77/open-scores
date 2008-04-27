@@ -131,7 +131,7 @@ hornOneMvtI = \relative c'
   e\mf\< e8 d d4 |
   dis4 dis8 d d4 |
   \setTextCresc
-  cis4\f\< cis8 cis cis cis |
+  cis4\f\< cis8~ cis cis cis |
   d4 d8~ d b4 |
 
   %tempo I

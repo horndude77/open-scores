@@ -140,9 +140,11 @@ outlineMvtI =
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \set Score.markFormatter = #tchaik-mark-formatter
+  \override Score.MetronomeMark #'transparent = ##t
 
   \tempoMark "Andante"
   \time 4/4
+  \tempo 4 = 80
   s1*20 |
 
   \mark \default
@@ -150,6 +152,7 @@ outlineMvtI =
 
   \tempoMark "Allegro con anima"
   \time 6/8
+  \tempo 4 = 104
   s2.*19 |
 
   \mark \default

@@ -1,0 +1,22 @@
+\include "defs.lyi"
+
+hornFourMvtI = \relative c'
+{
+  \transposition f
+}
+
+hornFourMvtII = \relative c'
+{
+  \transposition f
+}
+
+hornFourMvtIII = \relative c'
+{
+  \transposition f
+}
+
+hornFourMvtIV = \relative c'
+{
+  \transposition f
+}
+

@@ -9,7 +9,7 @@
 
 \book
 {
-  \include "Header.lyi"
+  \include "header.lyi"
   \score
   {
     \new Staff
