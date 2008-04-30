@@ -159,11 +159,11 @@ hornOneMvtI = \relative c'
   e8 r r r4. |
 
   %K
-  e'4\f^"soli" a,8 \repeat unfold 3 {e'4 a,8} |
+  e'4\f^"soli" a,8 \threex {e'4 a,8} |
   R2.*2 |
-  e'4\mf a,8 \repeat unfold 3 {e'4 a,8} |
+  e'4\mf a,8 \threex {e'4 a,8} |
   R2.*2 |
-  e'4\p e8 \repeat unfold 3 {e4 e8} |
+  e'4\p e8 \threex {e4 e8} |
   R2.*4 |
   d4->(\p d,8) d'4->( d,8) |
   g8 r r r4. |

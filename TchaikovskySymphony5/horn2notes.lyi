@@ -130,6 +130,118 @@ hornTwoMvtI = \relative c'
   r8 b( b') b,( b' b,) |
   e4\f e8~ e e4 |
   e4 e8~ e e4 |
+  d4_\pcrescmolto d8~ d a'4 |
+  gis4 gis8~ gis gis4 |
+  \setTextCresc
+  e4\mf\< e8 d d4 |
+  dis4 dis8 d d4 |
+  \setTextCresc
+  cis4\f\< cis8~ cis cis cis |
+  d4 d8~ d a'4 |
+  cis,8[\fff r16 cis cis8] cis e a |
+  b a e cis e a |
+  b,2. |
+  b |
+  e8[\fff r16 e e8] e e e |
+  e e e e e e |
+  r8 a4~\f a e8~ |
+  e4.\< a, |
+
+  %I
+  e'8[\fff r16 e e8] e e e |
+  e e e e e e |
+  R2. |
+  r4 e8~\f\< e4 dis8 |
+  e8[\fff r16 e e8] e e e |
+  r4. a4(\ff e8) |
+  e8[ r16 e e8] e e e |
+  r4. e8(\f a,) a |
+  a8[ r16 cis cis8] cis cis cis |
+  cis8 r r r4. |
+  a8 r r r4. |
+  a8 r r r4. |
+
+  %K
+  e'4\f^"soli" e8 \threex {e4 e8} |
+  R2.*2 |
+  e4\mf e8 \threex {e4 e8} |
+  R2.*2 |
+  c4\p c8 \threex {c4 c8} |
+  R2.*6 |
+  g'4->(\p g,8) g'4->( g,8) |
+  c8\mf r r r4. |
+  R2.*7 |
+  bes'4->(\mf bes,8) bes'4->( bes,8) |
+
+  %L
+  ees8\f r r r4. |
+  R2.*10 |
+  cis2.\p |
+  \setTextCresc
+  cis\< | s1*0\!
+  R2. |
+  cis'2.\f |
+
+  %M
+  e,8[\ff r16 e e8] r gis r |
+  e r e( a) a a |
+  e8[\ff r16 e e8] r gis r |
+  e r e( a) a a |
+  e8[ r16 e e8] \lss e |
+  c'8[ r16 c c8] \lss e, |
+  c'8[ r16 c c8] r c r |
+  fis, r a~ a a fis |
+  a8[ r16 a a8] r c r |
+  fis, r a~ a a fis |
+  \twox {a8[ r16 a a8] \lss a} |
+  << {\fourx \lss a} {s2.\ff\>} >> |
+
+  %N
+  << {\lss a} {s4.\mf} >> a8. a16 bes8 |
+  \lss ees des8. des16 c8 |
+  \twox {\lss bes} |
+  \lss c, \lss ees |
+  \twox {\lss bes} |
+  \lss ees des8. des16 c8 |
+  \twox {\lss bes'} |
+  \lss c, \lss ees |
+  f8 r r r4. |
+  R2.*15 |
+
+  %O
+  R2.*4 |
+  r8 e4\fff e e8 |
+  r8 a4 a a8 |
+  r8 f4 f f8 |
+  \repeat unfold 3
+  {
+    r8 b4 b b8 |
+    a,8. a16 a8~ a a a |
+  }
+  a'8 r16 a a8~ a a a |
+  a,8. a16 a8~ a a a |
+  f'8 r16 f f8~ f f f |
+
+  %P
+  a,8.\ff a16 a8~ a4. |
+  a8. a16 a8~ a4. |
+  gis8.\f gis16 gis8~ gis4. |
+  gis8. gis16 gis8~ gis4. |
+  g8.\mf g16 g8~ g4. |
+  g8. g16 g8~ g4. |
+  \setTextDim
+  g4.\> g |
+  g g |
+  g2.\p |
+  g |
+  R2. |
+
+  %Q
+  R2.*17 |
+
+  %R
+  b8\p r r b r r |
+  b r r b r r |
 }
 
 hornTwoMvtII = \relative c'
