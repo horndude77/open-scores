@@ -242,6 +242,167 @@ hornTwoMvtI = \relative c'
   %R
   b8\p r r b r r |
   b r r b r r |
+  b r r g' r r |
+  fis r r g r r |
+  fis\p r r g r r |
+  fis r r b, r r |
+  b r r g' r r |
+  fis r r r b\mf a |
+  a r r r4. |
+  R2.*2 |
+  r4. r8 b\mf a |
+  a r r r4. |
+  R2. |
+  fis2.~\mf\< |
+  fis8\ff r r r b\mf a |
+
+  %S
+  a r r r4. |
+  R2.*4 |
+  r4. r8 d,--\mf d-- |
+  cis4.~-> cis8 r r |
+  r4. r8 cis--\mf cis-- |
+  b4.~-> b8 r r |
+  r4. r8 a--\f a-- |
+  gis4.~-> gis8 gis4~\ff |
+  gis8 dis'4~ dis8 fis4 |
+
+  %T
+  e4.\fff e |
+  dis cis4 e8 |
+  a4. gis |
+  gis fis8 r r |
+  e4. e  |
+  dis e |
+  fis4 fis8 g4 g8 |
+  gis4 gis8 g r r |
+  R2.*12 |
+
+  %poco meno animato
+  R2.*4 |
+
+  %tempo i
+  R2. |
+  e4.\p\< ees4 ees8 |
+  ees4.\mf\> e4. |
+  ees2.\p\< | s1*0\!
+  R2. |
+  e4.\mp\< ees4 ees8 |
+  ees4.\f\> e4. |
+  ees2.\mf\> | s1*0\!
+
+  %U
+  R2.*8 |
+  cis2.\pp |
+  R2. |
+  cis2.\p |
+  R2. |
+
+  %un pochettino più mosso
+  R2.*18 |
+
+  %molto più tranquillo come sopra
+  R2.*10 |
+  f4.\mf\> fis\! |
+  R2. |
+
+  %V
+  \setTextCresc
+  r8 fis4~\p\< fis8 fis'( fis,) |
+  \twox {r8 fis4~ fis8 fis'( fis,) |}
+  r8 cis(\f cis') cis,( cis' cis,) |
+  fis4\f fis8~ fis fis4 |
+  fis4 fis8~ fis fis4 |
+  e4_\pcrescmolto e8~ e b'4 |
+  bes bes8~ bes bes4 |
+  fis4 fis8 e e4 |
+  f4 f8 e e4 |
+  \setTextCresc
+  dis4\f\< dis8~ dis dis dis |
+  e4 e8~ e b'4 |
+  dis,8[\ff r16 dis dis8] dis fis b |
+  cis b fis dis fis b |
+  cis,2. |
+  cis |
+  fis8[\fff r16 fis fis8] \threex {\threex fis8} |
+  r8 b4~\f b( fis8~) |
+  fis4.\< b, |
+
+  %W
+  fis'8[\fff r16 fis fis8] \threex {\threex fis8} |
+  R2. |
+  r8 r fis~\f\< fis4 f8 |
+  fis8[\fff r16 fis fis8] \threex fis8 |
+  r4. b4(\ff fis8) |
+  fis8[ r16 fis fis8] \threex fis8 |
+  r4. fis8(\f b,) b |
+  b8[\f r16 dis dis8] dis dis dis |
+  dis r r r4. |
+  b8 r r r4. |
+  b8 r r r4. |
+
+  %X
+  fis'4\f fis8 \threex {fis4 fis8} |
+  R2.*2 |
+  fis4\mf fis8 \threex {fis4 fis8} |
+  R2.*2 |
+  f4\p f8 f4 f8 |
+  R2. |
+  e4\mf e8 e4 e8 |
+  R2. |
+  d4\f d8 r4. |
+  cis4\f cis8 r4. |
+  f4\f f8 \threex {f4 f8} |
+
+  %Y
+  fis8 r r fis\p r r |
+  fis r r fis r r |
+  e r r fis r b, |
+  b r r e r r |
+  R2. |
+  fis8 r r fis r r |
+  e r r fis r b, |
+  b r r fis' r r |
+  \setTextCresc
+  r4. e8\< r r |
+  e r r fis r r |
+  g r r d r r |
+  g r r g r r |
+  \setTextCresc
+  fis\f\< r r f r r |
+  fis r r fis r r |
+  fis r r fis r r |
+  e r r g r r |
+
+  %Z
+  fis8[\fff r16 fis fis8]~ fis d' d~ |
+  d b b b fis fis |
+  cis'8[ r16 cis cis8]~ cis g g~ |
+  g e e~ e cis cis |
+  b r r fis'\ff r r |
+  e r r fis r r |
+  fis r r fis r r |
+  e r r fis r r |
+  fis r r dis'\f r r |
+  cis r r cis r r |
+  d r r dis r r |
+  cis r r cis r r |
+
+  %AA
+  d r r d,\mf r r |
+  \setTextDim
+  b\> r r e r r |
+  d r r d r r |
+  b r r e r r |
+  d r r d\p r r |
+  cis r r cis r r |
+  d r r dis r r |
+  cis r r cis r r |
+
+  %BB
+  d r r r4. |
+  R2.*18 |
+  R2.^\fermataMarkup |
 }
 
 hornTwoMvtII = \relative c'
