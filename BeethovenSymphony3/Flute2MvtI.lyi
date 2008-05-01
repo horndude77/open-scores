@@ -132,7 +132,7 @@ fluteTwoMvtI = \relative c'''
   c2.~ | c2 fis,4 | g\p r r |
   R2.*10 | %page 12
   r8 aes aes2:8 |
-  aes2.\ff | a | g4 r r |
+  aes2.\ff | aes | g4 r r |
   R2.*24 | %page 13
   r4 f-. f'~\sf | f( e) r |
 

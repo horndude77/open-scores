@@ -232,7 +232,7 @@ oboeOneMvtI = \relative c'''
   g8 f-. d-. b-. g'-. f-. |
   d-. f-. d-. b-. g-. b-. |
   c4-. r r |
-  c-. e-. g~\sf |
+  c-. ees-. g~\sf |
   g8 f-. d-. b-. g'-. f-. |
   d-. f-. d-. b-. g-. b-. |
   c4( ees g) |

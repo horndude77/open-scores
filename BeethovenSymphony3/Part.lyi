@@ -14,6 +14,7 @@
   {
     \new Staff
     {
+      #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
       << \notesMvtI \outlineMvtI >>
     }
@@ -23,6 +24,7 @@
   {
     \new Staff
     {
+      #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
       << \notesMvtII \outlineMvtII >>
     }
@@ -32,6 +34,7 @@
   {
     \new Staff
     {
+      #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
       << \notesMvtIII \outlineMvtIII >>
     }
@@ -41,6 +44,7 @@
   {
     \new Staff
     {
+      #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
       << \notesMvtIV \outlineMvtIV >>
     }

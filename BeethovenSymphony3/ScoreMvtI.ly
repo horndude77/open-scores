@@ -21,8 +21,8 @@
 \include "Trumpet2MvtI.lyi"
 \include "defs.lyi"
 
-#(set-global-staff-size 17)
-#(set-default-paper-size "a3")
+#(set-global-staff-size 14)
+%#(set-default-paper-size "a3")
 
 \paper
 {
@@ -42,6 +42,7 @@ instrument = "Orchestra"
       <<
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Flutes"
           \set Staff.shortInstrumentName = "Fl."
@@ -52,6 +53,7 @@ instrument = "Orchestra"
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Oboes"
           \set Staff.shortInstrumentName = "Ob."
@@ -62,6 +64,7 @@ instrument = "Orchestra"
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Clarinets"
           \set Staff.shortInstrumentName = "Cl."
@@ -72,6 +75,7 @@ instrument = "Orchestra"
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Bassoons"
           \set Staff.shortInstrumentName = "Bs."
@@ -85,6 +89,7 @@ instrument = "Orchestra"
       <<
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Horns I,II"
           \set Staff.shortInstrumentName = "Hn."
@@ -95,12 +100,14 @@ instrument = "Orchestra"
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Horn III"
           \set Staff.shortInstrumentName = "Hn.III"
           \hornThreeMvtI
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Trumpets"
           \set Staff.shortInstrumentName = "Tr."
@@ -112,6 +119,7 @@ instrument = "Orchestra"
       >>
       \new Staff
       {
+        #(set-accidental-style 'modern)
         \set Staff.instrumentName = "Timpani"
         \set Staff.shortInstrumentName = "Ti."
         \timpaniMvtI
@@ -122,12 +130,14 @@ instrument = "Orchestra"
         <<
           \new Staff
           {
+            #(set-accidental-style 'modern)
             \set Staff.instrumentName = "Violin I"
             \set Staff.shortInstrumentName = "Vl.I"
             \violinOneMvtI
           }
           \new Staff
           {
+            #(set-accidental-style 'modern)
             \set Staff.instrumentName = "Violin II"
             \set Staff.shortInstrumentName = "Vl.II"
             \violinTwoMvtI
@@ -135,18 +145,21 @@ instrument = "Orchestra"
         >>
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Viola"
           \set Staff.shortInstrumentName = "Va."
           \violaMvtI
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Cello"
           \set Staff.shortInstrumentName = "Vc."
           \celloMvtI
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Bass"
           \set Staff.shortInstrumentName = "Cb."
           << \bassMvtI \outlineMvtI >>
@@ -156,7 +169,7 @@ instrument = "Orchestra"
     \header { piece = \MvtI }
     \layout
     {
-      %\context { \RemoveEmptyStaffContext }
+      \context { \RemoveEmptyStaffContext }
     }
   }
 
