@@ -1,0 +1,21 @@
+\header
+{
+  title = "Concert Piece"
+  subtitle = "for four horns and orchestra"
+  opus = "Op.86"
+  composer = "Robert Schumann (1810-1856)"
+  copyright = "Creative Commons Attribution-ShareAlike 3.0"
+  instrument = \instrument
+
+  mutopiatitle = ""
+  mutopiacomposer = "SchumannR"
+  mutopiaopus = "Op.86"
+  mutopiainstrument = \instrument
+  date = ""
+  source = ""
+  style = "Romantic"
+  maintainer = "Jay Anderson"
+  maintainerEmail = "horndude77@gmail.com"
+  lastupdated = "2008/Apr/19"
+}
+

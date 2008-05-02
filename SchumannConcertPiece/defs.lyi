@@ -1,0 +1,98 @@
+tempoMark = #(define-music-function (parser location markp) (string?)
+#{
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \mark \markup { \smaller \bold $markp }
+#})
+tempoMarkMarkup = #(define-music-function (parser location markp) (markup?)
+#{
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \mark \markup {\smaller $markp }
+#})
+
+sehrLebhaft = \markup{\italic "sehr lebhaft"}
+dolce = \markup{\italic "dolce"}
+
+outline =
+{
+  \override Score.MetronomeMark #'transparent = ##t
+  #(set-accidental-style 'modern)
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.skipBars = ##t
+  \time 4/4
+  \tempoMark "Lebhaft"
+  \tempo 4=156
+  s1*31 |
+
+  \mark \default
+  s1*13 |
+
+  \mark \default
+  s1*31 |
+
+  \mark \default
+  s1*34 |
+
+  \mark \default
+  s1*42 |
+
+  \mark \default
+  s1*22 |
+
+  \mark \default
+  s1*27 |
+
+  \mark \default
+  s1*33 |
+
+  \mark \default
+  s1*17 | \bar "||"
+
+  \time 3/4
+  \tempoMark "Ziemlich langsam, doch nicht schleppand"
+  s2.*26 |
+
+  \mark \default
+  s2.*12 | \bar "||"
+
+  \key f \major
+  s2.*8 |
+
+  \mark \default
+  s2.*18 | \bar "||"
+
+  \key c \major
+  \mark \default
+  s2.*18 | \bar "||"
+
+  \time 2/4
+  \tempoMark "Sehr lebhaft"
+  s2*25 |
+
+  \mark \default
+  s2*34 |
+
+  \mark \default
+  s2*44 |
+  
+  \mark \default
+  s2*44 |
+
+  \mark \default
+  s2*36 |
+
+  \mark \default
+  s2*37 |
+
+  \mark \default
+  s2*26 |
+  
+  \mark \default
+  s2*39 |
+
+  \mark \default
+  s2*82 | \bar "|."
+}
+

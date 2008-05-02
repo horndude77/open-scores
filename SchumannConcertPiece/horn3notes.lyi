@@ -1,0 +1,29 @@
+hornThree = \relative c''
+{
+  \transposition f
+  R1 |
+  r2 \times 2/3 {r8 g\ff^\sehrLebhaft g} \times 2/3 {g g g} |
+  g4->( a-> g2~-> |
+  g2.) r4 |
+  R1*11 |
+  c,2.\fp r4 |
+  R1 |
+  c2.\fp r4 |
+  r2 r4 e4~\p |
+  e2~-> e8 e4 e8 |
+  e2~-> e8 e4 e8 |
+  e2(\< dis~\sf\> |
+  dis2)\! r4 dis( |
+  e2(\< dis~\sf\> |
+  dis2)\! r4 dis( |
+  e4.-> c'8 b a g fis |
+  g4) r r2 |
+  cis2(\p b~ |
+  b a) |
+  fis(\< g~ |
+  g)\! g( |
+
+  %A
+  \times 2/3 {fis8) b,\f b} \times 2/3 {b dis fis} g8 r r4 |
+}
+

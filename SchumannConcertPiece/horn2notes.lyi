@@ -1,0 +1,28 @@
+hornTwo = \relative c''
+{
+  \transposition f
+  R1 |
+  r2 \times 2/3 {r8 g\ff^\sehrLebhaft g} \times 2/3 {g8 b d} |
+  c4->( d-> b2~-> |
+  b2.) r4 |
+  R1*12 |
+  r2 r4 g( |
+  f4.\fp\< a8 c e g f) |
+  f4(\f g,) r e(\p |
+  a4.->) r8 r4 r8 b( |
+  a4.->) r8 r4 r8 b( |
+  << a1~) {s2\< s\>} >> |
+  a2\! r4 a( |
+  << a1~) {s2\< s\>} >> |
+  a2\! r4 a( |
+  g->) r r b( |
+  g'8 fis e d cis b ais b) |
+  ais2(\p b |
+  gis a) |
+  a(\< ais |
+  b\! cis) |
+
+  %A
+  b8 r r4
+}
+
