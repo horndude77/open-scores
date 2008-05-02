@@ -32,6 +32,7 @@ instrument = "Score"
       \new Staff
       {
         \set Staff.instrumentName = "Horn in D"
+        \set Staff.shortInstrumentName = "Hn."
         << \hornAria \outlineAria >>
       }
       \new GrandStaff
@@ -39,17 +40,20 @@ instrument = "Score"
         \new Staff
         {
           \set Staff.instrumentName = "Bassoon I"
+          \set Staff.shortInstrumentName = "Bsn.I"
           \bassoonOneAria
         }
         \new Staff
         {
           \set Staff.instrumentName = "Bassoon II"
+          \set Staff.shortInstrumentName = "Bsn.II"
           \bassoonTwoAria
         }
       >>
       \new Staff
       {
         \set Staff.instrumentName = "Bass"
+        \set Staff.shortInstrumentName = "Bass"
         \new Voice = "bass" \bassAria
       }
       \new Lyrics \lyricsto "bass"
@@ -60,6 +64,7 @@ instrument = "Score"
       \new Staff
       {
         \set Staff.instrumentName = "Continuo"
+        \set Staff.shortInstrumentName = "Cont."
         <<
           \new Voice \continuoAria
           \new FiguredBass \continuoAriaFiguredBass
