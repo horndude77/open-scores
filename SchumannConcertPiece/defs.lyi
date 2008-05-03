@@ -13,6 +13,8 @@ tempoMarkMarkup = #(define-music-function (parser location markp) (markup?)
 
 sehrLebhaft = \markup{\italic "sehr lebhaft"}
 dolce = \markup{\italic "dolce"}
+mitGrossemAustruck = \markup{\italic "Mit großem Ausdruck"}
+mitBravour = \markup{\italic "mit Bravour bis zum Schluß"}
 
 outline =
 {
@@ -52,23 +54,25 @@ outline =
 
   \time 3/4
   \tempoMark "Ziemlich langsam, doch nicht schleppand"
+  \tempo 4=58
   s2.*26 |
 
   \mark \default
   s2.*12 | \bar "||"
 
-  \key f \major
+  %\key f \major
   s2.*8 |
 
   \mark \default
   s2.*18 | \bar "||"
 
-  \key c \major
+  %\key c \major
   \mark \default
   s2.*18 | \bar "||"
 
   \time 2/4
   \tempoMark "Sehr lebhaft"
+  \tempo 4=128
   s2*25 |
 
   \mark \default

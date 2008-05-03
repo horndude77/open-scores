@@ -238,7 +238,109 @@ hornOne = \relative c''
   %Romanze
   R2.*3 |
   r4 r r8 e,(\pp |
-  d8. g32 a e4.)
+  f8. g32 a e4.) e8( |
+  f8. g32 a e4.) a,8 |
+  a'8. f16 d4 e-_ |
+  c-_ a-_ a8.( c'16) |
+  c4( b) f,8.( a'16) |
+  a4( g) e16( g c e |
+  g2 dis4 |
+  e2) r4 |
+  R2. |
+  r4 r e,\p |
+  a,4~( a16 b c f e8 a |
+  c4 a8) r e4( |
+  e'8.-> c16 a4 b |
+  c) r a~( |
+  a8. b32 c b4 dis, |
+  e4) r a( |
+  g8. fis32\< e) b'2->(\> |
+  e,)\! b'8.( d16) |
+  d4( b a |
+  gis) r \times 2/3 {b8-.(\< c-. d-.} |
+  e2)\! a,4\pp |
+  gis2 e4(\p |
 
+  %J
+  e'2.~ |
+  e2) e,4( |
+  e'2.\pp |
+  dis4) r r |
+  r c-_\p c-_ |
+  e8. c16 a4 f8.( g32 a |
+  e4) \afterGrace gis2\trill {fis16[ gis]} |
+  a2.~ |
+  a4 r r |
+  R2.*3 |
+
+  \key f \major
+  R2.*7 |
+  r4 r c,(\p^\dolce |
+
+  %K
+  a'2 aes4~ |
+  aes g a |
+  bes2 b4 |
+  c bes a) |
+  f'2.~\< |
+  f4\> f( fis\! |
+  g4~ g8 gis a) f |
+  f4( e) r |
+  R2. |
+  r4 r ees,(\p^\dolce |
+  ees'2 f4~ |
+  f) bes,( c |
+  des2 d4 |
+  f4\espressivo ees des |
+  \setTextDim
+  c\> a bes) |
+  a( f g |
+  c4~ c8 cis\< d\> g,\! |
+  b4 a) r |
+
+  %L
+  \key c \major
+  R2.*3 |
+  r4 r r8 e(\pp |
+  f8. g32 a e4.) e8( |
+  f8. g32 a e4.) a,8 |
+  a'8. f16 d4 e-_ |
+  c-_ a-_ a8.( c'16) |
+  c4( b) f,8.( a'16) |
+  a4( g a) |
+  f8. d16 e4 e |
+  \setTextDim
+  a,2.~\> |
+  a4\! r r |
+  R2.*5 |
+
+  %2/4
+  %sehr lebhaft
+  R2*3 |
+  r4 r8 fis'8~->\p |
+  fis16 g c e g8 a-> |
+  d,8. e16 f8 a-> |
+  d,8. e16 f8 g-.\f |
+  c,-.\f r r4 |
+  R2*3 |
+  r4 r8 c'~->\p |
+  c16 b g e b8 fis'-. |
+  g8. a16 b8 fis-. |
+  \setTextCresc
+  g8.\< a16 b8 dis,-.\f |
+  e-.\f r r4 |
+  R2 |
+  r4 r8 d-.\f |
+  g,4-> c-> |
+  b8( d4->) g,8-. |
+  c,16-> e g c e8 d |
+  e8.-> f16 g8 a |
+  d,4-> e-> |
+  a,16 c f a c8 a |
+  d,4-> g-> |
+
+  %M
+  c,8 r r4 |
+  R2*7 |
 }
 

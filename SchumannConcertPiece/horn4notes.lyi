@@ -215,6 +215,311 @@ hornFour = \relative c''
   r4 r c~(\p^\dolce |
 
   %K
-  c f,)
+  c f,) b~ |
+  b c( a~ |
+  a g f~ |
+  f e f~ |
+  f\< bes)\! bes~( |
+  bes\> a aes\! |
+  g2. |
+  c2) r4 |
+  R2.*2 |
+  r4 aes( d,~ |
+  d ees) c'~( |
+  c bes aes |
+  g2 f4) |
+  \setTextDim
+  e(\> f g
+  \clef "bass^8"
+  cis, d b) |
+  << c2.( {s4\< s\> s\!} >>
+  \clef treble
+  f2) r4 |
+
+  \key c \major
+  R2.*18 |
+
+  %2/4
+  %sehr lebhaft
+  R2*4 |
+  r4 r8 a'->\fp |
+  f8. e16 d8 a'-> |
+  f8. e16 d8 g,-.\f |
+  c-.\f r r4 |
+  R2*5 |
+  r4 r8 a-. |
+  \setTextCresc
+  b8.\< b16 b8 b-. |
+  e-.\f r r4 |
+  R2 |
+  r4 r8 b-.\f |
+  c4-> a-> |
+  g4.-> g8-.\f |
+  c-> r r g |
+  c8.-> d16 e8 f, |
+  g4-> c,-> |
+  f r8 f |
+  g4-> g-> |
+
+  %M
+  c8 r r4 |
+  R2*11 |
+  r4 r8 g\p |
+  g4. b8( |
+  c d e, fis |
+  g4) a |
+  d8 r r a |
+  gis4 r |
+  R2*5 |
+  b4 a |
+  gis4.(\fp a8) |
+  b4 r8 b |
+  e, r r4 |
+  \clef "bass^8"
+  b2~\sf |
+  b8 b4 b8 |
+  e r r4 |
+  r8 gis4\p gis8 |
+  a4 r8 c |
+  \setTextCresc
+  b2->(\< |
+  e8)\! r r4 |
+
+  %N
+  R2*6
+  \clef treble
+  r8 f(\p fis4->) |
+  R2 |
+  r8 g(\p gis4->) |
+  R2 |
+  r8 f(\p fis4->) |
+  R2*4 |
+  r4 r8 cis-.\p |
+  d-. r r4 |
+  r4 r8 cis-. |
+  d-. r r4 |
+  R2*2 |
+  a2~\fp |
+  a8 f16\< a-. c-. f-. a-. c-. |
+  f2\! |
+  b, |
+  a~\fp\> |
+  a8\p r a-. r |
+  gis-. r g-. r |
+  \setTextCresc
+  fis-.\< r f-. r |
+  e-. r e-. r |
+  \repeat unfold 2
+  {
+    b4~-^\f b16 e g b |
+    R2 |
+  }
+  c,8-. r r4 |
+  \repeat unfold 2
+  {
+    r8 d( c b |
+    a4) r |
+  }
+  r8 gis( a c) |
+  d-. r r4 |
+  R2*2 |
+  d4.\sf g16 g |
+
+  %O
+  g4 r |
+  R2*30 |
+  \setTextCresc
+  r4 r8 gis,(\< |
+  cis dis eis fis |
+  gis) r r4 |
+  r4 r8 b( |
+  a fis cis a |
+  d e fis g |
+  a) r r4 |
+  r4 r8 c( |
+  b g d b) |
+  R2 |
+  d2\f |
+  b'~\f |
+  b4. fis8 |
+
+  %P
+  fis r r4 |
+  R2*6 |
+  \clef "bass^8"
+  f,2~(\p\<^\mitGrossemAustruck |
+  f4\> fis |
+  e\! dis |
+  cis2 |
+  b |
+  bes) |
+  gis4( bes |
+  b2 |
+  a) |
+  gis4( c |
+  cis e) |
+  gis2( |
+  g) |
+  gis-. |
+  dis-. |
+  e-. |
+  c-. |
+  cis8-. r r4 |
+  R2*3 |
+  f2(\fp |
+  fis8) r r4 |
+  \setTextCresc
+  d2(\< |
+  c |
+  b4) r |
+  R2 |
+  \clef treble
+  \setTextCresc
+  e'2~\< |
+  e4. a,16\f a |
+
+  %Q
+  a8 r r4 |
+  R2 |
+  r4 r8 a'16 a |
+  a8 a,16 a a8 r |
+  R2*2 |
+  r4 r8 a16 a |
+  a8 a16 a a8 g16\ff g |
+  g8 r r4 |
+  R2*7 |
+  r4 r8 g-. |
+  g8. g16 g8 g-.\f |
+  c-. c-. r4 |
+  R2*5 |
+  \setTextCresc
+  r4 r8 a-.\p\< |
+  b8. b16 b8 b-.\f |
+  e-.\f r r4 |
+  R2 |
+  r4 r8 b-.\f |
+  c4-> a-> |
+  g4.-> g8-.\f |
+  c8-> r r g |
+  c8.-> d16 e8 f, |
+  g4-> c,-> |
+  f4 r8 f |
+  g4-> g-> |
+  c8 r r4 |
+
+  %R
+  R2*11 |
+  r4 r8 g\p |
+  g4.( b8 |
+  c d e, fis) |
+  g4 a |
+  d8 r r a-. |
+  gis4-. r |
+  R2*5 |
+  b4 a |
+  gis4.(\fp a8) |
+  b4 r8 b |
+  e, r r4 |
+
+  %S
+  R2 |
+  r8 fis'(\p g4->) |
+  R2 |
+  r8 fis( g4->) |
+  R2 |
+  r8 fis(\< g4-> |
+  e2)\> | s1*0\!
+  R2*3 |
+  \repeat unfold 2
+  {
+    r4 r8 fis,-. |
+    g-. r r4 |
+  }
+  R2*2 |
+  d'2~\fp |
+  d8 bes,16-. d-. f-.\< bes-. d-. f-. |
+  bes2\! |
+  e,\< |
+  d~\fp\> |
+  d8\p r d'-. r |
+  cis-. r c-. r |
+  \setTextCresc
+  b-.\< r bes-. r |
+  a-. r a-. r |
+  \repeat unfold 2
+  {
+    e4~-^\f e16 a c e |
+    R2 |
+  }
+  f,8-. r r4 |
+  r8 g( f e |
+  d4) r |
+  r8 g( f e |
+  f8) r r4 |
+  r8 cis( d f) |
+  g-. r r4 |
+  R2 |
+  c2\sf |
+  b4.\sf r8 |
+
+  %T
+  R2*3 |
+  r4 r8 cis,8(\< |
+  d4)\> r\! |
+  R2*7 |
+  c'4.\sf c8 |
+  c r r4 |
+  R2*3 |
+  b,8\p r r4 |
+  \repeat unfold 3 {b8 r r4} |
+  \setTextCresc
+  e8\< r r4 |
+  e8 r r4 |
+  e8 r r4 |
+  e8\! r r4 |
+  R2*10 |
+  g,2\p |
+  gis |
+  a |
+  d |
+  g, |
+  \setTextCresc
+  c\< |
+  f,~ |
+  f |
+  g(\f |
+  c8) r r4 |
+  \repeat unfold 2
+  {
+    R2*2 |
+    r4 r8 g( |
+    c) r r4 |
+  }
+  R2*3 |
+  r8 e(\f^\mitBravour a g |
+  fis4) g |
+  c, f |
+  g4-^ g,-^ |
+  c-^ r |
+  R2*3 |
+  r8 e(\f a g |
+  fis4) g |
+  c, f8( a) |
+  g4-^ g,-^ |
+  c8 r r4 |
+  fis4-^ g-^ |
+  c8 r r4 |
+  fis,4-^ g-^ |
+  fis-^ g-^ |
+  \times 2/3 {r8 g, g} \times 2/3 {g->( b) b-.} |
+  \times 2/3 {b->( d) d-.} \times 2/3 {d->( g) g-.} |
+  \setTextCresc
+  \times 2/3 {g->\< g g} \times 2/3 {g->( d) d-.} |
+  \times 2/3 {d->( b) b-.} \times 2/3 {b->( g) g-.} |
+  c8-. g-.\ff c-. e-. |
+  a-. d,-. g-. g,-. |
+  c-. c-. c-. c-. |
+  c-. r c-. r |
+  c2\fermata |
 }
 

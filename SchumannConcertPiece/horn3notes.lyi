@@ -213,6 +213,65 @@ hornThree = \relative c''
 
   %J
   a2~ a8 gis |
-  a2)
+  a2) e4( |
+  a2.)\pp |
+  a2.~ |
+  a4 r r |
+  R2.*7 |
+
+  \key f \major
+  R2.*7 |
+  r4 r c,~\p^\dolce |
+
+  %K
+  c c( d~ |
+  d e c |
+  d2) d4( |
+  c2 f4~ |
+  f)\< f( e~\! |
+  e\> f d'~\! |
+  d) d( f |
+  g,2) r4 |
+  R2. |
+  r4 r ees~(\p^\dolce |
+  ees ees aes~ |
+  aes) g ees( |
+  des f) f~( |
+  f ees) r |
+  \setTextDim
+  r f(\> d) |
+  r a( g) |
+  r f'(\< e\> |
+  c2)\! r4 |
+
+  %L
+  \key c \major
+  R2.*18 |
+
+  %2/4
+  %sehr lebhaft
+  R2*4 |
+  r4 r8 cis'->\fp |
+  d4 r8 cis-> |
+  d4 r8 b-.\f |
+  c-. r r4 |
+  R2*5 |
+  r4 r8 c~-> |
+  \setTextCresc
+  c16\> b g e b8 a'-.\f |
+  g-.\f r r4 |
+  R2 |
+  r4 r8 g-.\f |
+  g4-> c,-> |
+  d4.-> g8-.\f |
+  c,8-> r r g' |
+  g8.-> g16 g8 f |
+  d4-> g-> |
+  f r8 f8 |
+  f4-> f-> |
+
+  %M
+  e8 r r4 |
+  R2*11 |
 }
 
