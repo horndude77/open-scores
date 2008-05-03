@@ -61,8 +61,8 @@ hornOne = \relative c''
   \setTextCresc
   d4. d8 dis4.\< dis8 |
   e4. e8 fis4. fis8 |
-  g2 r |
-  e2-^( a,-^ |
+  g2\! r |
+  e2-^(\f a,-^ |
   d2.-^) r4 |
   c2-^( fis,-^ |
   b2-^) \times 2/3 {r8 g g} \times 2/3 {g b d} |
@@ -139,13 +139,13 @@ hornOne = \relative c''
   R1*2 |
   r2 \times 2/3 {r8 c\p c} \times 2/3 {c f a} |
   \setTextCresc
-  \times 2/3 {bes(\< g) g-.} \times 2/3 {g->( e) e-.} \times 2/3 {e->( c) c-.} \times 2/3 {c->( bes) bes-.} |
-  a8 r r4 \times 2/3 {r8 a a} \times 2/3 {a d f} |
+  \times 2/3 {bes( g) g-.} \times 2/3 {g->(\< e) e-.} \times 2/3 {e->( c) c-.} \times 2/3 {c->( bes) bes-.} |
+  a8\! r r4 \times 2/3 {r8 a a} \times 2/3 {a d f} |
   \setTextCresc
-  \times 2/3 {g(\< e) e-.} \times 2/3 {e->( cis) cis-.} \times 2/3 {cis->( a) a-.} \times 2/3 {a->( g) g-.} |
+  \times 2/3 {g( e) e-.} \times 2/3 {e->(\< cis) cis-.} \times 2/3 {cis->( a) a-.} \times 2/3 {a->( g) g-.} |
 
   %E
-  f8 r r4 r2 |
+  f8\! r r4 r2 |
   f'2.\sfz r4 |
   R1 |
   \repeat unfold 4 {f4\f r} |
@@ -178,7 +178,7 @@ hornOne = \relative c''
   \setTextCresc
   gis2(\< a~ |
   a~ a8 gis b a |
-  gis) r r4 r2 |
+  gis)\! r r4 r2 |
   \times 2/3 {r8 f,\f f} \times 2/3 {f a c} f4( dis |
   e) r r2 |
   \times 2/3 {r8 f,\f f} \times 2/3 {f a c} f4( dis |

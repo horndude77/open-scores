@@ -23,6 +23,200 @@ hornTwo = \relative c''
   b\! cis) |
 
   %A
-  b8 r r4
+  b8 r r4 \times 2/3 {r8 e,\f e} \times 2/3 {e g b} |
+  c8 r r4 r e\f |
+  dis r4 \times 2/3 {r8 e,\f e} \times 2/3 {e g b} |
+  c8 r r4 r e\f |
+  dis r r2 |
+  R1*2 |
+  r2 b2~(\fp |
+  b4 a8. gis16 fis4 gis) |
+  e2( a~ |
+  a4) r r fis(\p |
+  g4.\< a8 b c4)\! fis,8( |
+  g4.\< a8 b c4)\! fis,8( |
+
+  %B
+  << g1 {s2\< s\>} >> |
+  e4)\! r r2 |
+  R1 |
+  \setTextCresc
+  r2 g2~(\<
+  g gis) |
+  a1(\sf\> |
+  b8)\! g( g' fis e d c b) |
+  a1(\sf\> |
+  b8) r r4 r g |
+  g4.\p r8 r4 r8. g16 |
+  g4. r8 r4 r8. g16 |
+  \repeat unfold 4 {g4. g8} |
+  c4. r8 r4 r8. c16 |
+  c4. r8 r4 r8. c16 |
+  \setTextCresc
+  c4. c8 c4.\< c8 |
+  c4. c8 c4. c8 |
+  b2\! r |
+  bes2-^(\f fis-^ |
+  g2.-^) r4 |
+  g2-^(\f dis-^ |
+  e2-^) f( |
+  e) f( |
+  \times 2/3 {e8) e e} \times 2/3 {e gis b} c2 |
+  \times 2/3 {r8 e, e} \times 2/3 {e gis b} c2 |
+  b2-> a4.-> e8-> |
+  fis2-> r |
+  d'2-> c4.-> a8-> |
+  fis4->( c8-> d-> e-> fis-> g-> a->) |
+  b2\ff b4. ais8 |
+  b2-^ a-^ |
+
+  %C
+  b4 r r2 |
+  R1*8 |
+  r2 r4 d,(\p |
+  c4. e8 g b d c) |
+  c4( d,) r2 |
+  R1*2 |
+  r2 e'4(\p fis |
+  g b) r2 |
+  r2 e,,2~(\sfp |
+  e4. fis8\< g4 b |
+  cis2.\sf b4 |
+  ais) r r2 |
+  R1*2 |
+  r2 b4(\p cis |
+  d fis) r2 |
+  R1 |
+  b,,2\ff gis'4. fis8 |
+  eis1~ |
+  eis2 r |
+  R1*3 |
+  r2 b''2~(\fp |
+  b4 a8 g fis4 e) |
+  dis2( e4 fis |
+
+  %D
+  g4) r r2 |
+  e2.\sfz r4 |
+  R1 |
+  cis2.\sfz r4 |
+  R1 |
+  b2.\sfz r4 |
+  r b\ff r b |
+  r b2\sf r4 |
+  r2 \times 2/3 {r8 e,\f e} \times 2/3 {e a c} |
+  fis8-> r r4 r2 |
+  R1*3 |
+  \times 2/3 {r8 b,,\f b} \times 2/3 {b f' aes} ees'8-> r r4 |
+  R1*10 |
+  \repeat unfold 2
+  {
+    r4 d-.(\< d-. d-.) |
+    c2.\sfp r4 |
+  }
+  \setTextDim
+  c1~(\p\> |
+  c2 b) |
+  e,4\! r r2 |
+  R1*4 |
+  r2 c'2~(\fp |
+  c4 bes8 a g4 f) |
+  e2( f4 g |
+  a) r \times 2/3 {r8 a\p a} \times 2/3 {a c f} |
+  \setTextCresc
+  \times 2/3 {g( e) e-.} \times 2/3 {e->(\< c) c-.} \times 2/3 {c->( bes) bes-.} \times 2/3 {bes->( g) g-.} |
+  f8\! r r4 \times 2/3 {r8 f f} \times 2/3 {f a d} |
+  \setTextCresc
+  \times 2/3 {e( cis) cis-.} \times 2/3 {cis->(\< a) a-.} \times 2/3 {a->( g) g-.} \times 2/3 {g->( e) e-.} |
+
+  %E
+  d8\! r r4 r2 |
+  d'2.\sfz r4 |
+  R1 |
+  \repeat unfold 4 {d4\f r} |
+  d4\f r \times 2/3 {r8 e,\ff e} \times 2/3 {e gis b} |
+  cis4(\sfz d b e) |
+  r2 \times 2/3 {r8 e,\ff e} \times 2/3 {e gis b} |
+  c4(\sfz d b e) |
+  R1 |
+  \times 2/3 {r8 a,,\f a} \times 2/3 {a c e} a8-> r r4 |
+  \times 2/3 {r8 e e} \times 2/3 {e a c} \times 2/3 {e e, e} \times 2/3 {e g c} |
+  e1\ff |
+  R1*9 |
+
+  %F
+  R1 |
+  r2 r4 g,( |
+  f4.\fp a8 c e g f) |
+  f4(\f g,) r g( |
+  f4.->) r8 r4 r8 e'( |
+  d4.->) r8 r4 r8 e( |
+  << d1~) {s2\< s\>} >> |
+  d2\! r4 d |
+  << d1~ {s2\< s\>} >> |
+  d2\! r4 d( |
+  c4. gis8 a b c d) |
+  c1 |
+  fis2( e~ |
+  \setTextCresc
+  e d) |
+  d(\< dis |
+  e fis |
+  e8)\! r r4 \times 2/3 {r8 a,,\f a} \times 2/3 {a c e} |
+  f8 r r4 r a\f |
+  gis r \times 2/3 {r8 a,\f a} \times 2/3 {a c e} |
+  f8 r r4 r a\f |
+  gis r r2 |
+  R1*2 |
+  r2 e'~(\fp |
+  e4 d8. cis16 b4 cis) |
+  a2( d~ |
+  d4) r r b(\p |
+
+  %G
+  c4.\< d8 e f4)\! b,8( |
+  c4.\< d8 e f4)\! b,8 |
+  c1(\< |
+  a4)\! r r2 |
+  R1 |
+  \setTextCresc
+  r2 c2~\< |
+  c cis |
+  d1(\sf\> |
+  e4)\! r r2 |
+  d1(\sf\> |
+  e8\! c,[( e' b] c g e c) |
+  c'4.\p r8 r4 r8. c16 |
+  c4. r8 r4 r8. c16 |
+  \repeat unfold 4 {c4. c8} |
+  \repeat unfold 2
+  { f4. g,8( f'4 \autoBeamOff d8.) f16 \autoBeamOn | }
+  \setTextCresc
+  c4.\< c8 \repeat unfold 3 {c4. c8} |
+  e2\! r |
+  ees2-^(\f b-^ |
+  c2.-^) r4 |
+  c2-^( gis-^ |
+  c2-^) bes2( |
+  a) bes( |
+  \times 2/3 {a8) a a} \times 2/3 {a cis e} f2 |
+  \times 2/3 {r8 a, a} \times 2/3 {a cis e} f2 |
+  e2-> d4.-> a8-> |
+  b2-> r |
+  g'2-> f4.-> d8-> |
+  b4( f8-> g-> a-> b-> c-> d->) |
+  e2\ff e4. dis8 |
+  e2-^ d-^ |
+
+  %H
+  c4 r r2 |
+  R1*15 |
+  R1^\fermataMarkup
+
+  %3/4
+  %romanze
+  R2.*3 |
+  r4 r r8 cis,(\p |
+  d4 cis4.)
 }
 
