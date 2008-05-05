@@ -371,7 +371,7 @@ hornFour = \relative c''
   \setTextCresc
   d2(\< |
   c |
-  b4) r |
+  b4)\! r |
   R2 |
   \clef treble
   \setTextCresc
@@ -496,7 +496,7 @@ hornFour = \relative c''
     c) r r4 |
   }
   R2*3 |
-  r8 e(\f^\mitBravour a g |
+  r8 e(\f^\mitBravourBis a g |
   fis4) g |
   c, f |
   g4-^ g,-^ |

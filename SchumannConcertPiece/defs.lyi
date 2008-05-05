@@ -14,7 +14,8 @@ tempoMarkMarkup = #(define-music-function (parser location markp) (markup?)
 sehrLebhaft = \markup{\italic "sehr lebhaft"}
 dolce = \markup{\italic "dolce"}
 mitGrossemAustruck = \markup{\italic "Mit großem Ausdruck"}
-mitBravour = \markup{\italic "mit Bravour bis zum Schluß"}
+mitBravourBis = \markup{\italic "mit Bravour bis zum Schluß"}
+mitBravour = \markup{\italic "mit Bravour"}
 
 outline =
 {

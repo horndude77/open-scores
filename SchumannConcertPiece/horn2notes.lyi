@@ -46,7 +46,7 @@ hornTwo = \relative c''
   a1(\sf\> |
   b8)\! g( g' fis e d c b) |
   a1(\sf\> |
-  b8) r r4 r g |
+  b8)\! r r4 r g |
   g4.\p r8 r4 r8. g16 |
   g4. r8 r4 r8. g16 |
   \repeat unfold 4 {g4. g8} |
@@ -289,7 +289,7 @@ hornTwo = \relative c''
   d8. a16 a4 gis |
   \setTextDim
   a2.~\> |
-  a4 r r |
+  a4\! r r |
   R2.*5 |
 
   %2/4
@@ -318,5 +318,297 @@ hornTwo = \relative c''
   %M
   c8 r r4 |
   R2*9 |
+  r4 r8 e-.\p |
+  a,8. b16 c8 fis,-. |
+  g-. g-. r4 |
+  R2*4 |
+  r4 r8 f( |
+  e4 d'8) r |
+  r4 r8 dis,~ |
+  dis16 e-. a-. c-. e8-. r |
+  r8 cis16-. dis-. e8-. r |
+  r4 r8 e,8~ |
+  e e4 fis8 |
+  f4.(\fp e8) |
+  e4 r8 dis8 |
+  e r r4 |
+  r8 gis4 a8~ |
+  a e4 dis8 |
+  e r r4 |
+  r8 b'4 b8 |
+  a4 r8 e |
+  \setTextCresc
+  g2->(\< |
+  e8)\! r r4 |
+
+  %N
+  R2*5 |
+  r8 b'(\p c4~-> |
+  c) r |
+  r8 cis( d4~-> |
+  d4.) r8 |
+  r8 b( c4~-> |
+  c) r |
+  aes2 |
+  R2*2 |
+  r4 r8 d,-. |
+  d'-.-> b16-. a-. g8-. a-. |
+  a-. r r d,-. |
+  d'-.-> b16-. a-. g8-. a-. |
+  a-. r r4 |
+  r8 g,16-.\< b-. d-. g-. b-. d-. |
+  f2~ |
+  f(\fp\> |
+  c4)\! r |
+  r8 b,16-.\< d-. f-. gis-. b-. d-. |
+  f2~ |
+  f~\fp\> |
+  f8\p r b,-. r |
+  b-. r a-. r |
+  \setTextCresc
+  a-.\< r g-. r |
+  g-. r fis-. r |
+  fis-.\! r r4 |
+  d4~-^\f d16 g b d |
+  R2 |
+  d,4~-^\f d16 g b d |
+  e8-. r r dis( |
+  e4-^) r8 gis,8( |
+  a4) r8 b8( |
+  c8-^) r r gis( |
+  a) r r4 |
+  r8 e4 e8 |
+  d8-.^\mitBravour d16-. e-. d( e) fis-. g-. |
+  fis(\< g) a-. b-. c-. d-. e-. fis-. |
+  g2\sf |
+  c,4.\sf b16 b |
+
+  %O
+  b4 r |
+  R2*11 |
+  e,2->( |
+  e'->) |
+  R2*6 |
+  d,2->(\p |
+  d'->) |
+  R2 |
+  r4 r8 cis,8(\mf |
+  fis, gis a b |
+  \setTextCresc
+  cis\< fis a cis |
+  fis8)\sf r r gis,( |
+  fis cis a fis) |
+  R2*2 |
+  fis'2->( |
+  fis'->) |
+  r4 r8 fis,( |
+  \setTextCresc
+  gis\< cis eis gis |
+  a\sf fis cis b |
+  a) r r4 |
+  r r8 g( |
+  a d fis a |
+  b\sf g d c |
+  b) r r4 |
+  d,2\f |
+  b'~\f |
+  b~ |
+  b4 r8 fis |
+
+  %P
+  fis r r4 |
+  R2*4 |
+  r4 fis(\p^\mitGrossemAustruck |
+  b2)_\dolce |
+  b~\< |
+  b4\> ais~\! |
+  ais bis( |
+  cis2 |
+  d |
+  cis) |
+  b4( cis |
+  dis2 |
+  cis |
+  bis4) gis~ |
+  gis gis( |
+  e2~ |
+  e4 dis) |
+  dis2-. |
+  fis-. e-. |
+  dis-. |
+  e8-. r r4 |
+  R2*3 |
+  gis2(\fp |
+  \setTextCresc
+  a8) a(\< gis fis) |
+  fis'2~\! |
+  fis4. fis8( |
+  a4 g) |
+  r4 r8 g( |
+  \setTextCresc
+  gis2~\< |
+  gis4.) a16\f a |
+
+  %Q
+  a8 r r4 |
+  R2 |
+  r4 r8 a16 a |
+  a8 a,16 a a8 r |
+  R2*2 |
+  r4 r8 a16 a |
+  a8 a16 a a8 e16\f e |
+  e8 r r4 |
+  R2*6 |
+  r4 r8 fis8~(\mf |
+  fis16 g) c-. e-. g8-. cis,-. |
+  d r r g-.\f |
+  g-. g-. r4 |
+  R2*4 |
+  r4 r8 e-.\p |
+  e4 r8 e-. |
+  \setTextCresc
+  e8.\< fis16 g8 b,-.\f |
+  b-.\f r r4 |
+  r4 r8 a-.\p |
+  bes16( a) f-. d-. a8-. f'-.\f |
+  e4-> fis-> |
+  g4.-> g8-.\f |
+  c,-> r r b' |
+  c8.-> c16 c8 c |
+  b4-> bes-> |
+  a r8 c |
+  b4-> b-> |
+  c8 r r4 |
+
+  %R
+  R2*9 |
+  r4 r8 e-.\p |
+  a,8. b16 c8 fis,-. |
+  g-. g-. r4 |
+  R2*4 |
+  r4 r8 f( |
+  e4 d'8) r |
+  r4 r8 dis,~ |
+  dis16 e-. a-. c-. e8-. r |
+  r cis16-. dis-. e8-. r |
+  r4 r8 e,~ |
+  e e4 fis8 |
+  f4.(\fp e8) |
+  e4 r8 dis8 |
+  e r r4 |
+
+  %S
+  r8 cis'(\p d4~-> |
+  d) r |
+  r8 c(\p cis4~-> |
+  cis) r |
+  r8 cis(\p d4~->)( |
+  d2\< |
+  des)\> | s1*0\!
+  R2*3 |
+  \repeat unfold 2
+  {
+    r4 r8 d, |
+    d'-.-> b16-. a-. g8-. r |
+  }
+  r8 c,16-.\< e-. g-. c-. e-. g-. |
+  bes2~( |
+  bes\fp\> |
+  f4)\! r |
+  r8 e,16-.\< g-. bes-. cis-. e-. g-. |
+  bes2~ |
+  bes~\fp\> |
+  bes8\p r e,-. r |
+  e-. r d-. r |
+  \setTextCresc
+  d-.\< r c-. r |
+  c-. r b-. r |
+  b-.\! r r4 |
+  g4~-^\f g16 c e g |
+  R2 |
+  g,4~-^\f g16 c e g |
+  a8-. r r gis( |
+  a4-^) r8 cis,8( |
+  d4) r8 e8( |
+  f-^) r r cis( |
+  d) r r4 |
+  r8 a4 a8 |
+  g8-.^\mitBravour g16-. a-. g( a) b-. c-. |
+  b(\< c) d-. e-. d-. e-. f-. g-. |
+  a2\sf |
+  f4.\sf r8 |
+
+  %T |
+  R2 |
+  e4.(\mf c8 |
+  g4. e8) |
+  c8(\< e \times 2/3 {g8 c bes)} |
+  a4\> r\! |
+  R2*5 |
+  e'8( dis e c |
+  g c e g) |
+  a4.(\sf g8 |
+  fis) r r4 |
+  R2*3 |
+  r4 r8 g,(\p
+  aes f d c |
+  b) r r g'( |
+  aes f d b |
+  \setTextCresc
+  c) r r c'(\<
+  des bes g f |
+  e) r r c'( |
+  des[ bes g]) c,-. |
+  f-.\! r r4 |
+  R2*3 |
+  r8 e(\p a g) |
+  g( fis e fis |
+  \setTextCresc
+  g\< d g f) |
+  f( e d e |
+  f c f e) |
+  d16-. f-. a-. d-. f4~(\f |
+  f8 d b g |
+  d') b( e d) |
+  d( cis b cis |
+  d a d c) |
+  c( b a b |
+  \setTextCresc
+  c\< g c bes) |
+  a16\< c f a c4~\f |
+  c8 a,( d f) |
+  c4( b) |
+  c8 r r4 |
+  \repeat unfold 2
+  {
+    R2 |
+    r8 c4 c8~ |
+    c c4( b8 |
+    c) r r4 |
+  }
+  R2*4 |
+  r8 d(\f^\mitBravourBis g f |
+  e4) f |
+  d-^ d-^ |
+  c-^ r |
+  R2*4 |
+  r8 d(\f g f |
+  e4) f |
+  d-^ d-^ |
+  c8 r r4 |
+  ees4-^ d-^ |
+  c8 r r4 |
+  ees4-^ d-^ |
+  ees4-^ d-^ |
+  d8\sf r \times 2/3 {r8 g,, g} |
+  \times 2/3 {g->( b) b-.} \times 2/3 {b->( d) d-.} |
+  \setTextCresc
+  \times 2/3 {d->(\< g) g-.} \times 2/3 {g->( b) b-.} |
+  \times 2/3 {b->( d) d-.} \times 2/3 {d->( g) g-.} |
+  g8-. g-.\ff g-. e-. |
+  e-. c-. d-. d-. |
+  e-. g,-. g-. g-. |
+  g-. r g-. r |
+  g2\fermata |
 }
 

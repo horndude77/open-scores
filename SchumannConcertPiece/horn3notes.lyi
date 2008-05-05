@@ -258,7 +258,7 @@ hornThree = \relative c''
   R2*5 |
   r4 r8 c~-> |
   \setTextCresc
-  c16\> b g e b8 a'-.\f |
+  c16\< b g e b8 a'-.\f |
   g-.\f r r4 |
   R2 |
   r4 r8 g-.\f |
@@ -273,5 +273,266 @@ hornThree = \relative c''
   %M
   e8 r r4 |
   R2*11 |
+  r8 g(\p fis f |
+  e fis g d |
+  e fis b,16 cis d8) |
+  b4 cis |
+  d8 r r d |
+  d4 r |
+  R2*3 |
+  r4 r8 g16-. a-. |
+  b8-. r r c,( |
+  b4.) dis8 |
+  d4.(\fp c8) |
+  b4 r8 a |
+  g r r4 |
+  r8 d'4 c8~ |
+  c b4 a8 |
+  g r r4 |
+  r8 e'4 e8 |
+  e4 e8 e |
+  \setTextCresc
+  b2->(\< |
+  e8)\! r r4 |
+
+  %N
+  R2*5 |
+  r4 r8 gis(\p |
+  a4->) r |
+  r r8 ais( |
+  b4.->) r8 |
+  r4 r8 gis( |
+  a4->) r |
+  f2 |
+  R2*3 |
+  r4 r8 e-.\p |
+  fis-. r r4 |
+  r r8 e-. |
+  d-. r r4 |
+  R2 |
+  r8 gis,16-. b-. d-. f-. gis-. b-. |
+  c2~\fp |
+  c4 r |
+  R2 |
+  r8 gis,16-. b-. d-. f-. gis-. b-. |
+  c2~\fp\> |
+  c8\! r r4 |
+  R2*3 |
+  \repeat unfold 2
+  {
+    b,4~-^\f b16 e g b |
+    R2 |
+  }
+  g8-. r r4 |
+  r8 gis( a d, |
+  e4) r |
+  r8 r4 e8 |
+  e r r4 |
+  r8 d( c e) |
+  d8-.^\mitBravour b16-. c-. b( c) d-. e-. |
+  d(\< e) fis-. g-. a-. b-. c-. d-. |
+  e2\sf |
+  g,4.\sf b16 b |
+
+  %O
+  b4 r |
+  R2*27 |
+  fis2->(\p |
+  fis'->) |
+  R2 |
+  r4 r8 gis,,( |
+  \setTextCresc
+  cis\< dis eis fis |
+  gis) r r4 |
+  r4 r8 b( |
+  a fis cis a |
+  d e fis g |
+  a) r r4 |
+  r r8 c( |
+  b g d b) |
+  R2 |
+  d2\f |
+  d'~\f |
+  d4 r8 fis, |
+
+  %P
+  fis r r4 |
+  R2*5 |
+  R2 |
+  gis2~\p\<^\mitGrossemAustruck_\dolce |
+  gis4\> ais~(\! |
+  ais fis |
+  e2 |
+  gis |
+  fis~ |
+  fis4) fis |
+  fis2 |
+  dis'~ |
+  dis4 fis,( |
+  e gis) |
+  cis,2~ |
+  cis |
+  b-. |
+  dis-. |
+  b-. |
+  a-. |
+  gis8-. r r4 |
+  R2*5 |
+  \setTextCresc
+  a'2~(\< |
+  a |
+  d4)\! r |
+  R2 |
+  \setTextCresc
+  b2(\< |
+  e4.) a,16\f a |
+
+  %Q
+  a8 r r4 |
+  R2 |
+  r4 r8 a16 a |
+  a8 a,16 a a8 r |
+  R2*2 |
+  r4 r8 a16 a |
+  a8 a16 a a8 c16\ff c |
+  c8 r r4 |
+  R2*7 |
+  r4 r8 g-. |
+  f'8. e16 d8 b'-.\f |
+  c-. c-. r4 |
+  R2*5 |
+  \setTextCresc
+  r4 r8 c~(\p\< |
+  c16 b) g-. e-. b8 a'-.\f |
+  g-.\f r r4 |
+  R2 |
+  r4 r8 g-.\f |
+  g4-> a,-> |
+  d4.-> g8-.\f |
+  c,-> r r g' |
+  g8.-> g16 g8 f |
+  d4-> g-> |
+  f r8 f |
+  f4-> f-> |
+  e8 r r4 |
+
+  %R
+  R2*11 |
+  r8 g(\p fis f |
+  e fis g d) |
+  e( fis b,16 cis d8) |
+  b4 cis |
+  d8 r r d-. |
+  d4-. r |
+  R2*3 |
+  r4 r8 g16-. a-. |
+  b8-. r r c,( |
+  b4.) dis8 |
+  d4.(\fp c8) |
+  b4 r8 a |
+  g r r4 |
+
+  %S |
+  r4 r8 ais'(\p |
+  b4->) r |
+  r r8 a( |
+  ais4->) r |
+  r r8 ais( |
+  b2->\< |
+  bes)\> | s1*0\!
+  R2*3 |
+  \repeat unfold 2
+  {
+    r4 r8 c-. |
+    b-. r r4 |
+  }
+  R2 |
+  r8 cis,16-.\< e-. g-. bes-. cis-. e-. |
+  f2~\fp\> |
+  f4\! r |
+  R2 |
+  r8 cis,16-.\< e-. g-. bes-. cis-. e-. |
+  f2~\fp\> |
+  f8\p r r4 |
+  R2*3 |
+  \repeat unfold 2
+  {
+    e,4~-^\f e16 a c e |
+    R2 |
+  }
+  c8-. r r4 |
+  r8 cis( d g, |
+  a4) r |
+  r8 a4 a8 |
+  a r r4 |
+  r8 g( f a) |
+  g8-.^\mitBravour e16-. f-. e( f) g-. a-. |
+  g(\< a) b-. c-. b-. c-. d-. e-. |
+  fis2\sf |
+  d4.\sf r8 |
+
+  %T
+  R2 |
+  e4.(\mf c8 |
+  g4. e8) |
+  c8(\< e \times 2/3 {g8 c g} |
+  f4)\> r\! |
+  R2*5 |
+  e'8( dis e c |
+  g c e g) |
+  d4.\sf d8 |
+  d r r4 |
+  R2*3 |
+  f,8\p r r4 |
+  \repeat unfold 3 { f8 r r4 | } |
+  \setTextCresc
+  bes8\< r r4 |
+  \repeat unfold 2 { bes8 r r4 | } |
+  bes8\! r r4 |
+  R2*12 |
+  r8 e( d e) |
+  d r r4 |
+  r8 d( c d) |
+  \setTextCresc
+  c2~\< |
+  c~ |
+  c8 f,( a d) |
+  g,2(\f |
+  c,8) r r4 |
+  R2 |
+  r8 e4( a8~ |
+  a g4 f8 |
+  e) r r4 |
+  R2 |
+  r8 e4( a8~ |
+  a g4 f8 |
+  e) r r4 |
+  R2*3 |
+  r4 r8 a(\f^\mitBravourBis |
+  d c b4) |
+  c c |
+  c-^ b-^ |
+  g-^ r |
+  R2*3 |
+  r4 r8 a(\f |
+  d c b4) |
+  c c |
+  \repeat unfold 2
+  {
+    c-^ b-^ |
+    c8 r r4 |
+  }
+  c4-^ b-^ |
+  c4-^ b-^ |
+  b8-.\sf r r4 |
+  \times 2/3 {r8 g, g} \times 2/3 {g->( b) b-.} |
+  \setTextCresc
+  \times 2/3 {b-.(\< d) d-.} \times 2/3 {d->( g) g-.} |
+  \times 2/3 {g-.( b) b-.} \times 2/3 {b->( d) d-.} |
+  e8-. b-.\ff c-. gis-. |
+  a-. a-. b-. b-. |
+  c-. e,-. e-. e-. |
+  e-. r e-. r |
+  e2\fermata |
 }
 
