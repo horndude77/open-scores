@@ -11,6 +11,7 @@ mSempreLegato = \markup{\italic {sempre legato}}
 mSempreCresc = \markup{\italic {sempre cresc.}}
 mSemprePiuF = \markup{\italic {sempre più} \dynamic f}
 mSemprePP = \markup{\italic sempre \dynamic pp}
+mSempreF = \markup{\italic sempre \dynamic f}
 mDecresc = \markup{\italic decresc.}
 mPCresc = \markup{\dynamic p \italic cresc.}
 mPPCresc = \markup{\dynamic pp \italic cresc.}
