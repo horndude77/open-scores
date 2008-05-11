@@ -4,6 +4,8 @@
 \include "horn2notes.lyi"
 \include "horn3notes.lyi"
 \include "horn4notes.lyi"
+\include "horn5notes.lyi"
+\include "horn6notes.lyi"
 \include "defs.lyi"
 
 \paper
@@ -20,6 +22,25 @@ instrument = "Horns"
   \score
   {
     <<
+      \new StaffGroup
+      <<
+        \new Staff
+        {
+          \set Staff.instrumentName = "Horn I"
+          \set Staff.shortInstrumentName = "Hn.I"
+          \set Staff.midiInstrument = "french horn"
+          \hornFive
+        }
+        \new Staff
+        {
+          \set Staff.instrumentName = "Horn II"
+          \set Staff.shortInstrumentName = "Hn.II"
+          \set Staff.midiInstrument = "french horn"
+          \hornSix
+        }
+      >>
+      \new StaffGroup
+      <<
         \new Staff
         {
           \set Staff.instrumentName = "Horn I"
@@ -48,6 +69,7 @@ instrument = "Horns"
           \set Staff.midiInstrument = "french horn"
           \hornFour
         }
+      >>
     >>
     \layout
     {

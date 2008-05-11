@@ -3,7 +3,7 @@
 \include "defs.lyi" 
 \include "horn2notes.lyi" 
 
-instrument = "Horn II"
+instrument = "Solo Horn II"
 
 notes = \hornTwo
 
