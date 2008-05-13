@@ -51,6 +51,7 @@ menop = #(make-dynamic-script (markup #:line(#:normal-text #:italic "meno" #:dyn
 sempref = #(make-dynamic-script (markup #:line(#:normal-text #:italic "sempre" #:dynamic "f")))
 piuf = #(make-dynamic-script (markup #:line(#:normal-text #:italic "più" #:dynamic "f")))
 pespress = #(make-dynamic-script (markup #:line(#:dynamic "p" #:normal-text #:italic "espress.")))
+mpespress = #(make-dynamic-script (markup #:line(#:dynamic "mp" #:normal-text #:italic "espress.")))
 
 outline =
 {

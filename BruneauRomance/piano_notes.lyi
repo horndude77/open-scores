@@ -43,7 +43,7 @@ rightNotes = \relative c'
   g4( c,8) f4.( ees) |
   aes,8.( bes16 g aes) bes4.( c) |
   c4( f,8) bes4.( aes) |
-  aes2. g4.^\pocorall |
+  << aes2. {s4. s^\pocorall} >> g4. |
   aes4(^\atempo ees8) ges4.( fes) |
   ees2. aes4. |
   \octaves #1 {ees4.( des)} <c ees aes c> |
@@ -187,7 +187,9 @@ leftNotes = \relative c,
   f,,16(\! c' f a c f a4) r8 r4. |
   f,16( c' f a c f a4) r8 r4. |
   \clef treble
-  f,16( c' f a c f a4) r8 r4. |
+  \setTextDim
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  f,16( c' f a c f a4)\> r8 r4. |
   f,16( c' f a c f a4) r8 r4. |
   \clef bass
   f,,,,,16\< c' f a c f a c f \clef treble a\> c f
@@ -199,9 +201,74 @@ leftNotes = \relative c,
 
 dynamics =
 {
+  s4.\mp s4.*2 |
+  s4.*3*8 |
+  s4.\p s4.*2 |
+  s4.*3 |
+
+  %un poco più mosso
+  s4.\mp s4.*2 |
+  s4.*3*2 |
+  s4.\piuf s4.*2 |
+  s8*5 s8*4\< |
+  s4.*3\> |
+  s4.\pp s4.*2 |
+  s4.*3 |
+  s4.*3\< |
+  s4.\! s\> s |
+  s4.\mpespress s4.*2 |
+  s4.*3 |
+  \setTextCresc
+  s4. s s\< |
+  s4.*3*3 |
+  s4.\ff s4.*2 |
+  s4.*3*4 |
+  s4. s_\rall s\> |
+  s4.\pp s4.*2 |
+  s4.*3*4 |
+  s4.\piuf s4.*2 |
+  s4.*3\< |
+  s4.\p s4.*2 |
+  s4.*3\< |
+  s4.\p s4.*2 |
+  s4.*3 |
+  s4.\mp s4.*2 |
+  s4.*3*3 |
+  s4.\mf s^\pocoallarg s |
+  s4.*3\p |
+  s4.*3*4 |
+  s4.*3\pp |
 }
 
 pedals =
 {
+  s4.\sustainDown s\sustainUp\sustainDown s |
+  s\sustainUp\sustainDown s\sustainUp\sustainDown s |
+  s\sustainDown s s |
+  s\sustainUp\sustainDown s\sustainUp\sustainDown s |
+  s\sustainUp\sustainDown s s |
+  s\sustainUp s s |
+  s4.*3*5 |
+
+  %un poco piu mosso
+  s4.*3*2\sustainDown |
+  s4.*3\sustainUp\sustainDown |
+  s4.*3*2\sustainUp\sustainDown |
+  s4.*3\sustainUp\sustainDown |
+  s4.*3*3\sustainUp\sustainDown |
+  s4.\sustainDown s s\sustainUp\sustainDown |
+  s\sustainUp s s |
+  s4.*3*5 |
+  s4.*3*6\sustainDown |
+
+  %tempo i
+  s4.*3*11 |
+  s4.*3\sustainDown |
+  s4.*3\sustainUp\sustainDown |
+  s4.*3\sustainUp\sustainDown |
+  s4.*3\sustainUp\sustainDown |
+  s4.*3\sustainUp\sustainDown |
+  s4.*3\sustainUp\sustainDown |
+  s4.*3*5 |
 }
 
