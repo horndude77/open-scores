@@ -235,24 +235,30 @@ instrument = "Piano"
       \new Staff
       {
         << \outlineMvtI \midiOutlineMvtI >>
+        s8*4
         << \outlineMvtII \midiOutlineMvtII >>
         << \outlineMvtIII \midiOutlineMvtIII >>
+        s4*3
         << \outlineMvtIV \midiOutlineMvtIV >>
       }
       \new Staff
       {
         \set Staff.midiInstrument = "oboe"
         \oboeMvtI
+        s8*4
         \oboeMvtII
         \oboeMvtIII
+        s4*3
         \oboeMvtIV
       }
       \new Staff
       {
         \set Staff.midiInstrument = "french horn"
         \hornMvtI
+        s8*4
         \hornMvtII
         \hornMvtIII
+        s4*3
         \hornMvtIV
       }
       \new PianoStaff
@@ -260,15 +266,19 @@ instrument = "Piano"
         \new Staff="RH"
         {
           << \rightMvtI \dynamicsMvtI >>
+          s8*4
           << \rightMvtII \dynamicsMvtII >>
           << \rightMvtIII \dynamicsMvtIII >>
+          s4*3
           << \rightMvtIV \dynamicsMvtIV >>
         }
         \new Staff="LH"
         {
           << \leftMvtI \pedalsMvtI >>
+          s8*4
           << \leftMvtII \pedalsMvtII >>
           << \leftMvtIII \pedalsMvtIII >>
+          s4*3
           << \leftMvtIV \pedalsMvtIV >>
         }
       >>

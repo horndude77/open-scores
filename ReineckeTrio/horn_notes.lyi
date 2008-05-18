@@ -105,7 +105,7 @@ hornMvtI = \relative c'
   R1*5 |
   r4 b4.->\ff b,8-> d-> f-> |
   \times 2/3 {gis8(\> d) f-.} \times 2/3 {gis8( b) ais-.} cis8( b) ais b |
-  b4(\p cis) b--(\< c--) |
+  b4(\p cis) b--(\< cis--) |
   e( dis) gis2~(\f |
   gis4\> fis) dis b |
   dis2( cis)\! |

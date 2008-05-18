@@ -553,7 +553,7 @@ leftMvtI = \relative c,
   \key a \major
   a,8( e' d' e, a, e' d' e, |
   a, e' e' e,~ e) e( e' e, |
-  a, e' d' e, c' e, a e) |
+  a, e' d' e, cis' e, a e) |
   << {e,8( e'4) e e e8} \\ e,1 >> |
   a8( e' d' e, a, e' d' e, |
   a, e' e' e,~ e) e( e' e, |
@@ -818,7 +818,110 @@ rightMvtII = \relative c'
   <fis,,, c'>2. |
   <c' ees fis> |
   <g c ees g>~ |
-  <g c ees g> |
+  <g c ees g>4. f''8( fis g |
+  bes aes c, d ees g |
+  f d g, aes a b |
+  d c g c ees c') |
+  <c ees,> r r r4. |
+  <bes,, f>2. |
+  <des g,>4. a'8( bes f' |
+  ees b c ees ges ees') |
+  ees4 r8 r4. |
+  r d,8( ees ces' |
+  bes f ges bes ees bes') |
+  #(set-octavation 1)
+  ees( ees, a a, ges' ges, |
+  ees' ees, #(set-octavation 0) a a, ees' ees,~) |
+  ees ees( bes') r ees,( b') |
+  r d,( d' c bes d,) |
+  r8 a''( bes b c d) |
+  ees g, bes ees, g bes, |
+  << ees4 \\ {ees8( <bes g>)} >> r8 << des4 \\ {des8( <aes f>)} >> r8 |
+  << bes4 \\ {bes8( <f des>)} >> r8 << {g4( f8)} \\ {g8 <des bes> f} >> |
+  <ees c aes ees>2.~ |
+  <ees c aes ees> |
+  <f des bes f>2.~ |
+  <f des bes f>4. a'8( bes c |
+  ees des f, g aes c |
+  bes g d f ees des |
+  c ees c' aes ees <c' ees>) |
+  <c ees>4 r8 r4. |
+  <c,, fis,>2. |
+  <c ees fis> |
+  <g' ees c g>~ |
+  <g ees c g>4. ees'8( fis aes |
+  g ees b c d f |
+  ees c f, fis a c) |
+  b( g d g b g') |
+  g r r r4. |
+  c,8( g ees g c g') |
+  g r r r4. |
+  <<
+    {d4.( b) | c8->( aes g fis4.) |}
+    \\
+    {d'8 g, d b' g d | s4. fis8 e cis |}
+  >>
+  \key c \major
+  << g'4. \\ {g8^( d b)} >> r8 <cis g'>( ais) |
+  r8 <d g>( b) r <dis g>( b) |
+  <e g>4.( <e bes>) |
+  << {f4.( d)} \\ b2. >> |
+  g'4.( <e bes>) |
+  << {f4.( d)} \\ b2. >> |
+  <g g'>4.( c) |
+  <gis gis'>->( <a a'>) |
+  cis4.->( d) |
+  << {<ais ais'>4.->( <b b'>)} \\ {<d f>2.} >> |
+  <c e c'>8 r r <c fis>4.( |
+  <b g'>8) r r <gis~ a>4.( |
+  <gis b>8) r r <a' c> r r |
+  <g b> r r r4. |
+  r4. r8 g( g,) |
+  <<
+    { g'4. bes4->( g8) | }
+    \\
+    { g8 bes, ees bes' cis, g' | }
+  >> |
+  bes8( aes d,) << {c'4->( a8)} \\ {c8 ees, a} >> |
+  c8( bes ees,) << {ees'4->( f8)} \\ {ees8 a, f'} >> |
+  <<
+    {ees4.( d)}
+    \\
+    {ees8 ees, bes' d d, bes'}
+  >> |
+  <<
+    {d4.( c4 a8)}
+    \\
+    {d8 d, aes' c ges a}
+  >> |
+  c8( bes f) << aes4. \\ {aes8 aes, ees'} >> |
+  <<
+    {g4. f4( d8)}
+    \\
+    {g8 g, d' f f, c'}
+  >> |
+  \repeat unfold 2
+  <<
+    {d4.( g~ | g4 f8) f4( d8)}
+    \\
+    {d8 g, b g' g, b | g' c, f f f, c'}
+  >> |
+  <<
+    {d4.( g~ | g d | g d | g d) }
+    \\
+    {d8 g, b s4. | \repeat unfold 3 {g'8 g, b d g, b |}}
+  >> |
+  <g c e>4. <bes e g> |
+  << {f'4.( d)} \\ b2. >> |
+  g'4. <e bes> |
+  << {f4.( d)} \\ b2. >> |
+  << {g'4.( c,~) | c2.} \\ {g2. | gis4.( a)} >> |
+  << {cis4.->( d) | gis->( a)} \\ {a,2. | <c d>2.} >> |
+  <c e g>8 r r <d f b>4.( |
+  <c e c'>8) r r <cis d>4.( |
+  <c e>8) r r <f b d g>4. |
+  r8 c'-. c-. c r r |
+  R2. |
 }
 
 leftMvtII = \relative c,
