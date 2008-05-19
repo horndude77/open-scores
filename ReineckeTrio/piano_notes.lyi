@@ -124,7 +124,7 @@ rightMvtI = \relative c'
   \repeat tremolo 6 <f bes d> <f cis'> <f cis'> |
   \repeat tremolo 6 <f bes d> \clef treble <d' bes' d>8. <ees bes' ees>16 |
   <ees bes' ees>4 <bes bes'>8. <bes' ees bes'>16 <bes ees bes'>4 <ees, bes' ees>8. <e bes' e>16 |
-  <e bes' e>4 <bes bes'>8. <bes' ees bes'>16 <bes ees bes'>4 <bes, c>4 |
+  <e bes' e>4 <bes bes'>8. <bes' e bes'>16 <bes e bes'>4 <bes, c>4 |
   \clef bass
   \repeat unfold 2 {r16 f( c' f,) r ges( c ges)} |
   \clef treble
@@ -251,7 +251,7 @@ rightMvtI = \relative c'
   <cis' fis, ais,>4 eis8( dis' bis cis cis, eis |
   gis fis ais fis dis cis fis ais, |
   cis fis, dis gis fis cis ais dis |
-  ais dis cis eis \acciaccatura e8 g8) e cis gis |
+  ais dis cis eis \acciaccatura e8 gis8) e cis gis |
   <<
     {
       gis'4( a gis a) |
@@ -1106,11 +1106,105 @@ pedalsMvtII =
 %==============================================
 rightMvtIII = \relative c'
 {
+  \key f \major
+  c2 d4.( f8) |
+  f4( e f a) |
+  a( g) g( bes) |
+  <g bes>2 <f b> |
+  <f, d' b'>2 f' |
+  <g, f' bes> e' |
+  <a, f'> \clef bass
+  <<
+    {g2 | bes4( a2) c4 | c( bes2)}
+    \\
+    {r4 c,~ | c c2 c4 | e2.}
+  >> \clef treble e'4( |
+  g f2) a,4 |
+  \clef bass
+  <e bes'>2 e |
+  <e d'>4( <f c'>) <f c'> <f a d f> |
+  <f a d f>2. <f a>4 |
+  <f b d>2( <e c'>2) |
+  \clef treble
+  r8 c'''( a d c bes g e) |
+  r8 e( f a f c \times 2/3 {a8 g f)} |
+  f8( e4 d8) d( c4 c'8) |
+  c1 |
+  r8 e'( e, d' c bes \times 2/3 {g8 e d)} |
+  r8 d8( c a' g f c a) |
+  r8 g( d f) \afterGrace e2\trill {d16[ e]} |
+  f2 r8 s8*3 |
+  g2~( g8 f e c) |
+  <<
+    {f4 e \clef bass d c}
+    \\
+    {a8( c g c f, g e g)}
+  >> |
+  g8( a b d) <a c e>2 |
+  \clef treble
+  <b d g>4 <a c fis> << {<b g'>2} \\ {b8( c d g)} >> |
+  g2 e8( d c g) |
+  a8( b c f g, b c e) |
+  \clef bass
+  e,8( f g c) <f, b d>2~ |
+  <f b d>8 b( g f) e4 r |
 }
 
-leftMvtIII = \relative c,
+leftMvtIII = \relative c'
 {
+  \key f \major
   \clef bass
+  r2 b |
+  <<
+    {bes1 | bes2 bes | c,-> d4.( f8) |}
+    \\
+    {c2 d4.( f8) | f4( e) f2 | c,1 |}
+  >> |
+  \times 2/3 {c8( g' d'} \times 2/3 {f g d')} <c, f g d'>2 |
+  \times 2/3 {c,8( g' d'} \times 2/3 {f g d')} <c, g' c>2 |
+  << {r4 c2 r4} \\ {f,2 e4.( g8)} >> |
+  g4( f) f( a) |
+  <g c>2 <bes c g'>2~ |
+  <bes c g'>4 <a c f>2
+  <<
+    {c4~ | c c2 c4~ | c c c}
+    \\
+    {f,4 | g2 bes | bes4( a) a}
+  >> <d, a' d>4 |
+  <d a' d>2. d'4 |
+  g,2( c) |
+  <f, c'>2
+  <<
+    {c'2 | c c}
+    \\
+    {e,4.( g8) | g4( f) f a}
+  >> |
+  <g c>2 <bes c> |
+  <a c>1 |
+  <g c e>2 <bes c e> |
+  <bes e>4( <a f'>) <a f'>2 |
+  <<
+    {f'2 d4 c8( bes)}
+    \\
+    {<c, bes'>1}
+  >> |
+  <f, a'>8^( c' f c'
+  <<
+    {\voiceOne \change Staff=RH s8 a' \times 2/3 {c8 f a)} \change Staff=LH}
+    \new Voice {\voiceTwo f,2}
+  >> \oneVoice
+  <<
+    {e8( f g c) g2}
+    \\
+    {c,,2 c'}
+  >>
+  c,1 |
+  \octaves #-1 {g'2 g' | g,4 g g2 |}
+  <<
+    {e'8( f g c)}
+    \\
+    {c,2}
+  >> c,2 |
 }
 
 dynamicsMvtIII =
