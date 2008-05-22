@@ -1106,6 +1106,7 @@ pedalsMvtII =
 %==============================================
 rightMvtIII = \relative c'
 {
+  \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \key f \major
   c2 d4.( f8) |
   f4( e f a) |
@@ -1148,10 +1149,87 @@ rightMvtIII = \relative c'
   \clef bass
   e,8( f g c) <f, b d>2~ |
   <f b d>8 b( g f) e4 r |
+  << d'2 \\ {\times 2/3 {r8 g,( bes} \times 2/3 {d, g a)}} >> bes8( c d g) |
+  << {f4( e8.) a16} \\ {\times 2/3 {r8 a,( d)} \times 2/3 {r8 g,( cis)}} >> d2 |
+  <<
+    \new Voice {\voiceOne f4}
+    {\voiceTwo \times 2/3 {des8( f, bes}}
+  >> \oneVoice \times 2/3 {c f, f')} \times 2/3 {r8 f,( bes} \times 2/3 {c des bes)} |
+  \clef treble
+  <<
+    {aes'4 g f2}
+    \\
+    {\times 2/3 {aes8( c, f)} \times 2/3 {g( bes, e)} aes,4 r}
+  >> |
+  \times 2/3 {r8 a( bes c ees ges) r a,( bes c des f)} |
+  \times 2/3 {r8 a,( bes e, bes' e) r a,( bes f bes f')} |
+  \times 2/3 {r8 b,( cis d f aes) r b,( cis d ees g)} |
+  \times 2/3 {r8 bes,^( cis e g bes a f d \change Staff=LH \voiceOne a f d)} |
+  \times 2/3 {r8 ees( a \change Staff=RH c ees b' a ees c \change Staff=LH a ees c)} |
+  \times 2/3 {f,8( dis' a' \change Staff=RH c dis c')} \oneVoice <c dis>2 |
+  <gis e'>4~ \times 2/3 {<gis e'>8 g( b e g, b e gis e')} |
+  <e gis,>4 r r2 |
+
+  %a tempo
+  r8 e,,( e' e,) r e( e' e,) |
+  r8 e( e' e, cis e e' e,) |
+  r8 e( e' e,) r e( e'4) |
+  r8 e,( e' e, e' e,4) e8~( |
+  e e fis' fis,) r fis( fis' fis,) |
+  \times 2/3 {r8 e( b' ais fis' fis,) r b,( g' fis d d')} |
+  <g, b d>4 <g b cis> <g b cis g'>2 |
+  r4 <g' b d>\sf <g b cis>\sf <g b cis g'>\sf |
+  r2 r4 r8 <g, d'>-.( |
+  <g d'>-. <g cis>-. <g g'>-. <g cis>-. <g cis>-. <g c>-. <g c>-.) <fis c'>-.( |
+  <fis c'>-. <f b>-. <f f'>-. <f b>-. <f b>-. <f bes>-. <f bes>-.) <f bes>-.( |
+  <e bes'>-. <ees a>-. <a ees'>-. <ees a>-. <ees a>-. <d aes'>-. <d aes' d>-. <d aes'>-.) |
+  <aes' d>-.( <d, aes'>-. <d aes'>-. <aes' d>-.) <aes des>-.( <des, aes'>-.) <g c>-.( <c, g'>-.) |
+  r8 #(set-octavation 1) <f' d'> <f c'> <f c' f> <f bes f'> <e bes' e> <bes' e bes'> <e, g d'> |
+  <e g d'> <e g c> <f c' f> <f c> #(set-octavation 0) <c f bes> <c f a> <a c g'> <a c f> |
+  <g c f> <g c e> <g c e g> <e g d'> <e g d'> <e g c> <e g c> <c e> |
+  <c e> <c g'> <c f> c c2 |
+  \times 2/3 {r8 e,( g bes e bes') r g,( c e g d')} |
+  <<
+    \new Voice {\voiceOne d4( c) c f | d}
+    {
+      \voiceTwo
+      \set tupletSpannerDuration = #(ly:make-moment 1 4)
+      \times 2/3 {d8( e, g c c, f) c'( c, f) f'( f, a)} |
+      \change Staff=LH
+      \voiceOne
+      \times 2/3 {r8 a,,( d}
+    }
+  >> \oneVoice \change Staff=RH \times 2/3 {a' f' a} a4) r |
+  r4 <b, f> <c e,>2 |
+  \times 2/3 {r8 a( bes c f c') r c,( d c f c')} |
+  \times 2/3 {r8 d,( f c f c') r c,( d c f c')} |
+  \times 2/3 {r8 c,( d e g c) r d,( e f a d)} |
+  \times 2/3 {r8 c,( a' b d, g c e, f e g c)} |
+  \times 2/3 {r8 a,( bes c f c') r c,( d c a' c)} |
+  \times 2/3 {r8 d,( e d f d') r c,( d c f c')} |
+  \times 2/3 {r8 a,( bes c f a)} <g e bes>2 |
+  f4( e8. a,16 d4 c) |
+  \change Staff=LH
+  \times 2/3 {\voiceOne r8 d,( f \change Staff=RH \oneVoice bes d g)} <g c, bes>2 |
+  <<
+    {a4 \times 2/3 {g4( c,8)} f4( e) | d2}
+    \\
+    {
+      \times 2/3 {a'8 a, c g' g, c f f, a e' f, a} |
+      \change Staff=LH
+      \times 2/3 {\stemUp b,( d f \change Staff=RH \stemNeutral g b d)}
+    }
+  >> <c g e>2 |
+  c2 \clef bass <c g e> |
+  <c c,>1 |
+  <bes c,>2 << {g4.( f8)} \\ c2 >> |
+  <f c>2 \clef treble <c' f c'>4 r |
+  <f c' a'>1\fermata |
 }
 
 leftMvtIII = \relative c'
 {
+  \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \key f \major
   \clef bass
   r2 b |
@@ -1205,6 +1283,62 @@ leftMvtIII = \relative c'
     \\
     {c,2}
   >> c,2 |
+  << c'1 \\ {f,2( e)} >> |
+  <g g,>1 |
+  <g c,> |
+  <g g,>2 << {\voiceOne \times 2/3 {r8 d'( g a bes g)}} \new Voice {\voiceTwo g,2} >> \oneVoice |
+  <<
+    {\voiceOne r2 \times 2/3 {r8 a( d e f d)}}
+    \new Voice {\voiceTwo d,1}
+  >> \oneVoice |
+  <bes bes'>2 << {\voiceOne \times 2/3 {r8 f'( bes c des bes)}} \new Voice {\voiceTwo bes,2} >> \oneVoice |
+  f'2 << {\voiceOne \times 2/3 {r8 c'( f g aes f)}} \new Voice {\voiceTwo f,2} >> \oneVoice |
+  << {\voiceOne \times 2/3 {r8 a( bes c ees ges) r a,( bes c des f)}} \new Voice {\voiceTwo ees,2 des} >> \oneVoice |
+  << bes'1 \\ {c,2( des)} >> |
+  << {\voiceOne \times 2/3 {r8 b'( cis d f aes) r b,( cis d ees g)}} \new Voice {\voiceTwo f,2 ees} >> \oneVoice |
+  <g e'>2 <f d'> |
+  fis1 |
+  f2 <a' f'> |
+  << {\voiceOne \times 2/3 {e4 b'8} e2.} \new Voice {\voiceTwo e,1} >> \oneVoice |
+  \times 2/3 {r8 e,( b' e gis e')} e4 r |
+  <<
+    {a,2 gis4.( b8) | b4( a) a2 |}
+    \\
+    {<e a,>1 | <e a,>2 r |}
+  >> |
+  <b e b'>2 <d e b'> |
+  <cis e> <b e> |
+  <ais fis'> <b fis'> |
+  <cis, fis cis'>2 <d fis d'>4. <fis fis'>8 |
+  <fis fis'>4 <e e'> \times 2/3 {e8( b' e b' e g)} |
+  \clef treble
+  << {r4 <e b'>\sf <e b'>\sf <e b'>\sf} \\ g1\sf >> |
+  r2 r4 r8 \clef bass <e, b'>8-.( |
+  <e b'>-. <e bes'>-. <e bes'>-. <e bes' e>-. <e bes'>-. <ees a>-. <ees a>-.) <ees a>-.( |
+  <ees a>-. <d aes'>-. <d aes'>-. <d d'>-. <d aes'>-. <des g>-. <des g>-.) <des g>-.( |
+  <des g>-. <c fis>-. <c fis c'>-. <c fis>-. <c fis>-. <c f>-. <c f b>-. <c f>-.) |
+  <c b'>-.( <c f>-. <c f>-. <c b'>-.) <c bes'>-.( <c f>-.) <bes bes'>-.( <bes e>-.) |
+  <a c a'>2 <g c g'>4. <bes c bes'>8 |
+  <bes c~ bes'>4( <a c a'>) <a c a'> <c c'> |
+  <c c'>4 <bes c bes'>2 <bes c bes'>4 |
+  <bes c bes'> <a a'>2 <fis ees'>4 |
+  g2 bes |
+  <bes c~ bes'>4( <a c a'>) <a c a'> <d, a' d> |
+  d1 |
+  r4 g <g c,>2 |
+  \octaves #-1 {f1 | f' | c |}
+  << {g4 f' <e g,>2} \\ {c,2 c} >> |
+  f1 |
+  <bes f' bes>2 <a f' a> |
+  \octaves #-1 {c1 | d4 c bes a} |
+  \voiceTwo <g g,>2 \oneVoice <e' c,>2 |
+  << {f4( e d c)} \\ f,1 >> |
+  << f1 \\ {s2 bes} >>
+  << {bes4( a)} \\ f2 >> <bes bes,>2 |
+  <a c, a>1 |
+  <g g,>2 c, |
+  <f f,>2 <c' a'>4 r |
+  <f, c' a'>1\fermata |
 }
 
 dynamicsMvtIII =
