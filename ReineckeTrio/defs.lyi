@@ -118,7 +118,7 @@ outlineMvtII =
 
 midiOutlineMvtII =
 {
-  \tempo 4. = 108
+  \tempo 4. = 116
   s8 s |
   s2.*2 |
   %repeat
@@ -179,7 +179,7 @@ outlineMvtIV =
 
 midiOutlineMvtIV =
 {
-  \tempo 4 = 132
+  \tempo 4 = 152
   s4 |
   s1*76 |
 

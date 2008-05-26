@@ -409,7 +409,7 @@ hornMvtIV = \relative c
   gis'( g fis dis |
   e) b-. e,-. r |
   r4 cis'8\f r fis2~\> |
-  f2. r4\! |
+  fis2. r4\! |
   r4 cis8 r fis2~\> |
   fis4 r4 r2 |
   gis4(\mf g fis dis |

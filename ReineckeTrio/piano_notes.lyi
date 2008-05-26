@@ -1350,13 +1350,232 @@ pedalsMvtIII =
 }
 
 %==============================================
-rightMvtIV = \relative c'
+rightMvtIV = \relative c''
 {
+  \key a \major
+  cis8( e) |
+  \repeat unfold 2
+  {
+    e,4 << {fis8( a)} \\ dis,4 >> d4 bis8( d) |
+    << {cis8( e a fisis gis b) bis( e)} \\ {s2 d,4 gis} >> |
+    e4 << {fis8( a)} \\ dis,4 >> d4 bis8( d) |
+    << {cis8( e) gis( b) a4} \\ {s4 d, cis} >> cis'8( e) |
+  }
+  <fis, dis a>2. <fisis b, a>4 |
+  <gis b, gis> <fisis ais e'>( <gis b>) a8( cis) |
+  <fis, dis a>2. <fisis b, a>4 |
+  <gis b, gis> ais8-. b-. d( b) bis( e) |
+  e,4 << {fis8( a)} \\ dis,4 >> d4 bis8( d) |
+  << {cis8( e) a-. fisis-. gis( b) bis( e)} \\ {s2. gis,4} >> |
+  e4 << {fis8( a)} \\ dis,4 >> d4 bis8( d) |
+  << {cis8( e) gis( b) a4} \\ {s4 d, cis} >> r4 |
+  <d fis a cis>2. <d b'>8 <fis a> |
+  <d fis a>4( gis8) fis <cis eis>4 r |
+  <cis fis a>2. \clef bass << cis4 \\ {b8( a)} >> |
+  <a cis>4( <gis b>8-.) <fis a>-. <eis gis>4 << {cis'8-. cis-.} \\ {gis8 r} >> |
+  << {cis8( d)} \\ {a8 r} >> <a bis>-. r <b cis>-. r \clef treble << {eis-. eis-.} \\ {d8 r} >> |
+  << {eis8( fis)} \\ {cis r} >> <bis dis>8-. r <cis eis>-. r r4 |
+  <d fis a cis>2. <d b'>8 <fis a> |
+  <d fis a>4( gis8) fis <cis eis>4 r |
+  <cis fis a>2. \clef bass << cis4 \\ {b8( a)} >> |
+  <a cis>4( <gis b>8-.) <fis a>-. <eis gis>4 \clef treble << {dis'8-. eis-.} \\ {<b cis>8 r} >> |
+  << {eis8( fis)} \\ {cis8 r} >> <cis e> r <b d> r << {fis'8-. fis-.} \\ {<cis e>8 r} >> |
+  << {fis8( g)} \\ {d8 r} >> <e g>8 r <e g> r r4 |
+  <b fis' b>2. r4 |
+  <bis fis' a bis>2. r4 |
+  r4 dis'8( fis) a,4-> bis8( dis) |
+  fis,4-> a8( bis) dis,4-> cis'8( e) |
+  e,4 << {fis8( a)} \\ dis,4 >> d4 bis8( d) |
+  cis( e a) fisis-. gis( b) r4 |
+  <cis, e>2. r4 |
+  <a~ bis dis>2( <a cis e>4) r4 |
+  <cis e fis>1 |
+  <d eis>2->( <cis fis>4) <cis e> |
+  << <e gis>1 \\ {b4 ais8( b) b2} >> |
+  <e fisis ais>1 |
+  <e gis b>4 <eis gis b>( <fis a>) <b, d e gis>( |
+  <cis fis a>) <gis d' eis> <a cis fis> \clef bass <e g ais cis> |
+  <fis a b>2.-> r4 |
+  r2 r4 <e g ais> |
+  <e g ais cis>4.-> <dis fis b>8 <dis fis b>4 r |
+  r2 r4 <e b'> |
+  <e a>2. <a cis>4 |
+  <a dis>2. <dis, b' dis>4 |
+  <dis b' dis>4.-> <e b' e>8 <e b' e>4 <e cis'> |
+  << <fis b>2. \\ {e2( dis4)} >> r4 |
+  r b8( e gis b) r4 |
+  r cis,8( e gis cis) r4 |
+  r e,8( gis b e) e,( ais) |
+  <e ais e'>2. <a e'>4 |
+  <a dis>2. \clef treble <e' a cis e>4 |
+  <e a cis e>4.-> <e gis b>8 <e gis b>4 \clef bass <g, b e>4 |
+  <a b dis>2. \clef treble <e' a cis e>4 |
+  <e a cis e>4.-> <e gis b>8 <e gis b>4-. r4 |
+  \clef bass
+  r4 e,8( gis cis e) r4 |
+  r e,8( gis b e) r4 |
+  r e,8( gis ais e' ais, gis') |
+  \clef treble
+  <fisis dis ais>2. r4 |
+  r e'8( gis ais-> e') r4 |
+  <fisis,, dis ais>2. r4 |
+  r e'8( gis ais-> e') r4 |
+  r2 r4 \clef bass ais,,,4 |
+  <cisis cisis,>4.-> <dis dis,>8 <dis dis,>4-. <cis dis,>4-. |
+  <ais dis,>4( <b dis,>) r <b e,> |
+  <ais e>( <b e,>) r <b e,> |
+  <bis a e>4.-> <cis a e>8 <cis a e>4 <cis a> |
+  <dis a>2.-> <dis b dis,>4 |
+  <dis b dis,>4.-> <e b e,>8 <e b e,>4 <cis e,> |
+  << <b fis>2. \\ {e,2( dis4)} >> r4 |
+  r b8( e gis b) r4 |
+  r cis,8( e gis cis) r4 |
+  r e,8( gis b4) <a b dis> |
+  <gis b e>2. \clef treble <e'' gis>8( b'8) |
+  b,4 <g cis>8( e') e,4 <fis a>8( b) |
+  b,2. <e' gis>8( b') |
+  b,4 <g cis>8( e') e,4 <fis a>8( b) |
+  b,4 <fis' a>8( b) b,4 <fis' a>8( b) |
+  b,2. gis''8( e') |
+  e,2. gis,8( e') |
+  e,4 fis8->( a e' e, fisis e') |
+  e,4 gis8->( b e e, a e') |
+  e,4 ais'8( e') e,4 b8( e) |
+  e,4 bis''8( e) e,4 cis8( e) |
+
+  %a tempo
 }
 
-leftMvtIV = \relative c,
+leftMvtIV = \relative c'
 {
+  \key a \major
   \clef bass
+  r4 |
+  \repeat unfold 2
+  {
+    <<
+      {
+        cis4 c b gis |
+        a4. ais8 b4 e, |
+        cis' c b gis |
+        a
+      }
+      \\
+      {
+        a,1 |
+        a |
+        a~ |
+        a4
+      }
+    >> e'4 a, r |
+  }
+  <<
+    {
+      r4 fis'8( a) b4 b,8( dis) |
+      e4 b8( dis) e4 r |
+      r4 fis8( a) b4 b,8( dis) |
+      \acciaccatura e,8 e'4( fisis gis d') |
+      cis c b gis |
+      a4. ais8 b4 e, |
+      cis'4 c b gis |
+      a
+    }
+    \\
+    {
+      <e, b'>1 |
+      e2 e |
+      <e b'>1 |
+      e'1 |
+      a, |
+      a |
+      a~ |
+      a4
+    }
+  >> e'4 a, r |
+  <b b,>1 |
+  <b b'>2 <cis gis'>4 r |
+  <cis, cis,>1 |
+  cis2 cis'4 <b eis>8-. r |
+  <a fis'>-. r fis r gis r <b gis'>-. r |
+  <a a'>-. r fis-. r cis-. r r4 |
+  <cis cis'>1 |
+  b''2\sf <cis, gis'>4 r |
+  <cis, cis,>1 |
+  cis2 cis'4 gis8 r |
+  a r ais r b r ais r |
+  b r d r cis r r4 |
+  <b d,>2. r4 |
+  <dis dis,>2. r4 |
+  <fis b dis>1~ |
+  <fis b dis>2 r |
+  <<
+    {
+      cis'4( bis b gis) |
+      a4.( ais8 b4)
+    }
+    \\
+    {
+      e,1 |
+      e2.
+    }
+  >> r4 |
+  <a, e'>2. r4 |
+  r a,8( a') a4 r |
+  \octaves #-1 {ais1 | b2( ais4) ais | b1 | b |}
+  b1~ | b |
+  b2.-> \octaves #-1 {b4 | ais4.-> b8 b4} r4 |
+  r2 r4 \octaves #-1
+  {
+    b4 |
+    gis4.-> a8 a4 gis4 |
+    fis2. fis4 |
+    b2. fisis4 |
+    fisis4.-> gis8 gis4 ais |
+    b2.
+  } gis,8( b |
+  e gis) r4 r ais,8( cis |
+  e ais) r4 r b,8( e |
+  gis b) r4 r cis,8( fis) |
+  <fis cis fis,>2. <cis cis'>4 |
+  <b b'>2. <e b'>4 |
+  <e b'>4.-> <e' b'>8 <e b'>4-. b4 |
+  b,2. <e b'>4 |
+  <e b'>4.-> <e' b'>8 <e b'>4-. ais,,8( e' |
+  gis cis) r4 r b,8( e |
+  gis b) r4 r cis,8( gis' |
+  ais cis) r4 r2 |
+  <dis, dis'>2. \clef treble cis''8( gis' |
+  ais-> cis) r4 r2 |
+  \clef bass
+  <dis,,, dis'>2. \clef treble cis''8( gis' |
+  ais-> cis) r4 r \clef bass ais,,4 |
+  \octaves #-1
+  {
+    cisis4.-> dis8 dis4-. cis-. |
+    ais-. b-. gisis-. ais-. |
+    fisis( gis) r gis |
+    fisis( gis) r gis |
+  }
+  << {fis4.-> fis8 fis4 fis} \\ fis,2. >> |
+  \octaves #1
+  {
+    b2.-> fisis4 |
+    fisis4.-> gis8 gis4 a |
+    b2.
+  } gis8( b |
+  e gis) r4 r ais,8( cis |
+  e ais) r4 r b,8( e |
+  gis b) r4 r b4 |
+  e,8( b' e gis) b4 r |
+  << {r4 ais2( a4)} \\ b,1 >> |
+  e,8( b' e gis) b4 r |
+  b,1 |
+  <b e,>2 <b e,> |
+  <b e,>1~ |
+  <b e,>2. r4 |
+  R1*4 |
+
+  %a tempo
 }
 
 dynamicsMvtIV =
