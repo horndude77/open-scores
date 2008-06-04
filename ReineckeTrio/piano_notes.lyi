@@ -1444,6 +1444,66 @@ rightMvtIV = \relative c''
   e,4 bis''8( e) e,4 cis8( e) |
 
   %a tempo
+  e,4 << {fis8( a)} \\ dis,4 >> d4 bis8( dis) |
+  cis( e a) fisis-. << {gis8( b) bis( e)} \\ {d,4 g} >> |
+  e4 << {fis8( a)} \\ dis,4 >> d4 bis8( dis) |
+  cis( e) << {gis8( b) a4} \\ {d,4 cis} >> a'8( cis) |
+  <fis, dis a>2. <fisis b, a>4 |
+  <gis b, gis> <fisis ais e'>( <gis b>) a8( cis) |
+  <fis, dis a>2. <fisis b, a>4 |
+  <gis b, gis> ais8-. b-. d( bis) cis-. e-. |
+  e,4 << {fis8( a)} \\ dis,4 >> d4 bis8( dis) |
+  cis( e a) fis-. << {g( bis) cis( fis)} \\ {e,4 fis} >> |
+  <d fis>4 e8( fis) d4 cis8( fis) |
+  ais,( dis fis bis) dis4 <d b>8( f) |
+  f,2-> r4 <b' d>8( f') |
+  f,2.-> <d b>8( e) |
+  e,2.-> <d'' b>8( e) |
+  e,2.-> <e d>8( e') |
+  c,4 b8( e) a,4 g |
+  f8( a cis e) d4 <g a>8( a') |
+  f,4 e8( a) d,4 c |
+  b8( d f a gis4) <d b>4~(\sf |
+  <d b>8 f gis c <gis b>4) <fis d>4~(\sf |
+  <fis d>8 cis' d a gis ais b f) |
+  e4 r r <e d>8( e') |
+  cis,4 << {bes8( e) a,4 g} \\ {<e d>4 c bes8( e)} >> |
+  f8( a cis e d4) <g a>8( a') |
+  f,4 << {e8( a) d,4 c} \\ {<g a>4 f e8( a)} >> |
+  bes8( d f a) g4.( f8) |
+  e8( g bes d) cis4 \voiceOne <g g'>~( |
+  <g g'>8 dis' e bes g
+  <<
+    {\voiceOne bes a e | c4) r r}
+    \new Voice {\voiceTwo dis8( e bes | g bes g e c4)}
+  >> \oneVoice a'8( a') |
+  <<
+    {\voiceOne fis4) e d c}
+    \new Voice {\voiceTwo c4 g8( bes) f4 ees8( f)}
+  >> \oneVoice |
+  <d f b>2.-> b'8( b' |
+  <g d>4) << {f4 e d} \\ {a8( c) gis4 f8( gis)} >>
+  <e g cis>2. c'8( c' |
+  <bes e,>4 <g c,> <e bes>) e8( e' |
+  <c g>4 <bes e,> <g c,>) g'8( bes, |
+  e4-.) bes8( e, g4-.) e8( g, |
+  bes4-.) g8( bes, ees4-.) ees'8( ees' |
+  ees,2.) bes,8( ees |
+  ees,2.) r4 |
+  r2 r4 \clef bass a8( dis |
+  dis,2.) gis8( gis,) |
+  \repeat unfold 3 {r4 gis'8( gis,)}
+  \repeat unfold 3 {r4 g'8( g,)} |
+  r4 fisis'8( fisis,) r4 \clef treble fisis'''8( fisis' |
+  gis,2.) fisis8( fisis' |
+  gis,2.) fisis8( fisis' |
+  gis,4) fis8( gis) e4 dis8( gis) |
+  cis,2 r4 cis8( e) |
+  e,4 r r cis'8( e) |
+  e,4 r cis'8->( e) e,4 |
+  r cis'8( e) e,4-> cis'8( e) |
+  e,4-> << {fis8( a)} \\ dis,4 >> d4 bis8( d) |
+  cis( e a) fisis-. gis( b) << {gis8( e)} \\ gis,4 >> |
 }
 
 leftMvtIV = \relative c'
@@ -1576,6 +1636,69 @@ leftMvtIV = \relative c'
   R1*4 |
 
   %a tempo
+  <<
+    {
+      cis'4 c b gis |
+      a4. ais8 b4 e, |
+      cis'4 c b gis |
+      a4
+    }
+    \\
+    {
+      a,1 | a | a~ | a4
+    }
+  >> e' a, r |
+  << {r4 fis'8( a) b4} \\ <b, e,>2. >> b8( dis) |
+  << {e4 b8( dis)} \\ e,2 >> e4 r |
+  <<
+    {
+      r4 fis'8( a) b4 b,8( dis) |
+      \acciaccatura e,8 e'4 fisis gis d' |
+      cis c b gis |
+    }
+    \\
+    {
+      <b, e,>1 |
+      e |
+      a, |
+    }
+  >>
+  <a a'>2 <ais ais'> |
+  <b fis'>2. <a a'>4 |
+  <gis gis'>2. gis8( d' |
+  f b d f \clef treble b4) r |
+  r2 r4 \clef bass gis,,8( d' |
+  e b' d e \clef treble b'4) \clef bass e,, |
+  <d' e>4.-> <d e>8 <d e>4 r |
+  r4 << e,2 \\ {d8( e') c,4} >> b8( e) |
+  a,4 g f8( a cis e) |
+  d4 << a'2 \\ {gis8( a') f,4} >> e8( a) |
+  d,4 c b8( d f a) |
+  gis4 d~(\sf d8 f gis c |
+  b4) f4~(\sf f8 c' d a |
+  gis ais b f) e4 r |
+  <a, a,>1 |
+  a'4 g f8( a cis e) |
+  <a,, a,>1 |
+  d'4 c bes8( d f a) |
+  g4.( f8) e8 g \change Staff=RH \voiceTwo bes d |
+  c4 g~ g8 \change Staff=LH \oneVoice s4. | %TODO: Make switch clear
+  <a,, a,>2. r4 |
+  d,1~ | d |
+  <d d'>~ | <d d'> |
+  <d d'>~ | <d d'> |
+  <des bes' g'>1~ | <des bes' g'> |
+  <c ees c'>2. <des ees des'>4~ |
+  <des ees des'>2. <b dis b'>4~ |
+  <b dis b'>2. r4 |
+  c4 r c r |
+  b r b r |
+  ais r ais r |
+  a r a r |
+  << {r4 e'''8( g) g,4 r} \\ {<g, g,>1} >> |
+  r4 e''8( g) g,4 r |
+  << {r4 a'( gis fis) | e2} \\ {g,1( | cis2)} >> r2 |
+  R1*3 |
 }
 
 dynamicsMvtIV =
