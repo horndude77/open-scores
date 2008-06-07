@@ -573,7 +573,8 @@ oboeMvtIV = \relative c'
   a2 r |
   r4 fis\p a( gis) |
   \set decrescendoText = \markup {\italic "sempre dim."}
-  \set decrescendoSpanner = #'dashed-line
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
   a2.( gis4\> |
   a gis a gis |
   a1 |

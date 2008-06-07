@@ -11,27 +11,21 @@
     new-note))
 
 #(define (octavize-chord elements t)
- (cond ((null? elements) elements)
+  (cond ((null? elements) elements)
        ((eq? (ly:music-property (car elements) 'name) 'NoteEvent)
          (cons (car elements)
                (cons (octave-up (car elements) t)
                      (octavize-chord (cdr elements) t))))
-       (else (cons (car elements) (octavize-chord (cdr elements ) t)))))
+       (else (cons (car elements) (octavize-chord (cdr elements) t)))))
 
 #(define (octavize music t)
- (let* ((es (ly:music-property music 'elements))
-        (e (ly:music-property music 'element))
-        (name (ly:music-property music 'name)))
-   (cond ((eq? name 'EventChord)
-          (ly:music-set-property! music 'elements (octavize-chord es t)))
-         ((pair? es)
-          (for-each (lambda(x) (octavize x t)) es))
-         ((ly:music? e)
-          (octavize e))))
- music)
+   (if (eq? (ly:music-property music 'name) 'EventChord)
+         (ly:music-set-property! music 'elements
+           (octavize-chord (ly:music-property music 'elements) t)))
+   music)
 
 octaves = #(define-music-function (parser location arg mus) (integer? ly:music?)
- (octavize mus arg))
+  (music-map (lambda (x) (octavize x arg)) mus))
 %====
 
 tempoMark = #(define-music-function (parser location markp) (string?)

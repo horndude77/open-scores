@@ -605,7 +605,8 @@ hornMvtIV = \relative c
   gis b, b'2~\< |
   b4 a8( gis) gis4\! r |
   \set crescendoText = \markup {\italic "cresc. molto"}
-  \set crescendoSpanner = #'dashed-line
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
   r4 b,8(\< cis') cis2~ |
   cis4 b8( a) a4 gis8( fis) |
   e4\f r r2 |
@@ -613,7 +614,8 @@ hornMvtIV = \relative c
   gis r |
   r a\p |
   \set decrescendoText = \markup {\italic "sempre dim."}
-  \set decrescendoSpanner = #'dashed-line
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
   aes2.( g4\> |
   aes g aes g) |
   aes2.\! r4 |

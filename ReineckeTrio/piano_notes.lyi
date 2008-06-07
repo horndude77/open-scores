@@ -1408,7 +1408,7 @@ rightMvtIV = \relative c''
   r e,8( gis b e) e,( ais) |
   <e ais e'>2. <a e'>4 |
   <a dis>2. \clef treble <e' a cis e>4 |
-  <e a cis e>4.-> <e gis b>8 <e gis b>4 \clef bass <g, b e>4 |
+  <e a cis e>4.-> <e gis b>8 <e gis b>4 \clef bass <gis, b e>4 |
   <a b dis>2. \clef treble <e' a cis e>4 |
   <e a cis e>4.-> <e gis b>8 <e gis b>4-. r4 |
   \clef bass
@@ -1690,15 +1690,180 @@ leftMvtIV = \relative c'
   <des bes' g'>1~ | <des bes' g'> |
   <c ees c'>2. <des ees des'>4~ |
   <des ees des'>2. <b dis b'>4~ |
-  <b dis b'>2. r4 |
-  c4 r c r |
+  <b dis b'>2. <bis dis bis'>4~ |
+  <bis dis bis'>2. r4 |
+  cis4 r cis r |
   b r b r |
   ais r ais r |
   a r a r |
-  << {r4 e'''8( g) g,4 r} \\ {<g, g,>1} >> |
-  r4 e''8( g) g,4 r |
-  << {r4 a'( gis fis) | e2} \\ {g,1( | cis2)} >> r2 |
+  << {r4 e'''8( gis) gis,4 r} \\ {<gis, gis,>1} >> |
+  r4 e''8( gis) gis,4 r |
+  << {r4 a'( gis fis) | e2} \\ {gis,1( | cis2)} >> r2 |
   R1*3 |
+  <<
+    {
+      cis4 c b gis |
+      a4. ais8 b4 e, |
+      r4 c' a8 r gis4( |
+      a)
+    }
+    \\
+    {
+      a,1 | a | a | a4
+    }
+  >> e'4 a, r |
+  <<
+    {
+      r4 fis'8( a) b4 b,8( dis) |
+      e4 b8( dis) e4
+    }
+    \\
+    {
+      <e, b'>1 | e2 e4
+    }
+  >> r4 |
+  <<
+    {
+      r4 fis'8( a) b4 b,8( dis) |
+      e4( fisis gis d') |
+      cis4 c b gis |
+      a4. ais8 b4 e, |
+      r c' a8 r gis4 |
+    }
+    \\
+    {
+      <b, e,>1 |
+      e1 |
+      a, | a | a |
+    }
+  >>
+  a'4 e a, r |
+  <b b,>1 |
+  <b b'>2-> <cis gis'>4 r |
+  <cis, cis,>1 |
+  cis2 cis'4 b8 r |
+  a r fis r gis r <b gis'> r |
+  <a a'> r fis r cis r r4 |
+  <cis cis'>1 |
+  b''2 <cis, gis'>4 r |
+  <cis, cis,>1 |
+  cis2 cis'4 b'8 r |
+  a r ais,-. r b-. r ais-. r |
+  b r d r cis r r4 |
+  <d, d'>2. d8( fis |
+  b d fis b d4) r |
+  <d,, d'>2.  d8( a' |
+  d fis a d fis4) <d,, d'>4 |
+  <cis gis'>1 |
+  << {gis''2.( b4) | b2( cis)|} \\ {cis,1 | cis} >>
+  <cis a'>1 |
+  <cis gis'>2. bis,8( <cis cis'>) |
+  <cis cis'>1 |
+  <cis cis'>~ | <cis cis'> |
+  fis |
+  eis2.( gis4) |
+  gis2( fis) |
+  fis ais |
+  gis1 |
+  b |
+  ais1~ |
+  ais2 fis |
+  gis1 |
+  b |
+  b2( ais) |
+  ais~ <ais dis,> |
+  <ais dis,>1~ | <ais dis,> |
+  gis |
+  cis |
+  <cis fis,> |
+  <<
+    { cis1 | cis~ | cis2 cis | }
+    \\
+    { eis,2.( gis4) | gis2 fis~ | fis ais | }
+  >>
+  <cis gis>1 |
+  <cis b> |
+  <cis ais>~ | <cis ais> |
+  \octaves #-1
+  {
+    gis4. gis8 gis4 r |
+    cis4. cis8 cis4 r |
+    gisis4. ais8 ais4 b |
+    cis2( b) |
+  }
+  <a e a,>1 |
+  << { e'1 | e | e | } \\ {gis,2. b4 | b2( a) | a cis | } >>
+  \octaves #-1
+  {
+    b4. b8 b4 r |
+    e4. e8 e4 r |
+    cis1-> |
+    d2. f4 |
+    f2 e |
+    e2. g4 |
+    g2 fis~ |
+    fis a |
+    g2( fis~) |
+    fis a |
+    g2( fis~) |
+    fis f |
+    e1 |
+  }
+  e,2 e' |
+  <e b' d>1 |
+  << {r2 <e gis bis>2} \\ e,1 >> |
+  <e' a cis>1 |
+  << {r2 <e ais cis>2} \\ e,1 >> |
+  <e' b' d>1 |
+  e,1 |
+  <a a,>4 cis'8( e) e,2~ |
+  <<
+    {\voiceTwo e1}
+    \new Voice {\voiceOne r4 c' b( e,)}
+  >> \oneVoice |
+  a,8( e' a cis e2) |
+  << {r4 c b2} \\ e,1 >> |
+  a,8( e' a cis e4) r |
+  r4 e,( a, e |
+  a,2) r |
+  e''1~_( |
+  <a, e'>1) |
+  <a a,>2 <g g,> |
+  \repeat unfold 2
+  {
+    <fis fis,>1 |
+    b8( fis' b) r a,,( f' a) r |
+    << {gis,8( e' gis2.)} \\ gis,1 >> |
+    a'8( e' a) r g,,8( b g') r |
+  }
+  \octaves #-1
+  {
+    fis1~ |
+    fis2 f |
+    e1 |
+    e2 #(set-octavation -1) dis2 |
+    d1~ |
+    d2 #(set-octavation 0) d' |
+    cis1 |
+  }
+  <b f b,>1~ |
+  <b f b,>4 r r2 |
+  <<
+    \new Voice {\voiceOne e,8( b' d f~ f2)}
+    {\voiceTwo e,1~}
+  >> \oneVoice |
+  <e e'>1 |
+  \repeat unfold 2
+  {
+    a8( e' a cis e4) r |
+    << {r4 c( b e,)} \\ {e1} >>
+  }
+  <a, e' a>2 r4 e |
+  <e' gis d'>2 r4 <a, a,>4~ |
+  <<
+    {\voiceTwo <a a,>1~ | <a a,>4}
+    \new Voice {\voiceOne <e' a cis e>1~ | <e a cis e>4}
+  >> \oneVoice r4 r2 |
 }
 
 dynamicsMvtIV =
