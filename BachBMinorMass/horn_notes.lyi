@@ -1,6 +1,7 @@
 hornAria = \relative c''
 {
   \transposition d
+  \key c \major
   c4 c' b |
   c c,2 |
   g4 f' e |

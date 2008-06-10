@@ -1,4 +1,4 @@
-\version "2.11.45"
+\version "2.11.48"
 
 \include "defs.lyi"
 \include "horn_notes.lyi"
