@@ -265,7 +265,7 @@ oboeMvtII = \relative c''
 
   %2/4
   \set Staff.timeSignatureFraction = #'(2 . 4)
-  \compressMusic #'(3 . 2)
+  \scaleDurations #'(3 . 2)
   {
     a8_\mespr bes b d) |
     c4.( bes8) |

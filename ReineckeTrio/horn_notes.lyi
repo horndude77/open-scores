@@ -253,7 +253,7 @@ hornMvtII = \relative c''
 
   %2/4
   \set Staff.timeSignatureFraction = #'(2 . 4)
-  \compressMusic #'(3 . 2)
+  \scaleDurations #'(3 . 2)
   {
     e8(_\mespr f fis a) |
     g4.(\> f8)\! |
