@@ -1529,6 +1529,80 @@ rightMvtIV = \relative c''
     \\
     {d8 r | cis r}
   >> <dis b>8 r <eis cis> r r4 |
+  <d fis a cis>2. <d b'>8 <fis a> |
+  <d fis a>4( gis8) fis-. <cis eis>4 r |
+  <cis fis a>2. \clef bass << cis4 \\ {b8 a} >> |
+  <a cis>4( <gis b>8) <fis a> <eis gis>4 \clef treble
+  << {dis'8-. eis-. | eis( fis)} \\ {cis8 r | cis r} >>
+  <cis e>8-. r <b d>-. r
+  << {fis'-. fis-. | fis( g)} \\ {<cis, e>8 r | d r} >>
+  <e g>8 r <e g> r r4 |
+  <b fis' b>2. <b'' fis'>4( |
+  <fis d'> <d b'> <b fis'>) r |
+  <bis, fis' a bis>2. <bis'' a'>4( |
+  <a fis'> <fis bis> <bis, a'>) <fis b> |
+  <eis cis'>1-> |
+  << {b'2.->( d4)} \\ {fis,2( eis)} >> |
+  <eis d'>2( <fis cis'>) |
+  <cis cis'> <fis fis'> |
+  <<
+    \new Voice {\voiceTwo b1 | <fis a> |}
+    {\voiceOne <fis fis'>2->( <eis~ eis'>) | eis' bis |}
+  >> \oneVoice |
+  <fis a bis dis>1( |
+  <eis gis cis>) |
+  \clef bass
+  \times 2/3 {r4 cis,( fis} \times 2/3 {ais cis, cis')} |
+  \times 2/3 {r4 cis,( gis'} \times 2/3 {b cis, cis')} |
+  \times 2/3 {r4 cis,( fis} \times 2/3 {ais cis, cis')} |
+  \times 2/3 {r4 cis,( fis} \times 2/3 {cis' cis, cis')} |
+  \times 2/3 {r4 cis,( eis} \times 2/3 {gis cis, cis')} |
+  \times 2/3 {r4 cis,( fis} \times 2/3 {ais cis, cis')} |
+  \times 2/3 {r4 cis,( fis} \times 2/3 {ais cis, cis')} |
+  \times 2/3 {r4 eis,( b'} \times 2/3 {b, eis b')} |
+  \times 2/3 {r4 eis,( dis'} \times 2/3 {eis, bis dis')} |
+  \times 2/3 {r4 eis,( dis')} \times 2/3 {r fis,( cis')} |
+  \times 2/3 {r4 fis,( cis')} \times 2/3 {r fis,( <ais fis'>)} |
+  \times 2/3 {r4 ais( fis'} \times 2/3 {fis, ais fis')} |
+  \times 2/3 {r4 ais,( fis'} \times 2/3 {fis, ais eis')} |
+  \times 2/3 {r4 fis,( gis} \times 2/3 {dis' fis, gis)} |
+  \times 2/3 {r4 eis( gis} \times 2/3 {cis eis, cis')} |
+  r4 \clef treble ais'8( cis) cis,4 fis8( ais) |
+  b,8( gis' b fisis gis b eis, dis') |
+  dis4-> eis,8( dis') bis4 cis8( eis, |
+  fis-> ais cis gisis ais cis fis gis |
+  fis4->) gis,8( eis') eis,4 disis8( fis) |
+  disis8( eis b' fisis gis b cis eis) |
+  gis4 fis8( cis' bis, cis fis gisis, |
+  ais cis fis, ais eis fis ais, cis) |
+  <d b fis>4. <dis b fis>8 <dis b fis>4 r |
+  <b e>4. <b eis>8 <b eis>4 r |
+  \clef bass
+  <eis, cis' eis>4. <fis cis' fis>8 <fis cis' fis>4 <fis d'> |
+  <eis gis cis>1 |
+  r4 \clef treble cis''8( e) e,4 a8( cis) |
+  d,8( b' d ais b d gis, fis') |
+  fis4 gis,8( fis') dis4 e8( e') |
+  cis8( a e <fis a> e cis a e) |
+  <eis d a>4.-> <fis d a>8 <fis d a>4 r |
+  <d fisis cis'>4.-> <d gis b>8 <d gis b>4 r |
+  <e a e'>4 e8( cis' a e cis a) |
+  << {b8( f' a b f a d, d')} \\ {b,2. d4} >> |
+  << {d8( a' b d cis, g' bes cis)} \\ {d,2 cis} >> |
+  << {cis8( g' bes cis g bes e, e')} \\ {cis,2. e4} >> |
+  << {\voiceOne e8( bes' cis e dis, a' c dis} \new Voice {\voiceTwo e,2 dis} >> | \oneVoice
+  c'8 dis c a) r c,( dis fis) |
+  r a,( c dis c dis c a) |
+  dis( fis dis c fis c' fis, d) |
+  a'( c a dis, a' c a dis,) |
+  c'( dis c a c dis c a) |
+  <a cis e>1 |
+  r8 e( g cis fis, ais cis fis) |
+  <fis, b d fis>1 |
+  r8 d( fis b e, gis bis e) |
+  <a, cis e>1 |
+  r8 e( g cis fis, ais cis fis) |
+  <fis, b d fis>1 |
 }
 
 leftMvtIV = \relative c'
