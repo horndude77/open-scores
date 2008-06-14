@@ -37,6 +37,7 @@ oboeMvtI = \relative c''
   a( gis8.) b16 gis2~ |
   \setTextCresc
   gis4-.\< a-.( gis-. a-.) |
+  \setHairpinCresc
   c4( b8.) d16 b2~ |
   b4 d( bis) cis |
   e( cis) d f |
@@ -86,6 +87,7 @@ oboeMvtI = \relative c''
   r4 b,\mf d cis |
   \setTextCresc
   e4(\< dis8.) g16 g4( fis8.) bes16 |
+  \setHairpinCresc
   bes8-.\ff\> a-. c4.( a8^\markup{\italic "a piacere"} fis ees |
   \times 2/3 {c8\mf a fis} \times 2/3 {ees d f)} ees8( d) g-.( ees-.) |
   ees4-.(^\mdolce f-. ees-. f-.) |
@@ -98,6 +100,7 @@ oboeMvtI = \relative c''
   b4( ais) b-.( ais-.) |
   \setTextCresc
   cis4(\< c8.) c16 ees4( d) |
+  \setHairpinCresc
   f( e8.) aes16 aes4( g8.) b16 |
   b8-.\ff ais-. cis4-. r2 |
   R1*5 |
@@ -105,6 +108,7 @@ oboeMvtI = \relative c''
   c4( b8.) d16 b2~ |
   \setTextCresc
   b4 c--(\< b-- c--) |
+  \setHairpinCresc
   e4( d8.) f16 d4 c~ |
   c( b8.) d16 b4 a |
   f'( e8.) g16 e4 d~ |
@@ -115,6 +119,7 @@ oboeMvtI = \relative c''
   r r4 e'8.\mf a16 |
   \setTextDecr
   e4( c8.)\> a16 c4( a8.) c,16 |
+  \setHairpinDecresc
   e4 e2( d8 c) |
   b(\p\< d f b) d8.(\! e32 d c8 b) |
   c4(\> e2) e8.\p a16 |
@@ -135,6 +140,7 @@ oboeMvtI = \relative c''
   c(\p e) a-.( c-.) b4.( gis8) |
   \setTextCresc
   c4.(\< a8) d4.( b8) |
+  \setHairpinCresc
   e,( a) c-.( e-.) d4.( b8) |
   e4.( c8) fis4.( dis8) |
   gis1~\f\> |
@@ -162,6 +168,7 @@ oboeMvtI = \relative c''
   cis4( b8.) d16 b2~ |
   \setTextCresc
   b4 b(\< ais) b |
+  \setHairpinCresc
   d4( cis8.) e16 cis4 d |
   f cis( d) f |
 
@@ -175,6 +182,7 @@ oboeMvtI = \relative c''
   e4( c8.) e16 c4( a8.) c,16 |
   \setTextDim
   e1~(\> |
+  \setHairpinDim
   e2 gis |
   a4)\pp r r2 |
   R1*4 |
@@ -388,6 +396,7 @@ oboeMvtIII = \relative c''
   c1~\p |
   \setTextDecresc
   c4\> c bes4.( a8) |
+  \setHairpinDecresc
   a1~\pp |
   a |
 }
@@ -421,6 +430,7 @@ oboeMvtIV = \relative c'
   fis4( e8-.) d-. cis4 r |
   \setTextCresc
   r g'8-.\p\< g-. g( fis) r4\! |
+  \setHairpinCresc
   r b8-.\mf b-. b(\< ais) ais( b) |
   b2.\f b8( bis) |
   bis2. bis8( a') |
@@ -447,6 +457,7 @@ oboeMvtIV = \relative c'
   r2 r4 gis''(\f |
   \setTextDecresc
   e cis gis) e'(\> |
+  \setHairpinDecresc
   b gis e) gis |
   gis2( fis4) e |
   dis4\p r r2 |
@@ -527,6 +538,7 @@ oboeMvtIV = \relative c'
   r g'8-.\mf g-. g( fis) r4 |
   \setTextDecr
   r b8-. b-. b(\> ais) ais( b) |
+  \setHairpinDecresc
   b2. r4 |
   r2 r4 b8( bis) |
   bis1~ |
@@ -565,6 +577,7 @@ oboeMvtIV = \relative c'
   d4(\! cis8 b) b4 e,8(\p e') |
   \setTextCresc
   e2.\< d8( cis) |
+  \setHairpinCresc
   cis4 b8( ais) ais4 fis8(\f fis') |
   fis2. e8( d) |
   d4->(\f cis8 b) b4.->( a8) |
@@ -591,6 +604,7 @@ oboeMvtIV = \relative c'
   g1~-> |
   \setTextCresc
   g2 gis\< |
+  \setHairpinCresc
   a1~-> |
   a2 ais( |
   b) bis( |

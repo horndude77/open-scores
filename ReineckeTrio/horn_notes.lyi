@@ -29,6 +29,7 @@ hornMvtI = \relative c'
   r4 b8.\mf\> g16 b4 g8. b,16\! |
   \setTextDecr
   e1\> | d~ | d2 r\! |
+  \setHairpinDecresc
   R1*6 |
   g4(--_\mdolce a-- g-- a--) |
   c4( b8.) d16 b2~( |
@@ -74,6 +75,7 @@ hornMvtI = \relative c'
   r e8. d16 f4 r |
   \setTextDim
   r8 e-.\ff^\markup{\italic "un poco pesante"} d-. f-. e-. d-. f-.\> e-. |
+  \setHairpinDim
   e4\p r r2 |
   R1*2 |
   r2 r4 gis(\p |
@@ -99,6 +101,7 @@ hornMvtI = \relative c'
   cis4 b) a-.( fis-.) |
   \setTextCresc
   a(\< gis) b-.( a-.) |
+  \setHairpinCresc
   cis( b) fis'2~ |
   fis4 a2(\f c,4) |
   cis r r2 |
@@ -113,6 +116,7 @@ hornMvtI = \relative c'
   c4-.(\pp b-. c-. b-.) |
   \setTextCresc
   d c2\< b8. d16 |
+  \setHairpinCresc
   b4 a2 g4 |
   e'4 d2 c8. e16 |
   c4 b2 a4 |
@@ -154,6 +158,7 @@ hornMvtI = \relative c'
   e2 e~\mf |
   \setTextDecr
   e2\> e |
+  \setHairpinDecresc
   e1~\p |
   e4 e( b) g4~ |
   g g( e) g, |
@@ -396,6 +401,7 @@ hornMvtIII = \relative c
   d4(\> c)\! g8( a e g) |
   \setTextDecr
   f2\< b,4.( c8) |
+  \setHairpinDecresc
   c1~\pp | c\fermata |
 }
 
@@ -506,6 +512,7 @@ hornMvtIV = \relative c
   r4 aes8( b) b2~( |
   \setTextDecr
   b1~\> |
+  \setHairpinDecresc
   b2 bes~ |
   bes4) r r f(\p^\mdolce |
   d c bes) r |
@@ -545,6 +552,7 @@ hornMvtIV = \relative c
   cis2. r4 |
   \setTextCresc
   r c8(\< cis) cis2~ |
+  \setHairpinCresc
   cis2. r4 |
   r gis8-.\f gis-. gis( fis) fis( cis') |
   cis2->( c) |
@@ -570,6 +578,7 @@ hornMvtIV = \relative c
   c4( des f, c') |
   \setTextDim
   bes1\> |
+  \setHairpinDim
   aes2( ges) |
   f1(\p |
   ees2.) ges4 |
@@ -603,11 +612,13 @@ hornMvtIV = \relative c
   cis4 b8( a) a4 g\p |
   \setTextCresc
   gis b, b'2~\< |
+  \setHairpinCresc
   b4 a8( gis) gis4\! r |
   \set crescendoText = \markup {\italic "cresc. molto"}
   \set crescendoSpanner = #'text
   \override DynamicTextSpanner #'style = #'dashed-line
   r4 b,8(\< cis') cis2~ |
+  \setHairpinCresc
   cis4 b8( a) a4 gis8( fis) |
   e4\f r r2 |
   r2 a2\mf |
@@ -617,6 +628,7 @@ hornMvtIV = \relative c
   \set decrescendoSpanner = #'text
   \override DynamicTextSpanner #'style = #'dashed-line
   aes2.( g4\> |
+  \setHairpinDecresc
   aes g aes g) |
   aes2.\! r4 |
   R1*2 |
@@ -624,6 +636,7 @@ hornMvtIV = \relative c
   cis1~ |
   \setTextCresc
   cis2 c\< |
+  \setHairpinCresc
   b1~ | b~ |
   b2 gis |
   a1~ |

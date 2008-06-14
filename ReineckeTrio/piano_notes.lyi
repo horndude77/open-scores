@@ -1444,7 +1444,7 @@ rightMvtIV = \relative c''
   e,4 bis''8( e) e,4 cis8( e) |
 
   %a tempo
-  e,4 << {fis8( a)} \\ dis,4 >> d4 bis8( dis) |
+  e,4 << {fis8( a)} \\ dis,4 >> d4 bis8( d) |
   cis( e a) fisis-. << {gis8( b) bis( e)} \\ {d,4 g} >> |
   e4 << {fis8( a)} \\ dis,4 >> d4 bis8( dis) |
   cis( e) << {gis8( b) a4} \\ {d,4 cis} >> a'8( cis) |
@@ -1556,6 +1556,7 @@ rightMvtIV = \relative c''
   \times 2/3 {r4 cis,( gis'} \times 2/3 {b cis, cis')} |
   \times 2/3 {r4 cis,( fis} \times 2/3 {ais cis, cis')} |
   \times 2/3 {r4 cis,( fis} \times 2/3 {cis' cis, cis')} |
+  \times 2/3 {r4 cis,( eis} \times 2/3 {b' cis, cis')} |
   \times 2/3 {r4 cis,( eis} \times 2/3 {gis cis, cis')} |
   \times 2/3 {r4 cis,( fis} \times 2/3 {ais cis, cis')} |
   \times 2/3 {r4 cis,( fis} \times 2/3 {ais cis, cis')} |
@@ -1603,6 +1604,54 @@ rightMvtIV = \relative c''
   <a, cis e>1 |
   r8 e( g cis fis, ais cis fis) |
   <fis, b d fis>1 |
+  r8 d( fis b) << gis2 \\ {<d fis>4 e8( d)} >> |
+  <cis a'>4 r r cis'8( e) |
+  e,4 dis8( fis) d2 |
+  cis4 r r cis'8( e) |
+  e,4 dis8( fis) d2 |
+  cis4 r r
+  <<
+    {
+      gis'4( |
+      a gis a gis |
+      a2)
+    }
+    \\
+    {
+      bis,8( e) |
+      cis4 bis8( e) cis4 bis8( e) |
+      cis2
+    }
+  >> r4 cis''8( e |
+  e,2.) a,8( e' |
+  e,2.) cis''8( e |
+  e,4-.) cis8( e e,4-.) b8( e |
+  ais, e ais cis fis ais cis fis) |
+  \repeat unfold 2
+  {
+    r4 b,8( d d,4-.) b8( d |
+    e,4-.) b'8( d e, gis bis e |
+    cis4-.) cis'8( e eis,4-.) b8( eis |
+    ais, e ais cis e ais cis fis) |
+  }
+  g8-^( d b g) r g( b d |
+  g, c e g gis, c e gis) |
+  a-^( e c a) r a( c f |
+  a fis c a) ais'( fis d ais) |
+  b'( g d b) bis'( a fis bis,) |
+  cis'( cis, fis ais cis ais fis cis) |
+  <d f a d>4 <d f>8( a' b,4) <f d>8( a |
+  b,4) r r2 |
+  r2 b8( d f a) |
+  << {gis2.( a4)} \\ <b, d>1 >> |
+  <cis a'>4 r r cis'8( e |
+  e,4-.) dis8( fis d2) |
+  c4 r r cis'8( e |
+  e,4-.) dis8( fis d2) |
+  cis2 r4 e8( <gis bis e>) |
+  <gis bis e>2 r4 a8( a') |
+  <a, e' a>1~ |
+  <a e' a>4 r r2 |
 }
 
 leftMvtIV = \relative c'
