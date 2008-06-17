@@ -408,6 +408,47 @@ hornTwoMvtI = \relative c'
 hornTwoMvtII = \relative c'
 {
   \transposition f
+  R1.*15 |
+
+  %A
+  R1.*25 |
+
+  %B
+  fis4.\f fis fis r |
+  fis4. fis fis2. |
+  fis e |
+  r4. d2.\p\> d4. |
+  cis8\pp \fivex cis b\< b b cis cis d |
+  \setTextCresc
+  cis\p\< \fivex cis \sixx gis' |
+  \setHairpinCresc
+  a\mf\< \fivex a a\f\> a a fis\mf fis fis |
+  fis\> \fivex fis \sixx d |
+  cis\pp \fivex cis b\< b b b cis d |
+  cis\pp\< \fivex cis \sixx gis' |
+  a\mf \fivex a fis r r r fis fis |
+
+  %C
+  \set crescendoText = \markup {\italic "cresc. poco a poco"}
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  fis\mf\< \fivex fis \sixx c |
+  \setHairpinCresc
+  \twelvex cis |
+  \sixx cis \sixx b' |
+  \sixx b \sixx d |
+  cis\fff cis cis cis,\> cis c b\ff\> \fivex b |
+  d\f\> \fivex d f f f fis fis gis |
+  b,\mf \fivex b b4. c |
+  cis\> e\p\< fis e\> |
+  e\p\< e fis e\> |
+  e8\p \sixx e r r r4. |
+  \sevenx fis8 r r r4. |
+  fis4.~\< fis8 r r fis4.~ fis8\! r r |
+  R1.*2 |
+
+  %Moderato con anima
 }
 
 hornTwoMvtIII = \relative c'
