@@ -449,6 +449,138 @@ hornTwoMvtII = \relative c'
   R1.*2 |
 
   %Moderato con anima
+  R1*9 |
+
+  %D
+  d8\mf d4 d8( cis) cis4 cis8 |
+  c8 c4 c8( cis) cis4 cis8~ |
+  cis cis4 cis8~ cis cis4 cis8~ |
+  cis8 cis~ cis b r bes( des) des |
+  e8\mf e4 e8( ees) ees4 ees8 |
+  d\mf d4 d8( ees) ees4 ees8~ |
+  ees8 ees4 ees8~ ees ees4 ees8~ |
+  ees8 ees~ ees des r c(\mf ees) ees |
+
+  %E
+  ees2(\mf des) |
+  R1*3 |
+  \repeat tremolo 4 aes'8\mf \repeat unfold 3 {\repeat tremolo 4 aes } |
+  \repeat tremolo 4 e8\f \repeat tremolo 4 ees |
+  \repeat unfold 2 {\repeat tremolo 4 des } |
+
+  %F
+  R1*4 |
+  r2 dis2\f |
+  gis, dis'\< |
+  gis\ff b |
+  gis dis4 b |
+  gis'1\ff |
+  gis8 gis~ gis2. |
+  gis1 |
+  gis8 gis~ gis2 fis4 |
+  e fis e fis |
+  e8 e r4 r fis |
+  e fis e fis |
+  e8 e r4 r e8 r |
+  r4 e8 r r4 e8 r\fermata |
+
+  %12/8
+  R1.*8 |
+
+  %G
+  R1.*3 |
+  r4. e~->\mf e\> r\! |
+  e4.~\p e8 r r b'4.~-> b8 r r |
+  d,4.~\p d8 r r a'4.~-> a8 r r |
+  cis,4.~\< cis8 r r a4.( e') |
+  cis4.~\mf\> cis8\~ r r r2. |
+
+  %H
+  cis4.~\p cis8 r r r2. |
+  b4.~\p b8 r r r2. |
+  \setTextCresc
+  a4.\mf\< a a e' |
+  \setHairpinCresc
+  e\f dis d\> \times 3/2 {cis8\mf a} |
+  d2. d8( cis d) d4. |
+  \set Staff.timeSignatureFraction = #'(4 . 4)
+  \scaleDurations #'(3 . 2)
+  {
+    e8( cis~ cis4) c8( cis~ cis4) |
+    a8\< d4 fis8 fis4( e) |
+    e\f cis e2\>
+    d2\mf \times 2/3 {d8( cis d)} d4 |
+    \setTextCresc
+    e8(\< cis~ cis4) c8( cis~ cis4) |
+    \setHairpinCresc
+  }
+  \set Staff.timeSignatureFraction = #'(12 . 8)
+  dis4.\f dis4 dis8 dis4. r4. |
+  dis4. dis4 dis8 dis4. r4. |
+  fis4.\ff fis4 fis8 fis4. r |
+  fis4. fis4 fis8 fis8 r r r4. |
+  a4.~ a8 r r d,4.~ d8 r r |
+  dis4.~ dis8 r r gis4.~ gis8 r r |
+  r8 d'4\ff b a8~ a r r r r e~ |
+  e d4 cis b8~ b r r r4. |
+  \set Staff.timeSignatureFraction = #'(4 . 4)
+  \scaleDurations #'(3 . 2)
+  {
+    cis'16\ff e,\f \sixx e \fourx d cis cis b b |
+    \setTextCresc
+    \eightx cis cis\< \sevenx cis
+    \setHairpinCresc
+    a'16 a \fourx fis a a fis\ff fis a a \fourx fis |
+    \twelvex fis \fourx d |
+    e\fff e\f \sixx e \fourx d cis cis b b |
+    \setTextCresc
+    \eightx cis cis\< \sevenx cis
+    a'16 a \fourx fis a a \eightx fis |
+    fis\ff fis fis fis \twelvex fis |
+    \eightx gis \eightx a |
+    \setTextCresc
+
+    %K
+    bes\< \sevenx bes \eightx b |
+    \setHairpinCresc
+    \eightx b \eightx d |
+    cis\ffff cis cis cis fis, fis a a gis\> gis gis gis a a b b |
+    a\ff a \fourx d, fis fis f\> f f f fis fis gis gis |
+    fis\f fis fis fis \fourx d d4\> dis |
+    e4\mf\< e fis\> e |
+    e\p\< e fis\> e |
+  }
+
+  %4/4
+  c4\fff a2.~ |
+  a4 a2. |
+  c1~ |
+  c4 c2. |
+  fis4. c8 fis4. fis8 |
+  fis4. c8 fis2 |
+  \times 2/3 {b8\fff b b} \times 2/3 {b b b} b8-> b-> b-> b-> |
+  f-> f-> r4 r2 |
+  b,2\mf r |
+  b\p r |
+  R1 |
+  b4\pp b r2 |
+
+  %12/8
+  cis8\pp cis cis \ninex cis |
+  cis8\pp \fivex cis \sixx d |
+  \sixx cis \sixx d |
+  \sixx cis gis'\< \fivex gis |
+  e\> \fivex e f\< \fivex f |
+  e\> \fivex e gis\< \fivex gis |
+  e\> \fivex e f\< \fivex f |
+  a,\> \fivex a b2.(\pp |
+  cis8) cis cis  a a a b2.( |
+  cis8) cis\pp cis cis r r cis cis cis cis r r |
+  cis\ppp cis cis r4. cis8 cis cis r4. |
+  cis4. r cis r |
+  cis4.~ cis8 r r r2. |
+  R1. |
+  R1.^\fermataMarkup |
 }
 
 hornTwoMvtIII = \relative c'

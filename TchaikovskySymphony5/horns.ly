@@ -56,5 +56,45 @@ instrument = "Horns"
       %\context { \RemoveEmptyStaffContext }
     }
   }
+
+  \score
+  {
+    \new StaffGroup
+    <<
+      \new Staff
+      {
+        \set Staff.instrumentName = "Horns I"
+        \set Staff.shortInstrumentName = "Hn.I"
+        \set Staff.midiInstrument = "french horn"
+        << \hornOneMvtII \outlineMvtII >>
+      }
+      \new Staff
+      {
+        \set Staff.instrumentName = "Horns II"
+        \set Staff.shortInstrumentName = "Hn.II"
+        \set Staff.midiInstrument = "french horn"
+        \hornTwoMvtII
+      }
+      \new Staff
+      {
+        \set Staff.instrumentName = "Horns III"
+        \set Staff.shortInstrumentName = "Hn.III"
+        \set Staff.midiInstrument = "french horn"
+        \hornThreeMvtII
+      }
+      \new Staff
+      {
+        \set Staff.instrumentName = "Horns IV"
+        \set Staff.shortInstrumentName = "Hn.IV"
+        \set Staff.midiInstrument = "french horn"
+        \hornFourMvtII
+      }
+    >>
+    \midi { }
+    \layout
+    {
+      %\context { \RemoveEmptyStaffContext }
+    }
+  }
 }
 

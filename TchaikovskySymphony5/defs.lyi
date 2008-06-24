@@ -116,6 +116,11 @@ eightx =  #(define-music-function (parser location x) (ly:music?)
   \repeat unfold 8 $x
 #})
 
+ninex =  #(define-music-function (parser location x) (ly:music?)
+#{
+  \repeat unfold 9 $x
+#})
+
 twelvex =  #(define-music-function (parser location x) (ly:music?)
 #{
   \repeat unfold 12 $x
