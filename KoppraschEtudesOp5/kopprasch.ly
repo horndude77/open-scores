@@ -326,13 +326,12 @@
       \koppNineArticulations
     }
   }
-  %{
   \score
   {
     \new Staff
     {
       #(set-accidental-style 'modern)
-      \set Staff.instrumentName = \markup{\bold \center-align {No.10. Allegro vivace}}
+      \set Staff.instrumentName = \markup{\bold \center-align {No.10. Allegro}}
       \koppTen
     }
     \layout { }
@@ -367,7 +366,7 @@
     \new Staff
     {
       #(set-accidental-style 'modern)
-      \set Staff.instrumentName = \markup{\bold \center-align {No.11. Maestoso}}
+      \set Staff.instrumentName = \markup{\bold \center-align {No.11. Adagio}}
       \koppEleven
     }
     \layout { }
@@ -376,7 +375,7 @@
       \context
       {
         \Score
-        tempoWholesPerMinute = #(ly:make-moment 88 4)
+        tempoWholesPerMinute = #(ly:make-moment 88 8)
       }
       \context
       {
@@ -385,6 +384,7 @@
       }
     }
   }
+  %{
   \score
   {
     \new Staff
