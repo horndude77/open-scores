@@ -384,13 +384,12 @@
       }
     }
   }
-  %{
   \score
   {
     \new Staff
     {
       #(set-accidental-style 'modern)
-      \set Staff.instrumentName = \markup{\bold \center-align {No.12. Allegro Moderato}}
+      \set Staff.instrumentName = \markup{\bold \center-align {No.12. Allegro}}
       \koppTwelve
     }
     \layout { }
@@ -425,7 +424,7 @@
     \new Staff
     {
       #(set-accidental-style 'modern)
-      \set Staff.instrumentName = \markup{\bold \center-align {No.13. Allegro}}
+      \set Staff.instrumentName = \markup{\bold \center-align {No.13. Maestoso}}
       \koppThirteen
     }
     \layout { }
@@ -443,6 +442,7 @@
       }
     }
   }
+  %{
   \score
   {
     \new Staff
