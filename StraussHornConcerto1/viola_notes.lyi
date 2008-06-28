@@ -1,0 +1,46 @@
+violaMvtI = \relative c'
+{
+  \clef alto
+  \key ees \major
+  <g ees' bes'>2\f\fermata r4\fermata r |
+  R1*4 |
+  <bes f' d'>2\f bes |
+  <aes f' c'>2. aes'8. des16 |
+  c4 aes8. f16 c4 f8. aes16 |
+  g4 f8. c16 aes4 f8. des'16 |
+  c4 aes8. f16 c4 <aes' aes'>4 |
+  <aes f'>2 bes |
+  <des des,>2. des8. des16 |
+  <aes d>2. aes8. aes16 |
+  <des des,>2. des8. des16 |
+  <aes d>2. a8. a16 |
+  bes4 ees,8. c'16 bes4 b8. b16 |
+  c4 g8. f'16 ees4 g,8. aes'16 |
+  \times 2/3 {g4 g,8} \times 2/3 {c8 ees g} bes4 <bes, aes'>4 |
+  <bes g'> <f' d'> <ees c'> <ees bes'> |
+  <ees c'> <ees bes'> <ees c'> <aes, ees' c'> |
+  <g ees' bes'>2. g8. c16 |
+  bes4 g'8. ees16 bes4 ees8. g16 |
+  f4 ees8. bes16 g4 ees8. c'16 |
+  <ees, c'>2 <aes f'> |
+  \setTextDim
+  <g ees' bes'>4 r r f8.\> g16 |
+  \setHairpinDim
+  ees4 r r f8. g16 |
+  ees4\p r bes'\ppp r |
+  bes r r2 |
+
+  %A
+}
+
+violaMvtII = \relative c'
+{
+}
+
+violaMvtIII = \relative c'
+{
+}
+
+viola = {\violaMvtI \violaMvtII \violaMvtIII}
+
+

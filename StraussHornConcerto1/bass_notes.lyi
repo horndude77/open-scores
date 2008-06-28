@@ -1,0 +1,45 @@
+bassMvtI = \relative c,
+{
+  \clef "bass_8"
+  \key ees \major
+  ees2\f\fermata r4\fermata r |
+  R1*4 |
+  bes'2\f bes, |
+  f'2 f, |
+  f4 aes8. c16 f4 <c, c'>4~ | %TODO: parenthesize low c
+  <c c'>4 f8. aes16 c4 aes |
+  aes c8. f16 aes4 f, |
+  bes2 bes |
+  g1 |
+  f2 f4 f |
+  g1 |
+  f2 f4 fis |
+  g2. g4 |
+  aes a bes b |
+  c2 r4 d4 |
+  ees b c g |
+  aes g aes f |
+  bes2. bes4~ |
+  bes ees8. g16 bes4 bes,~ |
+  bes ees8. g16 bes4 g |
+  f2 bes |
+  \setTextDim
+  ees,4 r r bes\>
+  \setHairpinDim
+  ees r r bes |
+  ees\p r ees\ppp r |
+  ees r r2 |
+
+  %A
+}
+
+bassMvtII = \relative c'
+{
+}
+
+bassMvtIII = \relative c'
+{
+}
+
+bass = {\bassMvtI \bassMvtII \bassMvtIII}
+

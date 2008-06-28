@@ -1,0 +1,42 @@
+fluteOneMvtI = \relative c'''
+{
+  \key ees \major
+  ees2\fermata r4\fermata r |
+  R1*5 |
+  aes,2.\f aes8. des16 |
+  c4 c8. c16 c4 c8. c16
+  c4 c8. c16 c4 aes8. aes16
+  aes4 aes8. aes16 aes4 ces |
+  bes2 bes, |
+  bes'1 |
+  bes2. bes8. bes16 |
+  bes1 |
+  bes2. bes8. bes16 |
+  ees4 ees,8. c'16 bes4 ees8. ees16 |
+  ees4 g,8. f'16 ees4 g,8. aes'16 |
+  \times 2/3 {g4 g,8} \times 2/3 {c8 ees g} bes4 aes |
+  g f ees des |
+  c ees c ces |
+  bes2. g8. c16 |
+  bes4 bes8. bes16 bes4 bes8. bes16 |
+  bes4 g8. g16 g4 g8. c16 |
+  c2 bes |
+  \times 2/3 {ees4 bes,8} \times 2/3 {bes8 ees g} bes4 r |
+  R1 |
+  r2 ees4\pp r |
+  ees4 r r2 |
+
+  %A
+}
+
+fluteOneMvtII = \relative c'
+{
+}
+
+fluteOneMvtIII = \relative c'
+{
+}
+
+fluteOne = {\fluteOneMvtI \fluteOneMvtII \fluteOneMvtIII}
+
+
