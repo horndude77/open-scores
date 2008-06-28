@@ -1,0 +1,41 @@
+hornTwoMvtI = \relative c''
+{
+  \transposition ees
+  g2\fermata r4\fermata r |
+  R1*4 |
+  b2\f g, |
+  \repeat unfold 3 {f'4 f8. f16 f2~ |}
+  f4 f8. f16 f4 aes |
+  g2 g, |
+  g4 g'8. g16 g2 |
+  f2. f8. f16 |
+  g4 g8. g16 g2 |
+  f2. fis8. fis16 |
+  g2. gis8. gis16 |
+  a4 a c d |
+  c2 r4 d |
+  c b a bes |
+  a g a aes |
+  g2. c8. c16 |
+  c4 c8. c16 c4 g8. g16 |
+  g4 e8. e16 e4 c' |
+  a2 b |
+  \setTextDim
+  c4 r r g,8\> g |
+  g4 r\! r2 |
+  \setHairpinDim
+  R1*2 |
+
+  %A
+}
+
+hornTwoMvtII = \relative c'
+{
+}
+
+hornTwoMvtIII = \relative c'
+{
+}
+
+hornTwo = {\hornTwoMvtI \hornTwoMvtII \hornTwoMvtIII}
+

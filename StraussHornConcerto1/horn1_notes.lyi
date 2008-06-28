@@ -1,0 +1,43 @@
+hornOneMvtI = \relative c''
+{
+  \transposition ees
+  e2\fermata r4\fermata r |
+  R1*4 |
+  d2\f g, |
+  d'4 d8. d16 d2~ |
+  d4 f8. f16 f2~ |
+  f4 d8. d16 d2~ |
+  d4 a8. a16 d4 f |
+  d2 g, |
+  g4 g8. g16 g2 |
+  b2. b8. b16 |
+  bes4 g8. g16 g2 |
+  b2. g8. g16 |
+  c2. c8. c16 |
+  c4 c e e8. f16 |
+  e2 r4 f |
+  e d c bes |
+  a c a aes |
+  \times 2/3 {g4 g8} \times 2/3 {g8 c e} g4 e8. e16 |
+  e4 e8. e16 e4 e8. e16 |
+  e4 c8. c16 c4 e |
+  fis2 f |
+  \setTextDim
+  e4 r r g,8\> g |
+  g4 r\! r2 |
+  \setHairpinDim
+  R1*2 |
+
+  %A
+}
+
+hornOneMvtII = \relative c'
+{
+}
+
+hornOneMvtIII = \relative c'
+{
+}
+
+hornOne = {\hornOneMvtI \hornOneMvtII \hornOneMvtIII}
+

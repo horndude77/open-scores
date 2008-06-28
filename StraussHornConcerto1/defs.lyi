@@ -6,7 +6,101 @@ smaller = {
     #(lambda (beam mult) (* 0.8 (Beam::space_function beam mult)))
 }
 
+tempoMark = #(define-music-function (parser location markp) (string?)
+#{
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \mark \markup { \smaller \bold $markp }
+#})
+
 outline =
 {
+  \override Score.MetronomeMark #'transparent = ##t
+  \tempo 4=112
+  \tempoMark "Allegro"
+  \time 4/4
+  s1*28 |
+
+  \mark \default
+  s1*35 |
+
+  \mark \default
+  s1*12 |
+
+  \mark \default
+  s1*42 |
+
+  \time 2/4
+  s2 |
+
+  \time 4/4
+  s1*12 |
+
+  \mark \default
+  s1*33 | \bar "||"
+
+  %Second mvt
+  \time 3/8
+  \mark \default
+  s1*0^\markup {\bigger \bold Andante}
+  s4.*33 |
+
+  \mark \default
+  s4.*21
+
+  %key change
+  \mark \default
+  s4.*18
+
+  %key change
+  s4.*4 |
+
+  \mark \default
+  s4.*13 |
+
+  \mark \default
+  s4.*24 | \bar "||"
+
+  %Third mvt
+  \time 4/4
+  \mark \default
+  s1*0^\markup {\bigger \bold Allegro}
+  \partial 4 s4
+  s1*8 | \bar "||"
+
+  \time 6/8
+  s1*0^\markup {\bigger \bold {Rondo Allegro}}
+  s2.*16 |
+
+  \mark \default
+  s2.*20 |
+
+  \mark \default
+  s2.*84 |
+
+  \time 4/4
+  \mark \default
+  s1*3 |
+  \partial 2. s2. \bar "||"
+
+  \time 6/8
+  s1*0^\markup{\bold {Tempo primo}}
+  \partial 4. s4. |
+  s2.*49 |
+
+  \mark \default
+  s2.*32 |
+
+  \mark \default
+  s2.*20 | \bar "||"
+
+  \time 4/4
+  \mark \default
+  s1*12 | \bar "||"
+
+  \time 6/8
+  \mark \default
+  s1*0^\markup{\bold {Tempo I} \italic {un poco più mosso}}
+  s2.*53 | \bar "|."
 }
 
