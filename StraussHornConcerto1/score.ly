@@ -298,6 +298,13 @@ instrument = "Orchestra"
         >>
       }
     >>
-    \midi { }
+    \midi
+    {
+      \context
+      {
+        \Voice
+        \remove "Dynamic_performer"
+      }
+    }
   }
 }

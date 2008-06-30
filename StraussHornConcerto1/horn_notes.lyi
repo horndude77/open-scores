@@ -165,7 +165,7 @@ hornMvtII = \relative c''
   f4)\! des8(\p |
   
   bes'4. | ees4) ees8(\< | bes4) bes8( |
-  ges'4)\! fes8~(\> | f ees8.) des16~( | des8 c ces) |
+  ges'4)\! fes8~(\> | fes ees8.) des16~( | des8 c ces) |
   bes4-.(\pp bes8-. | bes4-.) r8 |
   R4.* 4 |
 

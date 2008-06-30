@@ -13,6 +13,17 @@ tempoMark = #(define-music-function (parser location markp) (string?)
   \mark \markup { \smaller \bold $markp }
 #})
 
+setDimECalando = #(define-music-function (parser location) ()
+#{
+  \set decrescendoText = \markup { \italic "dim. e calando" }
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+#})
+
+pizz = \markup{\italic pizz.}
+arco = \markup{\italic arco}
+vivo = \markup{\italic vivo}
+
 outline =
 {
   \override Score.MetronomeMark #'transparent = ##t
@@ -41,6 +52,7 @@ outline =
 
   %Second mvt
   \time 3/8
+  \tempo 8=69
   \mark \default
   s1*0^\markup {\bigger \bold Andante}
   s4.*33 |
@@ -63,12 +75,14 @@ outline =
 
   %Third mvt
   \time 4/4
+  \tempo 4=132
   \mark \default
   s1*0^\markup {\bigger \bold Allegro}
   \partial 4 s4
   s1*8 | \bar "||"
 
   \time 6/8
+  \tempo 4.=132
   s1*0^\markup {\bigger \bold {Rondo Allegro}}
   s2.*16 |
 
@@ -79,11 +93,13 @@ outline =
   s2.*84 |
 
   \time 4/4
+  \tempo 4=132
   \mark \default
   s1*3 |
   \partial 2. s2. \bar "||"
 
   \time 6/8
+  \tempo 4.=132
   s1*0^\markup{\bold {Tempo primo}}
   \partial 4. s4. |
   s2.*49 |
@@ -95,12 +111,13 @@ outline =
   s2.*20 | \bar "||"
 
   \time 4/4
+  \tempo 4=132
   \mark \default
   s1*12 | \bar "||"
 
   \time 6/8
+  \tempo 4.=144
   \mark \default
   s1*0^\markup{\bold {Tempo I} \italic {un poco più mosso}}
   s2.*53 | \bar "|."
 }
-
