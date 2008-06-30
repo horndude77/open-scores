@@ -2,7 +2,6 @@
 
 clarinetOneMvtII = \relative c''
 {
-  \time 2/4
   \key f \major
   \transposition bes
   \partial 8 r8 |

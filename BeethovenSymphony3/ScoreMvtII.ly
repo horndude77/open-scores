@@ -1,4 +1,4 @@
-\version "2.9.17"
+\version "2.11.49"
 
 \include "Flute1MvtII.lyi"
 \include "Flute2MvtII.lyi"
@@ -36,8 +36,8 @@ instrument = "Orchestra"
       <<
         \new Staff
         {
-          \set Staff.instrument = "Flutes"
-          \set Staff.instr = "Fl."
+          \set Staff.instrumentName = "Flutes"
+          \set Staff.shortInstrumentName = "Fl."
           %\set Staff.printPartCombineTexts = ##f
           \partcombine
             \keepWithTag #'score \fluteOneMvtII
@@ -45,8 +45,8 @@ instrument = "Orchestra"
         }
         \new Staff
         {
-          \set Staff.instrument = "Oboes"
-          \set Staff.instr = "Ob."
+          \set Staff.instrumentName = "Oboes"
+          \set Staff.shortInstrumentName = "Ob."
           %\set Staff.printPartCombineTexts = ##f
           \partcombine
             \keepWithTag #'score \oboeOneMvtII
@@ -54,8 +54,8 @@ instrument = "Orchestra"
         }
         \new Staff
         {
-          \set Staff.instrument = "Clarinets"
-          \set Staff.instr = "Cl."
+          \set Staff.instrumentName = "Clarinets"
+          \set Staff.shortInstrumentName = "Cl."
           %\set Staff.printPartCombineTexts = ##f
           \partcombine
             \keepWithTag #'score \clarinetOneMvtII
@@ -63,8 +63,8 @@ instrument = "Orchestra"
         }
         \new Staff
         {
-          \set Staff.instrument = "Bassoons"
-          \set Staff.instr = "Bs."
+          \set Staff.instrumentName = "Bassoons"
+          \set Staff.shortInstrumentName = "Bs."
           %\set Staff.printPartCombineTexts = ##f
           \partcombine
             \keepWithTag #'score \bassoonOneMvtII
@@ -75,8 +75,8 @@ instrument = "Orchestra"
       <<
         \new Staff
         {
-          \set Staff.instrument = "Horns I,II"
-          \set Staff.instr = "Hn."
+          \set Staff.instrumentName = "Horns I,II"
+          \set Staff.shortInstrumentName = "Hn."
           %\set Staff.printPartCombineTexts = ##f
           \partcombine
             \keepWithTag #'score \hornOneMvtII
@@ -84,14 +84,14 @@ instrument = "Orchestra"
         }
         \new Staff
         {
-          \set Staff.instrument = "Horn III"
-          \set Staff.instr = "Hn.III"
+          \set Staff.instrumentName = "Horn III"
+          \set Staff.shortInstrumentName = "Hn.III"
           \hornThreeMvtII
         }
         \new Staff
         {
-          \set Staff.instrument = "Trumpets"
-          \set Staff.instr = "Tr."
+          \set Staff.instrumentName = "Trumpets"
+          \set Staff.shortInstrumentName = "Tr."
           %\set Staff.printPartCombineTexts = ##f
           \partcombine
             \keepWithTag #'score \trumpetOneMvtII
@@ -100,8 +100,8 @@ instrument = "Orchestra"
       >>
       \new Staff
       {
-        \set Staff.instrument = "Timpani"
-        \set Staff.instr = "Ti."
+        \set Staff.instrumentName = "Timpani"
+        \set Staff.shortInstrumentName = "Ti."
         \timpaniMvtII
       }
       \new StaffGroup
@@ -110,34 +110,34 @@ instrument = "Orchestra"
         <<
           \new Staff
           {
-            \set Staff.instrument = "Violin I"
-            \set Staff.instr = "Vl.I"
+            \set Staff.instrumentName = "Violin I"
+            \set Staff.shortInstrumentName = "Vl.I"
             \violinOneMvtII
           }
           \new Staff
           {
-            \set Staff.instrument = "Violin II"
-            \set Staff.instr = "Vl.II"
+            \set Staff.instrumentName = "Violin II"
+            \set Staff.shortInstrumentName = "Vl.II"
             \violinTwoMvtII
           }
         >>
         \new Staff
         {
-          \set Staff.instrument = "Viola"
-          \set Staff.instr = "Va."
+          \set Staff.instrumentName = "Viola"
+          \set Staff.shortInstrumentName = "Va."
           \violaMvtII
         }
         \new Staff
         {
-          \set Staff.instrument = "Cello"
-          \set Staff.instr = "Vc."
+          \set Staff.instrumentName = "Cello"
+          \set Staff.shortInstrumentName = "Vc."
           \celloMvtII
         }
         \new Staff
         {
-          \set Staff.instrument = "Bass"
-          \set Staff.instr = "Cb."
-          \bassMvtII
+          \set Staff.instrumentName = "Bass"
+          \set Staff.shortInstrumentName = "Cb."
+          << \bassMvtII \outlineMvtII >>
         }
       >>
     >>
@@ -219,6 +219,11 @@ instrument = "Orchestra"
     >>
     \midi
     {
+      \context
+      {
+        \Voice
+        \remove "Dynamic_performer"
+      }
       \context
       {
         \Score

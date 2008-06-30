@@ -2,7 +2,6 @@
 
 oboeOneMvtII = \relative c''
 {
-  \time 2/4
   \key ees \major
   \partial 8 r8 |
   R2*7 |

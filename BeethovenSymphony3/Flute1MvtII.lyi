@@ -2,7 +2,6 @@
 
 fluteOneMvtII = \relative c''''
 {
-  \time 2/4
   \key c \minor
   \clef "treble"
   \partial 8 r8 |

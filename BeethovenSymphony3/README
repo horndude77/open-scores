@@ -4,3 +4,25 @@ To build full score:
 To build individual part:
 > lilypond <name of part>.ly
 
+Status:
+=======
+Flute 1 - all mvts done
+Flute 2 - all mvts done
+Oboe 1 - 1st mvt done
+Oboe 2 - 1st mvt done
+Clarinet 1 - 1st mvt done
+Clarinet 2 - 1st mvt done
+Bassoon 1 - 1st mvt done
+Bassoon 2 - 1st mvt done
+Horn 1 - all mvts done
+Horn 2 - all mvts done
+Horn 3 - all mvts done
+Trumpet 1 - 1st mvt done
+Trumpet 2 - 1st mvt done
+Timpani - 1st mvt done
+Violin 1 - 1st mvt done
+Violin 2 - 1st mvt done
+Viola.ly - 1st mvt done
+Cello.ly - 1st mvt done
+Bass.ly - 1st,2nd mvts done
+

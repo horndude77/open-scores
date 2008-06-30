@@ -2,10 +2,8 @@
 
 hornTwoMvtII = \relative c''
 {
-  \time 2/4
-  \key c \major
-  \transposition c,
-  \partial 8 r8 |
+  \transposition c
+  r8 |
   R2*8 |
   g2\p | g |
   g4 g8 g |

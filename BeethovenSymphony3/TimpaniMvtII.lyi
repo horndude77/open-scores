@@ -2,7 +2,6 @@
 
 timpaniMvtII = \relative c
 {
-  \time 2/4
   \key ees \major
   \clef bass
   \partial 8 r8 |

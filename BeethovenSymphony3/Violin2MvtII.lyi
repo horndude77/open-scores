@@ -2,7 +2,6 @@
 
 violinTwoMvtII = \relative c'
 {
-  \time 2/4
   \key c \minor
   \partial 8 r8
   g4\pp r |
@@ -10,9 +9,9 @@ violinTwoMvtII = \relative c'
   g g |
   g8( fis' g) r |
   b,4 r |
-  a4.(\sf\> g8)\! |
-  g( a) g g |
-  g8 a16. a32 g8 r16 \times 2/3 {c32 c c} |
+  aes4.(\sf\> g8)\! |
+  g( aes) g g |
+  g8 aes16. aes32 g8 r16 \times 2/3 {c32 c c} |
   \repeat unfold 2 {c8 r r8. \times 2/3 {c32 c c}} |
   c8 r16 \times 2/3 {c32 c c} c8 r16 \times 2/3 {c32 c c} |
 }
