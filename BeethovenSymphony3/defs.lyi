@@ -24,6 +24,8 @@ mPDolce = \markup{\dynamic p \italic dolce}
 mPiuF = \markup{\italic più \dynamic f}
 pizz = \markup{\italic pizz.}
 arco = \markup{\italic arco}
+staccatoFour = \markup{\musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato"}
+staccatoSix = \markup{\musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato"}
 
 tempoMark = #(define-music-function (parser location markp) (string?)
 #{

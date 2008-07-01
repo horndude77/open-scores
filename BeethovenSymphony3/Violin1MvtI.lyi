@@ -68,7 +68,7 @@ violinOneMvtI = \relative c'''
 
     %page 4
     f8-._\mCresc d( c d ees f) |
-    g( a) bes2:8^"...." |
+    g( a) bes2:8^\staccatoFour |
     bes8-. bes-. a-. bes-. c-. d-. |
     ees2.:8 |
     ees8-.\f c16( d) c8-. a16( bes) a8-. ees16( f) |
@@ -496,7 +496,7 @@ violinOneMvtI = \relative c'''
   bes8-. g( f_\mCresc g aes bes) |
 
   %page 23
-  c8( d) ees2:8^"...." |
+  c8( d) ees2:8^\staccatoFour |
   ees8-. ees,-. d-. ees-. f-. g-. |
   aes2.:8 |
   aes8-.\f f16( g) g8-. d16( ees) d8-. aes16( bes) |
@@ -590,8 +590,8 @@ violinOneMvtI = \relative c'''
   c2:16 g4:16 |
   c2.~\p | c~_\mDecresc | c4 r r |
   R2. |
-  r8 g'16(\pp fis) g2:8^"...." |
-  r8 g16( fis) g2:8^"...." |
+  r8 g'16(\pp fis) g2:8^\staccatoFour |
+  r8 g16( fis) g2:8^\staccatoFour |
   r8 g16( fis) g8-. a-. b-. c-. |
 
   %page 28
@@ -622,14 +622,14 @@ violinOneMvtI = \relative c'''
   bes8 bes4 bes bes8~ |
   bes8 bes'4 bes bes8~ |
   bes8 bes4 bes bes8~ |
-  bes bes16( a) bes2:8^"...." |
+  bes bes16( a) bes2:8^\staccatoFour |
   bes2.~ |
-  bes8 aes16( g) aes2:16^"...." |
+  bes8 aes16( g) aes2:16^\staccatoFour |
   aes2.~ |
-  aes8_\mDecresc aes16( g) aes2:16^"...." |
-  r8 ges16( f) g2:8^"...." |
-  r8 f16( ees) f2:8^"...." |
-  r8 f16( ees) f2:8^"...." |
+  aes8_\mDecresc aes16( g) aes2:16^\staccatoFour |
+  r8 ges16( f) g2:8^\staccatoFour |
+  r8 f16( ees) f2:8^\staccatoFour |
+  r8 f16( ees) f2:8^\staccatoFour |
   f16\pp bes, bes bes bes2:16 |
   bes2.:16 |
   <bes d,>2.:16 |

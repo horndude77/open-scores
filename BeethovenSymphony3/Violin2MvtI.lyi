@@ -22,9 +22,9 @@ violinTwoMvtI = \relative c''
 	%page 2
     bes(_\mCresc ees g, bes g bes) |
     aes( bes g bes d bes) |
-    ees8-.\p bes-. bes2:8_"...." |
-    bes2.:8_"......" |
-    bes2.:8_"......" |
+    ees8-.\p bes-. bes2:8_\staccatoFour |
+    bes2.:8_\staccatoSix |
+    bes2.:8_\staccatoSix |
     bes8 bes des des c c |
     c2.:8 |
     c8 c des des ees ees |
@@ -600,13 +600,13 @@ violinTwoMvtI = \relative c''
   bes8 bes'4 bes bes8~ |
   bes8 bes4 bes bes8~ |
   bes4 r r |
-  r8 ees16( d) ees2:8^"...." |
+  r8 ees16( d) ees2:8^\staccatoFour |
   ees2.~ |
-  ees8 f16( e) f2:8^"...." |
-  r8 f16(_\mDecresc e) f2:8^"...." |
-  r8 ees16( d) ees2:8^"...." |
-  r8 ees16( ees,) ees'2:8^"...." |
-  r8 ees16( ees,) ees'2:8^"...." |
+  ees8 f16( e) f2:8^\staccatoFour |
+  r8 f16(_\mDecresc e) f2:8^\staccatoFour |
+  r8 ees16( d) ees2:8^\staccatoFour |
+  r8 ees16( ees,) ees'2:8^\staccatoFour |
+  r8 ees16( ees,) ees'2:8^\staccatoFour |
   d16\pp bes, bes bes bes2:16 |
   bes2.:16 |
   <f' bes,>:16 |
