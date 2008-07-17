@@ -1,0 +1,6 @@
+fluteTwo = \relative c'''
+{
+  \clef treble
+  \key e \minor
+}
+

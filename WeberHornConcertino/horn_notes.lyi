@@ -1,0 +1,46 @@
+\include "defs.lyi"
+
+horn = \relative c'' \context Voice = horn
+{
+  \transposition e
+  %4/4
+  \repeat unfold 2 {R1 | R1^\fermataMarkup |}
+
+  %6/8
+  c4\p\< c8 c4 c8 |
+  g'4.(\f g,,) |
+  c'4(\p\< c8 d8. c16 d8 |
+  d4.\> g,4) r8\! |
+  c4\p\< c8 c4 c8 |
+  g'4.(\f g,4) r8 |
+  aes'4.~ aes8. g16 f8 |
+  bes,4. ees4 d8 |
+  c8. d16 ees f \acciaccatura ees8 d8. c16 d8 |
+  ees4.~ ees4 r8 |
+  g,4\f g,8 aes(-> g) g |
+  g c' ees ees4-> d8 |
+  f8.-> ees16 d8 d8.-> c16 b8 |
+  aes'4.(-> g8) r r |
+  c,4\< c8 c4 c8 |
+  d4.->(\! aes'8) r r |
+  g,4 g8 fis4.-> |
+  g4 r8 r4. |
+  r8 g g aes-> g fis |
+  g r r r4. |
+  r8 g, g aes-> g fis |
+  g2.( |
+  \clef "bass^8"
+  g,)\fermata |
+
+  %2/4
+  \clef treble
+  e'''4\( c |
+  a8 b c d |
+  \acciaccatura c8 b8-. a-. b4\) |
+  c4( g) \breathe |
+  e'4\( c |
+  a8 b c d |
+  \acciaccatura c8 b8-. a-. b4\) |
+  c4 r |
+}
+
