@@ -1,4 +1,4 @@
-\version "2.11.45"
+\version "2.11.52"
 
 \include "horn_notes.lyi"
 \include "piano_notes.lyi"
