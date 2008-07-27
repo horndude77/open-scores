@@ -3,6 +3,9 @@ arco = \markup{\italic "arco"}
 
 outline =
 {
+  \set tupletSpannerDuration = #(ly:make-moment 1 8)
+  #(override-auto-beam-setting '(end 1 24 * *) 1 8)
+  #(override-auto-beam-setting '(end 1 24 * *) 3 8)
   \tempo "Adagio" 4=72
   \time 4/4
   s1*4 | \bar "||"
@@ -12,4 +15,27 @@ outline =
   \tempo 4=92
   \time 2/4
   \repeat volta 2 { s2*8 }
+  \repeat volta 2 { s2*8 }
+  s2*8 |
+  \repeat volta 2 { s2*8 }
+  \repeat volta 2 { s2*8 }
+  s2*8 |
+  \repeat volta 2 { s2*8 }
+  \repeat volta 2 { s2*8 }
+  s2*7 |
+  \repeat volta 2 { s2*8 }
+  \repeat volta 2 { s2*8 }
+  s2*7 |
+  \repeat volta 2 { s2*8 }
+  \repeat volta 2 { s2*12 }
+  s2*7 | \bar "||"
+
+  \time 4/4
+  s4*5 \bar "|"
+  \tempo "Adagio"
+  s4*6 \bar "|"
+  s1*29 | \bar "||"
+
+  \time 3/4
+  s2.*163 | \bar "|."
 }
