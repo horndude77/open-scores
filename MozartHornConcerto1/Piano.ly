@@ -1,4 +1,4 @@
-\version "2.11.34"
+\version "2.11.54"
 
 \include "PianoNotesMvtI.lyi"
 \include "PianoNotesMvtII.lyi"
@@ -45,12 +45,10 @@ instrument = "Piano"
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \pianoMvtILeft \pianoMvtIPedals >>
+          << \pianoMvtILeft \pianoMvtIPedals \outlineMvtI >>
         }
 
         %\new Dynamics = "pedals" \pianoPedalsMvtI
-
-        \outlineMvtI
       >>
     >>
     \layout
@@ -119,12 +117,10 @@ instrument = "Piano"
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \pianoMvtIILeft \pianoMvtIIPedals >>
+          << \pianoMvtIILeft \pianoMvtIIPedals \outlineMvtII >>
         }
 
         %\new Dynamics = "pedals" \pianoPedalsMvtI
-
-        \outlineMvtII
       >>
     >>
     \layout
