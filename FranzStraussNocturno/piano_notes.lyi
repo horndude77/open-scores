@@ -81,7 +81,7 @@ righthand = \relative c
   r a,( c f a f c a) r a( c f a f c a) |
   r bes( c e g e c bes) a( c f a) c4 |
   <g g'>4.( <e e'>8 <f f'>4)
-    \once \override PianoStaff.Arpeggio #'infinite-spacing-height = ##t
+    \once \override PianoStaff.Arpeggio #'extra-spacing-height = #'(-inf.0 . +inf.0)
     <ges aes c ges'>4\arpeggio |
   <f aes des f>2\arpeggio r4 <f, aes des f>\arpeggio |
   <bes des ees bes'>2\arpeggio r4 <bes des ees ges>8\arpeggio r |
