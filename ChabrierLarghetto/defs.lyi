@@ -1,5 +1,9 @@
 outline =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.skipBars = ##t
+
   \time 3/4
   \set Score.markFormatter = #format-mark-numbers
 

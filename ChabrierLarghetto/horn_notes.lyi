@@ -2,6 +2,7 @@
 
 horn =  \relative c' \context Voice = "horn"
 {
+  \set Staff.instrumentName = \markup { \column { "Horn" "en Fa" } }
   \transposition f
   \clef treble
   \key c \major
