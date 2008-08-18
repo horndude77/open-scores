@@ -17,18 +17,18 @@ bassMvtII = \relative c,
   c8 r16 \times 2/3 {c32 c c} ees8 r16 \times 2/3 {ees32 ees ees} |
   g8\< r16 \times 2/3 {g32 g g} g8\> r16 \times 2/3 {g32 g g} |
   f8\! r r8. \times 2/3 {b,32 b b} |
-  \setTextCresc
+  \crescTextCresc
   b8 r r8. \times 2/3 {b32\< b b} |
-  \setHairpinCresc
-  \setTextDecresc
+  \crescHairpin
+  \dimTextDecresc
   bes8 r16 \times 2/3 {bes32\> bes bes} bes8 r16 \times 2/3 {bes32 bes bes} |
-  \setHairpinDecresc
+  \dimHairpin
   ees8\p r r4 |
   g4( f8 bes,) |
   d r r4 |
-  \setTextCresc
+  \crescTextCresc
   a4(\< bes8 aes) |
-  \setHairpinCresc
+  \crescHairpin
   g8 r16. e'32\f e4 |
   r f8(\p g) |
   aes4( aes,)\sf\> |
@@ -41,9 +41,9 @@ bassMvtII = \relative c,
   r4 c\sf |
   f,4\p r8. f'32( ees
   des4) r8. des32( c |
-  \setTextCresc
+  \crescTextCresc
   b8)\< r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
-  \setHairpinCresc
+  \crescHairpin
   ees8-.\f f-. r aes,~\p\< |
   aes g4\sf\> g8 |
   c8-.\p aes'16.-. aes32-. d,8-. bes'16.-. bes32-. |
@@ -62,9 +62,9 @@ bassMvtII = \relative c,
   r4 r8. \times 2/3 {c32\sf c c} |
   f8\p r r8. \times 2/3 {f32 f f} |
   des8 r8 r8. \times 2/3 {des32 des des} |
-  \setTextCresc
+  \crescTextCresc
   b8\< r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
-  \setHairpinCresc
+  \crescHairpin
   ees8-.\f f-. r8. \times 2/3 {aes32\p aes aes} |
   aes8\< r16 \times 2/3 {g32 g g} g8\> r16 \times 2/3 {g,32 g g} |
   c8\p r r4 |
@@ -85,9 +85,9 @@ bassMvtII = \relative c,
   f2~ |
   f8 d-. e-. f-. |
   g2 |
-  \setTextCresc
+  \crescTextCresc
   gis8-. d'-.\< b-. gis-. |
-  \setHairpinCresc
+  \crescHairpin
   a-. c,-. d-. d-. |
   \times 4/6 {g,32\ff g g g g g} \times 4/6 {\repeat tremolo 6 g32} g8-. r |
   \times 4/6 {\repeat tremolo 6 g32} \times 4/6 {\repeat tremolo 6 g32} g8-. r |
@@ -95,9 +95,9 @@ bassMvtII = \relative c,
   g8-. r r4 |
   c8\p r r4 |
   r8 g'-. e-. c-. |
-  \setTextCresc
+  \crescTextCresc
   f-.\< r c-. r |
-  \setHairpinCresc
+  \crescHairpin
   f-. r c-. r |
   f-.\p cis-. d-. e-. |
   f-. e-. f-. fis-. |
@@ -110,9 +110,9 @@ bassMvtII = \relative c,
     \times 2/3 {f-. e-. f-.} |
   e8\p r r4 |
   c8 r r4 |
-  \setTextCresc
+  \crescTextCresc
   a8\< r r4 |
-  \setHairpinCresc
+  \crescHairpin
   f8 r r4 |
   g'8 r f r |
   e r f r |
@@ -128,9 +128,9 @@ bassMvtII = \relative c,
   c,8-. r c-. r |
   c'2(\fp |
   aes4. f8) |
-  \setTextCresc
+  \crescTextCresc
   des8(\< aes'16. f32) des8-. c-. |
-  \setHairpinCresc
+  \crescHairpin
   b8\p r r4 |
 
   %Minore
@@ -169,9 +169,9 @@ bassMvtII = \relative c,
   d8( e16 fis g8 ees16 d) |
   cis8-. r cis4~\sf |
   cis8 cis-. cis-. cis-. |
-  \setTextDecresc
+  \dimTextDecresc
   d2~\> |
-  \setHairpinDecresc
+  \dimHairpin
   d\p |
   g,4 r |
   g' r |
@@ -203,18 +203,18 @@ bassMvtII = \relative c,
     g( ees'-> g, g'->) |
   }
   f,( b-> f d'->) |
-  \setTextCresc
+  \crescTextCresc
   b( f'\< d b)
-  \setHairpinCresc
-  \setTextDecresc
+  \crescHairpin
+  \dimTextDecresc
   bes\> bes' bes, bes' |
-  \setHairpinDecresc
+  \dimHairpin
   ees,\p aes
   \times 2/3 {ees16 c' bes} \times 2/3 {aes g f} |
   ees2 |
-  \setTextCresc
+  \crescTextCresc
   bes2\< |
-  \setHairpinCresc
+  \crescHairpin
   c4(\> bes8 aes) |
   g8\! r16. e'32-.\f e4 |
   r4 f8(\p g) |
@@ -225,9 +225,9 @@ bassMvtII = \relative c,
   r4 c\sf |
   f,8-.\p aes-. f-. f'-. |
   des-. f-. des-. des'-. |
-  \setTextCresc
+  \crescTextCresc
   b,-.\< b'-. f,-. f'-. |
-  \setHairpinCresc
+  \crescHairpin
   ees-.\f f-. r aes~\p
   aes\<( g)\> g,\p g' |
   c, r r4 |
@@ -236,15 +236,15 @@ bassMvtII = \relative c,
   fis\sf\> r |
   g8\p r g r |
   c r r4 |
-  \setTextCresc
+  \crescTextCresc
   g8\< g' g, g' |
-  \setHairpinCresc
+  \crescHairpin
   aes,8\f r r4 |
   R2*13 |
   c2~\pp | c |
-  \setTextCresc
+  \crescTextCresc
   c4(\< e8( g) |
-  \setHairpinCresc
+  \crescHairpin
   f4( g8 aes) |
   g8( f e f)
   c8\p r r4 |
@@ -256,12 +256,12 @@ bassMvtII = \relative c,
     c8)\! r r4 |
   }
   g2~ |
-  \setTextCresc
+  \crescTextCresc
   g\< |
-  \setHairpinCresc
-  \setTextDecresc
+  \crescHairpin
+  \dimTextDecresc
   g\> |
-  \setHairpinDecresc
+  \dimHairpin
   r4\! c8^\pizz r |
   g r ees' r |
   c r r4 |
