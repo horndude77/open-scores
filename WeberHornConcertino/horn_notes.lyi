@@ -180,18 +180,20 @@ horn = \relative c'' \context Voice = horn
   \grace {g32[ aes bes]} a8 g r4 r2 |
   r \clef "bass^8" c,,~\fermata |
   c4 c-.( b-. a-.) |
-  g2 fis |
-  g1\fermata |
-  c |
-  g\fermata |
-  \clef treble
-  <c' c' g'> <c c' a'> <c c' g'> <c c' a'> |
+  g2 <fis c''' ees> |
+  <g g'' d'>1\fermata |
+  <b g'' d'> |
+  <c c'' e> |
+  <g g'' d'>\fermata |
+  \clef "treble_8"
+  <c c' g'> <c c' a'> <c c' g'> <c c' a'> |
   <c c' g'> <g g' d' f>\fermata |
   R1 |
   R1^\fermataMarkup |
 
   %3/4
-  c8 e'4->( d16 c b d c) g-. |
+  \clef treble
+  c'8 e'4->( d16 c b d c) g-. |
   a4~ a16 b cis d e( d) f-. d-. |
   d16( b) g8-> d'16( b) g8-> d'16( b) g8-> |
   c8 c, e' c, g''4-> |

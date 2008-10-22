@@ -34,7 +34,7 @@ outline =
   s4*5 \bar "|"
   \tempo "Adagio"
   s4*6 \bar "|"
-  s1*29 | \bar "||"
+  s1*30 | \bar "||"
 
   \time 3/4
   s2.*163 | \bar "|."

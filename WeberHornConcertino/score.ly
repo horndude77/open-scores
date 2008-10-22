@@ -1,7 +1,6 @@
 \version "2.11.49"
 
 \include "flute1_notes.lyi"
-\include "flute2_notes.lyi"
 \include "clarinet1_notes.lyi"
 \include "clarinet2_notes.lyi"
 \include "bassoon1_notes.lyi"
@@ -38,25 +37,14 @@ instrument = "Orchestra"
       %woodwinds
       \new StaffGroup
       <<
-        \new GrandStaff
-        <<
-          \new Staff
-          {
-            #(set-accidental-style 'modern)
-            \set Staff.instrumentName = "Flute I"
-            \set Staff.shortInstrumentName = "Fl.I"
-            \set Staff.midiInstrument = "flute"
-            \fluteOne
-          }
-          \new Staff
-          {
-            #(set-accidental-style 'modern)
-            \set Staff.instrumentName = "Flute II"
-            \set Staff.shortInstrumentName = "Fl.II"
-            \set Staff.midiInstrument = "flute"
-            \fluteTwo
-          }
-        >>
+        \new Staff
+        {
+          #(set-accidental-style 'modern)
+          \set Staff.instrumentName = "Flute"
+          \set Staff.shortInstrumentName = "Fl."
+          \set Staff.midiInstrument = "flute"
+          \fluteOne
+        }
         \new GrandStaff
         <<
           \new Staff
@@ -212,7 +200,6 @@ instrument = "Orchestra"
         \set Staff.midiInstrument = "flute"
         <<
           \fluteOne
-          \fluteTwo
         >>
       }
       \new Staff
