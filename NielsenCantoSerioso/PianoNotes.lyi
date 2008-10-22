@@ -269,52 +269,71 @@ pianoLeft = \relative c
   f c' g f |
   c' g f2 |
   c'4 g r <c f,>~ |
-  <c f,>2 <c f,>\fermata |
+  \dimTextDim
+  <c f,>2 << <c f,>\fermata {s4.\> s8\!} >> |
 }
 
 pianoDynamics =
 {
+  \override DynamicTextSpanner #'dash-period = #-1.0
   %placeholder
   s1*8\p |
   s4 s\< s s8 s\! |
-  \setTextDim
+  \dimTextDim
   s4\f s2.\> |
+  \dimHairpin
   s1\!\mf |
-  \setTextDim
+  \revert DynamicTextSpanner #'dash-period
+  \dimTextDim
   s2 s\> |
+  \dimHairpin
+  \override DynamicTextSpanner #'dash-period = #-1.0
   s1 |
   \override TextSpanner #'edge-text = #'("rall " . "")
   s4\!\startTextSpan s s s\stopTextSpan
 
   s1*3\mp |
-  s2 s-\mdim |
+  \dimTextDim
+  s2 s\> |
+  \dimHairpin
   s2\p\< s4\fz\> s8 s\! |
   s2\< s4\fz\> s8 s\! |
-  \setTextCresc
-  s4 s\cresc s s\f |
+  \revert DynamicTextSpanner #'dash-period
+  \crescTextCresc
+  s4 s\< s s\f |
+  \crescHairpin
+  \override DynamicTextSpanner #'dash-period = #-1.0
   s1\fz |
-  s4\fz s2.-\mdim |
+  \dimTextDim
+  s4\fz s2.\> |
+  \dimHairpin
 
   s2\p\< s\ff |
-  s1-\sempref |
+  s1\sempref |
   s4 s\fz s2\ff |
-  s4 s-\mdim s2 |
-  s4-\mdim s2.-\rall
+  \dimTextDim
+  s4 s\> s2 |
+  s4\> s2.-\rall
+  \dimHairpin
 
   s1*6\p |
   s2.\< s4\! |
   s2.\> s4\! |
   s1*2\f |
   s2 s-\rall |
-  s4-\mdim s s s\fz |
+  \dimTextDim
+  s4\> s s s\fz |
+  \dimHairpin
   s1*2 |
   s2 s-\rall |
   s1 |
   s4 s2.\f |
   s4 s\> s s8 s\! |
-  s4 s2.-\mdim |
-  s4 s2.-\mdim |
-  s2 s2-\mdim |
+  \dimTextDim
+  s4 s2.\> |
+  \dimTextDim
+  s4 s2.\> |
+  s2 s2\! |
 }
 
 pianoPedals =

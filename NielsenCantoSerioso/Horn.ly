@@ -1,4 +1,4 @@
-\version "2.11.34"
+\version "2.11.62"
 
 \include "defs.lyi"
 \include "HornNotes.lyi"
@@ -9,6 +9,7 @@ instrument = "Horn in F"
 {
   ragged-last-bottom = ##f
   ragged-bottom = ##f
+  #(set-paper-size "letter")
 }
 
 \book
