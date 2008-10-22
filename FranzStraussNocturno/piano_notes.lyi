@@ -266,6 +266,7 @@ lefthand = \relative c
   >> \voiceTwo aes''8[ aes \change Staff=RH des] f aes des f |
   \change Staff=LH
   \clef treble
+  \oneVoice
   <des, aes' des>4\arpeggio r r2 |
 }
 
