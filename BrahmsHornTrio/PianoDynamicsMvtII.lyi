@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 pianoDynamicsMvtII =
@@ -106,8 +107,9 @@ pianoDynamicsMvtII =
   s4\< s s\! |
   s s s\> | s2. | s4 s s\p\< | s\> s s\! |
   s2.*7 |
-  \setTextCresc
+  \crescTextCresc
   s2.*3\< | s2.\! |
+  \crescHairpin
   s2.*3 |
   s2.*2\f |
   s4 s s-\mDim |
@@ -122,10 +124,10 @@ pianoPedalsMvtII =
 
   %A
   s2.*46 |
-  s2.*2\sustainDown
+  s2.*2\sustainOn
 
   %B
-  s2.*36\sustainUp |
+  s2.*36\sustainOff |
   s2.*24 |
 
   %C
@@ -146,12 +148,12 @@ pianoPedalsMvtII =
   %Fine
 
   s2. |
-  s2.*4\sustainDown |
-  s4 s \sustainDown s |
+  s2.*4\sustainOn |
+  s4 s \sustainOn s |
   s2.*3 |
 
   %Molto meno Allegro
-  s2.*12\sustainUp |
+  s2.*12\sustainOff |
   s2.*20_\mColPed |
 
   %H

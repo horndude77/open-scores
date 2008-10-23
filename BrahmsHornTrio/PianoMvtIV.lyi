@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 pianoRightMvtIVBeginning = \relative c'
@@ -282,12 +283,12 @@ pianoRightMvtIV = \relative c'
   r4. r4 ees,8 |
   ees( ges ces ees ges ces) |
   <fis b, fis>4. <e e,>4 <d d,>8 |
-  #(set-octavation 1)
+  \ottava #1
   <d' fis, d>4. <cis e, cis>4 <ais ais,>8 |
   \repeat unfold 2 {<b d, b>4.~ <b d, b>4 <ais cis, ais>8 |}
   <b d, b> <ais ais,> <b b,>~ <b b,> <ais ais,> <b b,>~ |
   <b b,> <ais ais,> <b b,>~ <b b,> <ais ais,> <b b,> |
-  #(set-octavation 0)
+  \ottava #0
   \repeat unfold 4 {<f,, d aes f>4.->} |
   <f d aes f> <ges bes, ges> |
   <d' bes d,> <ees bes ees,> |
@@ -297,8 +298,8 @@ pianoRightMvtIV = \relative c'
   %H
   <bes d, bes>8-. r r d,,4.(~ |
   <f d>~ <des' bes f des> |
-  <c bes ees, c>) r8 #(set-octavation 1) g''( c |
-  c,) #(set-octavation 0) g( c c,) g( c |
+  <c bes ees, c>) r8 \ottava #1 g''( c |
+  c,) \ottava #0 g( c c,) g( c |
   <aes c,>) r r c,4.~( |
   <ees c>~ <ces' aes ees ces> |
   <bes aes d, bes>) r8 f''( bes |
@@ -315,10 +316,10 @@ pianoRightMvtIV = \relative c'
   g, <g' d> ees, <c' aes> ees, <ees' bes>) |
   f,( f' f, c' f, f' |
   bes, bes' bes, f' bes, bes') |
-  #(set-octavation 1)
+  \ottava #1
   ees,( ees' d, d' c, c' |
   bes, bes' aes, aes' g, g') |
-  #(set-octavation 0)
+  \ottava #0
   f,( f' f, ees' f, c' |
   bes, bes' bes, aes' bes, f') |
   ees,( ees' g, g' c,, c') |

@@ -1,3 +1,4 @@
+\version "2.11.62"
 mCresc = \markup {\italic cresc.}
 mDolce = \markup {\italic dolce}
 mMoltoP = \markup {\italic molto \dynamic p}
@@ -63,6 +64,8 @@ tempoMark = #(define-music-function (parser location markp) (string?)
 
 outlineMvtI =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/4 \tempoMark "Andante" \partial 4 s4 | s2*28 |
   \mark \default s2*27 |
   \mark \default s2*21 \bar "||"
@@ -82,6 +85,8 @@ outlineMvtI =
 
 outlineMvtII =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 3/4
   \tempoMark "Allegro" s2.*12 |
   \mark \default s2.*48 |
@@ -112,6 +117,8 @@ outlineMvtII =
 
 outlineMvtIII =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 6/8
   \tempoMark "Adagio mesto" s2.*18 |
   \mark \default s2.*7 \bar "||"
@@ -125,6 +132,8 @@ outlineMvtIII =
 
 outlineMvtIV =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 6/8
   \repeat volta 2
   {

@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 hornMvtIV = \relative c''
@@ -89,8 +90,9 @@ hornMvtIV = \relative c''
       g4 r8 r4. |
       R2.*2 |
       r4. r4 c8\mf
-      \setTextCresc
+      \crescTextCresc
       g'\< g a b4 g8 |
+      \crescHairpin
       b b c d d f |
       d d c b4.~\f
       \partial 8*5 b~ b8 r8
@@ -123,9 +125,10 @@ hornMvtIV = \relative c''
   b4-. r8 b4-. r8 |
   c4-. r8 r4. |
   r e( |
-  \setTextCresc
+  \crescTextCresc
   \set crescendoText = \markup { \italic "poco a poco cresc." }
   f2.~)\< |
+  \crescHairpin
   f4 r8 f4.( |
   fis2.~) |
   fis4 r8 fis4.( |
@@ -233,8 +236,9 @@ hornMvtIV = \relative c''
   c,,~ | c~ | c~ | c~ | c4 r8 r4. |
   R2.*3 |
   \clef treble
-  \setTextCresc
+  \crescTextCresc
   c'''8\mf\< c d e e g |
+  \crescHairpin
   g4.~ g4 c,8 |
   e\f e f g g c |
   c2.~ |

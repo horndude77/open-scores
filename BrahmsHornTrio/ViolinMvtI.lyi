@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 violinMvtI = \relative c'
@@ -205,7 +206,7 @@ violinMvtI = \relative c'
   \key ges \major
   %"Tempo I"
   R2*8 |
-  \set hairpinToBarline = ##f
+  \override Hairpin #'to-barline = ##f
   r4 des,(\p\< | beses'\> aes)\! |
   r des(\< | beses\> aes)\! |
   r ees(_\mPocoCresc | ces' bes) |

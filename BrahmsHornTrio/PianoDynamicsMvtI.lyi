@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 pianoDynamicsMvtI =
@@ -168,8 +169,8 @@ pianoPedalsMvtI =
 
   %D
   s4.*3*17 |
-  s4.*3*2\sustainDown |
-  s4.*3*2\sustainDown |
+  s4.*3*2\sustainOn |
+  s4.*3*2\sustainOn |
 
   %2/4 Tempo I
   s2*8 |
@@ -185,27 +186,25 @@ pianoPedalsMvtI =
 
   %G
   s4.*3*6 |
-  s4.*3*2\sustainDown |
-  s4.*3*2\sustainDown |
+  s4.*3*2\sustainOn |
+  s4.*3*2\sustainOn |
 
   %2/4 Tempo I
   s2*20 |
 
   %H
   s2*4 |
-  \once \override TextScript #'padding = #4.0
   s2*10_\mColPed |
-  \once \override TextScript #'padding = #4.0
   s2*11_\mColPed |
 
   %I
   s2*11 |
-  s2\sustainDown |
-  s2\sustainDown |
+  s2\sustainOn |
+  s2\sustainOn |
   s2*2 |
-  s4 s\sustainDown |
+  s4 s\sustainOn |
   s2*3 |
-  s4 s\sustainDown |
+  s4 s\sustainOn |
   s2*2 |
 }
 

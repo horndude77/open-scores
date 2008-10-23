@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 pianoDynamicsMvtIII =
@@ -37,9 +38,7 @@ pianoDynamicsMvtIII =
   s4.\sfp s8.-\mDim s8. |
   s2.*2 |
   s16*11\> s16\! |
-  s4.
-    \once \override TextScript #'padding = #2.0
-    s-\mDim |
+  s4. s-\mDim |
   s16*11\> s16\! |
   s2.*2-\mInTempo |
   s4. s\> | s4. s8 s s\! |
@@ -56,8 +55,9 @@ pianoDynamicsMvtIII =
   s2.*2\p |
   s2.*4\pp |
   s2.*2\pp |
-  \setTextCresc
+  \crescTextCresc
   s2.\< | s4. s\! |
+  \crescHairpin
   s2.*4\f |
   s8. s\< s8 s s\! |
 
@@ -92,12 +92,10 @@ pianoPedalsMvtIII =
   s2.*5 |
 
   %B
-  \once \override TextScript #'padding = #6.0
   s2.*11_\mColPed |
   s2.*16\unaCorda
 
   %C
-  \once \override TextScript #'padding = #3.5
   s2.*11_\mColPed |
   s2.*4 |
 

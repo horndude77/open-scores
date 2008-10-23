@@ -1,4 +1,4 @@
-\version "2.11.25"
+\version "2.11.62"
 
 \include "PianoMvtI.lyi"
 \include "PianoDynamicsMvtI.lyi"
@@ -69,12 +69,10 @@ threeToFourPadding = {r8*5}
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \pianoLeftMvtI \pianoPedalsMvtI >>
+          << \pianoLeftMvtI \pianoPedalsMvtI \outlineMvtI >>
         }
 
         %\new Dynamics = "pedals" \pianoPedalsMvtI
-
-        \outlineMvtI
       >>
     >>
     \layout
@@ -85,32 +83,26 @@ threeToFourPadding = {r8*5}
         \name "Dynamics"
         \alias Voice
         \consists "Output_property_engraver"
-
-        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-        pedalSustainStrings = #'("Ped." "*Ped." "*")
-        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-
         \consists "Piano_pedal_engraver"
         \consists "Script_engraver"
-        \consists "Dynamic_engraver"
+        \consists "New_dynamic_engraver"
+        \consists "Dynamic_align_engraver"
         \consists "Text_engraver"
-      \consists "Text_spanner_engraver"
-
-        %\override TextScript #'font-size = #2
-        %\override TextScript #'font-shape = #'italic
-        %\override TextScript #'extra-offset = #'(0 . 1.75)
-        %\override DynamicText #'extra-offset = #'(0 . 2.5)
-        %\override Hairpin #'extra-offset = #'(0 . 2.5)
-
+        \consists "Text_spanner_engraver"
         \consists "Skip_event_swallow_translator"
-
         \consists "Axis_group_engraver"
+
+        pedalSustainStrings = #'("Ped." "*Ped." "*")
+        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
+        \override DynamicLineSpanner #'Y-offset = #0
+        %\override TextScript #'font-size = #2
+        \override TextScript #'font-shape = #'italic
+        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
       }
       \context
       {
         \PianoStaff
         \accepts Dynamics
-        \override VerticalAlignment #'forced-distance = #7
       }
     }
     \header { piece = " " }
@@ -157,12 +149,10 @@ threeToFourPadding = {r8*5}
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \pianoLeftMvtII \pianoPedalsMvtII >>
+          << \pianoLeftMvtII \pianoPedalsMvtII \outlineMvtII >>
         }
 
         %\new Dynamics = "pedals" \pianoPedalsMvtII
-
-        \outlineMvtII
       >>
     >>
     \layout
@@ -173,31 +163,26 @@ threeToFourPadding = {r8*5}
         \name "Dynamics"
         \alias Voice
         \consists "Output_property_engraver"
-
-        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-        pedalSustainStrings = #'("Ped." "*Ped." "*")
-        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-
         \consists "Piano_pedal_engraver"
         \consists "Script_engraver"
-        \consists "Dynamic_engraver"
+        \consists "New_dynamic_engraver"
+        \consists "Dynamic_align_engraver"
         \consists "Text_engraver"
-
-        %\override TextScript #'font-size = #2
-        %\override TextScript #'font-shape = #'italic
-        %\override TextScript #'extra-offset = #'(0 . 1.75)
-        %\override DynamicText #'extra-offset = #'(0 . 2.5)
-        %\override Hairpin #'extra-offset = #'(0 . 2.5)
-
+        \consists "Text_spanner_engraver"
         \consists "Skip_event_swallow_translator"
-
         \consists "Axis_group_engraver"
+
+        pedalSustainStrings = #'("Ped." "*Ped." "*")
+        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
+        \override DynamicLineSpanner #'Y-offset = #0
+        %\override TextScript #'font-size = #2
+        \override TextScript #'font-shape = #'italic
+        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
       }
       \context
       {
         \PianoStaff
         \accepts Dynamics
-        \override VerticalAlignment #'forced-distance = #7
       }
     }
     \header { piece = "Scherzo" }
@@ -244,12 +229,10 @@ threeToFourPadding = {r8*5}
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \pianoLeftMvtIII \pianoPedalsMvtIII >>
+          << \pianoLeftMvtIII \pianoPedalsMvtIII \outlineMvtIII >>
         }
 
         %\new Dynamics = "pedals" \pianoPedalsMvtIII
-
-        \outlineMvtIII
       >>
     >>
     \layout
@@ -260,31 +243,26 @@ threeToFourPadding = {r8*5}
         \name "Dynamics"
         \alias Voice
         \consists "Output_property_engraver"
-
-        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-        pedalSustainStrings = #'("Ped." "*Ped." "*")
-        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-
         \consists "Piano_pedal_engraver"
         \consists "Script_engraver"
-        \consists "Dynamic_engraver"
+        \consists "New_dynamic_engraver"
+        \consists "Dynamic_align_engraver"
         \consists "Text_engraver"
-
-        %\override TextScript #'font-size = #2
-        %\override TextScript #'font-shape = #'italic
-        %\override TextScript #'extra-offset = #'(0 . 1.75)
-        %\override DynamicText #'extra-offset = #'(0 . 2.5)
-        %\override Hairpin #'extra-offset = #'(0 . 2.5)
-
+        \consists "Text_spanner_engraver"
         \consists "Skip_event_swallow_translator"
-
         \consists "Axis_group_engraver"
+
+        pedalSustainStrings = #'("Ped." "*Ped." "*")
+        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
+        \override DynamicLineSpanner #'Y-offset = #0
+        %\override TextScript #'font-size = #2
+        \override TextScript #'font-shape = #'italic
+        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
       }
       \context
       {
         \PianoStaff
         \accepts Dynamics
-        \override VerticalAlignment #'forced-distance = #7
       }
     }
     \header { piece = " " }
@@ -335,10 +313,8 @@ threeToFourPadding = {r8*5}
           \set Staff.voltaOnThisStaff = ##f
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          \pianoLeftMvtIV
+          << \pianoLeftMvtIV \outlineMvtIV >>
         }
-
-        \outlineMvtIV
       >>
     >>
     \layout
@@ -349,31 +325,26 @@ threeToFourPadding = {r8*5}
         \name "Dynamics"
         \alias Voice
         \consists "Output_property_engraver"
-
-        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-        pedalSustainStrings = #'("Ped." "*Ped." "*")
-        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-
         \consists "Piano_pedal_engraver"
         \consists "Script_engraver"
-        \consists "Dynamic_engraver"
+        \consists "New_dynamic_engraver"
+        \consists "Dynamic_align_engraver"
         \consists "Text_engraver"
-
-        %\override TextScript #'font-size = #2
-        %\override TextScript #'font-shape = #'italic
-        %\override TextScript #'extra-offset = #'(0 . 1.75)
-        %\override DynamicText #'extra-offset = #'(0 . 2.5)
-        %\override Hairpin #'extra-offset = #'(0 . 2.5)
-
+        \consists "Text_spanner_engraver"
         \consists "Skip_event_swallow_translator"
-
         \consists "Axis_group_engraver"
+
+        pedalSustainStrings = #'("Ped." "*Ped." "*")
+        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
+        \override DynamicLineSpanner #'Y-offset = #0
+        %\override TextScript #'font-size = #2
+        \override TextScript #'font-shape = #'italic
+        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
       }
       \context
       {
         \PianoStaff
         \accepts Dynamics
-        \override VerticalAlignment #'forced-distance = #7
       }
     }
     \header { piece = "Finale" }

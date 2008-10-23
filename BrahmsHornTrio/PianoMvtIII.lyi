@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 pianoRightMvtIII = \relative c'
@@ -63,7 +64,7 @@ pianoRightMvtIII = \relative c'
   bes'''8( f' ges f bes, des |
   ees des bes des ees f) |
   <ges ges,>( <f f,> <des des,>
-    #(set-octavation 1)
+    \ottava #1
     <f f,> <ges ges,> <aes aes,>) |
 
   %9/8
@@ -71,7 +72,7 @@ pianoRightMvtIII = \relative c'
 
   %6/8
   <des aes des,>4
-    #(set-octavation 0)
+    \ottava #0
     <des, fes, des>8~ <des fes, des> <des, aes>4 |
   <cis a>4 <a' cis, a>8~ <a cis, a> <e' a, e>4 |
   <fis a, fis>4 <a, fis a,>8~ <a fis a,> <a, fis>4 |

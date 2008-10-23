@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 funkyPart = \relative c'
@@ -368,8 +369,8 @@ pianoRightMvtI = \relative c''
   R2 |
   r4 <bes''' d, aes>~ |
   <bes d, aes> r |
-  r4 #(set-octavation 1) <bes' d, aes>~ |
-  <bes d, aes> #(set-octavation 0) <bes, d, aes>~ |
+  r4 \ottava #1 <bes' d, aes>~ |
+  <bes d, aes> \ottava #0 <bes, d, aes>~ |
   <bes d, aes> <bes, d, aes> |
   r <ees, g,> |
   r <ees'' bes g ees> |

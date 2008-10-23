@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 hornMvtI = \relative c''
@@ -13,7 +14,7 @@ hornMvtI = \relative c''
   a4 g8-.( a-.) |
   a4 g8-.( a-.) |
   a4 g8-.(\< c-.) |
-  \set hairpinToBarline = ##f
+  \override Hairpin #'to-barline = ##f
   c4( d~)\> | d4\! r |
   \repeat unfold 2 {r4 g,(\< | c\> b\!) |}
   f'4 e8-.( f-.) |
@@ -200,8 +201,9 @@ hornMvtI = \relative c''
   f r |
   \repeat unfold 2 {r bes,(\< | ees\> d)\! |}
   \set crescendoText = \markup { \italic "poco cresc." }
-  \set crescendoSpanner = #'dashed-line
+  \set crescendoSpanner = #'text
   r c(\< | f e) |
+  \crescHairpin
   r c( | f e) |
   r d( | g fis) |
   f( e) |

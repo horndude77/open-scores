@@ -1,3 +1,4 @@
+\version "2.11.62"
 \include "defs.lyi"
 
 hornMvtII = \relative c''
@@ -35,15 +36,17 @@ hornMvtII = \relative c''
   g~ | g) |
 
   %B
-  \setTextCresc
+  \crescTextCresc
   bes(\mf\< | ees) |
+  \crescHairpin
   g2( ees4) |
   d2( cis4) |
   d2.( | g,2)\! r4 |
   d'2.( | a2) r4 |
 
-  \setTextCresc
+  \crescTextCresc
   bes2.(\< | ees) |
+  \crescHairpin
   g2( ees4) |
   d2( cis4) |
   d2.( | g,2)\! r4 |
@@ -66,8 +69,9 @@ hornMvtII = \relative c''
   ces-. bes-. ces-. |
   bes-. r r |
 
-  \setTextCresc
+  \crescTextCresc
   ees2.\< | c | bes | g2 c4-. | bes-.\f r r |
+  \crescHairpin
   R2.*3 |
   f'2.~ | \times 3/2 {f4 f} |
   \times 3/2 {e4( f)} | d2. |
@@ -125,9 +129,10 @@ hornMvtII = \relative c''
   g2.(\p fis) |
   fis~ | fis |
   g~( | g4 a b) |
-  \setTextCresc
+  \crescTextCresc
   \set crescendoText = \markup { \italic "poco a poco cresc." }
   b2.~\< | b |
+  \crescHairpin
   c2.~ | c4( g c) |
   c2.~ | c4( g c) |
   c( g c) |
@@ -160,8 +165,9 @@ hornMvtII = \relative c''
   c4 r r |
   R2.*6 |
   g2.\f |
-  \setTextCresc
+  \crescTextCresc
   c\< | e | d | c |
+  \crescHairpin
   c4( g) e |
   g( c) e |
   g2.\f |
@@ -211,8 +217,9 @@ hornMvtII = \relative c''
   bes4( c des) |
   f2( ees4) |
   c2. |
-  \setTextCresc
+  \crescTextCresc
   ees2.~(\< | ees4 des c) |
+  \crescHairpin
   ees2.~( | ees4 des c) |
   e2.\! |
   g4( f e) |
