@@ -237,7 +237,7 @@ lefthand = \relative c
   \repeat unfold 2 << {e16( g bes c)} \\ e,4 >>
     << {f16( a c f,)} \\ f4 >> <ees aes c>4\arpeggio |
   <des aes' des>2\arpeggio r4 <des, aes' des>\arpeggio |
-  <ges, ges'>2 r4 <ges ges'>8 r |
+  <ges, ges'>2\arpeggio r4 <ges ges'>8\arpeggio r |
   <aes aes'>2 <aes aes'>4 <aes'' ees' ges>4\arpeggio |
   <des, aes' des>16 r r8 r4 <des, des'>2 |
   <des des'> <des des'> |
