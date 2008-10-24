@@ -1,4 +1,4 @@
-\version "2.11.27"
+\version "2.11.62"
 
 \include "PianoNotes.lyi"
 \include "HornNotes.lyi"
@@ -37,18 +37,16 @@ instrument = "Piano"
           \pianoRight
         }
 
-        %\new Dynamics = "dynamics" \pianoDynamics
+        \new Dynamics = "dynamics" \pianoDynamics
 
         \new Staff="LH"
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \pianoLeft \pianoPedals >>
+          << \pianoLeft \pianoPedals \outline >>
         }
 
         %\new Dynamics = "pedals" \pianoPedalsMvtI
-
-        \outline
       >>
     >>
     \layout
@@ -59,35 +57,27 @@ instrument = "Piano"
         \name "Dynamics"
         \alias Voice
         \consists "Output_property_engraver"
-
-        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-        pedalSustainStrings = #'("Ped." "*Ped." "*")
-        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-
         \consists "Piano_pedal_engraver"
         \consists "Script_engraver"
-        \consists "Dynamic_engraver"
+        \consists "New_dynamic_engraver"
+        \consists "Dynamic_align_engraver"
         \consists "Text_engraver"
-
-        %\override TextScript #'font-size = #2
-        %\override TextScript #'font-shape = #'italic
-        \override TextScript #'extra-offset = #'(0 . 1.75)
-        \override DynamicTextSpanner #'extra-offset = #'(0 . 1.75)
-        \override DynamicText #'extra-offset = #'(0 . 2.5)
-        \override Hairpin #'extra-offset = #'(0 . 2.5)
-
         \consists "Skip_event_swallow_translator"
+        \consists "Axis_group_engraver"
 
-        %\consists "Axis_group_engraver"
+        pedalSustainStrings = #'("Ped." "*Ped." "*")
+        pedalUnaCordaStrings = #'("una corda" "" "tre corde")
+        \override DynamicLineSpanner #'Y-offset = #0
+        %\override TextScript #'font-size = #2
+        \override TextScript #'font-shape = #'italic
+        \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
       }
       \context
       {
         \PianoStaff
         \accepts Dynamics
-        \override VerticalAlignment #'forced-distance = #7
       }
     }
-    \header { piece = " " }
   }
 
   %midi
@@ -115,7 +105,14 @@ instrument = "Piano"
         << \midiOutline \outline >>
       }
     >>
-    \midi { }
+    \midi
+    {
+      \context
+      {
+        \Voice
+        \remove "Dynamic_performer"
+      }
+    }
   }
 }
 

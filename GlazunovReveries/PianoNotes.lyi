@@ -1,9 +1,12 @@
-\version "2.11.11"
+\version "2.11.62"
 
 \include "defs.lyi"
 
 pianoRight = \relative c'
 {
+  #(override-auto-beam-setting '(end * * * *) 1 4)
+  #(override-auto-beam-setting '(end * * * *) 2 4)
+  #(override-auto-beam-setting '(end * * * *) 3 4)
   \key des \major
   <f des aes f>2\arpeggio <f des aes f>4\arpeggio |
   <f des aes f>2\arpeggio <f des aes>4\arpeggio |
@@ -12,7 +15,7 @@ pianoRight = \relative c'
   bes,2( beses4) |
   aes2 << {\times 2/3 {des8 <ees c> <f ces>}} \\ des4 >> |
   <f des bes>2 << {\times 2/3 {des8 <ees c> <f ces>}} \\ des4 >> |
-  <f des bes>4 <ges bes,>2 |
+  <f des bes>4( <ges bes,>2) |
   <bes ees, bes>2 <bes ges des>4 |
   << {bes2( aes4)} \\ <ees c>2. >> |
   <aes des, aes>4 <bes, ges> <ees c aes> |
@@ -33,7 +36,7 @@ pianoRight = \relative c'
   r4 \times 2/3 {<g e>8 c <e g>} \times 2/3 {c' <g e> r} |
   r4 \times 2/3 {<g, ees>8 c <ees g>} \times 2/3 {c' <g ees> r} |
   << {\voiceOne aes,,8( <bes g>} \new Voice {\voiceTwo aes4} >> \oneVoice <c aes ges>2) |
-  <bes' g'>8( <f' aes> <ees bes'>) <des bes'> << {ees'8.( bes16)} \\ {c,8( des)} >> |
+  <bes' ges'>8( <f' aes> <ees bes'>) <des bes'> << {ees'8.( bes16)} \\ {c,8( des)} >> |
   << {des'4 c4.( ges8)} \\ {ees2 des4} >> |
   << {bes'4 aes4.( des,8)} \\ {c2 bes4} >> |
   <aes f'>2 <ges ees'>4~ |
@@ -48,7 +51,7 @@ pianoRight = \relative c'
   <<
     {
       \times 2/3 {ces8( beses aes} \times 2/3 {bes ces c)} \times 2/3 {des( c ces)} |
-      \times 2/3 {bes8( ces c} \times 2/3 {bes ces c)} \times 2/3 {des( c ces)} |
+      \times 2/3 {bes8( c a} \times 2/3 {bes ces c)} \times 2/3 {des( c ces)} |
       \times 2/3 {bes8( c a} \times 2/3 {bes c des} \times 2/3 {ees e f)} |
     }
     \\
@@ -90,6 +93,7 @@ pianoRight = \relative c'
     \repeat tremolo 12 {<bes des f>32 ges} |
     <ges aes c f>8 r r4 \clef treble \times 2/3 {ees'8 c' aes'} |
     <des, f,>8^( <ees aes,> << {\voiceOne f8) f bes8.( f16)} \new Voice {\voiceTwo des4 <des f>} >> |
+    \oneVoice
     <c ees aes>4 << {ges'4.( des8)} \\ {<des bes>2} >> |
     <aes des f>2
     <<
@@ -99,14 +103,14 @@ pianoRight = \relative c'
         \times 2/3 {des,,8( f des)} |
         \times 2/3 {ees( aes ees)} \times 2/3 {ges( bes ges)} \times 2/3 {bes( ees bes)} |
       }
-    >> r4 r |
+    >> r2 |
     R2.*4 |
     \clef bass
     <aes, c f>4 <ges c ees>4.( <f aes des>8) |
     <f aes des>2
       \clef treble
       \set tieWaitForNote = ##t
-      \times 2/3 {\change Staff=LH des'8 \change Staff=RH aes'~ f'~} |
+      \times 2/3 {\change Staff=LH \stemUp des'8 \change Staff=RH aes'~ f'~} |
     << \new Voice {\voiceOne des'2.\fermata} {\voiceTwo <f, aes,>2.} >> |
 }
 
@@ -152,8 +156,8 @@ pianoLeft = \relative c
     }
     \\
     {
-      aes2.~ | aes4 r r |
-      aes2.~ | aes4 r r |
+      aes2.~ | aes4 s s |
+      aes2.~ | aes4 s s |
     }
   >>
   <<
@@ -248,7 +252,78 @@ pianoLeft = \relative c
 
 pianoDynamics =
 {
-  s2.*50
+  \dimTextDim
+  s2.*2\f\> |
+  \dimHairpin
+  s2.*2\p |
+  s4 s2\> |
+  s2\! s4\< |
+  s2\! s4\< |
+  s2.\! |
+  s2.\< |
+  s2.\f |
+  s2 s4\> |
+  s4\mf-\collaParte s s\> |
+  s2.\p
+
+  %a tempo
+  s2. |
+  s4\mf s2\< |
+  s4\f s2\> |
+  s4\p s2\< |
+  s4\! s2\< |
+  s2.\f |
+  s2. |
+  s4 s2\> |
+  s2.\! |
+  \crescTextCresc
+  \once \override DynamicTextSpanner #'dash-period = #-1.0
+  s4\p s2\< |
+  \crescHairpin
+  s2. |
+  s4\mf s2\< |
+  s2.\! |
+  \dimTextDim
+  \once \override DynamicTextSpanner #'dash-period = #-1.0
+  s2.\> |
+  \dimHairpin
+  s2.\! |
+  s2.*2 |
+  \crescTextCresc
+  \once \override DynamicTextSpanner #'dash-period = #-1.0
+  s2.\< |
+  \crescHairpin
+  s2.*3 |
+  s2.\f-\agitato |
+  s2.\< |
+  s4\! s2\< |
+  s2\> s4\p-\tranquillo |
+  s2.*2 |
+  s4 s2\> |
+  s2\! s4\< |
+  s2\> s4\< |
+  s4\!
+  \crescTextCresc
+  \once \override DynamicTextSpanner #'dash-period = #-1.0
+    s2\< |
+  \crescHairpin
+  s2. |
+  s2 s4\ff |
+  s2.-\legato |
+  s2.\f |
+  s2.\mf |
+  \crescTextCresc
+  s2.\p\< |
+  \crescHairpin
+  s2. |
+  s2.\f\> |
+  s2.\p-\collaParte |
+
+  %a tempo
+  s2.*9 |
+  s2.\mf |
+  s4 s2\> |
+  s2.\! |
 }
 
 pianoPedals =

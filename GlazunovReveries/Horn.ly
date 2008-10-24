@@ -1,4 +1,4 @@
-\version "2.11.27"
+\version "2.11.62"
 
 \include "HornNotes.lyi"
 
@@ -15,7 +15,7 @@ instrument = "Horn in F"
 {
   \new Staff
   {
-    \horn
+    << \horn \outline >>
   }
 }
 
