@@ -1,12 +1,13 @@
 \header
 {
-  title = \markup{Reveries}
+  title = "Rêverie"
   composer = "Alexander Glazunov (1865-1936)"
+  opus = "Op.24"
   instrument = \instrument
 
-  mutopiatitle = "Reveries"
+  mutopiatitle = "Rêverie"
   mutopiacomposer = "GlazunovA"
-  mutopiaopus = ""
+  mutopiaopus = "Op.24"
   mutopiainstrument = "Horn, Piano"
   date = ""
   source = "Leipzig: M.P. Belaieff, n.d. (1890). Plate 261."
