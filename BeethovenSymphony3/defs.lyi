@@ -10,6 +10,7 @@ mSempreStaccato = \markup{\italic {sempre staccato}}
 mSempreLegato = \markup{\italic {sempre legato}}
 mSempreCresc = \markup{\italic {sempre cresc.}}
 mSemprePiuF = \markup{\italic {sempre più} \dynamic f}
+semprePiuF = #(make-dynamic-script (markup #:normal-text #:italic "sempre più" #:dynamic "f"))
 mSemprePP = \markup{\italic sempre \dynamic pp}
 mSempreF = \markup{\italic sempre \dynamic f}
 mDecresc = \markup{\italic decresc.}
@@ -24,6 +25,7 @@ mPDolce = \markup{\dynamic p \italic dolce}
 mPiuF = \markup{\italic più \dynamic f}
 pizz = \markup{\italic pizz.}
 arco = \markup{\italic arco}
+moltoMarcato = \markup{\italic {molto marcato}}
 staccatoFour = \markup{\musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato"}
 staccatoSix = \markup{\musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato"}
 
@@ -293,6 +295,8 @@ outlineMvtIII =
 
 outlineMvtIV =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/4
   \tempoMark "Allegro molto"
   s2*11 |
