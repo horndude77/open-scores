@@ -1,3 +1,5 @@
+\version "2.11.63"
+
 hornFour = \relative c''
 {
   \transposition f
@@ -40,7 +42,7 @@ hornFour = \relative c''
   c4)\! r r2 |
   \clef "bass^8"
   c,2( cis) |
-  \setTextCresc
+  \crescTextCresc
   d( dis)\< |
   e( \clef treble f) |
   fis1(\sf\> |
@@ -53,7 +55,7 @@ hornFour = \relative c''
   dis4. dis8 e4. e8 |
   fis4. r8 r4 r8. g16 |
   fis4. r8 r4 r8. g16 |
-  \setTextCresc
+  \crescTextCresc
   fis4. fis8 f4.\< f8 |
   e4. e8 dis4. dis8 |
   e2\! r |
@@ -97,8 +99,9 @@ hornFour = \relative c''
     r4 gis-.(\< gis-. gis-.) |
     a2.\sfp r4 |
   }
-  \setTextDim
+  \dimTextDim
   fis1~\p\> |
+  \dimHairpin
   fis |
   gis4\! r r2 |
   R1*5 |
@@ -106,12 +109,14 @@ hornFour = \relative c''
   e4) r r2 |
   R1 |
   \clef "bass^8"
-  \setTextCresc
+  \crescTextCresc
   \times 2/3 {r8 c,->\p c} \times 2/3 {c->( e) e-.} \times 2/3 {e->(\< g) g-.} \times 2/3 {g->( c) c-.} |
+  \crescHairpin
   \clef treble
   f8\! r r4 r2 |
-  \setTextCresc
+  \crescTextCresc
   \times 2/3 {r8 e, e} \times 2/3 {e->(\< g) g-.} \times 2/3 {g->( a) a-.} \times 2/3 {a->( cis) cis-.} |
+  \crescHairpin
 
   %E
   d8\! r r4 r2 |
@@ -144,8 +149,9 @@ hornFour = \relative c''
   a1 |
   a'2( g~ |
   g f~) |
-  \setTextCresc
+  \crescTextCresc
   f1(\< |
+  \crescHairpin
   e2 dis |
   e8)\! r r4 e,8 r r4 |
   r2 r4 e\f |
@@ -162,8 +168,9 @@ hornFour = \relative c''
   e1(\< |
   f4)\! r r2 |
   f,2( fis) |
-  \setTextCresc
+  \crescTextCresc
   g( gis)\<
+  \crescHairpin
   a( bes) |
   b1(\sf\> |
   c4)\! r r2 |
@@ -172,11 +179,12 @@ hornFour = \relative c''
   \repeat unfold 2
   { fis4. r8 r4 r8. g16 | }
   fis4. fis8 g4. g8 |
-  gis4. g8 a4. a8 |
+  gis4. gis8 a4. a8 |
   \repeat unfold 2
   { b4. r8 r4 r8. c16 | }
-  \setTextCresc
+  \crescTextCresc
   b4.\< b8 bes4. bes8 |
+  \crescHairpin
   a4. a8 gis4. gis8 |
   a2\! r |
   fis-^(\f f-^ |
@@ -228,8 +236,9 @@ hornFour = \relative c''
   d ees) c'~( |
   c bes aes |
   g2 f4) |
-  \setTextDim
+  \dimTextDim
   e(\> f g
+  \dimHairpin
   \clef "bass^8"
   cis, d b) |
   << c2.( {s4\< s\> s\!} >>
@@ -248,8 +257,9 @@ hornFour = \relative c''
   c-.\f r r4 |
   R2*5 |
   r4 r8 a-. |
-  \setTextCresc
+  \crescTextCresc
   b8.\< b16 b8 b-. |
+  \crescHairpin
   e-.\f r r4 |
   R2 |
   r4 r8 b-.\f |
@@ -281,8 +291,9 @@ hornFour = \relative c''
   e r r4 |
   r8 gis4\p gis8 |
   a4 r8 c |
-  \setTextCresc
+  \crescTextCresc
   b2->(\< |
+  \crescHairpin
   e8)\! r r4 |
 
   %N
@@ -306,8 +317,9 @@ hornFour = \relative c''
   a~\fp\> |
   a8\p r a-. r |
   gis-. r g-. r |
-  \setTextCresc
+  \crescTextCresc
   fis-.\< r f-. r |
+  \crescHairpin
   e-. r e-. r |
   \repeat unfold 2
   {
@@ -328,8 +340,9 @@ hornFour = \relative c''
   %O
   g4 r |
   R2*30 |
-  \setTextCresc
+  \crescTextCresc
   r4 r8 gis,(\< |
+  \crescHairpin
   cis dis eis fis |
   gis) r r4 |
   r4 r8 b( |
@@ -368,14 +381,16 @@ hornFour = \relative c''
   R2*3 |
   f2(\fp |
   fis8) r r4 |
-  \setTextCresc
+  \crescTextCresc
   d2(\< |
+  \crescHairpin
   c |
   b4)\! r |
   R2 |
   \clef treble
-  \setTextCresc
+  \crescTextCresc
   e'2~\< |
+  \crescHairpin
   e4. a,16\f a |
 
   %Q
@@ -392,8 +407,9 @@ hornFour = \relative c''
   g8. g16 g8 g-.\f |
   c-. c-. r4 |
   R2*5 |
-  \setTextCresc
+  \crescTextCresc
   r4 r8 a-.\p\< |
+  \crescHairpin
   b8. b16 b8 b-.\f |
   e-.\f r r4 |
   R2 |
@@ -443,8 +459,9 @@ hornFour = \relative c''
   d~\fp\> |
   d8\p r d'-. r |
   cis-. r c-. r |
-  \setTextCresc
+  \crescTextCresc
   b-.\< r bes-. r |
+  \crescHairpin
   a-. r a-. r |
   \repeat unfold 2
   {
@@ -472,8 +489,9 @@ hornFour = \relative c''
   R2*3 |
   b,8\p r r4 |
   \repeat unfold 3 {b8 r r4} |
-  \setTextCresc
+  \crescTextCresc
   e8\< r r4 |
+  \crescHairpin
   e8 r r4 |
   e8 r r4 |
   e8\! r r4 |
@@ -483,8 +501,9 @@ hornFour = \relative c''
   a |
   d |
   g, |
-  \setTextCresc
+  \crescTextCresc
   c\< |
+  \crescHairpin
   f,~ |
   f |
   g(\f |
@@ -513,8 +532,9 @@ hornFour = \relative c''
   fis-^ g-^ |
   \times 2/3 {r8 g, g} \times 2/3 {g->( b) b-.} |
   \times 2/3 {b->( d) d-.} \times 2/3 {d->( g) g-.} |
-  \setTextCresc
+  \crescTextCresc
   \times 2/3 {g->\< g g} \times 2/3 {g->( d) d-.} |
+  \crescHairpin
   \times 2/3 {d->( b) b-.} \times 2/3 {b->( g) g-.} |
   c8-. g-.\ff c-. e-. |
   a-. d,-. g-. g,-. |

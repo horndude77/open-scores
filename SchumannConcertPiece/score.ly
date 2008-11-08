@@ -1,4 +1,4 @@
-\version "2.11.45"
+\version "2.11.63"
 
 \include "horn1notes.lyi"
 \include "horn2notes.lyi"
@@ -11,8 +11,11 @@
 \paper
 {
   #(define page-breaking ly:minimal-breaking)
-  %ragged-last-bottom = ##f
+  ragged-last-bottom = ##f
+  short-indent = 4\mm
 }
+
+#(set-global-staff-size 18)
 
 instrument = "Horns"
 

@@ -1,3 +1,5 @@
+\version "2.11.63"
+
 hornTwo = \relative c''
 {
   \transposition f
@@ -40,8 +42,9 @@ hornTwo = \relative c''
   << g1 {s2\< s\>} >> |
   e4)\! r r2 |
   R1 |
-  \setTextCresc
+  \crescTextCresc
   r2 g2~(\<
+  \crescHairpin
   g gis) |
   a1(\sf\> |
   b8)\! g( g' fis e d c b) |
@@ -52,8 +55,9 @@ hornTwo = \relative c''
   \repeat unfold 4 {g4. g8} |
   c4. r8 r4 r8. c16 |
   c4. r8 r4 r8. c16 |
-  \setTextCresc
+  \crescTextCresc
   c4. c8 c4.\< c8 |
+  \crescHairpin
   c4. c8 c4. c8 |
   b2\! r |
   bes2-^(\f fis-^ |
@@ -114,8 +118,9 @@ hornTwo = \relative c''
     r4 d-.(\< d-. d-.) |
     c2.\sfp r4 |
   }
-  \setTextDim
+  \dimTextDim
   c1~(\p\> |
+  \dimHairpin
   c2 b) |
   e,4\! r r2 |
   R1*4 |
@@ -123,11 +128,13 @@ hornTwo = \relative c''
   c4 bes8 a g4 f) |
   e2( f4 g |
   a) r \times 2/3 {r8 a\p a} \times 2/3 {a c f} |
-  \setTextCresc
+  \crescTextCresc
   \times 2/3 {g( e) e-.} \times 2/3 {e->(\< c) c-.} \times 2/3 {c->( bes) bes-.} \times 2/3 {bes->( g) g-.} |
+  \crescHairpin
   f8\! r r4 \times 2/3 {r8 f f} \times 2/3 {f a d} |
-  \setTextCresc
+  \crescTextCresc
   \times 2/3 {e( cis) cis-.} \times 2/3 {cis->(\< a) a-.} \times 2/3 {a->( g) g-.} \times 2/3 {g->( e) e-.} |
+  \crescHairpin
 
   %E
   d8\! r r4 r2 |
@@ -158,9 +165,10 @@ hornTwo = \relative c''
   c4. gis8 a b c d) |
   c1 |
   fis2( e~ |
-  \setTextCresc
   e d) |
+  \crescTextCresc
   d(\< dis |
+  \crescHairpin
   e fis |
   e8)\! r r4 \times 2/3 {r8 a,,\f a} \times 2/3 {a c e} |
   f8 r r4 r a\f |
@@ -179,8 +187,9 @@ hornTwo = \relative c''
   c1(\< |
   a4)\! r r2 |
   R1 |
-  \setTextCresc
+  \crescTextCresc
   r2 c2~\< |
+  \crescHairpin
   c cis |
   d1(\sf\> |
   e4)\! r r2 |
@@ -191,8 +200,9 @@ hornTwo = \relative c''
   \repeat unfold 4 {c4. c8} |
   \repeat unfold 2
   { f4. g,8( f'4 \autoBeamOff d8.) f16 \autoBeamOn | }
-  \setTextCresc
+  \crescTextCresc
   f4.\< f8 \repeat unfold 3 {f4. f8} |
+  \crescHairpin
   e2\! r |
   ees2-^(\f b-^ |
   c2.-^) r4 |
@@ -270,8 +280,9 @@ hornTwo = \relative c''
   ces) bes( a |
   bes2 ces4 |
   bes2)\espressivo aes4( |
-  \setTextDim
+  \dimTextDim
   g\> a g |
+  \dimHairpin
   e f e8 d)\! |
   r4 bes'2(\espressivo |
   f2) r4 |
@@ -287,8 +298,9 @@ hornTwo = \relative c''
   a4( g) f,8.( f'16) |
   f4( d e) |
   d8. a16 a4 gis |
-  \setTextDim
+  \dimTextDim
   a2.~\> |
+  \dimHairpin
   a4\! r r |
   R2.*5 |
 
@@ -302,8 +314,9 @@ hornTwo = \relative c''
   R2*4 |
   r4 r8 e-.\p |
   e4 r8 e-. |
-  \setTextCresc
+  \crescTextCresc
   e8.\< fis16 g8 b,-.\f |
+  \crescHairpin
   b-.\f r r4 |
   r4 r8 a-.\p |
   bes16( a) f-. d-. a8-. f'-.\f |
@@ -337,8 +350,9 @@ hornTwo = \relative c''
   e r r4 |
   r8 b'4 b8 |
   a4 r8 e |
-  \setTextCresc
+  \crescTextCresc
   g2->(\< |
+  \crescHairpin
   e8)\! r r4 |
 
   %N
@@ -365,8 +379,9 @@ hornTwo = \relative c''
   f~\fp\> |
   f8\p r b,-. r |
   b-. r a-. r |
-  \setTextCresc
+  \crescTextCresc
   a-.\< r g-. r |
+  \crescHairpin
   g-. r fis-. r |
   fis-.\! r r4 |
   d4~-^\f d16 g b d |
@@ -394,16 +409,18 @@ hornTwo = \relative c''
   R2 |
   r4 r8 cis,8(\mf |
   fis, gis a b |
-  \setTextCresc
+  \crescTextCresc
   cis\< fis a cis |
+  \crescHairpin
   fis8)\sf r r gis,( |
   fis cis a fis) |
   R2*2 |
   fis'2->( |
   fis'->) |
   r4 r8 fis,( |
-  \setTextCresc
+  \crescTextCresc
   gis\< cis eis gis |
+  \crescHairpin
   a\sf fis cis b |
   a) r r4 |
   r r8 g( |
@@ -439,14 +456,16 @@ hornTwo = \relative c''
   e8-. r r4 |
   R2*3 |
   gis2(\fp |
-  \setTextCresc
+  \crescTextCresc
   a8) a(\< gis fis) |
+  \crescHairpin
   fis'2~\! |
   fis4. fis8( |
   a4 g) |
   r4 r8 g( |
-  \setTextCresc
+  \crescTextCresc
   gis2~\< |
+  \crescHairpin
   gis4.) a16\f a |
 
   %Q
@@ -466,8 +485,9 @@ hornTwo = \relative c''
   R2*4 |
   r4 r8 e-.\p |
   e4 r8 e-. |
-  \setTextCresc
+  \crescTextCresc
   e8.\< fis16 g8 b,-.\f |
+  \crescHairpin
   b-.\f r r4 |
   r4 r8 a-.\p |
   bes16( a) f-. d-. a8-. f'-.\f |
@@ -520,8 +540,9 @@ hornTwo = \relative c''
   bes~\fp\> |
   bes8\p r e,-. r |
   e-. r d-. r |
-  \setTextCresc
+  \crescTextCresc
   d-.\< r c-. r |
+  \crescHairpin
   c-. r b-. r |
   b-.\! r r4 |
   g4~-^\f g16 c e g |
@@ -554,8 +575,9 @@ hornTwo = \relative c''
   aes f d c |
   b) r r g'( |
   aes f d b |
-  \setTextCresc
+  \crescTextCresc
   c) r r c'(\<
+  \crescHairpin
   des bes g f |
   e) r r c'( |
   des[ bes g]) c,-. |
@@ -563,8 +585,9 @@ hornTwo = \relative c''
   R2*3 |
   r8 e(\p a g) |
   g( fis e fis |
-  \setTextCresc
+  \crescTextCresc
   g\< d g f) |
+  \crescHairpin
   f( e d e |
   f c f e) |
   d16-. f-. a-. d-. f4~(\f |
@@ -573,8 +596,9 @@ hornTwo = \relative c''
   d( cis b cis |
   d a d c) |
   c( b a b |
-  \setTextCresc
+  \crescTextCresc
   c\< g c bes) |
+  \crescHairpin
   a16\< c f a c4~\f |
   c8 a,( d f) |
   c4( b) |
@@ -602,8 +626,9 @@ hornTwo = \relative c''
   ees4-^ d-^ |
   d8\sf r \times 2/3 {r8 g,, g} |
   \times 2/3 {g->( b) b-.} \times 2/3 {b->( d) d-.} |
-  \setTextCresc
+  \crescTextCresc
   \times 2/3 {d->(\< g) g-.} \times 2/3 {g->( b) b-.} |
+  \crescHairpin
   \times 2/3 {b->( d) d-.} \times 2/3 {d->( g) g-.} |
   g8-. g-.\ff g-. e-. |
   e-. c-. d-. d-. |

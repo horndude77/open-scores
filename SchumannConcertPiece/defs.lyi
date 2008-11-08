@@ -1,3 +1,5 @@
+\version "2.11.63"
+
 %Rhythm template stuff
 #(define (create-note pitch duration)
   (make-music 'NoteEvent
@@ -77,6 +79,7 @@ mitBravour = \markup{\italic "mit Bravour"}
 outline =
 {
   \override Score.MetronomeMark #'transparent = ##t
+  \set Score.tempoHideNote = ##t
   #(set-accidental-style 'modern)
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t

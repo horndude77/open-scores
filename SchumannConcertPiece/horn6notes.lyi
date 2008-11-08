@@ -1,3 +1,5 @@
+\version "2.11.63"
+
 hornSix = \relative c''
 {
   \transposition f
@@ -113,11 +115,11 @@ hornSix = \relative c''
   a d |
   g, c, |
   c4. c8 c4 c |
-  g4. g8 g4 g |
+  g'4. g8 g4 g |
   e4 r g r |
   c r g r |
   c r c r |
-  e r e r |
+  e, r e r |
   e r c r |
   c r r\fermata r8\fermata r |
 
@@ -147,8 +149,9 @@ hornSix = \relative c''
 
   %sehr lebhaft
   R2 |
-  \setTextCresc
+  \crescTextCresc
   a'8-.\p\< r a-. r |
+  \crescHairpin
   a-. r a-. r |
   a4.\sf r8 |
   R2*2 |
