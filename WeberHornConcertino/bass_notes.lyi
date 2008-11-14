@@ -1,3 +1,5 @@
+\include "defs.lyi"
+
 bass = \relative c,
 {
   \clef "bass_8"
