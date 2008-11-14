@@ -1,3 +1,5 @@
+\version "2.11.63"
+
 \include "defs.lyi"
 
 oboeMvtI = \relative c''
@@ -19,7 +21,7 @@ oboeMvtI = \relative c''
   R1 |
   r2 r4 e'8.\mf\> a16 |
   e4( c8.) a16 c4( a8.) c,16 |
-  e4 e2\! e'8.\f a16 |
+  e4 e2 e'8.\f a16 |
   e4( c8.) a16 c4( a8.) c,16 |
   e4 e2( d8 c) |
   b(\< d f d') c4.(\> fis,8)\! |
@@ -35,9 +37,9 @@ oboeMvtI = \relative c''
   R1*16 |
   eis4--(\p fis-- eis-- fis--) |
   a( gis8.) b16 gis2~ |
-  \setTextCresc
+  \crescTextCresc
   gis4-.\< a-.( gis-. a-.) |
-  \setHairpinCresc
+  \crescHairpin
   c4( b8.) d16 b2~ |
   b4 d( bis) cis |
   e( cis) d f |
@@ -85,9 +87,9 @@ oboeMvtI = \relative c''
   f4\! r r2 |
   R1*3 |
   r4 b,\mf d cis |
-  \setTextCresc
+  \crescTextCresc
   e4(\< dis8.) g16 g4( fis8.) bes16 |
-  \setHairpinCresc
+  \crescHairpin
   bes8-.\ff\> a-. c4.( a8^\markup{\italic "a piacere"} fis ees |
   \times 2/3 {c8\mf a fis} \times 2/3 {ees d f)} ees8( d) g-.( ees-.) |
   ees4-.(^\mdolce f-. ees-. f-.) |
@@ -98,17 +100,17 @@ oboeMvtI = \relative c''
   g4--(\f fis-- g-- fis--) |
   a( gis8.) b16 a2 |
   b4( ais) b-.( ais-.) |
-  \setTextCresc
+  \crescTextCresc
   cis4(\< c8.) c16 ees4( d) |
-  \setHairpinCresc
+  \crescHairpin
   f( e8.) aes16 aes4( g8.) b16 |
   b8-.\ff ais-. cis4-. r2 |
   R1*5 |
   gis,4--(\pp a-- gis-- a--) |
   c4( b8.) d16 b2~ |
-  \setTextCresc
+  \crescTextCresc
   b4 c--(\< b-- c--) |
-  \setHairpinCresc
+  \crescHairpin
   e4( d8.) f16 d4 c~ |
   c( b8.) d16 b4 a |
   f'( e8.) g16 e4 d~ |
@@ -117,9 +119,9 @@ oboeMvtI = \relative c''
   c( b) c-. a-. g( f) a-. f-. |
   e4 r r2 |
   r r4 e'8.\mf a16 |
-  \setTextDecr
+  \dimTextDecr
   e4( c8.)\> a16 c4( a8.) c,16 |
-  \setHairpinDecresc
+  \dimHairpin
   e4 e2( d8 c) |
   b(\p\< d f b) d8.(\! e32 d c8 b) |
   c4(\> e2) e8.\p a16 |
@@ -138,9 +140,9 @@ oboeMvtI = \relative c''
   f4( d8.) bes16 d4( bes8.) d,16 |
   f4\> f2 e8-.( d-.) |
   c(\p e) a-.( c-.) b4.( gis8) |
-  \setTextCresc
+  \crescTextCresc
   c4.(\< a8) d4.( b8) |
-  \setHairpinCresc
+  \crescHairpin
   e,( a) c-.( e-.) d4.( b8) |
   e4.( c8) fis4.( dis8) |
   gis1~\f\> |
@@ -166,9 +168,9 @@ oboeMvtI = \relative c''
   dis(\< eis) gis2~ |
   gis4 a--(\p gis-- a--) |
   cis4( b8.) d16 b2~ |
-  \setTextCresc
+  \crescTextCresc
   b4 b(\< ais) b |
-  \setHairpinCresc
+  \crescHairpin
   d4( cis8.) e16 cis4 d |
   f cis( d) f |
 
@@ -180,9 +182,9 @@ oboeMvtI = \relative c''
   R1*4 |
   r2 r4 e'8.\p a16 |
   e4( c8.) e16 c4( a8.) c,16 |
-  \setTextDim
+  \dimTextDim
   e1~(\> |
-  \setHairpinDim
+  \dimHairpin
   e2 gis |
   a4)\pp r r2 |
   R1*4 |
@@ -394,9 +396,9 @@ oboeMvtIII = \relative c''
   d2 c8( d e a) |
   g4(\> f) c2~ |
   c1~\p |
-  \setTextDecresc
+  \dimTextDecresc
   c4\> c bes4.( a8) |
-  \setHairpinDecresc
+  \dimHairpin
   a1~\pp |
   a |
 }
@@ -428,9 +430,9 @@ oboeMvtIV = \relative c'
   a4( gis8) fis eis4 eis8( a) |
   a2.-> gis8-. fis-. |
   fis4( e8-.) d-. cis4 r |
-  \setTextCresc
+  \crescTextCresc
   r g'8-.\p\< g-. g( fis) r4\! |
-  \setHairpinCresc
+  \crescHairpin
   r b8-.\mf b-. b(\< ais) ais( b) |
   b2.\f b8( bis) |
   bis2. bis8( a') |
@@ -455,9 +457,9 @@ oboeMvtIV = \relative c'
   b2.\! r4 |
   R1*2 |
   r2 r4 gis''(\f |
-  \setTextDecresc
+  \dimTextDecresc
   e cis gis) e'(\> |
-  \setHairpinDecresc
+  \dimHairpin
   b gis e) gis |
   gis2( fis4) e |
   dis4\p r r2 |
@@ -512,7 +514,7 @@ oboeMvtIV = \relative c'
   e( dis cis) r |
   R1 |
   r2 r4 g |
-  c( dis e) fisis |
+  cis( dis e) fisis |
   gis2. r4 |
   r2 r4 fisis( |
   gis) fis( e) dis( |
@@ -536,9 +538,9 @@ oboeMvtIV = \relative c'
   a2.-> gis8-. fis-. |
   fis4( e8-.) d-. cis4 r |
   r g'8-.\mf g-. g( fis) r4 |
-  \setTextDecr
+  \dimTextDecr
   r b8-. b-. b(\> ais) ais( b) |
-  \setHairpinDecresc
+  \dimHairpin
   b2. r4 |
   r2 r4 b8( bis) |
   bis1~ |
@@ -575,9 +577,9 @@ oboeMvtIV = \relative c'
   cis4( b8 ais) ais4 fis8(\< fis') |
   fis2.\> e8( d) |
   d4(\! cis8 b) b4 e,8(\p e') |
-  \setTextCresc
+  \crescTextCresc
   e2.\< d8( cis) |
-  \setHairpinCresc
+  \crescHairpin
   cis4 b8( ais) ais4 fis8(\f fis') |
   fis2. e8( d) |
   d4->(\f cis8 b) b4.->( a8) |
@@ -602,9 +604,9 @@ oboeMvtIV = \relative c'
   e2 eis( |
   fis) fis |
   g1~-> |
-  \setTextCresc
+  \crescTextCresc
   g2 gis\< |
-  \setHairpinCresc
+  \crescHairpin
   a1~-> |
   a2 ais( |
   b) bis( |

@@ -1,3 +1,5 @@
+\version "2.11.63"
+
 rightMvtI = \relative c'
 {
   \repeat unfold 4
@@ -162,8 +164,8 @@ rightMvtI = \relative c'
 
   %a tempo
   <gis, b e>4 <a b fis'> <gis b e> <a b fis'> |
-  <b dis a'> <b e gis> <cis d cis'>2~ |
-  <cis d cis'>4 <b e b'> <ais e' gis>2 |
+  <b dis a'> <b e gis> <cis dis cis'>2~ |
+  <cis dis cis'>4 <b e b'> <ais e' gis>2 |
   << {<e' gis>2( <dis fis>)} \\ {b2.( a4)} >> |
   << {e'2 e} \\ {<b d>4( <a c>) <b d>4( <a c>)} >>
   \clef bass
@@ -256,17 +258,17 @@ rightMvtI = \relative c'
     {
       gis'4( a gis a) |
       cis( b2.) |
-      r4 b( cis b) |
+      s4 b( ais b) |
       d( cis2) d4 |
-      f cis( d) fis |
+      f cis( d) f |
     }
     \\
     {
       gis,8 <eis d b> a <fis d a> gis <e d b> a <fis d a> |
       cis'[ <a f d> r <a f d>] r <a f d>[ r <a f d>] |
-      r <a f d> b <a f d> ais <a f d> b <a f d> |
+      b8\rest <a f d> b <a f d> ais <a f d> b <a f d> |
       d <g, e> cis <g e> r <g e> d' <a f> |
-      f' <a, f> c <g e> d' <a f> f' <a, f> |
+      f' <a, f> cis <g e> d' <a f> f' <a, f> |
     }
   >>
 
@@ -829,9 +831,9 @@ rightMvtII = \relative c'
   ees4 r8 r4. |
   r d,8( ees ces' |
   bes f ges bes ees bes') |
-  #(set-octavation 1)
+  \ottava #1
   ees( ees, a a, ges' ges, |
-  ees' ees, #(set-octavation 0) a a, ees' ees,~) |
+  ees' ees, \ottava #0 a a, ees' ees,~) |
   ees ees( bes') r ees,( b') |
   r d,( d' c bes d,) |
   r8 a''( bes b c d) |
@@ -1167,7 +1169,7 @@ rightMvtIII = \relative c'
   \times 2/3 {r8 bes,^( cis e g bes a f d \change Staff=LH \voiceOne a f d)} |
   \times 2/3 {r8 ees( a \change Staff=RH c ees b' a ees c \change Staff=LH a ees c)} |
   \times 2/3 {f,8( dis' a' \change Staff=RH c dis c')} \oneVoice <c dis>2 |
-  <gis e'>4~ \times 2/3 {<gis e'>8 g( b e g, b e gis e')} |
+  <gis e'>4~ \times 2/3 {<gis e'>8 gis( b e gis, b e gis e')} |
   <e gis,>4 r r2 |
 
   %a tempo
@@ -1184,8 +1186,8 @@ rightMvtIII = \relative c'
   <fis c'>-. <f b>-. <f f'>-. <f b>-. <f b>-. <f bes>-. <f bes>-.) <f bes>-.( |
   <e bes'>-. <ees a>-. <a ees'>-. <ees a>-. <ees a>-. <d aes'>-. <d aes' d>-. <d aes'>-.) |
   <aes' d>-.( <d, aes'>-. <d aes'>-. <aes' d>-.) <aes des>-.( <des, aes'>-.) <g c>-.( <c, g'>-.) |
-  r8 #(set-octavation 1) <f' d'> <f c'> <f c' f> <f bes f'> <e bes' e> <bes' e bes'> <e, g d'> |
-  <e g d'> <e g c> <f c' f> <f c> #(set-octavation 0) <c f bes> <c f a> <a c g'> <a c f> |
+  r8 \ottava #1 <f' d'> <f c'> <f c' f> <f bes f'> <e bes' e> <bes' e bes'> <e, g d'> |
+  <e g d'> <e g c> <f c' f> <f c> \ottava #0 <c f bes> <c f a> <a c g'> <a c f> |
   <g c f> <g c e> <g c e g> <e g d'> <e g d'> <e g c> <e g c> <c e> |
   <c e> <c g'> <c f> c c2 |
   \times 2/3 {r8 e,( g bes e bes') r g,( c e g d')} |
@@ -1989,9 +1991,9 @@ leftMvtIV = \relative c'
     fis1~ |
     fis2 f |
     e1 |
-    e2 #(set-octavation -1) dis2 |
+    e2 \ottava #-1 dis2 |
     d1~ |
-    d2 #(set-octavation 0) d' |
+    d2 \ottava #0 d' |
     cis1 |
   }
   <b f b,>1~ |
