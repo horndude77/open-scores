@@ -1,4 +1,4 @@
-\version "2.11.37"
+\version "2.11.64"
 
 \include "voice_notes.lyi"
 \include "defs.lyi"
@@ -21,7 +21,7 @@ instrument = "Voice"
       #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
       \clef treble
-      \new Voice = "singstimme" << \voice \outline >>
+      \new Voice = "singstimme" \transpose e *KEY* << \voice \outline >>
     }
     \new Lyrics \lyricsto "singstimme" {\text}
   >>

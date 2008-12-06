@@ -1,4 +1,4 @@
-\version "2.11.37"
+\version "2.11.64"
 
 \include "horn_notes.lyi"
 \include "voice_notes.lyi"
@@ -32,8 +32,9 @@ instrument = "Piano"
       }
       {
         \set Staff.midiInstrument = "french horn"
-        \set Staff.instrumentName = "Horn in E"
+        \set Staff.instrumentName = \markup{Horn in *KEY_MARKUP*}
         #(set-accidental-style 'modern)
+        \transposition *KEY*
         \horn
       }
       \new Staff
@@ -46,7 +47,7 @@ instrument = "Piano"
         \set Staff.midiInstrument = "voice oohs"
         \set Staff.instrumentName = "Voice"
         #(set-accidental-style 'modern)
-        \new Voice = "singstimme" \voice
+        \new Voice = "singstimme" \transpose e *KEY* \voice
       }
       \new Lyrics \lyricsto "singstimme"
       {
@@ -60,7 +61,7 @@ instrument = "Piano"
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \right \dynamics >>
+          \transpose e *KEY* << \right \dynamics >>
         }
 
         %\new Dynamics = "dynamics" \dynamics
@@ -69,7 +70,7 @@ instrument = "Piano"
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \left \pedals \outline >>
+          \transpose e *KEY* << \left \pedals \outline >>
         }
 
         %\new Dynamics = "pedals" \pedals

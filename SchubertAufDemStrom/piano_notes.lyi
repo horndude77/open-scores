@@ -1,3 +1,5 @@
+\version "2.11.65"
+
 right = \relative c'
 {
   #(override-auto-beam-setting '(end 1 12 * *) 1 4)
@@ -654,7 +656,8 @@ dynamics =
   s1\fp |
   s4 s s\> s\! |
   s\> s\! s2 |
-  s2 \setTextCresc s\< |
+  s2 \crescTextCresc s\< |
+  \crescHairpin
   s1 |
   s2\f s-\markup{\italic cresc.} |
   s2\ff\> s\! |
@@ -708,7 +711,8 @@ dynamics =
   s1\fp |
   s2 s4\> s\! |
   s2\> s\! |
-  s2 \setTextCresc s\< |
+  s2 \crescTextCresc s\< |
+  \crescHairpin
   s1*2 |
   s2\f\> s\p |
   s s\< |

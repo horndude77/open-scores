@@ -1,4 +1,4 @@
-\version "2.11.65"
+\version "2.11.64"
 
 \include "horn_notes.lyi"
 \include "defs.lyi"
@@ -9,7 +9,7 @@
   ragged-last-bottom = ##f
 }
 
-instrument = \markup{Horn}
+instrument = \markup{Horn in *KEY_MARKUP*}
 
 \include "header.lyi"
 
@@ -20,7 +20,7 @@ instrument = \markup{Horn}
     #(set-accidental-style 'modern)
     \set Score.skipBars = ##t
     \clef treble
-    << \horn \outline >>
+    \transpose f *KEY* << \horn \outline >>
   }
 }
 

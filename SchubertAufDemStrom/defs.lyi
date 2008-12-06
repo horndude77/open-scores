@@ -1,3 +1,5 @@
+\version "2.11.65"
+
 tempoMark = #(define-music-function (parser location markp) (string?)
 #{
   \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
