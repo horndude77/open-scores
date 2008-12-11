@@ -1,3 +1,5 @@
+\version "2.11.65"
+
 \include "defs.lyi"
 
 hornNotes = \relative c'
@@ -26,8 +28,9 @@ hornNotes = \relative c'
   f4.~(\! f8._\espress g16^\pocorall ees f) f4. |
   ees4.~^\atempo ees4 r8 r4. |
   g4(\menop d8) f4.( ees) |
-  \setTextCresc
+  \crescTextCresc
   bes'4.( aes) g8(\< f ees) |
+  \crescHairpin
   c'4( f,8) bes4. aes8.( bes16 g aes) |
   ees'4(\! aes,8) d4. c8.( d16 bes c) |
   f4( aes,8) ees'4.\< d8.( ees16 c d) |
@@ -36,8 +39,9 @@ hornNotes = \relative c'
   {
     g2.\! g,4(\< g'8) |
   }
-  \setTextDim
+  \dimTextDim
   g4(\sempref c,8) f4.( e)\> |
+  \dimHairpin
   d4( f,8) c'4.( b)\! |
   a4(\> c,8) g'4.(^\rall f) |
 

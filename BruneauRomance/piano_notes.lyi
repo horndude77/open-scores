@@ -1,3 +1,7 @@
+\version "2.11.65"
+
+\include "defs.lyi"
+
 rightNotes = \relative c'
 {
   \key f \major
@@ -94,12 +98,12 @@ rightNotes = \relative c'
   <f a f'>2. <f bes f'>4. |
   <f a c f>2.~ <f a c f>4. |
   <c' f a c>2.~ <c f a c>4. |
-  #(set-octavation 1)
+  \ottava #1
   <f a c f>2.~ <f a c f>4. |
   <c' f a c>2.~ <c f a c>4. |
   <f a c f>2.~ <f a c f>4. |
   <f a c f>2.~ <f a c f>4
-  #(set-octavation 0)
+  \ottava #0
   r8 |
 }
 
@@ -187,15 +191,16 @@ leftNotes = \relative c,
   f,,16(\! c' f a c f a4) r8 r4. |
   f,16( c' f a c f a4) r8 r4. |
   \clef treble
-  \setTextDim
+  \dimTextDim
   \override DynamicTextSpanner #'dash-period = #-1.0
   f,16( c' f a c f a4)\> r8 r4. |
+  \dimHairpin
   f,16( c' f a c f a4) r8 r4. |
   \clef bass
   f,,,,,16\< c' f a c f a c f \clef treble a\> c f
-    #(set-octavation 1)
+    \ottava #1
     \times 6/5 {a c f a c} |
-    #(set-octavation 0)
+    \ottava #0
   <f,,, c' a'>2.~\! <f c' a'>4 r8 |
 }
 
@@ -218,8 +223,9 @@ dynamics =
   s4.\! s\> s |
   s4.\mpespress s4.*2 |
   s4.*3 |
-  \setTextCresc
+  \crescTextCresc
   s4. s s\< |
+  \crescHairpin
   s4.*3*3 |
   s4.\ff s4.*2 |
   s4.*3*4 |
@@ -242,33 +248,33 @@ dynamics =
 
 pedals =
 {
-  s4.\sustainDown s\sustainUp\sustainDown s |
-  s\sustainUp\sustainDown s\sustainUp\sustainDown s |
-  s\sustainDown s s |
-  s\sustainUp\sustainDown s\sustainUp\sustainDown s |
-  s\sustainUp\sustainDown s s |
-  s\sustainUp s s |
+  s4.\sustainOn s\sustainOff\sustainOn s |
+  s\sustainOff\sustainOn s\sustainOff\sustainOn s |
+  s\sustainOn s s |
+  s\sustainOff\sustainOn s\sustainOff\sustainOn s |
+  s\sustainOff\sustainOn s s |
+  s\sustainOff s s |
   s4.*3*5 |
 
   %un poco piu mosso
-  s4.*3*2\sustainDown |
-  s4.*3\sustainUp\sustainDown |
-  s4.*3*2\sustainUp\sustainDown |
-  s4.*3\sustainUp\sustainDown |
-  s4.*3*3\sustainUp\sustainDown |
-  s4.\sustainDown s s\sustainUp\sustainDown |
-  s\sustainUp s s |
+  s4.*3*2\sustainOn |
+  s4.*3\sustainOff\sustainOn |
+  s4.*3*2\sustainOff\sustainOn |
+  s4.*3\sustainOff\sustainOn |
+  s4.*3*3\sustainOff\sustainOn |
+  s4.\sustainOn s s\sustainOff\sustainOn |
+  s\sustainOff s s |
   s4.*3*5 |
-  s4.*3*6\sustainDown |
+  s4.*3*6\sustainOn |
 
   %tempo i
   s4.*3*11 |
-  s4.*3\sustainDown |
-  s4.*3\sustainUp\sustainDown |
-  s4.*3\sustainUp\sustainDown |
-  s4.*3\sustainUp\sustainDown |
-  s4.*3\sustainUp\sustainDown |
-  s4.*3\sustainUp\sustainDown |
+  s4.*3\sustainOn |
+  s4.*3\sustainOff\sustainOn |
+  s4.*3\sustainOff\sustainOn |
+  s4.*3\sustainOff\sustainOn |
+  s4.*3\sustainOff\sustainOn |
+  s4.*3\sustainOff\sustainOn |
   s4.*3*5 |
 }
 
