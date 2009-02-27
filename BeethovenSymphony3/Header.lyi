@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 \header
 {
   title = \markup{Symphony No. 3 in E\flat Major}

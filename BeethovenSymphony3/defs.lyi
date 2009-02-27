@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 %define movement names.
 MvtI = "Allegro con brio"
 MvtII = "Marcia funebre: Adagio assai"
