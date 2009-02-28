@@ -1,10 +1,10 @@
 \version "2.12.2"
 
 %define movement names.
-MvtI = "Allegro con brio"
-MvtII = "Marcia funebre: Adagio assai"
-MvtIII = "Scherzo: Allegro vivace"
-MvtIV = "Finale: Allegro molto"
+MvtI = ""
+MvtII = "Marcia funebre"
+MvtIII = "Scherzo"
+MvtIV = "Finale"
 
 mCresc = \markup{\italic cresc.}
 mSemprePianissimoStaccato = \markup{\dynamic pp \italic {sempre pianissimo e staccato}}
@@ -42,202 +42,43 @@ tempoMark = #(define-music-function (parser location markp) (string?)
 outlineMvtI =
 {
   \time 3/4
+  \tempoMark "Allegro con brio"
   s2.*4
   \repeat volta 2
   {
-    s2.*8
-
-    %page 2
-    s2.*24
-
-    %page 3
-    s2.*24
-
-    %page 4
-    s2.*15
-
-    %page 5
-    s2.*22
-
-    %page 6
-    s2.*20
-
-    %page 7
-    s2.*21
-
-    %page 8
-    s2.*13
+    s2.*147
   }
   \alternative
   {
     {s2.*4}
     {s2.*2}
   }
-  s2.*6
-
-  %page 9
-  s2.*23
-
-  %page 10
-  s2.*14
-
-  %page 11
-  s2.*14
-
-  %page 12
-  s2.*18
-
-  %page 13
-  s2.*18
-
-  %page 14
-  s2.*25
-
-  %page 15
-  s2.*21
-
-  %page 16
-  s2.*21
-
-  %page 17
-  s2.*21
-
-  %page 18
-  s2.*25
-
-  %page 19
-  s2.*30
-
-  %page 20
-  s2.*31
-
-  %page 21
-  s2.*23
-
-  %page 22
-  s2.*21
-
-  %page 23
-  s2.*17
-
-  %page 24
-  s2.*24
-
-  %page 25
-  s2.*19
-
-  %page 26
-  s2.*20
-
-  %page 27
-  s2.*25
-
-  %page 28
-  s2.*20
-
-  %page 29
-  s2.*22
-
-  %page 30
-  s2.*21
-
-  %page 31
-  s2.*18
-
-  %page 32
-  s2.*19
-
-  %page 33
-  s2.*22 \bar "|."
+  s2.*538 \bar "|."
 }
 
 outlineMvtII =
 {
+  \tempoMark "Adagio assai"
   \time 2/4
   \partial 8 s8
-  s2*11
-
-  %page 2
-  s2*21
-
-  %page 3
-  s2*14
-
-  %page 4
-  s2*16
-
-  %page 5
-  s2*6 \bar "||"
+  s2*68 \bar "||"
   \tempoMark "Maggiore"
-  s2*7
-
-  %page 6
-  s2*11
-
-  %page 7
-  s2*10
-
-  %page 8
-  s2*8 \bar "||"
+  s2*36 \bar "||"
   \tempoMark "Minore"
   \grace {s32*3}
-  s2*9
-
-  %page 9
-  s2*15
-
-  %page 10
-  s2*14
-
-  %page 11
-  s2*19
-
-  %page 12
-  s2*10
-
-  %page 13
-  s2*11
-
-  %page 14
-  s2*12
-
-  %page 15
-  s2*8
-
-  %page 16
-  s2*11
-
-  %page 17
-  s2*18
-
-  %page 18
-  s2*15
+  s2*142 |
   s4. \bar "|."
 }
 
 outlineMvtIII =
 {
   \time 3/4
+  \tempoMark "Allegro vivace"
   \partial 4 s4
   s2.*30 |
   \repeat volta 2
   {
-    s2.*7 |
-
-    %page 2
-    s2.*41 |
-
-    %page 3
-    s2.*26 |
-
-    %page 4
-    s2.*29 |
-
-    %page 5
-    s2.*24 |
-
-    %page 6
-    s2.*5 |
+    s2.*132 |
   }
   \alternative
   {
@@ -247,19 +88,10 @@ outlineMvtIII =
 
   \tempoMark "Trio"
   s4 |
-  s2.*12 |
-
-  %page 7
-  s2.*20 |
+  s2.*32 |
   \repeat volta 2
   {
-    s2.*8 |
-
-    %page 8
-    s2.*44 |
-
-    %page 9
-    s2.*3 | \bar "||"
+    s2.*55 | \bar "||"
     s2. |
   }
   \alternative
@@ -267,29 +99,14 @@ outlineMvtIII =
     { s2.*6 | }
     { s2. | }
   }
-  s2.*32 |
-
-  %page 10
-  s2.*44 |
-
-  %page 11
-  s2.*33 |
-
-  %page 12
-  s2.*16 |
+  s2.*125 \bar "||"
 
   \tempoMark "Alla breve"
   \time 2/2
-  s1*4 |
+  s1*4 \bar "||"
 
   \time 3/4
-  s2.*13 |
-
-  %page 13
-  s2.*21 |
-
-  %page 14
-  s2.*4 |
+  s2.*38 |
 
   \tempoMark "Coda"
   s2.*20 | \bar "|."
@@ -301,13 +118,8 @@ outlineMvtIV =
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/4
   \tempoMark "Allegro molto"
-  s2*11 |
-  s2*12 |
+  s2*44 |
 
-  %page 2
-  s2*8 |
-  s2*8 |
-  s2*5 |
   \repeat volta 2
   {
     s2*6 |
@@ -320,8 +132,7 @@ outlineMvtIV =
   \repeat volta 2
   {
     s8 |
-    s2*4 |
-    s2*3 |
+    s2*7 |
     s4 s8
   }
   \repeat volta 2
@@ -333,80 +144,16 @@ outlineMvtIV =
   \repeat volta 2
   {
     s8 |
-    s2*4 |
-    s2*3 |
+    s2*7 |
     s4 s8
   }
   s8 |
-  s2*6 |
-
-  %page 4
-  s2*17
-
-  %page 5
-  s2*21
-
-  %page 6
-  s2*36
-
-  %page 7
-  s2*17
-
-  %page 8
-  s2*26
-
-  %page 9
-  s2*24
-
-  %page 10
-  s2*16
-
-  %page 11
-  s2*17
-
-  %page 12
-  s2*24
-
-  %page 13
-  s2*32
-
-  %page 14
-  s2*20
-
-  %page 15
-  s2*16
+  s2*272
   s4.
   \tempoMark "Poco Andante"
   s8
-  s2*6
-
-  %page 16
-  s2*17
-
-  %page 17
-  s2*6
-
-  %page 18
-  s2*6
-
-  %page 19
-  s2*12
-
-  %page 20
-  s2*13
-
-  %page 21
-  s2*13
-
-  %page 22
-  s2*9 | \bar "||"
+  s2*82 | \bar "||"
   \tempoMark "Presto"
-  s2*7 |
-
-  %page 23
-  s2*15 |
-
-  %page 24
-  s2*21 | \bar "|."
+  s2*43 | \bar "|."
 }
 

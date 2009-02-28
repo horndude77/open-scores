@@ -28,7 +28,7 @@
       \set Score.skipBars = ##t
       << \notesMvtII \outlineMvtII >>
     }
-    \header { piece = \MvtII }
+    \header { piece = \MvtII opus = ""}
   }
   \score
   {
@@ -38,7 +38,7 @@
       \set Score.skipBars = ##t
       << \notesMvtIII \outlineMvtIII >>
     }
-    \header { piece = \MvtIII }
+    \header { piece = \MvtIII opus = ""}
   }
   \score
   {
@@ -48,7 +48,7 @@
       \set Score.skipBars = ##t
       << \notesMvtIV \outlineMvtIV >>
     }
-    \header { piece = \MvtIV }
+    \header { piece = \MvtIV opus = ""}
   }
 }
 
