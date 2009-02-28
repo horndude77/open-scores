@@ -41,6 +41,8 @@ tempoMark = #(define-music-function (parser location markp) (string?)
 
 outlineMvtI =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 3/4
   \tempoMark "Allegro con brio"
   s2.*4
@@ -58,6 +60,8 @@ outlineMvtI =
 
 outlineMvtII =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \tempoMark "Adagio assai"
   \time 2/4
   \partial 8 s8
@@ -72,6 +76,8 @@ outlineMvtII =
 
 outlineMvtIII =
 {
+  \override Score.PaperColumn #'keep-inside-line = ##t
+  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 3/4
   \tempoMark "Allegro vivace"
   \partial 4 s4
