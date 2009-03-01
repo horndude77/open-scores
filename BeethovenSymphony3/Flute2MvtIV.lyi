@@ -140,7 +140,7 @@ fluteTwoMvtIV = \relative c'''
   a r r4 |
   d2\ff |
   d4 d( |
-  fis) b, |
+  fis) g, |
   fis16( d e fis g a bes c) |
   d4-._\mSempreF d8.-. d16-. |
   d4-. d8.-. d16-. |
@@ -148,7 +148,7 @@ fluteTwoMvtIV = \relative c'''
   bes8. c16 bes8. a16 |
   \acciaccatura a8 g8.-. fis16-. g8.-. bes16-. |
   a8.-. bes16-. c8.-. a16-. |
-  fis8.-. g16-. a8.-. f16-. |
+  fis8.-. g16-. a8.-. fis16-. |
   g16( d e fis g a bes c) |
   d4-. d8.-. d16-. |
   d4-. d8.-. d16-. |
@@ -156,7 +156,7 @@ fluteTwoMvtIV = \relative c'''
   bes8. c16 bes8. a16 |
   \acciaccatura a8 g8.-. fis16-. g8.-. bes16-. |
   a8.-. bes16-. c8.-. a16-. |
-  fis8.-. g16-. a8.-. f16-. |
+  fis8.-. g16-. a8.-. fis16-. |
   g8 r r4 |
   c2\sf |
   g'\sf |

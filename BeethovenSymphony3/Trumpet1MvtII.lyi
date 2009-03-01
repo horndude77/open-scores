@@ -18,7 +18,7 @@ trumpetOneMvtII = \relative c''
   R2*11 |
   r8 c16.\p c32 c8 c |
   c8 r r4 |
-  \once \override DynamicTextSpanner #'dash-period = #-1.0
+  \override DynamicTextSpanner #'dash-period = #-1.0
   \crescTextCresc
   r8 c16.\< c32 c8 c |
   \crescHairpin
