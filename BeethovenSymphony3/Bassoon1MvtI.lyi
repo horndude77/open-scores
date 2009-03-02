@@ -214,17 +214,19 @@ bassoonOneMvtI = \relative c'
   r4 g-. g'~\sf | g2 r4 |
   R2. |
   r4 g,-. g'~\sf |
+
+  %page 14
   g8( f)_\mCresc f-. e-. d-. c-. |
-  b4 b2~\ff | b2. | b4 b2\sf |
+  b4 b2~\ff | b2.~ | b4 b2\sf |
   b\sf b4~\sf | b b2\sf |
   b2\sf b4\sf |
   r c2~\sf | c2.~ | c4 c2\sf |
   c\sf c4~\sf | c c2\sf |
   c2\sf c4\sf |
-  r4 b2~\sf | b2. | b4 b2\sf |
+  r4 b2~\sf | b2.~ | b4 b2\sf |
   b\sf b4~\sf | b b2\sf |
   b2\sf b4\sf |
-  r4 ais2~\sf | ais2. | ais4 ais2\sf |
+  r4 ais2~\sf | ais2.~ | ais4 ais2\sf |
   ais\sf ais4~\sf | ais ais2\sf |
   ais2\sf ais4\sf |
 
@@ -249,7 +251,7 @@ bassoonOneMvtI = \relative c'
   g8 f-. d-. b-. g-. f-. |
   d-. f-. d-. b-. g-. b-. |
   c4-. ees-. g-. |
-  c-. ees-. g~\sf |
+  c-. ees-. g~\sf |  % Score doesn't have \sf here for bassoons (?).
   g8 f-. d-. b-. g-. f-. |
   d-. f-. d-. b-. g-. b-. |
   c4( ees g) |
@@ -368,7 +370,7 @@ bassoonOneMvtI = \relative c'
   r4 f\sf aes, |
   g\ff r r |
   R2. |
-  f4 aes4.\sf bes,8 |
+  f4-. aes4.\sf bes,8 |
   d'4 f4.\sf bes,8 |
   g'2~ g8( fis |
   g4) r r |
@@ -461,10 +463,10 @@ bassoonOneMvtI = \relative c'
   aes-. g-. f-. ees-. d-. c-. |
   f2:8 aes8 aes |
   f2:8 bes,8 bes |
-  f f' aes aes bes bes |
+  f' f aes aes bes bes |
   bes2.:8 |
   bes8 bes des2:8 |
-  des2.:8 |
+  des2. |
   c4 c2\sf |
   r4 c2\sf |
   r4 bes2\sf |
@@ -481,7 +483,7 @@ bassoonOneMvtI = \relative c'
   f-. g-. aes-. g-. f-. ees-. |
   d4\f bes'2~\f |
   bes4 bes2~\f |
-  bes4 bes2~\f |
+  bes4 bes2\f |
   bes2\f bes4-.\f |
   bes-. d-.\ff \repeat unfold 10{d-.} |
   ees4 r r | ees r r | ees, r r | \bar "|."
