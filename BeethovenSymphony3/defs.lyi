@@ -124,6 +124,7 @@ outlineMvtIV =
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/4
   \tempoMark "Allegro molto"
+  \grace {s16 s16}
   s2*44 |
 
   \repeat volta 2
