@@ -175,6 +175,7 @@ instrument = "Orchestra"
 
   \score
   {
+    \unfoldTremolos
     <<
       \new Staff
       {
