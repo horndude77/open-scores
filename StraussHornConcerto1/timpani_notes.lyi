@@ -1,3 +1,7 @@
+\version "2.12.2"
+
+\include "defs.lyi"
+
 timpaniMvtI = \relative c
 {
   \clef bass
@@ -21,7 +25,7 @@ timpaniMvtI = \relative c
   bes4 bes8. bes16 bes4 bes8. bes16 |
   bes4 bes8. bes16 bes4 bes |
   bes r bes r |
-  \setTextDim
+  \dimTextDim
   ees r r bes\> |
   ees r r bes |
   ees\p r ees\pp r |

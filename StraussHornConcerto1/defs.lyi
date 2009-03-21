@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 smaller = {
   \set fontSize = #-2
   \override Stem #'length = #5.5
@@ -54,7 +56,7 @@ outline =
   \time 3/8
   \tempo 8=69
   \mark \default
-  s1*0^\markup {\bigger \bold Andante}
+  s1*0^\markup {\larger \bold Andante}
   s4.*33 |
 
   \mark \default
@@ -77,13 +79,13 @@ outline =
   \time 4/4
   \tempo 4=132
   \mark \default
-  s1*0^\markup {\bigger \bold Allegro}
+  s1*0^\markup {\larger \bold Allegro}
   \partial 4 s4
   s1*8 | \bar "||"
 
   \time 6/8
   \tempo 4.=132
-  s1*0^\markup {\bigger \bold {Rondo Allegro}}
+  s1*0^\markup {\larger \bold {Rondo Allegro}}
   s2.*16 |
 
   \mark \default

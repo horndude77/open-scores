@@ -1,3 +1,7 @@
+\version "2.12.2"
+
+\include "defs.lyi"
+
 bassMvtI = \relative c,
 {
   \clef "bass_8"
@@ -23,9 +27,9 @@ bassMvtI = \relative c,
   bes ees8. g16 bes4 bes,~ |
   bes ees8. g16 bes4 g |
   f2 bes |
-  \setTextDim
+  \dimTextDim
   ees,4 r r bes\>
-  \setHairpinDim
+  \dimHairpin
   ees r r bes |
   ees\p r ees\ppp r |
   ees r r2 |
@@ -101,9 +105,9 @@ bassMvtI = \relative c,
   r4 f\f r e\f |
   r ees\f r c\f |
   f2. \times 2/3 {f,8\mf f f} |
-  \setTextCresc
+  \crescTextCresc
   f'2.\< \times 2/3 {f8 f f} |
-  \setHairpinCresc
+  \crescHairpin
 
   %D
   bes,4\ff r r \times 2/3 {f'8 f f} |
@@ -127,9 +131,9 @@ bassMvtI = \relative c,
   f bes8. d16 f4 d, |
   c2 f |
   bes,2. bes4~ |
-  \setTextDim
+  \dimTextDim
   bes des8.\> f16 bes4 bes, |
-  \setHairpinDim
+  \dimHairpin
   aes2 ges4 f |
   ges1~\p |
   ges4 ges'( f fes) |
@@ -137,7 +141,7 @@ bassMvtI = \relative c,
   ees4 ees( d des) |
   \setDimECalando
   c1(\> |
-  \setHairpinDim
+  \dimHairpin
   ces) |
   bes( |
   beses) |
@@ -160,9 +164,9 @@ bassMvtII = \relative c,
   r r f |
   R4. |
   r8 r bes, |
-  \setTextCresc
+  \crescTextCresc
   r r bes\< |
-  \setHairpinCresc
+  \crescHairpin
   b c bes |
   aes r f\mf |
   fis g r |
@@ -194,9 +198,9 @@ bassMvtII = \relative c,
   cis16-. cis-. r8 \times 2/3 {r16 cis-. cis-.} |
   dis16-. dis-. r8 \times 2/3 {r16 dis-. dis-.} |
   \times 2/3 {e16-. e-. e-.} r8 \times 2/3 {r16 e-. e-.} |
-  \setTextDim
+  \dimTextDim
   \times 2/3 {ees16-. ees-. ees-.} r8 \times 2/3 {r16 ees-.\> ees-.} |
-  \setHairpinDim
+  \dimHairpin
   \repeat unfold 3 {\times 2/3 {ees16-. ees-. ees-.} r8 \times 2/3 {r16 ees-. ees-.} |}
 
   \key aes \minor
@@ -211,7 +215,7 @@ bassMvtII = \relative c,
   f r r |
   bes, r bes |
   r4 bes8 |
-  \setTextCresc
+  \crescTextCresc
   r4 bes8\< |
   b c bes |
   aes r f\mf |
@@ -245,9 +249,9 @@ bassMvtIII = \relative c,
   f1~ |
   f2. f'8. f16 |
   fes1~ |
-  \setTextCresc
+  \crescTextCresc
   fes2. fes8.\< fes16 |
-  \setHairpinCresc
+  \crescHairpin
   ees2. ees8. ees16 |
   ees2. ees8. ees16 |
   ees4 ees8. ees16 ees4 ees8. ees16 |
@@ -353,9 +357,9 @@ bassMvtIII = \relative c,
   ees-.\! r r r4 ees8-. |
   \repeat unfold 3 {ees-. r r r4 ees8-. |}
   f r r r4 f8^\arco |
-  \setTextCresc
+  \crescTextCresc
   f r r r4 f8\< |
-  \setHairpinCresc
+  \crescHairpin
   f r r r4 f8 |
   f r r r4 f8 |
   f r f f r f |
@@ -398,9 +402,9 @@ bassMvtIII = \relative c,
   r2 a4\f^\arco r |
   r4 bes\p^\pizz b r |
   c\< r r d\f |
-  \setTextDim
+  \dimTextDim
   ees b\> c g |
-  \setHairpinDim
+  \dimHairpin
   aes g aes f |
   bes\p r r2 |
   bes4 r r bes' |
@@ -421,9 +425,9 @@ bassMvtIII = \relative c,
   c c c c c c |
   ces\ff r r r4. |
   R2.*5 |
-  \setTextCresc
+  \crescTextCresc
   r4. g(\p\< |
-  \setHairpinCresc
+  \crescHairpin
   aes a |
   bes) des( |
   c ces |

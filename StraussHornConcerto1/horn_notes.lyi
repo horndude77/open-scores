@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 \include "defs.lyi"
 
 hornMvtI = \relative c'' \context Voice = horn
@@ -113,9 +115,9 @@ hornMvtI = \relative c'' \context Voice = horn
   \times 2/3 {aes4-. f8-.} \times 2/3 {d8-. b-. aes-.}
     \times 2/3 {f4 f8-.\p} \times 2/3 {f( g) gis-.} |
   \times 2/3 {a4( f8)} \times 2/3 {a4( f8)}
-    \setTextCresc
+    \crescTextCresc
     \times 2/3 {a4\< a8-.} \times 2/3 { a8( bes) b-.} |
-    \setHairpinCresc
+    \crescHairpin
   \times 2/3 {c4( a8)} \times 2/3 {c4( a8)}
     \tupletUp \times 2/3 {c4 c8-.} \tupletNeutral \times 2/3 { c8( d) e-.} |
   f4-. f-> f-> f-> |
@@ -153,9 +155,9 @@ hornMvtII = \relative c''
   c d ees8) d( | g4) ees16(\f f |
   <<
     {
-      \setTextDim
+      \dimTextDim
       \stemUp g16 a bes8) fis(\> | g)
-      \setHairpinDim
+      \dimHairpin
     }
     \context Voice = cue {\smaller \stemDown g16 g, bes8 a( | g)}
   >> \stemNeutral d'4~ | d8 d4~ | d8 bes4 | bes8 r r |
@@ -189,9 +191,9 @@ hornMvtII = \relative c''
   dis)\< dis8 dis ees16 |
   g4->\> ees8 |
   bes4\! \times 2/3 {g16( aes bes)} |
-  \setTextDim
+  \dimTextDim
   c4.\> | d8( c bes) \bar "||"
-  \setHairpinDim
+  \dimHairpin
   \key ees \major
 
   ees4.(\p | bes4) \slurUp ees,16(\> f | g4.~ | g8)\! \slurNeutral r r |
@@ -276,9 +278,9 @@ hornMvtIII = \relative c'
   R2.*2 |
 
   r4. r8 g-.\mf c-. |
-  \setTextDim
+  \dimTextDim
   e2.\> |
-  \setHairpinDim
+  \dimHairpin
   c4. g4 e8 |
   c2.~ |
   c4 c8-.\mf c-._\markup{\italic energico} f-. a-. |
@@ -367,9 +369,9 @@ hornMvtIII = \relative c'
   c( bes) bes4~\! bes8 d( c bes) |
   bes( d,) d4~( d8 d' c bes) |
   \times 2/3 {bes4\< d,8} \times 2/3 {f8 bes d} f2~\ff |
-  \setTextDim
+  \dimTextDim
   f4 d2\> bes4~ |
-  \setHairpinDim
+  \dimHairpin
   bes4 bes2-.^\markup{\italic rit.}( bes4-.) |
   f2^\markup{\italic Lento.}\! r | R1 \bar "||" \break
 
@@ -405,9 +407,9 @@ hornMvtIII = \relative c'
   ees4)\> d8-. c!( bes) a-. |
   bes(\< f) d-. f( bes) d-. |
   f(\> ees) d-. c( bes) a-. |
-  \setTextCresc
+  \crescTextCresc
   bes4.\! b->\< | c-> cis-> | d-> d-> |
-  \setHairpinCresc
+  \crescHairpin
   ees-> e-> |
   f4-> r8 f4(->\f d8) |
   f4->( d8) f4->( d8) |
@@ -422,9 +424,9 @@ hornMvtIII = \relative c'
   r8 r bes,\p bes( d) f |
   bes2.~ |
   bes4 d,8 d( f) bes-. |
-  \setTextCresc
+  \crescTextCresc
   d2.~\< |
-  \setHairpinCresc
+  \crescHairpin
   d8 bes-. d-. f4.~ |
   f8 bes,-. d-. f4.~ |
   f4 f8~ f4 f8~ |

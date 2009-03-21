@@ -1,3 +1,7 @@
+\version "2.12.2"
+
+\include "defs.lyi"
+
 celloMvtI = \relative c,
 {
   \clef bass
@@ -23,9 +27,9 @@ celloMvtI = \relative c,
   bes ees8. g16 bes4 bes,~ |
   bes ees8. g16 bes4 g |
   f2 bes, |
-  \setTextDim
+  \dimTextDim
   ees,4 r r bes'\>
-  \setHairpinDim
+  \dimHairpin
   ees, r r bes' |
   ees,\p r ees'\ppp r |
   ees r r2 |

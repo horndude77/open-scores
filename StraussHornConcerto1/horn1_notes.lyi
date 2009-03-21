@@ -1,3 +1,7 @@
+\version "2.12.2"
+
+\include "defs.lyi"
+
 hornOneMvtI = \relative c''
 {
   \transposition ees
@@ -22,10 +26,10 @@ hornOneMvtI = \relative c''
   e4 e8. e16 e4 e8. e16 |
   e4 c8. c16 c4 e |
   fis2 f |
-  \setTextDim
+  \dimTextDim
   e4 r r g,8\> g |
   g4 r\! r2 |
-  \setHairpinDim
+  \dimHairpin
   R1*2 |
 
   %A

@@ -1,3 +1,7 @@
+\version "2.12.2"
+
+\include "defs.lyi"
+
 violinTwoMvtI = \relative c'
 {
   \key ees \major
@@ -22,9 +26,9 @@ violinTwoMvtI = \relative c'
   bes4 g8. ees16 bes4 ees8. g16 |
   f4 ees8. bes16 g4 ees8. c'16 |
   <ees a>2 <d bes'> |
-  \setTextDim
+  \dimTextDim
   <g, ees' ees'>4 r r <aes d>\> |
-  \setHairpinDim
+  \dimHairpin
   <g ees'>4 r r <aes d> |
   <g ees'>4\p r <g ees'>\ppp r |
   <g ees'> r r2 |
