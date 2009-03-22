@@ -62,7 +62,7 @@ hornOneMvtI = \relative c''
 
   %4/4
   R1*5 |
-  r4 d\f e e |
+  r4 d\f e e | %Second beat is a d and e in score. Which is correct?
   d r r2 |
   R1*5 |
 
@@ -75,7 +75,7 @@ hornOneMvtI = \relative c''
   a4 r r a8. a16 |
   b4 b c \times 2/3 {d4( dis8)} |
   \crescTextCresc
-  e4 b\< b d |
+  e4 b\< b d | %crescendo in part, not in score
   d gis, a b |
   c b c cis |
   g'\ff r r2 |
