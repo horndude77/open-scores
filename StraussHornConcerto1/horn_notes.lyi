@@ -339,7 +339,7 @@ hornMvtIII = \relative c'
   ees2. | fes4. f | ges2.~ | ges4.) ges(\< |
   ees'2. | des~\> | des4.)\! ces~( |
   ces bes~ | bes) aes~ | aes ges~( |
-  ges2.~ | ges4.\> f | f4)\! r8 r4. |
+  ges2.~ | ges4.\> f | ees4)\! r8 r4. |
   R2.*15 |
 
   r4. r8 bes-.^\markup{Solo}\f d-. |
