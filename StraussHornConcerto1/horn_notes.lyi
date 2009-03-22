@@ -2,7 +2,7 @@
 
 \include "defs.lyi"
 
-hornMvtI = \relative c'' \context Voice = horn
+hornMvtI = \relative c''
 {
   \transposition f
   \key bes \major
@@ -159,7 +159,9 @@ hornMvtII = \relative c''
       \stemUp g16 a bes8) fis(\> | g)
       \dimHairpin
     }
-    \context Voice = cue {\smaller \stemDown g16 g, bes8 a( | g)}
+    %This new Voice breaks quoting anything else in this part. Remove this tag
+    %when quoting.
+    \tag #'alt \new Voice {\smaller \stemDown g16 g, bes8 a( | g)}
   >> \stemNeutral d'4~ | d8 d4~ | d8 bes4 | bes8 r r |
   bes4.(^\markup{\italic {a tempo}}\pp | ees4) ees8( |
   bes4. | ges4) ees8( | bes4) bes8(\< |
@@ -438,4 +440,7 @@ hornMvtIII = \relative c'
 }
 
 horn = {\hornMvtI \hornMvtII \hornMvtIII}
+
+%Use this variable to quote this part.
+hornCue = \removeWithTag #'alt \horn
 

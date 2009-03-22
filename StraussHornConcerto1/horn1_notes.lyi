@@ -1,12 +1,16 @@
 \version "2.12.2"
 
 \include "defs.lyi"
+\include "horn_notes.lyi"
+
+\addQuote "solo" { \hornCue }
 
 hornOneMvtI = \relative c''
 {
   \transposition ees
-  e2\fermata r4\fermata r |
-  R1*4 |
+  e2\fermata r4\fermata
+  \new CueVoice \with { instrumentCueName = "solo" }
+  \cueDuring #"solo" #UP { r4 | R1*4 | }
   d2\f g, |
   d'4 d8. d16 d2~ |
   d4 f8. f16 f2~ |
@@ -33,14 +37,224 @@ hornOneMvtI = \relative c''
   R1*2 |
 
   %A
+  R1*35
+
+  %B
+  c4\f e8. e16 e2~ |
+  e4 e8. e16 e2~ |
+  e4 c8. c16 c4 c |
+  b2 d |
+  \times 2/3 {e4 g,8} \times 2/3 {g c e} g4 e8. f16 |
+  e4 e8. e16 e2~ |
+  e4 c8. c16 c4 c |
+  c2 b4 b8. b16 |
+  b4 a8. a16 a8. a16 a8. a16 |
+  g4 c8. c16 c8. c16 c8. c16 |
+  b8. e16 e8. e16 dis8. dis16 e8. fis16 |
+  e4 e r dis |
+
+  %C
+  R1*41 |
+  \times 2/3 {r8 d-.\f d-.} \times 2/3 {d( e) f-.} \times 2/3 {g-. d-. d-.} \times 2/3 {d( e) f-.} |
+
+  %2/4
+  g8 r r4 |
+
+  %4/4
+  R1*5 |
+  r4 d\f e e |
+  d r r2 |
+  R1*5 |
+
+  %D
+  d4\ff d8. d16 d4 \times 2/3 {a8 b c} |
+  b4 d8. d16 d4 \times 2/3 {a8 b c} |
+  b4 b d d |
+  fis fis \times 2/3 {cis8 cis cis~} \times 2/3 {cis cis cis~} |
+  \times 2/3 {cis a fis} a4 r gis8. gis16 |
+  a4 r r a8. a16 |
+  b4 b c \times 2/3 {d4( dis8)} |
+  \crescTextCresc
+  e4 b\< b d |
+  d gis, a b |
+  c b c cis |
+  g'\ff r r2 |
+  \crescHairpin
+  r2 b,4\ff r |
+  r b\ff b r |
+  e^\vivo r r c |
+  b fis' e d |
+  c d c g |
+  \times 2/3 {g4 g8} \times 2/3 {g8 b d} g4 g8. g16 |
+  g4 g8. g16 g4 d8. d16 |
+  d4 d8. d16 d4 d |
+  cis2 c |
+  \times 2/3 {g4 g8} \times 2/3 {g8 b d} g4 g8. g16 |
+  g4 d8. d16 bes4 g8. g16 |
+  aes2 aes4 aes |
+  g1~\pp |
+  g4 g8. g16 g4 g8. g16 |
+  c1~ |
+  c4 c,8. c16 c4 c8. c16 |
+  c2. c8. c16 |
+  c2. c8. c16 |
+  c2. c'8. c16 |
+  c2. c8. c16 |
+  c2. r4 |
+  R1 |
 }
 
 hornOneMvtII = \relative c'
 {
+  %E
+  %Adagio
+  %3/8
+  R4.*33 |
+
+  %F
+  R4.*21 |
+
+  %G
+  R4.*22 |
+
+  %H
+  R4.*13 |
+
+  %I
+  R4.*23 |
+  r4 r8\fermata |
 }
 
-hornOneMvtIII = \relative c'
+hornOneMvtIII = \relative c''
 {
+  %K
+  %Allegro
+  %4/4
+  r4 |
+  r g8.\pp g16 g2~ |
+  g1~ |
+  g4 g8. g16 g2~ |
+  g1~ |
+  \crescTextCresc
+  g4 e8. e16 e2~\< |
+  e4 g8. g16 g2~ |
+  g4 g8. g16 g4 c8. c16 |
+  c4 e8. e16 e4\f r |
+  \crescHairpin
+
+  %Rondo
+  %6/8
+  R2.*16 |
+
+  %L
+  r8 g,8\ff c e4.~ |
+  e8 e-. e-. e-. e-. e-. |
+  d4 d8 d4.~ |
+  d8 d-. d-. d4. |
+  r8 d e f4.~ |
+  f8 f-. f-. f-. f-. f-. |
+  d4 cis8 d4.~ |
+  d8 cis-. cis-. d4. |
+  \repeat unfold 2
+  {
+    r8 c,-. e-. g4. |
+    d'2.
+  }
+  \repeat unfold 2
+  {
+    r8 ees,-. g-. bes4. |
+    d2.
+  }
+  ees8 bes g~ g b g~ |
+  g c g~ g bes a |
+  a4 r8 r4. |
+
+  %M
+  R2.*85 |
+
+  %4/4
+  R1*3 |
+  r2 r4\fermata |
+
+  %6/8
+  r8 c-.\ff c-. |
+  c2.~ |
+  c8 f f f f f |
+  d4 cis8 d4.~ |
+  d8 cis cis d4. |
+  \repeat unfold 2
+  {
+    r8 c,-. e-. g4. |
+    d'2. |
+  }
+  e4 r8 r4 e8 |
+  f4 r8 r4. |
+  r4 f8 f4.~ |
+  f4.( e4) r8 |
+  R2.*37 |
+
+  %O
+  R2.*8 |
+  \crescTextCresc
+  c2.~\p | c~ | c~\< | c~ |
+  \crescHairpin
+  c4. c~ |
+  c c~ |
+  c4 c8 c4 c8~ |
+  c4 c8~\ff c r r |
+  R2.*16 |
+
+  %P
+  r8 g-.\ff c-. e4.~ |
+  e8 e-. e-. e-. e-. e-. |
+  d4 d8 d4.~ |
+  d8 d d d4. |
+  r8 d-. e-. f4.~ |
+  f8 f-. f-. f-. f-. f-. |
+  d4 cis8-. d4.~ |
+  d8 cis cis d4. |
+  \repeat unfold 2
+  {
+    r8 c,-. e-. g4. |
+    d'2. |
+  }
+  r8 c-. c-. c4. |
+  c c |
+  b d |
+  c e |
+  f cis |
+  d e |
+  f e |
+  f fis |
+
+  %Q
+  %4/4
+  g4 r r2 |
+  r2 e8\f r r4 |
+  r2 e8 r r4 |
+  R1*2 |
+  r2 e8\f r r4 |
+  R1*4 |
+  c1\p |
+  c2. b4 |
+
+  %R
+  %6/8
+  c4 r8 r4. |
+  R2.*6 |
+  r4. d4\ff r8 |
+  e4 r8 r4. |
+  R2.*7 |
+  r4 c8\f\< c4.~ |
+  c4 c8 c4 c8 |
+  f8\ff r r r4. |
+  R2. |
+  r4 c8\f\< c4.~ |
+  c4 c8 c4 c8 |
+  f8\ff r r r4. |
+  R2.*28 |
+  f4\ff r8 r4. |
+  e4\ff r8 r4. |
 }
 
 hornOne = {\hornOneMvtI \hornOneMvtII \hornOneMvtIII}
