@@ -25,6 +25,7 @@ setDimECalando = #(define-music-function (parser location) ()
 pizz = \markup{\italic pizz.}
 arco = \markup{\italic arco}
 vivo = \markup{\italic vivo}
+solo = \markup{Solo}
 
 outline =
 {
@@ -85,7 +86,8 @@ outline =
 
   \time 6/8
   \tempo 4.=132
-  s1*0^\markup {\larger \bold {Rondo Allegro}}
+  \tempoMark "Rondo"
+  s1*0^\markup {\larger \bold Allegro}
   s2.*16 |
 
   \mark \default
