@@ -2,8 +2,10 @@
 
 \include "defs.lyi"
 \include "horn_notes.lyi"
+\include "bassoon1_notes.lyi"
 
 \addQuote "solo" { \hornCue }
+\addQuote "bassoon" { \bassoonOne }
 
 hornOneMvtI = \relative c''
 {
@@ -206,7 +208,9 @@ hornOneMvtIII = \relative c''
   R2.*37 |
 
   %O
-  R2.*8 |
+  \new CueVoice \with { instrumentCueName = "bassoon" }
+  \cueDuring #"bassoon" #UP {R2.*4 |}
+  R2.*4 |
   \crescTextCresc
   c2.~\p | c~ | c~\< | c~ |
   \crescHairpin
