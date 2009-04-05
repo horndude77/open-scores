@@ -4,6 +4,7 @@
 
 violinOneMvtIII = \relative c'
 {
+  \override DynamicTextSpanner #'dash-period = #-1.0
   \key ees \major
   bes4-._\mSemprePianissimoStaccato |
   bes-. c-. bes-. |
@@ -182,7 +183,7 @@ violinOneMvtIII = \relative c'
   f r r |
   R2.*5 |
   r4 aes\p aes |
-  g r ees-.\p |
+  g r ees-.\f |
   aes( ees) c'-. |
 
   \repeat volta 2
@@ -413,7 +414,7 @@ violinOneMvtIII = \relative c'
   \crescTextCresc
   r4 d'8\< d ees ees |
   d d ees ees d d |
-  ees ees d d ees ees |
+  ees\f ees d d ees ees |
   d d ees ees d d |
   ees4\ff r r |
   <bes bes, d,>\ff r r |

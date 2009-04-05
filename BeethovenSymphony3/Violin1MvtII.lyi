@@ -4,7 +4,6 @@
 
 violinOneMvtII = \relative c'
 {
-  \override Score.SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 16)
   \key c \minor
   \partial 8 g16.\pp g32 |
   g4 \acciaccatura d'8\( c16. b32 c16. d32\) |

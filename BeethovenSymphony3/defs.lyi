@@ -100,6 +100,7 @@ outlineMvtI =
 
 outlineMvtII =
 {
+  \override Score.SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 16)
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \tempoMark "Adagio assai"
