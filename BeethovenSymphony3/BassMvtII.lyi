@@ -29,7 +29,7 @@ bassMvtII = \relative c,
   g4( f8 bes,) |
   d r r4 |
   \crescTextCresc
-  a4(\< bes8 aes) |
+  c4(\< bes8 aes) |
   \crescHairpin
   g8 r16. e'32\f e4 |
   r f8(\p g) |

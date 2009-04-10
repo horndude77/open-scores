@@ -246,7 +246,7 @@ violinTwoMvtII = \relative c'
   des( d) r d'~\sf d( d,) r d~ |
   d( c) r c~ b( c) r c~ |
   c( c') r c~\sf\< c( c,) r c~ |
-  c( c) r c(\> c c) r c~ |
+  c( c) r c~\> c( c) r c~ |
   c(\pp b) r b~ c( b) r b |
   c4\pp r |
   c4( bes8 aes8) |

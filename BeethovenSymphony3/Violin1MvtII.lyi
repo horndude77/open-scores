@@ -85,6 +85,7 @@ violinOneMvtII = \relative c'
   \key c \major
   << {s2\p} {\repeat unfold 8 {\times 2/3 {g'16( c) e-.}} |} >>
   \repeat unfold 8 {\times 2/3 {a,16( c) d-.}} |
+  \crescTextCresc
   << {s2 | s8 s4.\<} {\repeat unfold 8 {\times 2/3 {b16( d) f-.}} |} >>
   \times 2/3 {a,16( c) e-.} \times 2/3 {e,( a) c-.}
     \times 2/3 {d,16( g) b-.} \times 2/3 {d,( fis) a-.} |

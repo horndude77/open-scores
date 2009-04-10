@@ -150,6 +150,7 @@ instrument = "Orchestra"
 
   \score
   {
+    \unfoldTremolos
     <<
       \new Staff
       {
@@ -189,8 +190,12 @@ instrument = "Orchestra"
         <<
           \hornOneMvtII
           \hornTwoMvtII
-          \hornThreeMvtII
         >>
+      }
+      \new Staff
+      {
+        \set Staff.midiInstrument = "french horn"
+        \hornThreeMvtII
       }
       \new Staff
       {
