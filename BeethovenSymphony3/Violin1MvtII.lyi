@@ -46,14 +46,14 @@ violinOneMvtII = \relative c'
   \crescTextCresc
   f'4\< ees32( d16.) c32( b16.) |
   c8-. aes-. r fis~\p\< |
-  fis g4(\f\> f16. d32) |
+  fis g4(\sf\> f16. d32) |
   c8\p r r8. \times 2/3 {<bes aes'>32 <bes aes'> <bes aes'>} |
   <bes g'>8 r r8. \times 2/3 {ees32 ees ees} |
   f8 r r8. \times 2/3 {f32 f f} |
   aes8\< r16 \times 2/3 {aes32 aes aes} g8 r16 \times 2/3 {f32 f f} |
   e8 r16 \times 2/3 {bes'32 bes bes} bes8\f r16 \times 2/3 {bes32 bes bes} |
-  bes8\p r16 \times 2/3 {bes32 bes bes} aes8\f r16 \times 2/3 {g32 g g} |
-  fis8\p r16 \times 2/3 {fis32 fis fis} fis8-> r16 \times 2/3 {fis32 fis fis} |
+  bes8\p r16 \times 2/3 {bes32 bes bes} aes8 r16 \times 2/3 {g32 g g} |
+  fis8 r16 \times 2/3 {fis32 fis fis} fis8-> r16 \times 2/3 {fis32 fis fis} |
   g8 r r8. \times 2/3 {g32 g g} |
   g8 r r8. \times 2/3 {g32 g g} |
   \crescHairpin
@@ -86,12 +86,12 @@ violinOneMvtII = \relative c'
   << {s2\p} {\repeat unfold 8 {\times 2/3 {g'16( c) e-.}} |} >>
   \repeat unfold 8 {\times 2/3 {a,16( c) d-.}} |
   << {s2 | s8 s4.\<} {\repeat unfold 8 {\times 2/3 {b16( d) f-.}} |} >>
-  \times 2/3 {a,16( c) e} \times 2/3 {e,( a) c-.}
-    \times 2/3 {d,16( g) b} \times 2/3 {d,( fis) a-.} |
+  \times 2/3 {a,16( c) e-.} \times 2/3 {e,( a) c-.}
+    \times 2/3 {d,16( g) b-.} \times 2/3 {d,( fis) a-.} |
   <<
     {s2\ff}
     \repeat unfold 2
-    {\times 4/6 {g32\ff g' g g g g} \times 4/6 {\repeat tremolo 6 g32} g8-. r |}
+    {\times 4/6 {g32 g' g g g g} \times 4/6 {\repeat tremolo 6 g32} g8-. r |}
   >>
   <g b, d, g,>8-. r <g b, d, g,>-. r |
   <g b, d, g,>4(\sf\> f16 e f d) |
@@ -119,7 +119,7 @@ violinOneMvtII = \relative c'
     \repeat unfold 2 {\times 2/3 {g'16( d) b-.}} |
   \repeat unfold 2 {\times 2/3 {g'16( e) c-.}}
     \repeat unfold 2 {\times 2/3 {a'16( f) c-.}} |
-    \times 4/6 {c16 \repeat unfold 5 <e c'>} \times 4/6 {\repeat tremolo 6 <e c'>} |
+  \times 4/6 {c16 \repeat unfold 5 <e c'>} \times 4/6 {\repeat tremolo 6 <e c'>} |
   << {s8\f s_\mSemprePiuF} {\repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <d b'>16}}} >> |
   <<
     {s1*0\ff}
@@ -134,7 +134,7 @@ violinOneMvtII = \relative c'
 
   %minore
   \key c \minor
-  g4 \acciaccatura d'8 c16.( b32 c16. d32) |
+  g4\p^\sottoVoce \acciaccatura d'8 c16.( b32 c16. d32) |
   ees4( c8) r |
   g'4 f32( ees16.) d32( c16.) |
   ees4( d8) r |
@@ -184,7 +184,7 @@ violinOneMvtII = \relative c'
   \dimTextDecresc
   <g a,>2\> |
   <fis a,>2 |
-  g4\p^\sottoVoce \acciaccatura a8 g16.( fis32 g16. a32) |
+  g4 \acciaccatura a8 g16.( fis32 g16. a32) |
   bes4( g8) r |
   d'4( b8) r |
   aes'2 |
