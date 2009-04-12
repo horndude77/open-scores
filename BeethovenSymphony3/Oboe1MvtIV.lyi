@@ -5,6 +5,7 @@
 oboeOneMvtIV = \relative c'''
 {
   \key c \minor
+  \grace {s16 s}
   R2*6 |
   aes4\ff r |
   aes-. aes-. |

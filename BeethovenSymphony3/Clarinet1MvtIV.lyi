@@ -6,6 +6,7 @@ clarinetOneMvtIV = \relative c''
 {
   \transposition bes
   \key d \minor
+  \grace {s16 s}
   R2*6 |
   bes4\ff r |
   bes-. bes-. |

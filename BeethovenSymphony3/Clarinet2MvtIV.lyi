@@ -6,6 +6,7 @@ clarinetTwoMvtIV = \relative c''
 {
   \transposition bes
   \key d \minor
+  \grace {s16 s}
   R2*6 |
   g4\ff r |
   g-. g-. |

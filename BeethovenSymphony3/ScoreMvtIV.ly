@@ -42,52 +42,60 @@ instrument = "Orchestra"
       <<
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Flutes"
           \set Staff.shortInstrumentName = "Fl."
+          %\override Staff.CombineTextScript #'avoid-slur = #'outside
           %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \fluteOneMvtIV
-            \keepWithTag #'score \fluteTwoMvtIV
+          %\partcombine
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \fluteOneMvtIV}
+            \new Voice {\voiceTwo \keepWithTag #'score \fluteTwoMvtIV}
+          >>
         }
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Oboes"
           \set Staff.shortInstrumentName = "Ob."
+          %\override Staff.CombineTextScript #'avoid-slur = #'outside
           %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \oboeOneMvtIV
-            \keepWithTag #'score \oboeTwoMvtIV
+          %\partcombine
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \oboeOneMvtIV}
+            \new Voice {\voiceTwo \keepWithTag #'score \oboeTwoMvtIV}
+          >>
         }
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Clarinets"
           \set Staff.shortInstrumentName = "Cl."
+          %\override Staff.CombineTextScript #'avoid-slur = #'outside
           %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \clarinetOneMvtIV
-            \keepWithTag #'score \clarinetTwoMvtIV
+          %\partcombine
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \clarinetOneMvtIV}
+            \new Voice {\voiceTwo \keepWithTag #'score \clarinetTwoMvtIV}
+          >>
         }
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Bassoons"
           \set Staff.shortInstrumentName = "Bs."
+          %\override Staff.CombineTextScript #'avoid-slur = #'outside
           %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \bassoonOneMvtIV
-            \keepWithTag #'score \bassoonTwoMvtIV
+          %\partcombine
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \bassoonOneMvtIV}
+            \new Voice {\voiceOne \keepWithTag #'score \bassoonTwoMvtIV}
+          >>
         }
       >>
       \new StaffGroup
       <<
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Horns I,II"
           \set Staff.shortInstrumentName = "Hn."
+          %\override Staff.CombineTextScript #'avoid-slur = #'outside
           %\set Staff.printPartCombineTexts = ##f
           %\partcombine
           <<
@@ -99,17 +107,19 @@ instrument = "Orchestra"
         {
           \set Staff.instrumentName = "Horn III"
           \set Staff.shortInstrumentName = "Hn.III"
-          << \hornThreeMvtIV \outlineMvtIV >>
+          << \outlineMvtIV \hornThreeMvtIV >>
         }
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Trumpets"
           \set Staff.shortInstrumentName = "Tr."
+          %\override Staff.CombineTextScript #'avoid-slur = #'outside
           %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \trumpetOneMvtIV
-            \keepWithTag #'score \trumpetTwoMvtIV
+          %\partcombine
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \trumpetOneMvtIV}
+            \new Voice {\voiceTwo \keepWithTag #'score \trumpetTwoMvtIV}
+          >>
         }
       >>
       \new Staff
@@ -164,6 +174,7 @@ instrument = "Orchestra"
 
   \score
   {
+    \unfoldTremolos
     <<
       \new Staff
       {
@@ -200,8 +211,12 @@ instrument = "Orchestra"
       \new Staff
       {
         \set Staff.midiInstrument = "french horn"
+        \hornOneMvtIV
+      }
+      \new Staff
+      {
+        \set Staff.midiInstrument = "french horn"
         <<
-          \hornOneMvtIV
           \hornTwoMvtIV
           \hornThreeMvtIV
         >>

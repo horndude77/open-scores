@@ -5,6 +5,7 @@
 hornTwoMvtIV = \relative c'
 {
   \transposition ees
+  \grace {s16 s}
   R2*6 |
   g4\ff r |
   g-. g-. |

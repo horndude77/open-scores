@@ -6,6 +6,7 @@ bassoonOneMvtIV = \relative c'
 {
   \clef bass
   \key c \minor
+  \grace {s16 s}
   R2*6 |
   d4\ff r |
   d-. d-. |

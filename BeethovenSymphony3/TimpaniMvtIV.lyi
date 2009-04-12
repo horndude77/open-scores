@@ -6,6 +6,7 @@ timpaniMvtIV = \relative c
 {
   \clef bass
   \key c \minor
+  \grace {s16 s}
   R2*6 |
   bes4\ff r |
   bes-. bes-. |

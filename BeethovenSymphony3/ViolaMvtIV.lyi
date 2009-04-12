@@ -6,6 +6,7 @@ violaMvtIV = \relative c'
 {
   \clef alto
   \key c \minor
+  \grace {s16 s}
   <d d,>4~\ff <d d,>16 c bes a |
   bes a g fis g f' ees d |
   ees d c bes c bes a g |

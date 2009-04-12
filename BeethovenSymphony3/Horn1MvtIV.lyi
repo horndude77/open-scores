@@ -5,6 +5,7 @@
 hornOneMvtIV = \relative c''
 {
   \transposition ees
+  \grace {s16 s}
   R2*6 |
   d4\ff r |
   d-. d-. |
@@ -101,8 +102,8 @@ hornOneMvtIV = \relative c''
   g' |
   g, |
   c4 r |
-  R2*68 | %page 14
   \transposition ees
+  R2*68 | %page 14
   d2~^\markup{\bold {in E\flat}} |
   d~ |
   d4 r |

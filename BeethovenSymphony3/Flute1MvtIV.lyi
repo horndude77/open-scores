@@ -5,6 +5,7 @@
 fluteOneMvtIV = \relative c'''
 {
   \key c \minor
+  \grace {s16 s}
   R2*6 |
   d4\ff r |
   f-. f-. |

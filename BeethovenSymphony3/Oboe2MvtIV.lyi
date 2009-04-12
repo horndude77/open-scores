@@ -5,6 +5,7 @@
 oboeTwoMvtIV = \relative c''
 {
   \key c \minor
+  \grace {s16 s}
   R2*6 |
   f4\ff r |
   f-. f-. |
