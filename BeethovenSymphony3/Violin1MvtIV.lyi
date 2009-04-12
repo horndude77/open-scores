@@ -218,14 +218,14 @@ violinOneMvtIV = \relative c'
   fis' d fis d cis e g cis |
   \times 2/3 {<d fis,>8 a g} \times 2/3 {fis e d} |
   \times 2/3 {bes(\sf a) a-.} \times 2/3 {e''\sf e e} |
-  \times 2/3 {b,(\sf a) a-.} \times 2/3 {g''\sf g g} |
-  \times 2/3 {bes,,(\sf a) a-.} \times 2/3 {cis''\sf cis cis} |
+  \times 2/3 {b,( a) a-.} \times 2/3 {g''\sf g g} |
+  \times 2/3 {bes,,( a) a-.} \times 2/3 {cis''\sf cis cis} |
   \times 2/3 {b,( a) a-.} \times 2/3 {a( g) g-.} |
   \times 2/3 {g( fis) fis-.} \times 2/3 {<d' d'> <d d'> <d d'>} |
-  \times 2/3 {a(\sf f) f-.} \times 2/3 {<e' d'> <e d'> <e d'>} |
+  \times 2/3 {a(\sf g) g-.} \times 2/3 {<e' d'> <e d'> <e d'>} |
   \times 2/3 {<fis d'> <fis d'> <fis d'>} \times 2/3 {<e cis'> <e cis'> <e cis'>} |
-  \times 2/3 {<fis d'> <d d'> <d d'>} \times 2/3 {<d d'> <d d'> <d d'>} |
-  \times 4/6 {\repeat tremolo 6 <d d'>8\ff} |
+  \times 2/3 {<fis d'>\< <d d'> <d d'>} \times 2/3 {<d d'> <d d'> <d d'>} |
+  << {s1*0\ff} {\times 4/6 {\repeat tremolo 6 <d d'>8}} >> |
   \times 4/6 {\repeat tremolo 6 <d d'>8} |
   \times 2/3 {<d d'> <d d'> <d d'>} \times 2/3 {<e cis'> <e cis'> <e cis'>} |
   <d d'>16 d,( e fis g a bes c) |
