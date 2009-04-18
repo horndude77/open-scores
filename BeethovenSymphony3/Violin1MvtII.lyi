@@ -16,7 +16,7 @@ violinOneMvtII = \relative c'
   c8 c16. c32 c8 r16 \times 2/3 {ees32 ees ees} |
   \repeat unfold 2 {ees8 r r8. \times 2/3 {ees32 ees ees}} |
   ees8 r16 \times 2/3 {ees32 ees ees} g8 r16 \times 2/3 {g32 g g} |
-  g8\< r16 \times 2/3 {a32 a a} b8\> r16 \times 2/3 {d,32 d d} |
+  g8\< r16 \times 2/3 {a32 a a} b8\> r16 \times 2/3 {d,32\! d d} |
   d8 r r8. \times 2/3 {f32 f f} |
   \override DynamicTextSpanner #'dash-period = #-1.0
   \crescTextCresc
@@ -64,8 +64,10 @@ violinOneMvtII = \relative c'
   r4 r8. \times 2/3 {bes32\sf bes bes} |
   aes8\p r r8. \times 2/3 {aes32 aes aes} |
   aes8 r r8. \times 2/3 {aes32 aes aes} |
+  \crescTextCresc
   aes8\< r16 \times 2/3 {aes32 aes aes} b8 r16 \times 2/3 {b32 b b} |
   c8-.\f aes-. r8. \times 2/3 {ees32\p ees ees} |
+  \crescHairpin
   ees8\< r16 \times 2/3 {ees32 ees ees} f8\> r16 \times 2/3 {b32 b b} |
   c4(\p g) |
   ees8( g c4) |
@@ -184,7 +186,7 @@ violinOneMvtII = \relative c'
   <g bes,>8 <g bes,>-. <g bes,>-. <g bes,>-. |
   \dimTextDecresc
   <g a,>2\> |
-  <fis a,>2 |
+  <fis a,>2\p |
   g4 \acciaccatura a8 g16.( fis32 g16. a32) |
   bes4( g8) r |
   d'4( b8) r |
@@ -225,7 +227,9 @@ violinOneMvtII = \relative c'
       \times 4/6 {\repeat tremolo 6 g16} \times 2/3 {r g g} \times 2/3 {r g g}
     }
   >> |
+  \crescTextCresc
   g'4(\< d8 f |
+  \crescHairpin
   ees4\> d8 c) |
   b32\! g g g r aes aes aes r g g g r c c c |
   r b b b r ees ees ees r d d d r c c c |
@@ -240,11 +244,13 @@ violinOneMvtII = \relative c'
   d4( ees8.\sf d32 c) |
   c8( b16) r b8 r |
   << {s32 s\f} {\repeat unfold 4 {r32 d( c d)}} >> |
-  << {s32 s\sf s8 s\>} {\repeat unfold 4 {r32 ees( c ees)}} >> |
-  r c(\p ees, c') r c( ees, c') r b( f b) r b( f b) |
+  << {s32 s\sf\>} {\repeat unfold 4 {r32 ees( c ees)}} >> |
+  r\p c( ees, c') r c( ees, c') r b( f b) r b( f b) |
   r c( ees, c' ees, c' ees, c') ees,( c' ees, c' ees, c' ees, c') |
+  \crescTextCresc
   r32 c(\< ees, c') r c( ees, c') r b( f b) r b( f b) |
-  <aes, ees' c'>8 r r4 |
+  \crescHairpin
+  <aes, ees' c'>8\f r r4 |
   R2 |
   r8 c-.\p aes-. c-. |
   aes-. c-. aes-. c'-. |
@@ -255,8 +261,11 @@ violinOneMvtII = \relative c'
   ges( f) r f( e) f r f~ |
   f( f) r f'~\sf f( f,) r f~ |
   f( ees) r ees~ ees( ees) r ees~ |
+  \crescTextCresc
   ees( ees') r ees~\sf\< ees( ees,) r ees~ |
+  \dimTextDecresc
   ees( d) r d(\> cis d) r d~ |
+  \dimHairpin
   d(\pp d) r d~ d( d) r d |
   c2~\pp |
   c4. b'8( |
@@ -267,6 +276,7 @@ violinOneMvtII = \relative c'
   f8\p r r4 |
   e8 r r4 |
   \crescHairpin
+  \dimHairpin
   << {s4\< s\>} {d4.( f16 ees)} >> |
   c8~\! \times 2/3 {c16 c'( b)} \times 2/3 {d( c) ees-.} \times 2/3 {c-. g-. ees-.} |
   << {s4\< s\>} {d4.( f16 ees)} >> |

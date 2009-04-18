@@ -183,7 +183,7 @@ violinTwoMvtII = \relative c'
   e8 e-. e-. e-. |
   \dimTextDecresc
   a,2\> |
-  d4.( c8 |
+  d4.(\p c8 |
   bes4) r |
   <bes d>4 r |
   <b d> r |
@@ -229,10 +229,10 @@ violinTwoMvtII = \relative c'
   \repeat unfold 4 {r ees( g ees)} |
   \repeat unfold 2 {r f( g f)} \repeat unfold 2 {r ees( g ees)} |
   \repeat unfold 2 {r d( g d)} r d( g d g d g d) |
-  << {s2\f | s\sf\> } {\repeat unfold 8 {r32 c'( d, c')}} >> |
+  << {s32 s\f s4.. | s32 s\sf\> } {\repeat unfold 8 {r32 c'( d, c')}} >> |
   r\p ees,( c ees) r ees( c ees) r f( b, f') r f( b, f') |
   r ees( c ees c ees c ees) c( ees c ees c ees c ees) |
-  r\< ees( c ees) r ees( c ees) r f( b, f') r f( b, f') |
+  r ees(\< c ees) r ees( c ees) r f( b, f') r f( b, f') |
   \dimTextDecresc
   ees8\f c-.\> aes-. c-. |
   aes-. c-. aes-. c-. |
@@ -269,7 +269,7 @@ violinTwoMvtII = \relative c'
   \dimTextDecresc
   aes8(\> g4) g8\! |
   R2*7 |
-  r4 r8 aes16\p aes |
+  r4 r8 aes16\pp aes |
   g8 r <g ees' c'>\f r |
   c4.\fermata
 }
