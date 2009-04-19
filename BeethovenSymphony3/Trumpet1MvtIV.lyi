@@ -6,6 +6,7 @@ trumpetOneMvtIV = \relative c''
 {
   \transposition ees
   \grace {s16 s}
+  \tag #'score \voiceOne
   R2*6 |
   g4\ff r |
   g-. g-. |

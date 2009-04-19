@@ -6,6 +6,7 @@ oboeOneMvtIV = \relative c'''
 {
   \key c \minor
   \grace {s16 s}
+  \tag #'score \voiceOne
   R2*6 |
   aes4\ff r |
   aes-. aes-. |

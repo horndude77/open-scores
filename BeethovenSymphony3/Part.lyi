@@ -16,7 +16,7 @@
     {
       #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
-      << \notesMvtI \outlineMvtI >>
+      << \keepWithTag #'part \notesMvtI \outlineMvtI >>
     }
     \header { piece = \MvtI }
   }
@@ -26,7 +26,7 @@
     {
       #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
-      << \notesMvtII \outlineMvtII >>
+      << \keepWithTag #'part \notesMvtII \outlineMvtII >>
     }
     \header { piece = \MvtII opus = ""}
   }
@@ -36,7 +36,7 @@
     {
       #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
-      << \notesMvtIII \outlineMvtIII >>
+      << \keepWithTag #'part \notesMvtIII \outlineMvtIII >>
     }
     \header { piece = \MvtIII opus = ""}
   }
@@ -46,7 +46,7 @@
     {
       #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
-      << \notesMvtIV \outlineMvtIV >>
+      << \keepWithTag #'part \notesMvtIV \outlineMvtIV >>
     }
     \header { piece = \MvtIV opus = ""}
   }

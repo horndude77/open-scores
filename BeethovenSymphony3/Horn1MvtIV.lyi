@@ -6,6 +6,7 @@ hornOneMvtIV = \relative c''
 {
   \transposition ees
   \grace {s16 s}
+  \tag #'score \voiceOne
   R2*6 |
   d4\ff r |
   d-. d-. |
@@ -215,7 +216,7 @@ hornOneMvtIV = \relative c''
   %page 24
   c8 r r e16-.\sf c-. |
   e-. c-. r8 r g'16-.\sf e-. |
-  g e c g c g e'\sf c |
+  g e c\sf g c g e'\sf c |
   e c g'\sf e g e g\sf e |
   e2_\mSemprePiuF |
   e2 |
