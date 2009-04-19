@@ -1,9 +1,17 @@
 ## Introduction
-This project mainly exists as a working area for lilypond scores to be
-submitted to [Mutopia](http://www.mutopiaproject.org/). If you find any errors
-with these scores please let us know. Email addresses are available in the
-scores. Comments can be left on the [blog](http://open-scores.blogspot.com). Of
-course best of all would be to fork the repository and submit the fix. Enjoy!
+This project mainly exists as a working area for [Lilypond](http://lilypond.org/web) scores to be
+submitted to [Mutopia](http://www.mutopiaproject.org/). Enjoy!
+
+## How to Contribute
+- Use the music (and let us know if you do).
+- Tell a friend.
+- Submit errors or improvement idea.
+  - Use the Mutopia Mailing list: [Gmane](http://news.gmane.org/gmane.music.mutopia.discuss).
+  - Email and other contact information are included with score source.
+  - See the [blog](http://open-scores.blogspot.com).
+- Submit a improvement/fix.
+  - Small fixes can be submitted through email.
+  - Fork the repository and make the change: [Github Guide](http://github.com/guides/fork-a-project-and-submit-your-modifications).
 
 ## Status of Scores
 - Bach Italian Concerto - In progress...
