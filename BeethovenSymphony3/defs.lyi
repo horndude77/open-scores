@@ -78,8 +78,94 @@ tempoMark = #(define-music-function (parser location markp) (string?)
   \mark \markup { \smaller \bold $markp }
 #})
 
+rMark = #(define-music-function (parser location markp) (string?)
+#{
+  \mark \markup { \box \bold $markp }
+#})
+
+rehearsalMarksMvtI =
+{
+  s2.*4 |
+  \repeat volta 2
+  {
+    s2.*40 |
+
+    \rMark "A"
+    s2.*20 |
+
+    \rMark "B"
+    s2.*18 |
+
+    \rMark "C"
+    s2.*26 |
+
+    \rMark "D"
+    s2.*23 |
+
+    \rMark "E"
+    s2.*20 |
+  }
+  \alternative
+  {
+    {s2.*4}
+    {s2.*2}
+  }
+  s2.*32 |
+
+  \rMark "F"
+  s2.*34 |
+
+  \rMark "G"
+  s2.*28 |
+
+  \rMark "H"
+  s2.*32 |
+
+  \rMark "I"
+  s2.*42 |
+
+  \rMark "K"
+  s2.*40 |
+
+  \rMark "L"
+  s2.*36 |
+
+  \rMark "M"
+  s2.*50 |
+
+  \rMark "N"
+  s2.*20 |
+
+  \rMark "O"
+  s2.*18 |
+
+  \rMark "P"
+  s2.*26 |
+
+  \rMark "Q"
+  s2.*23 |
+
+  \rMark "R"
+  s2.*16 |
+
+  \rMark "S"
+  s2.*44 |
+
+  \rMark "T"
+  s2.*36 |
+
+  \rMark "U"
+  s2.*16 |
+
+  \rMark "V"
+  s2.*26 |
+
+  \rMark "W"
+  s2.*19 |
+}
 
 outlineMvtI =
+<< \rehearsalMarksMvtI
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
@@ -97,8 +183,47 @@ outlineMvtI =
   }
   s2.*538 \bar "|."
 }
+>>
+
+rehearsalMarksMvtII =
+{
+  \partial 8 s8
+  s2*16 |
+
+  \rMark "A"
+  s2*34 |
+
+  \rMark "B"
+  s2*18 |
+
+  %Maggiore
+  s2*10 |
+
+  \rMark "C"
+  s2*26 |
+
+  %Minore
+  s2*25 |
+
+  \rMark "D"
+  s2*20 |
+
+  \rMark "E"
+  s2*23 |
+  
+  \rMark "F"
+  s2*22 |
+
+  \rMark "G"
+  s2*14 |
+
+  \rMark "H"
+  s2*38 |
+  s4.
+}
 
 outlineMvtII =
+<< \rehearsalMarksMvtII
 {
   #(override-auto-beam-setting '(end 1 24 2 4) 1 8)
   #(override-auto-beam-setting '(end 1 24 2 4) 2 8)
@@ -120,8 +245,59 @@ outlineMvtII =
   s2*142 |
   s4. \bar "|."
 }
+>>
+
+rehearsalMarksMvtIII =
+{
+  \partial 4 s4
+  s2.*30 |
+  \repeat volta 2
+  {
+    %s2.*132 |
+    s2.*62 |
+
+    \rMark "A"
+    s2.*34 |
+
+    \rMark "B"
+    s2.*36 |
+  }
+  \alternative
+  {
+    { s2.*4 | }
+    { s2.*3 | s4 s }
+  }
+
+  %Trio
+  s4 |
+  s2.*32 |
+  \repeat volta 2
+  {
+    s2.*55 |
+    s2. |
+  }
+  \alternative
+  {
+    { s2.*6 | }
+    { s2. | }
+  }
+  s2.*95 |
+
+  \rMark "C"
+  s2.*30 |
+
+  %Alla breve
+  s1*4 |
+
+  %3/4
+  s2.*38 |
+
+  %Coda
+  s2.*20 |
+}
 
 outlineMvtIII =
+<< \rehearsalMarksMvtIII
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
@@ -164,8 +340,76 @@ outlineMvtIII =
   \tempoMark "Coda"
   s2.*20 | \bar "|."
 }
+>>
+
+rehearsalMarksMvtIV =
+{
+  s2*44 |
+
+  \repeat volta 2
+  {
+    s2*6 |
+  }
+  \alternative
+  {
+    { s2*2 | }
+    { s4 s8 }
+  }
+  \repeat volta 2
+  {
+    s8 |
+    s2*7 |
+    s4 s8
+  }
+  \repeat volta 2
+  {
+    s8 |
+    s2*7 |
+    s4 s8
+  }
+  \repeat volta 2
+  {
+    s8 |
+    s2*7 |
+    s4 s8
+  }
+  s8 |
+  %s2*272
+  s2*31 |
+
+  \rMark "A"
+  s2*68 |
+
+  \rMark "B"
+  s2*36 |
+
+  \rMark "C"
+  s2*43 |
+
+  \rMark "D"
+  s2*61 |
+
+  \rMark "E"
+  s2*33 |
+  s4.
+
+  %Poco Andante
+  s8 |
+  %s2*82 |
+  s2*32 |
+
+  \rMark "F"
+  s2*15 |
+
+  \rMark "G"
+  s2*35 |
+
+  %Presto
+  s2*43 |
+}
 
 outlineMvtIV =
+<< \rehearsalMarksMvtIV
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
@@ -210,4 +454,5 @@ outlineMvtIV =
   \tempoMark "Presto"
   s2*43 | \bar "|."
 }
+>>
 
