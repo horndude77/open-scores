@@ -241,7 +241,7 @@ outlineMvtII =
   \tempoMark "Maggiore"
   s2*36 \bar "||"
   \tempoMark "Minore"
-  \grace {s32*3}
+  %\grace {s32*3}
   s2*142 |
   s4. \bar "|."
 }

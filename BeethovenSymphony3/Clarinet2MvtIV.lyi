@@ -5,7 +5,7 @@
 clarinetTwoMvtIV = \relative c''
 {
   \transposition bes
-  \key d \minor
+  \key f \major
   \grace {s16 s}
   \tag #'score \voiceTwo
   R2*6 |

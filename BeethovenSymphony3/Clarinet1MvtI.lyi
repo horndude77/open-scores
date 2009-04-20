@@ -13,10 +13,10 @@ clarinetOneMvtI = \relative c''
   \repeat volta 2
   {
     R2.*8 |
-
-    %page 2
     r4 r c~\p |
-    c(_\mCresc d e) |
+    \override DynamicTextSpanner #'dash-period = #-1.0
+    \crescTextCresc
+    c(\< d e) |
     f2(\p a4 |
     f2 c4) |
     f( a c |
@@ -24,7 +24,7 @@ clarinetOneMvtI = \relative c''
     R2. |
     r4 r a,(\p |
     bes d f) |
-    bes,2(_\mCresc b4 |
+    bes,2(\< b4 |
     c2)-\tag #'part \fp g'4( |
     e c g') |
     f4-. f2\sf |
@@ -37,10 +37,9 @@ clarinetOneMvtI = \relative c''
     f\sf f4~\sf |
     f e-. e~\sf |
     e f-. f(\sf |
-    e) c,8-._\mCresc d-. e-. f-. |
+    e) c,8-.\< d-. e-. f-. |
+    \crescHairpin
     g-. a-. bes-. c-. d-. e-. |
-
-    %page 3
     f2(\ff a4 |
     f2 c4) |
     f4( a c) |
@@ -63,8 +62,6 @@ clarinetOneMvtI = \relative c''
     a4 b c) |
     c4. c,8( d e) |
     f4-.( f-. f-.) |
-
-    %page 4
     e4 r r |
     R2.*3 |
     f'4-.\f f-. r |
@@ -78,27 +75,27 @@ clarinetOneMvtI = \relative c''
     g r r |
     r r gis( |
     a8 gis a gis a e) |
-
-    %page 5
     f( e g f e d) |
     c4 r r |
     R2.*5 |
     r4 e-.(\p e-.) |
-    e-.(_\mCresc e-. e-.) |
+    \crescTextCresc
+    e-.(\< e-. e-.) |
     e-.( e-. e-.)\sf\> |
     e2( d4)\! |
     R2.*4 |
     r4 ees-.( ees-.) |
-    ees-.(_\mCresc ees-. ees-.) |
+    ees-.(\< ees-. ees-.) |
+    \crescHairpin
     ees-.( ees-. ees-.) |
     ees2(\sf\> d4)\! |
     R2.*3 |
-
-    %page 6
     r4 d-.(\< d-.)\> |
     d4\p r r |
     R2.*7 |
-    r4 r f,8-._\mCresc g-. |
+    \crescTextCresc
+    r4 r f,8-.\< g-. |
+    \crescHairpin
     a-. b-. c-. d-. e-. f-. |
     g4\f c,2\sf |
     r4 c2\sf |
@@ -109,8 +106,6 @@ clarinetOneMvtI = \relative c''
     d'4-. f4.\sf g,8 |
     b4 d4.\sf g,8 |
     c2.~ |
-
-    %page 7
     c8 r r4 r |
     R2.*3 |
     r4 r8 a-. a-. a-. |
@@ -124,10 +119,10 @@ clarinetOneMvtI = \relative c''
     r4 ees-.\p r |
     d-. r d-. |
     r f-. r |
-
-    %page 8
     e-. r e-. |
-    a,2.~_\mCresc |
+    \crescTextCresc
+    a,2.~\< |
+    \crescHairpin
     a4. d8( cis d) |
     c e g e e e |
     f2.\ff |
@@ -150,15 +145,17 @@ clarinetOneMvtI = \relative c''
       R2.*2 |
     }
   }
-  R2.*31 | %page 9, page 10
-  r4 r g~_\mCresc |
+  R2.*31 |
+  \crescTextCresc
+  r4 r g~\< |
+  \crescHairpin
   g b,-.\ff b-. |
   b-. b-. b-. |
   b2.~ | b |
   b4-. b-. b-. |
   b-. b-. b-. |
   b2.~ | b2 b4 |
-  R2.*4 | %page 11
+  R2.*4 |
   c4-.\ff c-. c-. |
   c-. c-. c-. |
   c2.~ | c |
@@ -166,10 +163,10 @@ clarinetOneMvtI = \relative c''
   d-. d-. d-. |
   d2.~ | d2 b4 |
   a\p r r |
-  R2.*8 | %page 12
+  R2.*8 |
   r4 r8 c\f c r |
   r4 r8 f f r |
-  r8 bes, bes2:8 |
+  r8 bes, \repeat tremolo 4 bes8 |
   ees2.\ff | e |
   f4 g4.(\p f8 |
   e4) f4.( ees8 |
@@ -180,8 +177,6 @@ clarinetOneMvtI = \relative c''
   bes4) d4.( bes8 |
   f4) r r |
   f2.~\sfp |
-
-  %page 13
   f8 g-. a-. bes-. c-. d-. |
   ees4 r r |
   R2.*3 |
@@ -189,23 +184,17 @@ clarinetOneMvtI = \relative c''
   ees( d8 c bes a) |
   g4 r r |
   R2.*10 |
-
-  %page 14
   r4 g-. g'\sf |
   g e2~\ff | e2. |
   R2.*16
   r4 dis2~\sf | dis2.~ | dis4 dis2\sf |
   dis2\sf dis4~\sf | dis dis2\sf | dis2\sf dis4\sf |
-
-  %page 15
   r4 d2\sf | d\sf d4\sf |
   r4 d2\sf | d\sf d4-.\sf |
   \repeat unfold 3 {d2\f r4 |}
   d2\f d4-.\f |
-  R2.*32 | %page 16
+  R2.*32 |
   d,4( f a) | bes2(\sf d,4) |
-
-  %page 17
   ees4( g b) | c2(\sf e,4) |
   f-. a-. c-. |
   f-. a-. c~\sf |
@@ -215,10 +204,14 @@ clarinetOneMvtI = \relative c''
   R2. |
   r4 f'(\p e | f4.\sf g8 aes4) |
   g( c b | c4.\sf bes8 aes g) |
-  f4 f( g | aes4._\mSFDecresc g8 f4) |
-  ees2.~_\mDolceCresc | ees8( des c des ees des) |
+  \dimTextDecresc
+  f4 f( g | aes4.\sf\> g8 f4) |
+  \dimHairpin
+  \crescTextCresc
+  ees2.~_\mDolce\< | ees8( des c des ees des) |
+  \crescHairpin
   c4\p r r |
-  R2.*8 | %page 18
+  R2.*8 |
   c2(\p e4 | c2 g4) |
   c( e g | aes) r r |
   c,2( f4 | c2 aes4) |
@@ -227,36 +220,36 @@ clarinetOneMvtI = \relative c''
   bes4( f' aes) | g4 r r |
   ees2( g4 | ees2 bes4) |
   bes( ees g) | g r r |
-  c,2(_\mCresc g'4 | c,2 bes4) |
+  \crescTextCresc
+  c,2(\< g'4 | c,2 bes4) |
+  \crescHairpin
   c( g' bes) |
   R2. |
   f2(\sf aes4) |
-
-  %page 19
   R2. |
   f2(\sf aes4) |
   f2.~\ff | f~ |
   f4 f f | f f f | f r r |
   R2.*3 |
   b,2.\p | b | b | b |
-  bes_\mDecresc | bes | aes | aes |
+  \dimTextDecresc
+  bes\> | bes | aes | aes |
   bes\pp | bes | bes | bes |
   R2.*2 |
   des2.\pp | des |
   R2.*2 |
   c2.\pp | c |
-
-  %page 20
   R2.*6 |
   bes2.\f | g'\ff | f4 r r |
   R2.*17 |
   bes,2.~\p | bes~ | bes~ | bes
   bes2.~ |
-
-  %page 21
-  bes | bes2.~_\mCresc | bes~_\mDecresc | bes4\pp r r |
+  \crescTextCresc
+  bes | bes2.~\< | bes~\> | bes4\pp r r |
+  \dimHairpin
   R2.*2 |
-  r4 r d8-._\mCresc c-. |
+  r4 r d8-.\< c-. |
+  \crescHairpin
   bes-. c-. bes-. a-. bes-. a-. |
   g-. f-. e-. f-. g-. bes-. |
   a4\sf c c | c2 c4 |
@@ -267,8 +260,6 @@ clarinetOneMvtI = \relative c''
   c2\ff f4\sf |
   f2 f4~\sf | f f f |
   f2 f4~\sf |
-
-  %page 22
   f f f |
   f2 fis4\sf |
   g2. | f |
@@ -284,32 +275,32 @@ clarinetOneMvtI = \relative c''
   f r8 f,( g a) |
   bes4-.( bes-. bes-.) |
   a r r |
-
-  %page 23
   R2.*3 |
   e'4-.\f e-. r | r r r8 e |
   f4-. f-. r | r r r8 d |
   ees4-. ees-. r | r r r8 ees-. |
   d-. r r4 r |
   R2.*7 |
-
-  %page 24
-  c2.~_\mCresc | c~ |
+  \crescTextCresc
+  c2.~\< | c~ |
   c8\ff b-. bes-. a-. g-. f-. |
   e-. d'-. c-. bes-. a-. g-. |
   f4 a'-.(\p a-.) |
-  a-.(_\mCresc a-. a-.) |
+  a-.(\< a-. a-.) |
   a-.( a-.) a~\sf\> |
   a2( g4)\! |
   R2.*4 |
   r4 aes-.( aes-.) |
-  aes-.(_\mCresc aes-. aes-.) |
+  aes-.(\< aes-. aes-.) |
+  \crescHairpin
   aes-.( aes-. aes-.) |
   aes2(\sf\> g4)\! |
   R2.*2 |
   r4 f( d | c2\< b4)\> | bes4\! r r |
-  R2.*7 | %page 25
-  r4 r bes,8-._\mCresc c-. |
+  R2.*7 |
+  \crescTextCresc
+  r4 r bes,8-.\< c-. |
+  \crescHairpin
   d-. e-. f-. g-. a-. bes-. |
   c4\f c2\sf |
   r4 c2\sf |
@@ -323,8 +314,6 @@ clarinetOneMvtI = \relative c''
   f4 r r |
   R2.*2 |
   r4 r r8 cis8 |
-
-  %page 26
   d-. e-. f-. fis-. g-. gis-. |
   a4-. g-.\ff f-. |
   r ees-. d-. |
@@ -339,9 +328,9 @@ clarinetOneMvtI = \relative c''
   c-. r c-. |
   r c-. r |
   R2. |
-  r4 r8 d(_\mCresc c bes) |
-
-  %page 27
+  \crescTextCresc
+  r4 r8 d(\< c bes) |
+  \crescHairpin
   a-. f-. a-. c-. f-. a-. |
   e2.\ff |
   \repeat unfold 3 {f4\f r r |}
@@ -352,28 +341,25 @@ clarinetOneMvtI = \relative c''
   ees2.~\f | ees~ | ees4\p r r |
   R2. |
   d2.~ | d~ | d4\p r r |
-  R2.*9 | %page 28
+  R2.*9 |
   d2.~\pp | \repeat unfold 3 {d~ |} | d4 r r |
   R2.*3 |
   r4 bes(\p c | d4.\sf c8 bes4) |
   a( d) d | d2~\sf d8( c) |
   bes4 bes( c | d4.\sf c8 bes4) |
   R2. |
-  c2.~_\mCresc | c4\p f( e |
-  
-  %page 29
+  \crescTextCresc
+  c2.~\< | c4\p f( e |
   f4.\sf g8 aes4) |
   g( c b | c4. bes8 aes g) |
   f4 f( e | f4.\sf g8 aes4) |
   g4 r r |
   R2.*13 |
   d2.~\pp | d2( dis4 | e2.~) |
-
-  %page 30
   e4 e-. c-. |
   g'( f2~) |
   f4 f-. c-. |
-  aes'_\mCresc^\mEspr aes2~ |
+  aes'\<^\mEspr aes2~ |
   aes4 aes2~ |
   aes4 aes-.( aes-.) |
   aes( g f) |
@@ -383,40 +369,37 @@ clarinetOneMvtI = \relative c''
   r d-. r |
   d-. r d-. |
   r d-. r |
-  c2.~_\mCresc |
+  c2.~\< |
   c4 a-. a-. |
   g-. g-. g-. |
   g-.\p g-. g-. |
   a-. r r |
-  R2.*7 | %page 31
+  R2.*7 |
   \repeat unfold 8 {c2.~ |}
-  c8 a16( bes c8-.) c-._\mCresc d-. e-. |
+  c8 a16( bes c8-.) c-.\< d-. e-. |
+  \crescHairpin
   f-. c-. d-. e-. f-. g-. |
   a-.\sf a16( g f8-.) e-. d-. c-. |
   bes-. a-. g-. f-. e-. d-. |
-
-  %page 32
   c-. c16( d e8-.) f-. g-. a-. |
   bes4 r8 f'-. g-. a-. |
   bes-.\sf a-. g-. f-. e-. d-. |
   c-. d-. c-. bes-. a-. g-. |
   f\f f' f f a a |
-  f2:8 c8 c |
+  \repeat tremolo 4 f8 c8 c |
   f f a, a c c |
-  c2.:8 |
-  g'2:8 bes8 bes |
-  g2:8 c,8 c |
+  \repeat tremolo 6 c8 |
+  \repeat tremolo 4 g'8 bes8 bes |
+  \repeat tremolo 4 g8 c,8 c |
   g' g bes, bes c c |
-  c2.:8 |
-  c8 c a'2:8 |
+  \repeat tremolo 6 c8 |
+  c8 c \repeat tremolo 4 a'8 |
   a2. |
   g4 g2\sf |
   r4 gis2\sf |
   r4 c,2\sf |
   r4 bes2 |
   r4 a2 |
-
-  %page 33
   r4 d2 |
   f2.\ff | e |
   a,2(\p\< bes8 c | d4\> e f) |
@@ -424,7 +407,8 @@ clarinetOneMvtI = \relative c''
   bes4-.( bes-. bes-.) |
   a r r |
   R2. |
-  r4 r8 c-._\mCresc bes-. a-. |
+  \crescTextCresc
+  r4 r8 c-.\< bes-. a-. |
   g-. a-. bes-. a-. g-. f-. |
   e4\f g2~\f |
   g4 bes2~\f |
