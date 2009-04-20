@@ -5,11 +5,11 @@ submitted to [Mutopia](http://www.mutopiaproject.org/). Enjoy!
 ## How to Contribute
 - Use the music (and let us know if you do).
 - Tell a friend.
-- Submit errors or improvement idea.
+- Submit errors or improvement ideas.
   - Use the Mutopia Mailing list: [Gmane](http://news.gmane.org/gmane.music.mutopia.discuss).
   - Email and other contact information are included with score source.
   - See the [blog](http://open-scores.blogspot.com).
-- Submit a improvement/fix.
+- Submit improvements/fixes.
   - Small fixes can be submitted through email.
   - Fork the repository and make the change: [Github Guide](http://github.com/guides/fork-a-project-and-submit-your-modifications).
 
