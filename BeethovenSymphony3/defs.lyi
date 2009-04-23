@@ -253,7 +253,6 @@ rehearsalMarksMvtIII =
   s2.*30 |
   \repeat volta 2
   {
-    %s2.*132 |
     s2.*62 |
 
     \rMark "A"
@@ -374,7 +373,6 @@ rehearsalMarksMvtIV =
     s4 s8
   }
   s8 |
-  %s2*272
   s2*31 |
 
   \rMark "A"
@@ -395,7 +393,6 @@ rehearsalMarksMvtIV =
 
   %Poco Andante
   s8 |
-  %s2*82 |
   s2*32 |
 
   \rMark "F"
