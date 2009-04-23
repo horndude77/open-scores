@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 \include "defs.lyi"
 
 hornOne = \relative c''
@@ -430,17 +432,17 @@ hornOne = \relative c''
 
   %35
   d4. cis~\fp |
-  \setTextCresc
+  \crescTextCresc
   cis8 cis16\< cis cis8 cis cis cis |
   d4.(\f\> f8)\! r r |
   R2. |
   f4.\f\< aes~\ffp |
-  \setTextCresc
+  \crescTextCresc
   aes8 ees16-.\< ees-. ees8-. ees-. ees-. ees-. |
   f4.(\f\> e8) r r |
   r4. r4 cis16(\ff a |
   dis,4.~ dis8) r f'16(\mf d |
-  \setTextCresc
+  \crescTextCresc
   a4.~ a8) r fis'16(\< dis |
   ais4.~ ais8) r fis'16( dis |
   ais4.) g'4.( |
@@ -451,7 +453,7 @@ hornOne = \relative c''
   d dis e g f e |
   d4.~ d8 g,\f c |
   d dis e a g f |
-  \setTextCresc
+  \crescTextCresc
   e4.~\< e8 g, c |
   d dis e bes' a g |
   f4\! r8 r4. |

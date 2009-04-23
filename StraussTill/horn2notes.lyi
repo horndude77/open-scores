@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 hornTwo = \relative c''
 {
   \transposition f
@@ -375,17 +377,17 @@ hornTwo = \relative c''
 
   %35
   b\< a~\fp |
-  \setTextCresc
+  \crescTextCresc
   a8 a16\< a a8 a a a |
   gis4.(\f\> a8) r r |
   R2. |
   aes4.\f\< aes~\ffp |
-  \setTextCresc
+  \crescTextCresc
   aes8 aes16-.\< aes-. aes8-. aes-. aes-. aes-. |
   gis4.(\f\> a8) r r |
   r4. r4 cis16(\ff a |
   dis,4.~ dis8) r f'16(\mf d |
-  \setTextCresc
+  \crescTextCresc
   a4.~ a8) r fis'16(\< dis |
   ais4.~ ais8) r fis'16( dis |
   ais4.) e'4.( |
@@ -396,7 +398,7 @@ hornTwo = \relative c''
   g b c e dis c |
   g4.~ g8 g\f c |
   g b c f e dis |
-  \setTextCresc
+  \crescTextCresc
   c4.~\< c8 g c |
   g b c g' f e |
   d4\! r8 r4. |

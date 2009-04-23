@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 hornFour = \relative c''
 {
   \transposition f
@@ -20,7 +22,7 @@ hornFour = \relative c''
   R2. |
   r4. g8-.\mf b-. c-. |
   cis-. d-. r r4. |
-  \setTextCresc
+  \crescTextCresc
   r4 g,8-.\< gis-. a-. ais-. |
   b-. c-. cis-. d-. ees-. e-. |
   f\f r r r4. |
@@ -145,7 +147,7 @@ hornFour = \relative c''
   R2.*6 |
   d4.~\p d8 r r |
   R2.*2 |
-  \setTextCresc
+  \crescTextCresc
   d'2.(\mf\< |
   e->) |
   << {s8*0\!} {R2.} >> |
@@ -224,7 +226,7 @@ hornFour = \relative c''
   a8) r r r4. |
   R2.*2 |
   c,8[-.\pp r c]-. c-. r r |
-  \setTextCresc
+  \crescTextCresc
   c8[ r c] aes'4.(\< |
   aes8 g fis) cis'4( c8 |
   b4. bes8)\! r r |
@@ -246,7 +248,7 @@ hornFour = \relative c''
 
   %25
   cis4) r8 \clef "bass^8" g,4.~(\p |
-  \setTextCresc
+  \crescTextCresc
   g8 fis f) b4.~(\< |
   b8 a gis) d'4.~( |
   d8 c b) fis'4.~( |
@@ -356,25 +358,25 @@ hornFour = \relative c''
   \transposition e
   e'8-.\p^"(in E)" d-. c-. g4 r8 |
   R2. |
-  \setTextCresc
+  \crescTextCresc
   r4. f'8-.\< ees-. bes-. |
   R2. |
   r4. g'8-. f-. c-. |
 
   %35
   a4. g~\fp |
-  \setTextCresc
+  \crescTextCresc
   g8 g16\< g g8 g g g |
   g4.~\f\> g8\! r r |
   R2. |
   \transposition f
   f4.->\f\<^"(in F)" c'~\ffp |
-  \setTextCresc
+  \crescTextCresc
   c8 c16\< c c8 c c c |
   f,4.(\f\> e8) r r |
   R2. |
   c'8->\mf b bes a4 r8 |
-  \setTextCresc
+  \crescTextCresc
   c8\< b bes a4 r8 |
   cis8-> c-. b-. bes4 r8 |
   cis8-> c-. b-. ais4.( |
@@ -385,7 +387,7 @@ hornFour = \relative c''
   g b c e d c |
   g4.~ g8 r r |
   g4.(\f d8) e f |
-  \setTextCresc
+  \crescTextCresc
   g8\< a b c4 r8 |
   g4.( d8) e f |
   g a b c4.->\! |
