@@ -4,8 +4,8 @@
 
 clarinetOneMvtII = \relative c''
 {
-  \key d \minor
   \transposition bes
+  \key d \minor
   \partial 8 r8 |
   R2*8 |
   a2\p | a |

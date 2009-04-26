@@ -85,7 +85,7 @@ instrument = "Orchestra"
           %\partcombine
           <<
             \new Voice {\voiceOne \keepWithTag #'score \bassoonOneMvtIV}
-            \new Voice {\voiceOne \keepWithTag #'score \bassoonTwoMvtIV}
+            \new Voice {\voiceTwo \keepWithTag #'score \bassoonTwoMvtIV}
           >>
         }
       >>
@@ -107,7 +107,7 @@ instrument = "Orchestra"
         {
           \set Staff.instrumentName = "Horn III"
           \set Staff.shortInstrumentName = "Hn.III"
-          << \outlineMvtIV \hornThreeMvtIV >>
+          \hornThreeMvtIV
         }
         \new Staff
         {

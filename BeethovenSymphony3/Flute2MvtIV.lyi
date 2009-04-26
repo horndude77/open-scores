@@ -146,16 +146,16 @@ fluteTwoMvtIV = \relative c'''
   fis16( d e fis g a bes c) |
   d4-._\mSempreF d8.-. d16-. |
   d4-. d8.-. d16-. |
-  d8. c16 bes8. a16 |
-  bes8. c16 bes8. a16 |
+  d8.-. c16-. bes8.-. a16-. |
+  bes8.-. c16-. bes8.-. a16-. |
   \acciaccatura a8 g8.-. fis16-. g8.-. bes16-. |
   a8.-. bes16-. c8.-. a16-. |
   fis8.-. g16-. a8.-. fis16-. |
   g16( d e fis g a bes c) |
   d4-. d8.-. d16-. |
   d4-. d8.-. d16-. |
-  d8. c16 bes8. a16 |
-  bes8. c16 bes8. a16 |
+  d8.-. c16-. bes8.-. a16-. |
+  bes8.-. c16-. bes8.-. a16-. |
   \acciaccatura a8 g8.-. fis16-. g8.-. bes16-. |
   a8.-. bes16-. c8.-. a16-. |
   fis8.-. g16-. a8.-. fis16-. |

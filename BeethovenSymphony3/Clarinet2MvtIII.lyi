@@ -4,8 +4,8 @@
 
 clarinetTwoMvtIII = \relative c'
 {
-  \transposition ees
-  \key bes \major
+  \transposition bes
+  \key f \major
   r4
   R2.*30 |
   \repeat volta 2

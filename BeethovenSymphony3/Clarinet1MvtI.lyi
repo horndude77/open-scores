@@ -4,7 +4,6 @@
 
 clarinetOneMvtI = \relative c''
 {
-  \time 3/4
   \transposition bes
   \key f \major
   f4-.\f r r |

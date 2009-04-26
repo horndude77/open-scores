@@ -4,8 +4,8 @@
 
 clarinetTwoMvtII = \relative c'
 {
-  \key f \major
   \transposition bes
+  \key f \major
   \partial 8 r8 |
   R2*8 |
   f2\p | f |

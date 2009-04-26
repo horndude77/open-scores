@@ -42,56 +42,51 @@ instrument = "Orchestra"
       <<
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Flutes"
           \set Staff.shortInstrumentName = "Fl."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \fluteOneMvtIII
-            \keepWithTag #'score \fluteTwoMvtIII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \fluteOneMvtIII}
+            \new Voice {\voiceTwo \keepWithTag #'score \fluteTwoMvtIII}
+          >>
         }
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Oboes"
           \set Staff.shortInstrumentName = "Ob."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \oboeOneMvtIII
-            \keepWithTag #'score \oboeTwoMvtIII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \oboeOneMvtIII}
+            \new Voice {\voiceTwo \keepWithTag #'score \oboeTwoMvtIII}
+          >>
         }
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Clarinets"
           \set Staff.shortInstrumentName = "Cl."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \clarinetOneMvtIII
-            \keepWithTag #'score \clarinetTwoMvtIII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \clarinetOneMvtIII}
+            \new Voice {\voiceTwo \keepWithTag #'score \clarinetTwoMvtIII}
+          >>
         }
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Bassoons"
           \set Staff.shortInstrumentName = "Bs."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \bassoonOneMvtIII
-            \keepWithTag #'score \bassoonTwoMvtIII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \bassoonOneMvtIII}
+            \new Voice {\voiceTwo \keepWithTag #'score \bassoonTwoMvtIII}
+          >>
         }
       >>
       \new StaffGroup
       <<
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Horns I,II"
           \set Staff.shortInstrumentName = "Hn."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \hornOneMvtIII
-            \keepWithTag #'score \hornTwoMvtIII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \hornOneMvtIII}
+            \new Voice {\voiceTwo \keepWithTag #'score \hornTwoMvtIII}
+          >>
         }
         \new Staff
         {
@@ -101,13 +96,12 @@ instrument = "Orchestra"
         }
         \new Staff
         {
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Trumpets"
           \set Staff.shortInstrumentName = "Tr."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \trumpetOneMvtIII
-            \keepWithTag #'score \trumpetTwoMvtIII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \trumpetOneMvtIII}
+            \new Voice {\voiceTwo \keepWithTag #'score \trumpetTwoMvtIII}
+          >>
         }
       >>
       \new Staff

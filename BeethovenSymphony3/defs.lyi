@@ -63,6 +63,7 @@ mEspr = \markup{\italic espress.}
 mDolce = \markup{\italic dolce}
 mDolceCresc = \markup{\italic {dolce cresc.}}
 mPDolce = \markup{\dynamic p \italic dolce}
+mPConEspressione = \markup{\dynamic p \italic {con espressione}}
 mPiuF = \markup{\italic più \dynamic f}
 pizz = \markup{\italic pizz.}
 arco = \markup{\italic arco}
@@ -301,6 +302,8 @@ outlineMvtIII =
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 3/4
+  \set Score.tempoHideNote = ##t
+  \tempo 2. = 116
   \tempoMark "Allegro vivace"
   \partial 4 s4
   s2.*30 |
@@ -331,9 +334,11 @@ outlineMvtIII =
 
   \tempoMark "Alla breve"
   \time 2/2
+  \tempo 1 = 116
   s1*4 \bar "||"
 
   \time 3/4
+  \tempo 2. = 116
   s2.*38 |
 
   \tempoMark "Coda"

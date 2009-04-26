@@ -4,7 +4,6 @@
 
 clarinetTwoMvtI = \relative c''
 {
-  \time 3/4
   \transposition bes
   \key f \major
   a4-.\f r r |
@@ -239,8 +238,8 @@ clarinetTwoMvtI = \relative c''
   r4 c-.( c-.) |
   c-.(\< des-. des-.) |
   des-.( des-. des-.) |
-  << des2. {s4\sf\> s s\!} >> |
-  R2.*3 |
+  des2.\sf\> |
+  s1*0\! R2.*3 |
   \crescHairpin
   r4 f,-.(\p\< f-.)\> | g\! r r |
   R2.*7 |
