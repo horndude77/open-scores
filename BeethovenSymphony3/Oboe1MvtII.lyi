@@ -27,7 +27,7 @@ oboeOneMvtII = \relative c''
   \crescTextCresc
   aes4(\< g8 f) |
   e8 r16. bes'32-.\f bes4 |
-  r4 aes8( g) |
+  r4 aes8(\p g) |
   \dimHairpin
   fis4( c'8.\> fis,16) |
   g2~\p | g |
@@ -37,8 +37,8 @@ oboeOneMvtII = \relative c''
   b8\! r r4 |
   R2*2 |
   r4 r8 c16.c32 |
-  c4 r |
-  R2 |
+  c4 \acciaccatura g'8\( f16. e32 f16. g32\) |
+  aes4( f8) r |
   \crescTextCresc
   f4\< ees32( d16.) c32( b16.) |
   c8-.\f aes'-. r fis~\p |
@@ -87,8 +87,8 @@ oboeOneMvtII = \relative c''
   g( fis g gis a f e d) |
   c8\f e4(_\mSemprePiuF g8) |
   g4. f16.( d32) |
-  c4.\ff g'8\sf |
-  e4. g8\sf |
+  c4.\ff g'8-.\sf |
+  e4. g8-.\sf |
   e8-. g-.\sf e-. g-.\sf |
   e-. r r4 |
   R2*3 |
@@ -157,7 +157,7 @@ oboeOneMvtII = \relative c''
   c4\p \acciaccatura g'8\( f16. e32 f16. g32\) |
   aes4( f8) r |
   f4\< ees32( d16.) c32( b16.) |
-  c8\f aes'-. r fis~\p |
+  c8-.\f aes'-. r fis~\p |
   \dimHairpin
   fis g4\p\> f16.(\! d32) |
   c8 r r4 |

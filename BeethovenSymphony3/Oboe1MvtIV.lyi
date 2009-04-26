@@ -84,7 +84,7 @@ oboeOneMvtIV = \relative c'''
   r8 bes'-.\f bes-. bes-. |
   bes bes bes r |
   r bes bes bes |
-  r4.\f\fermata r8 |
+  bes4.\f\fermata r8 |
   r8 g-. g-. g-. |
   r c c c |
   g g f f |
@@ -126,7 +126,7 @@ oboeOneMvtIV = \relative c'''
   a8-. a-. a-. a-. |
   a8-. a-. a-. a-. |
   a a a a |
-  fis fis g g |
+  fis\< fis g g |
   fis a a a |
   g g fis fis |
   fis fis e r |
@@ -201,7 +201,7 @@ oboeOneMvtIV = \relative c'''
   f-. ees-. d-. f-. |
   ees4. bes'8-. |
   aes-. g-. f-. aes-. |
-  g-. f-. ees-. g-. 
+  g-. f-. ees-. g-. |
   f ees des f |
   ees d c ees |
   des c bes des |
@@ -273,7 +273,7 @@ oboeOneMvtIV = \relative c'''
   bes8 bes-. bes4~\sf |
   bes8 bes-. bes4~\sf |
   bes16 g g g r aes aes aes |
-  r g\sf g g g e e e |
+  r g\sf g g g ees e e |
   f f d d ees ees ges ges |
   ees bes' bes bes bes8 r |
   r8 bes-. bes4~\sf |
