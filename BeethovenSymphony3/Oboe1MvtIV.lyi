@@ -326,29 +326,29 @@ oboeOneMvtIV = \relative c'''
       \repeat tremolo 4 bes16^\staccatoFour
         \repeat unfold 7 {\repeat tremolo 4 bes16} |
     }
-    >>
-    bes16 ees, f g aes\sf g aes a |
-    bes\sf a, bes b c\sf bes c d |
-    ees8 c' r aes |
-    r f r bes |
-    r c\sf r aes |
-    r f r bes |
-    ees,16-. bes-. ees-. bes-. ees-. bes-. g'-.\sf ees-. |
-    g-. ees-. g-. ees-. g ees bes'\sf g |
-    bes g ees\sf bes ees bes g'\sf ees |
-    g ees g\sf ees g ees g\sf ees |
-    g2_\mSemprePiuF |
-    g |
-    g |
-    g16 ees f g aes bes c d |
-    ees,4\ff r |
-    g r |
-    \repeat unfold 5 {g8 r} r4 |
-    bes8 r r4 |
-    \repeat unfold 5 {bes8 r} r4 |
-    r16 ees, f g aes bes c d |
-    g,8 r r4 |
-    bes8 r r4 |
-    g4 r\fermata |
+  >>
+  bes16 ees, f g aes\sf g aes a |
+  bes\sf a, bes b c\sf bes c d |
+  ees8 c' r aes |
+  r f r bes |
+  r c\sf r aes |
+  r f r bes |
+  ees,16-. bes-. ees-. bes-. ees-. bes-. g'-.\sf ees-. |
+  g-. ees-. g-. ees-. g ees bes'\sf g |
+  bes g ees\sf bes ees bes g'\sf ees |
+  g ees g\sf ees g ees g\sf ees |
+  g2_\mSemprePiuF |
+  g |
+  g |
+  g16 ees f g aes bes c d |
+  ees,4\ff r |
+  g r |
+  \repeat unfold 5 {g8 r} r4 |
+  bes8 r r4 |
+  \repeat unfold 5 {bes8 r} r4 |
+  r16 ees, f g aes bes c d |
+  g,8 r r4 |
+  bes8 r r4 |
+  g4 r\fermata |
 }
 
