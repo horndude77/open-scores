@@ -19,6 +19,7 @@ bassMvtII = \relative c,
   c8 r16 \times 2/3 {c32 c c} ees8 r16 \times 2/3 {ees32 ees ees} |
   g8\< r16 \times 2/3 {g32 g g} g8\> r16 \times 2/3 {g32 g g} |
   f8\! r r8. \times 2/3 {b,32 b b} |
+  \override DynamicTextSpanner #'dash-period = #-1.0
   \crescTextCresc
   b8 r r8. \times 2/3 {b32\< b b} |
   \crescHairpin
@@ -26,7 +27,7 @@ bassMvtII = \relative c,
   bes8 r16 \times 2/3 {bes32\> bes bes} bes8 r16 \times 2/3 {bes32 bes bes} |
   \dimHairpin
   ees8\p r r4 |
-  g4( f8 bes,) |
+  g4(\p f8 ees) |
   d r r4 |
   \crescTextCresc
   c4(\< bes8 aes) |
@@ -51,7 +52,9 @@ bassMvtII = \relative c,
   c8-.\p aes'16.-. aes32-. d,8-. bes'16.-. bes32-. |
   ees,8 r r8. \times 2/3 {ees32 ees ees} |
   bes8 r r8. \times 2/3 {bes32 bes bes} |
-  c8 r16 \times 2/3 {c32 c c} bes8 r16 \times 2/3 {aes32 aes aes} |
+  \crescTextCresc
+  c8\< r16 \times 2/3 {c32 c c} bes8 r16 \times 2/3 {aes32 aes aes} |
+  \crescHairpin
   g8 r16 \times 2/3 {e'32 e e} e8\f r16 \times 2/3 {e32 e e} |
   e8\p r16 \times 2/3 {e32 e e} f8 r16 \times 2/3 {g32 g g} |
   aes8 r16 \times 2/3 {aes,32 aes aes} aes8-> r16 \times 2/3 {aes32 aes aes} |
@@ -192,11 +195,10 @@ bassMvtII = \relative c,
   \times 2/3 {fis,16-. a-. c-.} \times 2/3 {ees-. fis-. a-.} c8-. r |
   R2 |
   \times 2/3 {f,,16-. aes-. b-.} \times 2/3 {d-. f-. aes-.} b8-. r |
-  \repeat unfold 2
-  {
-    R2 |
-    g,8 r r4 |
-  }
+  R2 |
+  g,8 r r4 |
+  R2 |
+  g8\p r r4 |
   g8( aes g b->) |
   g( d'-> g, g'->) |
   \repeat unfold 2
@@ -212,7 +214,7 @@ bassMvtII = \relative c,
   bes\> bes' bes, bes' |
   \dimHairpin
   ees,\p aes
-  \times 2/3 {ees16 c' bes} \times 2/3 {aes g f} |
+  \times 2/3 {ees16 c' bes} \times 2/3 {aes g f} | %In the B&H part the c does not go up an octave
   ees2 |
   \crescTextCresc
   bes2\< |
@@ -272,7 +274,7 @@ bassMvtII = \relative c,
   R2 |
   g8 r r4 |
   R2 |
-  r8. \times 2/3 {g32(\f a b} c8) r16 \times 2/3 {g32(\> a b} |
-  c4.)\fermata\!
+  r8. \times 2/3 {g32(\f^\arco a b} c8) r16 \times 2/3 {g32(\> a b} |
+  c4.)\fermata\p
 }
 

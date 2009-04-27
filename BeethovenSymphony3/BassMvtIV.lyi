@@ -50,40 +50,44 @@ bassMvtIV = \relative c'
   ees, r r4 |
   R2 |
 
-  %repeat
-  R2*6 |
-
-  %first ending
-  R2*2 |
-
-  %second ending
-  r4 r8
-
-  %repeat
-  r8 |
-  R2*3 |
-  R2^\fermataMarkup
-  R2*3 |
-  r4 r8
-
-  %repeat
-  r8 |
-  R2*7 |
-  r4 r8
-
-  %repeat
-  r8 |
-  R2*3 |
-  R2^\fermataMarkup
-  R2*3 |
-  r4 r8
-  %end repeat
+  \repeat volta 2
+  {
+    R2*6
+  }
+  \alternative
+  {
+    {R2*2 |}
+    {r4 r8}
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    r4.\fermata r8 |
+    R2*3 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*7 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    r4.\fermata r8 |
+    R2*3 |
+    r4 r8
+  }
 
   r8 |
   ees4\p^\pizz r |
   bes' r |
   bes, r |
   ees r |
+  \override DynamicTextSpanner #'dash-period = #-1.0
   \crescTextCresc
   ees\< d |
   \crescHairpin
@@ -193,17 +197,20 @@ bassMvtIV = \relative c'
   \times 2/3 {b8 b b} \times 2/3 {bes bes bes} |
   \times 2/3 {a a a} \times 2/3 {a, a a} |
   d8 r r4 |
-  \repeat unfold 2
-  {
-    g2\sf |
-    d'\sf |
-    d,\sf |
-    g\sf |
-    g4-._\moltoMarcato g-. |
-    d'-. d-. |
-    d,-. d-. |
-    g8 r r4 |
-  }
+  <<
+    {s2*4_\mSempreF s2*4_\moltoMarcato}
+    \repeat unfold 2
+    {
+      g2\sf |
+      d'\sf |
+      d,\sf |
+      g\sf |
+      g4-. g-. |
+      d'-. d-. |
+      d,-. d-. |
+      g8 r r4 |
+    }
+  >>
   \repeat unfold 2
   {
     \times 2/3 {g,8 g' g} \times 2/3 {g ees c} |
