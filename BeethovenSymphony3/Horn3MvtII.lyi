@@ -10,23 +10,30 @@ hornThreeMvtII = \relative c''
   c2\p | c |
   c4 c8 c |
   R2*3 |
-  r8 g_\mDecresc g g |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \dimTextDecresc
+  r8 g\> g g |
   c\p c16. c32 c8 r |
   R2*20 |
   c2\p |
   g |
-  c4_\mCresc g |
+  \crescTextCresc
+  c4\< g |
   g8 r16. e'32-.\f e4 |
   r d8(\p c) |
+  \dimHairpin
   c4.\> c8\! |
   e r r4 |
   R2*5 |
-  r4_\mDecresc d |
-  d_\mCresc e\sf |
+  \dimTextDecresc
+  r4\> d |
+  d\< e\sf |
   d8 r r4 |
   f2 |
+  \crescHairpin
   f4.\< f8 |
   e-.\f d-. r4 |
+  \dimHairpin
   r8 c(\< d)\> d |
   c\p r r4 |
   R2*4 |
@@ -97,27 +104,31 @@ hornThreeMvtII = \relative c''
   r8 c16. c32 c8 c |
   r8 c16. c32 e8 e |
   r8 f16. f32 f8 f |
-  r8 f16._\mCresc f32 f8 f |
-  g8_\mDecresc g,16. g32 g8 g16. g32 |
+  \crescTextCresc
+  r8 f16.\< f32 f8 f |
+  \dimTextDecresc
+  g8\> g,16. g32 g8 g16. g32 |
   c8\p c16. c32 c8 r |
   c2 |
-  g_\mCresc |
+  \crescTextCresc
+  g\< |
   R2*2 |
   e'4(\p d8 c) |
-  c4_\mCresc c\> |
+  \dimHairpin
+  c4\< c\> |
   e8\p r r4 |
   R2*6 |
   r4 e\sf\> |
   d8\p f16. f32 f8 f |
   r8 f16. f32 f8 f |
-  r8 f16._\mCresc f32 f8 f16. f32 |
+  r8 f16.\< f32 f8 f16. f32 |
   e8-.\f d-. r c~\p |
   c8 e4\> e8\! |
   e r r4 |
   R2*5 |
   c4(\p d |
   c8) r r16 e e e |
-  c4(_\mCresc d) |
+  c4(\< d) |
   c8\p r r4 |
   R2*36 |
   r8 c4\sf\> c8 |

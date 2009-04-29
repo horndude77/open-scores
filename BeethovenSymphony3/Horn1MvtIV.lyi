@@ -14,7 +14,7 @@ hornOneMvtIV = \relative c''
   r f\sf |
   f2\sf\fermata |
 
-  R2*17 | %page 2
+  R2*17 |
   g,8-.\ff g-. g-. r |
   R2 |
   g4.\p\fermata r8 |
@@ -60,9 +60,12 @@ hornOneMvtIV = \relative c''
   g' |
   g, |
   c |
-  c4_\mCresc d |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  c4\< d |
   c4. e8-. |
-  f-._\mDecresc d-. e-. c-. |
+  \dimTextDecresc
+  f-.\> d-. e-. c-. |
   e4( d8) r |
   r8 g,-.\f g-. g-. |
   \repeat unfold 3 { r8 g-. g-. g-. } |
@@ -77,8 +80,6 @@ hornOneMvtIV = \relative c''
   c2 |
   d |
   e8 c d d |
-
-  %page 5
   c r r4 |
   r8 g'-.\f g-. g-. |
   g-. g-. g-. r |
@@ -91,20 +92,20 @@ hornOneMvtIV = \relative c''
   R2*7 |
   e4-.\ff e-. |
   e-. r |
-  R2*39 | %page 6, page 7
+  R2*39 |
   r4 g~\sf |
   g c, |
   R2*2 |
   c2 |
   g'4 g, |
-  R2*108 | %page 12
+  R2*108 |
   \transposition f
   c2\p^\markup{\bold {in F}} |
   g' |
   g, |
   c4 r |
   \transposition ees
-  R2*68 | %page 14
+  R2*68 |
   d2~^\markup{\bold {in E\flat}} |
   d~ |
   d4 r |
@@ -115,41 +116,39 @@ hornOneMvtIV = \relative c''
 
   %poco andante
   R2*6 |
-
-  %page 16
   r4 r8 d8(\p |
   e4 d8) r |
   r4 ees8..( d32) |
   d4 r |
   r4 f8..(\sf e32) |
   e4 r |
+  \crescHairpin
+  \dimHairpin
   r4 g\< |
   g4.\sf\> g8( |
   f)\p f( e) e |
   << {e4( d8)} {s8\< s\> s\!} >> r8 |
   g,2~\p | g4 g8.. g32 |
   g2~ | g4 g8.. g32 |
-  c2_\mCresc |
+  \crescTextCresc
+  c2\< |
   d2 |
+  \crescHairpin
   e4(\p\< d)_\> |
-
-  %page 17
-  e8\! g,[_\mCresc g g] |
+  \crescTextCresc
+  e8\! g,[\< g g] |
   g2~\p |
   g16 g'-. g-. g-. g-. g-. g-. g-. |
   g,2~ |
   g16 g'-. g-. g-. g-. g-. g-. g-. |
-  g8 r r16 e_\mCresc g e |
-
-  %page 18
+  g8 r r16 e\< g e |
   r4 r16 e g e |
+  \crescHairpin
   e4(\p\< g8. f16) |
   e8\! r r c8\ff |
   e4.\sf c8 |
   b4.\sf d8 |
   f4.\sf d8 |
-
-  %page 19
   c4.\sf e8 |
   g4-. g-. |
   g4.\sf e8 |
@@ -162,27 +161,24 @@ hornOneMvtIV = \relative c''
   g4.\sf e8 |
   d4.\sf a'8 |
   c,4(\sf e8. d16) |
-
-  %page 20
   c8 r r4 |
   r8 g'4\p e16 c |
-  g2(_\mCresc |
+  \crescTextCresc
+  g2(\< |
   d') |
   c4\p r |
   \times 2/3 {r16 g' g}
     \times 2/3 {g g g}
     \times 2/3 {g( e) e-.}
     \times 2/3 {e( c) c-.} |
-  c2_\mCresc |
+  c2\< |
   c2~ | c~\p | c~ | c~ |
   c8 c-. c-. c-. |
   c r r4 |
-
-  %page 21
   R2 |
   c4-. c-. |
   c2 |
-  c4-._\mCresc c-. |
+  c4-.\< c-. |
   c2 |
   c4-.\f c-. |
   c2 |
@@ -212,8 +208,6 @@ hornOneMvtIV = \relative c''
   r4 g8 g |
   c\sf r c\sf r |
   r4 g8 g |
-
-  %page 24
   c8 r r e16-.\sf c-. |
   e-. c-. r8 r g'16-.\sf e-. |
   g e c\sf g c g e'\sf c |

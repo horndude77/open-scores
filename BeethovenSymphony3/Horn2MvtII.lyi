@@ -9,27 +9,26 @@ hornTwoMvtII = \relative c''
   R2*8 |
   g2\p | g |
   g4 g8 g |
-
-  %page 2
   g4. r8 |
   R2 |
-  f'2~_\mPCresc |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  f'2~\p\< |
   f8 r r4 |
   R2*5 |
   r4 c,8-.( c-.) |
   c4. c8 |
+  \crescHairpin
   g'2\pp | g | g~\< |
   g4.\> g8\! |
   g8 r r4 |
   R2*2 |
   r4 c,\sf |
   c\p r |
-  R2*9 | %page 3
+  R2*9 |
   c2~\fp |
   c8 c\> c c |
   g'2 | g | g\< | g~\> |
-
-  %page 4
   g8\! r r4 |
   R2*3 |
   f'2\p | f |
@@ -41,8 +40,6 @@ hornTwoMvtII = \relative c''
   c'4\f c8.. c32 |
   c4.\sf\> c,8 |
   c4(\p g') |
-
-  %page 5
   c,8 r r4 |
   c4( g') |
   c,8 r r4 |
@@ -55,19 +52,16 @@ hornTwoMvtII = \relative c''
   c~\p | c |
   g( | d'8) r r e,~ |
   e r r d' |
-
-  %page 6
   g,4.\ff g8-.\sf |
   g4. g8-.\sf |
   g-. g-.\sf g-. g-.\sf |
   g-. r r4 |
   c,2~\p |
   c8 c c c |
-  c4_\mCresc c | c c~ | c8\p r r4 |
+  \crescTextCresc
+  c4\< c | c c~ | c8\p r r4 |
   R2 |
   g'4 \times 2/3 {c,16 e g} \times 2/3 {c e, c} |
-
-  %page 7
   g'4 \times 2/3 {c,16 e g} \times 2/3 {c e, c} |
   g'2~ | g |
   c,4(\p e | g2) |
@@ -75,8 +69,6 @@ hornTwoMvtII = \relative c''
   r c' r g |
   r c, r c |
   e\f c'4_\mSemprePiuF e16( c) |
-
-  %page 8
   g4. g8 |
   e4.\ff g8-.\sf |
   e4. g8-.\sf |
@@ -85,13 +77,11 @@ hornTwoMvtII = \relative c''
   R2*3 |
 
   %minore
-  R2*20 | %page 9
+  R2*20 |
   r8 g4\f g8 |
   g,4 g8 g |
   g4.\sf g8 |
   g g g g'~ |
-
-  %page 10
   g c, c c |
   c\ff r f'4 |
   f2 |
@@ -101,8 +91,6 @@ hornTwoMvtII = \relative c''
   c2~\ff |
   c4 f'~\sf |
   f d~ |
-
-  %page 11
   d g( |
   g,) g |
   d'8 d4.~\sf |
@@ -112,52 +100,52 @@ hornTwoMvtII = \relative c''
   R2*8 |
   c,2\ff |
   c | c4 c8.. c32 |
-
-  %page 12
   c2\sf | c4 c8.. c32 |
   c2~\sf | c8 c c c |
   f'2~\ff | f8 f f f |
   f r r4 |
-  R2*4 | %page 13
+  R2*4 |
   r8 g,16.\p g32 g8 g |
   \repeat unfold 3 {r8 g16. g32 g8 g |}
   r8 f'16. f32 f8 f |
-  r8 f16._\mCresc f32 f8 f |
+  r8 f16.\< f32 f8 f |
   f8\p r r4 |
-  R2*4 | %page 14
-  r4 \clef bass c,,,~\p | c2~ | c2\espressivo |
-  \clef treble g''2\p | g | g\< | g4.\> g8 |
+  R2*4 |
+  r4 \clef "bass^8" c,,~\p | c2~ | c2\espressivo |
+  \crescHairpin
+  \clef treble g'2\p | g | g\< | g4.\> g8 |
   g\! r r4 |
   R2*2 | r4 c4\sf\> |
-
-  %page 15
   c8\p f'16. f32 f8 f |
   r8 f16. f32 f8 f |
   r8 f16. f32 f8 f16. f32 |
   c,8-.\f c-. r c~\p |
   c c4\> g'8\! |
   c, r r4 |
-  R2*3 | %page 16
+  R2*3 |
   c'4\f c8.. c32 |
   c2\sf\> |
   c,4(\p g' |
   c,8) r r4 |
-  c4(_\mCresc g'8) g |
+  \crescTextCresc
+  c4(\< g'8) g |
   c,\f r r4 |
-  R2*13 | %page 17
+  R2*13 |
   c2\pp | c |
-  c4._\mCresc c8 |
+  c4.\< c8 |
   c4 c8 c |
   c c c c |
-  c2_\mPCresc |
+  c2\p\< |
   r4 c8\p r |
   r4 c4( |
   b2)(\espressivo | c8) r r4 |
   b2(\espressivo | c8) r r4 |
-  b2~ | b~ | b~_\mDecresc |
+  \dimTextDecresc
+  b2~ | b~ | b~\> |
   R2*4 |
   g'2(\pp | c,4) r |
   g'2( | c,4) r |
+  \dimHairpin
   r8 c4\sf\> c8 |
   c4.\p\fermata
 }

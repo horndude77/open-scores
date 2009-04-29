@@ -9,7 +9,7 @@ hornOneMvtIII = \relative c''
   R2.*30 |
   \repeat volta 2
   {
-    R2.*52 | %page 2 %page 3
+    R2.*52 |
 
     r4 g-.\p g-. |
     g-. g-. g-. |
@@ -21,8 +21,6 @@ hornOneMvtIII = \relative c''
     c, c c |
     \repeat unfold 7 {g'2.} |
     g4 c, c |
-
-    %page 4
     c2. |
     f |
     e |
@@ -50,7 +48,7 @@ hornOneMvtIII = \relative c''
     r4 c-.\f c-. |
     \repeat unfold 3 {c-. c-. c-. |}
     c r r |
-    R2.*7 | %page 5
+    R2.*7 |
     c4\p r r |
     c r r |
     d r r |
@@ -58,8 +56,6 @@ hornOneMvtIII = \relative c''
     e r r |
     e r r |
     c r r |
-
-    %page 6
     g g g |
     g\ff g g |
     g d' d |
@@ -91,7 +87,9 @@ hornOneMvtIII = \relative c''
   c2 e4 |
   d4 r r |
   R2.*2 |
-  r4 r e4-.-\mCresc |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  r4 r e4-.\< |
   e( c) g'-. g2.~\sf |
   g4 r g\f |
   a r b |
@@ -106,7 +104,7 @@ hornOneMvtIII = \relative c''
   c2 e4 |
   d4 r r |
   R2.*2 |
-  r4 r e4-.-\mCresc |
+  r4 r e4-.\< |
   e( c) g'-. g2.~\sf |
   g4 r g\f |
   a r b |
@@ -125,7 +123,7 @@ hornOneMvtIII = \relative c''
     c2 e4 |
     d4 r r |
     R2.*2 |
-    r4 r e4-.-\mCresc |
+    r4 r e4-.\< |
     e( c) g'-. |
     g2.~\sf\> |
     g2. |
@@ -138,8 +136,6 @@ hornOneMvtIII = \relative c''
     f2\! e4 |
     d4 r r |
     R2.*3 |
-
-    %page 9
     r4 r e( |
     f2.~)\sf |
     f2.~\> |
@@ -151,7 +147,7 @@ hornOneMvtIII = \relative c''
     { f4\repeatTie r r | }
   }
 
-  R2.*84 | %page 10, page 11
+  R2.*84 |
   r4 r g, |
   g g g |
   g g g |
@@ -187,8 +183,6 @@ hornOneMvtIII = \relative c''
   c r r |
   R2. |
   r4 c\p c |
-
-  %page 13
   c c c |
   c c\p c |
   c c c |
@@ -198,14 +192,12 @@ hornOneMvtIII = \relative c''
   c r r |
   d r r |
   d r r |
-  e_\mCresc r r |
+  e\< r r |
   e r r |
   c r r |
   g g g |
   g\ff g g |
   g d' d |
-
-  %page 14
   d f f |
   f e d |
   c\f r r |
@@ -213,11 +205,11 @@ hornOneMvtIII = \relative c''
 
   %coda
   R2.*8 |
-  r4 d_\mPCresc e |
+  r4 d\p\< e |
   d e d |
   e d e |
   d e d |
-  e d_\mCresc e |
+  e d\< e |
   d e d |
   e\f d e |
   d e d |

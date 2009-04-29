@@ -23,37 +23,48 @@ hornTwoMvtIV = \relative c'
   g4.\p\fermata r8 |
   R2*5
 
-  %repeat
-  R2*6 |
-  %first ending
-  R2*2 |
-  %second ending
-  r4 r8
-  %repeat
-  r8
-  R2*3 |
-  r4.\fermata r8 |
-  r2*3 |
-  r4 r8
-  %repeat
-  r8 |
-  R2*7 |
-  r4 r8
-  %repeat
-  r8
-  R2*3 |
-  r4.\fermata r8 |
-  r2*3 |
-  r4 r8
-  %end repeat
+  \repeat volta 2
+  {
+    R2*6 |
+  }
+  \alternative
+  {
+    { R2*2 | }
+    { r4 r8 }
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    R2^\fermataMarkup
+    R2*3 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*7 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    R2^\fermataMarkup
+    R2*3 |
+    r4 r8
+  }
   r8
   c2\p |
   g' |
   g, |
   c |
-  e4_\mCresc g |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  e4\< g |
   e4.\sf g8-. |
-  g-._\mDecresc g-. c-. c,-. |
+  \dimTextDecresc
+  g-.\> g-. c-. c,-. |
   c4(\p g8) r |
   r g-.\f g-. g-. |
   r g-. g-. g-. |
@@ -101,7 +112,8 @@ hornTwoMvtIV = \relative c'
   R2*11 |
   \repeat unfold 6 {e4 r} |
   e2~\p | \repeat unfold 4 {e~} | e |
-  e4_\mCresc e |
+  e4\< e |
+  \dimHairpin
   e2~\sf\> |
   e8\p e4 e8 |
   e4. r8 |
@@ -148,22 +160,25 @@ hornTwoMvtIV = \relative c'
   g4 r |
   r b8..(\sf c32) |
   c4 r |
-  c b8..(_\mCresc c32) |
+  c b8..(\< c32) |
   c4.\sf\> c'8~ |
   c\p g~ g c, |
   c4(\< g8)\> r\! |
   g2~\p | g4 g8.. g32 |
   g2~ | g4 g8.. g32 |
-  c2_\mCresc
+  c2\<
   c2 |
+  \crescHairpin
   c4(\p\< g)\> |
-  c8\! g_\mCresc g g |
+  \crescTextCresc
+  c8\! g\< g g |
   g2~\p |
   g16 g'-. \repeat unfold 3 {d'-. g,-.} |
   g,2~ |
   g16 g'-. \repeat unfold 3 {d'-. g,-.} |
-  c8 r r16 c,_\mCresc c' c, |
+  c8 r r16 c,\< c' c, |
   r4 r16 c c' c, |
+  \crescHairpin
   c4(\p\< g)\> |
   c8\! r r4 |
   r8 g-.\ff g4~\sf |
@@ -181,21 +196,22 @@ hornTwoMvtIV = \relative c'
   c16 g g g r g g g |
   c8 r r4 |
   r8 g'4\p e16 c |
-  g2(_\mCresc |
+  \crescTextCresc
+  g2(\< |
   g') |
   e4\p r |
   \times 2/3 {r16 g g}
     \times 2/3 {g g g}
     \times 2/3 {g( e) e}
     \times 2/3 {e( c) c}
-  g2_\mCresc |
+  g2\< |
   c2~ | c~\p | c~ | c~ |
   c8 c-. c-. c-. |
   c r r4 |
   R2 |
   c4-. c-. |
   c2 |
-  c4-._\mCresc c-. |
+  c4-.\< c-. |
   c2 |
   c4-.\f c-. |
   c2 |

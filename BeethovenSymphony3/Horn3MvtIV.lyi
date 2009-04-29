@@ -22,34 +22,45 @@ hornThreeMvtIV = \relative c''
   g4.\p\fermata r8 |
   R2*5
 
-  %repeat
-  R2*6 |
-  %first ending
-  R2*2 |
-  %second ending
-  r4 r8
-  %repeat
-  r8
-  R2*3 |
-  r4.\fermata r8 |
-  r2*3 |
-  r4 r8
-  %repeat
-  r8 |
-  R2*7 |
-  r4 r8
-  %repeat
-  r8
-  R2*3 |
-  r4.\fermata r8 |
-  r2*3 |
-  r4 r8
-  %end repeat
+  \repeat volta 2
+  {
+    R2*6 |
+  }
+  \alternative
+  {
+    { R2*2 | }
+    { r4 r8 }
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    R2^\fermataMarkup
+    R2*3 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*7 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    R2^\fermataMarkup
+    R2*3 |
+    r4 r8
+  }
   r8
   R2*4 |
-  g4_\mCresc g |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  g4\< g |
   g4.\sf g8-. |
-  g-._\mDecresc g-. c-. c-. |
+  \dimTextDecresc
+  g-.\> g-. c-. c-. |
   c4(\p g8) r |
   r e'-.\f e-. e-. |
   r f-. f-. f-. |
@@ -86,7 +97,8 @@ hornThreeMvtIV = \relative c''
   R2*11 |
   \repeat unfold 6 {e4 r} |
   e2~\p | \repeat unfold 4 {e~} | e |
-  e4_\mCresc e |
+  e4\< e |
+  \dimHairpin
   e2~\sf\> |
   e8\p e4 e8 |
   e4. r8 |
@@ -136,9 +148,11 @@ hornThreeMvtIV = \relative c''
   g4 r |
   r d'8..(\sf c32) |
   c4 r |
-  r f8..(_\mCresc e32) |
+  r f8..(\< e32) |
+  \dimHairpin
   e4.\sf\> e8~ |
   e\p d~ d c |
+  \crescHairpin
   c4(\< g8)\> r\! |
   R2*5 |
   c2 |
@@ -148,8 +162,10 @@ hornThreeMvtIV = \relative c''
   r16 d-.\p \repeat unfold 3 {f-. d-.} |
   R2 |
   r16 d-. \repeat unfold 3 {f-. d-.} |
-  e8 r r16 c_\mCresc e c |
+  \crescTextCresc
+  e8 r r16 c\< e c |
   r4 r16 c d c |
+  \crescHairpin
   c4(\p\< d)\> |
   c8\! r r4 |
   r8 g-.\ff g4~\sf |
@@ -167,7 +183,8 @@ hornThreeMvtIV = \relative c''
   c16 g g g r g g g |
   g8 r r4 |
   R2*6 |
-  e'2(_\mCresc |
+  \crescTextCresc
+  e'2(\< |
   f8) r r4 |
   R2*9 |
   ees4-.\f ees-. |

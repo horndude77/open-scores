@@ -451,7 +451,7 @@ outlineMvtIV =
   s2*272
   s4.
   \tempoMark "Poco Andante"
-  s8
+  s8 | \noBreak
   s2*82 | \bar "||"
   \tempoMark "Presto"
   s2*43 | \bar "|."
