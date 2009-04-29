@@ -42,6 +42,7 @@ instrument = "Orchestra"
       <<
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Flutes"
           \set Staff.shortInstrumentName = "Fl."
           <<
@@ -51,6 +52,7 @@ instrument = "Orchestra"
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Oboes"
           \set Staff.shortInstrumentName = "Ob."
           <<
@@ -60,6 +62,7 @@ instrument = "Orchestra"
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Clarinets"
           \set Staff.shortInstrumentName = "Cl."
           <<
@@ -69,6 +72,7 @@ instrument = "Orchestra"
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Bassoons"
           \set Staff.shortInstrumentName = "Bs."
           <<
@@ -81,6 +85,7 @@ instrument = "Orchestra"
       <<
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Horns I,II"
           \set Staff.shortInstrumentName = "Hn."
           <<
@@ -90,12 +95,14 @@ instrument = "Orchestra"
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Horn III"
           \set Staff.shortInstrumentName = "Hn.III"
           \hornThreeMvtIII
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Trumpets"
           \set Staff.shortInstrumentName = "Tr."
           <<
@@ -106,6 +113,7 @@ instrument = "Orchestra"
       >>
       \new Staff
       {
+          #(set-accidental-style 'modern)
         \set Staff.instrumentName = "Timpani"
         \set Staff.shortInstrumentName = "Ti."
         \timpaniMvtIII
@@ -116,12 +124,14 @@ instrument = "Orchestra"
         <<
           \new Staff
           {
+            #(set-accidental-style 'modern)
             \set Staff.instrumentName = "Violin I"
             \set Staff.shortInstrumentName = "Vl.I"
             \violinOneMvtIII
           }
           \new Staff
           {
+            #(set-accidental-style 'modern)
             \set Staff.instrumentName = "Violin II"
             \set Staff.shortInstrumentName = "Vl.II"
             \violinTwoMvtIII
@@ -129,18 +139,21 @@ instrument = "Orchestra"
         >>
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Viola"
           \set Staff.shortInstrumentName = "Va."
           \violaMvtIII
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Cello"
           \set Staff.shortInstrumentName = "Vc."
           \celloMvtIII
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Bass"
           \set Staff.shortInstrumentName = "Cb."
           << \bassMvtIII \outlineMvtIII >>
@@ -224,14 +237,7 @@ instrument = "Orchestra"
         >>
       }
     >>
-    \midi
-    {
-      \context
-      {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 300 4)
-      }
-    }
+    \midi { }
   }
 }
 

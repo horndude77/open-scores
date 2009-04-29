@@ -43,46 +43,42 @@ instrument = "Orchestra"
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Flutes"
           \set Staff.shortInstrumentName = "Fl."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \fluteOneMvtI
-            \keepWithTag #'score \fluteTwoMvtI
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \fluteOneMvtI}
+            \new Voice {\voiceTwo \keepWithTag #'score \fluteTwoMvtI}
+          >>
         }
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Oboes"
           \set Staff.shortInstrumentName = "Ob."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \oboeOneMvtI
-            \keepWithTag #'score \oboeTwoMvtI
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \oboeOneMvtI}
+            \new Voice {\voiceTwo \keepWithTag #'score \oboeTwoMvtI}
+          >>
         }
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Clarinets"
           \set Staff.shortInstrumentName = "Cl."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \clarinetOneMvtI
-            \keepWithTag #'score \clarinetTwoMvtI
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \clarinetOneMvtI}
+            \new Voice {\voiceTwo \keepWithTag #'score \clarinetTwoMvtI}
+          >>
         }
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Bassoons"
           \set Staff.shortInstrumentName = "Bs."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \bassoonOneMvtI
-            \keepWithTag #'score \bassoonTwoMvtI
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \bassoonOneMvtI}
+            \new Voice {\voiceTwo \keepWithTag #'score \bassoonTwoMvtI}
+          >>
         }
       >>
       \new StaffGroup
@@ -90,13 +86,12 @@ instrument = "Orchestra"
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Horns I,II"
           \set Staff.shortInstrumentName = "Hn."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \hornOneMvtI
-            \keepWithTag #'score \hornTwoMvtI
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \hornOneMvtI}
+            \new Voice {\voiceTwo \keepWithTag #'score \hornTwoMvtI}
+          >>
         }
         \new Staff
         {
@@ -108,13 +103,12 @@ instrument = "Orchestra"
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \override Staff.CombineTextScript #'avoid-slur = #'outside
           \set Staff.instrumentName = "Trumpets"
           \set Staff.shortInstrumentName = "Tr."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \trumpetOneMvtI
-            \keepWithTag #'score \trumpetTwoMvtI
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \trumpetOneMvtI}
+            \new Voice {\voiceTwo \keepWithTag #'score \trumpetTwoMvtI}
+          >>
         }
       >>
       \new Staff
@@ -243,14 +237,7 @@ instrument = "Orchestra"
         >>
       }
     >>
-    \midi
-    {
-      \context
-      {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 152 4)
-      }
-    }
+    \midi { }
   }
 }
 

@@ -36,70 +36,78 @@ instrument = "Orchestra"
       <<
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Flutes"
           \set Staff.shortInstrumentName = "Fl."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \fluteOneMvtII
-            \keepWithTag #'score \fluteTwoMvtII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \fluteOneMvtII}
+            \new Voice {\voiceTwo \keepWithTag #'score \fluteTwoMvtII}
+          >>
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Oboes"
           \set Staff.shortInstrumentName = "Ob."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \oboeOneMvtII
-            \keepWithTag #'score \oboeTwoMvtII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \oboeOneMvtII}
+            \new Voice {\voiceTwo \keepWithTag #'score \oboeTwoMvtII}
+          >>
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Clarinets"
           \set Staff.shortInstrumentName = "Cl."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \clarinetOneMvtII
-            \keepWithTag #'score \clarinetTwoMvtII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \clarinetOneMvtII}
+            \new Voice {\voiceTwo \keepWithTag #'score \clarinetTwoMvtII}
+          >>
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Bassoons"
           \set Staff.shortInstrumentName = "Bs."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \bassoonOneMvtII
-            \keepWithTag #'score \bassoonTwoMvtII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \bassoonOneMvtII}
+            \new Voice {\voiceTwo \keepWithTag #'score \bassoonTwoMvtII}
+          >>
         }
       >>
       \new StaffGroup
       <<
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Horns I,II"
           \set Staff.shortInstrumentName = "Hn."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \hornOneMvtII
-            \keepWithTag #'score \hornTwoMvtII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \hornOneMvtII}
+            \new Voice {\voiceTwo \keepWithTag #'score \hornTwoMvtII}
+          >>
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Horn III"
           \set Staff.shortInstrumentName = "Hn.III"
           \hornThreeMvtII
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Trumpets"
           \set Staff.shortInstrumentName = "Tr."
-          %\set Staff.printPartCombineTexts = ##f
-          \partcombine
-            \keepWithTag #'score \trumpetOneMvtII
-            \keepWithTag #'score \trumpetTwoMvtII
+          <<
+            \new Voice {\voiceOne \keepWithTag #'score \trumpetOneMvtII}
+            \new Voice {\voiceTwo \keepWithTag #'score \trumpetTwoMvtII}
+          >>
         }
       >>
       \new Staff
       {
+        #(set-accidental-style 'modern)
         \set Staff.instrumentName = "Timpani"
         \set Staff.shortInstrumentName = "Ti."
         \timpaniMvtII
@@ -110,12 +118,14 @@ instrument = "Orchestra"
         <<
           \new Staff
           {
+            #(set-accidental-style 'modern)
             \set Staff.instrumentName = "Violin I"
             \set Staff.shortInstrumentName = "Vl.I"
             \violinOneMvtII
           }
           \new Staff
           {
+            #(set-accidental-style 'modern)
             \set Staff.instrumentName = "Violin II"
             \set Staff.shortInstrumentName = "Vl.II"
             \violinTwoMvtII
@@ -123,18 +133,21 @@ instrument = "Orchestra"
         >>
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Viola"
           \set Staff.shortInstrumentName = "Va."
           \violaMvtII
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Cello"
           \set Staff.shortInstrumentName = "Vc."
           \celloMvtII
         }
         \new Staff
         {
+          #(set-accidental-style 'modern)
           \set Staff.instrumentName = "Bass"
           \set Staff.shortInstrumentName = "Cb."
           << \bassMvtII \outlineMvtII >>
@@ -228,11 +241,6 @@ instrument = "Orchestra"
       {
         \Voice
         \remove "Dynamic_performer"
-      }
-      \context
-      {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 80 8)
       }
     }
   }

@@ -171,6 +171,7 @@ outlineMvtI =
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 3/4
+  \tempo 4 = 154
   \tempoMark "Allegro con brio"
   s2.*4
   \repeat volta 2
@@ -235,6 +236,7 @@ outlineMvtII =
   \override Score.SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 16)
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \tempo 8 = 80
   \tempoMark "Adagio assai"
   \time 2/4
   \partial 8 s8
@@ -416,6 +418,8 @@ outlineMvtIV =
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/4
+  \set Score.tempoHideNote = ##t
+  \tempo 2 = 76
   \tempoMark "Allegro molto"
   \grace {s16 s16}
   s2*44 |
@@ -450,9 +454,11 @@ outlineMvtIV =
   s8 |
   s2*272
   s4.
+  \tempo 8 = 108
   \tempoMark "Poco Andante"
   s8 | \noBreak
   s2*82 | \bar "||"
+  \tempo 4 = 116
   \tempoMark "Presto"
   s2*43 | \bar "|."
 }
