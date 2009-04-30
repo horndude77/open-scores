@@ -171,6 +171,7 @@ outlineMvtI =
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 3/4
+  \set Score.tempoHideNote = ##t
   \tempo 4 = 154
   \tempoMark "Allegro con brio"
   s2.*4
@@ -236,6 +237,7 @@ outlineMvtII =
   \override Score.SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 16)
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set Score.tempoHideNote = ##t
   \tempo 8 = 80
   \tempoMark "Adagio assai"
   \time 2/4
