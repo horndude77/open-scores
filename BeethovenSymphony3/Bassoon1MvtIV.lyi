@@ -100,7 +100,7 @@ bassoonOneMvtIV = \relative c'
   bes16\f a bes c d ees f e |
   f g aes g f ees d c |
   bes8 c'16( bes aes g f g) |
-  f4.\fermata r8 |
+  f4.\fermata\f r8 |
   r8 g-. g-. g-. |
   r aes aes aes |
   bes ees bes bes |
@@ -154,9 +154,9 @@ bassoonOneMvtIV = \relative c'
   fis'4\p r |
   R2*23 |
   \repeat unfold 3 {r4 \times 2/3 {a,8\sf a a} |}
-  r4 \times 2/3 {g8\sf g g} |
-  r4 \times 2/3 {fis8\sf fis fis} |
-  r4 \times 2/3 {g8\sf g g} |
+  r4 \times 2/3 {g8 g g} |
+  r4 \times 2/3 {fis8 fis fis} |
+  r4 \times 2/3 {g8 g g} |
   a8 r a r |
   d r r4 |
   d2\ff |
@@ -277,7 +277,7 @@ bassoonOneMvtIV = \relative c'
   r16 f aes f r4 |
   \crescHairpin
   g4(\p\< bes8.\> aes16) |
-  g8 r r ees\ff |
+  g8\! r r ees\ff |
   g4.\sf ees8 |
   d4.\sf f8 |
   aes4.\sf f8 |
