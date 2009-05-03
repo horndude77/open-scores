@@ -212,7 +212,8 @@ hornOneMvtIV = \relative c''
   e-. c-. r8 r g'16-.\sf e-. |
   g e c\sf g c g e'\sf c |
   e c g'\sf e g e g\sf e |
-  e2_\mSemprePiuF |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  e2\semprePiuF |
   e2 |
   \repeat tremolo 4 e8 |
   \repeat tremolo 4 e8 |

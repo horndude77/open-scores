@@ -51,7 +51,6 @@ crescTextSempreCresc = {
     \set crescendoSpanner = #'text
     \override DynamicTextSpanner #'style = #'dashed-line
 }
-mSemprePiuF = \markup{\italic {sempre più} \dynamic f}
 mSemprePiuP = \markup{\italic {sempre più} \dynamic p}
 semprePiuF = #(make-dynamic-script (markup #:normal-text #:italic "sempre più" #:dynamic "f"))
 mSemprePP = \markup{\italic sempre \dynamic pp}

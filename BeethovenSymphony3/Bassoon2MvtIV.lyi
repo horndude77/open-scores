@@ -279,7 +279,8 @@ bassoonTwoMvtIV = \relative c
   R2*10 |
   ces4-.\f ces-. |
   c2 |
-  cis4-._\mSemprePiuF cis-. |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  cis4-.\semprePiuF cis-. |
   d2 |
   d4.\ff bes16 g |
   d'4 d |
@@ -318,7 +319,8 @@ bassoonTwoMvtIV = \relative c
   g-. ees-. g-. ees-. g ees bes\sf g |
   bes g ees'\sf bes ees bes g'\sf ees |
   g ees bes'\sf g bes g ees'\sf bes |
-  ees-._\mSemprePiuF ees-. d-. c-. bes-. aes-. g-. f-. |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  ees-.\semprePiuF ees-. d-. c-. bes-. aes-. g-. f-. |
   ees-. ees-. d-. c-. bes-. aes-. g-. f-. |
   ees-. ees-. f-. g-. aes-. bes-. c-. d-. |
   ees-. ees-. f-. g-. aes-. bes-. c-. d-. |

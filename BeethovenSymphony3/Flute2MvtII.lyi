@@ -40,7 +40,8 @@ fluteTwoMvtII = \relative c'''
   bes2(\p |
   a8) r r4 |
   R2*13 |
-  r8 c4(_\mSemprePiuF e8) |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  r8 c4(\semprePiuF e8) |
   b4. b16.( f32) |
   e4.\ff g8-.\sf |
   e4. g8-.\sf |

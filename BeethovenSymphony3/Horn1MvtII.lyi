@@ -71,7 +71,9 @@ hornOneMvtII = \relative c'''
   c8 c16. c32 c8 c |
   r e r d |
   r c r c |
-  c\f e4_\mSemprePiuF g16( e) |
+  c\f
+    \once \override Score.DynamicText #'self-alignment-X = #-1
+    e4\semprePiuF g16( e) |
   d4. d8 |
   c4.\ff e8-.\sf |
   c4. e8-.\sf |

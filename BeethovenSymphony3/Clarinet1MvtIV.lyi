@@ -313,7 +313,8 @@ clarinetOneMvtIV = \relative c''
   aes4-.\< aes-. |
   aes2 |
   aes4-.\f aes-. |
-  aes2_\mSemprePiuF |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  aes2\semprePiuF |
   b,4-. b-. |
   d2 |
   c\ff |
@@ -346,7 +347,8 @@ clarinetOneMvtIV = \relative c''
   a-. f-. a-. f-. a f c'\sf a |
   c a f'\sf c f c a'\sf f |
   a f a\sf f a f a\sf f |
-  a2_\mSemprePiuF |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  a2\semprePiuF |
   a |
   a16 f, g a bes c d e |
   f f, g a bes c d e |

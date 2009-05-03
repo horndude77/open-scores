@@ -120,7 +120,13 @@ violinTwoMvtII = \relative c'
   \repeat unfold 2 {\times 2/3 {c16( g) e-.}}
     \repeat unfold 2 {\times 2/3 {c'16( a) f-.}} |
   \times 4/6 {e16 \repeat unfold 5 <c' g'>} \times 4/6 {\repeat tremolo 6 <c g'>} |
-  << {s8\f s_\mSemprePiuF} {\repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <b g'>16}}} >> |
+  <<
+    {
+      s8\f
+      \once \override Score.DynamicText #'self-alignment-X = #-1
+      s\semprePiuF
+    }
+    {\repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <b g'>16}}} >> |
   <<
     {s1*0\ff}
     \repeat unfold 2

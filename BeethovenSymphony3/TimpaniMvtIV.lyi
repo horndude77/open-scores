@@ -158,7 +158,8 @@ timpaniMvtIV = \relative c
   ees8 r r4 |
   ees8 r ees r |
   ees8 r ees r |
-  ees8_\mSemprePiuF r r8. \times 2/3 {bes32 bes bes} |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  ees8\semprePiuF r r8. \times 2/3 {bes32 bes bes} |
   ees8 r r8. \times 2/3 {bes32 bes bes} |
   \repeat unfold 4 {ees16 bes} |
   \repeat tremolo 4 {ees16 bes} |

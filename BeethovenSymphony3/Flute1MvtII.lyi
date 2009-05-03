@@ -61,7 +61,9 @@ fluteOneMvtII = \relative c''''
   \times 2/3 {a,16-. c-. f-.} \times 2/3 {a-. c-. f-.} a8-. r |
   \times 2/3 {r16 e,-. g-.} \times 2/3 {c-. e-. g-.} \times 2/3 {r d,-. g-.} \times 2/3 {b-. d-. g-.} |
   \times 2/3 {r16 g,-. c-.} \times 2/3 {e-. g-. gis-.} a16( f e d) |
-  c8\f e4(_\mSemprePiuF g8) |
+  c8\f
+    \once \override Score.DynamicText #'self-alignment-X = #-1
+    e4(\semprePiuF g8) |
   g4. f16.( d32) |
   c4.\ff e8-.\sf |
   c4. e8-.\sf |

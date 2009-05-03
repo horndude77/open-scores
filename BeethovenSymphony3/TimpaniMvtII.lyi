@@ -62,7 +62,9 @@ timpaniMvtII = \relative c
   r8 c16.\< c32 c8 c |
   c r g r |
   c r c r |
-  g\f r_\mSemprePiuF \repeat unfold 3 {\times 4/6 {\repeat tremolo 6 g16}} |
+  g\f
+    \once \override Score.DynamicText #'self-alignment-X = #-1
+    r\semprePiuF \repeat unfold 3 {\times 4/6 {\repeat tremolo 6 g16}} |
   c4\trill\ff c8 r |
   c4\trill c8 r |
   c2\trill |

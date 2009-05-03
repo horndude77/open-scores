@@ -127,7 +127,9 @@ violaMvtII = \relative c
     \repeat unfold 2 {\times 2/3 {d,( g) b-.}} |
   \repeat unfold 2 {\times 2/3 {g( c) e-.}}
     \repeat unfold 2 {\times 2/3 {d,( a') c-.}} |
-  \times 2/3 {<c e,>16 <e g,> <e g,>} \times 2/3 {<e g,>_\mSemprePiuF <e g,> <e g,>}
+  \times 2/3 {<c e,>16 <e g,> <e g,>}
+    \once \override Score.DynamicText #'self-alignment-X = #-1
+    \times 2/3 {<e g,>\semprePiuF <e g,> <e g,>}
   \times 4/6 {\repeat tremolo 6 <e g,>} |
   \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <f g,>}} |
   <<

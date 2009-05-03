@@ -214,7 +214,8 @@ hornThreeMvtIV = \relative c''
   e-. c-. r8 r g16-.\sf e-. |
   g e c'\sf g c g e'\sf c |
   \repeat unfold 2 {e c e\sf c} |
-  c2_\mSemprePiuF |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  c2\semprePiuF |
   c |
   \repeat tremolo 4 c8 |
   \repeat tremolo 4 c8 |

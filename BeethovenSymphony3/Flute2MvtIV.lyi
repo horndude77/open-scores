@@ -258,7 +258,8 @@ fluteTwoMvtIV = \relative c'''
   \repeat tremolo 4 bes16) r16 bes bes bes |
   bes8 r r4 |
   R2*19 |
-  cis4-._\mSemprePiuF cis-. |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  cis4-.\semprePiuF cis-. |
   c2 |
   bes\ff |
   a4 a |
@@ -287,7 +288,8 @@ fluteTwoMvtIV = \relative c'''
   g-. ees-. g-. ees-. g ees bes'\sf g |
   bes g ees'\sf bes ees bes g\sf ees |
   \repeat unfold 2 {g ees g\sf ees} |
-  ees'2_\mSemprePiuF |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  ees'2\semprePiuF |
   ees |
   ees |
   ees16 ees, f g aes bes c d |

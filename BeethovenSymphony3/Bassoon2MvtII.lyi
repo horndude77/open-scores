@@ -77,7 +77,9 @@ bassoonTwoMvtII = \relative c
   f8 f'4 f8 |
   g4 f |
   e( f16 a g f) |
-  e8\f c'4\semprePiuF( e8) | % Check alignment of marking??
+  e8\f
+    \once \override Score.DynamicText #'self-alignment-X = #-1
+    c'4\semprePiuF( e8) |
   f4. g,16.( f32) |
   e4.\ff e8-.\sf |
   e4. e8-.\sf |

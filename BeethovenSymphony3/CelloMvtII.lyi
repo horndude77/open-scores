@@ -127,7 +127,9 @@ celloMvtII = \relative c
   \repeat unfold 4 {\times 2/3 {f,16( a) d-.}} |
   \repeat unfold 2 {\times 2/3 {g,16( c) e-.}} \repeat unfold 2 {\times 2/3 {g,16( b) d-.}} |
   \repeat unfold 2 {\times 2/3 {e,16( g) c-.}} \repeat unfold 2 {\times 2/3 {f,16( a) d-.}} |
-  \times 2/3 {g,16\f g' g} \times 2/3 {g_\mSemprePiuF g g} \times 4/6 {\repeat tremolo 6 g16} |
+  \times 2/3 {g,16\f g' g}
+    \once \override Score.DynamicText #'self-alignment-X = #-1
+    \times 2/3 {g\semprePiuF g g} \times 4/6 {\repeat tremolo 6 g16} |
   \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 g,16}} |
   <<
     \repeat unfold 2

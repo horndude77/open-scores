@@ -56,7 +56,9 @@ oboeTwoMvtII = \relative c''
   r8 g( a) a |
   b r r4 |
   R2*9 |
-  c8\f c4(_\mSemprePiuF e8) |
+  c8\f
+    \once \override Score.DynamicText #'self-alignment-X = #-1
+    c4(\semprePiuF e8) |
   f4. d16.( b32) |
   e,4.\ff e'8-.\sf |
   c4. e8-.\sf |

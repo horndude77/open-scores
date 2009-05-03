@@ -416,7 +416,8 @@ violaMvtIV = \relative c'
   \times 2/3 {r bes( ees)} \repeat unfold 3 {\times 2/3 {r ees( ges)}} |
   \times 2/3 {r ees(\f ges)} \repeat unfold 3 {\times 2/3 {r ees( ges)}} |
   \repeat unfold 4 {\times 2/3 {r fis( a)}} |
-  << {s16*2/3 s_\mSemprePiuF} {\repeat unfold 4 {\times 2/3 {r16 a( fis)}}} >> |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  << {s16*2/3 s\semprePiuF} {\repeat unfold 4 {\times 2/3 {r16 a( fis)}}} >> |
   \times 2/3 {d16 a' a} \times 2/3 {a a a} \times 4/6 {\repeat tremolo 6 a} |
   \times 2/3 {g\ff <d d'> <d d'>} \times 2/3 {<d d'> <d d'> <d d'>} \times 4/6 {\repeat tremolo 6 <d d'>} |
   \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <d c'>}} |
@@ -460,7 +461,8 @@ violaMvtIV = \relative c'
   g-. ees-. g-. ees-. g-. ees-. bes'-.\sf g-. |
   bes g ees'\sf bes ees bes g'\sf ees |
   g ees bes'\sf g bes g ees'\sf bes |
-  ees-._\mSemprePiuF ees-. d-. c-. bes-. aes-. g-. f-. |
+  \once \override Score.DynamicText #'self-alignment-X = #-1
+  ees-.\semprePiuF ees-. d-. c-. bes-. aes-. g-. f-. |
   ees-. ees-. d-. c-. bes-. aes-. g-. f-. |
   ees-. ees-. f-. g-. aes-. bes-. c-. d-. |
   ees-. ees-. f-. g-. aes-. bes-. c-. d-. |
