@@ -36,36 +36,43 @@ fluteOneMvtIV = \relative c'''
   r4 ees,8 r |
   R2 |
 
-  %repeat
-  R2*6 |
-  %first ending
-  R2*2 |
-  %second ending
-  r4 r8
-
-  %repeat
-  r8 |
-  R2*3 |
-  r4.\fermata r8 |
-  R2*3 |
-  r4 r8
-
-  %repeat
-  r8 |
-  R2*7 |
-  r4 r8
-
-  %repeat
-  r8 |
-  R2*3 |
-  r4.\fermata r8 |
-  R2*3 |
-  r4 r8
-  %end repeat
+  \repeat volta 2
+  {
+    R2*6 |
+  }
+  \alternative
+  {
+    { R2*2 | }
+    { r4 r8 }
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    R2^\fermataMarkup
+    R2*3 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*7 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    R2^\fermataMarkup
+    R2*3 |
+    r4 r8
+  }
 
   r8 |
   bes'2~\p | bes~ | bes~ | bes |
-  bes8(_\mCresc ees) bes( f') |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  bes8(\< ees) bes( f') |
   bes,(\sf ees) r4 |
   R2 |
   r8 c(\p f,) r |
@@ -90,14 +97,14 @@ fluteOneMvtIV = \relative c'''
   ees r r4 |
   R2*2 |
   des4.(\sf bes8) |
-  a-._\mCresc ees'-. f-. b,-. |
-  c c_\mCresc c c |
+  a-.\< ees'-. f-. b,-. |
+  c c\< c c |
   b\f b c c |
   b b c c |
   b4-.\ff g'-. |
   g-. r |
   R2*28 |
-  c,2_\mCresc |
+  c,2\< |
   g'2~\f |
   g4 c, |
   c c |
@@ -126,7 +133,7 @@ fluteOneMvtIV = \relative c'''
   cis4.( e8) |
   g4.( e8) |
   d4.( fis8) |
-  a4_\mCresc a |
+  a4\< a |
   a4.\sf\> fis8 |
   a16(\p g) e8-. g16( fis) d8-. |
   fis4( e8) d-. |
@@ -134,7 +141,7 @@ fluteOneMvtIV = \relative c'''
   cis-. cis-. cis-. e |
   g g g e |
   d d d fis |
-  a_\mCresc a a a |
+  a\< a a a |
   a a a fis |
   g\p e fis d |
   fis fis e a,,16[ cis] |
@@ -198,11 +205,12 @@ fluteOneMvtIV = \relative c'''
   b4.( d8) |
   f4.( d8) |
   c4.( e8) |
-  g4-._\mCresc g-. |
+  g4-.\< g-. |
   g4.\sf\> e8 |
   g16(\p f) d8-. f16( e) c8-. |
   e4( d8) r |
   R2*8 |
+  \crescHairpin
   f,2\p\< |
   bes |
   bes,\> |
@@ -249,13 +257,17 @@ fluteOneMvtIV = \relative c'''
 
   %poco andante
   R2*20 |
-  r8. d,16_\mCresc d8( ees16) r |
+  \crescTextCresc
+  r8. d,16\< d8( ees16) r |
   r8. d16 d8( ees16) r |
+  \crescHairpin
   r16.\p\< a,32 a16( bes) r16.\> a32 a16( bes)\! |
   r8 bes r4 |
   R2*4 |
-  r4 d16-._\mCresc ees8 ees16-. |
+  \crescTextCresc
+  r4 d16-.\< ees8 ees16-. |
   r4 d16-. ees8 ees16-. |
+  \crescHairpin
   ees4(\p\< d8.\> f16)\! |
   ees8 r r4 |
   r8 bes8-.\ff bes4~\sf |
@@ -273,12 +285,13 @@ fluteOneMvtIV = \relative c'''
   \repeat tremolo 4 ees16 r d d d |
   ees8 r r4 |
   R2 |
-  r4 d~_\mCresc |
+  \crescTextCresc
+  r4 d~\< |
   \times 4/6 {d16-. ees-. f-. ees-. d-. c-. }
     \times 4/6 {bes-. c-. bes-. aes-. g-. f-. } |
   ees8 r r4 |
   R2 |
-  r4 d'(_\mCresc |
+  r4 d'(\< |
   \times 4/6 {des16( ees) f-. ees-. des-. c-. }
     \times 4/6 {bes-. aes-. g-. f-. ees-. des-. } |
   c8\p r r4 |
@@ -289,13 +302,17 @@ fluteOneMvtIV = \relative c'''
   g4 fis |
   g8 r d16\p d r8 |
   \repeat unfold 2 {ees16 ees r8 fis,16 fis r8 |}
-  f'16_\mCresc f r8 b,16 b r8 |
-  f'16_\mDecresc f r8 b,16 b r8 |
+  f'16\< f r8 b,16 b r8 |
+  \dimTextDecresc
+  f'16\> f r8 b,16 b r8 |
   d16\p d r8 c16 c r8 |
   ees16 ees r8 fis,16 fis r8 |
+  \crescHairpin
   g16\< g r8 d'16 d r8 |
+  \dimHairpin
   ees16\> ees r8 fis,16 fis r8\! |
-  g16_\mDecresc g r8 g'16 g r8 |
+  \dimTextDecresc
+  g16\> g r8 g'16 g r8 |
   g16\pp g r8 fis16 fis r8 |
 
   %presto

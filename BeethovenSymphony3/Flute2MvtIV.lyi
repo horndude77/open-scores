@@ -36,38 +36,43 @@ fluteTwoMvtIV = \relative c'''
   r4 ees,8 r |
   R2 |
 
-  %repeat
-  R2*6 |
-
-  %first ending
-  R2*2 |
-
-  %second ending
-  r4 r8
-
-  %repeat
-  r8 |
-  R2*3 |
-  r4.\fermata r8 |
-  R2*3 |
-  r4 r8
-
-  %repeat
-  r8 |
-  R2*7 |
-  r4 r8
-
-  %repeat
-  r8 |
-  R2*3 |
-  r4.\fermata r8 |
-  R2*3 |
-  r4 r8
-  %end repeat
+  \repeat volta 2
+  {
+    R2*6 |
+  }
+  \alternative
+  {
+    { R2*2 | }
+    { r4 r8 }
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    R2^\fermataMarkup
+    R2*3 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*7 |
+    r4 r8
+  }
+  \repeat volta 2
+  {
+    r8 |
+    R2*3 |
+    R2^\fermataMarkup
+    R2*3 |
+    r4 r8
+  }
 
   r8 |
   R2*4 |
-  ees4(_\mCresc f) |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  ees4(\< f) |
   ees4\sf r |
   R2*2 |
   r8 bes'-.\f bes-. bes-. |
@@ -91,13 +96,13 @@ fluteTwoMvtIV = \relative c'''
   ees ees d d |
   bes r r4 |
   R2*4 |
-  r8 g_\mCresc a a |
+  r8 g\< a a |
   g\f g a a |
   g g a a |
   g4-.\ff b-. |
   b-. r |
   R2*28 |
-  c2_\mCresc |
+  c2\< |
   g'2~\f |
   g4 c, |
   c c |
@@ -126,7 +131,7 @@ fluteTwoMvtIV = \relative c'''
   d'\p r r4 |
   R2*10 |
   r4 r8 a |
-  a_\mCresc a a a |
+  a\< a a a |
   a a a b |
   b\p a a a |
   a a a r |
@@ -234,8 +239,8 @@ fluteTwoMvtIV = \relative c'''
 
   %poco andante
   r8 |
-
   R2*30 |
+  \crescHairpin
   g,4(\p\< bes8.\> aes16) |
   g8\! r r4 |
   r8 bes8-.\ff bes4~\sf |

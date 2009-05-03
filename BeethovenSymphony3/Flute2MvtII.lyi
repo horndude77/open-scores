@@ -88,9 +88,12 @@ fluteTwoMvtII = \relative c'''
   r8 fis4(\sf g8) |
   R2*8 |
   r4 c,4~\p |
-  c8_\mCresc c( fis8\sf\> ees16 c |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  c8\< c( fis8\sf\> ees16 c |
   b8)\p r r4 |
   R2 |
+  \crescHairpin
   r4 g'~\< |
   g4.(\> fis8) |
   g8\! r r4 |
@@ -104,10 +107,11 @@ fluteTwoMvtII = \relative c'''
   c4.\sf\> r8 |
   g2\p |
   R2 |
-  c4(_\mCresc f,8.. ees32) |
+  \crescTextCresc
+  c4(\< f,8.. ees32) |
   ees8 r r4 |
   R2*16 |
-  c4._\mPCresc c8 |
+  c4.\p\< c8 |
   c-. c-. c-. c-. |
   c-.\p r r4 |
   R2*18 |
