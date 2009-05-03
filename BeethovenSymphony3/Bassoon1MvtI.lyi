@@ -250,7 +250,8 @@ bassoonOneMvtI = \relative c'
   d4( des c | bes2\sf c8 d) |
   \dimTextDecresc
   ees4 ees( f | ges4.\sf\> f8 ees4) |
-  des2.~_\mDolceCresc |
+  \crescTextDolceCresc
+  des2.~\< |
   des8( ces bes ces des ces) |
   bes4\p r r |
   R2.*7 |
@@ -262,6 +263,7 @@ bassoonOneMvtI = \relative c'
   c( ees ges) | ges2. |
   des2( f4 | des2 aes4) |
   aes( des f) | f2. |
+  \crescTextCresc
   d2(\< f4 | d2 bes4) |
   bes( d f) | f2. |
   ees4 r r |

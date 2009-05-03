@@ -235,7 +235,8 @@ hornTwoMvtI = \relative c'
   c( ees ees) |
   d2.~ | d~ | d~ | d4 d d |
   f2.\< | d2( f4 | d2) g,4( | d' f g) |
-  ees2.~_\mSempreCresc | ees~ |
+  \crescTextSempreCresc
+  ees2.~\< | ees~ |
   ees |
   c,2\sf ees4 |
   c2.~\ff | c~ | c4 c c | c c c | c r r |

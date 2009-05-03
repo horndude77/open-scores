@@ -237,7 +237,8 @@ hornOneMvtI = \relative c''
   c( ees f) |
   f2.~ | f~ | f~ | f4 f f |
   g2.~\< | g~ | g~ | g4 g g |
-  g2.~_\mSempreCresc | g~ |
+  \crescTextSempreCresc
+  g2.~\< | g~ |
   g |
   c,2\sf ees4 |
   ees2.~\ff | ees~ | ees4 ees ees | ees ees ees | ees r r |

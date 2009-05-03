@@ -378,7 +378,9 @@ violaMvtI = \relative c'
   bes'-. d,-. d'-. |
   d,-. f'-. d,-. |
   bes''2.\sf |
-  ees,,4-._\mSempreCresc ges-. ees-. |
+  \crescTextSempreCresc
+  ees,,4-.\< ges-. ees-. |
+  \crescHairpin
   bes'-. ees,-. ees'-. |
   ees,-. ges'-. ees,-. |
   bes''2.\sf |

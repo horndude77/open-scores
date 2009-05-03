@@ -382,7 +382,9 @@ violinTwoMvtI = \relative c''
   \crescHairpin
   \repeat unfold 2 {<aes bes,> |}
   <aes bes,>\sfp |
-  <ges bes,>_\mSempreCresc |
+  \crescTextSempreCresc
+  <ges bes,>\< |
+  \crescTextCresc
   <ges bes,> |
   <ges bes,>2. |
   <ges bes,>2.\sf |

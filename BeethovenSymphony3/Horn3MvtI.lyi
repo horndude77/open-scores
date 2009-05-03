@@ -147,7 +147,8 @@ hornThreeMvtI = \relative c''
   d2.~ | d~ | d~ | d4 d d |
   \crescTextCresc
   d2.~\< | d~ | d~ | d4 d d |
-  c2.~_\mSempreCresc | c~ |
+  \crescTextSempreCresc
+  c2.~\< | c~ |
   c~ | c4 c c |
   c2.~\ff | c~ | c4 c c | c c c | c r r |
   R2.*7 |
@@ -160,6 +161,7 @@ hornThreeMvtI = \relative c''
   R2.*6 |
   d2.\f | d\ff | c4 r r |
   R2.*25 |
+  \crescTextCresc
   g2.~\pp | g~ | g~\< | g~ |
   g8 g \repeat tremolo 4 g8 |
   \repeat tremolo 4 g8 d'8 d |

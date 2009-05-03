@@ -393,7 +393,9 @@ violinOneMvtI = \relative c'''
   bes2. |
   bes2. |
   f'4\sf aes bes |
-  <bes, ees,>2._\mSempreCresc |
+  \crescTextSempreCresc
+  <bes, ees,>2.\< |
+  \crescHairpin
   <bes ees,>2. |
   <bes ees,>2. |
   ees4\sf ges bes |
@@ -653,7 +655,7 @@ violinOneMvtI = \relative c'''
   ges4 f ees } |
   <d f,>16 aes'\< aes aes \tremolos #16 {aes2 |
   \dimTextDecresc
-  aes2. | aes_\mDecresc | aes } |
+  aes2. | aes\> | aes } |
   \dimHairpin
   g8 g(\p fis g aes g) |
   r ees( d ees f ees) |

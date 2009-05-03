@@ -352,7 +352,8 @@ celloMvtI = \relative c
   bes'-. d,-. d'-. |
   d,-. f'-. d,-. |
   bes''2.\sf |
-  ees,,4-._\mSempreCresc ges-. ees-. |
+  \crescTextSempreCresc
+  ees,,4-.\< ges-. ees-. |
   bes'-. ees,-. ees'-. |
   ees,-. ges'-. ees,-. |
   bes''2.\sf |
@@ -383,6 +384,7 @@ celloMvtI = \relative c
   bes8\f^\arco bes' \repeat tremolo 4 bes8 |
   \repeat tremolo 6 bes8\ff |
   ees,2(\fp g4 | ees2 bes4) |
+  \crescTextCresc
   ees( g bes | ees,2 d4) |
   cis2.~\< | cis |
   \dimHairpin
