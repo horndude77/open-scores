@@ -285,7 +285,7 @@ fluteTwoMvtI = \relative c'''
   R2.*3 |
   ees2.~\< | ees~ |
   ees8-. ees-. d-. ees-. f-. g-. |
-  \repeat tremolo 4 aes8 |
+  \repeat tremolo 6 aes8 |
   aes4\f f2~\f |
   f4 aes2~\f |
   aes4 d2\f |

@@ -4,7 +4,7 @@
 
 oboeTwoMvtII = \relative c''
 {
-  \key ees \major
+  \key c \minor
   \partial 8 r8 |
   R2*11 |
   << {s8\< s\> s\!} {c4( b8)} >> r8 |
@@ -48,7 +48,7 @@ oboeTwoMvtII = \relative c''
   bes4. d8-.\sf |
   bes-. d-.\sf bes-. d-.\sf |
   bes-. r r4 |
-  bes2~ |
+  bes2~\p |
   bes |
   a8\< c r c |
   r c r c |
@@ -68,6 +68,7 @@ oboeTwoMvtII = \relative c''
 
   %minore
   \key c \minor
+  \grace {s32*3}
   R2*15 |
   r8 c4\f c8 |
   c8 r r4 |
@@ -103,7 +104,7 @@ oboeTwoMvtII = \relative c''
   d8 d d d |
   d r r4 |
   R2*7 |
-  r8 fis,4( g8) |
+  r8 fis,4(\sf g8) |
   R2 |
   \crescTextCresc
   r4 f'4~\< |
@@ -114,6 +115,7 @@ oboeTwoMvtII = \relative c''
   g'4(\p f8 ees) |
   \dimHairpin
   ees8(\< << {s8 s\>} {c4} >> ees8) |
+  b8\p r r4 |
   s1*0\! R2*6 |
   r4 bes\< |
   aes8\p r r4 |
@@ -128,7 +130,7 @@ oboeTwoMvtII = \relative c''
   c2\sf\> |
   ees4(\p f) |
   ees8 r r4 |
-  c4(\< g g g) |
+  c8(\< g g g) |
   c8\f r r4 |
   R2*16 |
   c4.\< c8 |

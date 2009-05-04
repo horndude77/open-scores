@@ -17,8 +17,12 @@ bassoonOneMvtII = \relative c'
   \dimTextDecresc
   bes8( f\> g aes) |
   g8\p c16. c32 bes8 r | 
-  R2*20 |
-  ees,2\p |
+  R2*8 |
+  g2~\p\< |
+  g4.(\> fis8 |
+  g8)\! r r4 |
+  R2*9 |
+  ees2\p |
   bes' |
   \crescTextCresc
   ees4(\< d8 c) |
@@ -55,7 +59,7 @@ bassoonOneMvtII = \relative c'
   ees4( d8.. c32) |
   c8 r r ees\sf( |
   c8) aes16.\f f32 d8-. g-. |
-  c,-. r c-. r |
+  c,-.\p r c-. r |
   c-. r r4 |
 
   % Maggiore.
@@ -71,6 +75,7 @@ bassoonOneMvtII = \relative c'
   b8-. r r4 |
   bes4\p( g8 e) |
   c8( e g bes) | 
+  \crescTextCresc
   a8(\< f e bes') |
   a( f e bes') |
   a8\p r r4 |
@@ -97,6 +102,7 @@ bassoonOneMvtII = \relative c'
 
   %Minore
   \key c \minor
+  \grace {s32*3}
   R2*8 |
   \crescHairpin
   r8 f4\< c8\> |

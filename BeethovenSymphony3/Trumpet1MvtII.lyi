@@ -35,6 +35,7 @@ trumpetOneMvtII = \relative c''
   R2*3 |
 
   %Minore
+  \grace {s32*3}
   R2*24 |
   r8 c\f c c |
   f2\ff |

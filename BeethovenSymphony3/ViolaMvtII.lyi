@@ -97,7 +97,7 @@ violaMvtII = \relative c
     {s1*0\ff}
     \repeat unfold 2
     {
-      \times 4/6 {g32\ff d' d d d d} \times 4/6 {\repeat tremolo 6 d32} d8-. r |
+      \times 4/6 {g32 d' d d d d} \times 4/6 {\repeat tremolo 6 d32} d8-. r |
     }
   >>
   \repeat unfold 2 {<g, g'>8-. b-.\sf} |
@@ -147,6 +147,7 @@ violaMvtII = \relative c
 
   %minore
   \key c \minor
+  \grace {s32*3}
   ees,4\p^\sottoVoce r |
   ees4. r8 |
   ees4 ees |
@@ -206,7 +207,7 @@ violaMvtII = \relative c
     \repeat unfold 3 {\times 4/6 {\repeat tremolo 6 <fis a>}} |
   \repeat unfold 4 {\times 4/6 {\repeat tremolo 6 <f aes>}} |
   \times 2/3 {f <b d> <b d>} \times 2/3 {<b d>\> <b d> <b d>}
-    \repeat unfold 9 {\times 4/6 {\repeat tremolo 6 <b d>}} |
+    << {s4 | s\p} {\repeat unfold 9 {\times 4/6 {\repeat tremolo 6 <b d>16}}} >> | %Added 'p' to be consistent with violins.
   \repeat unfold 7 {\times 4/6 {\repeat tremolo 6 c}}
     \times 4/6 {\repeat tremolo 6 b} |
   \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <aes f>}} |

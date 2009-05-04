@@ -72,6 +72,7 @@ timpaniMvtII = \relative c
   R2*3 |
 
   %Minore
+  \grace {s32*3}
   R2*21 |
   g8\f r r4 |
   g8 r r g |
@@ -110,7 +111,7 @@ timpaniMvtII = \relative c
   r4 c8\sf r |
   c\p r r4 |
   R2 |
-  c4 c8 g\f |
+  r4 r8 g\f |
   c-. c-. r c16.\p c32 |
   c8 g r8. \times 2/3 {g32 g g} |
   \dimTextDecresc

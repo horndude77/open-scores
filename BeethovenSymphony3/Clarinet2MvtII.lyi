@@ -5,7 +5,7 @@
 clarinetTwoMvtII = \relative c'
 {
   \transposition bes
-  \key f \major
+  \key d \minor
   \partial 8 r8 |
   R2*8 |
   f2\p | f |
@@ -37,6 +37,7 @@ clarinetTwoMvtII = \relative c'
   r4 r8 a |
   \dimTextDecresc
   g4(\> f |
+  \crescTextCresc
   e)\< d\sf |
   \crescTextCresc
 
@@ -47,7 +48,7 @@ clarinetTwoMvtII = \relative c'
   a-.\f g-. r gis~\p |
   \crescHairpin
   \dimHairpin
-  gis\< a( g)\> g8 |
+  gis a(\< g)\> g8 |
   f8\p r r4 |
   R2*3 |
   bes4\f bes8.. bes32 |
@@ -76,6 +77,7 @@ clarinetTwoMvtII = \relative c'
 
   %Minore
   \key d \minor
+  \grace {s32*3}
   R2*16 |
   g'2\f |
   ees\sf |
@@ -125,12 +127,12 @@ clarinetTwoMvtII = \relative c'
   f8\p f16. f32 f8 r |
   R2*4 |
   c'4\p bes8 a~ |
-  \crescHairpin
   \dimHairpin
   gis4\< d\sf\> |
   cis8\p r r4 |
   R2 |
-  r4 r8 a'~\< |
+  \crescHairpin
+  r4\< r8 a'~ |
   a4.(\> gis8) |
   a8\! r r4 |
   R2*2 |

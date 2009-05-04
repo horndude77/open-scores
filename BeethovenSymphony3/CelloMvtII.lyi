@@ -49,13 +49,11 @@ celloMvtII = \relative c
   des4) r8. des32( c |
   \crescTextCresc
   b8)\< r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
-  \crescHairpin
   ees8-.\f f-. r ees~\p\< |
   ees c4(\sf\> b8) |
   c8-.\p aes'16.-. aes32-. d,8-. bes'16.-. bes32-. |
   ees,8 r r8. \times 2/3 {ees32 ees ees} |
   bes8 r r8. \times 2/3 {bes32 bes bes} |
-  \crescTextCresc
   c8\< r16 \times 2/3 {c32 c c} bes8 r16 \times 2/3 {aes32 aes aes} |
   \crescHairpin
   g8 r16 \times 2/3 {e'32 e e} e8\f r16 \times 2/3 {e32 e e} |
@@ -91,7 +89,7 @@ celloMvtII = \relative c
 
   %Maggiore
   \key c \major
-  c2~ |
+  c2~\p |
   c8 c-. d-. e-. |
   f2~ |
   f8 d-. e-. f-. |
@@ -148,6 +146,7 @@ celloMvtII = \relative c
 
   %Minore
   \key c \minor
+  \grace {s32*3}
   c4\p r |
   c4. r8 |
   c4 c |
@@ -238,7 +237,9 @@ celloMvtII = \relative c
   ees4(\> d8 c) |
   des8\! r16. e32-.\f e4 |
   r4 f8(\p g) |
+  \crescTextCresc
   aes4(\< aes,\sf)\> |
+  \crescHairpin
   g'4(\p d8 f |
   ees4 d8 c) |
   b4.(\< d8 |
@@ -255,7 +256,9 @@ celloMvtII = \relative c
   b,-.\< b'-. f,-. f'-. |
   \crescHairpin
   ees-.\f f-. r aes~\p
+  \crescTextCresc
   aes\<( g)\> g,\p g' |
+  \crescHairpin
   c, r16 c64( d ees f g8) r16 \times 2/3 {g32( a b)} |
   c8( g ees c) |
   b( g c ees) |

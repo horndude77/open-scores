@@ -22,17 +22,17 @@ hornThreeMvtII = \relative c''
   g8 r16. e'32-.\f e4 |
   r d8(\p c) |
   \dimHairpin
-  c4.\> c8\! |
-  e r r4 |
+  c4.\> c8 |
+  e\! r r4 |
   R2*5 |
   \dimTextDecresc
   r4\> d |
   d\< e\sf |
-  d8 r r4 |
+  d8\p r r4 |
   f2 |
-  \crescHairpin
   f4.\< f8 |
   e-.\f d-. r4 |
+  \crescHairpin
   \dimHairpin
   r8 c(\< d)\> d |
   c\p r r4 |
@@ -71,6 +71,7 @@ hornThreeMvtII = \relative c''
   R2*3 |
 
   %Minore
+  \grace {s32*3}
   R2*25 |
   d2\ff |
   g, |

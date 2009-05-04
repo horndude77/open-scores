@@ -8,8 +8,8 @@ bassMvtII = \relative c,
   \clef "bass_8"
   r8
   \appoggiatura {g32[ a b]} c8-.\pp r8 r4 |
-  \appoggiatura {g32[ a b]} c8-.\pp r8 r4 |
-  \appoggiatura {g32[ a b]} c8-.\pp r16 c32( d ees8-.) r16 ees32( f |
+  \appoggiatura {g32[ a b]} c8-. r8 r4 |
+  \appoggiatura {g32[ a b]} c8-. r16 c32( d ees8-.) r16 ees32( f |
   g4.) r16 f32( g |
   aes4) r8 f32( ees d c) |
   b4\sf r8. \times 2/3 {g32( a b)} |
@@ -46,13 +46,11 @@ bassMvtII = \relative c,
   des4) r8. des32( c |
   \crescTextCresc
   b8)\< r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
-  \crescHairpin
   ees8-.\f f-. r aes,~\p\< |
   aes g4\sf\> g8 |
   c8-.\p aes'16.-. aes32-. d,8-. bes'16.-. bes32-. |
   ees,8 r r8. \times 2/3 {ees32 ees ees} |
   bes8 r r8. \times 2/3 {bes32 bes bes} |
-  \crescTextCresc
   c8\< r16 \times 2/3 {c32 c c} bes8 r16 \times 2/3 {aes32 aes aes} |
   \crescHairpin
   g8 r16 \times 2/3 {e'32 e e} e8\f r16 \times 2/3 {e32 e e} |
@@ -85,7 +83,7 @@ bassMvtII = \relative c,
 
   %Maggiore
   \key c \major
-  c2~ |
+  c2~\p |
   c8 c-. d-. e-. |
   f2~ |
   f8 d-. e-. f-. |
@@ -143,7 +141,7 @@ bassMvtII = \relative c,
   %Minore
   \key c \minor
   \appoggiatura {g32[\p a b]} c8-. r r4 |
-  \appoggiatura {g32[\p a b]} c8-. r r8. \times 2/3 {g32( a b} |
+  \appoggiatura {g32[ a b]} c8-. r r8. \times 2/3 {g32( a b} |
   c8[) r16 c32( d] ees8[) r16 ees32( f] |
   g4.) r16 f32( g |
   aes4) r8 f32( ees d c |
@@ -224,7 +222,9 @@ bassMvtII = \relative c,
   c4(\> bes8 aes) |
   g8\! r16. e'32-.\f e4 |
   r4 f8(\p g) |
+  \crescTextCresc
   aes4(\< aes,\sf)\> |
+  \crescHairpin
   g2\p | g | g\< | g\> |
   g8\! r r4 |
   R2*2 |
@@ -235,7 +235,9 @@ bassMvtII = \relative c,
   b,-.\< b'-. f,-. f'-. |
   \crescHairpin
   ees-.\f f-. r aes~\p
+  \crescTextCresc
   aes\<( g)\> g,\p g' |
+  \crescHairpin
   c, r r4 |
   R2*3 |
   f,4\f r |

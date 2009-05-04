@@ -16,7 +16,7 @@ hornTwoMvtII = \relative c''
   f'2~\p\< |
   f8 r r4 |
   R2*5 |
-  r4 c,8-.( c-.) |
+  r4 c,8-.(\p c-.) |
   c4. c8 |
   \crescHairpin
   g'2\pp | g | g~\< |
@@ -28,10 +28,11 @@ hornTwoMvtII = \relative c''
   R2*9 |
   c2~\fp |
   c8 c\> c c |
-  g'2 | g | g\< | g~\> |
+  g'2\p | g | g\< | g~\> |
   g8\! r r4 |
   R2*3 |
   f'2\p | f |
+  \crescTextCresc
   d4.\< d8 |
   c,-.\f c-. r4 |
   r8 g'4\sf\> g8 |
@@ -48,8 +49,8 @@ hornTwoMvtII = \relative c''
   c-. r r4 |
 
   %maggiore
-  c'2~ | c |
-  c~\p | c |
+  c'2~\p | c |
+  c~ | c |
   g( | d'8) r r e,~ |
   e r r d' |
   g,4.\ff g8-.\sf |
@@ -58,11 +59,9 @@ hornTwoMvtII = \relative c''
   g-. r r4 |
   c,2~\p |
   c8 c c c |
-  \crescTextCresc
   c4\< c | c c~ | c8\p r r4 |
   R2 |
-  g'4 \times 2/3 {c,16 e g} \times 2/3 {c e, c} |
-  g'4 \times 2/3 {c,16 e g} \times 2/3 {c e, c} |
+  s1*0\p \repeat unfold 2 {g'4 \times 2/3 {c,16 e g} \times 2/3 {c e, c} |}
   g'2~ | g |
   c,4(\p e | g2) |
   c,~ | c8 c16. c32 c8 c |
@@ -79,6 +78,7 @@ hornTwoMvtII = \relative c''
   R2*3 |
 
   %minore
+  \grace {s32*3}
   R2*20 |
   r8 g4\f g8 |
   g,4 g8 g |
@@ -113,7 +113,7 @@ hornTwoMvtII = \relative c''
   r8 f16.\< f32 f8 f |
   f8\p r r4 |
   R2*4 |
-  r4 \clef "bass^8" c,,~\p | c2~ | c2\espressivo |
+  r4 \clef "bass^8" c,,~\p | c2~ | << {s4\< s\>} {c2} >> |
   \crescHairpin
   \clef treble g'2\p | g | g\< | g4.\> g8 |
   g\! r r4 |
@@ -140,8 +140,11 @@ hornTwoMvtII = \relative c''
   c2\p\< |
   r4 c8\p r |
   r4 c4( |
-  b2)(\espressivo | c8) r r4 |
-  b2(\espressivo | c8) r r4 |
+  \crescHairpin
+  << {s4\< s\>} {b2)(} >> |
+  c8)\! r r4 |
+  << {s4\< s\>} {b2(} >> |
+  c8)\! r r4 |
   \dimTextDecresc
   b2~ | b~ | b~\> |
   R2*4 |

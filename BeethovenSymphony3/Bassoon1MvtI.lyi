@@ -76,8 +76,8 @@ bassoonOneMvtI = \relative c'
     bes4 d-.(\p d-.) |
     d-.(\< d-. d-.) |
     d-.( d-.) bes~\sf\> |
-    bes( b c)\! |
-    R2.*2 |
+    bes( b c) |
+    s1*0\! R2.*2 |
     r4 r g'~\sf\> |
     g( f8 ees d c)\! |
     bes4 des-.( des-.) |

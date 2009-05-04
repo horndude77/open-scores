@@ -175,7 +175,7 @@ clarinetTwoMvtI = \relative c''
   bes,4( f' f) | ees4 r r |
   bes2 bes4 | bes2( g4) |
   g( bes ees) | c r r |
-  bes2(_\mCresc c4 | bes2 g4) |
+  bes2(\< c4 | bes2 g4) |
   bes( c g') |
   R2. |
   f,2(\sf aes4) |

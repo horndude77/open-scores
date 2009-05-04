@@ -17,11 +17,11 @@ clarinetOneMvtII = \relative c''
   bes8 r bes4~\<
   \dimTextDecresc
   bes8 bes(\> a g) |
-  a8 bes16. bes32 a8 r |
+  a8\p bes16. bes32 a8 r |
 
   %A
   R2*20 |
-  c4( bes8 a) |
+  c4(\p bes8 a) |
   g2 |
   bes4(\< a8 bes) |
   c8 r16. d32-.\f d4 |
@@ -32,12 +32,12 @@ clarinetOneMvtII = \relative c''
   \crescHairpin
   e4(\< a,~) |
   \dimHairpin
-  a4.(\> gis8)\! |
+  a4.(\> gis8) |
   \crescTextCresc
-  a8 bes( a\< d |
+  a8\! bes(\< a d |
   cis f e d) |
   \dimTextDecresc
-  cis4( bes |
+  cis4(\> bes |
   a)\< a\sf |
 
   %B
@@ -45,7 +45,9 @@ clarinetOneMvtII = \relative c''
   bes r |
   bes4.\< bes8 |
   a-.\f bes-. r d~\p |
-  d\< d( cis)\> cis16.( e32) |
+  \crescHairpin
+  \dimHairpin
+  d d(\< cis)\> cis16.( e32) |
   d8\p r r4 |
   R2*3 |
   e4\p e8.. e32 |
@@ -64,6 +66,7 @@ clarinetOneMvtII = \relative c''
 
   %C
   R2*18 |
+  \crescTextCresc
   cis2\f\< |
   d4.\ff fis8-.\sf |
   d4. fis8-.\sf |
@@ -73,6 +76,7 @@ clarinetOneMvtII = \relative c''
 
   %Minore
   \key d \minor
+  \grace {s32*3}
   R2*16 |
   g2\f |
   ees\sf |
@@ -120,16 +124,17 @@ clarinetOneMvtII = \relative c''
   f4( e8) r |
   e4 e16.( f32 g16. a32) |
   bes2~\< |
+  \dimTextDecresc
   bes8\> bes( a g) |
   a8\p bes16. bes32 a8 r |
   R2*4 |
   d4\p d8 d~ |
-  \crescHairpin
   \dimHairpin
   d4\< d8..(\sf\> gis,32) |
   a8\p r r4 |
   a4( g8 f) |
-  e4(\< a8) a'~\! |
+  \crescHairpin
+  e4(\< a8) a'~ |
   a4.(\> gis8) |
   a8\! r r4 |
   R2*2 |
@@ -164,6 +169,7 @@ clarinetOneMvtII = \relative c''
   d,8 r r4 |
   r r8 cis'8(\p |
   d4 a8 c) |
+  \crescTextCresc
   bes4(\< a8 g) |
   fis d' d d |
   d2\p\< |

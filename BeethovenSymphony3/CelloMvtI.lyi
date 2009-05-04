@@ -96,8 +96,8 @@ celloMvtI = \relative c
     r4 c'-.( c-.) |
     c-.( c-. c-.) |
     c c2\sf |
-    c2~\sf c8( a |
-    bes4) r r |
+    c2~\sf\> c8( a |
+    bes4)\p r r |
     R2.*3 |
     r4 f( des |
     << {c2 b4} {s4\< s4\> s4\!} >> |

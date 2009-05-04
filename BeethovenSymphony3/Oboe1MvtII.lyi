@@ -37,11 +37,12 @@ oboeOneMvtII = \relative c''
   b8\! r r4 |
   R2*2 |
   r4 r8 c16.c32 |
-  c4 \acciaccatura g'8\( f16. e32 f16. g32\) |
+  c4\p \acciaccatura g'8\( f16. e32 f16. g32\) |
   aes4( f8) r |
   \crescTextCresc
   f4\< ees32( d16.) c32( b16.) |
   c8-.\f aes'-. r fis~\p |
+  \crescHairpin
   fis g4(\< f16.\> d32) |
   c8\p r r4 |
   R2*3 |
@@ -67,7 +68,7 @@ oboeOneMvtII = \relative c''
   g4. b8-.\sf |
   g-. b-.\sf g-. b-.\sf |
   g-. r r4 |
-  c,2~ |
+  c,2~\p |
   c4.( e8) |
   \times 2/3 {f16-.\< a,-. c-.} \times 2/3 {f-. a-. c-.}
     \times 2/3 {r bes-. g-.} \times 2/3 {e-. c-. bes-.} |
@@ -97,6 +98,7 @@ oboeOneMvtII = \relative c''
 
   %minore
   \key c \minor
+  \grace {s32*3}
   R2*15 |
   e4(\f f8 g) |
   f8 r r4 |
@@ -173,12 +175,14 @@ oboeOneMvtII = \relative c''
   ees4(\< d8.. c32) |
   c8\f r r4 |
   R2*5 |
-  aes'2~\p\< |
+  \crescHairpin
+  aes'2~\pp\< |
   aes~\> |
   aes8\! r r4 |
   R2*6 |
   r4 r8 b(\p |
   c4 g8 bes) |
+  \crescTextCresc
   aes4(\< g8 f) |
   e( f g aes) |
   g2\p\< |

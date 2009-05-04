@@ -16,7 +16,7 @@ hornOneMvtII = \relative c'''
   f2~\p\< |
   f8 r r4 |
   R2*5 |
-  r4 c8-.( c-.) |
+  r4 c8-.(\p c-.) |
   c4. c8 |
   \crescHairpin
   g'2\pp | g | g~\< |
@@ -28,10 +28,11 @@ hornOneMvtII = \relative c'''
   R2*9 |
   c2~\fp |
   c8 c\> c c |
-  g'2 | g | g\< | g~\> |
+  g'2\p | g | g\< | g~\> |
   g8\! r r4 |
   R2*3 |
   f2\p | f |
+  \crescTextCresc
   f4.\< f8 |
   c-.\f c-. r4 |
   r8 g'4\sf\> g8 |
@@ -59,12 +60,11 @@ hornOneMvtII = \relative c'''
   d-. r r4 |
   c2~\p |
   c8 c c c |
-  \crescTextCresc
   c4\< c |
   c c~ |
   c8 r r4 |
   R2 |
-  \repeat unfold 2 {d4 e8 \times 2/3 {c16 e c} |}
+  s1*0\p \repeat unfold 2 {d4 e8 \times 2/3 {c16 e c} |}
   d2~ | d |
   c4(\p e | g2) |
   c,2~\< |
@@ -82,6 +82,7 @@ hornOneMvtII = \relative c'''
   R2*3
 
   %minore
+  \grace {s32*3}
   R2*20 |
   r8 g'4\f g8 |
   g,4 g8 g |

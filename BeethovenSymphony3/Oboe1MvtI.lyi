@@ -78,8 +78,8 @@ oboeOneMvtI = \relative c'''
     bes4 r r |
     r4 f'-.( f-.) |
     f-.( f-. f-.)\sf |
-    g2. |
-    R2.*2 |
+    g2.\> |
+    s1*0\! R2.*2 |
     r4 r g~\sf\> |
     g( f8 ees d c) |
     bes4\p r r |

@@ -4,7 +4,7 @@
 
 fluteTwoMvtII = \relative c'''
 {
-  \key ees \major
+  \key c \minor
   \partial 8 r8 |
   R2*44 |
   g4\p\< g~ |
@@ -51,6 +51,7 @@ fluteTwoMvtII = \relative c'''
 
   %Minore
   \key c \minor
+  \grace {s32*3}
   R2*12 |
   c'2\f |
   aes\sf |
@@ -61,7 +62,7 @@ fluteTwoMvtII = \relative c'''
   r8 g( aes c~) |
   c r r4 |
   R2*5 |
-  f,4(\sf g8 aes) |
+  f,4(\ff g8 aes) |
   bes4.\sf aes8 |
   g( des' c bes) |
   aes2~ |

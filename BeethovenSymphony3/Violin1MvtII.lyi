@@ -23,7 +23,7 @@ violinOneMvtII = \relative c'
   f8 r r8. \times 2/3 {aes32\< aes aes} |
   \dimTextDecresc
   aes8 r16 \times 2/3 {aes32\> aes aes} g8 r16 \times 2/3 {aes32 aes aes} |
-  g8\p r r bes, |
+  g8\p r r bes,\p |
   ees4( d8 c) |
   \crescHairpin
   bes4~ bes16 bes32-.\< c-. d-. ees-. f-. g-. |
@@ -45,7 +45,7 @@ violinOneMvtII = \relative c'
   aes4( f8) r |
   \crescTextCresc
   f'4\< ees32( d16.) c32( b16.) |
-  c8-. aes-. r fis~\p\< |
+  c8-.\f aes-. r fis~\p\< |
   fis g4(\sf\> f16. d32) |
   c8\p r r8. \times 2/3 {<bes aes'>32 <bes aes'> <bes aes'>} |
   <bes g'>8 r r8. \times 2/3 {ees32 ees ees} |
@@ -122,19 +122,20 @@ violinOneMvtII = \relative c'
     \repeat unfold 2 {\times 2/3 {g'16( d) b-.}} |
   \repeat unfold 2 {\times 2/3 {g'16( e) c-.}}
     \repeat unfold 2 {\times 2/3 {a'16( f) c-.}} |
-  \times 4/6 {c16 \repeat unfold 5 <e c'>} \times 4/6 {\repeat tremolo 6 <e c'>} |
   <<
     {
       s8\f
       \once \override Score.DynamicText #'self-alignment-X = #-1
       s\semprePiuF
     }
-    {\repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <d b'>16}}} >> |
-  <<
-    {s1*0\ff}
-    \repeat unfold 2
-    {\repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <e c'>32}} <e c'>8-. r}
+    {\times 4/6 {c16 \repeat unfold 5 <e c'>} \times 4/6 {\repeat tremolo 6 <e c'>} |}
   >> |
+  \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <d b'>16}} |
+  s1*0\ff
+  \repeat unfold 2
+  {
+    \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <e c'>32}} <e c'>8-. r |
+  } |
   \repeat unfold 2 {<c' e, g, c,>8-. r} |
   c2\fp( |
   aes4. f8) |
@@ -143,6 +144,7 @@ violinOneMvtII = \relative c'
 
   %minore
   \key c \minor
+  \grace {s32*3}
   g4\p^\sottoVoce \acciaccatura d'8 c16.( b32 c16. d32) |
   ees4( c8) r |
   g'4 f32( ees16.) d32( c16.) |
@@ -205,7 +207,7 @@ violinOneMvtII = \relative c'
   \times 2/3 {a16-. c-. ees-.} \times 2/3 {fis-. a-. c-.} ees8-. r |
   \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <d,, b'>16}} |
   \times 2/3 {d16-. f-. aes-.} \times 2/3 {b-. d-. f-.} \times 4/6 {\repeat tremolo 6 aes} |
-  \times 4/6 {\repeat tremolo 6 aes} \times 2/3 {aes\> aes aes} \times 2/3 {g g g} |
+  << {s8 s\>} {\times 4/6 {\repeat tremolo 6 aes16}} >> \times 2/3 {aes aes aes} \times 2/3 {g g g} |
   \times 2/3 {r fis\p fis} \times 2/3 {r g g} \times 2/3 {r aes aes} \times 2/3 {r g g} |
   \times 2/3 {r f f} \times 2/3 {r ees ees} \times 2/3 {r d d} \times 2/3 {r c c} |
   \times 2/3 {r b b} \times 2/3 {r aes aes} \times 2/3 {r g g} \times 2/3 {r b b} |
@@ -233,18 +235,22 @@ violinOneMvtII = \relative c'
       \times 4/6 {\repeat tremolo 6 g16} \times 2/3 {r g g} \times 2/3 {r g g}
     }
   >> |
-  \crescTextCresc
   g'4(\< d8 f |
-  \crescHairpin
   ees4\> d8 c) |
   b32\! g g g r aes aes aes r g g g r c c c |
   r b b b r ees ees ees r d d d r c c c |
+  \crescTextCresc
   r b\< b b b b b b r aes aes aes aes aes aes aes |
+  \crescHairpin
   r g g g g g g g <e g,>\sf <e g,> <e g,> <e g,> <e g,> <e g,> <e g,> <e g,> |
   f\p aes aes aes \repeat unfold 7 {r aes aes aes} |
+  \crescTextCresc
   r aes\< aes aes r aes aes aes r b b b r b b b |
+  \crescHairpin
   r c\f c c aes aes aes aes aes aes aes aes fis\p fis fis fis |
+  \crescTextCresc
   fis\< fis fis fis g\> g g g r g\p g g r b b b |
+  \crescHairpin
   c4( g) |
   ees8( g c4) |
   d4( ees8.\sf d32 c) |
