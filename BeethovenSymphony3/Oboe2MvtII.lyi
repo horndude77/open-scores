@@ -45,9 +45,9 @@ oboeTwoMvtII = \relative c''
   \key c \major
   R2*7 |
   g4.\ff d'8-.\sf |
-  bes4. d8-.\sf |
-  bes-. d-.\sf bes-. d-.\sf |
-  bes-. r r4 |
+  b4. d8-.\sf |
+  b-. d-.\sf b-. d-.\sf |
+  b-. r r4 |
   bes2~\p |
   bes |
   a8\< c r c |

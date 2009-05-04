@@ -108,7 +108,7 @@ bassoonTwoMvtII = \relative c
   ees8 r ees4~\sf |
   ees4 d~ |
   d8 ees-. f4~\sf |
-  f( e8) r | 
+  f( ees8) r | 
   r4 g'~\sf |
   g16 f ees-. d-. c-. bes-. aes-. g-. |
   f8 r r4 | 

@@ -177,7 +177,7 @@ clarinetOneMvtII = \relative c''
   r4 d8 r |
   R2 |
   r8 a4(_\mEspr bes8) |
-  b(\> cis,16) r\! r4 |
+  bes(\> cis,16) r\! r4 |
   r8 a'~ a16( bes) bes-.( bes-.) |
   bes8(\> cis,16) r\! r4 |
   R2*10 |

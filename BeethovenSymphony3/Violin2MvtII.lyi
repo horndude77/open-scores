@@ -153,7 +153,7 @@ violinTwoMvtII = \relative c'
   g4.(\sf\> c,8) |
   c\p des16-.( bes-.) aes8( bes16. g32) |
   << {f'4( g8 aes)} \\ {aes,8\f} >> |
-  bes'4.\sf \afterGrace a8(\trill {g32[ a])} |
+  bes'4.\sf \afterGrace aes8(\trill {g32[ aes])} |
   g8( des' c\sf bes)
   aes16( bes) aes-. g-. f-. ees-. d-. c-. |
   b-. c-. d-. c-. b-. g-. c-. g-. |

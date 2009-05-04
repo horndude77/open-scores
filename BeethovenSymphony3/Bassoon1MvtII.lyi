@@ -19,6 +19,7 @@ bassoonOneMvtII = \relative c'
   g8\p c16. c32 bes8 r | 
   R2*8 |
   g2~\p\< |
+  \dimHairpin
   g4.(\> fis8 |
   g8)\! r r4 |
   R2*9 |
@@ -122,7 +123,7 @@ bassoonOneMvtII = \relative c'
   ees8 r ees4~\sf |
   ees4 d~ |
   d8 ees-. f4~\sf |
-  f( e8) r | 
+  f( ees8) r | 
   R2 |
   r8 g16-. f-. ees-. d-. c-. bes-. |
   aes8 r r4 | 
