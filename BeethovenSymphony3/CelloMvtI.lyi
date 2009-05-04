@@ -609,7 +609,8 @@ celloMvtI = \relative c
   ees'2(\p\< d8 des | c4\> bes aes)\! |
   g8( bes) aes-. g-. f-. ees-. |
   d-. ees-. f-. bes,-. c-. d-. |
-  ees-. ees'-. ees-. ees-. d-. des-. |
+  \crescTextCresc
+  ees-. ees'-.\< ees-. ees-. d-. des-. |
   c-. bes-. aes-. c-. bes-. aes-. |
   g-. bes-. aes-. g-. f-. ees-. |
   d-. ees-. f-. ees-. d-. c-. |

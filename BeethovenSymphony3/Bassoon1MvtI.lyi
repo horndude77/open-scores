@@ -402,7 +402,7 @@ bassoonOneMvtI = \relative c'
   d2.~) |
   d4 d-. bes-. |
   f'( ees2~) | ees4 ees-. bes-. |
-  ges'4_\mEspr ges2~ |
+  ges'4_\mEspr\< ges2~ |
   ges4 ges2~ |
   ges4 ges-.( ges-.) |
   ges( f ees) |

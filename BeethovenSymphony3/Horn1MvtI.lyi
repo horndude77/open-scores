@@ -321,7 +321,8 @@ hornOneMvtI = \relative c''
   R2.*3 |
   d2 f4 |
   R2. |
-  d2 f4 |
+  \dimTextDecresc
+  d2 f4\> |
   f2( d4) |
   c\p c-. r |
   c-. r c-. |
@@ -375,6 +376,7 @@ hornOneMvtI = \relative c''
   \repeat tremolo 6 d8 |
   \crescHairpin
   c2.~\p\< |
+  \dimHairpin
   c~\> |
   c4(\! g) g-.( |
   g-. g-. g-.) |

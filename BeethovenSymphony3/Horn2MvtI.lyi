@@ -385,7 +385,8 @@ hornTwoMvtI = \relative c'
   R2. |
   g'2 g,4 |
   R2. |
-  d''2( d4) |
+  \dimTextDecresc
+  d''2(\> d4) |
   c\p c,-. r |
   c-. r c-. |
   r c-. r |
@@ -435,8 +436,8 @@ hornTwoMvtI = \relative c'
   c8\ff c' \repeat tremolo 4 c8 |
   \repeat tremolo 6 g8 |
   \crescHairpin
-  \dimHairpin
   c,2.~\p\< |
+  \dimHairpin
   c~\> |
   c4(\! g) g-.( |
   g-. g-. g-.) |
