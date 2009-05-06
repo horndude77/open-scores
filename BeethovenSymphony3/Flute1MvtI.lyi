@@ -23,7 +23,7 @@ fluteOneMvtI = \relative c'''
     r4 r g,(\p |
     aes c ees) |
     aes,2(\< a4 |
-    bes2.~)-\tag #'part \fp |
+    bes2.~)\fp |
     bes2( d4) |
     ees4-. ees2\sf |
     ees2\sf ees4\sf |

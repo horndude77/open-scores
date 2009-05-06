@@ -24,7 +24,7 @@ clarinetOneMvtI = \relative c''
     r4 r a,(\p |
     bes d f) |
     bes,2(\< b4 |
-    c2)-\tag #'part \fp g'4( |
+    c2)\fp g'4( |
     e c g') |
     f4-. f2\sf |
     f2\sf f4\sf |

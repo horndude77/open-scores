@@ -18,7 +18,7 @@ bassoonOneMvtI = \relative c'
     \override DynamicTextSpanner #'dash-period = #-1.0
     \crescTextCresc
     aes,2(\< a4) |
-    bes2.-\tag #'part \fp( |
+    bes2.\fp( |
     d2)( f4) |
     ees4-. c2\sf |
     c2\sf c4\sf |

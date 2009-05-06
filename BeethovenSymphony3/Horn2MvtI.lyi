@@ -13,11 +13,11 @@ hornTwoMvtI = \relative c'
     R2.*8 |
     \override DynamicTextSpanner #'dash-period = #-1.0
     \crescTextCresc
-    c'2.(-\tag #'part \p -\tag #'part \< |
+    c'2.(\p\< |
     d4 c g) |
     e4\p r r |
     R2.*6 |
-    r4 c-\tag #'part \< c |
+    r4 c\< c |
     g2.~\fp |
     g2 g'4\p |
     c,-. c2\sf |
@@ -30,7 +30,7 @@ hornTwoMvtI = \relative c'
     g\sf g4~\sf |
     g g-. g~\sf |
     g g-. g\sf |
-    g2.~-\tag #'part \< |
+    g2.~\< |
     g4 g' g |
     g4\ff c, e |
     c2 g4 |
@@ -56,7 +56,7 @@ hornTwoMvtI = \relative c'
     g,,2.~\p\< | g2.~\> | g2\! d''4-.( |
     d-. d-. d-.) |
     \crescTextCresc
-    g,,2.~-\tag #'part \< |
+    g,,2.~\< |
     g~ |
     g4 r r |
     r r8 c c c |

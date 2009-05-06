@@ -15,13 +15,13 @@ hornOneMvtI = \relative c''
     \crescTextCresc
     e2.(\p\< |
     f4 e d) |
-    c2(-\tag #'part \p e4 |
+    c2(\p e4 |
     c2 g4) |
     c4( e g |
     c,) r r |
     R2.*3 |
     r4 c\< c |
-    g2.~-\tag #'part \fp |
+    g2.~\fp |
     g2 d'4\p |
     c-. c2\sf |
     c2\sf c4\sf |
@@ -33,7 +33,7 @@ hornOneMvtI = \relative c''
     e\sf e4~\sf |
     e d-. d~\sf |
     d e-. e\sf |
-    f2.~-\tag #'part \< |
+    f2.~\< |
     f4 f f |
     e4\ff c e |
     c2 g4 |

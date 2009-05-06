@@ -18,7 +18,7 @@ oboeOneMvtI = \relative c'''
     aes4 g f |
     ees) r r |
     R2.*7 |
-    d2.(-\tag #'part \fp |
+    d2.(\fp |
     f2 aes4) |
     g4-. ges2\sf |
     ges2\sf ges4\sf |
