@@ -206,7 +206,7 @@ violinOneMvtIII = \relative c'
     r f'(\< d |
     bes)\! r r |
     \crescHairpin
-    r bes(\p g |
+    r bes(\f g |
     ees) r r |
     R2.*5 |
     r4 g\p g |
@@ -387,7 +387,7 @@ violinOneMvtIII = \relative c'
   g-. d-. ees-. |
   c-. g-. aes-. |
   f-. d-. bes'-. |
-  g8\pp g bes bes b b |
+  g8\p g bes bes b b |
   c c d d ees ees |
   f f c c cis cis |
   d d e e f f |

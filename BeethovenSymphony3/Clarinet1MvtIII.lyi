@@ -50,7 +50,7 @@ clarinetOneMvtIII = \relative c''
     r4 f\p \repeat unfold 7 f |
     e e e |
     f-.\f a2\sf |
-    f4-. c2\sf |
+    f4 c2\sf |
     a4 f'2\sf |
     c4 r bes(\trill |
 

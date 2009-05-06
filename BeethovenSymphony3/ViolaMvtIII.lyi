@@ -409,11 +409,11 @@ violaMvtIII = \relative c
   r4 f\pp\< f |
   f f f |
   f\> f f |
-  ees\! r r |
+  ees r\! r |
   r f'\< f |
   f f f |
   f\> f f |
-  ees\! r r |
+  ees r\! r |
   R2.*3 |
   \crescTextCresc
   r4 bes8\< bes ees ees |

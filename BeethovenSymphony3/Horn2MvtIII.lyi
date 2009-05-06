@@ -118,7 +118,7 @@ hornTwoMvtIII = \relative c'
     c2 g4 |
     e4 g8 e c4 |
     g4 r r |
-    r r c-. |
+    r r c-.\< |
     c( g) e'-. |
     e( c) g'-. |
     g( e) bes'-. |
@@ -134,7 +134,8 @@ hornTwoMvtIII = \relative c'
     f r r |
     R2.*3 |
     r4 r g,( |
-    aes2.~)\sf\> | aes~ |
+    aes2.~)\sf\> |
+    aes~ |
     aes~ |
   }
   \alternative

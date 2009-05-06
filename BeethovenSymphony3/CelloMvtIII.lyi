@@ -110,8 +110,8 @@ celloMvtIII = \relative c
     r4 bes\p bes |
     bes bes bes |
     ees-. g'2\sf |
-    ees4-. bes2\sf |
-    g4-. ees2\sf |
+    ees4 bes2\sf |
+    g4 ees2\sf |
     bes4 r aes(\trill |
     g) r r |
     R2. |
@@ -126,7 +126,7 @@ celloMvtIII = \relative c
       ees-. r r |
     }
     R2. |
-    r4 aes,-. ees-. |
+    r4 aes,-.\p ees-. |
     aes-. ees-. aes-. |
     ees-. r r |
     R2.*7 |
@@ -217,12 +217,12 @@ celloMvtIII = \relative c
   {
     {
       R2.*3 |
-      r4 bes\p bes |
+      r4 bes\pp bes |
       ees r r |
       r r aes\f |
     }
     {
-      r4 b,-.\p c-. |
+      r4 b,-.\pp c-. |
     }
   }
   b-. c-. b-. |
@@ -283,7 +283,7 @@ celloMvtIII = \relative c
   \repeat unfold 6 {d-. cis-.} |
   d-. r r |
   R2.*3 |
-  bes4\p bes bes |
+  bes4\pp bes bes |
   \repeat unfold 11 {bes bes bes} |
   bes d' c |
   bes d c |

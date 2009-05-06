@@ -28,7 +28,7 @@ clarinetTwoMvtIII = \relative c'
     bes |
     a |
     bes4-. d-. f-. |
-    a,2.\sf |
+    a,2. |
     d4-. d-. d-. |
     c-. c-. c-. |
     bes-. bes-. bes-. |
@@ -41,7 +41,7 @@ clarinetTwoMvtIII = \relative c'
     a a a |
     bes bes bes |
     a-.\f a2\sf |
-    f4-. c2\sf |
+    f4 c2\sf |
     a'4 f2\sf |
     c4 r bes'(\trill |
 

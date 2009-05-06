@@ -207,8 +207,8 @@ violinTwoMvtIII = \relative c'
     r aes'(\< f |
     d)\! r r |
     \crescHairpin
-    r aes'(\< f |
-    d)\! bes'(\f g |
+    r aes'( f |
+    d) bes'(\f g |
     ees) r r |
     R2.*5 |
     r4 ees\p ees |
@@ -409,12 +409,12 @@ violinTwoMvtIII = \relative c'
   <bes, f' d'>\f r r |
   R2. |
   r4 aes\pp\< aes |
-  aes aes aes\> |
   aes aes aes |
+  aes\> aes aes |
   g r\! r |
   r4 aes'\< aes |
-  aes aes aes\> |
   aes aes aes |
+  aes\> aes aes |
   g r\! r |
   R2.*3 |
   \crescTextCresc

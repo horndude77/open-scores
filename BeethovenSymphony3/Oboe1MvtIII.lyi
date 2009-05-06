@@ -149,7 +149,7 @@ oboeOneMvtIII = \relative c'''
     \repeat unfold 3 {c2 c4 |}
     c4 r r |
     r r f_\mPDolce |
-    f(_\mSempreLegato d c |
+    f(^\mSempreLegato d c |
     bes d c |
     ees a, c |
     f, ees' d |

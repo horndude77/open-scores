@@ -15,7 +15,7 @@ hornOneMvtIII = \relative c''
     g-. g-. g-. |
     g-. r r |
     R2.*7 |
-    c4\f e g |
+    c4\ff e g |
     c, e g |
     c, e g |
     c, c c |
@@ -41,11 +41,11 @@ hornOneMvtIII = \relative c''
     g4 r g |
     e' r r |
     R2.*7 |
-    r4 c-.\f c-. |
+    r4 c-.\p c-. |
     c-. c-. c-. |
     c-. r r |
     R2. |
-    r4 c-.\f c-. |
+    r4 c-.\p c-. |
     \repeat unfold 3 {c-. c-. c-. |}
     c r r |
     R2.*7 |
@@ -137,8 +137,8 @@ hornOneMvtIII = \relative c''
     d4 r r |
     R2.*3 |
     r4 r e( |
-    f2.~)\sf |
-    f2.~\> |
+    f2.~)\sf\> |
+    f2.~ |
     f2.~ |
   }
   \alternative
