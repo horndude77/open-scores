@@ -12,7 +12,7 @@ fluteOneMvtIV = \relative c'''
   f-. f-. |
   f-. f-.\sf |
   r f\sf |
-  d2\ff\fermata |
+  d2\sf\fermata | %Changed ff to sf for consistency. (Why was ff marked here?)
   R2*8 |
   r4 ees,8\p r |
   r4 bes'8 r |
@@ -49,7 +49,7 @@ fluteOneMvtIV = \relative c'''
   {
     r8 |
     R2*3 |
-    R2^\fermataMarkup
+    r4.\fermata r8 |
     R2*3 |
     r4 r8
   }
@@ -63,7 +63,7 @@ fluteOneMvtIV = \relative c'''
   {
     r8 |
     R2*3 |
-    R2^\fermataMarkup
+    r4.\fermata r8 |
     R2*3 |
     r4 r8
   }

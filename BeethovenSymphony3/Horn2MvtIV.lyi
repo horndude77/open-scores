@@ -36,7 +36,7 @@ hornTwoMvtIV = \relative c'
   {
     r8 |
     R2*3 |
-    R2^\fermataMarkup
+    r4.\fermata r8 |
     R2*3 |
     r4 r8
   }
@@ -50,7 +50,7 @@ hornTwoMvtIV = \relative c'
   {
     r8 |
     R2*3 |
-    R2^\fermataMarkup
+    r4.\fermata r8 |
     R2*3 |
     r4 r8
   }
@@ -163,7 +163,7 @@ hornTwoMvtIV = \relative c'
   c b8..(\< c32) |
   c4.\sf\> c'8~ |
   c\p g~ g c, |
-  c4(\< g8)\> r\! |
+  << {s8\< s\> s\!} {c4(\< g8)\>} >> r8 |
   g2~\p | g4 g8.. g32 |
   g2~ | g4 g8.. g32 |
   c2\<

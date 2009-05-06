@@ -37,7 +37,7 @@ hornOneMvtIV = \relative c''
   {
     r8 |
     R2*3 |
-    R2^\fermataMarkup
+    r4.\fermata r8 |
     R2*3 |
     r4 r8
   }
@@ -51,7 +51,7 @@ hornOneMvtIV = \relative c''
   {
     r8 |
     R2*3 |
-    R2^\fermataMarkup
+    r4.\fermata r8 |
     R2*3 |
     r4 r8
   }
@@ -116,17 +116,17 @@ hornOneMvtIV = \relative c''
 
   %poco andante
   R2*6 |
-  r4 r8 d8(\p |
+  r4 r8 c8(\p |
   e4 d8) r |
   r4 ees8..( d32) |
   d4 r |
   r4 f8..(\sf e32) |
   e4 r |
-  \crescHairpin
   \dimHairpin
   r4 g\< |
   g4.\sf\> g8( |
   f)\p f( e) e |
+  \crescHairpin
   << {e4( d8)} {s8\< s\> s\!} >> r8 |
   g,2~\p | g4 g8.. g32 |
   g2~ | g4 g8.. g32 |

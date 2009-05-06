@@ -173,7 +173,7 @@ bassMvtIV = \relative c'
   \crescTextCresc
   cis\< a |
   \crescHairpin
-  d\> r8 d, |
+  d r8\> d, |
   cis\p a d fis |
   a, a' a, r |
   R2*8 |

@@ -354,7 +354,7 @@ violinTwoMvtIV = \relative c''
   ees4(\< aes8.. g32) |
   g4.\sf\> g8~ |
   g8\p f~ f ees~ |
-  ees4\< d8\> r\! |
+  << {s8\< s\> s\!} {ees4( d8)} >> r8 |
   \repeat unfold 6 {r8 <d aes>} |
   r <d aes> r <f bes,> |
   r <g bes,>\< r <g bes,> |
@@ -399,12 +399,12 @@ violinTwoMvtIV = \relative c''
   \times 2/3 {aes16(\< bes) c-.} \times 2/3 {bes-. aes-. g-.}
     \times 2/3 {f-. ees-. d-.} \times 2/3 {c-. bes-. aes-.} |
   g8~ \times 2/3 {g16 des'-. c-.} \times 2/3 {bes-. aes-. g-.} \times 2/3 {f-. ees-. des-.} |
-  c16-. <c ees>-. <c ees>8~ <c ees>16 <c ees>-. <c ees>8~ | %The way this rhythm was notated in the source was confusing.
+  c16-.\p <c ees>-. <c ees>8~ <c ees>16 <c ees>-. <c ees>8~ | %The way this rhythm was notated in the source was confusing.
   <c ees>16 <des ees>-. <des ees>8~ <des ees>16 <des ees>-. <des ees>8~ |
   <des ees>16 <des ees>-. <des ees>8~ <des ees>16 <des ees>-. <des ees~>8_( |
   <c ees>16) <c ees>-. <c ees>8~ \repeat unfold 4 <c ees>16 |
-  \times 2/3 {<c ees>16 c( ees) } \times 2/3 {r c( ees) }
-    \times 2/3 {r\< bes( ees) } \times 2/3 {r des( ees) } |
+  \times 2/3 {<c ees>16 c( ees) } \times 2/3 {r c(\< ees) }
+    \times 2/3 {r bes( ees) } \times 2/3 {r des( ees) } |
   \repeat unfold 5 {\times 2/3 {r16 c( ees)}}
   \repeat unfold 7 {\times 2/3 {r16 ees( ges)}} |
   << {s1*0\<} {\repeat unfold 5 {\times 2/3 {r16 ees( ges)}}} >>
@@ -420,8 +420,9 @@ violinTwoMvtIV = \relative c''
   r8 fis16-. fis-. r8 a16-. a-. |
   r8 c16 c r8 fis,16 fis |
   r8\< d16 d r8 d'16 d |
+  \dimTextDecresc
   r8\> f16 f r8 d,16 d |
-  r8\p f16 f r8 ees16 ees |
+  r8\! f16\p f r8 ees16 ees |
   r8 fis16 fis r8 ees16 ees |
   \crescHairpin
   r8\< d16 d r8 aes'16 aes |

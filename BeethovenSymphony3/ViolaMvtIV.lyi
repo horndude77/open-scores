@@ -263,7 +263,7 @@ violaMvtIV = \relative c'
   r <c e> c c |
   r c\< r b |
   r c\sf\> d e |
-  r <d f>\p r <c e> |
+  r\! <d f>\p r <c e> |
   r c( b) r |
   R2*3 |
   r4 r8 f(\pp |
@@ -364,7 +364,7 @@ violaMvtIV = \relative c'
   r <ees g,>\< r ees |
   r ees r ees |
   \crescHairpin
-  r ees\p\< r d\> |
+  r\p\< ees r\> d |
   \crescTextCresc
   ees16\< bes( a bes aes g f ees) |
   bes'8\p r r4 |
@@ -417,7 +417,7 @@ violaMvtIV = \relative c'
   \times 2/3 {r ees(\f ges)} \repeat unfold 3 {\times 2/3 {r ees( ges)}} |
   \repeat unfold 4 {\times 2/3 {r fis( a)}} |
   \once \override Score.DynamicText #'self-alignment-X = #-1
-  << {s16*2/3 s\semprePiuF} {\repeat unfold 4 {\times 2/3 {r16 a( fis)}}} >> |
+  << {s1*0\semprePiuF} {\repeat unfold 4 {\times 2/3 {r16 a( fis)}}} >> |
   \times 2/3 {d16 a' a} \times 2/3 {a a a} \times 4/6 {\repeat tremolo 6 a} |
   \times 2/3 {g\ff <d d'> <d d'>} \times 2/3 {<d d'> <d d'> <d d'>} \times 4/6 {\repeat tremolo 6 <d d'>} |
   \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 <d c'>}} |
@@ -426,7 +426,7 @@ violaMvtIV = \relative c'
   r8 <a fis>16 <a fis> r8 <c ees>16 <c ees> |
   r8\< <f aes>16 <f aes> r8 <d b>16 <d b> |
   \dimTextDecresc
-  r8\> <d b>16 <d b> r8 <f bes>16 <f bes> |
+  r8\> <d b>16 <d b> r8 <f aes>16 <f aes> |
   r8 <b, aes'>16\p <b aes'> r8 <c g'>16 <c g'> |
   r8 <aes c>16 <aes c> r8 <a c>16 <a c> |
   \crescHairpin

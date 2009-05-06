@@ -250,7 +250,7 @@ oboeOneMvtIV = \relative c'''
   bes( aes') r g-. g( f) r ees-. |
   ees8( d16) ees-. f-. g-. aes-. bes-. |
   b( c) r bes-. bes( aes) r g-. |
-  g8( f16) e-. f-. gis-. g-. aes-. |
+  g8( f16) e-. f-. fis-. g-. aes-. |
   \crescTextCresc
   a4(\< bes8 r16 bes |
   b4( c8 r16 c |

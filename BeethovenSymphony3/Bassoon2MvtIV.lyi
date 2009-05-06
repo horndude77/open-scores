@@ -50,7 +50,7 @@ bassoonTwoMvtIV = \relative c
   {
     r8 |
     R2*3 |
-    R2^\fermataMarkup
+    r4.\fermata r8 |
     R2*3 |
     r4 r8
   }
@@ -64,7 +64,7 @@ bassoonTwoMvtIV = \relative c
   {
     r8 |
     R2*3 |
-    R2^\fermataMarkup
+    r4.\fermata r8 |
     R2*3 |
     r4 r8
   }

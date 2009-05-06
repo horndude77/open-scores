@@ -110,7 +110,7 @@ clarinetOneMvtIV = \relative c''
   cis,-. r |
   R2*2 |
   r8 g'\p g g |
-  f4( f8) r |
+  g4( f8) r |
   R2*17 |
   a,2\p |
   d |
@@ -147,8 +147,8 @@ clarinetOneMvtIV = \relative c''
   gis4\p r |
   R2*23 |
   \repeat unfold 3 {r4 \times 2/3 {a,8\sf a a} |}
-  r4 \times 2/3 {b8\sf b b} |
-  \repeat unfold 2 {r4 \times 2/3 {e8\sf e e} |}
+  r4 \times 2/3 {b8 b b} |
+  \repeat unfold 2 {r4 \times 2/3 {e8 e e} |}
   e8 r dis r |
   e r r4 |
   e2\ff |
@@ -279,7 +279,7 @@ clarinetOneMvtIV = \relative c''
   bes4.\sf g8 |
   f4.\sf a8 |
   c4-. c-. |
-  c4.\fp a8 |
+  c4.\sf a8 |
   c16( bes) g8-. bes16( a) f8-. |
   a4( g8) c,16( b) |
   c-. d-. e-. f-. g-. a-. bes-. a-. |
@@ -313,9 +313,9 @@ clarinetOneMvtIV = \relative c''
   aes4-.\< aes-. |
   aes2 |
   aes4-.\f aes-. |
+  aes2 |
   \once \override Score.DynamicText #'self-alignment-X = #-1
-  aes2\semprePiuF |
-  b,4-. b-. |
+  b,4-.\semprePiuF b-. |
   d2 |
   c\ff |
   b4 b |
