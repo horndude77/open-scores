@@ -25,7 +25,7 @@ trumpetTwoMvtII = \relative c'
   c c r g |
   r c r c |
   c8\f r
-    \once \override Score.DynamicText #'self-alignment-X = #-1
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     \times 2/3 {c16\semprePiuF g c} \times 2/3 {e c e} |
   g4. g,8 |
   c4.\ff e8-.\sf |

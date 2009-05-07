@@ -125,7 +125,7 @@ violinOneMvtII = \relative c'
   <<
     {
       s8\f
-      \once \override Score.DynamicText #'self-alignment-X = #-1
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
       s\semprePiuF
     }
     {\times 4/6 {c16 \repeat unfold 5 <e c'>} \times 4/6 {\repeat tremolo 6 <e c'>} |}

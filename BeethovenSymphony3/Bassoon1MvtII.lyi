@@ -92,7 +92,7 @@ bassoonOneMvtII = \relative c'
   d8( c4 b16 g') | 
   g16( fis g gis a f e d) |
   c8\f
-    \once \override Score.DynamicText #'self-alignment-X = #-1
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     e4\semprePiuF( g8) |
   g4. f16.( d32) |
   c4.\ff g8-.\sf |

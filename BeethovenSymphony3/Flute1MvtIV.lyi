@@ -296,7 +296,7 @@ fluteOneMvtIV = \relative c'''
     \times 4/6 {bes-. aes-. g-. f-. ees-. des-. } |
   c8\p r r4 |
   R2*11 |
-  \once \override Score.DynamicText #'self-alignment-X = #-1
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   fis'4-.\semprePiuF fis-. |
   fis2 |
   g2\ff |
@@ -340,7 +340,7 @@ fluteOneMvtIV = \relative c'''
   g-. ees-. g-. ees-. g ees bes'\sf g |
   bes g ees'\sf bes ees bes g'\sf ees |
   \repeat unfold 2 {g ees g\sf ees} |
-  \once \override Score.DynamicText #'self-alignment-X = #-1
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   g2\semprePiuF |
   g |
   g |

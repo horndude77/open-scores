@@ -43,26 +43,26 @@ unfoldTremolos = #(define-music-function (parser location mus) (ly:music?)
   (music-map unfold-tremolos mus))
 % end tremolo functions
 
-mSemprePianissimoStaccato = \markup{\dynamic pp \italic {sempre pianissimo e staccato}}
-mSempreStaccato = \markup{\italic {sempre staccato}}
-mSempreLegato = \markup{\italic {sempre legato}}
 crescTextSempreCresc = {
     \set crescendoText = \markup { \italic {sempre cresc.} }
     \set crescendoSpanner = #'text
     \override DynamicTextSpanner #'style = #'dashed-line
 }
-mSemprePiuP = \markup{\italic {sempre più} \dynamic p}
-semprePiuF = #(make-dynamic-script (markup #:normal-text #:italic "sempre più" #:dynamic "f"))
-mSemprePP = \markup{\italic sempre \dynamic pp}
-mSempreP = \markup{\italic sempre \dynamic p}
-mSempreF = \markup{\italic sempre \dynamic f}
-mEspr = \markup{\italic espress.}
-mDolce = \markup{\italic dolce}
 crescTextDolceCresc = {
     \set crescendoText = \markup { \italic {dolce cresc.} }
     \set crescendoSpanner = #'text
     \override DynamicTextSpanner #'style = #'dashed-line
 }
+mSemprePianissimoStaccato = \markup{\dynamic pp \italic {sempre pianissimo e staccato}}
+mSempreStaccato = \markup{\italic {sempre staccato}}
+mSempreLegato = \markup{\italic {sempre legato}}
+mSemprePiuP = \markup{\italic {sempre più} \dynamic p}
+semprePiuF = #(make-dynamic-script (markup #:normal-text #:italic "sempre più" #:dynamic "f"))
+semprePP = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "pp"))
+mSempreP = \markup{\italic sempre \dynamic p}
+mSempreF = \markup{\italic sempre \dynamic f}
+mEspr = \markup{\italic espress.}
+mDolce = \markup{\italic dolce}
 mPDolce = \markup{\dynamic p \italic dolce}
 mPConEspressione = \markup{\dynamic p \italic {con espressione}}
 mPiuF = \markup{\italic più \dynamic f}

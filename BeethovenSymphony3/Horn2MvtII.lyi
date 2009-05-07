@@ -68,7 +68,7 @@ hornTwoMvtII = \relative c''
   r c' r g |
   r c, r c |
   e\f
-    \once \override Score.DynamicText #'self-alignment-X = #-1
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     c'4\semprePiuF e16( c) |
   g4. g8 |
   e4.\ff g8-.\sf |

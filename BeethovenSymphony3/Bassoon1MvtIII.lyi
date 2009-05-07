@@ -21,7 +21,8 @@ bassoonOneMvtIII = \relative c'
     d4 r r |
     R2.*2 |
     d2.-> |
-    d4-._\mSemprePP d,-. c'-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    d4-.\semprePP d,-. c'-. |
     bes-. g-. ees-. |
     d-. c'-. a-. |
     d-. bes-. ees-. |
@@ -168,7 +169,8 @@ bassoonOneMvtIII = \relative c'
   d4 r r |
   R2.*2 |
   d2.-> |
-  d4-._\mSemprePP d,-. c'-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  d4-.\semprePP d,-. c'-. |
   bes-. g-. ees-. |
   d-. c'-. a-. |
   d-. bes-. ees-. |

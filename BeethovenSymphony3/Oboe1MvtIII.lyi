@@ -35,7 +35,8 @@ oboeOneMvtIII = \relative c'''
     d4 r r |
     R2.*2 |
     d2.-> |
-    d4_\mSemprePP r fis-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    d4\semprePP r fis-. |
     g-. bes-. g-. |
     fis-. r a-. |
     g-. g-. g-. |
@@ -202,7 +203,8 @@ oboeOneMvtIII = \relative c'''
   d4 r r |
   R2.*2 |
   d2.-> |
-  d4_\mSemprePP r fis-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  d4\semprePP r fis-. |
   g-. bes-. g-. |
   fis-. r a-. |
   g-. g-. g-. |

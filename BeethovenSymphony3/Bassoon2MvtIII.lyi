@@ -11,7 +11,8 @@ bassoonTwoMvtIII = \relative c
   \repeat volta 2
   {
     R2.*28 |
-    d4-._\mSemprePP a'-. fis-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    d4-.\semprePP a'-. fis-. |
     bes-. g-. ees-. |
     d-. r r |
     R2.*18
@@ -126,7 +127,8 @@ bassoonTwoMvtIII = \relative c
     { R2.*1 |}  
   }
   R2.*61
-  d4-._\mSemprePP a'-. fis-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  d4-.\semprePP a'-. fis-. |
   bes-. g-. ees-. |
   d-. r r |
   R2.*18

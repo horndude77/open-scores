@@ -297,7 +297,7 @@ oboeOneMvtIV = \relative c'''
   ees2 |
   ges4-.\f ges-. |
   ges2 |
-  \once \override Score.DynamicText #'self-alignment-X = #-1
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   a4-.\semprePiuF a-. |
   a2 |
   g\ff |
@@ -338,7 +338,7 @@ oboeOneMvtIV = \relative c'''
   g-. ees-. g-. ees-. g ees bes'\sf g |
   bes g ees\sf bes ees bes g'\sf ees |
   g ees g\sf ees g ees g\sf ees |
-  \once \override Score.DynamicText #'self-alignment-X = #-1
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   g2\semprePiuF |
   g |
   g |

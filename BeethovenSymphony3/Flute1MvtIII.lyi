@@ -30,7 +30,8 @@ fluteOneMvtIII = \relative c'''
     d4 r r |
     R2.*2 |
     d2.-> |
-    d4_\mSemprePP r d-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    d4\semprePP r d-. |
     d-. d-. cis-. |
     d-. r d-. |
     d-. d-. g-. |
@@ -165,7 +166,8 @@ fluteOneMvtIII = \relative c'''
   d4 r r |
   R2.*2 |
   d2.-> |
-  d4-._\mSemprePP r d-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  d4-.\semprePP r d-. |
   d-. d-. cis-. |
   d-. r d-. |
   d-. d-. g-. |

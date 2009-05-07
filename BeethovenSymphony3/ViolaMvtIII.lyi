@@ -34,7 +34,9 @@ violaMvtIII = \relative c
   \repeat volta 2
   {
     R2. |
-    r4 r ees-._\mSemprePP |
+    r4 r
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+      ees-.\semprePP |
     ees-. aes-. ees-. |
     aes-. ees-. aes-. |
     ees aes ees |
@@ -59,7 +61,8 @@ violaMvtIII = \relative c
     bes4( d) bes-. |
     a( c) a-. |
     g( bes) bes-. |
-    a-._\mSemprePP fis-. d'-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    a-.\semprePP fis-. d'-. |
     d-. bes-. g-. |
     fis-. d'-. d-. |
     d-. d-. g-. |
@@ -298,7 +301,8 @@ violaMvtIII = \relative c
   bes4( d) bes-. |
   a( c) a-. |
   g( bes) bes-. |
-  a-._\mSemprePP fis-. d'-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  a-.\semprePP fis-. d'-. |
   d-. bes-. g-. |
   fis-. d'-. d-. |
   d-. d-. g-. |

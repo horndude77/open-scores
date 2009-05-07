@@ -440,7 +440,7 @@ violinOneMvtIV = \relative c'
   bes2 |
   ees4-.\f ees-. |
   ees2 |
-  \once \override Score.DynamicText #'self-alignment-X = #-1
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   fis4-.\semprePiuF fis-. |
   \times 4/6 {\repeat tremolo 6 fis16} \times 4/6 {\repeat tremolo 6 fis16} |
   \times 4/6 {\repeat tremolo 6 g16} \times 4/6 {\repeat tremolo 6 g16} |
@@ -486,7 +486,7 @@ violinOneMvtIV = \relative c'
   g ees g ees g ees bes'\sf g |
   bes g ees'\sf bes ees bes g'\sf ees |
   g ees bes'\sf g bes g ees'\sf bes |
-  \once \override Score.DynamicText #'self-alignment-X = #-1
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees4\semprePiuF ees |}
   ees32 g g g g g g g \tremolos #32 {g4 |
   g2 |

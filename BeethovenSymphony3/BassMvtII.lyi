@@ -120,7 +120,7 @@ bassMvtII = \relative c,
   g'8 r f r |
   e r f r |
   \times 2/3 {g,16\f g' g}
-    \once \override Score.DynamicText #'self-alignment-X = #-1
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     \times 2/3 {g\semprePiuF g g} \times 4/6 {\repeat tremolo 6 g16} |
   \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 g,16}} |
   <<

@@ -35,7 +35,8 @@ violinOneMvtIII = \relative c'
   
   \repeat volta 2
   {
-    bes-._\mSemprePP ces-. bes-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    bes-.\semprePP ces-. bes-. |
     ces-. ces-. c-. |
     c-. des-. c-. |
     des-. c-. des-. |
@@ -59,7 +60,8 @@ violinOneMvtIII = \relative c'
     R2.*2 |
     d2.-> |
     d2.-> |
-    d4-._\mSemprePP a-. fis-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    d4-.\semprePP a-. fis-. |
     g-. bes-. cis,-. |
     d-. fis-. a-. |
     bes-. g-. cis-. |
@@ -291,7 +293,8 @@ violinOneMvtIII = \relative c'
   R2.*2 |
   d2.-> |
   d2.-> |
-  d4-._\mSemprePP a-. fis-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  d4-.\semprePP a-. fis-. |
   g-. bes-. cis,-. |
   d-. fis-. a-. |
   bes -. g-. cis-. |

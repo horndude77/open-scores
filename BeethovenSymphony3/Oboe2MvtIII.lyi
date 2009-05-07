@@ -10,7 +10,8 @@ oboeTwoMvtIII = \relative c''
   \repeat volta 2
   {
     R2.*26 |
-    r4 r d4-._\mSemprePP |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    r4 r d4-.\semprePP |
     d-. d-. g,-. |
     d'-. r c-. |
     bes-. bes-. cis-. |
@@ -124,7 +125,9 @@ oboeTwoMvtIII = \relative c''
     }
   }
   R2.*59 |
-  r4 r d-._\mSemprePP |
+  r4 r
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    d-.\semprePP |
   d-. d-. g,-. |
   d'-. r c-. |
   bes-. bes-. cis-. |

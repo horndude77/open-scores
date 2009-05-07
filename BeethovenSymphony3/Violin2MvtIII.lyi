@@ -34,7 +34,8 @@ violinTwoMvtIII = \relative c'
   
   \repeat volta 2
   {
-    ees-._\mSemprePP aes-. ees-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    ees-.\semprePP aes-. ees-. |
     aes-. aes-. aes-. |
     aes-. f-. aes-. |
     f-. aes-. f-. |
@@ -60,7 +61,8 @@ violinTwoMvtIII = \relative c'
     d2.-> |
     c4( d) c-. |
     bes( d) bes-. |
-    a4-._\mSemprePP a-. fis-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    a4-.\semprePP a-. fis-. |
     g-. bes-. cis,-. |
     d-. fis-. a-. |
     bes-. g-. cis-. |
@@ -296,7 +298,8 @@ violinTwoMvtIII = \relative c'
   d2.-> |
   c4( d) c-. |
   bes( d) bes-. |
-  a-._\mSemprePP a-. fis-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  a-.\semprePP a-. fis-. |
   g-. bes-. cis,-. |
   d-. fis-. a-. |
   bes -. g-. cis-. |

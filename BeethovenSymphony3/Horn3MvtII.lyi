@@ -61,7 +61,7 @@ hornThreeMvtII = \relative c''
   e8 r r4 |
   R2*7 |
   \times 2/3 {r16 e\f e}
-    \once \override Score.DynamicText #'self-alignment-X = #-1
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     \times 2/3 {e\semprePiuF e e} \times 2/3 {\repeat tremolo 6 e16} |
   e4. e8 |
   e4.\ff e8-.\sf |

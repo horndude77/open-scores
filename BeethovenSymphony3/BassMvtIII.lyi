@@ -26,7 +26,8 @@ bassMvtIII = \relative c
 
   \repeat volta 2
   {
-    bes-._\mSemprePP ces-. bes-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    bes-.\semprePP ces-. bes-. |
     ces-. ces-. c-. |
     c-. des-. c-. |
     des-. c-. des-. |
@@ -44,7 +45,8 @@ bassMvtIII = \relative c
     R2.*2 |
     d,2.-> |
     g4( bes) g-. |
-    fis-._\mSemprePP d-. c'-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    fis-.\semprePP d-. c'-. |
     bes-. g-. ees-. |
     d-. a'-. fis-. |
     g-. bes-. ees-. |
@@ -242,7 +244,8 @@ bassMvtIII = \relative c
   R2.*2 |
   d,2.-> |
   g4( bes) g-. |
-  fis-._\mSemprePP d-. c'-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  fis-.\semprePP d-. c'-. |
   bes-. g-. ees-. |
   d-. a'-. fis-. |
   g-. bes-. ees-. |

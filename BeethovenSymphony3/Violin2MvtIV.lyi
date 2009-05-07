@@ -411,7 +411,7 @@ violinTwoMvtIV = \relative c''
   \repeat unfold 3 {\times 2/3 {r16 ges( bes)}} |
   << {s1*0\ff} {\repeat unfold 4 {\times 2/3 {r16 ges( ees')}}} >> |
   \repeat unfold 4 {\times 2/3 {r16 a,( fis')}} |
-  \once \override Score.DynamicText #'self-alignment-X = #-1
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   << {s1*0\semprePiuF} {\repeat unfold 4 {\times 2/3 {r16 fis( a)}}} >> |
   \times 2/3 {a16 c c} \times 2/3 {c c c} \times 4/6 {\repeat tremolo 6 c16} |
   << {s1*0\ff} {\repeat unfold 2 {\times 4/6 {\repeat tremolo 6 bes16}}} >> |
@@ -457,7 +457,7 @@ violinTwoMvtIV = \relative c''
   g ees g ees g ees bes\sf g |
   bes g ees'\sf bes ees bes g'\sf ees |
   g ees bes'\sf g bes g ees'\sf bes |}
-  \once \override Score.DynamicText #'self-alignment-X = #-1
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees32\semprePiuF g g g g g g g \repeat tremolo 8 g32 |
   g32 \repeat unfold 7 <ees ees'> \repeat tremolo 8 <ees ees'> |
   \repeat unfold 2 {\repeat tremolo 16 <ees ees'> |}
