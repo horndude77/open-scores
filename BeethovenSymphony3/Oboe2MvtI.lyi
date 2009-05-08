@@ -140,7 +140,7 @@ oboeTwoMvtI = \relative c''
   r4 r8 bes, bes r |
   R2.*2 |
   des2.\ff | d |
-  e4 r r |
+  ees4 r r |
   R2.*23 |
   r4 g,-. g'~\sf |
   g( f) r |
@@ -208,7 +208,7 @@ oboeTwoMvtI = \relative c''
   c c c |
   c2 c4\sf |
   \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-  b2.\piuF |
+  bes2.\piuF |
   c |
   ces~ | ces4 bes bes |
   bes2\ff g'4\sf |

@@ -338,7 +338,7 @@ bassoonOneMvtI = \relative c'
   ees4)\! ges'-.( ges-.)
   ges-.(\< ges-. ges-.) |
   ges-.( ges-.  ges-.) |
-  ges2(\sf\> f4)\! |
+  ges2(\sf\> f4) | s1*0\!
   R2.*3 |
   \crescHairpin
   r4 c-.(\p\< c-.)\> | bes4\! r r |

@@ -296,7 +296,7 @@ clarinetOneMvtI = \relative c''
   aes-.(\< aes-. aes-.) |
   \crescHairpin
   aes-.( aes-. aes-.) |
-  aes2(\sf\> g4)\! |
+  aes2(\sf\> g4) | s1*0\!
   R2.*2 |
   r4 f( d | c2\< b4)\> | bes4\! r r |
   R2.*7 |

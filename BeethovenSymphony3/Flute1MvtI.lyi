@@ -292,7 +292,8 @@ fluteOneMvtI = \relative c'''
   \dimHairpin
   r4 r bes'4~\sf\> | bes( aes8 ges f ees)\! |
   R2. |
-  r4 ces'-.(\< ces-.) | << ces2. {s4\sf\> s s\!} >> |
+  r4 ces'-.(\< ces-.) |
+  ces2.\sf\> | s1*0\!
   R2.*12 |
   r4 r aes,8-.\< bes-. |
   c-. d-. ees-. f-. g-. aes-. |

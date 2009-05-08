@@ -79,7 +79,7 @@ oboeOneMvtI = \relative c'''
     a-. g'-. f-. ees-. d-. c-. |
     bes4 r r |
     r4 f'-.( f-.) |
-    f-.( f-. f-.)\sf |
+    f-.( f-. fis-.)\sf |
     g2.\> |
     s1*0\! R2.*2 |
     r4 r g~\sf\> |
@@ -90,6 +90,7 @@ oboeOneMvtI = \relative c'''
     ges2.\sf\> |
     s1*0\! R2.*2 |
     r4 bes( g |
+    \crescHairpin
     f2\< e4)\> |
     ees4\p r r |
     R2.*8 |

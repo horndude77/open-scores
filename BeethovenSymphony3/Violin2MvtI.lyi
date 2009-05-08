@@ -263,7 +263,7 @@ violinTwoMvtI = \relative c''
   f4 d'4.\sf f,8 |
   ees4 c'4.\sf ees,8 |
   d8 g16( a) bes8-. g-. ees-. d-. |
-  c8-. fis16( g) a8-. f-. d-. d-. |
+  c8-. fis16( g) a8-. fis-. d-. d-. |
   \crescTextCresc
   d-.\< g16( a) bes8-. g-. ees-. d-. |
   \crescHairpin
