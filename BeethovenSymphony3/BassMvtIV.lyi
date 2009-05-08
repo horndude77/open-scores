@@ -201,7 +201,7 @@ bassMvtIV = \relative c'
   <<
     {
       \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-      s2*4\sempreF
+      s2*4_\mSempreF
       s2*4_\moltoMarcato
     }
     \repeat unfold 2

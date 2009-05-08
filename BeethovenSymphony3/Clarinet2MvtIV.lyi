@@ -114,7 +114,7 @@ clarinetTwoMvtIV = \relative c''
   \repeat unfold 2
   {
     d4. d8 |
-    d8 d d d |
+    \repeat tremolo 4 d8 |
   }
   d8 r r4 |
   r g4~\sf |
