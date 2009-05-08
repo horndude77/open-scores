@@ -137,7 +137,9 @@ bassoonOneMvtIII = \relative c'
     c2 c4 |
     c2 c4 |
     c( aes g |
-    f-.) r d'_\mPDolce |
+    f-.) r
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+      d'\pDolce |
     f(^\mSempreLegato d c |
     bes d c |
     ees a, c |

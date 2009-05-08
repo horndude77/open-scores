@@ -40,7 +40,9 @@ oboeOneMvtI = \relative c'''
     c2 bes4\sf |
     aes2. |
     bes4 r r |
-    r g4.(_\mPDolce f8 |
+    r
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+      g4.(\pDolce f8 |
     e4) r r |
     R2.*2 |
     r4 g4.( f8 |
@@ -144,9 +146,13 @@ oboeOneMvtI = \relative c'''
   e2 f4) |
   f4 r r |
   R2.*7 |
-  r4 a4.(_\mPDolce g8 | fis4) r r |
+  r4
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    a4.(\pDolce g8 | fis4) r r |
   R2.*2 |
-  r4 a4.(_\mPDolce g8 | fis4) r r |
+  r4
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    a4.(\pDolce g8 | fis4) r r |
   R2.*2 |
   r4 g,2~\sf |
   g8-. a-. b-. c-. d-. e-. |
@@ -263,7 +269,8 @@ oboeOneMvtI = \relative c'''
   ees2 e4\sf |
   f f f |
   f2 fis4\sf |
-  g2._\mPiuF |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  g2.\piuF |
   aes |
   aes~ | aes4 aes aes |
   g2\ff bes4\sf |

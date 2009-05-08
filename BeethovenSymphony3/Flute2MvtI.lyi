@@ -188,7 +188,8 @@ fluteTwoMvtI = \relative c'''
   g4(\f ees g | ees2 bes4) |
   ees4 ees' ees | ees2 bes4\sf |
   aes aes aes | aes2 a4\sf |
-  bes2._\mPiuF | c |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  bes2.\piuF | c |
   d~ | d4 d d |
   ees2\ff ees4\sf |
   ees2 ees4~\sf | ees ees ees |

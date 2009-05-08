@@ -230,7 +230,8 @@ bassoonTwoMvtI = \relative c
   g2 g4\sf |
   aes aes aes |
   aes2 a4\sf |
-  bes2._\mPiuF |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  bes2.\piuF |
   c |
   ces~ | ces4 bes bes |
   bes2\ff bes4\sf |

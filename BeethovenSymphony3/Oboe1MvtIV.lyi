@@ -143,7 +143,8 @@ oboeOneMvtIV = \relative c'''
   g4 gis( |
   a) a |
   a16 d,( e fis g a bes c) |
-  d4-._\mSempreF d8.-. d16-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  d4-.\sempreF d8.-. d16-. |
   d4-. d8.-. d16-. |
   d8.-. c16-. bes8.-. a16-. |
   bes8.-. c16-. bes8.-. a16-. |
@@ -228,7 +229,8 @@ oboeOneMvtIV = \relative c'''
   aes4.\fermata
 
   %poco andante
-  ees8_\mPConEspressione |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  ees8\pConEspressione |
   g4( ees8.. d32) |
   d4.( f8) |
   aes4( f8..\sf ees32) |

@@ -144,7 +144,8 @@ trumpetTwoMvtI = \relative c'
   c r r |
   r c c |
   c2 c4\sf |
-  c2._\mPiuF |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  c2.\piuF |
   c |
   c~ |
   c4 g' g |

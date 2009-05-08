@@ -48,7 +48,9 @@ clarinetOneMvtI = \relative c''
     bes4( f) f |
     fis2.( |
     g4) r r |
-    r g4.(_\mPDolce f8 |
+    r
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+      g4.(\pDolce f8 |
     d4) r r |
     R2.*2 |
     r4 g4.( e8 |
@@ -254,7 +256,8 @@ clarinetOneMvtI = \relative c''
   a4\sf c c | c2 c4 |
   c c c | c2 c4\sf |
   d d d | d2 d4\sf |
-  ees2._\mPiuF | d2. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  ees2.\piuF | d2. |
   des2.~ | des4 c c |
   c2\ff f4\sf |
   f2 f4~\sf | f f f |

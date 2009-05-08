@@ -150,7 +150,8 @@ bassoonTwoMvtIV = \relative c
   d,8 r r4 |
   \repeat unfold 2
   {
-    d'4-._\mSempreF d8.-. d16-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    d'4-.\sempreF d8.-. d16-. |
     d4-. d8.-. d16-. |
     d8.-. c16-. bes8.-. a16-. |
     bes8.-. c16-. bes8.-. a16-. |

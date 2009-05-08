@@ -149,7 +149,9 @@ oboeOneMvtIII = \relative c'''
     r4 r c,\f |
     \repeat unfold 3 {c2 c4 |}
     c4 r r |
-    r r f_\mPDolce |
+    r r
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+      f\pDolce |
     f(^\mSempreLegato d c |
     bes d c |
     ees a, c |

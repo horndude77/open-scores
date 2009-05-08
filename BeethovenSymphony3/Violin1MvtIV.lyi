@@ -78,7 +78,8 @@ violinOneMvtIV = \relative c'
   \repeat volta 2
   {
     r8 |
-    ees2_\mPDolce |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    ees2\pDolce |
     bes' |
     bes, |
     ees |
@@ -186,7 +187,8 @@ violinOneMvtIV = \relative c'
   ees,2\sf |
   a4-. a,-. |
   a'-. a,-. |
-  g'-._\mPiuF g,-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  g'-.\piuF g,-. |
   g'-. g,-. |
   f'-. f,-. |
   f'8 f, f' f, |
@@ -229,7 +231,8 @@ violinOneMvtIV = \relative c'
   \times 4/6 {\repeat tremolo 6 <d d'>8} |
   \times 2/3 {<d d'> <d d'> <d d'>} \times 2/3 {<e cis'> <e cis'> <e cis'>} |
   <d d'>16 d,( e fis g a bes c) |
-  d4-._\mSempreF d8.-. d16-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  d4-.\sempreF d8.-. d16-. |
   d4-. d8.-. d16-. |
   d8.-. c16-. bes8.-. a16-. |
   bes8.-. c16-. bes8.-. a16-. |

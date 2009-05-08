@@ -165,7 +165,8 @@ bassoonOneMvtIV = \relative c'
   d16 d,( e fis g a bes c) | %Made slur start on second note like other parts
   \repeat unfold 2
   {
-    d4-._\mSempreF d8.-. d16-. |
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    d4-.\sempreF d8.-. d16-. |
     d4-. d8.-. d16-. |
     d8.-. c16-. bes8.-. a16-. |
     bes8.-. c16-. bes8.-. a16-. |
@@ -211,7 +212,9 @@ bassoonOneMvtIV = \relative c'
   g,4 r |
   g r |
   R2*3 |
-  r8 g(_\mPDolce b d) |
+  r8
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    g(\pDolce b d) |
   f r r4 |
   r8 g,( c e) |
   g r r4 |

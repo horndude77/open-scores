@@ -149,7 +149,8 @@ fluteTwoMvtIV = \relative c'''
   d4 d( |
   fis) g, |
   fis16( d e fis g a bes c) |
-  d4-._\mSempreF d8.-. d16-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  d4-.\sempreF d8.-. d16-. |
   d4-. d8.-. d16-. |
   d8.-. c16-. bes8.-. a16-. |
   bes8.-. c16-. bes8.-. a16-. |

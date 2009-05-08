@@ -392,7 +392,9 @@ bassMvtI = \relative c
   \tremolos #8 {ees,2.\f |
   ees} |
   \repeat unfold 2 {\tremolos #8 {ees | ees2} ees8\sf ees |}
-  \tremolos #8 {ees2._\mPiuF |
+  \tremolos #8 {
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  ees2.\piuF |
   \repeat unfold 3 {ees |}
   ees2\ff} g8\sf g |
   \repeat tremolo 4 ees8 bes8\sf bes |

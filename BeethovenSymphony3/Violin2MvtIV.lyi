@@ -47,7 +47,8 @@ violinTwoMvtIV = \relative c''
   aes8 r r4 |
   bes8 r bes r |
   ees, r r4 |
-  ees2_\mPDolce^\arco |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  ees2\pDolce^\arco |
   \repeat volta 2
   {
     bes'2 |
@@ -184,7 +185,8 @@ violinTwoMvtIV = \relative c''
   c4 c, |
   r4 bes''~\sf |
   bes bes,-. |
-  bes'-._\mPiuF bes,-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  bes'-.\piuF bes,-. |
   a'-. a,-. |
   a'-. a,-. |
   a'8 a, a' a, |
@@ -219,7 +221,8 @@ violinTwoMvtIV = \relative c''
   \times 2/3 {g'8 g g} \times 2/3 {gis gis gis} |
   \times 2/3 {<a, a'> <a a'> <a a'>} \times 2/3 {<a g'> <a g'> <a g'>} |
   <a fis'>8 r r4 |
-  bes,16_\mSempreF bes d d bes bes d d |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  bes,16\sempreF bes d d bes bes d d |
   c c d d c c d d |
   a a d d a a d d |
   \repeat unfold 4 {bes bes d d} |

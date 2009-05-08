@@ -158,7 +158,8 @@ bassMvtIV = \relative c'
   ees c'16 b c bes aes g |
   fis8 d16 cis d c bes a |
   g8 g'16 fis g a bes g |
-  ees8_\mPiuF ees16 d ees f ees d |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  ees8\piuF ees16 d ees f ees d |
   cis8 cis16 b cis d e cis |
   d8 e16 f g a b cis |
   d cis d cis d a f d |
@@ -198,7 +199,11 @@ bassMvtIV = \relative c'
   \times 2/3 {a a a} \times 2/3 {a, a a} |
   d8 r r4 |
   <<
-    {s2*4_\mSempreF s2*4_\moltoMarcato}
+    {
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+      s2*4\sempreF
+      s2*4_\moltoMarcato
+    }
     \repeat unfold 2
     {
       g2\sf |

@@ -108,7 +108,9 @@ violinOneMvtII = \relative c'
   \times 2/3 {r16 e( d)} \times 2/3 {r16 d( cis)}
     \times 2/3 {r16 cis( d)} \times 2/3 {r16 d( cis)} |
   \times 2/3 {b16-. b-. d-.} \times 2/3 {g-. a-. b-.}
-    c8-. \times 2/3 {r16 r c,_\mSempreP} |
+    c8-. \times 2/3 {r16 r
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+                      c,\sempreP} |
   \times 2/3 {g16 b d} \times 2/3 {g16 a b}
     \times 2/3 {c16 g e} \times 2/3 {g16 e c} |
   \repeat unfold 4 {\times 2/3 {g16 g g}} |
@@ -300,7 +302,8 @@ violinOneMvtII = \relative c'
   d16-.\> c-. b-. aes-. g-. f-. ees-. d-. |
   r4 c^\sottoVoce |
   \acciaccatura d8 c16.( b32 c16. d32) r4 |
-  ees8(_\mSemprePiuP c) r16 g'-. f-. ees-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  ees8(\semprePiuP c) r16 g'-. f-. ees-. |
   d-. c-. ees32( d) r16 r ees-. f-. g-. |
   r8 aes4( g16 f) |
   r4 f16( ees) f-. d-. |

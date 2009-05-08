@@ -122,7 +122,9 @@ fluteOneMvtIII = \relative c'''
     c2 c4 |
     c2 c4 |
     c( aes g |
-    f-.) r f'_\mPDolce |
+    f-.) r
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+      f'\pDolce |
     f(^\mSempreLegato d c |
     bes d c |
     ees a, c |

@@ -177,7 +177,8 @@ violaMvtIV = \relative c'
   c4 r |
   d2\f |
   g4-. g,-. |
-  ees-._\mPiuF ees'-. |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  ees-.\piuF ees'-. |
   e-. e,-. |
   d-. d'~ |
   d8 d d' d, |
@@ -213,7 +214,8 @@ violaMvtIV = \relative c'
   \times 2/3 {b d, d} \times 2/3 {f f f} |
   \times 2/3 {fis fis fis} \times 2/3 {<d a,> <d a,> <d a,>} |
   d8 r r4 |
-  g,16_\mSempreF g d d g g d d |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  g,16\sempreF g d d g g d d |
   a' a d, d a' a d, d |
   fis fis d d fis fis d d |
   g g d d g g d d |

@@ -446,7 +446,8 @@ violaMvtI = \relative c'
   <bes g>2 <des g,>4\sf |
   <c aes>2. |
   <c aes>2 <c a>4\sf |
-  <des bes>2_\mPiuF <g bes,>4 |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  <des bes>2\piuF <g bes,>4 |
   <des bes>2 <g bes,>4 |
   <ees ces>4 <aes ces,>2 |
   << f2. \\ {ces4 bes2} >> } |

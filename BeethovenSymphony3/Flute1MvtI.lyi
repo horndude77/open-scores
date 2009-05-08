@@ -47,7 +47,9 @@ fluteOneMvtI = \relative c'''
     e2.( |
     f4) r r |
     R2. |
-    r4 ees4.(_\mPDolce c8 |
+    r4
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+      ees4.(\pDolce c8 |
     a4) r r |
     R2.*2 |
     r4 d4.( bes8 |
@@ -144,9 +146,13 @@ fluteOneMvtI = \relative c'''
     }
   }
   R2.*14 |
-  r4 f'4.(_\mPDolce d8 | b4) d4.( f,8 | e4) r r |
+  r4
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    f'4.(\pDolce d8 | b4) d4.( f,8 | e4) r r |
   R2. |
-  r4 e'4.(_\mPDolce c8 | g4) c4.( e,8 | f4) r r |
+  r4
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    e'4.(\pDolce c8 | g4) c4.( e,8 | f4) r r |
   r4 g4.\sf c8-. | b-. c-. d-. e-. f4-. |
   r4 d4.( f,8) | ees4\pp r r |
   R2.*2 |
@@ -251,7 +257,8 @@ fluteOneMvtI = \relative c'''
   ees2(\f g4 | ees2 bes4) |
   ees4 ees ees | ees2 e4\sf |
   f f f | f2 fis4\sf |
-  g2._\mPiuF | aes |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  g2.\piuF | aes |
   aes~ | aes4 aes aes |
   g2\ff g4\sf |
   g2 g4~\sf | g g g |

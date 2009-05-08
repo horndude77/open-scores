@@ -293,7 +293,8 @@ bassoonOneMvtI = \relative c'
   bes2 des4\sf |
   c c c |
   c2 c4\sf |
-  des2._\mPiuF |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  des2.\piuF |
   ees |
   d~ | d4 d f |
   ees2\ff ees4\sf |

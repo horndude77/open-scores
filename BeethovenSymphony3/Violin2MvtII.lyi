@@ -108,7 +108,9 @@ violinTwoMvtII = \relative c'
   \times 2/3 {r16 a a} \times 2/3 {r16 g g}
     \times 2/3 {r16 a a} \times 2/3 {r16 a d,} |
   \times 2/3 {d16-. b-. d-.} \times 2/3 {g-. a-. b-.}
-    c8-. \times 2/3 {r16 r c,_\mSempreP} |
+    c8-. \times 2/3 {r16 r
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+                      c,\sempreP} |
   \times 2/3 {g16 b d} \times 2/3 {g16 a b}
     \times 2/3 {c16 g e} \times 2/3 {g16 e c} |
   \times 2/3 {b16 \repeat unfold 5 <g' g,>} \repeat unfold 3 {\times 4/6 {\repeat tremolo 6 <g g,>16}} |

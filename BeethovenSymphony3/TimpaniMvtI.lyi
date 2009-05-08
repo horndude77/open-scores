@@ -106,7 +106,8 @@ timpaniMvtI = \relative c
   ees r r |
   r ees ees |
   ees r ees\sf |
-  ees_\mPiuF r r |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  ees\piuF r r |
   ees r r |
   ees r r |
   ees ees ees |

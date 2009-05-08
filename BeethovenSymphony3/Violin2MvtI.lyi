@@ -458,7 +458,8 @@ violinTwoMvtI = \relative c''
   ees,2 e4\sf |
   f aes c |
   f,2 fis4 |
-  g_\mPiuF bes des |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  g\piuF bes des |
   aes c ees |
   aes, d f |
   aes2. |}
