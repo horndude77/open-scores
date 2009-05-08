@@ -46,8 +46,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "Flutes"
           \set Staff.shortInstrumentName = "Fl."
           <<
-            \new Voice {\voiceOne \keepWithTag #'score \fluteOneMvtI}
-            \new Voice {\voiceTwo \keepWithTag #'score \fluteTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \fluteOneMvtI}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \fluteTwoMvtI}
           >>
         }
         \new Staff
@@ -56,8 +56,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "Oboes"
           \set Staff.shortInstrumentName = "Ob."
           <<
-            \new Voice {\voiceOne \keepWithTag #'score \oboeOneMvtI}
-            \new Voice {\voiceTwo \keepWithTag #'score \oboeTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \oboeOneMvtI}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \oboeTwoMvtI}
           >>
         }
         \new Staff
@@ -66,8 +66,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "Clarinets"
           \set Staff.shortInstrumentName = "Cl."
           <<
-            \new Voice {\voiceOne \keepWithTag #'score \clarinetOneMvtI}
-            \new Voice {\voiceTwo \keepWithTag #'score \clarinetTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \clarinetOneMvtI}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \clarinetTwoMvtI}
           >>
         }
         \new Staff
@@ -76,8 +76,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "Bassoons"
           \set Staff.shortInstrumentName = "Bs."
           <<
-            \new Voice {\voiceOne \keepWithTag #'score \bassoonOneMvtI}
-            \new Voice {\voiceTwo \keepWithTag #'score \bassoonTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \bassoonOneMvtI}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \bassoonTwoMvtI}
           >>
         }
       >>
@@ -89,8 +89,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "Horns I,II"
           \set Staff.shortInstrumentName = "Hn."
           <<
-            \new Voice {\voiceOne \keepWithTag #'score \hornOneMvtI}
-            \new Voice {\voiceTwo \keepWithTag #'score \hornTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \hornOneMvtI}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \hornTwoMvtI}
           >>
         }
         \new Staff
@@ -106,8 +106,8 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "Trumpets"
           \set Staff.shortInstrumentName = "Tr."
           <<
-            \new Voice {\voiceOne \keepWithTag #'score \trumpetOneMvtI}
-            \new Voice {\voiceTwo \keepWithTag #'score \trumpetTwoMvtI}
+            \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \trumpetOneMvtI}
+            \new Voice {\voiceTwo \dynamicDown \keepWithTag #'score \trumpetTwoMvtI}
           >>
         }
       >>
