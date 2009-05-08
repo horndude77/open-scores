@@ -8,8 +8,8 @@ fluteTwoMvtII = \relative c'''
   \partial 8 r8 |
   R2*44 |
   g4\p\< g~ |
-  g4.(\> fis8)\! |
-  g r r4 |
+  g4.(\> fis8) |
+  g\! r r4 |
   R2*2 |
   r4 g4\sf |
   f8\p r r4 |

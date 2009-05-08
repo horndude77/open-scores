@@ -4,7 +4,7 @@
 
 timpaniMvtII = \relative c
 {
-  \key ees \major
+  \key c \minor
   \clef bass
   \partial 8 r8 |
   R2*8 |
@@ -43,6 +43,7 @@ timpaniMvtII = \relative c
   c r r4 |
 
   %Maggiore
+  \key c \major
   R2*7 |
   g4\trill\ff g8 r |
   g4\trill g8 r |
@@ -72,6 +73,7 @@ timpaniMvtII = \relative c
   R2*3 |
 
   %Minore
+  \key c \minor
   \grace {s32*3}
   R2*21 |
   g8\f r r4 |

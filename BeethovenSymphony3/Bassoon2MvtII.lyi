@@ -11,7 +11,7 @@ bassoonTwoMvtII = \relative c
   c2\p |
   c |
   c4 ees8 ees |
-  << {s8\< s\>} c'4( >> b8) r\! |
+  << {s8\< s\>} c'4( >> b8)\! r |
   f4 r |
   b, r |
   \override DynamicTextSpanner #'dash-period = #-1.0
@@ -145,8 +145,8 @@ bassoonTwoMvtII = \relative c
   R2*1 |
   \crescHairpin
   g'4.\<( d'8 |
-  c4\> bes8 aes\!) |
-  g8 r r4 |
+  c4\> bes8 aes) |
+  g8\! r r4 |
   R2*2 |
   r4 c,\sf\> |
   f8\p f16. f32 f8 f |
@@ -172,7 +172,7 @@ bassoonTwoMvtII = \relative c
   r4 aes8\p r |
   r4 g8 r | 
   R2*15 |
-  r8 c4\sf\>( g8\!) |
+  r8 c4\sf\>( g8) |
   g4.\p\fermata
 }
 

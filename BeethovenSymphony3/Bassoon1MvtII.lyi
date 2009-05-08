@@ -10,7 +10,7 @@ bassoonOneMvtII = \relative c'
   R2*8 |
   c2\p | c |
   c4 ees8 ees |
-  ees8\<( fis\> g) r\! |
+  ees8\<( fis\> g)\! r |
   b,4 r |
   b r |
   \override DynamicTextSpanner #'dash-period = #-1.0
@@ -162,8 +162,8 @@ bassoonOneMvtII = \relative c'
   c4( b8 c) |
   \crescHairpin
   b4.(\< f'8 |
-  ees4\> d8 c\!) |
-  b8 r r4 |
+  ees4\> d8 c) |
+  b8\! r r4 |
   R2*1 |
   \crescTextCresc
   r16 d-.(\< ees-. d-. ees-. e-. f-. fis-.) |
@@ -195,7 +195,7 @@ bassoonOneMvtII = \relative c'
   r4 des8\p r |
   r4 c8 r | 
   R2*15 |
-  r8 ees4\sf(\> c8)\! |
+  r8 ees4\sf(\> c8) |
   c4.\p\fermata
 }
 

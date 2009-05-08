@@ -187,7 +187,7 @@ violinTwoMvtII = \relative c'
   d4~ d8 e16( fis) |
   g8( a16 bes c8\sf aes16 g) |
   fis8( g16 a bes8\sf g16 f) |
-  e8( fis16 g a8\sf f16 ees) |
+  e8( fis16 g a8\sf fis16 ees) |
   \times 2/3 {d16 a' a} \times 2/3 {a g g} \times 4/6 {\repeat tremolo 6 g16} |
   <bes, g'>8-. r e,4~\sf |
   e8 e-. e-. e-. |
@@ -206,7 +206,7 @@ violinTwoMvtII = \relative c'
   \times 2/3 {d16 <d, b> <d b>} \times 2/3 {<d b> <d b> <d b>} \times 4/6 {\repeat tremolo 6 <d b>} |
   \dimTextDecresc
   \times 2/3 {<d b>16 <f g,> <f g,>} \times 2/3 {<f g,>\> <f g,> <f g,>}
-    << {s4 | s\p} {\repeat unfold 9 {\times 4/6 {\repeat tremolo 6 <f g'>16}}} >> |
+    << {s4 | s\p} {\repeat unfold 9 {\times 4/6 {\repeat tremolo 6 <f g,>16}}} >> |
   \repeat unfold 6 {\times 4/6 {\repeat tremolo 6 <ees g,>}} |
   \times 4/6 {\repeat tremolo 6 <ees g,>} \times 4/6 {\repeat tremolo 6 <d g,>} |
   \times 4/6 {\repeat tremolo 6 <d b>} \times 4/6 {\repeat tremolo 6 <d b>} |

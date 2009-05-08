@@ -10,8 +10,8 @@ fluteOneMvtII = \relative c''''
   R2*44 |
 
   g4(\p\< d8 f\! |        
-  ees4\> d8 c)\! |        
-  b r r4 |        
+  ees4\> d8 c) |        
+  b\! r r4 |        
   R2*2 |        
   r8 g g(\sf c) |        
   c\p r r4 |        

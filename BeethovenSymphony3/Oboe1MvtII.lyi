@@ -151,7 +151,7 @@ oboeOneMvtII = \relative c''
   g8\p r r4 |
   g4( f8 ees) |
   \crescHairpin
-  f4.(\< f8) |
+  d4.(\< f8) |
   ees4(\> d8 c) |
   b8\! r r4 |
   R2 |
