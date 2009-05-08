@@ -238,7 +238,8 @@ hornOneMvtI = \relative c''
   f2.~ | f~ | f~ | f4 f f |
   g2.~\< | g~ | g~ | g4 g g |
   \crescTextSempreCresc
-  g2.~\< | g~ |
+  g2.~\< | \tag #'part \noBreak
+  g~ | \tag #'part \noBreak
   g |
   c,2\sf ees4 |
   ees2.~\ff | ees~ | ees4 ees ees | ees ees ees | ees r r |

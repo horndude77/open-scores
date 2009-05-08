@@ -170,7 +170,7 @@ hornOneMvtIII = \relative c''
   d d d |
 
   %Alla breve
-  c2 e |
+  c2 e | \tag #'part \noBreak
   c g |
   e c' |
   g g |
