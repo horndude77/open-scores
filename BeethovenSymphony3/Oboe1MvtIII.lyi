@@ -88,13 +88,14 @@ oboeOneMvtIII = \relative c'''
     ees4 bes2\sf |
     g4 ees'2\sf |
     bes4 r r |
-    \repeat unfold 2
-    {
-      r f'-.\p ees-. |
-      f-. ees-. f-. |
-      ees r r |
-      R2. |
-    }
+    r f'-.\p ees-. |
+    f-. ees-. f-. |
+    ees r r |
+    R2. |
+    r ees-.\p d-. |
+    ees-. d-. ees-. |
+    d r r |
+    R2. |
     r4 aes-.\p g-. |
     aes-. g-. aes-. |
     g-. r r |

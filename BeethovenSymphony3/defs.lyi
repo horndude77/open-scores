@@ -337,6 +337,7 @@ outlineMvtIII =
   s1*4 \bar "||"
 
   \time 3/4
+  \set Score.tempoHideNote = ##t
   \tempo 2. = 116
   s2.*38 |
 
