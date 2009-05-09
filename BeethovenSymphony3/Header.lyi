@@ -18,7 +18,7 @@
   style = "Classical"
   maintainer = "Jay Anderson"
   maintainerEmail = "horndude77@gmail.com"
-  lastupdated = "2009/May/6"
+  lastupdated = "2009/May/8"
   footer = "Mutopia-"
   tagline =
   \markup
@@ -41,7 +41,7 @@
           Typeset using \with-url #"http://www.LilyPond.org"
           \line
           { \teeny www. \hspace #-1.0 LilyPond \hspace #-1.0 \teeny .org }
-          by \maintainer \hspace #-1.0 . \hspace #0.5 Copyright © 2008. \hspace #0.5 Reference: \footer
+          by \maintainer \hspace #-1.0 . \hspace #0.5 Copyright © 2009. \hspace #0.5 Reference: \footer
         }
       }
       \line

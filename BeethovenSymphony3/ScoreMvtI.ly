@@ -24,12 +24,6 @@
 #(set-global-staff-size 14)
 %#(set-default-paper-size "a3")
 
-\paper
-{
-  #(define page-breaking ly:minimal-breaking)
-  %ragged-last-bottom = ##f
-}
-
 instrument = "Orchestra"
 
 \book
@@ -63,7 +57,9 @@ instrument = "Orchestra"
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \set Staff.instrumentName = "Clarinets"
+          \set Staff.instrumentName = \markup {
+            \column { "Clarinets"
+                      \line { "in B" \smaller \flat} } }
           \set Staff.shortInstrumentName = "Cl."
           <<
             \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \clarinetOneMvtI}
@@ -86,7 +82,9 @@ instrument = "Orchestra"
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \set Staff.instrumentName = "Horns I,II"
+          \set Staff.instrumentName = \markup {
+            \column { "Horns I,II"
+                      \line { "in E" \smaller \flat} } }
           \set Staff.shortInstrumentName = "Hn."
           <<
             \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \hornOneMvtI}
@@ -96,14 +94,18 @@ instrument = "Orchestra"
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \set Staff.instrumentName = "Horn III"
+          \set Staff.instrumentName = \markup {
+            \column { "Horn III"
+                      \line { "in E" \smaller \flat} } }
           \set Staff.shortInstrumentName = "Hn.III"
           \hornThreeMvtI
         }
         \new Staff
         {
           #(set-accidental-style 'modern)
-          \set Staff.instrumentName = "Trumpets"
+          \set Staff.instrumentName = \markup {
+            \column { "Trumpets"
+                      \line { "in E" \smaller \flat} } }
           \set Staff.shortInstrumentName = "Tr."
           <<
             \new Voice {\voiceOne \dynamicUp \keepWithTag #'score \trumpetOneMvtI}

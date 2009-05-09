@@ -92,11 +92,11 @@ oboeOneMvtIII = \relative c'''
     f-. ees-. f-. |
     ees r r |
     R2. |
-    r ees-.\p d-. |
+    r4 ees-.\p d-. |
     ees-. d-. ees-. |
     d r r |
     R2. |
-    r4 aes-.\p g-. |
+    r4 aes'-.\p g-. |
     aes-. g-. aes-. |
     g-. r r |
     R2. |
