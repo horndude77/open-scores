@@ -1,31 +1,15 @@
+Please send all comments and error reports to horndude77@gmail.com or to the
+Mutopia mailing list (http://news.gmane.org/gmane.music.mutopia.discuss).
+
+For latest source see: http://github.com/horndude77/open-scores/tree/master
+
 To build full score:
 > lilypond ScoreMvt<Movement>.ly
 
 To build individual part:
 > lilypond <name of part>.ly
 
-Status:
-=======
-Flute 1 - done
-Flute 2 - done
-Oboe 1 - done
-Oboe 2 - done
-Clarinet 1 - done
-Clarinet 2 - done
-Bassoon 1 - done
-Bassoon 2 - done
-Horn 1 - done
-Horn 2 - done
-Horn 3 - done
-Trumpet 1 - done
-Trumpet 2 - done
-Timpani - done
-Violin 1 - done
-Violin 2 - done
-Viola.ly - done
-Cello.ly - done
-Bass.ly - done
+TODO:
+- Add cues to parts.
+- Assess the page turning situation for each part.
 
-('done' means all the notes are in. Lots of clean up is still needed.)
-
-All parts need to be checked once more before submitting to Mutopia.
