@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 tempoMark = #(define-music-function (parser location markp) (string?)
 #{
   \once \override Score . RehearsalMark #'self-alignment-X = #left
@@ -17,7 +19,7 @@ outline =
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/2
-  \tempoMark "Allegro"
+  \tempo "Allegro"
   s1*16 |
 
   \mark \default
@@ -34,7 +36,7 @@ outline =
   s1*8 | \bar "||"
 
   \time 4/4
-  \tempoMark "L'istesso tempo, un poco maestoso"
+  \tempo "L'istesso tempo, un poco maestoso"
   s1*25 |
 
   \mark \default
@@ -45,7 +47,7 @@ outline =
   s1*20 | \bar "||"
 
   \time 2/4
-  \tempoMark "animato"
+  \tempo "animato"
   s2*31 |
 
   \mark \default
@@ -74,6 +76,11 @@ outline =
   s2*33 | \bar "||"
 
   \time 3/4
-  \tempoMarkMarkup \markup {\bold {Maestoso (\note #"8" #1 = \note #"4" #1 ) }}
+  \tempo \markup {\bold {Maestoso
+    (
+      \smaller \general-align #Y #DOWN \note #"8" #1
+      " = "
+      \smaller \general-align #Y #DOWN \note #"4" #1
+    ) }}
   s2.*23 | \bar "|."
 }

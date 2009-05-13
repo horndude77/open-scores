@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 hornTwo = \relative c'
 {
   \transposition c
@@ -116,7 +118,7 @@ hornTwo = \relative c'
   \mark \default
   R2*12 |
   r4 d~\p |
-  \setTextCresc
+  \crescTextCresc
   d\< d~ |
   \repeat unfold 6 {d d~}
   d r8 d-.\ff |

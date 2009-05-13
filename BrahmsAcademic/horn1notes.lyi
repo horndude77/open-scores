@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 %TODO: switch to relative mode
 hornOne =
 {
@@ -144,7 +146,7 @@ hornOne =
   e''4) r |
   R2*3
   r4 d''\p ~ |
-  \setTextCresc
+  \crescTextCresc
   d''\< d'' ~ |
   d'' d'' ~ |
   d'' d'' ~ |
