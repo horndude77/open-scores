@@ -1,0 +1,11 @@
+\version "2.12.2"
+
+hornMvtII = \relative c''
+{
+  \transposition ees
+  d2.\pConEspressione^\solo |
+  \times 2/3 {e8( fis g)} g4~( g16 f e d) |
+  \times 2/3 {c8( d e)} e4~( e16 d c b) |
+  d8( c b4) r |
+}
+

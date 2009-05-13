@@ -1,0 +1,9 @@
+\version "2.12.2"
+
+\include "defs.lyi"
+
+bassMvtI = \relative c
+{
+  \clef bass
+}
+

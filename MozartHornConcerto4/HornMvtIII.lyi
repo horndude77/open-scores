@@ -1,0 +1,16 @@
+\version "2.12.2"
+
+hornMvtIII = \relative c''
+{
+  \transposition ees
+  g8\p^\solo |
+  c-. c-. c-. c-. c-. c-. |
+  b( d g) g( f d) |
+  c-. c-. c-. c( b c) |
+  d( g,) g-. g4 g8 |
+  c-. c-. c-. c-. c-. c-. |
+  b( d g) g( f d) |
+  e( g) c,-. \acciaccatura e8 d( c) d |
+  c-. c,-. c-. c4 r8 |
+}
+

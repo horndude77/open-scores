@@ -1,0 +1,76 @@
+\version "2.12.2"
+
+tutti = \markup {Tutti}
+solo = \markup {Solo}
+dolce = \markup {\italic {dolce} }
+espress = \markup {\italic {espress.} }
+conEspress = \markup {\italic {con espress.} }
+cadenza = \markup {\italic {Cadenza ad lib} }
+pConEspressione = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "con espressione"))
+
+rMark = #(define-music-function (parser location markp) (string?)
+#{
+  \mark \markup { \box \bold $markp }
+#})
+
+outlineMvtI =
+{
+  \time 4/4
+  \tempo "Allegro moderato"
+  s1*12 |
+
+  \rMark "A"
+  s1*19 |
+
+  \rMark "B"
+  s1*11 |
+
+  \rMark "C"
+  s1*22 |
+
+  \rMark "D"
+  s1*22 |
+
+  \rMark "E"
+  s1*10 |
+
+  \rMark "F"
+  s1*15 |
+
+  \rMark "G"
+  s1*20 |
+
+  \rMark "H"
+  s1*6 |
+
+  \rMark "I"
+  s1*17 |
+
+  \rMark "K"
+  s1*18 |
+
+  \rMark "L"
+  s1*24 |
+
+  %cadenza
+  s1 |
+
+  s1*7 |
+
+  \rMark "M"
+  s1*14 | \bar "|."
+}
+
+outlineMvtII =
+{
+  \time 3/4
+  \tempo "Andante"
+}
+
+outlineMvtIII =
+{
+  \time 6/8
+  \tempo "Allegro vivace"
+  \partial 8 s8 |
+}
+
