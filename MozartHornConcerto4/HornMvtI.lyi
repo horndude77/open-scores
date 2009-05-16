@@ -50,6 +50,7 @@ hornMvtI = \relative c''
   R1*2 |
 
   %C
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   c1\pConEspressione^\solo |
   e |
   g2 f8( e d c) |
@@ -111,6 +112,7 @@ hornMvtI = \relative c''
   R1*2 |
 
   %F
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   e2_\conEspress^\solo d8( c b a) |
   a2( gis4) r |
   f'2 e8( d c b) |

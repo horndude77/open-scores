@@ -5,11 +5,11 @@
 \include "HornMvtII.lyi"
 \include "HornMvtIII.lyi"
 
-instrument = "Corno in F"
+instrument = "Horn in F"
 
-mvtI = \transpose f ees \hornMvtI
-mvtII = \transpose f ees \hornMvtII
-mvtIII = \transpose f ees \hornMvtIII
+mvtI = \transpose f ees {\key c \major \hornMvtI}
+mvtII = \transpose f ees {\key c \major \hornMvtII}
+mvtIII = \transpose f ees {\key c \major \hornMvtIII}
 
 \include "part.lyi"
 

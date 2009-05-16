@@ -7,6 +7,8 @@ espress = \markup {\italic {espress.} }
 conEspress = \markup {\italic {con espress.} }
 cadenza = \markup {\italic {Cadenza ad lib} }
 pConEspressione = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "con espressione"))
+pEspress = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress."))
+staccatoThree = \markup{\musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato"}
 
 rMark = #(define-music-function (parser location markp) (string?)
 #{
@@ -65,6 +67,19 @@ outlineMvtII =
 {
   \time 3/4
   \tempo "Andante"
+  s2.*10 |
+
+  \rMark "N"
+  s2.*10 |
+
+  \rMark "O"
+  s2.*29 |
+
+  \rMark "P"
+  s2.*28 |
+
+  \rMark "Q"
+  s2.*12 | \bar "|."
 }
 
 outlineMvtIII =
@@ -72,5 +87,33 @@ outlineMvtIII =
   \time 6/8
   \tempo "Allegro vivace"
   \partial 8 s8 |
+  s2.*16 |
+
+  \rMark "R"
+  s2.*29 |
+
+  \rMark "S"
+  s2.*22 |
+
+  \rMark "T"
+  s2.*16 |
+
+  \rMark "U"
+  s2.*37 |
+
+  \rMark "V"
+  s2.*16 |
+
+  \rMark "W"
+  s2.*24 |
+
+  \rMark "X"
+  s2.*18 |
+
+  \rMark "Y"
+  s2.*19 |
+
+  \rMark "Z"
+  s2.*16 | \bar "|."
 }
 
