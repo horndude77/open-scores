@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 \include "defs.lyi"
 
 hornNotes = \relative c''
@@ -69,8 +71,9 @@ hornNotes = \relative c''
   \times 2/3 {g-.->(\> f-. e-.} d4~)\!
     \times 2/3 {d8 e-_( f-_}
     \times 2/3 {d-_ e-_ f-_} |
-  \setTextCresc
+  \crescTextCresc
   f8.)\< c16-.( f4~--) f8. des16( f4~--) |
+  \crescHairpin
 
   %3/2
   f8. d16( f4~--) f8 e( g fis)
@@ -94,8 +97,9 @@ hornNotes = \relative c''
   c-. b8-. c-. a4-. d-. |
   c-. b-. a-. d-. |
   c-. b8-. c-. a4-. b8-. c-. |
-  \setTextCresc
+  \crescTextCresc
   d2-> r4 g,->\< |
+  \crescHairpin
   \repeat unfold 2
   {
     d'2-> r4 g,-> |
@@ -143,10 +147,12 @@ hornNotes = \relative c''
   c1)\! |
   r4 d(_\pocoCresc c d |
   d ees c d |
-  \setTextDim
+  \dimTextDim
   dis1~->\> dis~ dis |
-  \setTextDim
+  \dimHairpin
+  \dimTextDim
   b dis~\p\> dis~ dis~^\markup{\italic perdendosi} dis~ | dis4)\! r r2 |
+  \dimHairpin
 
   dis1-_(\<^"(En echo)"_\markup{\smaller "(Doigtez un 1/2 ton au-dessus)"} | dis-_ | << dis-_) {s2. s4\!} >> |
   %légèrement retenu
@@ -166,8 +172,9 @@ hornNotes = \relative c''
   e1~) |
   e2.~( e8 \breathe c\pp^"Ouvert" |
   e1~)( |
-  \setTextCresc
+  \crescTextCresc
   e2.~\< e8 \breathe cis |
+  \crescHairpin
   e1~) |
   e2( dis |
   fis e) |
@@ -192,8 +199,9 @@ hornNotes = \relative c''
   d1~) \repeat unfold 5 {d1~} |
   d4 c8( bes) aes4-. bes-. |
   d-. c8( bes) aes4-. bes-. |
-  \setTextDim
+  \dimTextDim
   d1~->\> d~ d~ d~ |
+  \dimHairpin
   d4-.\! r d2-_(\p |
   d-_\> d-_ |
   ees2~\pp ees8) r r4 |
@@ -214,8 +222,9 @@ hornNotes = \relative c''
   a4-.) r r cis8( b |
   a4-.) r r c8( b |
   a4-.) r r c8(_\piuf bes |
-  \setTextCresc
+  \crescTextCresc
   aes4-.) r r c8(\< bes |
+  \crescHairpin
   aes4-.) r r bes8( aes |
   g4-.)\f^"Ôtez la Sourdine" r r2 |
   R1*5 |

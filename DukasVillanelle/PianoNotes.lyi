@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 \include "defs.lyi"
 
 rightHand = \relative c''
@@ -367,9 +369,9 @@ rightHand = \relative c''
   <c f a c>4 r c,2-^ |
   f-^ g-^ |
   c-^ c'-^ |
-  #(set-octavation 1) %NOTE: The octavation didn't look good on one note, so I added the two previous notes also.
+  \ottava #1 %NOTE: The octavation didn't look good on one note, so I added the two previous notes also.
   f-^ g-^ |
-  c-^ #(set-octavation 0) r |
+  c-^ \ottava #0 r |
   R1*3 |
   <c,,, fis,>1~-^ | <c fis,> |
   <bes e,>1~-^ | <bes e,> |
@@ -867,8 +869,9 @@ pianoDynamics =
 
   %legerement retenu
   s1*16\ppp |
-  \setTextCresc
+  \crescTextCresc
   s1*6\< | %revenez
+  \crescHairpin
   %au mouvt
   s2\mf s2_\pStaccLeggiero |
   s1*3 |
@@ -889,8 +892,9 @@ pianoDynamics =
   s4 s2._\scherzando |
   s1*4 |
   s4 s2._\piuf |
-  \setTextCresc
+  \crescTextCresc
   s4 s2.\< |
+  \crescHairpin
   s1 |
   s1*13\f |
   s4 s2._\piuf |

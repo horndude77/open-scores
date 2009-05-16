@@ -2,7 +2,7 @@
 \include "HornNotes.lyi"
 \include "defs.lyi"
 
-\version "2.11.40"
+\version "2.12.2"
 
 \paper
 {
@@ -58,37 +58,28 @@ instrument = "Piano"
     \context
     {
       \type "Engraver_group"
-      \name "Dynamics"
+      \name Dynamics
       \alias Voice
       \consists "Output_property_engraver"
-
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-      \override DynamicLineSpanner #'Y-offset = #0
-      pedalSustainStrings = #'("Ped." "*Ped." "*")
-      pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-
       \consists "Piano_pedal_engraver"
       \consists "Script_engraver"
-      \consists "Dynamic_engraver"
+      \consists "New_dynamic_engraver"
+      \consists "Dynamic_align_engraver"
       \consists "Text_engraver"
-      \consists "Text_spanner_engraver"
-
-      %\override TextScript #'font-size = #2
-      %\override TextScript #'font-shape = #'italic
-      %\override TextScript #'extra-offset = #'(0 . 1.75)
-      %\override DynamicText #'extra-offset = #'(0 . 2.5)
-      %\override DynamicTextSpanner #'extra-offset = #'(0 . 2.5)
-      %\override Hairpin #'extra-offset = #'(0 . 2.5)
-
       \consists "Skip_event_swallow_translator"
-
       \consists "Axis_group_engraver"
+
+      pedalSustainStrings = #'("Ped." "*Ped." "*")
+      pedalUnaCordaStrings = #'("una corda" "" "tre corde")
+      \override DynamicLineSpanner #'Y-offset = #0
+      \override TextScript #'font-size = #2
+      \override TextScript #'font-shape = #'italic
+      \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
     }
     \context
     {
       \PianoStaff
       \accepts Dynamics
-      %\override VerticalAlignment #'forced-distance = #7
     }
   }
 }
