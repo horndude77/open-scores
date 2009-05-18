@@ -5,5 +5,111 @@
 bassMvtI = \relative c
 {
   \clef bass
+  \key ees \major
+  r8 ees\f g bes ees4 ees, |
+  r8 ees g bes ees4 ees, |
+  r8 ees g bes g bes ees, g |
+  aes f d bes ees ees f g |
+  aes aes, c ees aes ees c aes |
+  r ees' g bes ees bes g ees |
+  f4. aes8 bes4. d,8 |
+  ees ees f f g g ees ees |
+  c' c bes bes aes aes a a |
+  bes bes, d bes ees bes' g ees |
+  bes' bes, d bes ees bes' g ees |
+  bes bes' bes, bes bes4 r |
+
+  %A
+  ees2\p f |
+  g4( ees d bes) |
+  ees2( f4 aes) |
+  g( ees d bes) |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  <<
+    {s1*3 | s2 s\<}
+    \repeat unfold 6 { \repeat unfold 8 ees8 | }
+  >>
+  ees8\f ees ees ees des des des des |
+  c c c c aes aes aes aes |
+  bes bes bes bes bes bes aes aes |
+  g g g g g g g g |
+  aes aes aes aes a a a a |
+  bes bes' bes4 r8 bes8 bes4 |
+  r8 bes bes4 r8 bes r bes |
+  bes r bes4 g ees |
+  bes8 bes ees g bes4 bes, |
+
+  %B
+  ees1~\p |
+  ees~ |
+  ees |
+  aes,2( bes) |
+  ees1~ |
+  ees~ |
+  ees |
+  aes,2( bes) |
+  ees4\f r8 bes ees ees bes bes |
+  ees4 r8 bes ees ees bes bes |
+  ees4 ees ees r |
+
+  %C
+  ees4\p r r2 |
+  ees4 r r2 |
+  ees4 r r2 |
+  d4 bes ees r |
+  aes r r2 |
+  g4 r r2 |
+  r2 r4 bes |
+  ees, ees' r2 |
+  aes,4 r r2 |
+  g4 f ees r |
+  r4 r8. a16 bes4 bes, |
+  ees\f r8 bes ees ees bes bes |
+  ees4 r8 bes ees ees bes bes |
+  ees4 r r2 |
+  ees4\p r r2 |
+  d4 r r2 |
+  c2( f) |
+  bes,2~ bes4 r |
+  d r d r |
+  ees2 ees8( d ees d) |
+  ees r c r d r e r |
+  d f'\f f f f c a f |
+
+  %D
+  f,\p r f' r c r a r |
+  f4 r r2 |
+  f8 r f' r d r bes r |
+  f4 r r2 |
+  f8 r f' r d r bes r |
+  f4 r fis'2 |
+  g f |
+  d e |
+  fis, g |
+  f4 f' f f |
+  bes2( c4 ees) |
+  d( bes a f) |
+  bes( b c ees) |
+  d( bes a f) |
+  bes8 bes, bes bes bes bes bes bes |
+  \repeat unfold 4 {\repeat unfold 8 bes |}
+  bes bes d d ees ees g g |
+  f f f f f f f f |
+
+  %E
+  bes,\f bes d f bes f d bes |
+  r ees g bes ees bes g ees |
+  r bes d f bes f d ees |
+  c4. ees8 f4. a,8 |
+  bes bes c c d d bes bes |
+  ees ees ees ees e e e e |
+  f f f f f f f f |
+  bes,4 r8 bes(\p d4) r8 d( |
+  f4) r8 f( aes4.\fp f16 d) |
+  b8 r d r g4.(\fp f16 d) |
+
+  %F
+  c4\p r r2 |
 }
 
