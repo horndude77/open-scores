@@ -1,0 +1,91 @@
+\version "2.12.2"
+
+piuLento = \markup {\italic {più lento}}
+animato = \markup {\italic {animato}}
+aTempo = \markup {\italic {a tempo}}
+
+cadenzaRest = {R8*27}
+
+outlineMvtI =
+{
+  \time 4/4
+  \tempo "Allegro moderato" 4=112
+  s1*35 |
+
+  %solo
+  s1*38 |
+
+  %piano
+  s1*11 |
+
+  %solo
+  s1*8 |
+
+  %piu lento
+  s1*18 |
+
+  %rit
+  s1*2 |
+
+  %piano
+  s1*6 |
+
+  \tempo "animato" 4=132
+  s1*25 |
+
+  %piano
+  s1*19 | \bar "||"
+}
+
+outlineMvtII =
+{
+  \time 9/8
+  \tempo "Andante" 4.=88
+  s4.*3*28 |
+
+  %rit
+  s4.*3 |
+
+  %a tempo
+  s4.*3*14 |
+
+  %cadenza
+  s8*27 \bar "|" %Cadenza time
+  s4.*3*4 | \bar "||"
+}
+
+outlineMvtIII =
+{
+  \time 4/4
+  \tempo "Tempo I" 4=112
+  s1*30 |
+
+  %solo
+  s1*28 |
+
+  %piano
+  s1*10 |
+
+  %solo
+  s1*5 | \bar "||"
+
+  %c major
+  s1*18 |
+
+  %rit
+  s1*2 |
+
+  %piano
+  s1*6 |
+
+  \tempo "animato" 4=132
+  s1*28 | \bar "|."
+}
+
+outline =
+{
+  \outlineMvtI
+  \outlineMvtII
+  \outlineMvtIII
+}
+
