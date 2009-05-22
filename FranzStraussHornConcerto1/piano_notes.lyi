@@ -1,0 +1,210 @@
+\version "2.12.2"
+
+\include "defs.lyi"
+
+pianoRHMvtI = \relative c'
+{
+  \key c \minor
+  \repeat unfold 2 << {c4( ees2-> d4)} \\ {c4 g a b} >> |
+  << {\voiceOne c8. <d b>16 <ees c>8. <f d>16} \\ \new Voice {\voiceTwo c4} >> \oneVoice <g' ees>4 <c, g> |
+  <<
+    {
+      bes'4.( aes8 g4) bes~-> |
+      bes aes8.( g16 f4) aes4~-> |
+      aes g8.( f16 ees4)
+    }
+    \\
+    {
+      <f c~>2( <ees c>4) des4~ |
+      des c8.( bes16 aes4) ces~ |
+      ces bes8.( aes16 g4)
+    }
+    \\
+    {
+      s1 |
+      e'2 s2 |
+      d2 s4
+    }
+  >> <d b g>4 |
+  <c g>8. <ees c>16 <d b>8. <ees c>16 <f d aes>4 <ees c a> |
+  <ees c g~>2^( <d b g>4) r4 |
+  \repeat unfold 2
+  <<
+    {<c' g>4( ees2-> d4)}
+    \\
+    {ees,4 g a b}
+    \\
+    {}
+    \\
+    {
+      s2.
+      \once \override NoteColumn #'force-hshift = #0.5
+      f4
+    }
+  >> |
+  <ees c'>8. <b' d>16 <c ees>8. <d f>16 <ees g>4 <c g> |
+  <<
+    {
+      bes'4.(-> aes8 g4) g(-> |
+      bes8.) aes16 g8. f16 g4 ees(-> |
+      g8.) f16 ees8. d16 ees4 c |
+    }
+    \\
+    {
+      <c~ f>2( <c ees>4) s |
+      <bes~ d>2( <bes ees>4) s |
+      <g~ b>2( <g c>4) <aes ees c> |
+    }
+  >> |
+  <<
+    {
+      bes8. g16 bes8. ees16 g4 <f d bes> |
+      <f d bes>2 <ees bes>4
+    }
+    \\
+    {
+      <g, ees bes>8. g,16 bes8. ees16 g4 aes |
+      aes2 g4
+    }
+  >> <ees ees'>8. <ees ees'>16 |
+  <ees' c' ees>2 <d bes' d>4. <c aes' c>8 |
+  <bes ees g bes>2~ <bes ees g bes>8 \makeOctaves #1 {c8 d ees |
+  g4( f8.) ees16 ees4( d8.) c16} |
+  <<
+    {bes'4. aes8 g16 ees d ees f g aes bes}
+    \\
+    {<bes, d>4 <bes f'> <bes ees> r}
+  >> |
+  <c c'>8. aes16 c8. \makeOctaves #-1 {ees16 aes8. c16 ees8. c16 |
+  bes4 g ees' f8. c16 |
+  bes4 a8. bes16 c4} <a f ees a,>4 |
+  <bes f d bes>4 <bes f d bes>8. <bes f d bes>16 <bes f d bes>2 |
+  <b f d b>4 <b, d b'>8. <c ees c'>16 <d f d'>4 <ees g ees'>8. <d f d'>16 |
+  <c ees ees'>4 <g c ees g>4~ <g c ees g>8 \makeOctaves #1 {a8 b c |
+  d8. g,16 b8. d16} <g b g'>4 <g d' f> |
+  <g~ d' f>2( <g c ees>4) <d g d'> |
+  <c g' c> <des g des'>8. <des g des'>16 <des g des'>4 <c g' c>8. <c g' bes>16 |
+  <c f aes>4 <f aes f'>4~ <f aes f'>8. <f aes f'>16 <ees g ees'>8. <d f d'>16 |
+  <ees ees'>4 <d f d'>8. <c ees c'>16 <b d b'>4 <d g b d> |
+  <c ees g c> g8. g16 g4 <c, g ees>8. <d f,>16 |
+  <ees g,>4 <d f,>8. <c ees,>16 <b d,>4 <d b f> |
+  <c g ees> c8. c16 <ees g,>2~ |
+  \repeat unfold 3 {<ees g,>4 c8. c16 <ees g,>2~ |}
+  <ees g,>4 c8. c16 <f aes,>2( |
+  <ees g,>4 c8. c16 <ees g,~>2( |
+  <d g,>4) b8. d16 <f~ d g,~>2( |
+  <f c g>4) << {ees2 d4} \\ {s4 <b g>2} >> |
+  <c g>4 <d b>8( <ees c>) << {f4( fis)} \\ {<d c>2} >> |
+}
+
+pianoLHMvtI = \relative c
+{
+  \clef bass
+  \key c \minor
+  \repeat unfold 2 {<c ees>4 r r <g f'> |}
+  <c ees> r c, ees |
+  f8. g16 aes8. f16 c'4 r |
+  r c f r |
+  r bes, ees f |
+  ees g, f fis |
+  g g, g' a8. b16 |
+  c4 r r
+  << {g'4~ | g} \\ {g, | c} >>
+  r r
+  << {g'4~ | g} \\ {g, | c} >>
+  r c ees |
+  f8. g16 aes8. f16 c'4 r |
+  r \makeOctaves #-1 {bes,8. bes16 ees4 r |
+  r g,8. g16 c4 aes8. c16 |
+  ees4 r r bes' |
+  ees bes8. bes16 ees,4 r |
+  aes,4 c8. ees16 aes4 aes, |
+  ees'} <ees g bes ees>8. <ees g bes ees>16 <ees g bes ees>8 bes' g ees |
+  <bes d f bes>4 <bes d f bes>8. <bes d f bes>16 <bes d f bes>4 \makeOctaves #-1 {bes4~ |
+  bes4 c8. d16 ees4} r |
+  <aes, c ees aes>2 <c c'>4 <aes aes'> |
+  <ees' g>4 <ees g bes>8. <ees g bes>16 <ees g c>4 <ees g c> |
+  << {<bes' d>4 <c ees>8. <bes d>16 <a c>4} \\ {f4 f8. f16 f4} >> \makeOctaves #-1 {f4 |
+  bes,2 bes'4 aes~ |
+  aes8. g16 f8. ees16 d4} <g b>4 |
+  <c, ees g c>2 <ees ees,>4 <c c,> |
+  << {<b d g>4} \\ {g8. f'16 d8. b16} >> \makeOctaves #1 {g4. a8 |
+  b4 a8. b16} << {c'4 b | c} \\ {c,8. ees16 g8. f16 | e4} >>
+  \makeOctaves #-1 {e8. e16 e4 e8. e16 |
+  f4} r <f aes c f>2 |
+  <g c ees>4 \makeOctaves #-1 {c,8. ees16 g4 g |
+  c,} g'8. g16 g4 r4 | %TODO: revisit this measure
+  g,,4 c8. ees16 g4 g, |
+  c r r g' |
+  \repeat unfold 3 {c r r g |}
+  c r r c, |
+  c' r c, ees |
+  g r r b |
+  c r <f g,>2 |
+  <c ees>4 r <aes aes'>2 |
+  <g g'>4 r g a8. b16 |
+  c4 r r g |
+  c r r g |
+  c r <aes aes,> <c c,> |
+  <ees ees,> r r ees |
+  d r bes2 |
+  c4 r aes2 |
+  bes4 r r bes |
+  ees,2 ees' |
+  << {aes4 aes2 aes4} \\ {f4 d8( ees f4) f} >> |
+  ees4 r c2 |
+  << {g'2 g} \\ {g b,} >> |
+  c8( b a b c4) c |
+  << {g'4 g2 g4} \\ {cis,4 e8( d c4 d8 e)} >> |
+  f4 r d2 |
+  d2( d,4 e8 fis) |
+  g( b cis d g4) g |
+  aes2 aes4 aes |
+  g2.( f8 ees |
+  aes2) aes4 aes |
+  g2 ees4.( d8) |
+  c4 c( d ees) |
+  f,2 f |
+  g g4 g |
+  c2 <d d,> |
+  <ees ees,> <ees ees,> |
+  \repeat unfold 4 <f f,>8 <f f,>4 r |
+  \repeat unfold 4 <fis fis,>8 <fis fis,>4 r |
+  <g g,>2 <g g,>4 r |
+  g,2. g4 |
+  <c ees>4 r r2 |
+}
+
+pianoRHMvtII =
+{
+}
+
+pianoLHMvtII =
+{
+}
+
+pianoRHMvtIII =
+{
+}
+
+pianoLHMvtIII =
+{
+}
+
+pianoDynamics =
+{
+}
+
+pianoRH =
+{
+  \pianoRHMvtI
+  \pianoRHMvtII
+  \pianoRHMvtIII
+}
+
+pianoLH =
+{
+  \pianoLHMvtI
+  \pianoLHMvtII
+  \pianoLHMvtIII
+}
