@@ -9,17 +9,17 @@
   copyright = "Creative Commons Attribution-ShareAlike 3.0"
   instrument = \instrument
 
-  mutopiatitle = ""
-  mutopiacomposer = "BeethovenLV"
-  mutopiaopus = "Op. 55"
-  mutopiainstrument = \instrument
+  mutopiatitle = "Symphony No.3 in Eb Major (Eroica)"
+  mutopiacomposer = "BeethovenLv"
+  mutopiaopus = "Op.55"
+  mutopiainstrument = "Orchestra"
   date = "1805"
   source = "Braunschweig: Henry Litolff's Verlag, n.d.(ca.1865)"
   style = "Classical"
   maintainer = "Jay Anderson"
   maintainerEmail = "horndude77@gmail.com"
   lastupdated = "2009/May/8"
-  footer = "Mutopia-"
+  footer = "Mutopia-2009/06/04-1655"
   tagline =
   \markup
   {
