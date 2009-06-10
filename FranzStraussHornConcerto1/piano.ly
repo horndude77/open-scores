@@ -4,6 +4,8 @@
 \include "horn_notes.lyi"
 \include "defs.lyi"
 
+#(set-global-staff-size 18)
+
 \paper
 {
   %#(define page-breaking ly:page-turn-breaking)
