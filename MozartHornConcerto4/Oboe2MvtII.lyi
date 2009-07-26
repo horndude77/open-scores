@@ -1,0 +1,7 @@
+oboeTwoMvtII = \relative c''
+{
+  \key bes \major
+  R2.*10 |
+
+  %N
+}

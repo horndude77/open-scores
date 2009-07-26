@@ -1,0 +1,17 @@
+oboeOneMvtIII = \relative c''
+{
+  \key ees \major
+  r8 |
+  R2.*8 |
+  ees2.\f |
+  d4. f |
+  g a |
+  bes8 bes bes bes4 r8 |
+  ees,2. |
+  d4. f |
+  ees4 g8 \grace g16 f8 ees f |
+  ees ees ees ees r r |
+
+  %R
+  R2.*19 |
+}

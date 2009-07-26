@@ -2,7 +2,7 @@
 
 \include "defs.lyi"
 
-violinIMvtII = \relative c''
+violinOneMvtIII = \relative c''
 {
 }
 

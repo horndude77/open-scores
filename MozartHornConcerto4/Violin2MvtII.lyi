@@ -2,8 +2,7 @@
 
 \include "defs.lyi"
 
-hornsMvtII = \relative c''
+violinTwoMvtII = \relative c'
 {
 }
-
 

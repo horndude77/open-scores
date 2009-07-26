@@ -1,0 +1,48 @@
+oboeTwoMvtI = \relative c''
+{
+  \key ees \major
+  g1\f |
+  bes |
+  g'2~ g4. ees8 |
+  d4.( ees16 f) ees8 ees4 ees8 |
+  ees1 |
+  g |
+  c,2 d4. f8 |
+  ees4 d bes ees~ |
+  ees4 d c2 |
+  bes8 d d d r ees ees ees |
+  r d d d r ees ees ees |
+  bes bes' bes, bes bes4 r |
+
+  %A
+  R1*2 |
+  bes1~\p |
+  bes4 g'( f d) |
+  ees1 |
+  f |
+  g |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
+  aes2 aes,\< |
+  g4 d' ees f |
+  g b, c d |
+  ees1~\f |
+  ees |
+  g2 ees4 d |
+  ees2 bes |
+  aes ges' |
+  g8 ees ees4 r8 ees ees4 |
+  r8 ees ees r ees r ees r |
+  ees r bes4 ees, g |
+  ees' ees8. ees16 d4 d8. d16 |
+
+  %B
+  ees4 r r2 |
+  R1*7 |
+  r8 bes\f bes bes g g bes bes |
+  ees bes bes bes ees ees bes bes |
+  g4 bes g r |
+
+  %C |
+  R1*11 |
+}

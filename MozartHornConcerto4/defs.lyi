@@ -18,7 +18,7 @@ rMark = #(define-music-function (parser location markp) (string?)
 outlineMvtI =
 {
   \time 4/4
-  \tempo "Allegro moderato"
+  \tempo "Allegro moderato" 4=112
   s1*12 |
 
   \rMark "A"

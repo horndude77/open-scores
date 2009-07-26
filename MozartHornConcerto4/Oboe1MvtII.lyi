@@ -1,0 +1,12 @@
+oboeOneMvtII = \relative c''
+{
+  \key bes \major
+  R2.*10 |
+
+  %N
+  f2. |
+  \times 2/3 {g8( aes bes)} bes4~ bes16( aes g f) |
+  \times 2/3 {ees8( f g)} g4~ g16( f ees d) |
+  f8( ees d4) r |
+  R2.*2 |
+}
