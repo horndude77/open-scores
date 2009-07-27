@@ -11,6 +11,11 @@
 \include "ViolaMvtI.lyi"
 \include "BassMvtI.lyi"
 
+\paper
+{
+  ragged-last-bottom = ##f
+}
+
 \score
 {
   <<

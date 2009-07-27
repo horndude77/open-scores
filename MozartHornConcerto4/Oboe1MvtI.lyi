@@ -62,4 +62,92 @@ oboeOneMvtI = \relative c''
 
   %E
   bes4\f f'2. |
+  g1 |
+  f |
+  ees |
+  d4 c f d |
+  g2 bes~ |
+  bes4 d,8. d16 c4 c8. c16 |
+  bes4 r r2 |
+  R1*2 |
+
+  %F
+  R1*15 |
+
+  %G
+  R1*18 |
+
+  r2 f'4.(\p\startTrillSpan ees16\stopTrillSpan f) |
+  g4 r8 bes aes aes g g |
+
+  %H
+  f4 r r bes, |
+  c4.( d8) ees4 ees |
+  cis8( d) d4 r d\p |
+  ees4.( f8) g4 g |
+  e8( f) f2\< f4~ |
+  f aes8.\f aes16 aes4 aes |
+
+  %I
+  aes r r2 |
+  R1*2 |
+  bes4(\p aes g f) |
+  ees r r2 |
+  R1*2 |
+  r2 r8 g(\f aes bes) |
+  c1 |
+  bes |
+  aes |
+  g4 f ees r |
+  R1*3 |
+  r8 bes\f bes bes ees ees f f |
+  g bes, bes bes g' g f f |
+
+  %K
+  ees4 r r2 |
+  R1*5 |
+  r8 bes'\f bes bes f bes d, f |
+  bes,4 r r2 |
+  R1*2 |
+  r8 bes'\p bes bes bes( aes) aes( g) |
+  R1*7 |
+
+  %L
+  R1*2 |
+  g2(\p aes8 f ees d) |
+  ees( g) bes4.( c8 f, aes) |
+  g4 r r2 |
+  R1*9
+  r2 g\p |
+  f1\< |
+  ees4\f g g2~ |
+  g1~ |
+  g8( bes) g-. g-. g2~ |
+  g1~ |
+  g8( bes) g-. g-. g2~ |
+  g1 |
+  f4 g aes g |
+  c bes aes ges |
+  g2 r\fermata |
+  bes1\f |
+  c |
+  bes |
+  aes |
+  g2 bes |
+  aes c |
+  bes4 g8. g16 f4 f8. f16 |
+
+  %M
+  ees4 r r2 |
+  R1*3 |
+  r2 g4(\p ees) |
+  aes4. f8 ees( d c d) |
+  ees( g) bes4 g( ees) |
+  aes4.( f8) d-. ees-. f-. g-. |
+  ees bes\f bes bes ees ees f f |
+  g bes, bes bes g' g f f |
+  ees4 r ees g |
+  ees r ees g |
+  ees r g r |
+  ees2 r |
 }

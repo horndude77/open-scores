@@ -5,5 +5,20 @@
 violaMvtI = \relative c'
 {
   \clef alto
+  \key ees \major
+  r8 ees\f g bes bes,4 bes' |
+  r8 ees, g bes bes,4 bes' |
+  r8 ees, g bes g bes ees, g |
+  aes f d bes ees ees f g |
+  aes aes, c ees aes ees c aes |
+  r ees' g bes ees bes g ees |
+  c4. c'8 f,4. d8 |
+  ees ees d aes bes ees g g |
+  ees ees d d c c f f |
+  f16 f d bes d f d bes \repeat unfold 2 {g' bes g ees} |
+  \repeat unfold 2 {d f d bes} \repeat unfold 2 {g' bes g ees} |
+  bes8 bes' bes, bes bes4 r |
+
+  %A
 }
 
