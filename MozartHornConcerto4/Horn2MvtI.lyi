@@ -26,7 +26,7 @@ hornTwoMvtI = \relative c'
   << c~ {s2 s\<} >> |
   c1~ |
   c4 c c c |
-  c1~ |
+  c1~\f |
   c |
   g2 g4 g |
   c2 c4. c8 |
