@@ -5,5 +5,19 @@
 violaMvtII = \relative c'
 {
   \clef alto
+  \key bes \major
+  bes2.~\p |
+  bes~ |
+  bes |
+  f4 f r |
+  r f( ees) |
+  r g( a) |
+  bes f2~ |
+  f2.~ |
+  f4 bes4.( g'8) |
+  f4( f,) r |
+
+  %N
+  <d' f>2.\f |
 }
 

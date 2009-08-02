@@ -2,7 +2,21 @@
 
 \include "defs.lyi"
 
-violinOneMvtII = \relative c''
+violinOneMvtII = \relative c'
 {
+  \key bes \major
+  d2.\p |
+  \times 2/3 {ees8( f g)} g4~ g16( f ees d) |
+  \times 2/3 {c8( d ees)} ees4~ ees16( d c bes) |
+  d8( c) bes4 r |
+  r4 bes2 |
+  r4 ees2 |
+  d2( c4) |
+  d2( c4) |
+  d4. f8 g( ees') |
+  d4( c8\< d ees e) |
+
+  %N
+  f2.\f |
 }
 

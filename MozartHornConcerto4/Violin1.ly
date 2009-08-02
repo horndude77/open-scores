@@ -7,9 +7,9 @@
 
 instrument = "Violin I"
 
-mvtI = \ViolinOneMvtI
-mvtII = \ViolinOneMvtII
-mvtIII = \ViolinOneMvtIII
+mvtI = \violinOneMvtI
+mvtII = \violinOneMvtII
+mvtIII = \violinOneMvtIII
 
 \include "part.lyi"
 

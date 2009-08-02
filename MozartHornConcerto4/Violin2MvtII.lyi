@@ -4,5 +4,19 @@
 
 violinTwoMvtII = \relative c'
 {
+  \key bes \major
+  bes2.~\p |
+  bes~ |
+  bes |
+  a4( bes) r |
+  r aes( g) |
+  r bes( c) |
+  bes2( a4) |
+  bes2( a4) |
+  bes4. d8 ees( c') |
+  bes4 a8(\< bes c cis) |
+
+  %N
+  d2.\f |
 }
 
