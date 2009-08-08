@@ -1,4 +1,17 @@
 oboeTwoMvtIII = \relative c''
 {
   \key ees \major
+  r8 |
+  R2.*8 |
+  g4.\f bes |
+  aes2. |
+  g4. ees' |
+  d8 d d d4 r8 |
+  g,4. bes |
+  aes2. |
+  g4 ees'8 \grace ees16 d8 c d |
+  ees g, g g r r |
+
+  %R
+  R2.*19 |
 }

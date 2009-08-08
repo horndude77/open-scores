@@ -2,7 +2,27 @@
 
 \include "defs.lyi"
 
-violinTwoMvtIII = \relative c''
+violinTwoMvtIII = \relative c'
 {
+  \key ees \major
+  r8 |
+  g4\p r8 bes4 r8 |
+  aes4 r8 aes4 r8 |
+  g4 r8 a4 r8 |
+  bes4 r8 r4. |
+  g4 r8 bes4 r8 |
+  aes4 r8 aes4 r8 |
+  g4 r8 aes4 r8 |
+  g g g g r bes\f |
+  ees ees ees ees ees ees |
+  d( f bes) bes( aes f) |
+  ees ees ees ees d ees |
+  f( bes,) bes bes4 bes8 |
+  ees ees ees ees ees ees |
+  d( f bes) bes( aes f) |
+  g( bes) ees \grace g16 f8 ees f |
+  ees <ees, g,> <ees g,> <ees g,> r r |
+
+  %R
 }
 

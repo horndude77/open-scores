@@ -15,7 +15,7 @@ bassMvtIII = \relative c
   f4 r8 d4 r8 |
   ees4 r8 bes8 bes bes |
   ees ees ees ees r r |
-  ees4\p r8 g4 r8 |
+  ees4\f r8 g4 r8 |
   f4 r8 d4 r8 |
   ees4 r8 c4 r8 |
   bes4 r8 bes'16 c bes aes g f |
@@ -37,18 +37,17 @@ bassMvtIII = \relative c
   c,4) r8 r4. |
   f2.( |
   bes,4) r8 r4. |
-  \repeat unfold 2 
-  {
-    g'2.( |
-    f4) r8 r4. |
-  }
+  g'2.( |
+  f4) r8 r4. |
+  g2. |
+  f4 r8 r4. |
   c4 r8 r4. |
   f4 r8 r4. |
   c4 r8 r4. |
   f8\f g f ees f ees |
   d ees d c d c |
-  bes2.~\p |
-  bes~ |
+  bes4.~ bes4.~\p |
+  bes2.~ |
   bes |
   f' |
   bes,~ |
@@ -76,7 +75,7 @@ bassMvtIII = \relative c
   R2. |
 
   %T
-  ees4\p r8 g4 r8 |
+  ees4 r8 g4 r8 |
   f4 r8 d4 r8 |
   ees4 r8 c4 r8 |
   bes4 r8 bes'16 c bes aes g f |
@@ -103,37 +102,37 @@ bassMvtIII = \relative c
   c aes') |
   g4 r8 r4. |
   R2. |
-  c,2. |
-  ces |
+  c,2.( |
+  ces) |
   r8 bes( c d ees f) |
   ees4. g, |
   aes c |
-  des ees |
+  des( ees) |
   aes,4 r8 r4. |
   r4. ees' |
-  aes,4 a8 bes r r |
+  aes,4( a8) bes r r |
   r4. f' |
-  bes,4 b8 c r r |
+  bes,4( b8) c r r |
   r4. g'4. |
   c,4 r8 r4. |
   r4 c8 c( bes c) |
   d( c d) ees( d ees) |
   c( bes c) d( c d) |
   g,4 r8 r4. |
-  d'2.(\f |
+  d'2.( |
   g4) r8 r4. |
-  d2.(\p |
+  d2.( |
   g,4) r8 r4. |
-  c2.(\f |
+  c2.( |
   f4) r8 r4. |
-  c2.(\p |
+  c2.( |
   f,4) r8 r4. |
-  bes2.(\f |
+  bes2.( |
   ees4) r8 r4. |
-  bes2.\p |
+  bes2.( |
 
   %V
-  ees4 r8 g4 r8 |
+  ees,4) r8 g'4 r8 |
   f4 r8 d4 r8 |
   ees4 r8 c4 r8 |
   bes4 r8 bes'16 c bes aes g f |
@@ -141,7 +140,7 @@ bassMvtIII = \relative c
   f4 r8 d4 r8 |
   ees4 r8 bes bes bes |
   ees ees ees ees r r |
-  ees4 r8 g4 r8 |
+  ees4\f r8 g4 r8 |
   f4 r8 d4 r8 |
   ees4 r8 c4 r8 |
   bes4 r8 bes'16 c bes aes g f |

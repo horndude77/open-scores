@@ -1,12 +1,108 @@
 \version "2.12.2"
 
 \include "defs.lyi"
+\include "Oboe1MvtIII.lyi"
+\include "Oboe2MvtIII.lyi"
+\include "Horn1MvtIII.lyi"
+\include "Horn2MvtIII.lyi"
 \include "HornMvtIII.lyi"
+\include "Violin1MvtIII.lyi"
+\include "Violin2MvtIII.lyi"
+\include "ViolaMvtIII.lyi"
 \include "BassMvtIII.lyi"
+
+\paper
+{
+  ragged-last-bottom = ##f
+}
 
 \score
 {
   <<
+    \new Staff
+    {
+      #(set-accidental-style 'modern)
+      \set Staff.instrumentName = "Oboes"
+      \set Staff.shortInstrumentName = "Ob."
+      <<
+        \new Voice {\voiceOne \dynamicUp \oboeOneMvtIII}
+        \new Voice {\voiceTwo \dynamicDown \oboeTwoMvtIII}
+      >>
+    }
+    \new Staff
+    {
+      #(set-accidental-style 'modern)
+      \set Staff.instrumentName = "Horns"
+      \set Staff.shortInstrumentName = "Hns."
+      <<
+        \new Voice {\voiceOne \dynamicUp \hornOneMvtIII}
+        \new Voice {\voiceTwo \dynamicDown \hornTwoMvtIII}
+      >>
+    }
+    \new Staff
+    {
+      #(set-accidental-style 'modern)
+      \set Staff.instrumentName = "Solo Horn"
+      \set Staff.shortInstrumentName = "Hn."
+      \hornMvtIII
+    }
+    \new GrandStaff
+    <<
+      \new Staff
+      {
+        #(set-accidental-style 'modern)
+        \set Staff.instrumentName = "Violin I"
+        \set Staff.shortInstrumentName = "Vl.I"
+        \violinOneMvtIII
+      }
+      \new Staff
+      {
+        #(set-accidental-style 'modern)
+        \set Staff.instrumentName = "Violin II"
+        \set Staff.shortInstrumentName = "Vl.II"
+        \violinTwoMvtIII
+      }
+    >>
+    \new Staff
+    {
+      #(set-accidental-style 'modern)
+      \set Staff.instrumentName = "Viola"
+      \set Staff.shortInstrumentName = "Vla."
+      \violaMvtIII
+    }
+    \new Staff
+    {
+      #(set-accidental-style 'modern)
+      \set Staff.instrumentName = "Bass"
+      \set Staff.shortInstrumentName = "B."
+      << \outlineMvtIII \bassMvtIII >>
+    }
+  >>
+  \layout
+  {
+  }
+}
+
+\score
+{
+  \unfoldTremolos
+  <<
+    \new Staff
+    {
+      \set Staff.midiInstrument = "oboe"
+      <<
+        \oboeOneMvtIII
+        \oboeTwoMvtIII
+      >>
+    }
+    \new Staff
+    {
+      \set Staff.midiInstrument = "french horn"
+      <<
+        \hornOneMvtIII
+        \hornTwoMvtIII
+      >>
+    }
     \new Staff
     {
       \set Staff.midiInstrument = "french horn"
@@ -15,12 +111,15 @@
     \new Staff
     {
       \set Staff.midiInstrument = "string ensemble 1"
-      << \outlineMvtIII \bassMvtIII >>
+      <<
+        \violinOneMvtIII
+        \violinTwoMvtIII
+        \violaMvtIII
+        \bassMvtIII
+      >>
     }
+    \outlineMvtIII
   >>
-  \layout
-  {
-  }
   \midi
   {
   }

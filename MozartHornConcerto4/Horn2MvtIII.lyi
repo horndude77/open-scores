@@ -1,3 +1,18 @@
-hornTwoMvtIII = \relative c''
+hornTwoMvtIII = \relative c'
 {
+  \transposition ees
+  r8 |
+  R2.*8 |
+  e2.\f |
+  g8 g g g g g |
+  g4. c, |
+  g'8 g g g r r |
+  e2. |
+  g8 g g g g g |
+  c4 c8 g g g |
+  e c c c r r |
+
+  %R
+  R2.*19 |
+  d'2.\f |
 }

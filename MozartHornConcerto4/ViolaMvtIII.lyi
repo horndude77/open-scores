@@ -5,5 +5,25 @@
 violaMvtIII = \relative c'
 {
   \clef alto
+  \key ees \major
+  r8 |
+  bes4\p r8 ees,4 r8 |
+  bes'4 r8 bes4 r8 |
+  bes4 r8 ees,4 r8 |
+  f4 r8 r4. |
+  bes4 r8 ees,4 r8 |
+  bes'4 r8 bes4 r8 |
+  bes4 r8 bes4 r8 |
+  bes8 bes bes bes r r |
+  g'4\f r8 bes4 r8 |
+  aes4 r8 f4 f8 |
+  g4 r8 <a ees>4 r8 |
+  <bes d,>4 r8 bes16 c bes aes g f |
+  g4 r8 bes4 r8 |
+  aes4 r8 f4 r8 |
+  ees4 g8 \grace bes16 aes8 g aes |
+  g bes, bes bes r r |
+
+  %R
 }
 
