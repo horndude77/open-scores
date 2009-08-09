@@ -19,77 +19,93 @@
 \score
 {
   <<
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Oboes"
-      \set Staff.shortInstrumentName = "Ob."
-      \set Staff.midiInstrument = "oboe"
-      <<
-        \new Voice {\voiceOne \dynamicUp \oboeOneMvtII}
-        \new Voice {\voiceTwo \dynamicDown \oboeTwoMvtII}
-      >>
-    }
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Horns"
-      \set Staff.shortInstrumentName = "Hns."
-      \set Staff.midiInstrument = "french horn"
-      <<
-        \new Voice {\voiceOne \dynamicUp \hornOneMvtII}
-        \new Voice {\voiceTwo \dynamicDown \hornTwoMvtII}
-      >>
-    }
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Solo Horn"
-      \set Staff.shortInstrumentName = "Hn."
-      \set Staff.midiInstrument = "french horn"
-      \hornMvtII
-    }
-    \new GrandStaff
+    \new StaffGroup
+    <<
+      \override StaffGroup.SystemStartBracket #'collapse-height = #1
+      \override Score.SystemStartBar #'collapse-height = #1
+      \new Staff
+      {
+        #(set-accidental-style 'modern)
+        \set Staff.instrumentName = "Oboes"
+        \set Staff.shortInstrumentName = "Ob."
+        \set Staff.midiInstrument = "oboe"
+        <<
+          \new Voice {\voiceOne \dynamicUp \oboeOneMvtII}
+          \new Voice {\voiceTwo \dynamicDown \oboeTwoMvtII}
+        >>
+      }
+    >>
+    \new StaffGroup
     <<
       \new Staff
       {
         #(set-accidental-style 'modern)
-        \set Staff.instrumentName = "Violin I"
-        \set Staff.shortInstrumentName = "Vl.I"
-        \set Staff.midiInstrument = "string ensemble 1"
-        \violinOneMvtII
+        \set Staff.instrumentName = "Horns"
+        \set Staff.shortInstrumentName = "Hns."
+        \set Staff.midiInstrument = "french horn"
+        <<
+          \new Voice {\voiceOne \dynamicUp \hornOneMvtII}
+          \new Voice {\voiceTwo \dynamicDown \hornTwoMvtII}
+        >>
       }
       \new Staff
       {
         #(set-accidental-style 'modern)
-        \set Staff.instrumentName = "Violin II"
-        \set Staff.shortInstrumentName = "Vl.II"
-        \set Staff.midiInstrument = "string ensemble 1"
-        \violinTwoMvtII
+        \set Staff.instrumentName = "Solo Horn"
+        \set Staff.shortInstrumentName = "Hn."
+        \set Staff.midiInstrument = "french horn"
+        \hornMvtII
       }
     >>
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Viola"
-      \set Staff.shortInstrumentName = "Vla."
-      \set Staff.midiInstrument = "string ensemble 1"
-      \violaMvtII
-    }
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Bass"
-      \set Staff.shortInstrumentName = "B."
-      \set Staff.midiInstrument = "string ensemble 1"
-      << \outlineMvtII \bassMvtII >>
-    }
+    \new StaffGroup
+    <<
+      \new GrandStaff
+      <<
+        \new Staff
+        {
+          #(set-accidental-style 'modern)
+          \set Staff.instrumentName = "Violin I"
+          \set Staff.shortInstrumentName = "Vl.I"
+          \set Staff.midiInstrument = "string ensemble 1"
+          \violinOneMvtII
+        }
+        \new Staff
+        {
+          #(set-accidental-style 'modern)
+          \set Staff.instrumentName = "Violin II"
+          \set Staff.shortInstrumentName = "Vl.II"
+          \set Staff.midiInstrument = "string ensemble 1"
+          \violinTwoMvtII
+        }
+      >>
+      \new Staff
+      {
+        #(set-accidental-style 'modern)
+        \set Staff.instrumentName = "Viola"
+        \set Staff.shortInstrumentName = "Vla."
+        \set Staff.midiInstrument = "string ensemble 1"
+        \violaMvtII
+      }
+      \new Staff
+      {
+        #(set-accidental-style 'modern)
+        \set Staff.instrumentName = "Bass"
+        \set Staff.shortInstrumentName = "B."
+        \set Staff.midiInstrument = "string ensemble 1"
+        << \outlineMvtII \bassMvtII >>
+      }
+    >>
   >>
   \layout
   {
   }
   \midi
   {
+    \context
+    {
+      \Voice
+      \remove "Dynamic_performer"
+    }
   }
 }
 

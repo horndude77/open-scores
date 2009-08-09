@@ -38,8 +38,8 @@ violinTwoMvtI = \relative c''
   \repeat tremolo 8 <g ees'> \repeat tremolo 4 <g ees'> \repeat tremolo 4 <f d'> |
   \repeat tremolo 8 <ees ees'> \repeat tremolo 8 <ees bes> |
   \repeat tremolo 8 <ees aes,> \repeat tremolo 8 <ees' ges> |
-  <g ees>8 <g bes, ees,> <g bes, ees>4 r8 <g bes, ees,> <g bes, ees,>4 |
-  r8 <g bes, ees,> <g bes, ees> r <g bes, ees,> r <g bes, ees,> r |
+  <g ees>8 <g bes, ees,> <g bes, ees,>4 r8 <g bes, ees,> <g bes, ees,>4 |
+  r8 <g bes, ees,> <g bes, ees,> r <g bes, ees,> r <g bes, ees,> r |
   <g bes, ees,>8 bes ees g, bes ees, g bes, |
   bes' g16 ees bes8 g16 ees bes4 <bes f' d'> |
 

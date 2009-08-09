@@ -43,7 +43,7 @@ hornMvtII = \relative c''
   fis4.\> g8( e cis) |
   d2.~\! |
   d2( dis4) |
-  \times 2/3 {e8( fis g)} g4~( g16 f e d) |
+  \times 2/3 {e8( fis g)} g4~( g16 fis e d) |
   \times 2/3 {c8( d e)} e4~( e16 d c b) |
   d8( c b4) r |
   g2. |
@@ -69,7 +69,7 @@ hornMvtII = \relative c''
   g2( f'4) |
   f8( e) r e e( d) |
   \crescTextCresc
-  d(\< cis) c4.( g'8) |
+  d(\< cis) cis4.( g'8) |
   g8( fis)\! r fis fis( e) |
   e( dis4 c8 b a) |
   g4 g'4. fis16( e) |
@@ -78,7 +78,7 @@ hornMvtII = \relative c''
   d4\! r8 g(\> ees cis) |
   d2.~(\! |
   d2 dis4) |
-  \times 2/3 {e8( fis g)} g4~( g16 f e d) |
+  \times 2/3 {e8( fis g)} g4~( g16 fis e d) |
   \times 2/3 {c8( d e)} e4~( e16 d c b) |
   d8( c b4) r |
   g2. |

@@ -14,16 +14,18 @@ violinOneMvtII = \relative c'
   d2( c4) |
   d2( c4) |
   d4. f8 g( ees') |
+  \override DynamicTextSpanner #'dash-period = #-1.0
+  \crescTextCresc
   d4( c8\< d ees e) |
 
   %N
   f2.\f |
-  \times 2/3 {g8( aes bes)} bes4~ bes16( a g f) |
+  \times 2/3 {g8( a bes)} bes4~ bes16( a g f) |
   \times 2/3 {ees8( f g)} g4~ g16( f ees d) |
   f8( ees d4) r |
   bes2. |
   ees |
-  d8( f bes d ees bes) |
+  d8( f bes d c bes) |
   a4.( bes16 c) bes( f ees d) |
   d( c ees g) bes,4 \grace d16 c8. bes16 |
   bes4 bes, r |
@@ -35,7 +37,7 @@ violinOneMvtII = \relative c'
   bes( d) c f( e f) |
   r f, f f f f |
   r e e e e e |
-  r ees ees ees ees'( a,) |
+  r ees ees ees'( d c) |
   bes( d) c f( e f) |
   r d, r e r f |
   r fis r g r aes |
@@ -43,19 +45,17 @@ violinOneMvtII = \relative c'
   f) r f |
   f r e8( g) |
   f4 r f |
-  f r e8( d) |
+  f r e8( g) |
   f( a, bes c d ees) |
   f4 d2 |
   \times 2/3 {ees8( f g)} g4~ g16( f ees d) |
-  \times 2/3 {f8( d ees)} ees4~ ees16( d c bes) |
+  \times 2/3 {c8( d ees)} ees4~ ees16( d c bes) |
   d8( c) bes4 r |
   r4 bes2 |
   r4 ees2 |
   d2( c4) |
   d4 r8 f'( e f) |
   f( ees) d r c r |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
   bes( d f\< bes d bes) |
   ees4~\f ees16( c a c) bes( f d' bes) |
   ees4~ ees16( c a c) bes( d) f,( fis) |
@@ -75,7 +75,7 @@ violinOneMvtII = \relative c'
   r d d( ees d c) |
   r bes bes bes bes bes |
   r c, c c c c |
-  c4( d c) |
+  c4( d bes) |
   a8( c des4 bes) |
   a4 bes8( c d ees) |
   d2. |
