@@ -19,64 +19,75 @@
 \score
 {
   <<
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Oboes"
-      \set Staff.shortInstrumentName = "Ob."
-      <<
-        \new Voice {\voiceOne \dynamicUp \oboeOneMvtIII}
-        \new Voice {\voiceTwo \dynamicDown \oboeTwoMvtIII}
-      >>
-    }
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Horns"
-      \set Staff.shortInstrumentName = "Hns."
-      <<
-        \new Voice {\voiceOne \dynamicUp \hornOneMvtIII}
-        \new Voice {\voiceTwo \dynamicDown \hornTwoMvtIII}
-      >>
-    }
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Solo Horn"
-      \set Staff.shortInstrumentName = "Hn."
-      \hornMvtIII
-    }
-    \new GrandStaff
+    \new StaffGroup
+    <<
+      \override StaffGroup.SystemStartBracket #'collapse-height = #1
+      \override Score.SystemStartBar #'collapse-height = #1
+      \new Staff
+      {
+        #(set-accidental-style 'modern)
+        \set Staff.instrumentName = "Oboes"
+        \set Staff.shortInstrumentName = "Ob."
+        <<
+          \new Voice {\voiceOne \dynamicUp \oboeOneMvtIII}
+          \new Voice {\voiceTwo \dynamicDown \oboeTwoMvtIII}
+        >>
+      }
+    >>
+    \new StaffGroup
     <<
       \new Staff
       {
         #(set-accidental-style 'modern)
-        \set Staff.instrumentName = "Violin I"
-        \set Staff.shortInstrumentName = "Vl.I"
-        \violinOneMvtIII
+        \set Staff.instrumentName = "Horns"
+        \set Staff.shortInstrumentName = "Hns."
+        <<
+          \new Voice {\voiceOne \dynamicUp \hornOneMvtIII}
+          \new Voice {\voiceTwo \dynamicDown \hornTwoMvtIII}
+        >>
       }
       \new Staff
       {
         #(set-accidental-style 'modern)
-        \set Staff.instrumentName = "Violin II"
-        \set Staff.shortInstrumentName = "Vl.II"
-        \violinTwoMvtIII
+        \set Staff.instrumentName = "Solo Horn"
+        \set Staff.shortInstrumentName = "Hn."
+        \hornMvtIII
       }
     >>
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Viola"
-      \set Staff.shortInstrumentName = "Vla."
-      \violaMvtIII
-    }
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Staff.instrumentName = "Bass"
-      \set Staff.shortInstrumentName = "B."
-      << \outlineMvtIII \bassMvtIII >>
-    }
+    \new StaffGroup
+    <<
+      \new GrandStaff
+      <<
+        \new Staff
+        {
+          #(set-accidental-style 'modern)
+          \set Staff.instrumentName = "Violin I"
+          \set Staff.shortInstrumentName = "Vl.I"
+          \violinOneMvtIII
+        }
+        \new Staff
+        {
+          #(set-accidental-style 'modern)
+          \set Staff.instrumentName = "Violin II"
+          \set Staff.shortInstrumentName = "Vl.II"
+          \violinTwoMvtIII
+        }
+      >>
+      \new Staff
+      {
+        #(set-accidental-style 'modern)
+        \set Staff.instrumentName = "Viola"
+        \set Staff.shortInstrumentName = "Vla."
+        \violaMvtIII
+      }
+      \new Staff
+      {
+        #(set-accidental-style 'modern)
+        \set Staff.instrumentName = "Bass"
+        \set Staff.shortInstrumentName = "B."
+        << \outlineMvtIII \bassMvtIII >>
+      }
+    >>
   >>
   \layout
   {
@@ -122,5 +133,10 @@
   >>
   \midi
   {
+    \context
+    {
+      \Voice
+      \remove "Dynamic_performer"
+    }
   }
 }

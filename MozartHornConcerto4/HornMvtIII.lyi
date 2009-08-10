@@ -183,7 +183,7 @@ hornMvtIII = \relative c''
   g2.(\< |
   fis |
   f)\> |
-  e8(\!_\dolce d e g f a) |
+  e8(\!_\dolce d e f g a) |
   c,4. \acciaccatura e8 d4( d8) |
   c8 r r r4. |
   R2. |
