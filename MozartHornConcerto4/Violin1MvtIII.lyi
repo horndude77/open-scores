@@ -111,7 +111,7 @@ violinOneMvtIII = \relative c'
   f4.~ f8( ees d) |
   r ees ees r des des |
   r c c r ges' ges |
-  r f( des) r c bes |
+  r f( des) r c( bes) |
   aes4 ees''8( des4 c8) |
   bes4( c8 des4 ees8) |
   c4 f8 f( ees des) |

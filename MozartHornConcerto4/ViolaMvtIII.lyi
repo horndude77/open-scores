@@ -199,7 +199,7 @@ violaMvtIII = \relative c'
   bes4.~\f bes8\fermata r8 r |
 
   %Y
-  bes4 r8 ees,4 r8 |
+  bes4\p r8 ees,4 r8 |
   bes'4 r8 bes4 r8 |
   bes4 r8 ees,4 r8 |
   f4 r8 r4. |
