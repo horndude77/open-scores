@@ -11,10 +11,17 @@
 \include "ViolaMvtII.lyi"
 \include "BassMvtII.lyi"
 
+#(set-global-staff-size 18)
+
 \paper
 {
   ragged-last-bottom = ##f
+  short-indent = 5\mm
 }
+
+instrument = "Orchestra"
+
+\include "header.lyi"
 
 \score
 {

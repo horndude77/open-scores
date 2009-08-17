@@ -1,3 +1,5 @@
+\version "2.12.2"
+
 oboeTwoMvtIIITutti = \relative c''
 {
   g4.\f bes |
