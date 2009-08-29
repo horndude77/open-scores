@@ -1,4 +1,4 @@
-﻿\version "2.12.2"
+\version "2.13.4"
 
 \include "defs.lyi"
 
@@ -223,6 +223,6 @@ bassoonTwoMvtIII = \relative c
   ees\ff r r |
   bes\ff r r |
   ees\ff r r |
-  R2. |
+  R2.^\fermataMarkup |
 }
 

@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.13.4"
 
 %define movement names.
 MvtI = ""
@@ -18,6 +18,8 @@ MvtIV = "Finale"
 #(define (make-tremolo dur music)
   (make-music
     'TremoloRepeatedMusic
+    'tremolo-type
+    dur
     'elements
     '()
     'repeat-count
@@ -228,12 +230,10 @@ rehearsalMarksMvtII =
 outlineMvtII =
 << \rehearsalMarksMvtII
 {
-  #(override-auto-beam-setting '(end 1 24 2 4) 1 8)
-  #(override-auto-beam-setting '(end 1 24 2 4) 2 8)
-  #(override-auto-beam-setting '(end 1 24 2 4) 3 8)
-  #(override-auto-beam-setting '(end 1 48 2 4) 1 8)
-  #(override-auto-beam-setting '(end 1 48 2 4) 2 8)
-  #(override-auto-beam-setting '(end 1 48 2 4) 3 8)
+  \overrideBeamSettings #'Score #'(2 . 4) #'end #'(((1 . 24) . (3 3 3 3))
+                                                   ((1 . 48) . (6 6 6 6))
+                                                   ((1 . 32) . (4 4 4 4)))
+
   \override Score.SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 16)
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
