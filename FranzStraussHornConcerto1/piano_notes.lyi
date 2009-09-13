@@ -112,7 +112,7 @@ pianoRHMvtI = \relative c'
   << {\voiceOne d'4 d2 f4} \new Voice {\voiceTwo b,2. d4} >> \oneVoice |
   <f d g,~>2( <ees c g>4) <ees c g> |
   <<
-    {\voiceOne e4 cis8( d e4 d8 c) | d4 s}
+    {\voiceOne e4 cis8( d e4 d8 cis) | d4 s}
     \new Voice {\voiceTwo bes4 bes2 bes4 | a a}
   >> \oneVoice <a d f>2 |
   <<
@@ -142,11 +142,11 @@ pianoRHMvtI = \relative c'
   <c a' c>8( <a' a'> <c ees c'> <bes des bes'>) <a c a'>16( ges') f-. g-. f( ees) d-. c-. |
   des( bes) c-. des-. ees-. f-. g-. a-. bes8 \voiceOne des,[( << { f bes])} \new Voice {\voiceTwo des,4} >> \oneVoice |
   << {\voiceOne aes'8( d f ees)} \new Voice {\voiceTwo <f, d>4 <f aes>8 <ees ges>} >> \oneVoice
-  <d f d'>16( ces') bes-. ces-. bes( aes) g-. f-. |
-  ges( ees) f-. g-. aes-. bes-. c-. d-. ees4 <ees, ees,>8. <ees ees,>16 |
+  <d f d'>16( ces') bes-. ces-. bes( aes) ges-. f-. |
+  ges( ees) f-. ges-. aes-. bes-. c-. d-. ees4 <ees, ees,>8. <ees ees,>16 |
   \repeat unfold 4 {<ces ees ges>16 ges} <ces ees ges>8 r16 ces, r bes r ces |
   \repeat unfold 4 {<bes' ees ges>16 ges} <bes ees ges>8 r16 bes, r a r bes |
-  a8 c16 ees fis a c ees fis ees c a c ees f a |
+  a8 c16 ees fis a c ees fis ees c a c ees fis a |
   bes bes,, c d ees f g aes bes c d ees f g aes a |
   bes4 r <d, bes aes f> r |
   r <ees bes g ees> r <f d bes f> |
@@ -186,6 +186,93 @@ pianoRHMvtI = \relative c'
   >> \oneVoice |
 
   %animato
+  <g bes ees>4 <g bes,>8 <aes c,> <g bes,>4 r |
+  r4 <g bes,>8 <aes c,> <g bes,>4 r |
+  r4 <aes c>8 <f aes> <d f>4 <f aes>8 <d f> |
+  <bes d>4 <d f>8 <bes d> <f bes>4 <bes~ d aes'>^( |
+  <bes ees g>) <g' bes,>8 <aes c,> <g bes,>4 r |
+  r4 <g bes,>8 <aes c,> <g bes,>4 r |
+  r4 <aes c>8 <f aes> <d f>4 <f aes>8 <d f> |
+  <bes d>4 <d f>8 <bes d> <f bes>4 <aes bes~ d>^( |
+  <g bes ees>) <bes g'>8( <aes f'> <g ees'>4)
+  <<
+    {
+      \voiceOne des'~ |
+      des( c) <c f> ees~ |
+      ees( d) g f~ |
+      f( ees) e <g bes> |
+      <f aes> <e g>( f) <ees fis> |
+    }
+    \new Voice
+    {
+      \voiceTwo g,4 |
+      aes2 a |
+      bes <b d> |
+      c c |
+      c4 c2 c4 |
+    }
+  >> \oneVoice
+  <bes ees g> <g ees'>8. <g ees'>16 <bes g'>4 <g ees'> |
+  <f d'> <f d'>8. <f d'>16 <aes f'>4 <f bes d> |
+  \fourx <g bes ees>8 \fourx <bes ees g> |
+  \fourx <aes ees' aes> \twox <aes ees' f aes> \twox <a ees' fis a> |
+  \fourx <bes ees g bes> \fourx <bes ees g> |
+  \twox {\eightx <g bes ees>} |
+  \eightx <bes ees g> |
+  \eightx <ees g bes> |
+  \eightx <d f bes> |
+  \sixx <d f bes d> \twox <f aes bes d> |
+  \twox {<ees g bes ees>4 <g bes ees g>8. <g bes ees g>16 <g bes ees g>4 <f aes bes f'>} |
+  <ees g bes ees>4 <g bes ees g>8. <g bes ees g>16 <aes c ees aes>4 <c ees aes c> |
+  <bes ees g bes>2 <g bes ees g>4 <g ees' g> |
+  <g d' g> <a f' a>8 <b b'> <c ees c'>4 <ees, c' ees> |
+  <<
+    {
+      ees'4 f8( g aes4) ees |
+      f4 f8. f16 fis4 fis8. fis16 |
+      g4
+    }
+    \\
+    {
+      <bes, ees,>4 <des f,>8 g, <aes c>4 <ees c'>4 |
+      <f c'>4 <f c'>8. <f d'>16 <fis ees'>4 <fis d'>8. <fis c'>16 |
+      <g b>4
+    }
+  >> <g g,>8. <g g,>16 <g g,>4 <g g,> |
+  \twox <<
+    {\voiceOne c4 e2 <d b g>4}
+    \new Voice {\voiceTwo <g, e>4 g2 f4}
+    \new Voice {\voiceThree s4 g a s}
+  >> \oneVoice |
+  <e g c>8. <b' d>16 <c e>8. <d f>16 <e g>4 <c g e> |
+  << {\voiceOne b'4.->( a8 g4)} \new Voice {\voiceTwo <f c~>2 <c e>4} >> \oneVoice g4^( |
+  << {\voiceOne g'4.->)( f8 ees4)} \new Voice {\voiceTwo <d g,~>2( <c g>4)} >> \oneVoice ees,4^( |
+  << {\voiceOne ees'4.->)( des8 c4) c} \new Voice {\voiceTwo <bes ees,~>2( <aes ees>4) <aes ees c>} >> \oneVoice |
+  <<
+    {
+      <bes bes,> <c c,> <des des,> <c c,> |
+      <bes bes,> <c c,> <des des,> <bes bes,> |
+    }
+    \\
+    {
+      f4 f2 f4~ |
+      f4 f2 f4 |
+    }
+  >>
+  <aes ees c aes>2. <ees c aes>4 |
+  <c' aes ees c>2. <aes ees c>4 |
+  <ees' bes g ees>2.
+  <<
+    {
+      <ees ees,>4 |
+      <ees ees,>2.( <g, ees>4) |
+    }
+    \\
+    {
+      <g bes>8 <aes c> |
+      <bes des>4.( <aes c>8 <g bes>4) des |
+    }
+  >>
 }
 
 pianoLHMvtI = \relative c
@@ -331,14 +418,95 @@ pianoLHMvtI = \relative c
   \repeat unfold 8 <bes d f bes>8 |
 
   %animato
+  <ees g bes>4 r r ees |
+  ees, r r ees' |
+  d r f r |
+  bes, r d bes( |
+  ees) r r ees |
+  ees, r r ees' |
+  d r f r |
+  bes, r d bes( |
+  ees) r r << {ees4~ | ees2} \\ {ees8. ees16 | aes,2} >>
+  r4 << {f'4~ | f2} \\ {f8. f16 | bes,2} >>
+  r4 << {g'4~ | g2} \\ {g8. g16 | c,2} >> c2 |
+  f,4( bes aes a) |
+  bes2. bes,4 |
+  bes'2. aes4 |
+  g4 bes ees des |
+  \sixx c8 \twox ces |
+  bes4 bes,8. bes16 ees4 r |
+  r ees8. ees16 g4 r |
+  r g8. g16 bes4 r |
+  r bes8. bes16 ees4 r |
+  r ees8. ees16 g4 ees |
+  bes bes8. d16 f4 d8. bes16 |
+  \makeOctaves #1 {\sixx bes8 \twox bes, |
+  \twox {ees4 bes8. bes16 c4 d |}
+  ees8. bes'16 g8. ees16 aes4 aes, |
+  ees'} <ees' g bes ees>8. <ees g bes ees>16 <ees g bes ees>4 <ees ees,> |
+  <b b,> <g d' g>8. <g d' g>16 <c ees g>4 <c g'> |
+  <g g'> <ees' bes'>8. <ees bes'>16 \makeOctaves #-1 { aes4 aes, |
+  aes aes8. aes16 a4 a8. a16 |
+  g4 g8. g16 g4 g |
+  c r r g8. g16 |
+  c4 r r g8. g16 |
+  c4} r c, c' |
+  f,8. g16 a8. f16 c'4 r |
+  <b b,> << {d'4( ees)} \\ {b4( c)} >> r |
+  <g, g,> << {bes'4( c)} \\ {g4( aes)} >> \makeOctaves #-1 {ees4 |
+  \twox {des c bes c} } |
+  <<
+    {
+      \voiceOne
+      \twox {ees4 ees8. ees16 ees2~} |
+      ees4 ees8. ees16 ees4~ \voiceTwo ees |
+      ees2. ees,4 |
+    }
+    \new Voice
+    {
+      \voiceTwo
+      ees1 |
+      ees |
+      ees2 s4 \voiceOne <g' bes>8 <aes c> |
+      <bes des>4.( <aes c>8 <g bes>4) <ees bes> |
+    }
+  >> \oneVoice |
 }
 
-pianoRHMvtII =
+pianoRHMvtII = \relative c'
 {
+  %andante
+  %9/8
+  \key aes \major
+  <c ees aes>8 c( ees aes, c ees aes c, ees) |
 }
 
-pianoLHMvtII =
+pianoLHMvtII = \relative c
 {
+  %andante
+  %9/8
+  \key aes \major
+  <<
+    {
+      \voiceOne
+      ees2. ees4. |
+      ees2. <ees des>4. |
+      <ees c>2. <ees c>4. |
+      <f des>2. r4. |
+    }
+    \new Voice
+    {
+      \voiceTwo
+      <aes, c>2. <aes c>4. |
+      <aes c>2. aes4. |
+      aes2. aes4. |
+      aes2. aes4. |
+    }
+  >> \oneVoice |
+  aes2. aes4. |
+  <ees ees'>2. <ees ees'>4. |
+  <aes c ees>2. <aes aes,>4. |
+  <bes bes,>2. <bes bes,>4. |
 }
 
 pianoRHMvtIII =

@@ -29,6 +29,26 @@ makeOctaves = #(define-music-function (parser location arg mus) (integer? ly:mus
  (music-map (lambda (x) (octavize x arg)) mus))
 %End octaves function
 
+twox =  #(define-music-function (parser location x) (ly:music?)
+#{
+  \repeat unfold 2 $x
+#})
+
+fourx =  #(define-music-function (parser location x) (ly:music?)
+#{
+  \repeat unfold 4 $x
+#})
+
+sixx =  #(define-music-function (parser location x) (ly:music?)
+#{
+  \repeat unfold 6 $x
+#})
+
+eightx =  #(define-music-function (parser location x) (ly:music?)
+#{
+  \repeat unfold 8 $x
+#})
+
 piuLento = \markup {\italic {più lento}}
 animato = \markup {\italic {animato}}
 aTempo = \markup {\italic {a tempo}}
