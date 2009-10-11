@@ -2,6 +2,7 @@
 
 hornThree = \relative c''
 {
+  \set Staff.midiInstrument = "french horn"
   \transposition e
   R1*16 |
 
@@ -193,3 +194,6 @@ hornThree = \relative c''
   c2.\fermata |
 }
 
+HornIIIInstrumentName = "Horn III"
+HornIIIShortInstrumentName = "Hn.III"
+AcademicHornIIIMusic = << \outline \hornThree >>

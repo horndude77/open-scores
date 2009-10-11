@@ -3,6 +3,7 @@
 %TODO: switch to relative mode
 hornOne =
 {
+  \set Staff.midiInstrument = "french horn"
   \transposition c
   c''4-.\pp r c''-. r |
   c''4-. r r2 |
@@ -324,3 +325,6 @@ hornOne =
   c''2.\fermata |
 }
 
+HornIInstrumentName = "Horn I"
+HornIShortInstrumentName = "Hn.I"
+AcademicHornIMusic = << \outline \hornOne >>

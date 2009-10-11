@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "defs.lyi"
+\include "defs.ily"
 
 \paper
 {
@@ -9,7 +9,7 @@
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     \new Staff

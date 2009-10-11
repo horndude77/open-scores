@@ -2,6 +2,7 @@
 
 hornTwo = \relative c'
 {
+  \set Staff.midiInstrument = "french horn"
   \transposition c
   c4-.\pp r c-. r |
   c-. r r2 |
@@ -275,3 +276,6 @@ hornTwo = \relative c'
   c2.\fermata |
 }
 
+HornIIInstrumentName = "Horn II"
+HornIIShortInstrumentName = "Hn.II"
+AcademicHornIIMusic = << \outline \hornTwo >>

@@ -1,29 +1,21 @@
 \version "2.12.2"
 
-\include "defs.lyi"
-\include "horn1notes.lyi"
-\include "horn2notes.lyi"
-\include "horn3notes.lyi"
-\include "horn4notes.lyi"
+\include "defs.ily"
+\include "horn1.ily"
+\include "horn2.ily"
+\include "horn3.ily"
+\include "horn4.ily"
+\include "contrabassoon.ily"
+\include "orchestrallily.ily"
 
-instrument = "Orchestra"
+\orchestralScoreStructure #'(
+  ("FullScore" ParallelMusic ("Woodwinds" "Brass"))
+  ("Woodwinds" StaffGroup ("Contrabassoon"))
+  ("Brass" StaffGroup ("Horns"))
+  ("Horns" GrandStaff ("HornI" "HornII" "HornIII" "HornIV"))
+)
 
-\book
-{
-  \include "header.lyi"
-  \score
-  {
-    <<
-      \set Score.skipBars = ##t
-      \new Staff
-      { << \outline \hornOne >> }
-      \new Staff
-      { \hornTwo }
-      \new Staff
-      { \hornThree }
-      \new Staff
-      { \hornFour }
-    >>
-  }
-}
+\setCreateMIDI ##t
+\setCreatePDF ##t
+\createScore #"Academic" #'("FullScore")
 

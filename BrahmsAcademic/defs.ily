@@ -14,12 +14,15 @@ tempoMarkMarkup = #(define-music-function (parser location markp) (markup?)
   \mark \markup {\smaller $markp }
 #})
 
+ppSempreESottoVoceMarkup = \markup {\dynamic pp \normal-text \italic { sempre e sotto voce} }
+ppSempreESottoVoce = #(make-dynamic-script ppSempreESottoVoceMarkup)
+
 outline =
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/2
-  \tempo "Allegro"
+  \tempo "Allegro" 2 = 72
   s1*16 |
 
   \mark \default
