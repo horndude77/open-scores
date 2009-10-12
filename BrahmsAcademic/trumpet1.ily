@@ -27,6 +27,6 @@ trumpetOne = \relative c''
   e'1 |
 }
 
-TrumpetIInstrumentName = "Trumpet I"
+TrumpetIInstrumentName = "Trumpet I in C"
 TrumpetIShortInstrumentName = "Tp.I"
 AcademicTrumpetIMusic = << \outline \trumpetOne >>

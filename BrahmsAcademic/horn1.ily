@@ -326,6 +326,6 @@ hornOne =
   c''2.\fermata |
 }
 
-HornIInstrumentName = "Horn I"
+HornIInstrumentName = "Horn I in C"
 HornIShortInstrumentName = "Hn.I"
 AcademicHornIMusic = << \outline \hornOne >>

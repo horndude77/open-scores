@@ -181,6 +181,6 @@ hornFour = \relative c''
   ees2.\fermata |
 }
 
-HornIVInstrumentName = "Horn IV"
+HornIVInstrumentName = "Horn IV in E"
 HornIVShortInstrumentName = "Hn.IV"
 AcademicHornIVMusic = << \outline \hornFour >>

@@ -1,11 +1,9 @@
-\version "2.12.2"
+\version "2.13.5"
 
-\include "defs.ily" 
-\include "horn4.ily" 
+\include "structure.ily"
 
-instrument = "Horn IV"
+instrument = \HornIVInstrumentName
 
-notes = \hornFour
+\include "header.ily"
 
-\include "part.ily"
-
+\createScore #"Academic" #'("HornIV")

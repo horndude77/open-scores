@@ -18,6 +18,6 @@ trumpetThree = \relative c''
   g1\pDolce |
 }
 
-TrumpetIIIInstrumentName = "Trumpet III"
+TrumpetIIIInstrumentName = "Trumpet III in C"
 TrumpetIIIShortInstrumentName = "Tp.III"
 AcademicTrumpetIIIMusic = << \outline \trumpetThree >>

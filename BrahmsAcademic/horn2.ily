@@ -277,6 +277,6 @@ hornTwo = \relative c'
   c2.\fermata |
 }
 
-HornIIInstrumentName = "Horn II"
+HornIIInstrumentName = "Horn II in C"
 HornIIShortInstrumentName = "Hn.II"
 AcademicHornIIMusic = << \outline \hornTwo >>
