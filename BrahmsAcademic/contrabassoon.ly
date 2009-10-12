@@ -3,6 +3,7 @@
 \include "structure.ily"
 
 instrument = \ContrabassoonInstrumentName
+ContrabassoonShortInstrumentName = ""
 
 \include "header.ily"
 

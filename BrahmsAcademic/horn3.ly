@@ -3,6 +3,7 @@
 \include "structure.ily"
 
 instrument = \HornIIIInstrumentName
+HornIIIShortInstrumentName = ""
 
 \include "header.ily"
 
