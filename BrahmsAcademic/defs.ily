@@ -1,21 +1,14 @@
 \version "2.12.2"
 
-tempoMark = #(define-music-function (parser location markp) (string?)
-#{
-  \once \override Score . RehearsalMark #'self-alignment-X = #left
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \mark \markup { \smaller \bold $markp }
-#})
-
-tempoMarkMarkup = #(define-music-function (parser location markp) (markup?)
-#{
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \mark \markup {\smaller $markp }
-#})
-
-ppSempreESottoVoceMarkup = \markup {\dynamic pp \normal-text \italic { sempre e sotto voce} }
+pDolceMarkup = \markup {\dynamic p \normal-text \italic { dolce } }
+pDolce = #(make-dynamic-script pDolceMarkup)
+fBenMarcMarkup = \markup {\dynamic f \normal-text \italic { ben marc. } }
+fBenMarc = #(make-dynamic-script fBenMarcMarkup)
+ppSempreESottoVoceMarkup = \markup {\dynamic pp \normal-text \italic { sempre e sotto voce } }
 ppSempreESottoVoce = #(make-dynamic-script ppSempreESottoVoceMarkup)
+pizz = \markup { \italic "pizz." }
+arco = \markup { \italic "arco" }
+solo = \markup { Solo }
 
 outline =
 {
@@ -23,6 +16,7 @@ outline =
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/2
   \tempo "Allegro" 2 = 72
+  \grace {s16*3}
   s1*16 |
 
   \mark \default

@@ -5,6 +5,7 @@ hornOne =
 {
   \set Staff.midiInstrument = "french horn"
   \transposition c
+  \grace {s16*3}
   c''4-.\pp r c''-. r |
   c''4-. r r2 |
   R1 |

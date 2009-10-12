@@ -4,6 +4,7 @@ hornTwo = \relative c'
 {
   \set Staff.midiInstrument = "french horn"
   \transposition c
+  \grace {s16*3}
   c4-.\pp r c-. r |
   c-. r r2 |
   R1 |

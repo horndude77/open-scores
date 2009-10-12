@@ -4,6 +4,7 @@ hornThree = \relative c''
 {
   \set Staff.midiInstrument = "french horn"
   \transposition e
+  \grace {s16*3}
   R1*16 |
 
   \mark \default
