@@ -22,6 +22,8 @@
 \include "trombone2.ily"
 \include "trombone3.ily"
 \include "tuba.ily"
+\include "timpani.ily"
+\include "percussion.ily"
 \include "violin1.ily"
 \include "violin2.ily"
 \include "cello.ily"
@@ -30,16 +32,24 @@
 \include "orchestrallily.ily"
 
 \orchestralScoreStructure #'(
-  ("FullScore" ParallelMusic ("Woodwinds" "Brass" "Strings"))
+  ("FullScore" ParallelMusic ("Woodwinds" "Brass" "Percussion" "Strings"))
+
   ("Woodwinds" StaffGroup ("Flutes" "Oboes" "Clarinets" "Bassoons"))
   ("Flutes" GrandStaff ("FluteI" "FluteII" "Piccolo"))
   ("Oboes" GrandStaff ("OboeI" "OboeII"))
   ("Clarinets" GrandStaff ("ClarinetI" "ClarinetII"))
   ("Bassoons" GrandStaff ("BassoonI" "BassoonII" "Contrabassoon"))
+
   ("Brass" StaffGroup ("Horns" "Trumpets" "Trombones" "Tuba"))
   ("Horns" GrandStaff ("HornI" "HornII" "HornIII" "HornIV"))
   ("Trumpets" GrandStaff ("TrumpetI" "TrumpetII" "TrumpetIII"))
   ("Trombones" GrandStaff ("TromboneI" "TromboneII" "TromboneIII"))
+
+  ("Percussion" StaffGroup ("Timpani" "BassDrumStaff" "CymbalsStaff" "TriangleStaff"))
+  ("BassDrumStaff" RhythmicStaff ("BassDrum"))
+  ("CymbalsStaff" RhythmicStaff ("Cymbals"))
+  ("TriangleStaff" RhythmicStaff ("Triangle"))
+
   ("Strings" StaffGroup ("Violins" "Viola" "Cello" "Bass"))
   ("Violins" GrandStaff ("ViolinI" "ViolinII"))
 )

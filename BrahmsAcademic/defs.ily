@@ -10,6 +10,28 @@ pizz = \markup { \italic "pizz." }
 arco = \markup { \italic "arco" }
 solo = \markup { Solo }
 
+crescTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
+}
+
+crescTextCrescPocoAPoco =
+{
+  \set crescendoText = \markup { \italic "cresc. poco a poco" }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+crescJustTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
 outline =
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
