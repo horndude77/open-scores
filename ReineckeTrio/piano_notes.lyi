@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.13.5"
 
 rightMvtI = \relative c'
 {
@@ -210,7 +210,7 @@ rightMvtI = \relative c'
   r4 <e' a c> r <d f gis b> |
   r <e a c> r <f b d> |
   r <a c e> r < b d> |
-  e,8->( a c e) r4 <a, cis d fis> |
+  e,8->( a c e) r4 <a, c dis fis> |
   <gis b e gis>1~ |
   <gis b e gis>4 r <fis c' dis>2 |
   <gis b e>1~ |
@@ -253,7 +253,7 @@ rightMvtI = \relative c'
   <cis' fis, ais,>4 eis8( dis' bis cis cis, eis |
   gis fis ais fis dis cis fis ais, |
   cis fis, dis gis fis cis ais dis |
-  ais dis cis eis \acciaccatura e8 gis8) e cis gis |
+  ais dis cis eis \acciaccatura eis8 gis8) eis cis gis |
   <<
     {
       gis'4( a gis a) |
@@ -264,7 +264,7 @@ rightMvtI = \relative c'
     }
     \\
     {
-      gis,8 <eis d b> a <fis d a> gis <e d b> a <fis d a> |
+      gis,8 <eis d b> a <fis d a> gis <eis d b> a <fis d a> |
       cis'[ <a f d> r <a f d>] r <a f d>[ r <a f d>] |
       b8\rest <a f d> b <a f d> ais <a f d> b <a f d> |
       d <g, e> cis <g e> r <g e> d' <a f> |
@@ -1832,7 +1832,7 @@ leftMvtIV = \relative c'
   <a,, a,>1 |
   d'4 c bes8( d f a) |
   g4.( f8) e8 g \change Staff=RH \voiceTwo bes d |
-  c4 g~ g8 \change Staff=LH \oneVoice s4. | %TODO: Make switch clear
+  cis4 g~ g8 \change Staff=LH \oneVoice s4. | %TODO: Make switch clear
   <a,, a,>2. r4 |
   d,1~ | d |
   <d d'>~ | <d d'> |

@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.13.5"
 
 \include "horn_notes.lyi"
 \include "oboe_notes.lyi"
@@ -9,10 +9,7 @@ instrument = "Piano"
 
 \paper
 {
-  %between-system-space = #0.0
-  %between-system-padding = #0.0
   ragged-last-bottom = ##f
-  %ragged-bottom = ##f
 }
 
 #(set-global-staff-size 18)
