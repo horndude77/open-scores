@@ -4,8 +4,12 @@ pDolceMarkup = \markup {\dynamic p \normal-text \italic { dolce } }
 pDolce = #(make-dynamic-script pDolceMarkup)
 fBenMarcMarkup = \markup {\dynamic f \normal-text \italic { ben marc. } }
 fBenMarc = #(make-dynamic-script fBenMarcMarkup)
+mpEspressMarkup = \markup {\dynamic mp \normal-text \italic { espress. } }
+mpEspress = #(make-dynamic-script mpEspressMarkup)
 ppSempreESottoVoceMarkup = \markup {\dynamic pp \normal-text \italic { sempre e sotto voce } }
 ppSempreESottoVoce = #(make-dynamic-script ppSempreESottoVoceMarkup)
+dolce = \markup { \italic "dolce" }
+marc = \markup { \italic "marc." }
 pizz = \markup { \italic "pizz." }
 arco = \markup { \italic "arco" }
 solo = \markup { Solo }
@@ -29,6 +33,13 @@ crescJustTextCresc =
 {
   \set crescendoText = \markup { \italic "cresc." }
   \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+dimJustTextDim =
+{
+  \set decrescendoText = \markup { \italic "dim." }
+  \set decrescendoSpanner = #'text
   \override DynamicTextSpanner #'dash-period = #-1.0
 }
 

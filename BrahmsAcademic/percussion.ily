@@ -276,11 +276,11 @@ triangle =
 }
 
 BassDrumInstrumentName = "Bass Drum"
-BassDrumShortInstrumentName = "Bd.Cym."
+BassDrumShortInstrumentName = "Bd."
 AcademicBassDrumMusic = << \outline \bassDrum >>
 
-CymbalsInstrumentName = "Bass Drum"
-CymbalsShortInstrumentName = "Bd.Cym."
+CymbalsInstrumentName = "Cymbals"
+CymbalsShortInstrumentName = "Cym."
 AcademicCymbalsMusic = << \outline \cymbals >>
 
 TriangleInstrumentName = "Triangle"
