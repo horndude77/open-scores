@@ -110,11 +110,12 @@ outline =
   s2*33 | \bar "||"
 
   \time 3/4
+  \set Score.tempoHideNote = ##t
   \tempo \markup {\bold {Maestoso
     (
       \smaller \general-align #Y #DOWN \note #"8" #1
       " = "
       \smaller \general-align #Y #DOWN \note #"4" #1
-    ) }}
+    ) }} 8=92
   s2.*23 | \bar "|."
 }

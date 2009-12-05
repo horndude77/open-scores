@@ -122,7 +122,7 @@ fluteOne = \relative c''
   R2*17 |
   r4 r8 d-.\ff |
   b4-. a-. |
-  g-. f'\sf |
+  g-. fis'\sf |
   dis-. cis-. |
   b-. e\sf |
   b8-. a-. c-. b-. |
@@ -246,7 +246,7 @@ fluteOne = \relative c''
   bes4.(\! g8 ees4 ees') |
   c2.( d4) |
   \dimJustTextDim
-  des2.(\> c4) |
+  bes2.(\> c4) |
   aes4( g f ees)\! |
   R1*2 |
   g4.(\pDolce a8) g4.( a8) |
@@ -257,7 +257,7 @@ fluteOne = \relative c''
   c4.(\> d8 c4) r\! |
   R1 |
   c4.(\pDolce b8 c4 d) |
-  e4.( dis8 e4 g) |
+  e4.( dis8 e4 f) |
   e( d c b) |
   R1*2 |
   \times 2/3 {g'4(\p fis g} \times 2/3 {fis4 g a} |

@@ -122,7 +122,7 @@ oboeOne = \relative c'''
   b8-. a-. a-. d-.-> |
   b-. b-. a-. a-. |
   g4-. r |
-  r f'\sf |
+  r fis'\sf |
   dis-. cis-. |
   dis e\sf |
   b8-. a-. c-. b-. |
@@ -146,7 +146,7 @@ oboeOne = \relative c'''
   ais fis8 gis |
   cis,4) dis(\< |
   gis\> g) s1*0\! |
-  f4. b,8(\< |
+  fis4. b,8(\< |
   eis2)\> |
   e4\! r8 e,(\< |
   cis'2)\> |
@@ -258,7 +258,7 @@ oboeOne = \relative c'''
   \dimHairpin
   d4(\< e f\> a) s1*0\! |
   R1*2 |
-  c4.(\< d8)\> a4 r\! |
+  c4.(\< d8)\> c4 r\! |
   r2 c,4.( d8) |
   e2.(\pEspr d4) |
   c2.( b4) |
