@@ -202,7 +202,7 @@ oboeOne = \relative c'''
   ees4-> bes8-. aes-. g4-. ees-. |
   c'1( |
   ees) |
-  cis'4-> d8-. bis-. cis4-> fis,8-. dis-. |
+  cis'4-> dis8-. bis-. cis4-> fis,8-. dis-. |
   e4-> b8-. a-. gis4-> e-> |
   cis'1( |
   \crescJustTextCresc
