@@ -121,7 +121,7 @@ bassoonOne = \relative c'
   e\! r r2 |
   R1*4 |
   \clef tenor
-  r4 d'8(\pLegato b8 c4 cis |
+  r4 d'8(\pLegato^\solo b8 c4 cis |
   d b2) cis4( |
   d dis e dis) |
   e( cis2) dis4( |

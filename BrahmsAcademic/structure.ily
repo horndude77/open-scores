@@ -35,11 +35,11 @@
   ("FullScore" ParallelMusic ("Woodwinds" "Brass" "Percussion" "Strings"))
 
   ("FlutesI_II" #t ("FluteI" "FluteII"))
-  ("Flutes" GrandStaff ("Piccolo" "FluteI_II"))
+  ("Flutes" GrandStaff ("Piccolo" "FlutesI_II"))
   ("Oboes" #t ("OboeI" "OboeII"))
   ("Clarinets" #t ("ClarinetI" "ClarinetII"))
   ("BassoonsI_II" #t ("BassoonI" "BassoonII"))
-  ("Bassoons" GrandStaff ("BassoonI_II" "Contrabassoon"))
+  ("Bassoons" GrandStaff ("BassoonsI_II" "Contrabassoon"))
   ("Woodwinds" StaffGroup ("Flutes" "Oboes" "Clarinets" "Bassoons"))
 
   ("HornsI_II" #t ("HornI" "HornII"))

@@ -13,7 +13,7 @@ oboeOne = \relative c'''
   %B
   R1*20 |
   r2 r4 r8 b-.\fBenMarc |
-  b4-. r8 b-. b4-. b8 b-. |
+  b4-. r8 b-. b4-. r8 b-. |
   d2-> b4-. r8 fis-. |
   g4-. r8 b-. a4-. r8 g-. |
   fis4.->( g8) e4-. r |
