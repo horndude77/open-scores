@@ -69,7 +69,7 @@ tromboneThree = \relative c
 
   %F
   dis1(\p\< |
-  d2\> f) |
+  d2\> fis) |
   d4\p r r2 |
   R1*17 |
 

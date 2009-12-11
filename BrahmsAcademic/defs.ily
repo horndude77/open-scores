@@ -6,22 +6,31 @@ pSempreMarkup = \markup {\dynamic p \normal-text \italic { sempre } }
 pSempre = #(make-dynamic-script pSempreMarkup)
 pLegatoMarkup = \markup {\dynamic p \normal-text \italic { legato } }
 pLegato = #(make-dynamic-script pLegatoMarkup)
+pLeggieroMarkup = \markup {\dynamic p \normal-text \italic { leggiero } }
+pLeggiero = #(make-dynamic-script pLeggieroMarkup)
 pppSempreMarkup = \markup {\dynamic ppp \normal-text \italic { sempre } }
 pppSempre = #(make-dynamic-script pppSempreMarkup)
 pDolceMarkup = \markup {\dynamic p \normal-text \italic { dolce } }
 pDolce = #(make-dynamic-script pDolceMarkup)
 fBenMarcMarkup = \markup {\dynamic f \normal-text \italic { ben marc. } }
 fBenMarc = #(make-dynamic-script fBenMarcMarkup)
+pocoFEsprMarkup = \markup {\normal-text \italic { poco } \dynamic f \normal-text \italic { espr. } }
+pocoFEspr = #(make-dynamic-script pocoFEsprMarkup)
 mpEspressMarkup = \markup {\dynamic mp \normal-text \italic { espress. } }
 mpEspress = #(make-dynamic-script mpEspressMarkup)
 ppSempreESottoVoceMarkup = \markup {\dynamic pp \normal-text \italic { sempre e sotto voce } }
 ppSempreESottoVoce = #(make-dynamic-script ppSempreESottoVoceMarkup)
+div = \markup { "div." }
+unis = \markup { "unis." }
 dolce = \markup { \italic "dolce" }
 marc = \markup { \italic "marc." }
 pizz = \markup { \italic "pizz." }
 arco = \markup { \italic "arco" }
 mezzaVoce = \markup { \italic {mezza voce} }
 solo = \markup { Solo }
+
+tupletNumberOff = \override TupletNumber #'stencil = ##f
+tupletNumberOn = \revert TupletNumber #'stencil
 
 crescTextCresc =
 {
@@ -34,6 +43,13 @@ crescTextCresc =
 crescTextCrescPocoAPoco =
 {
   \set crescendoText = \markup { \italic "cresc. poco a poco" }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+crescJustTextCrescMolto =
+{
+  \set crescendoText = \markup { \italic "cresc. molto" }
   \set crescendoSpanner = #'text
   \override DynamicTextSpanner #'dash-period = #-1.0
 }
@@ -51,6 +67,45 @@ dimJustTextDim =
   \set decrescendoSpanner = #'text
   \override DynamicTextSpanner #'dash-period = #-1.0
 }
+
+% tremolo functions
+#(define (tremolo-repeat-count dur music)
+  (let* ((elements (ly:music-property music 'elements))
+         (music-dur (ly:music-property (car elements) 'duration))
+         (length (ly:duration-log music-dur))
+         (dots (ly:duration-dot-count music-dur))
+         (beats (* (- 2 (/ 1 (expt 2 dots))) (/ 4 (expt 2 length)))))
+      (* beats (/ dur 4))))
+
+#(define (make-tremolo dur music)
+  (make-music
+    'TremoloRepeatedMusic
+    'tremolo-type
+    dur
+    'elements
+    '()
+    'repeat-count
+    (tremolo-repeat-count dur music)
+    'element
+    music))
+
+#(define (tremoloize dur music)
+  (if (eq? (ly:music-property music 'name) 'EventChord)
+    (make-tremolo dur music)
+    music))
+
+%dur is 8, 16, 32, etc.
+tremolos = #(define-music-function (parser location dur mus) (integer? ly:music?)
+  (music-map (lambda (x) (tremoloize dur x)) mus))
+
+#(define (unfold-tremolos mus)
+  (if (eq? (ly:music-property mus 'name) 'TremoloRepeatedMusic)
+    (unfold-repeats mus)
+    mus))
+
+unfoldTremolos = #(define-music-function (parser location mus) (ly:music?)
+  (music-map unfold-tremolos mus))
+% end tremolo functions
 
 outline =
 {

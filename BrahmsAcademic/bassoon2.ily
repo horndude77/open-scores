@@ -37,7 +37,7 @@ bassoonTwo = \relative c
   f2( e |
   f e |
   \dimJustTextDim
-  d\> g4 f |
+  f\> g4 f |
   f1) |
   \crescTextCresc
   e4-.\p\< f-. e-. f-. |
