@@ -32,6 +32,18 @@ solo = \markup { Solo }
 tupletNumberOff = \override TupletNumber #'stencil = ##f
 tupletNumberOn = \revert TupletNumber #'stencil
 
+stop =
+#(define-music-function (parser location music) (ly:music?)
+  (set! (ly:music-property music 'tweaks)
+        (acons 'before-line-breaking
+               (lambda (grob)
+                 (let ((dots (ly:grob-object grob 'dot)))
+                   (ly:grob-set-property! grob 'duration-log 2)
+                   (and (ly:grob? dots)
+                        (ly:grob-set-property! dots 'dot-count 0))))
+               (ly:music-property music 'tweaks)))
+  music)
+
 crescTextCresc =
 {
   \set crescendoText = \markup { \italic "cresc." }

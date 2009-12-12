@@ -480,10 +480,7 @@ viola = \relative c
   <c, f>8. <c f>16 <c a'>8. <c a'>16 <f a>8. <f a>16 |
   \repeat tremolo 16 <e g>32 <e g>8-. r |
   r4 <c, g' e'>-. <c g' e'>-. |
-  %I'd prefer to do the triple-stop something more like this to avoid warnings:
-  % <\tweak #'duration-log #2 \tweak #'dot-count #0 c g' e'>2.\fermata |
-  %Unfortunately I can't make the dot disappear
-  << c4 <g' e'>2.\fermata >> |
+  <\stop c g' e'>2.\fermata |
 }
 
 ViolaInstrumentName = "Viola"
