@@ -13,6 +13,7 @@ instrument = "Orchestra"
 
 \score
 {
+  \unfoldTremolos
   <<
     \new Staff << \piccolo \fluteOne \fluteTwo >>
     \new Staff << \oboeOne \oboeTwo >>
