@@ -1,5 +1,7 @@
 \version "2.12.2"
 
+pfMarkup = \markup {\dynamic pf}
+pf = #(make-dynamic-script pfMarkup)
 pEsprMarkup = \markup {\dynamic p \normal-text \italic { espr. } }
 pEspr = #(make-dynamic-script pEsprMarkup)
 pSempreMarkup = \markup {\dynamic p \normal-text \italic { sempre } }
