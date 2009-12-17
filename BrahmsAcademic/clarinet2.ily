@@ -214,9 +214,9 @@ clarinetTwo = \relative c
   %L
   e,8-. r r4 r2 |
   R1*5 |
-  r2 r4 d~\mf |
   \crescHairpin
-  d r r fis(\< |
+  r2 r4 d~\mf\< |
+  d r r fis( |
   e) r r ais( |
   fis2.\! gis4) |
 

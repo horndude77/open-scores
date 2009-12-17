@@ -111,10 +111,10 @@ hornOne =
   r8 d''8-. g''4. g''8-. f''4 |
   r8 d''8-. a''4. a''8-. g''4 \< ~ |
   g''8 g''8 f''4. f''8 e''4 ~ |
-  e''8  d'' \> (g'' f'') e''4  d''\! |
+  e''8  d'' \> (g'' f'') e''4  d'' s1*0\! |
 
   %\mark "E"
-  e'' r r2 |
+  e''4 r r2 |
   R1*3 |
   g''1\p ~ |
   g''2. r4 |
@@ -257,6 +257,7 @@ hornOne =
   e''2 c'') |
 
   %\mark "M"
+  \crescJustTextCresc
   g'1( \< |
   bes'1) \> ~ |
   bes'2.\! ees''4\mp^\markup{\italic espr.} ~ |

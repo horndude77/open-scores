@@ -37,7 +37,7 @@ oboeTwo = \relative c'''
   c4 r c2 |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   f2-.(\< f-. |
   a-. f-.) |
   e1 |

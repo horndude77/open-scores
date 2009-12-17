@@ -100,7 +100,7 @@ clarinetOne = \relative c''
   R2*17 |
   r4 r8 b'-.\ff |
   cis4-. b-. |
-  a-. gis-.\sf |
+  a-. gis\sf |
   eis-. dis-. |
   eis-. fis\sf |
   cis8-. b-. d-. cis-. |

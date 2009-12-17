@@ -73,14 +73,14 @@ bassoonTwo = \relative c
   des\> c bes g)\! |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   f'2-.(\< f-. |
   a-. f-.) |
   e1 |
   c2 e, |
   g4 g16(\f a b c d4) r |
   r16 g,( a b c d e f g4) r |
-  \crescTextCresc
+  \crescJustTextCresc
   r g,16(\< a b c d-.) g,( a b c d e f |
   g-.) g,( a b c d e f g8-.) r g16( f e d) |
 
@@ -224,7 +224,7 @@ bassoonTwo = \relative c
   \clef tenor
   \repeat unfold 2 {r cis'8-. d-. d2 |}
   r4 e8 f f4 e8 f |
-  f4 g8 aes aes4 r8 \clef bass aes,-.\f |
+  f4 g8 aes aes4 r8 \clef bass aes,-.\ff |
 
   %I
   f4-. r8 c-. aes4-. r8 f-. |

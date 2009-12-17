@@ -35,7 +35,7 @@ tromboneThree = \relative c
   bes |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   a1~\< |
   a2 f, |
   c'1~ |

@@ -101,7 +101,7 @@ violinTwo = \relative c'
   g4( g g d'8 b |
   c4 g g) a(\< |
   \crescTextCrescPocoAPoco
-  bes b2) cis4(\< |
+  bes b2)\! cis4(\< |
   d dis b) b( |
   c cis2) dis4( |
   e fis d) d'8(\f c) |
@@ -270,7 +270,7 @@ violinTwo = \relative c'
   d8 g, <c, aes'>4. <c aes'>8-. <b g'>4-. |
 
   %K
-  c'16\f g ees c aes' f f d c g ees c aes' f f d |
+  c'16\ff g ees c aes' f f d c g ees c aes' f f d |
   c' g ees c bes' f d bes g'' ees bes g ees' bes g ees |
   <c' ees>4-> fis16 fis fis fis \tremolos #16 {e4 dis |
   a' gis fis dis |}
@@ -383,7 +383,7 @@ violinTwo = \relative c'
   aes4) f8( g |
   ees4) f8( d |
   ees4) c8( d) |
-  g,4->( <d' b' g'>8-.)\ff r |
+  g,4->(\! <d' b' g'>8-.) r |
   r <g, g' c e>-.\ff r <g e' c'>-. |
   r <g g'>-. r <d' b' g'>-. |
   r <g, g' c e>-. r <g e' c'>-. |

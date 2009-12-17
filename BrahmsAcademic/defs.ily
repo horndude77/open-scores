@@ -56,11 +56,19 @@ crescTextCresc =
   \override DynamicTextSpanner #'dash-period = #3.0
 }
 
-crescTextCrescPocoAPoco =
+crescJustTextCrescPocoAPoco =
 {
   \set crescendoText = \markup { \italic "cresc. poco a poco" }
   \set crescendoSpanner = #'text
   \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+crescTextCrescPocoAPoco =
+{
+  \set crescendoText = \markup { \italic "cresc. poco a poco" }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
 }
 
 crescJustTextCrescMolto =

@@ -87,10 +87,10 @@ hornTwo = \relative c'
   r8 g-. e'4. e8-. d4 |
   r8 g,-. f'4. f8-. e4~\< |
   e8 e d4. d8 cis4~ |
-  cis8 d(\> cis d) c4 g\! |
+  cis8 d(\> cis d) c4 g s1*0\! |
 
   \mark \default
-  e r r2 |
+  e4 r r2 |
   R1*3 |
   e'4(\p f e d |
   c g2) r4 |

@@ -46,7 +46,7 @@ tuba = \relative c,,
   des c2) c4~ |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   c2\< c |
   f1 |
   R1 |

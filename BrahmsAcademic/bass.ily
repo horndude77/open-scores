@@ -80,8 +80,9 @@ bass = \relative c,
   g g~ |
   g c~) |
   c( c~ |
+  \crescHairpin
   c\< f,~ |
-  f\> a |
+  f\> a) |
   c1\! |
   c |
   g |
@@ -90,7 +91,7 @@ bass = \relative c,
   des\> c2 c4~)\! |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   c2\< f,~ |
   f f |
   c' c~ |
@@ -131,7 +132,7 @@ bass = \relative c,
   c g c g |
   c g c a |
   \crescTextCrescPocoAPoco
-  d g, gis\< a |
+  d g, gis a\< |
   d b e b |
   e a, ais b |
   e d g d\f^\arco |
@@ -242,7 +243,8 @@ bass = \relative c,
   \dimJustTextDim
   r r8 dis-.\> cis4-. r |
   r4 r8 b-. ais4-. r8 gis-. |
-  g2(\> \dimHairpin fis~\> |
+  \dimHairpin
+  g2(\> fis~ |
   fis g4)\! r |
   R1 |
   << {s4\< s s\> s s1*0\!} c1 >> |
@@ -316,7 +318,7 @@ bass = \relative c,
   d4( ees f g) |
   aes2. f4 |
   g2.\> ees4( |
-  f ees b c) |
+  f ees b c) s1*0\! |
   R1*6 |
   fis1\pDolce |
   g |
@@ -340,7 +342,7 @@ bass = \relative c,
   aes4) f8( g |
   ees4) f8( d |
   ees4) c8( d) |
-  g,4->( g'8-.) g,-.\ff |
+  g,4->(\! g'8-.) g,-.\ff |
   r c-. r e-. |
   r g-. r g,-. |
   r c-. r g'-. |

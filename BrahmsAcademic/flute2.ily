@@ -46,7 +46,7 @@ fluteTwo = \relative c''
   c4 r c2 |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   f-.(\< f-. |
   a-. f-.) |
   e1 |

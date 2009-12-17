@@ -40,7 +40,7 @@ oboeOne = \relative c'''
   e4 r c2 |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   a'-.(\< a-. |
   c-. a-.) |
   g1 |
@@ -75,7 +75,7 @@ oboeOne = \relative c'''
   r2 r8 g,(\p a b) |
   c4( d8 b c4 f |
   e4 f8 d e4) a8( g |
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   f4 e8 d e4) a8(\< g |
   f4 fis g) b8( a |
   g4 fis8 e fis4) b8( a |

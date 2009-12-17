@@ -32,7 +32,7 @@ trumpetThree = \relative c''
   c4 r c2 |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   c1~\< |
   c~ |
   c2 e |

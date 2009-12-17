@@ -142,7 +142,7 @@ violinOne = \relative c'
   d e a d,) r e-.(\pDolce r d-.) |
   \crescHairpin
   \dimHairpin
-  r d(\< c\> cis)\! |
+  r d(\< c\> cis) s1*0\! |
   r d-.( r d-.) |
   r d(\< f2)\> s1*0\! |
   r4 f-.( r e-.) |
@@ -341,6 +341,8 @@ violinOne = \relative c'
   c''4.(_\dolce b8 c4 d) |
   e4.( d8 e4 f) |
   g4.( fis8 g4 a) |
+  \crescHairpin
+  \dimHairpin
   g4(\< f2\> d4)\! |
   c,4_\dolce r r2 |
   e,4 r r2 |
@@ -348,9 +350,7 @@ violinOne = \relative c'
   d,4 r f r |
 
   %2/4
-  \crescHairpin
   r4 r8 c~(\p\< |
-  \dimHairpin
   c4\> b) s1*0\! |
   r4 r8 c(\< |
   f2)\> s1*0\! |
@@ -371,7 +371,7 @@ violinOne = \relative c'
   aes4) f8( g |
   ees4) f8( d |
   ees4) c8( d) |
-  g,4->( <d' b'' g'>8-.)\ff r |
+  g,4->(\! <d' b'' g'>8-.) r |
   r e''-.\ff r c-. |
   r g-. r g'-. |
   r e-. r c-. |

@@ -59,6 +59,7 @@ contrabassoon = \relative c,
   g g~ |
   g c~ |
   c c~ |
+  \crescHairpin
   c\< f,~ |
   f\> a |
   c1\! |
@@ -69,7 +70,7 @@ contrabassoon = \relative c,
   des\> c2 c4~)\! |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   c2\< f,~ |
   f f |
   c' c~ |

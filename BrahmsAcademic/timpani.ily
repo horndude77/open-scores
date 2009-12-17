@@ -48,7 +48,7 @@ timpani = \relative c
   c\> |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   c\!\< |
   c c c |
   g g g g\stopTrillSpan |

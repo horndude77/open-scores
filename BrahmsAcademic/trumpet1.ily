@@ -41,7 +41,7 @@ trumpetOne = \relative c''
   e4 r c2 |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   c1~\< |
   c2 d |
   e c |
@@ -52,7 +52,7 @@ trumpetOne = \relative c''
   d |
 
   %l'istesso tempo
-  e4->\f f8-. d-. e4-. r |
+  e4->\ff f8-. d-. e4-. r |
   e4-> f8-. d-. e4-. r |
   e-. r r2 |
   d4-. r r2 |

@@ -77,14 +77,14 @@ bassoonOne = \relative c'
   des\> c bes g) s1*0\! |
 
   %D
-  \crescTextCrescPocoAPoco
+  \crescJustTextCrescPocoAPoco
   a'2-.(\< a-. |
   c-. a-. |
   g1 |
   e2 e |
   g4 g,16(\f a b c d4) r |
   r16 g,( a b c d e f g4) r |
-  \crescTextCresc
+  \crescJustTextCresc
   r g,16(\< a b c d-.) g,( a b c d e f |
   g-.) g,( a b c d e f g8-.) r g16( f e d) |
 
@@ -336,6 +336,8 @@ bassoonOne = \relative c'
   aes g aes g) |
   R1*2 |
   g4.(\pDolce a8) g4.( a8) |
+  \crescHairpin
+  \dimHairpin
   g4(\< a bes\> d) s1*0\! |
   r2 c4.(\< d8)\> |
   c4 r\! r2 |

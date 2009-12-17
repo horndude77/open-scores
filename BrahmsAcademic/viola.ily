@@ -328,7 +328,7 @@ viola = \relative c
   c-.-> aes-. c,-.-> aes-. \tremolos #16 { <aes c,>4 <c aes'> |
   <e gis> <fis a> <e gis> <fis a> |
   <gis, e'> <b fis'> <b gis'>2 | }
-  <cis a'>4-> cis,8-.-> a'-. cis,-.-> a' cis-.-> a' |
+  <cis a'>4-> cis,8-.->_\marc a'-. cis,-.-> a' cis-.-> a' |
   cis-.-> a-. cis,-.-> a-. cis,-.-> a' d,-.-> bes' |
   d-.-> bes'-. d-.-> bes-. dis,,-.-> b'-. dis-.-> b'-. |
   dis-.-> b-. e,,-.-> c'-. e-.-> c'-. e-.-> c-. |
@@ -392,7 +392,7 @@ viola = \relative c
   r4 d r d |
   r c( bes2) |
   \dimJustTextDim
-  r4 <c e,>4-.( r f,-.) |
+  r4 <c e,>4-.(\> r f,-.) |
   r g-.( r a-.) |
   R1 |
   e'4.(_\dolce d8 e4 f) |
@@ -427,7 +427,7 @@ viola = \relative c
   aes4) f8( g |
   ees4) f8( d |
   ees4) c8( d) |
-  g4->( <g d' b'>8-.) r |
+  g4->(\! <g d' b'>8-.) r |
   r <g e' c'>-.\ff r <g e' c'>-. |
   r <g e' c'>-. r <g d' b'>-. |
   r <g e' c'>-. r <g e' c'>-. |
@@ -442,7 +442,7 @@ viola = \relative c
   <g d' c'>-. r <g d' b'>-. r |
 
   %3/4
-  \times 2/3 {\repeat unfold 3 <e g>16} \times 2/3 {\repeat unfold 3 <f b>}
+  s1*0\ff \times 2/3 {\repeat unfold 3 <e g>16} \times 2/3 {\repeat unfold 3 <f b>}
     \times 4/6 {\repeat tremolo 6 <g c>}
     \times 4/6 {\repeat tremolo 6 <g e'>} |
   \tupletNumberOff
