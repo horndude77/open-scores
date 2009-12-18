@@ -79,7 +79,7 @@ bassoonOne = \relative c'
   %D
   \crescJustTextCrescPocoAPoco
   a'2-.(\< a-. |
-  c-. a-. |
+  c-. a-.) |
   g1 |
   e2 e |
   g4 g,16(\f a b c d4) r |

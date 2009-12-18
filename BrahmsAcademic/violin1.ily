@@ -5,7 +5,7 @@ violinOne = \relative c'
   \set Staff.midiInstrument = "string ensemble 1"
   \key c \minor
   \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-  \appoggiatura {g16[_\ppSempreESottoVoce a b]} c8-.-> c-. d-. b-. c-.-> c-. d-. b-. |
+  \appoggiatura {g16[ a b]} c8-.->\ppSempreESottoVoce c-. d-. b-. c-.-> c-. d-. b-. |
   c4-> bes8-> aes-. g4 r |
   g r g ees'8-. f-. |
   g8-.-> g-. aes-. fis-. g-.-> g-. aes-. fis-. |
@@ -143,7 +143,7 @@ violinOne = \relative c'
   \crescHairpin
   \dimHairpin
   r d(\< c\> cis) s1*0\! |
-  r d-.( r d-.) |
+  r4 d-.( r d-.) |
   r d(\< f2)\> s1*0\! |
   r4 f-.( r e-.) |
   R1 |

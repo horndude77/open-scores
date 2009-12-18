@@ -78,7 +78,7 @@ violinTwo = \relative c'
   d,2->( <c ees>4-.) r |
   b2->( <a d>4-.) r |
   <d' b'>2->( <c a'>4-.) r |
-  <b d'>2->( dis4-.) r |
+  <b g'>2->( dis4-.) r |
   <b g'>4-> a'8-. fis-. <b, g'>4-. r16 b( e fis |
   <b, g'>4->) a'8-. fis-. <b, g'>4-. r16 g'( a b |
   <c e,>4->) g8-. e-. c-. g-. e-. c-. |

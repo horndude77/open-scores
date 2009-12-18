@@ -171,5 +171,5 @@ tuba = \relative c,,
 }
 
 TubaInstrumentName = "Bass Tuba"
-TubaShortInstrumentName = "Tb.III"
+TubaShortInstrumentName = "Tuba"
 AcademicTubaMusic = << \outline \tuba >>

@@ -73,7 +73,7 @@ cello = \relative c,
       bes b) |
     }
   >> \oneVoice |
-  \crescJustTextCresc
+  \crescTextCresc
   c4-.\p\< aes-. c-. f,-. |
   c'-. f,-> c'-> a-> |
   g-> a-> e-> a'-.\f |

@@ -57,7 +57,7 @@ fluteTwo = \relative c''
   b |
 
   %4/4
-  e,4->\ff f8-. d-. f4-. r |
+  e,4->\ff f8-. d-. e4-. r |
   e4-> f8-. d-. e4-. r |
   cis'1 |
   d4-. cis-. a-. c-. |
