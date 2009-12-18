@@ -11,7 +11,7 @@ hornTwo = \relative c'
   g'4-. c-. g-. c-. |
   g-. c,-. g'-. r |
   R1*2 |
-  r8^\markup{Solo} g-.-\markup{\italic molto \dynamic p} c4 r8 c8-. g4 |
+  r8^\solo g-.\moltoP c4 r8 c8-. g4 |
   R1 |
   r8 g-. ees'4 r8 ees-. d4 |
   r8 g,-. f'4. f8-. ees4~ |
@@ -20,7 +20,7 @@ hornTwo = \relative c'
   c,-.\pp r c-. r |
   R1*2 |
 
-  \mark \default
+  %A
   b'!1~\pp |
   b |
   b4 r r2 |
@@ -28,7 +28,7 @@ hornTwo = \relative c'
   g r r2 |
   R1*3 |
 
-  \mark \default
+  %B
   R1*16 |
   c,4-.\p r c-. r |
   c-. r r2 |
@@ -37,10 +37,11 @@ hornTwo = \relative c'
   g2->( g,4-.) r |
   R1*3 |
   r2 r4 r8 g\p |
+
+  %C
   g2. r8 g |
   g2. r4 |
-  R1*12 |
-
+  R1*12 | %double bar
   R1*3 |
   r2 e'\p |
   g1~ |
@@ -56,8 +57,9 @@ hornTwo = \relative c'
   R1 |
   r4 c,2 c4~ |
 
-  \mark \default
-  c2_\markup{\italic{cresc. poco a poco}} c |
+  %D
+  \crescJustTextCrescPocoAPoco
+  c2\< c |
   c c' |
   c1 |
   c,2 c' |
@@ -67,14 +69,14 @@ hornTwo = \relative c'
   c4-> d8-. g,-. c4-. r |
   cis1 |
   d4-. cis-. d-. d-. |
-  g,2_\markup{\italic marc.} c4 c |
+  g,2_\marc c4 c |
   g2 d'4 d |
   g,2 c4 c |
   c2 b |
   e,4-. r r2 |
   e4-. r r2 |
   c4-> e8-. g-. c-. g-. e-. c-. |
-  c'4-._\markup{\italic marc.} c-. c-. c-. |
+  c'4-._\marc c-. c-. c-. |
   a b c d |
   g, e8 g c4 g |
   a r r2 |
@@ -82,28 +84,28 @@ hornTwo = \relative c'
   c,2 c |
   c c'4-. c-. |
   g,8-. r r4 r2 |
-  r8^\markup{Solo} g'-.\p c4. c8-. g4 |
+  r8^\solo g'-.\p c4. c8-. g4 |
   R1 |
   r8 g-. e'4. e8-. d4 |
+  \crescHairpin
   r8 g,-. f'4. f8-. e4~\< |
   e8 e d4. d8 cis4~ |
   cis8 d(\> cis d) c4 g s1*0\! |
 
-  \mark \default
+  %E
   e4 r r2 |
   R1*3 |
   e'4(\p f e d |
   c g2) r4 |
   R1*4 |
   r4 d'-.\f g,,-. r |
-  R1*3 |
-
+  R1*3 | %double bar
   R1*10 |
 
-  \mark \default
+  %F
   R1*20 |
   
-  %\time 2/4
+  %2/4
   R2*17 |
   r4 r8 d''8-.\f |
   g,,-. g-. g-. g-. |
@@ -114,10 +116,10 @@ hornTwo = \relative c'
   d-. c-. c4-> |
   R2*7 |
 
-  \mark \default
+  %G
   R2*22 |
   
-  \mark \default
+  %H
   R2*12 |
   r4 d~\p |
   \crescTextCresc
@@ -135,7 +137,7 @@ hornTwo = \relative c'
   f ees f ees |
   f ees f r |
 
-  %\time 4/4
+  %4/4
   r2 d2~\f |
   d1~ |
   d4-. ees-. d-. c-. |
@@ -151,31 +153,35 @@ hornTwo = \relative c'
   r4 e8 f f4 e8 f |
   f4 c8 c c4 c8 c |
 
-  \mark \default
+  %I
   c4-.\f r8 c-. c4-. r8 c-. |
   ees2-> c4-. r8 e-. |
   f4-. r8 c-. dis4-. r8 f-. |
-  e!4.( c8) f4-. r8 ges,-+_\markup{\italic poco \dynamic f} |
+  %TODO: clarify stopping
+  e!4.( c8) f4-. r8 ges,-+\pocoF^\stopped |
   ges2..-+ ges8-+ |
-  ges2..-+ ges8-+( ~ |
+  ges2..-+ ges8~-+( |
   ges1-+ |
-  f2)-+ r4 r8 e-+_\markup{\italic dim.} |
-  e2..-+ e8-+ |
-  e2..-+ e8-+( \> ~ |
-  e1-+ |
-  d2\!)-+ r4 ees\p \< ~ |
-  ees1 ~ |
-  ees1\! \> |
+  \dimJustTextDim
+  f2)-+ r4 r8 e\>^\open |
+  e2.. e8 |
+  \dimHairpin
+  e2.. e8~(\> |
+  e1 |
+  \crescHairpin
+  d2\!) r4 ees~\p\< |
+  ees1~ |
+  ees1\> |
   d4\! r4 r2 |
   R1*2 |
-
   r4 ees'2\p d4 |
-  r4 f2_\markup{\italic cresc.} ees4 |
+  \crescJustTextCresc
+  r4 f2\< ees4 |
   r4 d2 c4 |
   r4 bes4. r8 d4~ |
   d8 r d2-> g,4-. |
 
-  \mark \default
+  %K
   c4->\f d8-. b-. c4-> d8-. b-. |
   c4-. bes-. g-. ees-. |
   ees1~ | ees |
@@ -187,8 +193,7 @@ hornTwo = \relative c'
   r4 c,2.\sf |
   R1 |
   c\sf |
-  R1 |
-
+  R1 | %double bar
   R1 |
   c'2\f g4 g |
   e->\ff g8-. g-. e4-. r |
@@ -205,14 +210,16 @@ hornTwo = \relative c'
   c4 c c c |
   c1 |
   c4 c c c |
-  c4_\markup{\italic cresc.} c c c |
+  \crescJustTextCresc
+  c4\< c c c |
   c c c' c |
   a r r2 |
   R1 |
   c,2 c |
   c c'4-. c-. |
 
-  \mark \default
+  %L
+  \crescHairpin
   g,1~\fp\< |
   g |
   g4(\p c2.~) |
@@ -221,15 +228,16 @@ hornTwo = \relative c'
   c2. r4 |
   R1*2
 
-  \mark \default
+  %M
   g'1(\< |
   bes~)\> |
   bes2.\! r4 |
   R1*21 |
 
-  %\time 2/4
+  %2/4
   R2*12
-  r4 g~\p\cresc |
+  \crescTextCresc
+  r4 g~\p\< |
   g g~ |
   g g~ |
   g g~ |
@@ -251,7 +259,7 @@ hornTwo = \relative c'
   c-. r c-. r |
   c-. r g-. r |
 
-  %\time 3/4
+  %3/4
   c8.->\ff g16-> g4-> c-> |
   a8-. a-. a2-> |
   g8-. a-. b4-> g-> |
