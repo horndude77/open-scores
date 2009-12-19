@@ -240,7 +240,7 @@ violinTwo = \relative c'
   \key c \minor
   aes2\ff r |
   \times 4/7 {aes8( f d b aes f d} b4-.) r |
-  <d b'>4-. e'8-. e-. d4-. c8-. c-. |
+  <d b'>4-. ees'8-. ees-. d4-. c8-. c-. |
   b4-. <fis a>-. <g b>-. c8-.\ff des-. |
   des2-> r |
   \times 4/7 {des'8( bes g e des b g} e4-.) r |

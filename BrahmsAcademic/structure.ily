@@ -47,7 +47,7 @@
   ("Horns" GrandStaff ("HornsI_II" "HornsIII_IV"))
   ("Trumpets" #t ("TrumpetI" "TrumpetII" "TrumpetIII"))
   ("TrombonesI_II" #t ("TromboneI" "TromboneII"))
-  ("Trombones" GrandStaff ("TromboneI_II" "TromboneIII"))
+  ("Trombones" GrandStaff ("TrombonesI_II" "TromboneIII"))
   ("Brass" StaffGroup ("Horns" "Trumpets" "Trombones" "Tuba"))
 
   ("BassDrumStaff" RhythmicStaff ("BassDrum"))

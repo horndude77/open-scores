@@ -117,7 +117,7 @@ hornOne = \relative c''
   r8 d8-. a'4. a8-. g4~\< |
   g8 g8 f4. f8 e4~ |
   \dimHairpin
-  e8 d(\> g f) e4 d s1*0\! |
+  e8 d(\> g f) c4 d s1*0\! |
 
   %E
   e4 r r2 |
