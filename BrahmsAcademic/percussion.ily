@@ -275,14 +275,14 @@ triangle =
   \repeat tremolo 24 c32\fermata |
 }
 
-BassDrumInstrumentName = "Bass Drum"
-BassDrumShortInstrumentName = "Bd."
+BassDrumStaffInstrumentName = "Bass Drum"
+BassDrumStaffShortInstrumentName = "Bd."
 AcademicBassDrumMusic = << \outline \bassDrum >>
 
-CymbalsInstrumentName = "Cymbals"
-CymbalsShortInstrumentName = "Cym."
+CymbalsStaffInstrumentName = "Cymbals"
+CymbalsStaffShortInstrumentName = "Cym."
 AcademicCymbalsMusic = << \outline \cymbals >>
 
-TriangleInstrumentName = "Triangle"
-TriangleShortInstrumentName = "Tri."
+TriangleStaffInstrumentName = "Triangle"
+TriangleStaffShortInstrumentName = "Tri."
 AcademicTriangleMusic = << \outline \triangle >>

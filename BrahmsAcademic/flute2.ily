@@ -92,6 +92,7 @@ fluteTwo = \relative c''
   %f
   R1*15 |
   \crescHairpin
+  \dimHairpin
   r4 << {ees2( d4)} {s4\< s\> s s1*0\!} >> |
   R1 |
   r2 \times 2/3 {r4 r a'(_\dolce} |

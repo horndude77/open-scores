@@ -31,23 +31,47 @@
 \include "bass.ily"
 \include "orchestrallily.ily"
 
+FlutesIeIIInstrumentName = "Flutes I,II"
+FlutesIeIIShortInstrumentName = "Fl.I,II"
+
+OboesInstrumentName = "Oboes I,II"
+OboesShortInstrumentName = "Ob.I,II"
+
+ClarinetsInstrumentName = "Clarinets I,II"
+ClarinetsShortInstrumentName = "Cl.I,II"
+
+BassoonsIeIIInstrumentName = "Bassoons I,II"
+BassoonsIeIIShortInstrumentName = "Bsn.I,II"
+
+HornsIeIIInstrumentName = "Horns I,II in C"
+HornsIeIIShortInstrumentName = "Hn.I,II"
+
+HornsIIIeIVInstrumentName = "Horns I,II in E"
+HornsIIIeIVShortInstrumentName = "Hn.III,IV"
+
+TrumpetsInstrumentName = "Trumpets I,II"
+TrumpetsShortInstrumentName = "Tp.I,II"
+
+TrombonesIeIIInstrumentName = "Trombones I,II"
+TrombonesIeIIShortInstrumentName = "Tb.I,II"
+
 \orchestralScoreStructure #'(
   ("FullScore" ParallelMusic ("Woodwinds" "Brass" "Percussion" "Strings"))
 
-  ("FlutesI_II" #t ("FluteI" "FluteII"))
-  ("Flutes" GrandStaff ("Piccolo" "FlutesI_II"))
+  ("FlutesIeII" #t ("FluteI" "FluteII"))
+  ("Flutes" GrandStaff ("Piccolo" "FlutesIeII"))
   ("Oboes" #t ("OboeI" "OboeII"))
   ("Clarinets" #t ("ClarinetI" "ClarinetII"))
-  ("BassoonsI_II" #t ("BassoonI" "BassoonII"))
-  ("Bassoons" GrandStaff ("BassoonsI_II" "Contrabassoon"))
+  ("BassoonsIeII" #t ("BassoonI" "BassoonII"))
+  ("Bassoons" GrandStaff ("BassoonsIeII" "Contrabassoon"))
   ("Woodwinds" StaffGroup ("Flutes" "Oboes" "Clarinets" "Bassoons"))
 
-  ("HornsI_II" #t ("HornI" "HornII"))
-  ("HornsIII_IV" #t ("HornIII" "HornIV"))
-  ("Horns" GrandStaff ("HornsI_II" "HornsIII_IV"))
+  ("HornsIeII" #t ("HornI" "HornII"))
+  ("HornsIIIeIV" #t ("HornIII" "HornIV"))
+  ("Horns" GrandStaff ("HornsIeII" "HornsIIIeIV"))
   ("Trumpets" #t ("TrumpetI" "TrumpetII" "TrumpetIII"))
-  ("TrombonesI_II" #t ("TromboneI" "TromboneII"))
-  ("Trombones" GrandStaff ("TrombonesI_II" "TromboneIII"))
+  ("TrombonesIeII" #t ("TromboneI" "TromboneII"))
+  ("Trombones" GrandStaff ("TrombonesIeII" "TromboneIII"))
   ("Brass" StaffGroup ("Horns" "Trumpets" "Trombones" "Tuba"))
 
   ("BassDrumStaff" RhythmicStaff ("BassDrum"))

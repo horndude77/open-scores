@@ -143,6 +143,8 @@ bassoonTwo = \relative c
   cis1(\p |
   d |
   gis,) |
+  \crescHairpin
+  \dimHairpin
   r4 a(\< d2)\> s1*0\! |
   R1 |
   r2 \times 2/3 {r4 r f(} |
