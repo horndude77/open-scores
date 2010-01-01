@@ -37,10 +37,15 @@ rMark = #(define-music-function (parser location markp) (string?)
   \mark \markup { \box \bold $markp }
 #})
 
+expd =  #(define-music-function (parser location n mus) (integer? ly:music?)
+#{
+  \repeat unfold $n $mus
+#})
+
 outlineAllegro =
 {
   \time 4/4
-  \tempo "Allegro"
+  \tempo "Allegro" 4=112
   \partial 4
   s4 |
   s1*28 |
