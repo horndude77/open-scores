@@ -402,12 +402,13 @@ violinIRondo = \relative c'
   \expd #3 {r ees, ees ees ees ees |}
   r ees ees ees( bes' des) |
   c( aes ees') des( bes f') |
-  ees4( f16 g f8) f,( g) |
+  ees4( f16 g aes8) ees( c) |
+  bes4( des16 ees f8) f,( g) |
   bes4.( aes8) r r |
   r bes,-. bes-. r bes-. bes-. |
   des'8( bes g ees des) r |
   r c c r d d |
-  d4.( ees8 ees'-. ees-. |
+  d4.( ees8) ees'-. ees-. |
   ees4( f16 g aes8) c,-. c-. |
   c4( d16 e f8) aes,-. aes-. |
   aes( des) c-. \appoggiatura c16 bes8 aes-. g-. |
@@ -468,7 +469,7 @@ violinIRondo = \relative c'
   bes8) r g16( aes bes8) g-. c-. |
   aes-. r f16( g aes8) r f16( g |
   aes8) r f16( g aes8) f-. bes-. |
-  g r f'16( f ees8) r f16( d |
+  g r f'16( d ees8) r f16( d |
   ees8) r f16( d ees8) ees-. f-. |
   g-. r aes16( f g8) r aes16( f |
   g8) r aes16( f g8) g-. aes-. |
