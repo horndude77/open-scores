@@ -151,7 +151,7 @@ hornAllegro = \relative c''
   c4 r r2 |
   R1*8 |
   r4 c8.\f^\tutti c16 c4 c |
-  c c,8. c16 c4 c| |
+  c c,8. c16 c4 c |
   c2 r2 |
 }
 
@@ -222,7 +222,7 @@ hornRomanze = \relative c''
   c r e r f4 r4 |
   R1 |
   c8-. r e-. r f4 r4 |
-  c8-.( r c,-. r c4) r4|
+  c8-.( r c,-. r c4) r4 |
 }
 
 hornRondo = \relative c''

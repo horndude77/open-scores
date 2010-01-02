@@ -80,7 +80,7 @@ outlineRomanze =
   %\time 2/2
   %The movement tends to follow 4/4 beaming rules so just use that instead.
   \time 4/4
-  \tempo "Larghetto"
+  \tempo "Larghetto" 2=48
   s1*8 |
 
   \rMark "A"
@@ -99,7 +99,7 @@ outlineRomanze =
 outlineRondo =
 {
   \time 6/8
-  \tempo "Allegro"
+  \tempo "Allegro" 4.=112
   \partial 8 s8 |
   s2.*33 |
 
@@ -138,6 +138,15 @@ outlineRondo =
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+  }
+}
+
+\midi
+{
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
   }
 }
 
