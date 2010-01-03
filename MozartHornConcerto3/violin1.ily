@@ -325,7 +325,7 @@ violinIRondo = \relative c'
   \expd #4 {ees8 bes g'} |
   ees4 r8 <ees bes' g'>4 r8 |
   <ees g,>4 r8 r4 r8 |
-  bes4.(\p des) |
+  bes4.(\p d) |
   ees8-. bes( c d ees f) |
   g4.( f) |
   g8-. d( ees f g aes) |
@@ -485,7 +485,7 @@ violinIRondo = \relative c'
   f4( g8) f-. f( g) |
   aes4 f8-.\p f-. g-. aes-. |
   bes-. g-. ees-. f-. g-. f-. |
-  e r g-.\f f4( g8) |
+  ees r g-.\f f4( g8) |
   f4( g8) f-. f( g) |
   aes4\fermata r8 d,,4.(\p |
   ees) d8-. ees-. d-. |

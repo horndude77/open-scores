@@ -33,7 +33,7 @@ clarinetIAllegro = \relative c'''
   r4 bes r e, |
   f r r2 |
   R1*22 |
-  ees1\p |
+  e1\p |
   bes'(\f |
   a8) r r4 r2 |
   R1*3 |
@@ -214,7 +214,7 @@ clarinetIRondo = \relative c''
   g4( gis8) a r r |
   ees4.(\p d8) r r |
   bes'4.( a8) r r |
-  g r r ees r r |
+  g r r e r r |
   f r r r4 r8 |
   r4 r8 bes r r |
   a r r r4 r8 |
@@ -261,7 +261,9 @@ clarinetIRondo = \relative c''
   f r r r4 r8 |
   R2.*3 |
   c'8-.\p c-. r c-. c-. r |
-  \repeat unfold 3 {c-. c-. r c-. c-. r |}
+  c-. c-. r c-. c-. r |
+  bes-. bes-. r bes-. bes-. r |
+  bes-. bes-. r bes-. bes-. r |
   a r r r4 r8 |
   r4 r8 r r c, |
   \repeat unfold 4 {f a c,} |
