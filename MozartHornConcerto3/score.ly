@@ -14,6 +14,8 @@
 instrument = "Orchestra"
 \include "header.ily"
 
+#(set-global-staff-size 16)
+
 \score
 {
   \new StaffGroup
@@ -21,18 +23,21 @@ instrument = "Orchestra"
     \new Staff
     {
       \set Staff.instrumentName = "Clarinet I,II"
+      \set Staff.shortInstrumentName = "Cl.I,II"
       \set Staff.midiInstrument = "clarinet"
       << \clarinetIAllegro \\ \clarinetIIAllegro >>
     }
     \new Staff
     {
       \set Staff.instrumentName = "Bassoon I,II"
+      \set Staff.shortInstrumentName = "Bsn.I,II"
       \set Staff.midiInstrument = "bassoon"
       << \bassoonIAllegro \\ \bassoonIIAllegro >>
     }
     \new Staff
     {
       \set Staff.instrumentName = "Horn"
+      \set Staff.shortInstrumentName = "Hn."
       \set Staff.midiInstrument = "french horn"
       << \hornAllegro \outlineAllegro >>
     }
@@ -41,12 +46,14 @@ instrument = "Orchestra"
       \new Staff
       {
         \set Staff.instrumentName = "Violin I"
+        \set Staff.shortInstrumentName = "Vl.I"
         \set Staff.midiInstrument = "string ensemble 1"
         \violinIAllegro
       }
       \new Staff
       {
         \set Staff.instrumentName = "Violin II"
+        \set Staff.shortInstrumentName = "Vl.II"
         \set Staff.midiInstrument = "string ensemble 1"
         \violinIIAllegro
       }
@@ -54,12 +61,14 @@ instrument = "Orchestra"
     \new Staff
     {
       \set Staff.instrumentName = "Viola"
+      \set Staff.shortInstrumentName = "Va."
       \set Staff.midiInstrument = "string ensemble 1"
       \violaAllegro
     }
     \new Staff
     {
       \set Staff.instrumentName = "Bass"
+      \set Staff.shortInstrumentName = "Bass"
       \set Staff.midiInstrument = "string ensemble 1"
       \bassAllegro
     }
@@ -76,18 +85,21 @@ instrument = "Orchestra"
     \new Staff
     {
       \set Staff.instrumentName = "Clarinet I,II"
+      \set Staff.shortInstrumentName = "Cl.I,II"
       \set Staff.midiInstrument = "clarinet"
       << \clarinetIRomanze \\ \clarinetIIRomanze >>
     }
     \new Staff
     {
       \set Staff.instrumentName = "Bassoon I,II"
+      \set Staff.shortInstrumentName = "Bsn.I,II"
       \set Staff.midiInstrument = "bassoon"
       << \bassoonIRomanze \\ \bassoonIIRomanze >>
     }
     \new Staff
     {
       \set Staff.instrumentName = "Horn"
+      \set Staff.shortInstrumentName = "Hn."
       \set Staff.midiInstrument = "french horn"
       << \hornRomanze \outlineRomanze >>
     }
@@ -96,12 +108,14 @@ instrument = "Orchestra"
       \new Staff
       {
         \set Staff.instrumentName = "Violin I"
+        \set Staff.shortInstrumentName = "Vl.I"
         \set Staff.midiInstrument = "string ensemble 1"
         \violinIRomanze
       }
       \new Staff
       {
         \set Staff.instrumentName = "Violin II"
+        \set Staff.shortInstrumentName = "Vl.II"
         \set Staff.midiInstrument = "string ensemble 1"
         \violinIIRomanze
       }
@@ -109,12 +123,14 @@ instrument = "Orchestra"
     \new Staff
     {
       \set Staff.instrumentName = "Viola"
+      \set Staff.shortInstrumentName = "Va."
       \set Staff.midiInstrument = "string ensemble 1"
       \violaRomanze
     }
     \new Staff
     {
       \set Staff.instrumentName = "Bass"
+      \set Staff.shortInstrumentName = "Bass"
       \set Staff.midiInstrument = "string ensemble 1"
       \bassRomanze
     }
@@ -131,18 +147,21 @@ instrument = "Orchestra"
     \new Staff
     {
       \set Staff.instrumentName = "Clarinet I,II"
+      \set Staff.shortInstrumentName = "Cl.I,II"
       \set Staff.midiInstrument = "clarinet"
       << \clarinetIRondo \\ \clarinetIIRondo >>
     }
     \new Staff
     {
       \set Staff.instrumentName = "Bassoon I,II"
+      \set Staff.shortInstrumentName = "Bsn.I,II"
       \set Staff.midiInstrument = "bassoon"
       << \bassoonIRondo \\ \bassoonIIRondo >>
     }
     \new Staff
     {
       \set Staff.instrumentName = "Horn"
+      \set Staff.shortInstrumentName = "Hn."
       \set Staff.midiInstrument = "french horn"
       << \hornRondo \outlineRondo >>
     }
@@ -151,12 +170,14 @@ instrument = "Orchestra"
       \new Staff
       {
         \set Staff.instrumentName = "Violin I"
+        \set Staff.shortInstrumentName = "Vl.I"
         \set Staff.midiInstrument = "string ensemble 1"
         \violinIRondo
       }
       \new Staff
       {
         \set Staff.instrumentName = "Violin II"
+        \set Staff.shortInstrumentName = "Vl.II"
         \set Staff.midiInstrument = "string ensemble 1"
         \violinIIRondo
       }
@@ -164,12 +185,14 @@ instrument = "Orchestra"
     \new Staff
     {
       \set Staff.instrumentName = "Viola"
+      \set Staff.shortInstrumentName = "Va."
       \set Staff.midiInstrument = "string ensemble 1"
       \violaRondo
     }
     \new Staff
     {
       \set Staff.instrumentName = "Bass"
+      \set Staff.shortInstrumentName = "Bass"
       \set Staff.midiInstrument = "string ensemble 1"
       \bassRondo
     }

@@ -139,6 +139,11 @@ outlineRondo =
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
   }
+
+  \context
+  {
+    \RemoveEmptyStaffContext
+  }
 }
 
 \midi
@@ -152,5 +157,9 @@ outlineRondo =
 
 \paper
 {
+  left-margin = 1.5\cm
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
   ragged-last-bottom = ##f
 }
