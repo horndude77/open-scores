@@ -243,6 +243,7 @@ space = {s1}
         \violinIIAllegro
         \violaAllegro
         \bassAllegro
+        \transpose c c, \bassAllegro
       >>
       \space
       <<
@@ -250,6 +251,7 @@ space = {s1}
         \violinIIRomanze
         \violaRomanze
         \bassRomanze
+        \transpose c c, \bassRomanze
       >>
       \space
       <<
@@ -257,6 +259,7 @@ space = {s1}
         \violinIIRondo
         \violaRondo
         \bassRondo
+        \transpose c c, \bassRondo
       >>
     }
   >>

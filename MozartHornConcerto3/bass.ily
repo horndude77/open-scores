@@ -151,7 +151,7 @@ bassAllegro = \relative c
   ees r r bes'( |
   ees) r r bes( |
   ees) r r bes,( |
-  ees r r bes( |
+  ees) r r bes( |
   \times 2/3 {ees8) ees ees} ees4 \times 2/3 {r8 ees ees} ees4 |
   \times 2/3 {r8 ees ees} ees4 \times 2/3 {r8 ees ees} ees4 |
   \crescTextCresc
@@ -186,15 +186,15 @@ bassRomanze = \relative c
   ees2~ ees4 r |
   aes,4 r aes r |
   g r g r |
-  ees2( aes8) r d r |
+  ees2( aes8) r des r |
   ees r ees, r aes-. aes(\f c ees) |
   aes4 r aes r |
   g r g r |
-  aes8\p r f r c r d r |
+  aes8\p r f r c r des r |
   ees( d ees d ees4) r |
   aes4\f r aes r |
   g r g r |
-  ees2(\p aes8) r d, r |
+  ees2(\p aes8) r des, r |
   ees r ees r aes,4 r |
   ees' r ees r |
   ees r ees r |
@@ -410,7 +410,7 @@ bassRondo = \relative c
   ees) ees ees ees ees ees |
   ees2.~ |
   ees4.~ ees4 bes8 |
-  ees4( bes8) ees4( bes8) |
+  ees4( bes8) ees4( aes,8) |
   bes4.~ bes8 r r |
   ees4.\f r8 r ees( |
   bes') bes-. bes-. bes-. bes-. bes-. |
