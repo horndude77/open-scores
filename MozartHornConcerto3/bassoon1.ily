@@ -250,7 +250,7 @@ bassoonIRondo = \relative c'
   f r r r4 r8 |
   R2.*5 |
   r8 bes\f bes bes bes bes |
-  des2.( |
+  d2.( |
   ees4) r8 r4 r8 |
   R2. |
   r8 bes\f bes bes bes bes |

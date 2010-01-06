@@ -430,8 +430,8 @@ violinIIRondo = \relative c'
   ees4.~(\p ees8 f ges) |
   f bes, bes r c c |
   r d d r ees ees |
-  f f\f f f a a |
-  a d d d f f |
+  f f\f f f aes aes |
+  aes d d d f f |
   f4 r8 r4 r8 |
   R2. |
   g,,8\p g g g g g |
