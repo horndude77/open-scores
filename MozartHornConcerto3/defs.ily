@@ -10,6 +10,11 @@ sempreF = #(make-dynamic-script sempreFMarkup)
 pConMoltoEspressioneMarkup = \markup { \dynamic "p" \normal-text \italic { con molto espressione } }
 pConMoltoEspressione = #(make-dynamic-script pConMoltoEspressioneMarkup)
 
+clarinetInstrumentName = \markup
+\center-column {Clarinet \line {in B\flat}}
+hornInstrumentName = \markup
+\center-column {Horn \line {in E\flat}}
+
 crescTextCresc =
 {
   \set crescendoText = \markup { \italic "cresc." }
@@ -157,7 +162,7 @@ outlineRondo =
 
 \paper
 {
-  left-margin = 1.5\cm
+  short-indent = 5\mm
   ragged-right = ##f
   ragged-last = ##f
   ragged-bottom = ##f

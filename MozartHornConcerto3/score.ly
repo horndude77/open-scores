@@ -21,75 +21,97 @@ instrument = "Orchestra"
 
 \score
 {
-  \new StaffGroup
   <<
-    \new Staff
-    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
-    {
-      \set Staff.instrumentName = "Clarinet I,II"
-      \set Staff.shortInstrumentName = "Cl.I,II"
-      <<
-        {
-          \revert MultiMeasureRest #'staff-position
-          \clarinetIAllegro
-        }
-        \\
-        {
-          \revert MultiMeasureRest #'staff-position
-          \clarinetIIAllegro
-        }
-      >>
-    }
-    \new Staff
-    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
-    {
-      \set Staff.instrumentName = "Bassoon I,II"
-      \set Staff.shortInstrumentName = "Bsn.I,II"
-      <<
-        {
-          \revert MultiMeasureRest #'staff-position
-          \bassoonIAllegro
-        }
-        \\
-        {
-          \revert MultiMeasureRest #'staff-position
-          \bassoonIIAllegro
-        }
-      >>
-    }
-    \new Staff
-    {
-      \set Staff.instrumentName = "Horn"
-      \set Staff.shortInstrumentName = "Hn."
-      << \hornAllegro \outlineAllegro >>
-    }
-    \new GrandStaff
+    \new StaffGroup
     <<
+      \override StaffGroup.SystemStartBracket #'collapse-height = #1
+      \override Score.SystemStartBar #'collapse-height = #1
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Violin I"
-        \set Staff.shortInstrumentName = "Vl.I"
-        \violinIAllegro
+        \set Staff.instrumentName = \clarinetInstrumentName
+        \set Staff.shortInstrumentName = "Cl."
+        <<
+          \new Voice
+          {
+            \voiceOne
+            \dynamicUp
+            \revert MultiMeasureRest #'staff-position
+            \clarinetIAllegro
+          }
+          \new Voice
+          {
+            \voiceTwo
+            \dynamicDown
+            \revert MultiMeasureRest #'staff-position
+            \clarinetIIAllegro
+          }
+        >>
       }
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Violin II"
-        \set Staff.shortInstrumentName = "Vl.II"
-        \violinIIAllegro
+        \set Staff.instrumentName = "Bassoons"
+        \set Staff.shortInstrumentName = "Bsn."
+        <<
+          \new Voice
+          {
+            \voiceOne
+            \dynamicUp
+            \revert MultiMeasureRest #'staff-position
+            \bassoonIAllegro
+          }
+          \new Voice
+          {
+            \voiceTwo
+            \dynamicDown
+            \revert MultiMeasureRest #'staff-position
+            \bassoonIIAllegro
+          }
+        >>
       }
     >>
-    \new Staff
+    \new StaffGroup
     {
-      \set Staff.instrumentName = "Viola"
-      \set Staff.shortInstrumentName = "Va."
-      \violaAllegro
+      \override StaffGroup.SystemStartBracket #'collapse-height = #1
+      \override Score.SystemStartBar #'collapse-height = #1
+      \new Staff
+      {
+        \set Staff.instrumentName = \hornInstrumentName
+        \set Staff.shortInstrumentName = "Hn."
+        << \hornAllegro \outlineAllegro >>
+      }
     }
-    \new Staff
-    {
-      \set Staff.instrumentName = "Bass"
-      \set Staff.shortInstrumentName = "Bass"
-      \bassAllegro
-    }
+    \new StaffGroup
+    <<
+      \new GrandStaff
+      <<
+        \new Staff
+        {
+          \set Staff.instrumentName = "Violin I"
+          \set Staff.shortInstrumentName = "Vl.I"
+          \violinIAllegro
+        }
+        \new Staff
+        {
+          \set Staff.instrumentName = "Violin II"
+          \set Staff.shortInstrumentName = "Vl.II"
+          \violinIIAllegro
+        }
+      >>
+      \new Staff
+      {
+        \set Staff.instrumentName = "Viola"
+        \set Staff.shortInstrumentName = "Vla."
+        \violaAllegro
+      }
+      \new Staff
+      {
+        \set Staff.instrumentName = "Bass"
+        \set Staff.shortInstrumentName = "B."
+        \bassAllegro
+      }
+    >>
   >>
   \layout
   {
@@ -98,75 +120,97 @@ instrument = "Orchestra"
 
 \score
 {
-  \new StaffGroup
   <<
-    \new Staff
-    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
-    {
-      \set Staff.instrumentName = "Clarinet I,II"
-      \set Staff.shortInstrumentName = "Cl.I,II"
-      <<
-        {
-          \revert MultiMeasureRest #'staff-position
-          \clarinetIRomanze
-        }
-        \\
-        {
-          \revert MultiMeasureRest #'staff-position
-          \clarinetIIRomanze
-        }
-      >>
-    }
-    \new Staff
-    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
-    {
-      \set Staff.instrumentName = "Bassoon I,II"
-      \set Staff.shortInstrumentName = "Bsn.I,II"
-      <<
-        {
-          \revert MultiMeasureRest #'staff-position
-          \bassoonIRomanze
-        }
-        \\
-        {
-          \revert MultiMeasureRest #'staff-position
-          \bassoonIIRomanze
-        }
-      >>
-    }
-    \new Staff
-    {
-      \set Staff.instrumentName = "Horn"
-      \set Staff.shortInstrumentName = "Hn."
-      << \hornRomanze \outlineRomanze >>
-    }
-    \new GrandStaff
+    \new StaffGroup
     <<
+      \override StaffGroup.SystemStartBracket #'collapse-height = #1
+      \override Score.SystemStartBar #'collapse-height = #1
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Violin I"
-        \set Staff.shortInstrumentName = "Vl.I"
-        \violinIRomanze
+        \set Staff.instrumentName = \clarinetInstrumentName
+        \set Staff.shortInstrumentName = "Cl."
+        <<
+          \new Voice
+          {
+            \voiceOne
+            \dynamicUp
+            \revert MultiMeasureRest #'staff-position
+            \clarinetIRomanze
+          }
+          \new Voice
+          {
+            \voiceTwo
+            \dynamicDown
+            \revert MultiMeasureRest #'staff-position
+            \clarinetIIRomanze
+          }
+        >>
       }
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Violin II"
-        \set Staff.shortInstrumentName = "Vl.II"
-        \violinIIRomanze
+        \set Staff.instrumentName = "Bassoons"
+        \set Staff.shortInstrumentName = "Bsn."
+        <<
+          \new Voice
+          {
+            \voiceOne
+            \dynamicUp
+            \revert MultiMeasureRest #'staff-position
+            \bassoonIRomanze
+          }
+          \new Voice
+          {
+            \voiceTwo
+            \dynamicDown
+            \revert MultiMeasureRest #'staff-position
+            \bassoonIIRomanze
+          }
+        >>
       }
     >>
-    \new Staff
+    \new StaffGroup
     {
-      \set Staff.instrumentName = "Viola"
-      \set Staff.shortInstrumentName = "Va."
-      \violaRomanze
+      \override StaffGroup.SystemStartBracket #'collapse-height = #1
+      \override Score.SystemStartBar #'collapse-height = #1
+      \new Staff
+      {
+        \set Staff.instrumentName = \hornInstrumentName
+        \set Staff.shortInstrumentName = "Hn."
+        << \hornRomanze \outlineRomanze >>
+      }
     }
-    \new Staff
-    {
-      \set Staff.instrumentName = "Bass"
-      \set Staff.shortInstrumentName = "Bass"
-      \bassRomanze
-    }
+    \new StaffGroup
+    <<
+      \new GrandStaff
+      <<
+        \new Staff
+        {
+          \set Staff.instrumentName = "Violin I"
+          \set Staff.shortInstrumentName = "Vl.I"
+          \violinIRomanze
+        }
+        \new Staff
+        {
+          \set Staff.instrumentName = "Violin II"
+          \set Staff.shortInstrumentName = "Vl.II"
+          \violinIIRomanze
+        }
+      >>
+      \new Staff
+      {
+        \set Staff.instrumentName = "Viola"
+        \set Staff.shortInstrumentName = "Vla."
+        \violaRomanze
+      }
+      \new Staff
+      {
+        \set Staff.instrumentName = "Bass"
+        \set Staff.shortInstrumentName = "B."
+        \bassRomanze
+      }
+    >>
   >>
   \layout
   {
@@ -175,75 +219,97 @@ instrument = "Orchestra"
 
 \score
 {
-  \new StaffGroup
   <<
-    \new Staff
-    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
-    {
-      \set Staff.instrumentName = "Clarinet I,II"
-      \set Staff.shortInstrumentName = "Cl.I,II"
-      <<
-        {
-          \revert MultiMeasureRest #'staff-position
-          \clarinetIRondo
-        }
-        \\
-        {
-          \revert MultiMeasureRest #'staff-position
-          \clarinetIIRondo
-        }
-      >>
-    }
-    \new Staff
-    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
-    {
-      \set Staff.instrumentName = "Bassoon I,II"
-      \set Staff.shortInstrumentName = "Bsn.I,II"
-      <<
-        {
-          \revert MultiMeasureRest #'staff-position
-          \bassoonIRondo
-        }
-        \\
-        {
-          \revert MultiMeasureRest #'staff-position
-          \bassoonIIRondo
-        }
-      >>
-    }
-    \new Staff
-    {
-      \set Staff.instrumentName = "Horn"
-      \set Staff.shortInstrumentName = "Hn."
-      << \hornRondo \outlineRondo >>
-    }
-    \new GrandStaff
+    \new StaffGroup
     <<
+      \override StaffGroup.SystemStartBracket #'collapse-height = #1
+      \override Score.SystemStartBar #'collapse-height = #1
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Violin I"
-        \set Staff.shortInstrumentName = "Vl.I"
-        \violinIRondo
+        \set Staff.instrumentName = \clarinetInstrumentName
+        \set Staff.shortInstrumentName = "Cl."
+        <<
+          \new Voice
+          {
+            \voiceOne
+            \dynamicUp
+            \revert MultiMeasureRest #'staff-position
+            \clarinetIRondo
+          }
+          \new Voice
+          {
+            \voiceTwo
+            \dynamicDown
+            \revert MultiMeasureRest #'staff-position
+            \clarinetIIRondo
+          }
+        >>
       }
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Violin II"
-        \set Staff.shortInstrumentName = "Vl.II"
-        \violinIIRondo
+        \set Staff.instrumentName = "Bassoons"
+        \set Staff.shortInstrumentName = "Bsn."
+        <<
+          \new Voice
+          {
+            \voiceOne
+            \dynamicUp
+            \revert MultiMeasureRest #'staff-position
+            \bassoonIRondo
+          }
+          \new Voice
+          {
+            \voiceTwo
+            \dynamicDown
+            \revert MultiMeasureRest #'staff-position
+            \bassoonIIRondo
+          }
+        >>
       }
     >>
-    \new Staff
+    \new StaffGroup
     {
-      \set Staff.instrumentName = "Viola"
-      \set Staff.shortInstrumentName = "Va."
-      \violaRondo
+      \override StaffGroup.SystemStartBracket #'collapse-height = #1
+      \override Score.SystemStartBar #'collapse-height = #1
+      \new Staff
+      {
+        \set Staff.instrumentName = \hornInstrumentName
+        \set Staff.shortInstrumentName = "Hn."
+        << \hornRondo \outlineRondo >>
+      }
     }
-    \new Staff
-    {
-      \set Staff.instrumentName = "Bass"
-      \set Staff.shortInstrumentName = "Bass"
-      \bassRondo
-    }
+    \new StaffGroup
+    <<
+      \new GrandStaff
+      <<
+        \new Staff
+        {
+          \set Staff.instrumentName = "Violin I"
+          \set Staff.shortInstrumentName = "Vl.I"
+          \violinIRondo
+        }
+        \new Staff
+        {
+          \set Staff.instrumentName = "Violin II"
+          \set Staff.shortInstrumentName = "Vl.II"
+          \violinIIRondo
+        }
+      >>
+      \new Staff
+      {
+        \set Staff.instrumentName = "Viola"
+        \set Staff.shortInstrumentName = "Vla."
+        \violaRondo
+      }
+      \new Staff
+      {
+        \set Staff.instrumentName = "Bass"
+        \set Staff.shortInstrumentName = "B."
+        \bassRondo
+      }
+    >>
   >>
   \layout
   {

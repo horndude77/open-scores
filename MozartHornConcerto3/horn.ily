@@ -41,6 +41,7 @@ hornAllegro = \relative c''
 
   %B
   R1*3
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   r2 r4 d8(_\conEspressione b) |
   a( g) d'( b) a( g) e'( c) |
   b8( a) a4 r4 a8 a |
@@ -159,6 +160,7 @@ hornRomanze = \relative c''
 {
   \key f \major
   \transposition ees
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   c4.(\pConMoltoEspressione f8) a,4 a |
   bes8( c d bes g4) r8 g |
   a r bes r c r d( bes) |
