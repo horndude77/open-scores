@@ -42,7 +42,7 @@ bassoonIIAllegro = \relative c
   aes(\f |
   g8) r r4 r2 |
   R1*3 |
-  bes2 a |
+  bes2\f a |
   g f |
   ees d4 f |
   g des' c2 |

@@ -124,7 +124,7 @@ clarinetIIRomanze = \relative c''
   R1 |
   d8\p r c r bes4 r |
   R1*2 |
-  bes1( |
+  bes1(\f |
   a4) r r2 |
   R1*2 |
   bes1(\f |
@@ -134,7 +134,7 @@ clarinetIIRomanze = \relative c''
   bes1 |
   c |
   R1*2 |
-  bes1 |
+  bes1\f |
   c |
   R1 |
   d8\p r c r bes4 r |
@@ -143,7 +143,7 @@ clarinetIIRomanze = \relative c''
   r4 ges'2.\sfp |
   r4 f2.\sfp |
   r4 a2.\sfp |
-  bes2 des,4 c8 bes |
+  bes2\f des,4 c8 bes |
   a4 c8. c16 c4 bes |
   a4 c8. c16 c4 bes |
   a r r2 |

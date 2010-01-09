@@ -238,7 +238,7 @@ violaRomanze = \relative c
   r bes\sfp bes bes bes bes bes bes |
   r ces\sfp ces ces ces ces ces ces |
   r ees\sfp ees ees ees ees ees ees |
-  \repeat tremolo 8 ees16 \repeat tremolo 4 aes, g g aes aes |
+  s1*0\f \repeat tremolo 8 ees16 \repeat tremolo 4 aes, g g aes aes |
   \repeat unfold 4 {\repeat tremolo 8 bes} |
   bes4 r r2 |
   r8. ees,32(\p f g8[) r16 g32( aes] bes8[) r16 bes32( c] des8[) r16 g,32( aes] |

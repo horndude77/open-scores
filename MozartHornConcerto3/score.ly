@@ -1,5 +1,8 @@
 \version "2.13.9"
 
+\include "merge_rests.ily"
+\include "tremolo.ily"
+
 \include "defs.ily"
 \include "clarinet1.ily"
 \include "clarinet2.ily"
@@ -21,24 +24,43 @@ instrument = "Orchestra"
   \new StaffGroup
   <<
     \new Staff
+    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
     {
       \set Staff.instrumentName = "Clarinet I,II"
       \set Staff.shortInstrumentName = "Cl.I,II"
-      \set Staff.midiInstrument = "clarinet"
-      << \clarinetIAllegro \\ \clarinetIIAllegro >>
+      <<
+        {
+          \revert MultiMeasureRest #'staff-position
+          \clarinetIAllegro
+        }
+        \\
+        {
+          \revert MultiMeasureRest #'staff-position
+          \clarinetIIAllegro
+        }
+      >>
     }
     \new Staff
+    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
     {
       \set Staff.instrumentName = "Bassoon I,II"
       \set Staff.shortInstrumentName = "Bsn.I,II"
-      \set Staff.midiInstrument = "bassoon"
-      << \bassoonIAllegro \\ \bassoonIIAllegro >>
+      <<
+        {
+          \revert MultiMeasureRest #'staff-position
+          \bassoonIAllegro
+        }
+        \\
+        {
+          \revert MultiMeasureRest #'staff-position
+          \bassoonIIAllegro
+        }
+      >>
     }
     \new Staff
     {
       \set Staff.instrumentName = "Horn"
       \set Staff.shortInstrumentName = "Hn."
-      \set Staff.midiInstrument = "french horn"
       << \hornAllegro \outlineAllegro >>
     }
     \new GrandStaff
@@ -47,14 +69,12 @@ instrument = "Orchestra"
       {
         \set Staff.instrumentName = "Violin I"
         \set Staff.shortInstrumentName = "Vl.I"
-        \set Staff.midiInstrument = "string ensemble 1"
         \violinIAllegro
       }
       \new Staff
       {
         \set Staff.instrumentName = "Violin II"
         \set Staff.shortInstrumentName = "Vl.II"
-        \set Staff.midiInstrument = "string ensemble 1"
         \violinIIAllegro
       }
     >>
@@ -62,14 +82,12 @@ instrument = "Orchestra"
     {
       \set Staff.instrumentName = "Viola"
       \set Staff.shortInstrumentName = "Va."
-      \set Staff.midiInstrument = "string ensemble 1"
       \violaAllegro
     }
     \new Staff
     {
       \set Staff.instrumentName = "Bass"
       \set Staff.shortInstrumentName = "Bass"
-      \set Staff.midiInstrument = "string ensemble 1"
       \bassAllegro
     }
   >>
@@ -83,24 +101,43 @@ instrument = "Orchestra"
   \new StaffGroup
   <<
     \new Staff
+    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
     {
       \set Staff.instrumentName = "Clarinet I,II"
       \set Staff.shortInstrumentName = "Cl.I,II"
-      \set Staff.midiInstrument = "clarinet"
-      << \clarinetIRomanze \\ \clarinetIIRomanze >>
+      <<
+        {
+          \revert MultiMeasureRest #'staff-position
+          \clarinetIRomanze
+        }
+        \\
+        {
+          \revert MultiMeasureRest #'staff-position
+          \clarinetIIRomanze
+        }
+      >>
     }
     \new Staff
+    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
     {
       \set Staff.instrumentName = "Bassoon I,II"
       \set Staff.shortInstrumentName = "Bsn.I,II"
-      \set Staff.midiInstrument = "bassoon"
-      << \bassoonIRomanze \\ \bassoonIIRomanze >>
+      <<
+        {
+          \revert MultiMeasureRest #'staff-position
+          \bassoonIRomanze
+        }
+        \\
+        {
+          \revert MultiMeasureRest #'staff-position
+          \bassoonIIRomanze
+        }
+      >>
     }
     \new Staff
     {
       \set Staff.instrumentName = "Horn"
       \set Staff.shortInstrumentName = "Hn."
-      \set Staff.midiInstrument = "french horn"
       << \hornRomanze \outlineRomanze >>
     }
     \new GrandStaff
@@ -109,14 +146,12 @@ instrument = "Orchestra"
       {
         \set Staff.instrumentName = "Violin I"
         \set Staff.shortInstrumentName = "Vl.I"
-        \set Staff.midiInstrument = "string ensemble 1"
         \violinIRomanze
       }
       \new Staff
       {
         \set Staff.instrumentName = "Violin II"
         \set Staff.shortInstrumentName = "Vl.II"
-        \set Staff.midiInstrument = "string ensemble 1"
         \violinIIRomanze
       }
     >>
@@ -124,14 +159,12 @@ instrument = "Orchestra"
     {
       \set Staff.instrumentName = "Viola"
       \set Staff.shortInstrumentName = "Va."
-      \set Staff.midiInstrument = "string ensemble 1"
       \violaRomanze
     }
     \new Staff
     {
       \set Staff.instrumentName = "Bass"
       \set Staff.shortInstrumentName = "Bass"
-      \set Staff.midiInstrument = "string ensemble 1"
       \bassRomanze
     }
   >>
@@ -145,24 +178,43 @@ instrument = "Orchestra"
   \new StaffGroup
   <<
     \new Staff
+    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
     {
       \set Staff.instrumentName = "Clarinet I,II"
       \set Staff.shortInstrumentName = "Cl.I,II"
-      \set Staff.midiInstrument = "clarinet"
-      << \clarinetIRondo \\ \clarinetIIRondo >>
+      <<
+        {
+          \revert MultiMeasureRest #'staff-position
+          \clarinetIRondo
+        }
+        \\
+        {
+          \revert MultiMeasureRest #'staff-position
+          \clarinetIIRondo
+        }
+      >>
     }
     \new Staff
+    \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
     {
       \set Staff.instrumentName = "Bassoon I,II"
       \set Staff.shortInstrumentName = "Bsn.I,II"
-      \set Staff.midiInstrument = "bassoon"
-      << \bassoonIRondo \\ \bassoonIIRondo >>
+      <<
+        {
+          \revert MultiMeasureRest #'staff-position
+          \bassoonIRondo
+        }
+        \\
+        {
+          \revert MultiMeasureRest #'staff-position
+          \bassoonIIRondo
+        }
+      >>
     }
     \new Staff
     {
       \set Staff.instrumentName = "Horn"
       \set Staff.shortInstrumentName = "Hn."
-      \set Staff.midiInstrument = "french horn"
       << \hornRondo \outlineRondo >>
     }
     \new GrandStaff
@@ -171,14 +223,12 @@ instrument = "Orchestra"
       {
         \set Staff.instrumentName = "Violin I"
         \set Staff.shortInstrumentName = "Vl.I"
-        \set Staff.midiInstrument = "string ensemble 1"
         \violinIRondo
       }
       \new Staff
       {
         \set Staff.instrumentName = "Violin II"
         \set Staff.shortInstrumentName = "Vl.II"
-        \set Staff.midiInstrument = "string ensemble 1"
         \violinIIRondo
       }
     >>
@@ -186,14 +236,12 @@ instrument = "Orchestra"
     {
       \set Staff.instrumentName = "Viola"
       \set Staff.shortInstrumentName = "Va."
-      \set Staff.midiInstrument = "string ensemble 1"
       \violaRondo
     }
     \new Staff
     {
       \set Staff.instrumentName = "Bass"
       \set Staff.shortInstrumentName = "Bass"
-      \set Staff.midiInstrument = "string ensemble 1"
       \bassRondo
     }
   >>
@@ -207,6 +255,7 @@ space = {s1}
 %MIDI score
 \score
 {
+  \unfoldTremolos
   <<
     \new Staff
     {

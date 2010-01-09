@@ -250,7 +250,7 @@ violinIIRomanze = \relative c'
   r8 fes\sfp fes fes fes fes fes fes |
   r8 ees\sfp ees ees ees ees ees ees |
   r8 g\sfp g g g g g g |
-  \repeat tremolo 8 <aes ces>16 \repeat tremolo 4 ces, bes bes aes aes |
+  s1*0\f \repeat tremolo 8 <aes ces>16 \repeat tremolo 4 ces, bes bes aes aes |
   \repeat unfold 2 {\repeat tremolo 8 g \repeat tremolo 4 g \repeat tremolo 4 aes |}
   g4 r r8.ees'32(\p f g8[) r16 g32( aes] |
   bes4) r8. des32( c bes8[) r16 bes32( aes] g8[) r16 g32( f] |
