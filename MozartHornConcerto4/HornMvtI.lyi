@@ -208,6 +208,7 @@ hornMvtI = \relative c''
   b) g'2 f4( |
   e) r g2 |
   a, a' |
+  #(define afterGraceFraction (cons 15 16))
   g4 f16( e d c) \afterGrace d2(\startTrillSpan {c16[\stopTrillSpan d])} |
   c8 d16-. e-. f-. g-. a-. b-. c4 r |
   a,8 b16-. c-. d-. e-. f-. g-. a4 r |
@@ -222,7 +223,7 @@ hornMvtI = \relative c''
   c1~ |
   c~ |
   c4 c c c |
-  c2\fermata^\cadenza d4.(\trill c8) |
+  c2\fermata_\cadenza d4.(\trill c8) |
   c1~^\tutti |
   c~ |
   c |

@@ -119,7 +119,7 @@ hornOneMvtI = \relative c''
   R1*9 |
   g1~\p |
   g\< |
-  c4 c8. c16 c2~ |
+  c4\f c8. c16 c2~ |
   c1~ |
   c4 c8. c16 c2~ |
   c1~ |
