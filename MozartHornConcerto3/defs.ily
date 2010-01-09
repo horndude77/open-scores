@@ -13,7 +13,7 @@ pConMoltoEspressione = #(make-dynamic-script pConMoltoEspressioneMarkup)
 clarinetInstrumentName = \markup
 \center-column {Clarinet \line {in B\flat}}
 hornInstrumentName = \markup
-\center-column {Horn \line {in E\flat}}
+\center-column {\line {Solo Horn} \line {in E\flat}}
 
 crescTextCresc =
 {
