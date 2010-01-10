@@ -85,7 +85,7 @@ outlineRomanze =
   %\time 2/2
   %The movement tends to follow 4/4 beaming rules so just use that instead.
   \time 4/4
-  \tempo "Larghetto" 2=48
+  \tempo "Larghetto" 4=80
   s1*8 |
 
   \rMark "A"
