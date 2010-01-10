@@ -30,7 +30,8 @@ submitted to [Mutopia](http://www.mutopiaproject.org/). Enjoy!
 - Kopprasch 60 Horn Etudes for Low Horn - [Mutopia](http://mutopiaproject.org/cgibin/piece-info.cgi?id=1186)
 - Mozart Horn Concerto No.1 - [Mutopia](http://mutopiaproject.org/cgibin/piece-info.cgi?id=918)
 - Mozart Horn Concerto No.2 - [Mutopia](http://mutopiaproject.org/cgibin/piece-info.cgi?id=901)
-- Mozart Horn Concerto No.4 - In progress...
+- Mozart Horn Concerto No.3 - [Mutopia](http://mutopiaproject.org/cgibin/piece-info.cgi?id=1735)
+- Mozart Horn Concerto No.4 - [Mutopia](http://mutopiaproject.org/cgibin/piece-info.cgi?id=1736)
 - Mozart Horn Quintet - [Mutopia](http://mutopiaproject.org/cgibin/piece-info.cgi?id=1369)
 - Nielsen Canto Serioso - [Mutopia](http://mutopiaproject.org/cgibin/piece-info.cgi?id=1056)
 - Reinecke Trio - In progress...
