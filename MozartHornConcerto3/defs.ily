@@ -157,7 +157,6 @@ outlineRondo =
 
 \paper
 {
-  short-indent = 5\mm
   ragged-right = ##f
   ragged-last = ##f
   ragged-bottom = ##f

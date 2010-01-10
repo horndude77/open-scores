@@ -19,6 +19,11 @@ instrument = "Orchestra"
 
 #(set-global-staff-size 16)
 
+\paper
+{
+  short-indent = 5\mm
+}
+
 \score
 {
   <<
