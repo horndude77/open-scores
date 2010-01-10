@@ -160,6 +160,7 @@ hornMvtI = \relative c''
   r4 g'\p^\solo g' g |
   \times 2/3 {g8( a g)} \times 2/3 {f( g f)}
     \times 2/3 {e( f e)} \times 2/3 {d( e d)} |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   c1\pConEspressione |
   e |
   g2 f8( e d c) |

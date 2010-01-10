@@ -5,7 +5,7 @@
 \include "Horn2MvtII.lyi"
 \include "Horn2MvtIII.lyi"
 
-instrument = "Horn II"
+instrument = \markup {Horn II in E\flat}
 
 mvtI = \hornTwoMvtI
 mvtII = \hornTwoMvtII

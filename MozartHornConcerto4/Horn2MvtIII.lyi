@@ -38,14 +38,14 @@ hornTwoMvtIII = \relative c''
 
   %T
   R2.*8 |
-  \hornOneMvtIIITutti
+  \hornTwoMvtIIITutti
 
   %U
   R2.*37 |
 
   %V
   R2.*8 |
-  \hornOneMvtIIITutti
+  \hornTwoMvtIIITutti
 
   %W
   R2.*14 |

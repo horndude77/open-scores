@@ -82,7 +82,7 @@ bassMvtI = \relative c
   f4 r r2 |
   f8 r f' r d r bes r |
   f4 r r2 |
-  f8 r f' r d r bes r |
+  f8 r f' r c r a r |
   f4 r fis'2 |
   g( f |
   d ees) |

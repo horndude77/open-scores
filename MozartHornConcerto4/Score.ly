@@ -292,7 +292,9 @@ instrument = "Orchestra"
       {
         \set Staff.midiInstrument = "french horn"
         << \hornOneMvtI \hornTwoMvtI >>
+        \space
         << \hornOneMvtII \hornTwoMvtII >>
+        \space
         << \hornOneMvtIII \hornTwoMvtIII >>
       }
       \new Staff
@@ -307,11 +309,29 @@ instrument = "Orchestra"
       \new Staff
       {
         \set Staff.midiInstrument = "string ensemble 1"
-        << \violinOneMvtI \violinTwoMvtI \violaMvtI \bassMvtI >>
+        <<
+          \violinOneMvtI
+          \violinTwoMvtI
+          \violaMvtI
+          \bassMvtI
+          \transpose c c, \bassMvtI
+        >>
         \space
-        << \violinOneMvtII \violinTwoMvtII \violaMvtII \bassMvtII >>
+        <<
+          \violinOneMvtII
+          \violinTwoMvtII
+          \violaMvtII
+          \bassMvtII
+          \transpose c c, \bassMvtII
+        >>
         \space
-        << \violinOneMvtIII \violinTwoMvtIII \violaMvtIII \bassMvtIII >>
+        <<
+          \violinOneMvtIII
+          \violinTwoMvtIII
+          \violaMvtIII
+          \bassMvtIII
+          \transpose c c, \bassMvtIII
+        >>
       }
       {
         \outlineMvtI

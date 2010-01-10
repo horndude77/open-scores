@@ -91,7 +91,7 @@ outlineMvtI =
 outlineMvtII =
 {
   \time 3/4
-  \tempo "Andante"
+  \tempo "Andante" 4=63
   s2.*10 |
 
   \rMark "N"
