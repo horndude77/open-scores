@@ -48,18 +48,18 @@ violinIAllegro = \relative c'
   ees4.( f16 g aes4 g) |
   c,( f bes, ees) |
   f f \appoggiatura g16 f8. ees16 f8. g16 |
-  \expd #2
+  \repeat unfold 2
   {
-    ees8 \expd #7 bes, |
+    ees8 \repeat unfold 7 bes, |
     r bes'( d f aes f ees d) |
   }
   ees ees, ees ees r g g g |
   r bes bes bes bes( d) d( f) |
   r f, f f f( c') c( ees) |
   r d d d d( bes ees a,) |
-  bes \expd #7 d, |
-  r \expd #7 c |
-  r \expd #7 c |
+  bes \repeat unfold 7 d, |
+  r \repeat unfold 7 c |
+  r \repeat unfold 7 c |
   c( f) f f f4 f'8( d) |
 
   %B
@@ -76,7 +76,7 @@ violinIAllegro = \relative c'
   e( f) r f-. fis( g) r g-. |
   aes1 |
   aes,4-.\f f-. d-. bes-. |
-  << {s8\p} {\expd #14 g'} >> ees ees |
+  << {s8\p} {\repeat unfold 14 g'} >> ees ees |
   \crescTextCresc
   \repeat tremolo 8 d16\< \repeat tremolo 8 d |
   \repeat tremolo 8 ees \repeat tremolo 8 a |
@@ -100,8 +100,8 @@ violinIAllegro = \relative c'
   aes2.( bes16 aes bes c) |
 
   %D
-  des8 \expd #7 des, |
-  r \expd #7 des |
+  des8 \repeat unfold 7 des, |
+  r \repeat unfold 7 des |
   r ges-. ges-. ges-. ges-. ges( f ees) |
   r e( f) f-. f4 r |
   r2 r8 aes'( f des) |
@@ -146,9 +146,9 @@ violinIAllegro = \relative c'
   ees4.( f16 g aes4 g) |
   c,4( f bes, ees) |
   f4 f \appoggiatura g16 f8. ees16 f8. g16 |
-  \expd #2
+  \repeat unfold 2
   {
-    ees8 \expd #7 bes, |
+    ees8 \repeat unfold 7 bes, |
     r8 bes'( d f aes f ees d) |
   }
   ees ees, ees ees r des des des |
@@ -170,10 +170,10 @@ violinIAllegro = \relative c'
   r4 g8 g r4 aes8 aes |
   bes1 |
   des4-.\f bes-. g-. ees-. |
-  << {s8\p} {\expd #16 c'} >> |
+  << {s8\p} {\repeat unfold 16 c'} >> |
   r g g g r g g g |
   r f f f r f f f |
-  \expd #2
+  \repeat unfold 2
   {
     \times 2/3 {ees'8 d c} \times 2/3 {bes c d} \times 2/3 {ees f g} \times 2/3 {aes g f} |
   }
@@ -322,7 +322,7 @@ violinIRondo = \relative c'
   g8 ees ees ees bes bes |
   bes4 ees16 ees ees4 bes16 bes |
   bes8 g g g ees ees |
-  \expd #4 {ees8 bes g'} |
+  \repeat unfold 4 {ees8 bes g'} |
   ees4 r8 <ees bes' g'>4 r8 |
   <ees g,>4 r8 r4 r8 |
   bes4.(\p d) |
@@ -399,7 +399,7 @@ violinIRondo = \relative c'
   ees4( f16 g aes8) c,-. c-. |
   c4( d16 e f8) f,( des') |
   c4.( bes8) r r |
-  \expd #3 {r ees, ees ees ees ees |}
+  \repeat unfold 3 {r ees, ees ees ees ees |}
   r ees ees ees( bes' des) |
   c( aes ees') des( bes f') |
   ees4( f16 g aes8) ees( c) |
@@ -495,7 +495,7 @@ violinIRondo = \relative c'
   g8 ees ees ees bes bes |
   bes4 ees16 ees ees4 bes16 bes |
   bes8 g g g ees ees |
-  \expd #4 {ees bes g'} |
+  \repeat unfold 4 {ees bes g'} |
   ees4 r8 r4 r8 |
   <ees bes' g'>4 r8 <ees bes' bes'>4 r8 |
   <ees g,>4 r8 r4 r8 |

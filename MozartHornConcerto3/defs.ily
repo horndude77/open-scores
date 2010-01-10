@@ -11,7 +11,7 @@ pConMoltoEspressioneMarkup = \markup { \dynamic "p" \normal-text \italic { con m
 pConMoltoEspressione = #(make-dynamic-script pConMoltoEspressioneMarkup)
 
 clarinetInstrumentName = \markup
-\center-column {Clarinet \line {in B\flat}}
+\center-column {Clarinets \line {in B\flat}}
 hornInstrumentName = \markup
 \center-column {\line {Solo Horn} \line {in E\flat}}
 
@@ -40,11 +40,6 @@ crescJustTextPiuCresc =
 rMark = #(define-music-function (parser location markp) (string?)
 #{
   \mark \markup { \box \bold $markp }
-#})
-
-expd =  #(define-music-function (parser location n mus) (integer? ly:music?)
-#{
-  \repeat unfold $n $mus
 #})
 
 outlineAllegro =
