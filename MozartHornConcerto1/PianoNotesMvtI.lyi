@@ -1,3 +1,5 @@
+\version "2.13.10"
+
 \include "defs.lyi"
 
 pianoMvtIRight = \relative c''
@@ -166,9 +168,9 @@ pianoMvtIRight = \relative c''
   << {s1(} {\fourx {<e d>16 a,} \fourx {<e' cis> g,}} >> |
   <d' fis,>4) r8 a'16 fis g e cis a g' e cis' a |
   <d d,>4 r8 a16 fis g e cis a g' e cis' a |
-  #(set-octavation 1)
+  \ottava #1
   d d' ais, ais' b, b' gis, gis' a, a' e, e' fis, fis' d, d' |
-  #(set-octavation 0)
+  \ottava #0
   <g, g,>8 r <b g d> r <a fis d> r <cis a g e> r |
   <d a fis d>8 a16 fis g e a, cis' d8 a16 fis g e a, cis' |
   d8 a16 fis g e a, cis' \twox {d a cis a} |
@@ -301,7 +303,7 @@ pianoMvtILeft = \relative c
   r4 d'-. a-. fis-. |
   d r fis r |
   g r <g' g,>2( |
-  <fis fis,>8 r <d d,> r a r <a a,> r |
+  <fis fis,>8) r <d d,> r a r <a a,> r |
   <d a d,>4 r8 <g e a,> <fis d>4 r8 <g e a,> |
   <fis d>4 r <c c,>2( |
   <b b,>4) r8 <c' a d,> <b g>4 r8 <c a d,> |
@@ -383,7 +385,9 @@ pianoMvtIDynamics =
   s1 |
   s4 s2._\markup{\italic cresc.} |
   \set crescendoText = \markup {\italic "più cresc. al"}
-  \set crescendoSpanner = #'dashed-line
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
   s1\< |
   \crescHairpin
 
@@ -434,7 +438,9 @@ pianoMvtIDynamics =
   s1 |
   s4 s2._\markup {\italic cresc.} |
   \set crescendoText = \markup {\italic "più cresc. al"}
-  \set crescendoSpanner = #'dashed-line
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
   s1\< |
   \crescHairpin
   s1*2 |
