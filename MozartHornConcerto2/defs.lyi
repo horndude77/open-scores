@@ -1,18 +1,25 @@
+\version "2.13.10"
+
 mcresc = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 
 afterGraceFraction = #(cons 15 16)
 
-tempoMark = #(define-music-function (parser location markp) (string?)
-#{
-  \once \override Score.RehearsalMark #'self-alignment-X = #left
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \mark \markup { \bold $markp }
-#})
+stop =
+#(define-music-function (parser location music) (ly:music?)
+  (set! (ly:music-property music 'tweaks)
+        (acons 'before-line-breaking
+               (lambda (grob)
+                 (let ((dots (ly:grob-object grob 'dot)))
+                   (ly:grob-set-property! grob 'duration-log 2)
+                   (and (ly:grob? dots)
+                        (ly:grob-set-property! dots 'dot-count 0))))
+               (ly:music-property music 'tweaks)))
+  music)
 
 outlineMvtI =
 {
   \time 4/4
-  \tempoMark "Allegro maestoso"
+  \tempo "Allegro maestoso"
   s1*24 |
 
   \mark \default
@@ -58,7 +65,7 @@ outlineMvtI =
 outlineMvtII =
 {
   \time 3/8
-  \tempoMark "Andante"
+  \tempo "Andante"
   s4.*10 |
 
   \mark \default
@@ -80,7 +87,7 @@ outlineMvtII =
 outlineMvtIII =
 {
   \time 6/8
-  \tempoMark "Rondo"
+  \tempo "Rondo"
   \partial 8
   s8
   s2.*16 |
@@ -104,10 +111,8 @@ outlineMvtIII =
   s2.*28 |
 
   s8*5
-  %TODO: The "Più Allegro" should go here. For some reason it causes the
-  %measure to have a bunch of blank space.
+  \tempo "Più Allegro"
   s8 |
-  \tempoMark "Più Allegro"
   s2.*15 | \bar "|."
 }
 

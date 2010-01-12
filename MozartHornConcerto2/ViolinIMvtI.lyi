@@ -1,3 +1,5 @@
+\version "2.13.10"
+
 \include "defs.lyi"
 
 violinIMvtI = \relative c''
@@ -7,8 +9,8 @@ violinIMvtI = \relative c''
   bes2. aes16( g f ees) |
   d4~ d16( ees f g) aes4 aes |
   g( bes) r2 |
-  << aes'2 <c, ees,>4\f >> r2 |
-  << g'2 <bes, ees,>4\f >> r8 ees(\p g bes) |
+  <aes' \stop c, \stop ees,>2\f r2 |
+  <g\stop bes, \stop ees,>2\f r8 ees(\p g bes) |
   aes\f f4 d bes aes8 |
   g16 ees f g aes bes c d ees f g aes bes g f ees |
   <bes' bes, d,>4 bes,,8. bes16 bes4 r |
@@ -92,9 +94,9 @@ violinIMvtI = \relative c''
   c16\mcresc c c c c4:16 c2:16 |
 
   %tutti
-  << bes'2 <bes, d,>4\f >> r2 |
-  << g'2 <bes, ees,>4\f >> r2 |
-  << bes'2 <bes, d,>4\f >> r8 bes8(\f d f) |
+  <bes' \stop bes, \stop d,>2\f r2 |
+  <g \stop bes, \stop ees,>2\f r2 |
+  <bes \stop bes, \stop d,>2\f r8 bes,8(\f d f) |
   ees8\f c4 a c' ees,8 |
   d f bes f g bes c, ees |
   f,2 << c'{s32*15\startTrillSpan s32\stopTrillSpan} >> |
@@ -131,8 +133,8 @@ violinIMvtI = \relative c''
   bes2.( aes16 g f ees) |
   d4~ d16( ees f g) aes4 aes |
   g( bes) r2 |
-  << aes'2 <c, ees,>4\f >> r2 |
-  << g'2 <bes, ees,>4\f >> r8 ees(\p g bes) |
+  <aes' \stop c, \stop ees,>2\f r2 |
+  <g \stop bes, \stop ees,>2\f r8 ees(\p g bes) |
   aes8\f f4 d bes aes8 |
   g16 ees f g aes bes c d ees f g aes bes g f ees |
   <bes' bes, d,>4 bes,,8. bes16 bes4 r |
@@ -203,8 +205,8 @@ violinIMvtI = \relative c''
 
   %tutti
   <ees g,>2\f r |
-  << aes'2 <c, ees,>4\f >> r2 |
-  << g'2 <bes, ees,>4\f >> r8 ees(\p g bes) |
+  <aes' \stop c, \stop ees,>2\f r2 |
+  <g \stop bes, \stop ees,>2\f r8 ees(\p g bes) |
   aes8\f f4 d bes aes8 |
   g bes ees g c, ees aes c |
   bes,,2 f''\trill |
