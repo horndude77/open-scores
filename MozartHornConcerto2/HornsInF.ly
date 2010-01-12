@@ -5,7 +5,7 @@
 \include "HornsMvtII.lyi"
 \include "HornsMvtIII.lyi"
 
-instrument = \markup {Horns in E\flat}
+instrument = "Horns in F"
 
 \book
 {
@@ -14,21 +14,21 @@ instrument = \markup {Horns in E\flat}
   {
     \new Staff
     {
-      << \hornsMvtI \outlineMvtI >>
+      << \transpose f ees \hornsMvtI \outlineMvtI >>
     }
   }
   \score
   {
     \new Staff
     {
-      << \hornsMvtII \outlineMvtII >>
+      << \transpose f ees \hornsMvtII \outlineMvtII >>
     }
   }
   \score
   {
     \new Staff
     {
-      << \hornsMvtIII \outlineMvtIII >>
+      << \transpose f ees \hornsMvtIII \outlineMvtIII >>
     }
   }
 }

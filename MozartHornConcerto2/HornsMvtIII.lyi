@@ -46,7 +46,9 @@ hornsMvtIII = \relative c''
     {\voiceTwo c4. g}
   >> \oneVoice |
   <e' c>8 r r r4. |
-  R2.*36 |
+  R2.*28 |
+  r4. r4 r8 |
+  R2.*7 |
   <g, e>8(\f <c g>) <c g>-. <c g>( <e c>) <e c>-. |
   <g e>4( <f d>8) <d g,>4. |
   <e c>8 <e c> <e c> <d g,> <d g,> <d g,> |

@@ -10,14 +10,12 @@
 
 instrument = "Orchestra"
 
+#(set-global-staff-size 16)
+
 \paper
 {
-  %between-system-padding = #0.1
-  %between-system-space = #0.1
-  ragged-last-bottom = ##f
+  short-indent = 5\mm
 }
-
-#(set-global-staff-size 18)
 
 \book
 {
@@ -29,65 +27,58 @@ instrument = "Orchestra"
       \new Staff
       {
         \set Staff.midiInstrument = "oboe"
-        \set Staff.instrumentName = "Oboi"
-        %\set Staff.shortInstrumentName = "Ob"
+        \set Staff.instrumentName = "Oboes"
+        \set Staff.shortInstrumentName = "Ob."
         \oboesMvtII
       }
       \new Staff
       {
         \set Staff.midiInstrument = "french horn"
-        \set Staff.instrumentName = "Corni in Es"
-        %\set Staff.shortInstrumentName = "Cor"
+        \set Staff.instrumentName = \hornsInstrumentName
+        \set Staff.shortInstrumentName = "Hns."
         \hornsMvtII
       }
       \new Staff
       {
         \set Staff.midiInstrument = "french horn"
-        \set Staff.instrumentName = "Corno Principale in Es"
-        %\set Staff.shortInstrumentName = "Cor"
+        \set Staff.instrumentName = \hornInstrumentName
+        \set Staff.shortInstrumentName = "Hn."
         << \hornMvtII \outlineMvtII >>
       }
       \new GrandStaff
       <<
         \new Staff
         {
-          \set Staff.midiInstrument = "violin"
-          \set Staff.instrumentName = "Violino I"
-          %\set Staff.shortInstrumentName = "Vn I"
+          \set Staff.midiInstrument = "string ensemble 1"
+          \set Staff.instrumentName = "Violin I"
+          \set Staff.shortInstrumentName = "Vl.I"
           \violinIMvtII
         }
         \new Staff
         {
-          \set Staff.midiInstrument = "violin"
+          \set Staff.midiInstrument = "string ensemble 1"
           \set Staff.instrumentName = "Violino II"
-          %\set Staff.shortInstrumentName = "Vn II"
+          \set Staff.shortInstrumentName = "Vl.II"
           \violinIIMvtII
         }
       >>
       \new Staff
       {
-        \set Staff.midiInstrument = "viola"
+        \set Staff.midiInstrument = "string ensemble 1"
         \set Staff.instrumentName = "Viola"
-        %\set Staff.shortInstrumentName = "Va"
+        \set Staff.shortInstrumentName = "Vla."
         \violaMvtII
       }
       \new Staff
       {
-        \set Staff.midiInstrument = "cello"
-        \set Staff.instrumentName = "Basso"
-        %\set Staff.shortInstrumentName = "Ba"
+        \set Staff.midiInstrument = "string ensemble 1"
+        \set Staff.instrumentName = "Bass"
+        \set Staff.shortInstrumentName = "B."
         \bassMvtII
       }
     >>
-    \layout{}
-    \midi
-    {
-      \context
-      {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 72 8)
-      }
-    }
+    \layout { }
+    \midi { }
   }
 }
 

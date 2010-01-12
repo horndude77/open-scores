@@ -5,12 +5,7 @@
 \include "BassMvtII.lyi"
 \include "BassMvtIII.lyi"
 
-instrument = "Basso"
-
-\paper
-{
-  ragged-last-bottom = ##f
-}
+instrument = "Bass"
 
 \book
 {
@@ -19,7 +14,6 @@ instrument = "Basso"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \bassMvtI \outlineMvtI >>
     }
   }
@@ -27,7 +21,6 @@ instrument = "Basso"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \bassMvtII \outlineMvtII >>
     }
   }
@@ -35,7 +28,6 @@ instrument = "Basso"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \bassMvtIII \outlineMvtIII >>
     }
   }

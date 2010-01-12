@@ -1,5 +1,10 @@
 \version "2.13.10"
 
+hornsInstrumentName = \markup
+\center-column {\line {Horns} \line {in E\flat}}
+hornInstrumentName = \markup
+\center-column {\line {Solo Horn} \line {in E\flat}}
+
 mcresc = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 
 afterGraceFraction = #(cons 15 16)
@@ -19,7 +24,7 @@ stop =
 outlineMvtI =
 {
   \time 4/4
-  \tempo "Allegro maestoso"
+  \tempo "Allegro maestoso" 4=108
   s1*24 |
 
   \mark \default
@@ -65,7 +70,7 @@ outlineMvtI =
 outlineMvtII =
 {
   \time 3/8
-  \tempo "Andante"
+  \tempo "Andante" 8=72
   s4.*10 |
 
   \mark \default
@@ -87,7 +92,7 @@ outlineMvtII =
 outlineMvtIII =
 {
   \time 6/8
-  \tempo "Rondo"
+  \tempo "Rondo" 4.=108
   \partial 8
   s8
   s2.*16 |
@@ -116,3 +121,39 @@ outlineMvtIII =
   s2.*15 | \bar "|."
 }
 
+\layout
+{
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+  }
+
+  \context
+  {
+    \RemoveEmptyStaffContext
+  }
+}
+
+\midi
+{
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
+  }
+}
+
+\paper
+{
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
+}
