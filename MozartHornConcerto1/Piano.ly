@@ -8,11 +8,6 @@
 
 instrument = "Piano"
 
-\paper
-{
-  ragged-last-bottom = ##f
-}
-
 \book
 {
   \include "Header.lyi"
@@ -26,15 +21,12 @@ instrument = "Piano"
         \override StaffSymbol #'staff-space = #(magstep -3)
       }
       {
-        #(set-accidental-style 'modern)
         \hornMvtI
       }
       \new PianoStaff
       <<
         \new Staff="RH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           \pianoMvtIRight
         }
 
@@ -42,8 +34,6 @@ instrument = "Piano"
 
         \new Staff="LH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \pianoMvtILeft \pianoMvtIPedals \outlineMvtI >>
         }
 
@@ -65,15 +55,12 @@ instrument = "Piano"
         \override StaffSymbol #'staff-space = #(magstep -3)
       }
       {
-        #(set-accidental-style 'modern)
         \hornMvtII
       }
       \new PianoStaff
       <<
         \new Staff="RH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           \pianoMvtIIRight
         }
 
@@ -81,8 +68,6 @@ instrument = "Piano"
 
         \new Staff="LH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \pianoMvtIILeft \pianoMvtIIPedals \outlineMvtII >>
         }
 
@@ -103,7 +88,7 @@ instrument = "Piano"
       {
         \set Staff.midiInstrument = "french horn"
         \hornMvtI
-        \spacer
+        \space
         \hornMvtII
       }
       \new PianoStaff
@@ -111,20 +96,20 @@ instrument = "Piano"
         \new Staff="RH"
         {
           << \pianoMvtIRight \pianoMvtIDynamics \pianoMvtIPedals >>
-          \spacer
+          \space
           << \pianoMvtIIRight \pianoMvtIIDynamics \pianoMvtIIPedals >>
         }
         \new Staff="LH"
         {
           << \pianoMvtILeft \pianoMvtIDynamics \pianoMvtIPedals >>
-          \spacer
+          \space
           << \pianoMvtIILeft \pianoMvtIIDynamics \pianoMvtIIPedals >>
         }
       >>
       {
-        << \midiOutlineMvtI \outlineMvtI >>
-        \spacer
-        << \midiOutlineMvtII \outlineMvtII >>
+        \outlineMvtI
+        \space
+        \outlineMvtII
       }
     >>
     \midi { }

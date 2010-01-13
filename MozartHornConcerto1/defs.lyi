@@ -4,12 +4,8 @@ mcresc = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dolce = #(make-dynamic-script (markup #:normal-text #:italic "dolce"))
 aTwo = "a2"
 
-tempoMark = #(define-music-function (parser location markp) (string?)
-#{
-  \once \override Score.RehearsalMark #'self-alignment-X = #left
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \mark \markup { \bold $markp }
-#})
+hornInstrumentName = \markup
+\center-column {\line {Solo Horn} \line {in D}}
 
 twox = #(define-music-function (parser location x) (ly:music?)
 #{
@@ -41,71 +37,99 @@ sevenx = #(define-music-function (parser location x) (ly:music?)
   \repeat unfold 7 $x
 #})
 
+space = {R1}
+
+rMark = #(define-music-function (parser location markp) (string?)
+#{
+  \mark \markup { \box \bold $markp }
+#})
+
 outlineMvtI =
 {
   \time 4/4
-  \tempoMark "Allegro"
+  \tempo "Allegro" 4=112
   \partial 4 s4
   %s1*143 |
   s1*21 |
 
-  \mark "A"
+  \rMark "A"
   s1*16 |
 
-  \mark "B"
+  \rMark "B"
   s1*13 |
 
-  \mark "C"
+  \rMark "C"
   s1*21 |
 
-  \mark "D"
+  \rMark "D"
   s1*26 |
 
-  \mark "E"
+  \rMark "E"
   s1*16 |
 
-  \mark "F"
+  \rMark "F"
   s1*11 |
 
-  \mark "G"
+  \rMark "G"
   s1*19 |
   \bar "|."
-}
-
-midiOutlineMvtI =
-{
-  \tempo 4 = 112
 }
 
 outlineMvtII =
 {
   \time 6/8
-  \tempoMark "Allegro"
-  \partial 8 s8
+  \tempo "Allegro" 4.=80
+  \partial 8 s8 |
   %s2.*141 |
   s2.*24 |
 
-  \mark "H"
+  \rMark "H"
   s2.*34 |
 
-  \mark "I"
+  \rMark "I"
   s2.*34 |
 
-  \mark "K"
+  \rMark "K"
   s2.*26 |
 
-  \mark "L"
+  \rMark "L"
   s2.*23 |
   \bar "|."
 }
 
-midiOutlineMvtII =
+\layout
 {
-  \tempo 4. = 80
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+  }
+
+  \context
+  {
+    \RemoveEmptyStaffContext
+  }
 }
 
-spacer =
+\midi
 {
-  r8*5
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
+  }
 }
 
+\paper
+{
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
+}

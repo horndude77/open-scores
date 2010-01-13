@@ -26,7 +26,7 @@ oboesMvtI = \relative c''
   <fis d>4 r r2 |
   r8 <a, cis>\f <b d> <gis b> <a cis> <a cis> <b d> <gis b> |
   <a cis>4 r r2 |
-  r8 <b gis'>4 <cis a'>8 <d b'> <b gis'>4 <cis a'>8 |
+  r8 <b gis'>4\f <cis a'>8 <d b'> <b gis'>4 <cis a'>8 |
   <d b'>4 r r2 |
   R1 |
   r8 e,\f^\aTwo gis b e gis b gis |

@@ -216,7 +216,7 @@ pianoMvtILeft = \relative c
 
   %A
   <d d,>4 r r2 |
-  r4 a4-. e-. cis |
+  r4 a4-. e-. cis-. |
   a r r2 |
   r4 d'-. a-. fis-. |
   d r fis r |

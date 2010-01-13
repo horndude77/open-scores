@@ -6,11 +6,6 @@
 
 instrument = "Viola"
 
-\paper
-{
-  ragged-last-bottom = ##f
-}
-
 \book
 {
   \include "Header.lyi"
@@ -18,7 +13,6 @@ instrument = "Viola"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \violaMvtI \outlineMvtI >>
     }
   }
@@ -26,7 +20,6 @@ instrument = "Viola"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \violaMvtII \outlineMvtII >>
     }
   }

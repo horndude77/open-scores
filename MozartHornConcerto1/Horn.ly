@@ -4,12 +4,7 @@
 \include "HornMvtI.lyi"
 \include "HornMvtII.lyi"
 
-instrument = "Corno in D"
-
-\paper
-{
-  ragged-last-bottom = ##f
-}
+instrument = "Horn in D"
 
 \book
 {
@@ -18,7 +13,6 @@ instrument = "Corno in D"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \hornMvtI \outlineMvtI >>
     }
   }
@@ -26,7 +20,6 @@ instrument = "Corno in D"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \hornMvtII \outlineMvtII >>
     }
   }
