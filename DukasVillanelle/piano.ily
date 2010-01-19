@@ -500,7 +500,7 @@ leftHand = \relative c''
   <f f,>1~ <f f,> |
   <f f,>~-> <f f,> |
   r4 <g d>2( <gis cis,>4) |
-  << {\times 2/3 {a,8( e' a} \times 2/3 {a e' a)} r2} \\ {a,,1} >> |
+  << {\times 2/3 {a,8( e' a} \times 2/3 {a e' a)} d,2\rest} \\ {a,1} >> |
   <a' a,>1~ |
   <a a,>4.--( <g g,>8-.) <f f,>4.--( <e e,>8-.) |
   <ees ees,>2( <d d,> |
