@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.13.10"
 
 piup = \markup {\italic più \dynamic p}
 piuf = \markup {\italic più \dynamic f}
@@ -121,6 +121,7 @@ outline =
 
   \time 6/8
   \tempoMark "Très modéré (comme au début)"
+  \grace {s8}
   s2.*9 | \bar "||"
 
   \time 2/2

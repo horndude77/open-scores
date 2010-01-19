@@ -1,18 +1,17 @@
-\include "PianoNotes.lyi"
-\include "HornNotes.lyi"
-\include "defs.lyi"
+\version "2.13.10"
 
-\version "2.12.2"
+\include "piano.ily"
+\include "horn.ily"
+\include "defs.ily"
 
 \paper
 {
-  #(define page-breaking ly:page-turn-breaking)
   ragged-last-bottom = ##f
 }
 
 instrument = "Piano"
 
-\include "Header.lyi"
+\include "header.ily"
 \score
 {
   <<
@@ -30,7 +29,7 @@ instrument = "Piano"
       }
       {
         #(set-accidental-style 'modern)
-        \removeWithTag #'horn \hornNotes
+        \removeWithTag #'horn \horn
       }
     }
     \new PianoStaff
@@ -53,35 +52,6 @@ instrument = "Piano"
       }
     >>
   >>
-  \layout
-  {
-    \context
-    {
-      \type "Engraver_group"
-      \name Dynamics
-      \alias Voice
-      \consists "Output_property_engraver"
-      \consists "Piano_pedal_engraver"
-      \consists "Script_engraver"
-      \consists "New_dynamic_engraver"
-      \consists "Dynamic_align_engraver"
-      \consists "Text_engraver"
-      \consists "Skip_event_swallow_translator"
-      \consists "Axis_group_engraver"
-
-      pedalSustainStrings = #'("Ped." "*Ped." "*")
-      pedalUnaCordaStrings = #'("una corda" "" "tre corde")
-      \override DynamicLineSpanner #'Y-offset = #0
-      \override TextScript #'font-size = #2
-      \override TextScript #'font-shape = #'italic
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
-    }
-    \context
-    {
-      \PianoStaff
-      \accepts Dynamics
-    }
-  }
 }
 
 \score
@@ -90,7 +60,7 @@ instrument = "Piano"
     \new Staff
     {
       \set Staff.midiInstrument = "french horn"
-      \hornNotes
+      \horn
     }
     \new PianoStaff
     <<

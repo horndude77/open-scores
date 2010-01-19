@@ -1,6 +1,6 @@
-\version "2.12.2"
+\version "2.13.10"
 
-\include "defs.lyi"
+\include "defs.ily"
 
 rightHand = \relative c''
 {
@@ -89,17 +89,18 @@ rightHand = \relative c''
   <d b>2->^( <ees c>-> |
   <e cis>-> d->) | %EDIT: removed double voices on d
   r4 <b f>2.^( |
-  \once \override TextScript #'avoid-slur = #'inside
-  <cis a e>2) << \repeat tremolo 6 {cis16*2/3( e)} {s8 s16^\markup{\teeny \bold 12}} >> | %TODO: figure out tuplet tremolos
-  \repeat tremolo 6 {<ees bes>16*2/3( g,)} \repeat tremolo 6 {<d' bes>16*2/3( g,)}
-  \repeat tremolo 6 {<a' e cis>16*2/3( g,)} \repeat tremolo 6 {<a' ees>16*2/3( a,)}
-  \repeat tremolo 6 {des16*2/3( g,)} \repeat tremolo 6 {<d' bes>16*2/3( g,)}
-  \repeat tremolo 6 {f'16*2/3( bes,)} \repeat tremolo 6 {<bes' ges>16*2/3( bes,)}
+  <cis a e>2) \times 8/12 {\repeat tremolo 6 {cis16( e)}} |
+  \override TupletNumber #'transparent = ##t
+  \times 8/12 {\repeat tremolo 6 {<ees bes>16( g,)}} \times 8/12 {\repeat tremolo 6 {<d' bes>16( g,)}} |
+  \times 8/12 {\repeat tremolo 6 {<a' e cis>16( g,)}} \times 8/12 {\repeat tremolo 6 {<a' ees>16( a,)}} |
+  \times 8/12 {\repeat tremolo 6 {des16( g,)}} \times 8/12 {\repeat tremolo 6 {<d' bes>16( g,)}} |
+  \times 8/12 {\repeat tremolo 6 {f'16( bes,)}} \times 8/12 {\repeat tremolo 6 {<bes' ges>16( bes,)}} |
 
   %3/2
-  \repeat tremolo 6 {<bes' des,>16*2/3( bes,)}
-    \repeat tremolo 6 {<bes' des,>16*2/3( bes,)}
-    \repeat tremolo 3 {<bes' des,>16*2/3(-> bes,)} <f' b,>4->\arpeggio |
+  \times 8/12 {\repeat tremolo 6 {<bes' des,>16( bes,)}}
+    \times 8/12 {\repeat tremolo 6 {<bes' des,>16( bes,)}}
+    \times 4/6 {\repeat tremolo 3 {<bes' des,>16(-> bes,)}} <f' b,>4->\arpeggio |
+  \revert TupletNumber #'transparent
 
   %2/2
   r4
@@ -301,9 +302,8 @@ rightHand = \relative c''
   c1~-^ |
   %NOTE: It seems odd to me to mark these as 6-lets when the same rhythm earlier in 
   %the piece was two groups of triplets.
-  \override TupletNumber #'text = "6"
-  \times 2/3 {c4 bes a g a f} |
-  \times 2/3 {c4 bes a g a f} |
+  \times 4/6 {c4 bes a g a f} |
+  \times 4/6 {c4 bes a g a f} |
   <<
     \new Voice
     {
@@ -312,18 +312,16 @@ rightHand = \relative c''
     }
     {
       \voiceTwo
-      \times 2/3 {f,4 g a bes c d}
+      \times 4/6 {f,4 g a bes c d}
     }
   >> \oneVoice |
-  \times 2/3 {r4 g a bes c des} |
-  \revert TupletNumber #'text
+  \times 4/6 {r4 g a bes c des} |
   <c a f>4-.-^ r r2 |
 
   %G
   r4 c-^ f-^ g-^ |
-  \override TupletNumber #'text = "6"
-  \times 2/3 {c4-^ bes a g a f} |
-  \times 2/3 {c4 bes a g a f} |
+  \times 4/6 {c4-^ bes a g a f} |
+  \times 4/6 {c4 bes a g a f} |
   <<
     \new Voice
     {
@@ -332,11 +330,10 @@ rightHand = \relative c''
     }
     {
       \voiceTwo
-      \times 2/3 {f,4 g a bes c d}
+      \times 4/6 {f,4 g a bes c d}
     }
   >> \oneVoice |
-  \times 2/3 {r4 g a bes c des} |
-  \revert TupletNumber #'text
+  \times 4/6 {r4 g a bes c des} |
   <c a f>4-.-^ r r2 |
   r4 f-^ g-^ c-^ | <f d f,>1-^ |
   r4 f,-^ g-^ bes-^ | <f' bes, f>1-^ |
@@ -353,11 +350,12 @@ rightHand = \relative c''
   <c' a f c>-.-^ r r2 |
   R1*3 |
   %Retenez beaucoup
-  r1 |
+  R1 |
   c1( | <d b> | <e bes>) |
 
   %6/8
   %Tres modere
+  \grace {s8}
   \repeat tremolo 12 {ees32 a,} |
   \repeat tremolo 6 {d32 bes} \repeat tremolo 6 {d32 a} |
   \repeat tremolo 6 {d32 b} \repeat tremolo 6 {c32 bes} |
@@ -368,8 +366,8 @@ rightHand = \relative c''
   %Tres anime
   <c f a c>4 r c,2-^ |
   f-^ g-^ |
-  c-^ c'-^ |
-  \ottava #1 %NOTE: The octavation didn't look good on one note, so I added the two previous notes also.
+  %NOTE: The octavation didn't look good on one note, so I added a few preceding notes also.
+  c-^ \ottava #1 c'-^ |
   f-^ g-^ |
   c-^ \ottava #0 r |
   R1*3 |
@@ -731,7 +729,7 @@ leftHand = \relative c''
   %the tremolo and tied to the f dotted half.
   <<
     {
-      \repeat tremolo 12 {c'32 f} |
+      \acciaccatura f,8 \repeat tremolo 12 {c''32 f} |
     }
     \\
     {

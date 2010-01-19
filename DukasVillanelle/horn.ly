@@ -1,6 +1,6 @@
-\include "HornNotes.lyi"
+\version "2.13.10"
 
-\version "2.12.2"
+\include "horn.ily"
 
 \paper
 {
@@ -10,7 +10,7 @@
 
 instrument = "Horn"
 
-\include "Header.lyi"
+\include "header.ily"
 \score
 {
   \new StaffGroup
@@ -24,7 +24,7 @@ instrument = "Horn"
       #(set-accidental-style 'modern)
       \set Score.skipBars = ##t
       \clef treble
-      << \hornNotes \outline >>
+      << \horn \outline >>
     }
   }
 }

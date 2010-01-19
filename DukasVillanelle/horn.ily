@@ -1,8 +1,8 @@
-\version "2.12.2"
+\version "2.13.10"
 
-\include "defs.lyi"
+\include "defs.ily"
 
-hornNotes = \relative c''
+horn = \relative c''
 {
   %6/8
   \transposition f
@@ -128,8 +128,7 @@ hornNotes = \relative c''
   fis1~-^ | fis~ |
   fis8[ r g e] c g e c |
   g1( |
-  \clef bass
-    \set Staff.middleCPosition = #-1
+  \clef "bass^8"
     c,4) r r2 |
   \clef treble
   R1*8 |
@@ -190,8 +189,7 @@ hornNotes = \relative c''
   d c8 b a4 b |
   g d b e |
   d c8 b a4 g |
-  \clef bass
-    \set Staff.middleCPosition = #-1
+  \clef "bass^8"
     d1~ |
   d4) \clef treble g(_\pocoCresc c d |
   g1~) |
@@ -255,6 +253,7 @@ hornNotes = \relative c''
   r_\markup{\column{"(sans les" "Pistons)"}} g'_(\( | %TODO: I'm not totally happy with the slurs here
   
   %6/8
+  \grace {s8}
   bes4)_\espress bes8-.\) bes( c d |
   e4 d8 c4) e8( |
   d4) e8( d c b) |
@@ -309,8 +308,7 @@ hornNotes = \relative c''
       g4 r g, r |
       c r r2 |
       c,4 r r2 |
-      \clef bass
-      \set Staff.middleCPosition = #-1
+      \clef "bass^8"
       c,4 r r2\fermata |
     }
   >>
