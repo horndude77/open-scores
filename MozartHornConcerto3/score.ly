@@ -321,8 +321,6 @@ instrument = "Orchestra"
   }
 }
 
-space = {s1}
-
 %MIDI score
 \score
 {

@@ -42,6 +42,8 @@ rMark = #(define-music-function (parser location markp) (string?)
   \mark \markup { \box \bold $markp }
 #})
 
+space = {s1}
+
 outlineAllegro =
 {
   \time 4/4
