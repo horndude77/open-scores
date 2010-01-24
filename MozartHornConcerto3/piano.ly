@@ -27,6 +27,10 @@ instrument = "Piano"
       {
         \pianoRightAllegro
       }
+      \new Dynamics
+      {
+        \pianoDynamicsAllegro
+      }
       \new Staff="RH"
       {
         \pianoLeftAllegro
@@ -54,6 +58,10 @@ instrument = "Piano"
       {
         \pianoRightRomanze
       }
+      \new Dynamics
+      {
+        \pianoDynamicsRomanze
+      }
       \new Staff="RH"
       {
         \pianoLeftRomanze
@@ -80,6 +88,10 @@ instrument = "Piano"
       \new Staff="RH"
       {
         \pianoRightRondo
+      }
+      \new Dynamics
+      {
+        \pianoDynamicsRondo
       }
       \new Staff="RH"
       {

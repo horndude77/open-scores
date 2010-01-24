@@ -9,6 +9,9 @@ sempreFMarkup = \markup {\normal-text \italic { sempre } \dynamic f }
 sempreF = #(make-dynamic-script sempreFMarkup)
 pConMoltoEspressioneMarkup = \markup { \dynamic "p" \normal-text \italic { con molto espressione } }
 pConMoltoEspressione = #(make-dynamic-script pConMoltoEspressioneMarkup)
+pConEspressioneMarkup = \markup { \dynamic "p" \normal-text \italic { con espressione } }
+pConEspressione = #(make-dynamic-script pConEspressioneMarkup)
+conEspressione = \markup { \normal-text \italic { con espressione } }
 
 clarinetInstrumentName = \markup
 \center-column {Clarinets \line {in B\flat}}
@@ -34,6 +37,20 @@ crescJustTextPiuCresc =
 {
   \set crescendoText = \markup { \italic "più cresc." }
   \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+crescJustTextPocoAPocoCresc =
+{
+  \set crescendoText = \markup { \italic "poco a poco cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+dimJustTextDim =
+{
+  \set decrescendoText = \markup { \italic "dim." }
+  \set decrescendoSpanner = #'text
   \override DynamicTextSpanner #'dash-period = #-1.0
 }
 

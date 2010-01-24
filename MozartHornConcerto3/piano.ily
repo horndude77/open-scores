@@ -443,6 +443,106 @@ pianoLeftAllegro = \relative c,
   <ees ees,>2 r |
 }
 
+pianoDynamicsAllegro =
+{
+  s4\p |
+  s1*3 |
+  s2 s\f |
+  s1\ff |
+  s1*3 |
+  s2. s4\pConEspressione |
+  s1*6 |
+  \crescJustTextPocoAPocoCresc
+  s1\< |
+  s1 |
+  \crescJustTextCresc
+  s1\< |
+  s1\f
+  s1*5 |
+  s2 s\p |
+  s1 |
+  s4 s2.\pp |
+  s1 |
+
+  %A
+  s1\p |
+  s1*22 |
+
+  %B
+  s1*2 |
+  \crescHairpin
+  s2\< s\> |
+  s1\! |
+  s\p |
+  s1*2 |
+  \crescJustTextCresc
+  s4. s\< s4 |
+  s1 |
+  \crescJustTextPiuCresc
+  s\< |
+  s1*2 |
+  s1\f |
+  s\p |
+  s1*3 |
+
+  %C
+  s1*10 |
+  s2 s\p |
+  s1 |
+  s4 s2.\p |
+  s1*2 |
+  s4 s2.\pp |
+
+  %D
+  s1*27 |
+
+  %E
+  s1*3 |
+  s2 s8 s4.\f |
+  s1\ff |
+  s1*4 |
+  s1\p |
+  s1*7 |
+
+  %F
+  s1*10 |
+  s2. s4\p |
+  s1*2 |
+  \crescHairpin
+  s1\< |
+  s\! |
+
+  %G
+  s1*3 |
+  \crescJustTextCresc
+  s4. s\< s4 |
+  \dimJustTextDim
+  s2 s\> |
+  s4. s\< s4 |
+  s2 s\> |
+  s1\! |
+  s1*2 |
+  s1\ff |
+  s8 s2..\p |
+  s1*5 |
+
+  %H
+  s1*2 |
+  \crescJustTextCresc
+  s2 s\< |
+  s1*2 |
+  s1\< |
+  s1\f |
+  s1*4 |
+  s1\ff |
+  s1*5 |
+  s2 s\p |
+  s1 |
+  s4 s2.\p |
+  s1\ff |
+  s1*2 |
+}
+
 pianoRightRomanze = \relative c'
 {
   \key aes \major
@@ -639,6 +739,55 @@ pianoLeftRomanze = \relative c
   r \clef treble <ees des'>8 r <aes c> r r4 |
   r4 \clef bass <ees ees,>8 r <ees aes,> r r4 |
   r4 <ees, ees,>8-.( r <ees aes,>-.) r r4 |
+}
+
+pianoDynamicsRomanze =
+{
+  s1\pp |
+  s1*7 |
+
+  %A
+  s1\f |
+  s2 s\p |
+  s1 |
+  \crescJustTextCresc
+  s2 s8 s4.\< |
+  s1\f |
+  s2. s4\p |
+  s1*4 |
+  s1\f |
+  s1 |
+  s1\p |
+  s1 |
+  s1\f |
+  s2. s4\p |
+  s1*2 |
+
+  %B
+  s1\f |
+  s1 |
+  s2. s4\p |
+  s1 |
+  \crescHairpin
+  s2 s\< |
+  s1\f |
+  s2. s4\p |
+  s1*15 |
+
+  %C
+  \repeat unfold 4 {s4 s2.\sfp |}
+  s1\ff |
+  s1*2 |
+  s4 s8. s16\p s2 |
+  s1 |
+  \dimHairpin
+  s4 s2.\> |
+
+  %D
+  s1\!-\conEspressione |
+  s1*17 |
+  s1\pp |
+  s1*2 |
 }
 
 pianoRightRondo = \relative c'
@@ -1073,4 +1222,93 @@ pianoLeftRondo = \relative c,
   ees <ees g bes> q q q q |
   q4 r8 q4 r8 |
   q4 r8 r4 r8 |
+}
+
+pianoDynamicsRondo =
+{
+  s8 |
+  s2.\p |
+  s2.*6 |
+  s8*5 s8\f |
+  s2.*3 |
+  s8*5 s8\p |
+  s2.*3 |
+  s4 s8\f s4. |
+  s2. |
+  s4 s8\p s4. |
+  s2. |
+  s2.\f |
+  s2. |
+  s4. s\p |
+  s2.*3 |
+  s4 s8\f s4. |
+  s2.*7 |
+
+  %A
+  s2.\p |
+  s2.*7 |
+  s2.\p |
+  s2.*8 |
+
+  %B
+  s2.*20 |
+
+  %C
+  s2.\f |
+  s2.*3 |
+  s2.\p |
+  s2.*8 |
+  s4. s4 s8\f |
+  s2.*3 |
+  s8*5 s8\p |
+  s2.*7 |
+  s2.\f |
+  \dimHairpin
+  s2.\>
+
+  %D
+  s2.\p |
+  s2.*7 |
+  s2.\pp |
+  s2.*19 |
+
+  %E
+  s2.*16 |
+  s2.\f |
+  s2.*3 |
+  s2.\ff |
+  s2. |
+  s2.\p |
+  \crescJustTextCresc
+  s8 s8*5\< |
+  s2. |
+
+  %F
+  s2.\f |
+  s2.*3 |
+  s2.\p |
+  s2.*6 |
+  s8*5 s8\f |
+  s2.*3 |
+  s8*5 s8\p |
+  s2.*3 |
+
+  %G
+  s2.*12 |
+
+  %H
+  s2.*8 |
+  s4 s8\f s4. |
+  s2. |
+  s4 s8\p s4. |
+  s2. |
+  s2.\f |
+  s2. |
+  s4. s\p |
+  s2. |
+  \crescJustTextCresc
+  s8 s8*5\< |
+  s2. |
+  s4 s8\f s4. |
+  s2.*8 |
 }
