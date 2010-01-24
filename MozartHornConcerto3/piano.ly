@@ -135,12 +135,10 @@ instrument = "Piano"
       }
     >>
     {
-      \set Score.skipTypesetting = ##t
       \outlineAllegro
       \space
       \outlineRomanze
       \space
-      \set Score.skipTypesetting = ##f
       \outlineRondo
     }
   >>
