@@ -302,7 +302,7 @@ violinIIRondo = \relative c'
   << bes4 \\ aes >> r8 d4.(\p |
   ees8) r r aes,-. bes-. aes-. |
   g8 r <g bes>8-.\f \repeat unfold 3 << bes4. \\ {f4( g8)} >> |
-  << bes4 \\ aes >> r8 bes,4.~\p |
+  << bes4\fermata \\ aes\fermata >> r8 bes,4.~\p |
   bes aes8-. bes-. aes-. |
   g4. bes~ |
   bes aes8-. bes-. aes-. |

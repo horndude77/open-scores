@@ -1237,7 +1237,7 @@ pianoDynamicsRondo =
   s2. |
   s4 s8\p s4. |
   s2. |
-  s2.\f |
+  s4 s8\f s4. |
   s2. |
   s4. s\p |
   s2.*3 |
