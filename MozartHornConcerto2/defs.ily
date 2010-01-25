@@ -21,6 +21,9 @@ stop =
                (ly:music-property music 'tweaks)))
   music)
 
+spaceA = {s1}
+spaceB = {s4.}
+
 outlineMvtI =
 {
   \time 4/4
@@ -94,7 +97,7 @@ outlineMvtIII =
   \time 6/8
   \tempo "Rondo" 4.=108
   \partial 8
-  s8
+  s8 |
   s2.*16 |
 
   \mark \default

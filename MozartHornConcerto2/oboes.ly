@@ -1,15 +1,13 @@
 \version "2.13.10"
 
-\include "defs.lyi"
-\include "OboesMvtI.lyi"
-\include "OboesMvtII.lyi"
-\include "OboesMvtIII.lyi"
+\include "defs.ily"
+\include "oboes.ily"
 
 instrument = "Oboes"
 
 \book
 {
-  \include "Header.lyi"
+  \include "header.ily"
   \score
   {
     \new Staff
