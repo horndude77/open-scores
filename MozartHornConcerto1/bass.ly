@@ -1,14 +1,13 @@
 \version "2.13.10"
 
-\include "defs.lyi"
-\include "BassMvtI.lyi"
-\include "BassMvtII.lyi"
+\include "defs.ily"
+\include "bass.ily"
 
 instrument = "Bass"
 
 \book
 {
-  \include "Header.lyi"
+  \include "header.ily"
   \score
   {
     \new Staff

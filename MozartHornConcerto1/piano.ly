@@ -1,16 +1,14 @@
 \version "2.13.10"
 
-\include "PianoNotesMvtI.lyi"
-\include "PianoNotesMvtII.lyi"
-\include "HornMvtI.lyi"
-\include "HornMvtII.lyi"
-\include "defs.lyi"
+\include "piano.ily"
+\include "horn.ily"
+\include "defs.ily"
 
 instrument = "Piano"
 
 \book
 {
-  \include "Header.lyi"
+  \include "header.ily"
   \score
   {
     <<

@@ -1,6 +1,6 @@
 \version "2.13.10"
 
-\include "defs.lyi"
+\include "defs.ily"
 
 bassoonsMvtI = \relative c'
 {
@@ -116,5 +116,11 @@ bassoonsMvtI = \relative c'
   << d4 \\ d >> r8 <e a,>8 <fis d>4 r8 <e a,>8 |
   <fis d>4 r8 <e a,> <fis d> <e a,> <fis d> <e a,> |
   << {fis8 d, d d d4} \\ {d'8 d, d d d4} >> r4 |
+}
+
+bassoonsMvtII = \relative c''
+{
+  r8^"Tacit"
+  R2.*141 |
 }
 

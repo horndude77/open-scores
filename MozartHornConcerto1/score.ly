@@ -1,19 +1,12 @@
 \version "2.13.10"
 
-\include "OboesMvtI.lyi"
-\include "BassoonsMvtI.lyi"
-\include "HornMvtI.lyi"
-\include "ViolinIMvtI.lyi"
-\include "ViolinIIMvtI.lyi"
-\include "ViolaMvtI.lyi"
-\include "BassMvtI.lyi"
-
-\include "OboesMvtII.lyi"
-\include "HornMvtII.lyi"
-\include "ViolinIMvtII.lyi"
-\include "ViolinIIMvtII.lyi"
-\include "ViolaMvtII.lyi"
-\include "BassMvtII.lyi"
+\include "oboes.ily"
+\include "bassoons.ily"
+\include "horn.ily"
+\include "violin1.ily"
+\include "violin2.ily"
+\include "viola.ily"
+\include "bass.ily"
 
 instrument = "Orchestra"
 
@@ -26,7 +19,7 @@ instrument = "Orchestra"
 
 \book
 {
-  \include "Header.lyi"
+  \include "header.ily"
   \score
   {
     \new StaffGroup
