@@ -949,7 +949,7 @@ pianoRightMvtIII = \relative c'
   <ees c>4( <f d>8 <ees c>4 <d bes>8) |
   <c a>4( <d bes>8 <ees c>4 <f a,>8) |
   <d bes>4 r8 r4. |
-  << {bes2. | a4} \\ {d,4.~ d4( e8) | f4} >> f'8 f( g aes) |
+  << {bes2. | a4} \\ {d,4.~ d4( e8) | f4} >> f'8 f( g a) |
   bes4 g8 d4 e8 |
   f4 \clef bass <a,, f>8 <a f>( <bes g>) <a f>-. |
   <bes e,>4 q8 q4 q8 |
@@ -964,7 +964,7 @@ pianoRightMvtIII = \relative c'
   <f d>4 <f' d>8( <d bes>4 <bes' d,>8) |
   <g ees>4( <ees bes>8 <bes g>4 <bes' g>8) |
   <f d>4( <d bes>8 <bes d,>4 <bes' d,>8) |
-  << {bes( a g f g aes)} \\ {c,4( ees8 a, bes c)} >> |
+  << {bes( a g f g a)} \\ {c,4( ees8 a, bes c)} >> |
 
   %S
   <d bes'>8 r r <d bes f>-. r r |
@@ -1010,7 +1010,7 @@ pianoRightMvtIII = \relative c'
 
   %U
   R2. |
-  r8 <ees bes g> q q q q |
+  r8 <ees c g> q q q q |
   r <f d aes> q q q q |
   r <f c aes>( <ees c g>) q q q |
   <<
@@ -1018,7 +1018,7 @@ pianoRightMvtIII = \relative c'
     \\
     {g,2.~ | g~ | g4. c}
   >> |
-  <b' d,>8( <aes f> <g ees> <f d> <ees c> <d b> |
+  <b' d,>8( <aes f> <g ees> <f d> <ees c> <d b>) |
   <ees c>4 r8 r4. |
   r8 <ees c g> q q q q |
   r <f d aes> q q q q |
@@ -1028,7 +1028,7 @@ pianoRightMvtIII = \relative c'
   r <f des>( <des bes>) r <c aes>( <bes g>) |
   aes4 <ees'' c>8( <des bes>4 <c aes>8) |
   <bes g>4( <c aes>8 <des bes>4 <ees g,>8) |
-  <c aes>4 <f ees>8 <f des>( <ees c> <d bes>) |
+  <c aes>4 <f ees>8 <f des>( <ees c> <des bes>) |
   <c a>4( <des bes>8 <ees c>4 <f a,>8) |
   <d bes>4 <g f>8 <g ees>( <f d> <ees c>) |
   <d b>4( <ees c>8 <f d>4 <g b,>8 |
@@ -1135,7 +1135,7 @@ pianoRightMvtIII = \relative c'
   %Z
   <f, ees a,>2.( |
   <aes f d bes>) |
-  <g ees>4. <bes~ d,>( | |
+  <g ees>4. <bes~ d,>^( | |
   << {\voiceOne bes4. aes | g ges)} \new Voice {\voiceTwo ees2. | ees} >> \oneVoice |
   <f d ces>8 r r <aes f bes,> r r |
   <g ees bes> r r <f d bes> r r |
@@ -1191,7 +1191,7 @@ pianoLeftMvtIII = \relative c
   <f a>8) r8 c c4 c8 |
   c4 c8 c4 c8 |
   f,4 c'8 c4 c8 |
-  c4 <c ees bes>8 q4 q8 |
+  c4 <c ees bes'>8 q4 q8 |
   <f a>( g f) ees( f ees) |
   d( ees d) c( d c) |
   bes2.~ |
@@ -1215,7 +1215,7 @@ pianoLeftMvtIII = \relative c
   <ees ees,>8 r r r4. |
   << <bes' c>2. \\ {ees,4.( e)} >> |
   \repeat unfold 2 {<f bes d>8 q q q r r |}
-  f'( g) e-. f'( g) e-. |
+  f'( g) e-. f( g) e-. |
   f,4. f, |
   <bes bes,>2.~ |
   q~ |
@@ -1226,7 +1226,7 @@ pianoLeftMvtIII = \relative c
   << {bes'2.~ | bes} \\ {bes,4 r8 r4. | R2.} >> |
 
   %T
-  ees,4 r8 g4 r8 |
+  ees4 r8 g4 r8 |
   f4 r8 d4 r8 |
   ees4 r8 c4 r8 |
   <bes f'>4 r8 bes'16( c bes aes g f |

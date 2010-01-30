@@ -17,7 +17,6 @@
 
 \paper
 {
-  ragged-last-bottom = ##f
   short-indent = 5\mm
 }
 
