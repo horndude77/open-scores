@@ -24,50 +24,61 @@ stop =
 spaceA = {s1}
 spaceB = {s4.}
 
+rMark = #(define-music-function (parser location markp) (string?)
+#{
+  \mark \markup { \box \bold $markp }
+#})
+
 outlineMvtI =
 {
   \time 4/4
   \tempo "Allegro maestoso" 4=108
   s1*24 |
 
-  \mark \default
+  \rMark "A"
   s1*9
 
-  \mark \default
+  \rMark "B"
   s1*11
 
-  \mark \default
-  s1*8
+  \rMark "C"
+  s1*12
 
-  \mark \default
+  \rMark "D"
+  s1*11
+
+  \rMark "E"
   s1*15
 
-  \mark \default
-  s1*15
-
-  \mark \default
+  \rMark "F"
   s1*8 |
 
-  \mark \default
+  \rMark "G"
   s1*8 |
 
-  \mark \default
-  s1*18 |
+  \rMark "H"
+  s1*13 |
 
-  \mark \default
+  \rMark "I"
+  s1*14 |
+
+  \rMark "K"
   s1*9 |
 
-  \mark \default
-  s1*9 |
-
-  \mark \default
+  \rMark "L"
   s1*12 |
 
-  \mark \default
-  s1*17 |
+  \rMark "M"
+  s1*14 |
 
-  \mark \default
-  s1*27 | \bar "|."
+  \rMark "N"
+  s1*12 |
+
+  \rMark "O"
+  s1*8 |
+
+  \rMark "P"
+  s1*10 | \bar "|."
 }
 
 outlineMvtII =
@@ -76,20 +87,20 @@ outlineMvtII =
   \tempo "Andante" 8=72
   s4.*10 |
 
-  \mark \default
+  \rMark "Q"
   s4.*12 |
 
-  \mark \default
+  \rMark "R"
   s4.*18 |
 
-  \mark \default
+  \rMark "S"
   s4.*12 |
 
-  \mark \default
-  s4.*12 |
+  \rMark "T"
+  s4.*16 |
 
-  \mark \default
-  s4.*21 | \bar "|."
+  \rMark "U"
+  s4.*17 | \bar "|."
 }
 
 outlineMvtIII =
@@ -98,29 +109,52 @@ outlineMvtIII =
   \tempo "Rondo" 4.=108
   \partial 8
   s8 |
+  s2.*14 |
+
+  \rMark "A"
+  s2.*14 |
+
+  \rMark "B"
+  s2.*11 |
+
+  \rMark "C"
+  s2.*6 |
+  s8*5
+
+  \tempo "Tempo I"
+  s8 | \noBreak
+  s2.*14
+
+  \rMark "D"
+  s2.*9 |
+
+  \rMark "E"
+  s2.*8 |
+
+  \rMark "F"
+  s2.*12 |
+
+  \rMark "G"
+  s2.*7 |
+
+  \rMark "H"
+  s2.*14 |
+
+  \rMark "I"
   s2.*16 |
 
-  \mark \default
-  s2.*30 |
+  \rMark "K"
+  s2.*12 |
 
-  \mark \default
-  s2.*16 |
-
-  \mark \default
-  s2.*34 |
-
-  \mark \default
+  \rMark "L"
   s2.*15 |
 
-  \mark \default
-  s2.*15 |
-
-  \mark \default
-  s2.*28 |
+  \rMark "M"
+  s2.*1 |
 
   s8*5
   \tempo "Più Allegro"
-  s8 |
+  s8 | \noBreak
   s2.*15 | \bar "|."
 }
 
