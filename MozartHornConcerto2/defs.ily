@@ -6,6 +6,9 @@ hornInstrumentName = \markup
 \center-column {\line {Solo Horn} \line {in E\flat}}
 
 mcresc = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
+pDolceMarkup = \markup {\dynamic p \normal-text \italic { dolce } }
+pDolce = #(make-dynamic-script pDolceMarkup)
+dolce = \markup {\italic "dolce"}
 
 afterGraceFraction = #(cons 15 16)
 
@@ -20,6 +23,35 @@ stop =
                         (ly:grob-set-property! dots 'dot-count 0))))
                (ly:music-property music 'tweaks)))
   music)
+
+crescTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
+}
+
+crescJustTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+dimJustTextDim =
+{
+  \set decrescendoText = \markup { \italic "dim." }
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+dimJustTextPocoRitenutoEDim =
+{
+  \set decrescendoText = \markup { \italic "poco ritenuto e dim." }
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
 
 spaceA = {s1}
 spaceB = {s4.}
