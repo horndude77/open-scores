@@ -11,7 +11,7 @@ violaMvtI = \relative c'
   \repeat unfold 8 ees |
   aes,\f c c c aes'16(\p g f ees d c bes aes) |
   g8\f bes bes bes g'16( f ees d c bes aes g) |
-  f4:16\f aes:16 f:16 d':16 |
+  \repeat tremolo 4 f16\f \repeat tremolo 4 aes \repeat tremolo 4 f \repeat tremolo 4 d' |
   ees8 ees d aes' bes g ees ees |
   f4 bes,8. bes16 bes4 r |
 
@@ -28,7 +28,7 @@ violaMvtI = \relative c'
   r4 ees2( d4) |
   des8( bes aes g) ees'( c bes aes) |
   f'8\f f4 f8 <aes bes,>8 <aes bes,>4 <aes bes,>8 |
-  \repeat unfold 2 { g2:16 aes:16 | }
+  \repeat unfold 2 { \repeat tremolo 8 g16 \repeat tremolo 8 aes | }
   g4 r bes \grace bes16 aes8 g16 aes |
   g4 bes,8. bes16 bes4 r |
 
@@ -88,15 +88,16 @@ violaMvtI = \relative c'
   d r8 d\p g4 bes |
   bes8 r r4 ees,8 r r4 |
   \repeat unfold 8 f8 |
-  f\mcresc f f f ees ees ees ees |
+  \crescJustTextCresc
+  f\< f f f ees ees ees ees |
 
   %tutti
   d16(\f bes' d bes d bes d bes) d(\p c bes a g f ees d) |
   ees(\f g bes g bes g bes g) ees'(\p d c bes a g f ees) |
   d(\f f bes f bes f bes f) bes(\p a g f ees d c bes) |
-  a2:16\f c:16 |
-  bes2.:16 ees4:16 |
-  d2:16 ees:16 |
+  \repeat tremolo 8 a16\f \repeat tremolo 8 c |
+  \repeat tremolo 12 bes \repeat tremolo 4 ees |
+  \repeat tremolo 8 d \repeat tremolo 8 ees |
   d4 r f \grace f16 ees8 d16 ees |
   d4 bes8. bes16 bes4 r |
 
@@ -141,7 +142,7 @@ violaMvtI = \relative c'
   \repeat unfold 8 ees |
   aes,8\f c c c aes'16(\p g f ees d c bes aes) |
   g8\f bes bes bes g'16(\p f ees d c bes aes g) |
-  f4:16\f aes:16 f:16 d':16 |
+  \repeat tremolo 4 f16\f \repeat tremolo 4 aes \repeat tremolo 4 f \repeat tremolo 4 d' |
   ees8 ees d aes' bes g ees ees |
   f4 bes,8. bes16 bes4 r |
 
@@ -205,13 +206,14 @@ violaMvtI = \relative c'
   g r8 ees'8\p ees4 ees |
   ees r bes r |
   \repeat unfold 8 bes8 |
-  bes2:16\mcresc aes:16 |
+  \crescJustTextCresc
+  \repeat tremolo 8 bes16\< \repeat tremolo 8 aes |
   g8\f g' g g g16(\p f ees d c bes aes g) |
   aes8\f c c c aes'16(\p g f ees d c bes aes) |
   g8\f bes bes bes g'16(\p f ees d c bes aes g) |
-  f4:16\f aes:16 f:16 d':16 |
-  ees:16 g:16 aes2:16 |
-  g:16 aes:16 |
+  \repeat tremolo 4 f16\f \repeat tremolo 4 aes \repeat tremolo 4 f \repeat tremolo 4 d' |
+  \repeat tremolo 4 ees \repeat tremolo 4 g \repeat tremolo 8 aes |
+  \repeat tremolo 8 g \repeat tremolo 8 aes |
   g4 r bes \grace bes16 aes8 g16 aes |
   g4 bes,8. bes16 bes4 r |
 }
@@ -452,9 +454,9 @@ violaMvtIII = \relative c'
   g4 g8 bes4 ees8 |
   g4( f8) d4( ees16 f) |
   g4 bes,8 d8. ees16 d8 |
-  ees2.:16\f |
-  d2.:16 |
-  ees4.:16 d16 d f f aes aes |
+  \repeat tremolo 12 ees16\f |
+  \repeat tremolo 12 d16 |
+  \repeat tremolo 6 ees16 d16 d f f aes aes |
   g8 r r r4. |
   R2. |
   r8 r ees16\f ees ees8

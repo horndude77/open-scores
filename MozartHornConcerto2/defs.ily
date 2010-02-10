@@ -5,7 +5,6 @@ hornsInstrumentName = \markup
 hornInstrumentName = \markup
 \center-column {\line {Solo Horn} \line {in E\flat}}
 
-mcresc = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 pDolceMarkup = \markup {\dynamic p \normal-text \italic { dolce } }
 pDolce = #(make-dynamic-script pDolceMarkup)
 dolce = \markup {\italic "dolce"}

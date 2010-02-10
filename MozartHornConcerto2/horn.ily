@@ -2,7 +2,6 @@
 
 hornMvtI = \relative c''
 {
-  \key c \major
   \transposition ees
   R1*24 |
 
@@ -162,7 +161,6 @@ hornMvtI = \relative c''
 
 hornMvtII = \relative c''
 {
-  \key c \major
   \transposition ees
   R4.*10 |
 
@@ -272,7 +270,6 @@ theme = \relative c''
 hornMvtIII = \relative c'
 {
   \transposition ees
-  \key c \major
 
   \theme
   R2.*6 |

@@ -11,7 +11,7 @@ violinIIMvtI = \relative c'
   \repeat unfold 2 {bes( ees) g ees g ees g ees} |
   c(\f ees) aes ees aes ees aes ees c'(\p bes aes g f ees d c) |
   bes(\f ees) g ees g ees g ees bes'(\p aes g f ees d c bes) |
-  d4:16\f f:16 d:16 f:16 |
+  \repeat tremolo 4 d16\f \repeat tremolo 4 f \repeat tremolo 4 d \repeat tremolo 4 f |
   g16 ees f g aes bes c d ees f g aes bes g f ees |
   <bes' bes, d,>4 bes,,8. bes16 bes4 r |
 
@@ -28,8 +28,8 @@ violinIIMvtI = \relative c'
   ees8 ees ees ees f4.( g16 aes) |
   g4.( aes16 bes) aes4.( bes16 c) |
   aes8\f aes4 aes8 <d f,>8 <d f,>4 <d f,>8 |
-  <ees ees,>2:16 <ees ees,>:16 |
-  ees:16 d:16 |
+  \repeat tremolo 8 <ees ees,>16 \repeat tremolo 8 <ees ees,> |
+  \repeat tremolo 8 ees \repeat tremolo 8 d |
   ees4 <g bes,>4. f16 ees \grace ees16 d8 c16 d |
   ees4 <ees, g,>8. <ees g,>16 <ees g,>4 r |
 
@@ -85,15 +85,16 @@ violinIIMvtI = \relative c'
   bes4 r8 f,8\p bes4 ees |
   f8 r r4 bes,8 r r4 |
   \repeat unfold 8 bes8 |
-  bes16\mcresc bes bes bes bes4:16 a2:16 |
+  \crescJustTextCresc
+  bes16\< bes bes bes \repeat tremolo 4 bes16 \repeat tremolo 8 a |
 
   %tutti
   bes16(\f d f d f d f d) f(\p ees d c bes a g f) |
   g(\f bes ees bes ees bes ees bes) g'(\p f ees d c bes a g) |
   f(\f bes d bes d bes d bes) d(\p c bes a g f ees d) |
-  c16 c c c ees2:16 a4:16 |
-  bes2:16 bes:16 |
-  bes2:16 a:16 |
+  c16 c c c \repeat tremolo 8 ees16 \repeat tremolo 4 a |
+  \repeat tremolo 8 bes \repeat tremolo 8 bes |
+  \repeat tremolo 8 bes \repeat tremolo 8 a |
   bes4 d4. c16 bes \grace bes16 a8 g16 a |
   bes4 bes,8. bes16 bes4 r |
 
@@ -123,7 +124,8 @@ violinIIMvtI = \relative c'
   d d' d d ees ees ees ees |
   d d,4 d d d8 |
   r d4 d d d8 |
-  r bes4\mcresc bes bes bes8 |
+  \crescJustTextCresc
+  r bes4\< bes bes bes8 |
 
   %tutti
   g16\p( \repeat unfold 7 {bes ees} bes) |
@@ -132,7 +134,7 @@ violinIIMvtI = \relative c'
   bes( ees g ees g ees g ees) bes( ees g ees g ees g ees) |
   c(\f ees aes ees aes ees aes ees) c'(\p bes aes g f ees d c) |
   bes(\f ees g ees g ees g ees) bes'(\p aes g f ees d c bes) |
-  d4:16\f f:16 d:16 f:16 |
+  \repeat tremolo 4 d16\f \repeat tremolo 4 f \repeat tremolo 4 d \repeat tremolo 4 f |
   g16 ees f g aes bes c d ees f g aes bes g f ees |
   <bes' bes, d,>4 bes,,8. bes16 bes4 r |
 
@@ -197,15 +199,16 @@ violinIIMvtI = \relative c'
   ees4 r8 ees,8\p ees4 aes |
   g r ees r |
   \repeat unfold 8 ees8 |
-  ees2:16\mcresc d:16 |
+  \crescJustTextCresc
+  \repeat tremolo 8 ees16\< \repeat tremolo 8 d |
 
   %tutti
   ees16(\f g bes g bes g bes g) bes(\p aes g f ees d c bes) |
   c(\f ees aes ees aes ees aes ees) c'(\p bes aes g f ees d c) |
   bes(\f ees g ees g ees g ees) bes'(\p aes g f ees d c bes) |
-  d4:16\f f:16 d:16 f:16 |
-  ees2:16 ees:16 |
-  ees':16 d:16 |
+  \repeat tremolo 4 d16\f \repeat tremolo 4 f \repeat tremolo 4 d \repeat tremolo 4 f |
+  \repeat tremolo 8 ees16 \repeat tremolo 8 ees |
+  \repeat tremolo 8 ees' \repeat tremolo 8 d |
   ees4 <g bes,>4. f16 ees \grace ees16 d8 c16 d |
   ees4 <ees, g,>8. <ees g,>16 <ees g,>4 r |
 }
@@ -463,8 +466,9 @@ violinIIMvtIII = \relative c'
   bes'8\p r bes16 bes
     \repeat unfold 12 {bes8 r bes16 bes}
     bes8 r aes\f |
-  g4.:16 bes:16 |
-  bes2.:16 | bes2.:16 |
+  \repeat tremolo 6 g16 \repeat tremolo 6 bes |
+  \repeat tremolo 12 bes16 |
+  \repeat tremolo 12 bes16 |
   bes8 r r g\p r r |
   ees r r g r r |
   g r r <g' bes, ees,>\f r r |

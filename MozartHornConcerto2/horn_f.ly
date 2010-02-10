@@ -12,21 +12,21 @@ instrument = "Horn in F"
   {
     \new Staff
     {
-      << \transpose f ees \hornMvtI \outlineMvtI >>
+      << \transpose f ees {\key c \major \hornMvtI} \outlineMvtI >>
     }
   }
   \score
   {
     \new Staff
     {
-      << \transpose f ees \hornMvtII \outlineMvtII >>
+      << \transpose f ees {\key g \major \hornMvtII} \outlineMvtII >>
     }
   }
   \score
   {
     \new Staff
     {
-      << \transpose f ees \hornMvtIII \outlineMvtIII >>
+      << \transpose f ees {\key c \major \hornMvtIII} \outlineMvtIII >>
     }
   }
 }

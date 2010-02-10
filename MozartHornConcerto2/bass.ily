@@ -84,7 +84,8 @@ bassMvtI = \relative c
   d r8 bes'\p g4 ees |
   d8 r r4 ees8 r r4 |
   \repeat unfold 8 f8 |
-  f\mcresc \repeat unfold 7 f |
+  \crescJustTextCresc
+  f\< \repeat unfold 7 f |
 
   %tutti
   \repeat unfold 3 { bes,8\f bes bes bes bes\p bes bes bes | }
@@ -109,7 +110,8 @@ bassMvtI = \relative c
   g, r g' r |
   g, g' g g |
   f f f f |
-  bes,\mcresc bes bes bes |
+  \crescJustTextCresc
+  bes,\< bes bes bes |
 
   %tutti
   ees8 ees\p \repeat unfold 14 ees |
@@ -176,7 +178,8 @@ bassMvtI = \relative c
   g r8 ees''8\p c4 aes |
   g r ees r |
   \repeat unfold 8 bes8 |
-  bes\mcresc \repeat unfold 7 bes |
+  \crescJustTextCresc
+  bes\< \repeat unfold 7 bes |
 
   %tutti
   \repeat unfold 3 { ees8\f ees ees ees ees\p ees ees ees | }

@@ -91,7 +91,8 @@ violinIMvtI = \relative c''
   bes4 r8 bes,8\p ees4 g |
   bes8 r r4 g8 r r4 |
   d8 d d d d d d d |
-  c16\mcresc c c c c4:16 c2:16 |
+  \crescJustTextCresc
+  c16\< c c c \repeat tremolo 4 c16 \repeat tremolo 8 c16 |
 
   %tutti
   <bes' \stop bes, \stop d,>2\f r2 |
@@ -126,7 +127,8 @@ violinIMvtI = \relative c''
   g r g'4.( aes8 g fis) |
   g8 g,4 g g g8 |
   r aes4 aes aes aes8 |
-  r d,4\mcresc d d d8 |
+  \crescJustTextCresc
+  r d,4\< d d d8 |
 
   %tutti
   \appoggiatura ees16 ees'1\p |
@@ -201,7 +203,8 @@ violinIMvtI = \relative c''
   ees4 r8 g,\p aes4 c |
   bes r g r |
   g8 g g g g g g g |
-  f2:16\mcresc f2:16 |
+  \crescJustTextCresc
+  \repeat tremolo 8 f16\< \repeat tremolo 8 f16 |
 
   %tutti
   <ees g,>2\f r |
