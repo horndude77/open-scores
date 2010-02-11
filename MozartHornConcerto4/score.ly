@@ -254,7 +254,7 @@ instrument = "Orchestra"
   % MIDI
   \score
   {
-    \unfoldTremolos
+    \unfoldRepeats
     <<
       \new Staff
       {

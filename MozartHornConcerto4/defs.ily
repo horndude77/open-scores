@@ -1,13 +1,5 @@
 \version "2.13.10"
 
-%Unfold all tremolo repeats for use with midi output.
-#(define (unfold-tremolos mus)
-  (if (eq? (ly:music-property mus 'name) 'TremoloRepeatedMusic)
-    (unfold-repeats mus)
-    mus))
-unfoldTremolos = #(define-music-function (parser location mus) (ly:music?)
-  (music-map unfold-tremolos mus))
-
 stop =
 #(define-music-function (parser location music) (ly:music?)
   (set! (ly:music-property music 'tweaks)
