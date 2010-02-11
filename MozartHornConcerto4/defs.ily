@@ -35,6 +35,28 @@ hornsInstrumentName = \markup
 hornInstrumentName = \markup
 \center-column {\line {Solo Horn} \line {in E\flat}}
 
+crescTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
+}
+
+crescJustTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+dimJustTextDim =
+{
+  \set decrescendoText = \markup { \italic "dim." }
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
 space = {s1}
 
 rMark = #(define-music-function (parser location markp) (string?)

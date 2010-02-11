@@ -653,6 +653,114 @@ pianoLeftMvtI = \relative c
 
 pianoDynamicsMvtI =
 {
+  s1\f |
+  s1*11 |
+
+  %A
+  s1\p |
+  s1*6 |
+  \crescJustTextCresc
+  s4 s2.\< |
+  s1*2 |
+  s1\f |
+  s1*8 |
+
+  %B
+  s2 s\p |
+  s1*7 |
+  s1\f |
+  s1*2 |
+
+  %C
+  s1\p |
+  s1*10 |
+  s1\f |
+  s1*2 |
+  s1\p |
+  s1*5 |
+  \crescHairpin
+  s1\< |
+  s8\! s8*7\f |
+
+  %D
+  s1\p |
+  s1*20 |
+  \crescJustTextCresc
+  s1\< |
+
+  %E
+  s1\f |
+  s1*6 |
+  s4. s8\p s2 |
+  s2 s4.\f s8\p |
+  s2 s4.\f s8\p |
+
+  %F
+  s1\p |
+  s1*7 |
+  s8 s8*7\p |
+  s1 |
+  s1\p |
+  s1 |
+  \crescHairpin
+  s\< |
+  s2 s\! |
+  s1\> |
+
+  %G
+  s1\p |
+  s1*19 |
+
+  %H
+  s1\p |
+  s1*3 |
+  \crescJustTextCresc
+  s4 s2.\< |
+  s1\f |
+
+  %I
+  s4. s8\p s2 |
+  s1*3 |
+  s1\pp |
+  s1*2 |
+  s2 s8 s4. \f |
+  s1*4 |
+  s1\p |
+  s1*2 |
+  s1\f |
+  s1 |
+
+  %K
+  s1 |
+  s1\p |
+  s1*3 |
+  \crescJustTextCresc
+  s4 s2.\< |
+  s8 s8*7\f |
+  s8 s8*7\p |
+  s1*8 |
+  \crescHairpin
+  s4 s2.\< |
+  s4\f s2.\> |
+
+  %L
+  s1\!-\dolce |
+  s1*14 |
+  \crescTextCresc
+  s1\< |
+  s1\f |
+  s1*7 |
+  s1 | %fermata
+  s1\f |
+  s1*6 |
+
+  %M
+  s2 s\p |
+  s1*3 |
+  s1\pp |
+  s1*3 |
+  s1\f |
+  s1*5 |
 }
 
 pianoPedalsMvtI =
@@ -911,6 +1019,61 @@ pianoLeftMvtII = \relative c
 
 pianoDynamicsMvtII =
 {
+  s2.\p |
+  s2.*7 |
+  s2\< s4\> |
+  s4\! \crescJustTextCresc s2\< |
+
+  %N
+  s2.\f |
+  s2.*2 |
+  \dimJustTextDim
+  s4. s\> |
+  s2.\p |
+  s |
+  \crescJustTextCresc
+  s4 s2\< |
+  s2.\sf |
+  \dimJustTextDim
+  s2.\> |
+  s |
+
+  %O
+  s2.\p |
+  s2.*7 |
+  \crescJustTextCresc
+  s2.\< |
+  s2. |
+  \dimHairpin
+  s2 s4\> |
+  s4 s\! s |
+  s2.*11 |
+  \crescHairpin
+  s4. s\< |
+  s2.\> |
+  s4\! \crescJustTextCresc s2\< |
+  s2.\f |
+  s\sf |
+  s2. |
+
+  %P
+  s2. |
+  s\p |
+  s2.*9 |
+  \crescJustTextCresc
+  s2.\< |
+  s2.\! |
+  s2.*13 |
+  \crescJustTextCresc
+  s4. s\< |
+  \dimJustTextDim
+  s4 s2\> |
+
+  %Q
+  s2.\p |
+  s2.*9 |
+  s4 s2\pp |
+  s2. |
 }
 
 pianoPedalsMvtII =
@@ -1423,6 +1586,127 @@ pianoLeftMvtIII = \relative c
 
 pianoDynamicsMvtIII =
 {
+  s8 |
+  s2.\p |
+  s2.*6 |
+  s8*5 s8\f |
+  s2.*8 |
+
+  %R
+  s2.\p |
+  s2.*6 |
+  s4 s8\mf s4. |
+  s2.*4 |
+  s2.\sf\> |
+  s4.\! s\< |
+  s2.\> |
+  s\! |
+  s2.*3 |
+  s2.\f |
+  s |
+  s\p |
+  s2.*3 |
+  s4 s8\mf s4. |
+  s2.*3 |
+
+  %S
+  s8 s8*5\f |
+  s2.*2 |
+  s2.\p\> |
+  s\p |
+  s |
+  s8 s8*5\f |
+  s2.*2 |
+  s2.\p\> |
+  s\p |
+  s |
+  s\< |
+  s\> |
+  s\p |
+  s |
+  \crescJustTextCresc
+  s\< |
+  s2.*3 |
+  \dimJustTextDim
+  s2.\fp\> |
+  s |
+
+  %T
+  s\p |
+  s2.*6 |
+  s8*5 s8\f |
+  s2.*8 |
+
+  %U
+  s2. |
+  s\p |
+  s2.*20 |
+  \crescJustTextCresc
+  s4. s\< |
+  s2.*2 |
+  \crescHairpin
+  s2.\< |
+  s\f |
+  s2.*9 |
+  \dimHairpin
+  s2.\> |
+
+  %V
+  s2.\p |
+  s2.*6 |
+  s8*5 s8\f |
+  s2.*8 |
+  s2.\p |
+  s2.*3 |
+  s2.\pp |
+  s2.*3 |
+  \crescHairpin
+  s2.\< |
+  \dimHairpin
+  s2.\> |
+  s2.\mf |
+  s2.*3 |
+  s2.\f |
+  s |
+  s4. s\p |
+  s2.*3 |
+  s4 s8\mf s4. |
+  s2.*3 |
+
+  %X
+  s8 s8*5\f |
+  s2.*2 |
+  s2.\pp\< |
+  s |
+  s\> |
+  s\p |
+  s |
+  s8 s8*5\f |
+  s2.*2 |
+  s2.\pp\< |
+  s |
+  s\> |
+  s\p |
+  s2.*2 |
+  s2.\f | %fermata
+
+  %Y
+  s2.\p |
+  s2.*6 |
+  s8 s8*5\f |
+  s2.*11 |
+
+  %Z
+  s2.\p |
+  s2.*6 |
+  s2.\p |
+  s2. |
+  s8*5 s8\pp |
+  s2.*2 |
+  \crescJustTextCresc
+  s2.\< |
+  s2.\f |
+  s2.*2 |
 }
 
 pianoPedalsMvtIII =
