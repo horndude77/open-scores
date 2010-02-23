@@ -1,6 +1,5 @@
 \version "2.13.10"
 
-mcresc = #(make-dynamic-script (markup #:normal-text #:italic "cresc."))
 dolce = #(make-dynamic-script (markup #:normal-text #:italic "dolce"))
 aTwo = "a2"
 

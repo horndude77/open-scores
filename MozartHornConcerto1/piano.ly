@@ -81,6 +81,7 @@ instrument = "Piano"
   %midi
   \score
   {
+    \unfoldRepeats
     <<
       \new Staff
       {
