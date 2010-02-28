@@ -1,25 +1,17 @@
-\version "2.11.13"
+\version "2.13.13"
 
-\include "defs.lyi"
-\include "HornMvtI.lyi"
-\include "HornMvtII.lyi"
-\include "HornMvtIII.lyi"
+\include "defs.ily"
+\include "horn.ily"
 
 instrument = "Horn in F"
 
-\paper
-{
-  ragged-last-bottom = ##f
-}
-
 \book
 {
-  \include "Header.lyi"
+  \include "header.ily"
   \score
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \hornMvtI \outlineMvtI >>
     }
   }
@@ -27,7 +19,6 @@ instrument = "Horn in F"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \hornMvtII \outlineMvtII >>
     }
   }
@@ -35,7 +26,6 @@ instrument = "Horn in F"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \hornMvtIII \outlineMvtIII >>
     }
   }
