@@ -1,4 +1,6 @@
-\include "defs.lyi"
+\version "2.13.13"
+
+\include "defs.ily"
 
 pianoRight = \relative c'
 {
