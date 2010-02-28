@@ -1,22 +1,11 @@
-\version "2.11.48"
+\version "2.13.13"
 
-\include "defs.lyi"
-\include "horn_notes.lyi"
-\include "bassoon1_notes.lyi"
-\include "bassoon2_notes.lyi"
-\include "bass_notes.lyi"
-\include "continuo_notes.lyi"
-
-\paper
-{
-  %#(define page-breaking ly:minimal-breaking)
-  %#(define page-breaking ly:page-turn-breaking)
-  ragged-last-bottom = ##f
-  between-system-space = 0.5\cm
-  between-system-padding = #0
-  page-limit-inter-system-space = ##t
-  page-limit-inter-system-space-factor = 1.5
-}
+\include "defs.ily"
+\include "horn.ily"
+\include "bassoon1.ily"
+\include "bassoon2.ily"
+\include "bass.ily"
+\include "continuo.ily"
 
 #(set-global-staff-size 16)
 
@@ -24,7 +13,7 @@ instrument = "Score"
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     \new StaffGroup
@@ -106,14 +95,7 @@ instrument = "Score"
         \continuoAria
       }
     >>
-    \midi
-    {
-      \context
-      {
-        \Voice
-        \remove "Dynamic_performer"
-      }
-    }
+    \midi { }
   }
 }
 
