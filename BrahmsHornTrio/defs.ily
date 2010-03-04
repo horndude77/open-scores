@@ -1,4 +1,5 @@
-\version "2.11.62"
+\version "2.13.14"
+
 mCresc = \markup {\italic cresc.}
 mDolce = \markup {\italic dolce}
 mMoltoP = \markup {\italic molto \dynamic p}
@@ -47,12 +48,30 @@ mUnPocoStringendoCresc = \markup {\column {
 mInTempo = \markup {\italic {in tempo}}
 mMarcato = \markup {\italic marcato}
 
+stop =
+#(define-music-function (parser location music) (ly:music?)
+  (set! (ly:music-property music 'tweaks)
+        (acons 'before-line-breaking
+               (lambda (grob)
+                 (let ((dots (ly:grob-object grob 'dot)))
+                   (ly:grob-set-property! grob 'duration-log 2)
+                   (and (ly:grob? dots)
+                        (ly:grob-set-property! dots 'dot-count 0))))
+               (ly:music-property music 'tweaks)))
+  music)
+
 fade = {s16\> s s s\!}
 
 tupletTransparent =
 {
-  \once \override TupletNumber #'transparent = ##t
-  \once \override TupletBracket #'transparent = ##t
+  \override TupletNumber #'transparent = ##t
+  \override TupletBracket #'transparent = ##t
+}
+
+tupletVisible =
+{
+  \revert TupletNumber #'transparent
+  \revert TupletBracket #'transparent
 }
 
 tempoMark = #(define-music-function (parser location markp) (string?)
@@ -64,8 +83,6 @@ tempoMark = #(define-music-function (parser location markp) (string?)
 
 outlineMvtI =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/4 \tempoMark "Andante" \partial 4 s4 | s2*28 |
   \mark \default s2*27 |
   \mark \default s2*21 \bar "||"
@@ -85,8 +102,6 @@ outlineMvtI =
 
 outlineMvtII =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 3/4
   \tempoMark "Allegro" s2.*12 |
   \mark \default s2.*48 |
@@ -117,8 +132,6 @@ outlineMvtII =
 
 outlineMvtIII =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 6/8
   \tempoMark "Adagio mesto" s2.*18 |
   \mark \default s2.*7 \bar "||"
@@ -132,8 +145,6 @@ outlineMvtIII =
 
 outlineMvtIV =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 6/8
   \repeat volta 2
   {
@@ -248,4 +259,43 @@ midiOutlineMvtIV =
   s2.*34 |
   s2.*32 |
   s2.*29 |
+}
+
+afterGraceFraction = #(cons 15 16)
+
+\layout
+{
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+  }
+
+  \context
+  {
+    \RemoveEmptyStaffContext
+  }
+}
+
+\midi
+{
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
+  }
+}
+
+\paper
+{
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
 }

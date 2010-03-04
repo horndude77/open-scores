@@ -1,25 +1,17 @@
-\version "2.11.62"
+\version "2.13.14"
 
-\include "HornMvtI.lyi"
-\include "HornMvtII.lyi"
-\include "HornMvtIII.lyi"
-\include "HornMvtIV.lyi"
+\include "horn.ily"
+\include "defs.ily"
 
 instrument = "Horn in F"
 
-\paper
-{
-  ragged-last-bottom = ##f
-}
-
 \book
 {
-  \include "Header.lyi"
+  \include "header.ily"
   \score
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \transpose f ees \hornMvtI \outlineMvtI >>
     }
   }
@@ -27,7 +19,6 @@ instrument = "Horn in F"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \transpose f ees \hornMvtII \outlineMvtII >>
     }
     \header { piece = "Scherzo" }
@@ -36,7 +27,6 @@ instrument = "Horn in F"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \transpose f ees \hornMvtIII \outlineMvtIII >>
     }
   }
@@ -44,10 +34,8 @@ instrument = "Horn in F"
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \transpose f ees \hornMvtIV \outlineMvtIV >>
     }
     \header { piece = "Finale" }
   }
 }
-
