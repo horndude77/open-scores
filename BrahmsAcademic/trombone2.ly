@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "trombone2.ily"
+\include "defs.ily"
 
-instrument = \TromboneIIInstrumentName
-TromboneIIShortInstrumentName = ""
+instrument = "Trombone II"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("TromboneII")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \tromboneTwo \outline >>
+  }
+}

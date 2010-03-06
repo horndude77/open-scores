@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "trumpet3.ily"
+\include "defs.ily"
 
-instrument = \TrumpetIIIInstrumentName
-TrumpetIIIShortInstrumentName = ""
+instrument = "Trumpet III in C"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("TrumpetIII")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \trumpetThree \outline >>
+  }
+}

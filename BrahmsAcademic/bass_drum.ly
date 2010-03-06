@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "percussion.ily"
+\include "defs.ily"
 
-instrument = \BassDrumInstrumentName
-BassDrumShortInstrumentName = ""
+instrument = "Bass Drum"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("BassDrumStaff")
+\score
+{
+  \new RhythmicStaff
+  {
+    << \removeWithTag #'score \bassDrum \outline >>
+  }
+}

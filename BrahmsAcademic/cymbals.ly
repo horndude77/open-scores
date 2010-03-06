@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "percussion.ily"
+\include "defs.ily"
 
-instrument = \CymbalsInstrumentName
-CymbalsShortInstrumentName = ""
+instrument = "Cymbals"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("CymbalsStaff")
+\score
+{
+  \new RhythmicStaff
+  {
+    << \removeWithTag #'score \cymbals \outline >>
+  }
+}

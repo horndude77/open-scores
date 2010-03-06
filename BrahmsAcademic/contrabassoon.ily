@@ -1,3 +1,7 @@
+\version "2.13.15"
+
+\include "defs.ily"
+
 contrabassoon = \relative c,
 {
   \set Staff.midiInstrument = "bassoon"
@@ -242,7 +246,3 @@ contrabassoon = \relative c,
   r4 c,-. c-. |
   c2.\fermata |
 }
-
-ContrabassoonInstrumentName = "Contrabassoon"
-ContrabassoonShortInstrumentName = "Cbsn."
-AcademicContrabassoonMusic = << \outline \contrabassoon >>

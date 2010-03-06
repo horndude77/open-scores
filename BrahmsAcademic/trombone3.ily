@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 tromboneThree = \relative c
@@ -153,7 +155,3 @@ tromboneThree = \relative c
   r4 c-. c-. |
   c,2.\fermata |
 }
-
-TromboneIIIInstrumentName = "Bass Trombone"
-TromboneIIIShortInstrumentName = "Tb.III"
-AcademicTromboneIIIMusic = << \outline \tromboneThree >>

@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "tuba.ily"
+\include "defs.ily"
 
-instrument = \TubaInstrumentName
-TubaShortInstrumentName = ""
+instrument = "Tuba"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("Tuba")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \tuba \outline >>
+  }
+}

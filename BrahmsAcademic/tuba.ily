@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 tuba = \relative c,,
@@ -169,7 +171,3 @@ tuba = \relative c,,
   r4 c-. c-. |
   c,2.\fermata |
 }
-
-TubaInstrumentName = "Bass Tuba"
-TubaShortInstrumentName = "Tuba"
-AcademicTubaMusic = << \outline \tuba >>

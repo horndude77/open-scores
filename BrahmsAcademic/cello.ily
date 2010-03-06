@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 cello = \relative c,
@@ -493,7 +495,3 @@ cello = \relative c,
   r4 c,-. c-. |
   c2.\fermata |
 }
-
-CelloInstrumentName = "Cello"
-CelloShortInstrumentName = "Vcl."
-AcademicCelloMusic = << \outline \cello >>

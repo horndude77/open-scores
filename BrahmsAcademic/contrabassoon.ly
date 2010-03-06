@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "contrabassoon.ily"
+\include "defs.ily"
 
-instrument = \ContrabassoonInstrumentName
-ContrabassoonShortInstrumentName = ""
+instrument = "Contrabassoon"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("Contrabassoon")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \contrabassoon \outline >>
+  }
+}

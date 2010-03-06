@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "clarinet2.ily"
+\include "defs.ily"
 
-instrument = \ClarinetIIInstrumentName
-ClarinetIIShortInstrumentName = ""
+instrument = \markup {Clarinet II in B\flat}
 
 \include "header.ily"
 
-\createScore #"Academic" #'("ClarinetII")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \clarinetTwo \outline >>
+  }
+}

@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "bassoon2.ily"
+\include "defs.ily"
 
-instrument = \BassoonIIInstrumentName
-BassoonIIShortInstrumentName = ""
+instrument = "Bassoon II"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("BassoonII")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \bassoonTwo \outline >>
+  }
+}

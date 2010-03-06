@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 clarinetOne = \relative c''
@@ -6,6 +8,11 @@ clarinetOne = \relative c''
   \transposition bes
   \key d \minor
   \grace {s16*3}
+  \tag #'score
+  {
+    \voiceOne
+    \dynamicUp
+  }
   R1*16 |
 
   %A
@@ -304,7 +311,3 @@ clarinetOne = \relative c''
   r4 fis4-. fis-. |
   fis2.\fermata |
 }
-
-ClarinetIInstrumentName = "Clarinet I"
-ClarinetIShortInstrumentName = "Cl.I"
-AcademicClarinetIMusic = << \outline \clarinetOne >>

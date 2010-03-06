@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 trumpetThree = \relative c''
@@ -124,7 +126,3 @@ trumpetThree = \relative c''
   r4 c-. c-. |
   c2.\fermata |
 }
-
-TrumpetIIIInstrumentName = "Trumpet III in C"
-TrumpetIIIShortInstrumentName = "Tp.III"
-AcademicTrumpetIIIMusic = << \outline \trumpetThree >>

@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 oboeOne = \relative c'''
@@ -5,6 +7,11 @@ oboeOne = \relative c'''
   \set Staff.midiInstrument = "oboe"
   \key c \minor
   \grace {s16*3}
+  \tag #'score
+  {
+    \voiceOne
+    \dynamicUp
+  }
   R1*16 |
 
   %A
@@ -318,7 +325,3 @@ oboeOne = \relative c'''
   r4 e-. e-. |
   e2.\fermata |
 }
-
-OboeIInstrumentName = "Oboe I"
-OboeIShortInstrumentName = "Ob.I"
-AcademicOboeIMusic = << \outline \oboeOne >>

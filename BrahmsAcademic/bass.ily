@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 bass = \relative c,
@@ -381,7 +383,3 @@ bass = \relative c,
   r4 c,-. c-. |
   c2.\fermata |
 }
-
-BassInstrumentName = "Bass"
-BassShortInstrumentName = "Cb."
-AcademicBassMusic = << \outline \bass >>

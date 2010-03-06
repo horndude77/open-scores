@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 bassDrum = \drummode
@@ -274,15 +276,3 @@ triangle =
   r4 c-. c-. |
   \repeat tremolo 24 c32\fermata |
 }
-
-BassDrumStaffInstrumentName = "Bass Drum"
-BassDrumStaffShortInstrumentName = "Bd."
-AcademicBassDrumMusic = << \outline \bassDrum >>
-
-CymbalsStaffInstrumentName = "Cymbals"
-CymbalsStaffShortInstrumentName = "Cym."
-AcademicCymbalsMusic = << \outline \cymbals >>
-
-TriangleStaffInstrumentName = "Triangle"
-TriangleStaffShortInstrumentName = "Tri."
-AcademicTriangleMusic = << \outline \triangle >>

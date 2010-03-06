@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "timpani.ily"
+\include "defs.ily"
 
-instrument = \TimpaniInstrumentName
-TimpaniShortInstrumentName = ""
+instrument = "Timpani G,C,D"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("Timpani")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \timpani \outline >>
+  }
+}

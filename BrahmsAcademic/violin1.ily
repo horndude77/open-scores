@@ -1,11 +1,14 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 violinOne = \relative c'
 {
   \set Staff.midiInstrument = "string ensemble 1"
   \key c \minor
+  \appoggiatura {g16[ a b]}
   \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-  \appoggiatura {g16[ a b]} c8-.->\ppSempreESottoVoce c-. d-. b-. c-.-> c-. d-. b-. |
+  c8-.->\ppSempreESottoVoce c-. d-. b-. c-.-> c-. d-. b-. |
   c4-> bes8-> aes-. g4 r |
   g r g ees'8-. f-. |
   g8-.-> g-. aes-. fis-. g-.-> g-. aes-. fis-. |
@@ -411,7 +414,3 @@ violinOne = \relative c'
   r4 <g,, e' c'>-. <g e' c'>-. |
   <e c'>2.\fermata |
 }
-
-ViolinIInstrumentName = "Violin I"
-ViolinIShortInstrumentName = "Vn.I"
-AcademicViolinIMusic = << \outline \violinOne >>

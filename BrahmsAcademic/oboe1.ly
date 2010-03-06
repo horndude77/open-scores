@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "oboe1.ily"
+\include "defs.ily"
 
-instrument = \OboeIInstrumentName
-OboeIShortInstrumentName = ""
+instrument = "Oboe I"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("OboeI")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \oboeOne \outline >>
+  }
+}

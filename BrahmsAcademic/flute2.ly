@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "flute2.ily"
+\include "defs.ily"
 
-instrument = \FluteIIInstrumentName
-FluteIIShortInstrumentName = ""
+instrument = "Flute II"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("FluteII")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \fluteTwo \outline >>
+  }
+}

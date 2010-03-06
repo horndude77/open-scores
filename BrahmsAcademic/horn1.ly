@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "horn1.ily"
+\include "defs.ily"
 
-instrument = \HornIInstrumentName
-HornIShortInstrumentName = ""
+instrument = "Horn I in C"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("HornI")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \hornOne \outline >>
+  }
+}

@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.13.15"
 
 \include "defs.ily"
 
@@ -7,6 +7,11 @@ hornOne = \relative c''
   \set Staff.midiInstrument = "french horn"
   \transposition c
   \grace {s16*3}
+  \tag #'score
+  {
+    \voiceOne
+    \dynamicUp
+  }
   c4-.\pp r c-. r |
   c4-. r r2 |
   R1 |
@@ -344,7 +349,3 @@ hornOne = \relative c''
   r4 c-. c-. |
   c2.\fermata |
 }
-
-HornIInstrumentName = "Horn I in C"
-HornIShortInstrumentName = "Hn.I"
-AcademicHornIMusic = << \outline \hornOne >>

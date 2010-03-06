@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 violinTwo = \relative c'
@@ -422,7 +424,3 @@ violinTwo = \relative c'
   r4 <g, e' c'>-. <g e' c'>-. |
   <e c'>2.\fermata |
 }
-
-ViolinIIInstrumentName = "Violin II"
-ViolinIIShortInstrumentName = "Vn.II"
-AcademicViolinIIMusic = << \outline \violinTwo >>

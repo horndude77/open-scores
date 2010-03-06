@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 bassoonTwo = \relative c
@@ -6,6 +8,11 @@ bassoonTwo = \relative c
   \clef bass
   \key c \minor
   \grace {s16*3}
+  \tag #'score
+  {
+    \voiceTwo
+    \dynamicDown
+  }
   \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees4-.\ppSempreESottoVoce f-. ees-. f-. |
   ees-. f-. ees-. c-. |
@@ -358,7 +365,3 @@ bassoonTwo = \relative c
   r4 c,-. c-. |
   c2.\fermata |
 }
-
-BassoonIIInstrumentName = "Bassoon II"
-BassoonIIShortInstrumentName = "Bsn.II"
-AcademicBassoonIIMusic = << \outline \bassoonTwo >>

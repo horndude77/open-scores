@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 viola = \relative c
@@ -482,7 +484,3 @@ viola = \relative c
   r4 <c, g' e'>-. <c g' e'>-. |
   <\stop c g' e'>2.\fermata |
 }
-
-ViolaInstrumentName = "Viola"
-ViolaShortInstrumentName = "Vla."
-AcademicViolaMusic = << \outline \viola >>

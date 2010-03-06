@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "violin1.ily"
+\include "defs.ily"
 
-instrument = \ViolinIInstrumentName
-ViolinIShortInstrumentName = ""
+instrument = "Violin I"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("ViolinI")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \violinOne \outline >>
+  }
+}

@@ -1,9 +1,16 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 trumpetOne = \relative c''
 {
   \set Staff.midiInstrument = "trumpet"
   \grace {s16*3}
+  \tag #'score
+  {
+    \voiceOne
+    \dynamicUp
+  }
   R1*16 |
 
   %A
@@ -198,7 +205,3 @@ trumpetOne = \relative c''
   r4 e-. e-. |
   c2.\fermata |
 }
-
-TrumpetIInstrumentName = "Trumpet I in C"
-TrumpetIShortInstrumentName = "Tp.I"
-AcademicTrumpetIMusic = << \outline \trumpetOne >>

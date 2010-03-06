@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "bass.ily"
+\include "defs.ily"
 
-instrument = \BassInstrumentName
-BassShortInstrumentName = ""
+instrument = "Bass"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("Bass")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \bass \outline >>
+  }
+}

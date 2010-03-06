@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.13.15"
 
 pfMarkup = \markup {\dynamic pf}
 pf = #(make-dynamic-script pfMarkup)
@@ -56,6 +56,25 @@ stop =
                         (ly:grob-set-property! dots 'dot-count 0))))
                (ly:music-property music 'tweaks)))
   music)
+
+%Custom mark
+%A, B, ..., H, I, K, ..., Z, AA, BB, .., ZZ, AAA, ...
+#(define (num->tchaik-letter num)
+  (let* ((n (modulo num 25))
+         (offset (if (< n 9) 65 66)))
+    (integer->char (+ n offset))))
+
+#(define (repeat-list item times)
+  (cond ((= 0 times) '())
+        (else (cons item (repeat-list item (1- times))))))
+
+#(define (make-tchaik-markletter-markup num)
+  (let ((char (num->tchaik-letter num))
+        (times (+ 1 (quotient num 25))))
+    (list->string (repeat-list char times))))
+
+#(define (tchaik-mark-formatter mark context)
+  (make-bold-markup (make-box-markup (make-tchaik-markletter-markup (1- mark)))))
 
 crescTextCresc =
 {
@@ -211,4 +230,58 @@ outline =
       \smaller \general-align #Y #DOWN \note #"4" #1
     ) }} 8=92
   s2.*23 | \bar "|."
+}
+
+afterGraceFraction = #(cons 15 16)
+
+\layout
+{
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+    markFormatter = #tchaik-mark-formatter
+  }
+
+  \context
+  {
+    \RemoveEmptyStaffContext
+  }
+
+  \context
+  {
+    \RemoveEmptyRhythmicStaffContext
+  }
+
+  %WARNING: Must follow RemoveEmptyRhythmicStaffContext!!!
+  \context
+  {
+    \RhythmicStaff
+    %TODO: Full measure rests are placed incorrectly. However this workaround
+    %also misplaces all other multi measure rests.
+    \override MultiMeasureRest #'extra-offset = #'(0 . -1)
+  }
+}
+
+\midi
+{
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
+  }
+}
+
+\paper
+{
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
 }

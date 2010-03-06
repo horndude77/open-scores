@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "piccolo.ily"
+\include "defs.ily"
 
-instrument = \PiccoloInstrumentName
-PiccoloShortInstrumentName = ""
+instrument = "Piccolo"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("Piccolo")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \piccolo \outline >>
+  }
+}

@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 tromboneOne = \relative c'
@@ -6,6 +8,11 @@ tromboneOne = \relative c'
   \clef alto
   \key c \minor
   \grace {s16*3}
+  \tag #'score
+  {
+    \voiceOne
+    \dynamicUp
+  }
   R1*16 |
 
   %A
@@ -160,7 +167,3 @@ tromboneOne = \relative c'
   r4 e-. e-. |
   e2.\fermata |
 }
-
-TromboneIInstrumentName = "Trombone I"
-TromboneIShortInstrumentName = "Tb.I"
-AcademicTromboneIMusic = << \outline \tromboneOne >>

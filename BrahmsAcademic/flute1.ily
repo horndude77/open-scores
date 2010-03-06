@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 fluteOne = \relative c''
@@ -5,6 +7,11 @@ fluteOne = \relative c''
   \set Staff.midiInstrument = "flute"
   \key c \minor
   \grace {s16*3}
+  \tag #'score
+  {
+    \voiceOne
+    \dynamicUp
+  }
   R1*16 |
 
   %A
@@ -316,7 +323,3 @@ fluteOne = \relative c''
   r4 c-. c-. |
   c2.\fermata |
 }
-
-FluteIInstrumentName = "Flute I"
-FluteIShortInstrumentName = "Fl.I"
-AcademicFluteIMusic = << \outline \fluteOne >>

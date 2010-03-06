@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 piccolo = \relative c'''
@@ -149,7 +151,3 @@ piccolo = \relative c'''
   R2. |
   R2.^\fermataMarkup
 }
-
-PiccoloInstrumentName = "Piccolo"
-PiccoloShortInstrumentName = "Pco."
-AcademicPiccoloMusic = << \outline \piccolo >>

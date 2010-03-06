@@ -1,3 +1,5 @@
+\version "2.13.15"
+
 \include "defs.ily"
 
 timpani = \relative c
@@ -177,7 +179,3 @@ timpani = \relative c
   r4 c-. c-. |
   << c2.\fermata\startTrillSpan {s16*11 s16\stopTrillSpan} >> |
 }
-
-TimpaniInstrumentName = "Timpani G,C,D"
-TimpaniShortInstrumentName = "Timp."
-AcademicTimpaniMusic = << \outline \timpani >>

@@ -1,16 +1,23 @@
-\version "2.12.2"
+\version "2.13.15"
+
+\include "defs.ily"
 
 hornFour = \relative c''
 {
   \set Staff.midiInstrument = "french horn"
   \transposition e
   \grace {s16*3}
+  \tag #'score
+  {
+    \voiceTwo
+    \dynamicDown
+  }
   R1*16 |
 
-  \mark \default
+  %A
   R1*8 |
 
-  \mark \default
+  %B
   R1*17 |
   r2 r4 c8-.\mf d-. |
   ees4 r r c8-.\f d-. |
@@ -21,7 +28,7 @@ hornFour = \relative c''
   c4-. r8 g-. c4-. r8 c-. |
   g4.->( g,8) c4-. r8 ees\p |
 
-  \mark \default
+  %C
   ees2. r8 ees |
   ees2. r4 |
   R1*12 |
@@ -35,7 +42,7 @@ hornFour = \relative c''
   ees1~ |
   ees4 r r2 |
 
-  \mark \default
+  %D
   des'2_\markup{\italic{cresc. poco a poco}} des |
   f des |
   c1 |
@@ -53,7 +60,7 @@ hornFour = \relative c''
   c2 c4 r |
   R1*11 |
 
-  \mark \default
+  %E
   R1*11 |
   r4 c-.\f g,-. r |
   r d''-. g,,-. r |
@@ -66,7 +73,7 @@ hornFour = \relative c''
   c2. r4 |
   R1*2 |
 
-  \mark \default
+  %F
   g1~\< |
   g2\> r\! |
   r ees'~\p |
@@ -89,11 +96,11 @@ hornFour = \relative c''
   \times 2/3 {c( a) a-.} \times 2/3 {bes( g) g-.} |
   \times 2/3 {bes( g) g-.} d'4-> |
 
-  \mark \default
+  %G
   g,,8-. r r4 |
   R2*21 |
 
-  \mark \default
+  %H
   R2*12 |
   r4 bes'~\p\cresc |
   \repeat unfold 7 {bes bes~ |}
@@ -111,13 +118,13 @@ hornFour = \relative c''
   g4 r r2 |
   R1*11 |
 
-  \mark \default
+  %I
   R1*11 |
   r2 r4 aes,~-+\p\< |
   aes1~-+ | aes~-+\> | aes4-+\! r r2 |
   R1*7 |
 
-  \mark \default
+  %K
   R1*5 |
   r4 g-.\f c-. c-. |
   R1*2 |
@@ -142,10 +149,10 @@ hornFour = \relative c''
   c2 ees,4 r |
   R1*4 |
 
-  \mark \default
+  %L
   R1*10 |
 
-  \mark \default
+  %M
   R1*24 |
 
   %\time 2/4
@@ -180,7 +187,3 @@ hornFour = \relative c''
   r4 ees,-. ees-. |
   ees2.\fermata |
 }
-
-HornIVInstrumentName = "Horn IV in E"
-HornIVShortInstrumentName = "Hn.IV"
-AcademicHornIVMusic = << \outline \hornFour >>

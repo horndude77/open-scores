@@ -1,10 +1,16 @@
-\version "2.13.5"
+\version "2.13.15"
 
-\include "structure.ily"
+\include "cello.ily"
+\include "defs.ily"
 
-instrument = \CelloInstrumentName
-CelloShortInstrumentName = ""
+instrument = "Cello"
 
 \include "header.ily"
 
-\createScore #"Academic" #'("Cello")
+\score
+{
+  \new Staff
+  {
+    << \removeWithTag #'score \cello \outline >>
+  }
+}
