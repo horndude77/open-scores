@@ -31,6 +31,19 @@
 \include "viola.ily"
 \include "bass.ily"
 
+\layout
+{
+  \context
+  {
+    \RemoveEmptyStaffContext
+  }
+
+  \context
+  {
+    \RemoveEmptyRhythmicStaffContext
+  }
+}
+
 #(set-global-staff-size 14)
 instrument = "Orchestra"
 

@@ -4,7 +4,6 @@
 
 bassDrum = \drummode
 {
-  \clef percussion 
   \grace {s16*3}
   bd4-.\pp r bd-. r |
   bd r r2 |
@@ -100,7 +99,6 @@ bassDrum = \drummode
 
 cymbals = \drummode
 {
-  \clef percussion 
   \grace {s16*3}
   cymr4-.\pp r cymr-. r |
   cymr r r2 |
@@ -190,7 +188,6 @@ cymbals = \drummode
 
 triangle =
 {
-  \clef percussion 
   \grace {s16*3}
   R1*16 |
 

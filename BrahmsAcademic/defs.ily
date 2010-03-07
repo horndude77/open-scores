@@ -248,25 +248,6 @@ afterGraceFraction = #(cons 15 16)
                                ,(make-accidental-rule 'same-octave 1))
     markFormatter = #tchaik-mark-formatter
   }
-
-  \context
-  {
-    \RemoveEmptyStaffContext
-  }
-
-  \context
-  {
-    \RemoveEmptyRhythmicStaffContext
-  }
-
-  %WARNING: Must follow RemoveEmptyRhythmicStaffContext!!!
-  \context
-  {
-    \RhythmicStaff
-    %TODO: Full measure rests are placed incorrectly. However this workaround
-    %also misplaces all other multi measure rests.
-    \override MultiMeasureRest #'extra-offset = #'(0 . -1)
-  }
 }
 
 \midi
