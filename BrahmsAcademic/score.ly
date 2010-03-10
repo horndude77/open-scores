@@ -42,6 +42,16 @@
   {
     \RemoveEmptyRhythmicStaffContext
   }
+
+  %Ugh. The remove staff stuff above kills all previous settings.
+  \context
+  {
+    \RhythmicStaff
+
+    %Workaround bug. Without this the multimeasure rest would be placed above
+    %the staffline.
+    \override MultiMeasureRest #'staff-position = #0.01
+  }
 }
 
 #(set-global-staff-size 14)

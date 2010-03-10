@@ -248,6 +248,15 @@ afterGraceFraction = #(cons 15 16)
                                ,(make-accidental-rule 'same-octave 1))
     markFormatter = #tchaik-mark-formatter
   }
+
+  \context
+  {
+    \RhythmicStaff
+
+    %Workaround bug. Without this the multimeasure rest would be placed above
+    %the staffline.
+    \override MultiMeasureRest #'staff-position = #0.01
+  }
 }
 
 \midi
