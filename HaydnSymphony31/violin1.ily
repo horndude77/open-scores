@@ -595,6 +595,8 @@ violinOneMvtIV = \relative c''
     {
       alignAboveContext = #"violinIs"
       midiInstrument = "string ensemble 1"
+      instrumentName = \markup {\center-column {Principal Violin}}
+      shortInstrumentName = "P.Vln."
     }
     \violinPrincipalMvtIVVarV
     {

@@ -28,26 +28,75 @@ instrument = "Orchestra"
   <<
     \new StaffGroup
     <<
-      \new Staff { \fluteMvtI }
-      \new Staff { << \oboeOneMvtI \\ \oboeTwoMvtI >> }
+      \new Staff
+      \with
+      {
+        instrumentName = "Flute"
+        shortInstrumentName = "Fl."
+      }
+      { \fluteMvtI }
+      \new Staff
+      \with
+      {
+        instrumentName = "Oboes I,II"
+        shortInstrumentName = "Ob.I,II"
+      }
+      { << \oboeOneMvtI \\ \oboeTwoMvtI >> }
       \new GrandStaff
       <<
-        \new Staff { << << \hornOneMvtI \\ \hornTwoMvtI >> \outlineMvtI >> }
-        \new Staff { << \hornThreeMvtI \\ \hornFourMvtI >> }
+        \new Staff
+        \with
+        {
+          instrumentName = "Horns I,II"
+          shortInstrumentName = "Hn.I,II"
+        }
+        { << << \hornOneMvtI \\ \hornTwoMvtI >> \outlineMvtI >> }
+        \new Staff
+        \with
+        {
+          instrumentName = "Horns III,IV"
+          shortInstrumentName = "Hn.III,IV"
+        }
+        { << \hornThreeMvtI \\ \hornFourMvtI >> }
       >>
     >>
     \new StaffGroup
     <<
       \new GrandStaff
       <<
-        \new Staff { \violinOneMvtI }
-        \new Staff { \violinTwoMvtI }
+        \new Staff
+        \with
+        {
+          instrumentName = "Violin I"
+          shortInstrumentName = "Vln.I"
+        }
+        { \violinOneMvtI }
+        \new Staff
+        \with
+        {
+          instrumentName = "Violin II"
+          shortInstrumentName = "Vln.II"
+        }
+        { \violinTwoMvtI }
       >>
-      \new Staff { \violaMvtI }
-      \new Staff { \bassMvtI }
+      \new Staff
+      \with
+      {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+      }
+      { \violaMvtI }
+      \new Staff
+      \with
+      {
+        instrumentName = "Cello/Bass"
+        shortInstrumentName = "B."
+      }
+      { \bassMvtI }
     >>
   >>
 }
+
 \score
 {
   <<
@@ -55,71 +104,213 @@ instrument = "Orchestra"
     <<
       \new GrandStaff
       <<
-        \new Staff { << << \hornOneMvtII \\ \hornTwoMvtII >> \outlineMvtII >> }
-        \new Staff { << \hornThreeMvtII \\ \hornFourMvtII >> }
+        \new Staff
+        \with
+        {
+          instrumentName = "Horns I,II"
+          shortInstrumentName = "Hn.I,II"
+        }
+        { << << \hornOneMvtII \\ \hornTwoMvtII >> \outlineMvtII >> }
+        \new Staff
+        \with
+        {
+          instrumentName = "Horns III,IV"
+          shortInstrumentName = "Hn.III,IV"
+        }
+        { << \hornThreeMvtII \\ \hornFourMvtII >> }
       >>
     >>
     \new StaffGroup
     <<
-      \new Staff { \violinPrincipalMvtII }
       \new GrandStaff
       <<
-        \new Staff { \violinOneMvtII }
-        \new Staff { \violinTwoMvtII }
+        \new Staff
+        \with
+        {
+          instrumentName = "Violin I"
+          shortInstrumentName = "Vln.I"
+        }
+        { \violinOneMvtII }
+        \new Staff
+        \with
+        {
+          instrumentName = "Violin II"
+          shortInstrumentName = "Vln.II"
+        }
+        { \violinTwoMvtII }
       >>
-      \new Staff { \violaMvtII }
-      \new Staff { \celloSoloMvtII }
-      \new Staff { \bassMvtII }
+      \new Staff
+      \with
+      {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+      }
+      { \violaMvtII }
+      \new Staff
+      \with
+      {
+        instrumentName = "Solo Cello"
+        shortInstrumentName = "Vcl."
+      }
+      { \celloSoloMvtII }
+      \new Staff
+      \with
+      {
+        instrumentName = "Cello/Bass"
+        shortInstrumentName = "B."
+      }
+      { \bassMvtII }
     >>
   >>
 }
+
 \score
 {
   <<
     \new StaffGroup
     <<
-      \new Staff { \fluteMvtIII }
-      \new Staff { << \oboeOneMvtIII \\ \oboeTwoMvtIII >> }
+      \new Staff
+      \with
+      {
+        instrumentName = "Flute"
+        shortInstrumentName = "Fl."
+      }
+      { \fluteMvtIII }
+      \new Staff
+      \with
+      {
+        instrumentName = "Oboes I,II"
+        shortInstrumentName = "Ob.I,II"
+      }
+      { << \oboeOneMvtIII \\ \oboeTwoMvtIII >> }
       \new GrandStaff
       <<
-        \new Staff { << << \hornOneMvtIII \\ \hornTwoMvtIII >> \outlineMvtIII >> }
-        \new Staff { << \hornThreeMvtIII \\ \hornFourMvtIII >> }
+        \new Staff
+        \with
+        {
+          instrumentName = "Horns I,II"
+          shortInstrumentName = "Hn.I,II"
+        }
+        { << << \hornOneMvtIII \\ \hornTwoMvtIII >> \outlineMvtIII >> }
+        \new Staff
+        \with
+        {
+          instrumentName = "Horns III,IV"
+          shortInstrumentName = "Hn.III,IV"
+        }
+        { << \hornThreeMvtIII \\ \hornFourMvtIII >> }
       >>
     >>
     \new StaffGroup
     <<
       \new GrandStaff
       <<
-        \new Staff { \violinOneMvtIII }
-        \new Staff { \violinTwoMvtIII }
+        \new Staff
+        \with
+        {
+          instrumentName = "Violin I"
+          shortInstrumentName = "Vln.I"
+        }
+        { \violinOneMvtIII }
+        \new Staff
+        \with
+        {
+          instrumentName = "Violin II"
+          shortInstrumentName = "Vln.II"
+        }
+        { \violinTwoMvtIII }
       >>
-      \new Staff { \violaMvtIII }
-      \new Staff { \bassMvtIII }
+      \new Staff
+      \with
+      {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+      }
+      { \violaMvtIII }
+      \new Staff
+      \with
+      {
+        instrumentName = "Cello/Bass"
+        shortInstrumentName = "B."
+      }
+      { \bassMvtIII }
     >>
   >>
 }
+
 \score
 {
   <<
     \new StaffGroup
     <<
-      \new Staff { \fluteMvtIV }
-      \new Staff { << \oboeOneMvtIV \\ \oboeTwoMvtIV >> }
+      \new Staff
+      \with
+      {
+        instrumentName = "Flute"
+        shortInstrumentName = "Fl."
+      }
+      { \fluteMvtIV }
+      \new Staff
+      \with
+      {
+        instrumentName = "Oboes I,II"
+        shortInstrumentName = "Ob.I,II"
+      }
+      { << \oboeOneMvtIV \\ \oboeTwoMvtIV >> }
       \new GrandStaff
       <<
-        \new Staff { << << \hornOneMvtIV \\ \hornTwoMvtIV >> \outlineMvtIV >> }
-        \new Staff { << \hornThreeMvtIV \\ \hornFourMvtIV >> }
+        \new Staff
+        \with
+        {
+          instrumentName = "Horns I,II"
+          shortInstrumentName = "Hn.I,II"
+        }
+        { << << \hornOneMvtIV \\ \hornTwoMvtIV >> \outlineMvtIV >> }
+        \new Staff
+        \with
+        {
+          instrumentName = "Horns III,IV"
+          shortInstrumentName = "Hn.III,IV"
+        }
+        { << \hornThreeMvtIV \\ \hornFourMvtIV >> }
       >>
     >>
     \new StaffGroup
     <<
       \new GrandStaff
       <<
-        \new Staff = violinIs { \violinOneMvtIV }
-        \new Staff { \violinTwoMvtIV }
+        \new Staff = "violinIs"
+        \with
+        {
+          instrumentName = "Violin I"
+          shortInstrumentName = "Vln.I"
+        }
+        { \violinOneMvtIV }
+        \new Staff
+        \with
+        {
+          instrumentName = "Violin II"
+          shortInstrumentName = "Vln.II"
+        }
+        { \violinTwoMvtIV }
       >>
-      \new Staff { \violaMvtIV }
-      \new Staff = basses { \bassMvtIV }
+      \new Staff
+      \with
+      {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+      }
+      { \violaMvtIV }
+      \new GrandStaff
+      {
+        \new Staff = "basses"
+        \with
+        {
+          instrumentName = "Cello/Bass"
+          shortInstrumentName = "B."
+        }
+        { \bassMvtIV }
+      }
     >>
   >>
 }

@@ -132,6 +132,23 @@ fluteMvtI = \relative c'''
   }
 }
 
+fluteMvtII =
+{
+  s1*0^\tacet
+  \repeat volta 2
+  {
+    r8 |
+    R2.*34 |
+    r4 r8 r4
+  }
+  \repeat volta 2
+  {
+    r8 | \noBreak
+    R2.*42 |
+    r4 r8 r4
+  }
+}
+
 fluteMvtIII = \relative c'
 {
   \key d \major

@@ -3,6 +3,7 @@
 solo = \markup {Solo}
 pizz = \markup {pizz.}
 arco = \markup {arco}
+tacet = \markup {\large \smallCaps Tacet}
 
 outlineMvtI =
 {

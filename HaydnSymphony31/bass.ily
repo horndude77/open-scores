@@ -577,6 +577,8 @@ bassMvtIV = \relative c
     {
       alignAboveContext = #"basses"
       midiInstrument = "string ensemble 1"
+      instrumentName = \markup {\center-column {Solo Cello}}
+      shortInstrumentName = "Vcl."
     }
     \celloSoloMvtIVVarII
     {
@@ -713,6 +715,8 @@ bassMvtIV = \relative c
     {
       alignAboveContext = #"basses"
       midiInstrument = "string ensemble 1"
+      instrumentName = \markup {\center-column {Solo Cello}}
+      shortInstrumentName = "Vcl."
     }
     \celloSoloMvtIVVarVII
     {
