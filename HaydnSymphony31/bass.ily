@@ -576,6 +576,7 @@ bassMvtIV = \relative c
     \with
     {
       alignAboveContext = #"basses"
+      midiInstrument = "string ensemble 1"
     }
     \celloSoloMvtIVVarII
     {
@@ -711,6 +712,7 @@ bassMvtIV = \relative c
     \with
     {
       alignAboveContext = #"basses"
+      midiInstrument = "string ensemble 1"
     }
     \celloSoloMvtIVVarVII
     {

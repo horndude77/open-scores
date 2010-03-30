@@ -45,6 +45,62 @@ oboeTwoMvtI = \relative c''
     a4 r r |
     R2.*8 |
   }
+  \repeat volta 2
+  {
+    R2.*5 |
+    eis2. |
+    fis8 fis16 fis fis8 fis fis fis |
+    fis4 r r |
+    R2.*14 |
+    b2.~ |
+    b~ |
+    b~ |
+    b2 cis8 b |
+    ais4 r r |
+    R2.*6 |
+    b2.~ |
+    b |
+    R2. |
+    fis'2.~ |
+    fis |
+    e~ |
+    e2 c4 |
+    e2.~ |
+    e |
+    e~ |
+    e2 d4 |
+    e2 d4 |
+    d4 r b |
+    a cis cis |
+    cis r r |
+    R2.*15 |
+    r4 a4\f b |
+    cis cis d |
+    e r r |
+    r4 d d |
+    d2.~ |
+    d2 cis4 |
+    d fis, e |
+    d r r |
+    R2.*4 |
+    d'2.\f |
+    d4 cis d |
+    d d cis |
+    d r r8 d |
+    d4-. d-. r8 d |
+    d4-. d-. r8 d |
+    cis4 e fis |
+    \appoggiatura a16 g8( fis16 e) d4 cis |
+    d r r |
+    R2.*7 |
+    r4 fis(\p d8) r |
+    r4 d( fis,8) r |
+    r4 a( fis) |
+    d r r |
+    fis\f r r |
+    fis fis fis |
+    fis r r |
+  }
 }
 
 oboeTwoMvtIII = \relative c'

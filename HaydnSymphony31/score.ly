@@ -124,111 +124,74 @@ instrument = "Orchestra"
   >>
 }
 
+padding = {s8}
+
 \score
 {
   \unfoldTremolos
   <<
-    \outlineMvtI
+    {
+      \outlineMvtI
+      \padding
+      \outlineMvtII
+      \padding
+      \outlineMvtIII
+      \padding
+      \outlineMvtIV
+    }
     \new Staff
     {
       \set Staff.midiInstrument = "flute"
       \fluteMvtI
-    }
-    \new Staff
-    {
-      \set Staff.midiInstrument = "oboe"
-      << \oboeOneMvtI \oboeTwoMvtI >>
-    }
-    \new Staff
-    {
-      \set Staff.midiInstrument = "french horn"
-      << \hornOneMvtI \hornTwoMvtI \hornThreeMvtI \hornFourMvtI >>
-    }
-    \new Staff
-    {
-      \set Staff.midiInstrument = "string ensemble 1"
-      << \violinOneMvtI \violinTwoMvtI \violaMvtI \bassMvtI \transpose c c, \bassMvtI >>
-    }
-  >>
-  \midi{}
-}
-
-\score
-{
-  \unfoldTremolos
-  <<
-    \outlineMvtII
-    \new Staff
-    {
-      \set Staff.midiInstrument = "french horn"
-      << \hornOneMvtII \hornTwoMvtII >>
-    }
-    \new Staff
-    {
-      \set Staff.midiInstrument = "french horn"
-      << \hornThreeMvtII \hornFourMvtII >>
-    }
-    \new Staff
-    {
-      \set Staff.midiInstrument = "string ensemble 1"
-      << \violinPrincipalMvtII \violinOneMvtII \violinTwoMvtII \violaMvtII \celloSoloMvtII \bassMvtII \transpose c c, \bassMvtII >>
-    }
-  >>
-  \midi{}
-}
-
-\score
-{
-  \unfoldTremolos
-  <<
-    \outlineMvtIII
-    \new Staff
-    {
-      \set Staff.midiInstrument = "flute"
+      \padding
+      \outlineMvtII %Tacit
+      \padding
       \fluteMvtIII
-    }
-    \new Staff
-    {
-      \set Staff.midiInstrument = "oboe"
-      << \oboeOneMvtIII \oboeTwoMvtIII >>
-    }
-    \new Staff
-    {
-      \set Staff.midiInstrument = "french horn"
-      << \hornOneMvtIII \hornTwoMvtIII \hornThreeMvtIII \hornFourMvtIII >>
-    }
-    \new Staff
-    {
-      \set Staff.midiInstrument = "string ensemble 1"
-      << \violinOneMvtIII \violinTwoMvtIII \violaMvtIII \bassMvtIII \transpose c c, \bassMvtIII >>
-    }
-  >>
-  \midi{}
-}
-
-\score
-{
-  \unfoldTremolos
-  <<
-    \outlineMvtIV
-    \new Staff
-    {
-      \set Staff.midiInstrument = "flute"
+      \padding
       \fluteMvtIV
     }
     \new Staff
     {
       \set Staff.midiInstrument = "oboe"
+      << \oboeOneMvtI \oboeTwoMvtI >>
+      \padding
+      \outlineMvtII %Tacit
+      \padding
+      << \oboeOneMvtIII \oboeTwoMvtIII >>
+      \padding
       << \oboeOneMvtIV \oboeTwoMvtIV >>
     }
     \new Staff
     {
       \set Staff.midiInstrument = "french horn"
-      << \hornOneMvtIV \hornTwoMvtIV \hornThreeMvtIV \hornFourMvtIV >>
+      << \hornOneMvtI \hornTwoMvtI >>
+      \padding
+      << \hornOneMvtII \hornTwoMvtII >>
+      \padding
+      << \hornOneMvtIII \hornTwoMvtIII >>
+      \padding
+      << \hornOneMvtIV \hornTwoMvtIV >>
+    }
+    \new Staff
+    {
+      \set Staff.midiInstrument = "french horn"
+      << \hornThreeMvtI \hornFourMvtI >>
+      \padding
+      << \hornThreeMvtII \hornFourMvtII >>
+      \padding
+      << \hornThreeMvtIII \hornFourMvtIII >>
+      \padding
+      << \hornThreeMvtIV \hornFourMvtIV >>
     }
     \new Staff
     {
       \set Staff.midiInstrument = "string ensemble 1"
+      << \violinOneMvtI \violinTwoMvtI \violaMvtI \bassMvtI \transpose c c, \bassMvtI >>
+      \padding
+      << \violinPrincipalMvtII \violinOneMvtII \violinTwoMvtII \violaMvtII \celloSoloMvtII \bassMvtII \transpose c c, \bassMvtII >>
+      \padding
+      << \violinOneMvtIII \violinTwoMvtIII \violaMvtIII \bassMvtIII \transpose c c, \bassMvtIII >>
+      \padding
       << \violinOneMvtIV \violinTwoMvtIV \violaMvtIV \bassMvtIV \transpose c c, \bassMvtIV >>
     }
   >>

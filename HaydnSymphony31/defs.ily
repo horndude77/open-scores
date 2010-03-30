@@ -31,7 +31,7 @@ outlineMvtII =
   }
   \repeat volta 2
   {
-    s8 |
+    s8 | \noBreak
     s2.*42 |
     s8*5
   }

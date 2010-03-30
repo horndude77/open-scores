@@ -65,6 +65,92 @@ violaMvtI = \relative c'
     \repeat unfold 7 {\repeat tremolo 6 a8} |
     a4 r r |
   }
+  \repeat volta 2
+  {
+    R2. |
+    r8 a\p a a a a |
+    a4 r r |
+    r8 fis fis fis fis fis |
+    fis4 r r |
+    d'4.\f cis8 b4 |
+    cis8 cis16 cis cis8 cis cis cis |
+    cis4 r r |
+    d8\p d d d d d |
+    \repeat tremolo 6 d8 |
+    \repeat tremolo 6 g, |
+    \repeat tremolo 6 g |
+    g4 r r |
+    r8 g g g g g |
+    g4 r r |
+    r8 g g g g g |
+    \repeat tremolo 6 gis |
+    a4 r r |
+    r8 a a a a a |
+    a4 r r |
+    r8 a a a a a |
+    ais ais ais ais ais ais |
+    b\f b b b b b |
+    b b b b b b |
+    b b b b dis dis |
+    e e e e e eis |
+    fis fis,\p fis fis fis fis |
+    \repeat unfold 5 {\repeat tremolo 6 fis8} |
+    b4\f r r8 b |
+    b4 b r8 b |
+    b4 b r8 b |
+    b b b b ais ais |
+    b4 r8 b' b b |
+    d4 b-. a-. |
+    gis4 r8 e e e |
+    a4 b c |
+    fis, r8 d d d |
+    g4 a b |
+    e,4 r8 e' e d |
+    cis4 a d |
+    cis a d |
+    g,2 gis4 |
+    a4 a, a |
+    a r r |
+    d8\p d d d d d |
+    \repeat unfold 6 d |
+    \repeat unfold 2 {\repeat unfold 6 e |}
+    \repeat unfold 2 {\repeat unfold 6 f |}
+    g g g g gis gis |
+    a4 a, r |
+    \repeat unfold 6 fis8 |
+    \repeat unfold 6 g |
+    \repeat unfold 6 a |
+    \repeat unfold 6 b |
+    \repeat unfold 6 fis |
+    \repeat unfold 6 g |
+    \repeat unfold 6 e' |
+    a,4\f r r |
+    a r r |
+    a' r a, |
+    d d e |
+    \repeat unfold 6 fis8 |
+    g g g g a a |
+    d, d a' a a, a |
+    d4 r r |
+    r8 d\p d d d d |
+    d4 r r |
+    r8 d d d d d |
+    d4 r r |
+    fis,8\f fis' fis fis fis fis |
+    g g e e d d |
+    g g a a a, a |
+    d4 r r8 d |
+    d4 d r8 d |
+    d4 d r8 a' |
+    g4 cis, d |
+    g,8 g a a a a |
+    d d\p d d d d |
+    \repeat unfold 7 {\repeat tremolo 6 d} |
+    \repeat unfold 4 {d4 r r |}
+    d\f r r |
+    d d d |
+    d r r |
+  }
 }
 
 violaMvtII = \relative c''

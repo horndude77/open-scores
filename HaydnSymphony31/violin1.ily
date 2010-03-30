@@ -225,7 +225,7 @@ violinPrincipalMvtII = \relative c''
     b32( cis) dis( e) fis( gis) \repeat unfold 3 {ais( b)} b,8 r r |
     a32( b) cis( d) e( fis) \repeat unfold 3 {gis( a)} a,8 r r |
     g32( a) b( c) d( e) \repeat unfold 3{f( g)} g,8 r c'~ |
-    c b a g8. c16 g8 |
+    c b a g8. a16 g8 |
     g4.(\trill fis4)
     % Joins back with first violins
     b,8\p |
@@ -594,6 +594,7 @@ violinOneMvtIV = \relative c''
     \with
     {
       alignAboveContext = #"violinIs"
+      midiInstrument = "string ensemble 1"
     }
     \violinPrincipalMvtIVVarV
     {
