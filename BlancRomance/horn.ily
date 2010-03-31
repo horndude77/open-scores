@@ -1,4 +1,6 @@
-\include "defs.lyi"
+\version "2.13.16"
+
+\include "defs.ily"
 
 horn = \relative c''
 {
@@ -70,4 +72,3 @@ horn = \relative c''
   ees,2~ |
   ees8\fermata r r4 |
 }
-

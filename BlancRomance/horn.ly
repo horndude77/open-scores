@@ -1,28 +1,12 @@
-\version "2.11.40"
+\version "2.13.16"
 
-\include "defs.lyi" 
-\include "horn_notes.lyi" 
+\include "defs.ily" 
+\include "horn.ily" 
 
 instrument = "Horn"
-
-\paper
+\include "header.ily"
+\score
 {
-  %first-page-number = 2
-  %#(define page-breaking ly:minimal-breaking)
-  %#(define page-breaking ly:page-turn-breaking)
-  ragged-last-bottom = ##f
+  \new Staff %\with { \consists "Page_turn_engraver" }
+  { << \horn \outline >> }
 }
-
-\book
-{
-  \include "header.lyi"
-  \score
-  {
-    \new Staff %\with { \consists "Page_turn_engraver" }
-    {
-      #(set-accidental-style 'modern)
-      << \horn \outline >>
-    }
-  }
-}
-

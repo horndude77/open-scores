@@ -1,28 +1,13 @@
-\version "2.11.40"
+\version "2.13.16"
 
-\include "defs.lyi" 
-\include "oboe_notes.lyi" 
+\include "defs.ily" 
+\include "oboe.ily" 
 
 instrument = "Oboe"
+\include "header.ily"
 
-\paper
+\score
 {
-  %first-page-number = 2
-  %#(define page-breaking ly:minimal-breaking)
-  %#(define page-breaking ly:page-turn-breaking)
-  ragged-last-bottom = ##f
+  \new Staff %\with { \consists "Page_turn_engraver" }
+  { << \oboe \outline >> }
 }
-
-\book
-{
-  \include "header.lyi"
-  \score
-  {
-    \new Staff %\with { \consists "Page_turn_engraver" }
-    {
-      #(set-accidental-style 'modern)
-      << \oboe \outline >>
-    }
-  }
-}
-

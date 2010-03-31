@@ -1,4 +1,6 @@
-\include "defs.lyi"
+\version "2.13.16"
+
+\include "defs.ily"
 
 oboe = \relative c''
 {
@@ -74,4 +76,3 @@ oboe = \relative c''
     \times 2/3 {ees( c b} \times 2/3 {c aes g)} |
   aes8\fermata r r4 |
 }
-

@@ -1,3 +1,5 @@
+\version "2.13.16"
+
 rightNotes = \relative c'
 {
   \key aes \major
@@ -241,4 +243,3 @@ pedals =
   s4 s\f |
   s2*41 |
 }
-
