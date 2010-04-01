@@ -1,10 +1,15 @@
-trumpetOne = \relative c''
+\version "2.13.16"
+
+hornTwo = \relative c'
 {
   \clef treble
   \transposition e
 
   %4/4
-  \repeat unfold 2 {R1 | R1^\fermataMarkup |}
+  c1~\f |
+  c2 r\fermata |
+  g1~\pp\< |
+  g2\> r\fermata\! |
 
   %6/8
   R2.*22 |

@@ -1,19 +1,17 @@
-\version "2.11.62"
+\version "2.13.16"
 
-\include "bass_notes.lyi"
+\include "bass.ily"
 
 \paper
 {
-  %#(define page-breaking ly:minimal-breaking)
-  %#(define page-breaking ly:page-turn-breaking)
   ragged-last-bottom = ##f
 }
 
 instrument = "Bass"
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \bass
 
-\include "part.lyi"
+\include "part.ily"
 

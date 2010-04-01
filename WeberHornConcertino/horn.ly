@@ -1,19 +1,17 @@
-\version "2.11.49"
+\version "2.13.16"
 
-\include "horn_notes.lyi"
+\include "horn.ily"
 
 \paper
 {
-  %#(define page-breaking ly:minimal-breaking)
-  %#(define page-breaking ly:page-turn-breaking)
   ragged-last-bottom = ##f
 }
 
 instrument = "Solo Horn in F"
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \horn
 
-\include "part.lyi"
+\include "part.ily"
 

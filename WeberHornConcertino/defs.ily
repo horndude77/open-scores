@@ -1,11 +1,17 @@
+\version "2.13.16"
+
 pizz = \markup{\italic "pizz."}
 arco = \markup{\italic "arco"}
 
 outline =
 {
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 3 8)
+  \overrideBeamSettings #'Score #'(3 . 4) #'end #'((* . (3))
+                                                   ((1 . 8) . (6))
+                                                   ((1 . 12) . (3 3 3))
+                                                   ((1 . 16) . (4 4 4))
+                                                   ((1 . 24) . (3 3 3 3 3 3))
+                                                   ((1 . 32) . (8 8 8)))
   \tempo "Adagio" 4=72
   \time 4/4
   s1*4 | \bar "||"

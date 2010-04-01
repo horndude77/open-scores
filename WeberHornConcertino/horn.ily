@@ -1,4 +1,6 @@
-\include "defs.lyi"
+\version "2.13.16"
+
+\include "defs.ily"
 
 horn = \relative c'' \context Voice = horn
 {

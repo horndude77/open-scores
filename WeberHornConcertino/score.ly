@@ -1,21 +1,21 @@
-\version "2.11.49"
+\version "2.13.16"
 
-\include "flute1_notes.lyi"
-\include "clarinet1_notes.lyi"
-\include "clarinet2_notes.lyi"
-\include "bassoon1_notes.lyi"
-\include "bassoon2_notes.lyi"
-\include "horn1_notes.lyi"
-\include "horn2_notes.lyi"
-\include "trumpet1_notes.lyi"
-\include "trumpet2_notes.lyi"
-\include "timpani_notes.lyi"
-\include "horn_notes.lyi"
-\include "violin1_notes.lyi"
-\include "violin2_notes.lyi"
-\include "viola_notes.lyi"
-\include "cello_notes.lyi"
-\include "bass_notes.lyi"
+\include "flute1.ily"
+\include "clarinet1.ily"
+\include "clarinet2.ily"
+\include "bassoon1.ily"
+\include "bassoon2.ily"
+\include "horn1.ily"
+\include "horn2.ily"
+\include "trumpet1.ily"
+\include "trumpet2.ily"
+\include "timpani.ily"
+\include "horn.ily"
+\include "violin1.ily"
+\include "violin2.ily"
+\include "viola.ily"
+\include "cello.ily"
+\include "bass.ily"
 
 #(set-global-staff-size 14)
 %#(set-default-paper-size "a3")
@@ -28,7 +28,7 @@
 
 instrument = "Orchestra"
 
-\include "header.lyi"
+\include "header.ily"
 \book
 {
   \score

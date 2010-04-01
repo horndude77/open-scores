@@ -1,17 +1,15 @@
-\version "2.11.49"
+\version "2.13.16"
 
-\include "defs.lyi"
+\include "defs.ily"
 
 \paper
 {
-  %#(define page-breaking ly:minimal-breaking)
-  %#(define page-breaking ly:page-turn-breaking)
   ragged-last-bottom = ##f
 }
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     \new Staff %\with { \consists "Page_turn_engraver" }

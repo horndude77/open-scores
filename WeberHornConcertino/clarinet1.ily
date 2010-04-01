@@ -1,4 +1,6 @@
-clarinetTwo = \relative c''
+\version "2.13.16"
+
+clarinetOne = \relative c'''
 {
   \transposition a
   \clef treble
@@ -11,17 +13,16 @@ clarinetTwo = \relative c''
   d2\> r\fermata\! |
 
   %6/8
-  R2.*5 |
-  r4. f,~(\p |
-  f2. |
-  bes |
-  ees4. f, |
-  bes) r |
+  R2.*6 |
+  a2.(\p |
+  bes4. f |
+  g ees |
+  d) r |
   R2.*7 |
   \repeat unfold 2
   {
-    r8 a'( a a a a |
-    g) r r r4. |
+    r8 d'( d d cis c |
+    bes) r r r4. |
   }
   R2. |
   R2.^\fermataMarkup |
