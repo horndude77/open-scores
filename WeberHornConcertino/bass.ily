@@ -184,6 +184,69 @@ bass = \relative c,
   b8 b'-. fis-. dis-. |
 
   %4/4
-  b4\fermata
+  b4\fermata r\fermata r2 |
+  r8. e16\ff e4 r2 |
+  a,2.\pp r4 |
+  b4\f r r2 |
+  r2 e4\pp r |
+  R1^\fermataMarkup |
+  a,2. r4 |
+  b4 r r b |
+  e, r r r8. b'16\f |
+  b2 r |
+  fis r |
+  d'1(\pp^"Violoncelli" |
+  g,~) |
+  g |
+  c,2 r |
+  r4 b'\f^"Tutti" r2 |
+  r2 b4\pp r |
+  e, r r2\fermata |
+  R1*2 |
+  R1^\fermataMarkup |
+  R1*2 |
+  R1^\fermataMarkup |
+  R1*5 |
+  R1^\fermataMarkup |
+  R1 |
+  R1^\fermataMarkup |
+
+  %3/4
+  e'4\p r r |
+  a, r r |
+  b8 r b r b r |
+  e4 r r |
+  e r r |
+  a, r r |
+  b8 r b r b r |
+  e4 r e, |
+  e'8\ff r e r e r |
+  a,4 a a |
+  r8 b r b r b | |
+  \repeat tremolo 4 e8 e,4 |
+  e'-. e-. e-. |
+  a,-. a-. a-. |
+  r8 b r b r b |
+  \repeat tremolo 4 e8 e,4 |
+  b'4\p r ais->( |
+  b) r b( |
+  fis) r fis' |
+  b,8 r r4 b->( |
+  e8) r r4 r |
+  a,4 r r |
+  r8 b r b r b |
+  e8 r r4 e, |
+  b''\f b a |
+  b b b |
+  fis fis fis |
+  b,8 b4-> b8 b' b |
+  e,4 e e |
+  a, a a |
+  r8 b r b r b |
+  e e, e e e4 |
+  R2.*6 |
+  b'2.( |
+  e8) e'( cis b gis e |
+  d) d'-. \repeat tremolo 4 e |
 }
 

@@ -156,12 +156,10 @@ horn = \relative c'' \context Voice = horn
 
   %4/4
   %cadenza
-  \cadenzaOn 
-  g'4\f g'8.\fermata fis32 e d( cis e d c b c a a8. g16) g4\fermata
+  g'4\f \grace {g'8.[\fermata fis32( e] d[ cis e d] c[ b c a] a8..[ g32])} g4\fermata
   %adagio
-  ees'4 d8. ees16
-  \acciaccatura d8 c4 r g'8.[\fermata g16] \times 2/3 {g16[->( f ees])} \times 2/3 {ees[->( d c])}
-  \cadenzaOff
+  ees'4 d8. ees16 |
+  \acciaccatura d8 c4 r g'8.[\fermata g16] \times 2/3 {g16[->( f ees])} \times 2/3 {ees[->( d c])} |
   d4 \grace {ees32[ d c]} d8. f16 aes4. r8 |
   g,,4(\f f''8) d-.(\> b[-. g]-.) aes\fermata g16 f |
   ees2.\p r4 |
@@ -179,7 +177,7 @@ horn = \relative c'' \context Voice = horn
   bes( bes'4. aes16 g f ees bes ees) |
   des( c ees des c4) r r8. c16\ff |
   c2.~\fermata\> c16\! ees32 d c b c aes |
-  \grace {g32[ aes bes]} a8 g r4 r2 |
+  \grace {g32[ aes bes]} aes8 g r4 r2 |
   r \clef "bass^8" c,,~\fermata |
   c4 c-.( b-. a-.) |
   g2 <fis c''' ees> |
