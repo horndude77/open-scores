@@ -148,7 +148,9 @@ violaMvtIV = \relative c'
   c4. g'8-. |
   f-. ees-. d-. f~ |
   f8 e16 d e f g aes |
-  \repeat tremolo 4 bes8^\staccatoFour |
+  \tremoloStaccatosOn #4
+  \repeat tremolo 4 bes8-. |
+  \tremoloStaccatosOff
   aes( c) f,-. r |
   r g-. c,-. bes'-. |
   aes( c) f,-. aes-. |

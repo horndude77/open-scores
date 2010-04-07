@@ -327,7 +327,8 @@ fluteOneMvtIV = \relative c'''
   d8 r16 f aes8.(\sf f16) |
   \repeat tremolo 4 ees16 ees8.(\sf g16) |
   aes f f f d8.(\sf f16) |
-  \repeat tremolo 4 g16^\staccatoFour ees( g) g-. g-. |
+  \tremoloStaccatosOn #4
+  \repeat tremolo 4 g16-. \tremoloStaccatosOff ees( g) g-. g-. |
   aes-. f-. f-. f-. d( f) f-. f-. |
   \repeat unfold 2 {g\sf g ees g aes\sf f d f |}
   g ees, f g aes\sf g aes a |

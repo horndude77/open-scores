@@ -75,7 +75,9 @@ violinOneMvtI = \relative c'''
     \crescTextCresc
     f8-.\< d( c d ees f) |
     \crescHairpin
-    g( a) \repeat tremolo 4 bes8^\staccatoFour |
+    \tremoloStaccatosOn #4
+    g( a) \repeat tremolo 4 bes8-. |
+    \tremoloStaccatosOff
     bes8-. bes-. a-. bes-. c-. d-. |
     \repeat tremolo 6 ees8 |
     ees8-.\f c16( d) c8-. a16( bes) a8-. ees16( f) |
@@ -504,7 +506,9 @@ violinOneMvtI = \relative c'''
   \crescTextCresc
   bes8-. g( f\< g aes bes) |
   \crescHairpin
-  c8( d) \repeat tremolo 4 ees8^\staccatoFour |
+  \tremoloStaccatosOn #4
+  c8( d) \repeat tremolo 4 ees8-. |
+  \tremoloStaccatosOff
   ees8-. ees,-. d-. ees-. f-. g-. |
   \repeat tremolo 6 aes8 |
   aes8-.\f f16( g) g8-. d16( ees) d8-. aes16( bes) |
@@ -600,8 +604,10 @@ violinOneMvtI = \relative c'''
   c2.~\p | c~\> | c4 r r |
   \dimHairpin
   R2. |
-  r8 g'16(\pp fis) \repeat tremolo 4 g8^\staccatoFour |
-  r8 g16( fis) \repeat tremolo 4 g8^\staccatoFour |
+  \tremoloStaccatosOn #4
+  r8 g'16(\pp fis) \repeat tremolo 4 g8-. |
+  r8 g16( fis) \repeat tremolo 4 g8-. |
+  \tremoloStaccatosOff
   r8 g16( fis) g8-. a-. b-. c-. |
   d-. e-. f-. e-. d-. c-. |
   b-. c-. d-. c-. b-. a-. |
@@ -630,16 +636,18 @@ violinOneMvtI = \relative c'''
   bes8 bes4 bes bes8~ |
   bes8 bes'4 bes bes8~ |
   bes8 bes4 bes bes8~ |
-  bes bes16( a) \repeat tremolo 4 bes8^\staccatoFour |
+  \tremoloStaccatosOn #4
+  bes bes16( a) \repeat tremolo 4 bes8-. |
   bes2.~ |
-  bes8 aes16( g) \repeat tremolo 8 aes16^\staccatoFour |
+  bes8 aes16( g) \repeat tremolo 8 aes16-. |
   aes2.~ |
   \dimTextDecresc
-  aes8\> aes16( g) \repeat tremolo 8 aes16^\staccatoFour |
+  aes8\> aes16( g) \repeat tremolo 8 aes16-. |
   \dimHairpin
-  r8 ges16( f) \repeat tremolo 4 g8^\staccatoFour |
-  r8 f16( ees) \repeat tremolo 4 f8^\staccatoFour |
-  r8 f16( ees) \repeat tremolo 4 f8^\staccatoFour |
+  r8 ges16( f) \repeat tremolo 4 g8-. |
+  r8 f16( ees) \repeat tremolo 4 f8-. |
+  r8 f16( ees) \repeat tremolo 4 f8-. |
+  \tremoloStaccatosOff
   f16\pp bes, bes bes \tremolos #16 {bes2 |
   bes2. |
   <bes d,>2. |

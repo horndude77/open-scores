@@ -26,9 +26,11 @@ violaMvtI = \relative c'
     g8(\< bes aes g f ees) |
     \crescHairpin
     d( bes ees bes aes f) |
-    g8-.\p <g ees>-. \tremolos #8 {<g ees>2_\staccatoFour |
-    <g ees>2._\staccatoSix |
-    <g ees>2._\staccatoSix} |
+    g8-.\p <g ees>-. \tremolos #8 {\tremoloStaccatosOn #4 <g ees>2-. |
+    \tremoloStaccatosOn #6
+    <g ees>2.-. |
+    <g ees>2.-.} |
+    \tremoloStaccatosOff
     g8 g \tremolos #8 {<bes g>2 |
     <aes f>2. |
     <aes f>2 } <des bes>8 <des bes> |

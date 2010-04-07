@@ -246,7 +246,8 @@ oboeTwoMvtIV = \relative c''
   aes8 r16 aes aes8.\sf aes16 |
   g g g g ees8.(\sf g16) |
   aes16 f f f d8.(\sf f16) |
-  \repeat tremolo 4 g16^\staccatoFour ees(\sf g) g-. g-. |
+  \tremoloStaccatosOn #4
+  \repeat tremolo 4 g16-. \tremoloStaccatosOff ees(\sf g) g-. g-. |
   aes-. f-. f-. f-. d(\sf f) f-. f-. |
   \repeat unfold 2 {g\sf g ees g aes\sf f d f |}
   g16 ees f g aes\sf g aes a |

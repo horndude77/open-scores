@@ -326,8 +326,10 @@ oboeOneMvtIV = \relative c'''
       s\sf s\sf |
     }
     {
-      \repeat tremolo 4 bes16^\staccatoFour
+      \tremoloStaccatosOn #4
+      \repeat tremolo 4 bes16-.
         \repeat unfold 7 {\repeat tremolo 4 bes16} |
+      \tremoloStaccatosOff
     }
   >>
   bes16 ees, f g aes\sf g aes a |

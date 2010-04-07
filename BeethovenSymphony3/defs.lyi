@@ -73,8 +73,38 @@ pizz = \markup{\italic pizz.}
 arco = \markup{\italic arco}
 sottoVoce = \markup{\italic {sotto voce}}
 moltoMarcato = \markup{\italic {molto marcato}}
-staccatoFour = \markup{\musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato"}
-staccatoSix = \markup{\musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato"}
+
+%Add multiple staccato dots for one note.
+tremoloStaccatosOn = #(define-music-function (parser location dots) (number?)
+#{
+   \override Script #'stencil = #ly:text-interface::print
+   %TODO: Remove eval. Automatically figure out how many dots to add.
+   \override Script #'text =
+   #(lambda (grob)
+     (define (build-lst count)
+       (let ((lst (list #:musicglyph "scripts.staccato")))
+         (if (> count 1) (append lst '(#:hspace 0.4) (build-lst (- count 1))) lst)))
+     (eval (list markup #:concat (build-lst $dots)) (interaction-environment)))
+   \override Script #'X-offset =
+   #(lambda (grob)
+     (let* ((parent (ly:grob-parent grob X))
+            (parent-extent (ly:grob-property parent 'X-extent '(0 . 0)))
+            (parent-start (car parent-extent))
+            (parent-end (cdr parent-extent))
+            (parent-center (/ (+ parent-start parent-end) 2.0))
+            (extent (ly:grob-property grob 'X-extent '(0 . 0)))
+            (start (car extent))
+            (end (cdr extent))
+            (val (- parent-center (/ (- end start) 2.0))))
+       val))
+#})
+
+tremoloStaccatosOff =
+{
+  \revert Script #'stencil
+  \revert Script #'text
+  \revert Script #'X-offset
+}
 
 tempoMark = #(define-music-function (parser location markp) (string?)
 #{
