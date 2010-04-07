@@ -1,4 +1,4 @@
-\version "2.13.4"
+\version "2.13.17"
 
 \header
 {
@@ -25,7 +25,7 @@
   {
     \override #'(box-padding . 1.0)
     \override #'(baseline-skip . 2.7)
-    \box \center-column
+    \box \left-align \center-column
     {
       \small \line
       {
