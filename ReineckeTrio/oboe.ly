@@ -1,26 +1,17 @@
-\version "2.13.5"
+\version "2.13.16"
 
-\include "defs.lyi" 
-\include "oboe_notes.lyi" 
+\include "defs.ily" 
+\include "oboe.ily" 
 
 instrument = "Oboe"
 
-\paper
-{
-  %first-page-number = 2
-  %#(define page-breaking ly:minimal-breaking)
-  %#(define page-breaking ly:page-turn-breaking)
-  ragged-last-bottom = ##f
-}
-
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
-      #(set-accidental-style 'modern)
       << \oboeMvtI \outlineMvtI >>
     }
   }
@@ -28,7 +19,6 @@ instrument = "Oboe"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
-      #(set-accidental-style 'modern)
       << \oboeMvtII \outlineMvtII >>
     }
   }
@@ -36,7 +26,6 @@ instrument = "Oboe"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
-      #(set-accidental-style 'modern)
       << \oboeMvtIII \outlineMvtIII >>
     }
   }
@@ -44,7 +33,6 @@ instrument = "Oboe"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
-      #(set-accidental-style 'modern)
       << \oboeMvtIV \outlineMvtIV >>
     }
   }

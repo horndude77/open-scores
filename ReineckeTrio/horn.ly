@@ -1,26 +1,17 @@
-\version "2.13.5"
+\version "2.13.16"
 
-\include "defs.lyi" 
-\include "horn_notes.lyi" 
+\include "defs.ily" 
+\include "horn.ily" 
 
 instrument = "Horn"
 
-\paper
-{
-  %first-page-number = 2
-  %#(define page-breaking ly:minimal-breaking)
-  %#(define page-breaking ly:page-turn-breaking)
-  ragged-last-bottom = ##f
-}
-
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
-      #(set-accidental-style 'modern)
       << \hornMvtI \outlineMvtI >>
     }
   }
@@ -28,7 +19,6 @@ instrument = "Horn"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
-      #(set-accidental-style 'modern)
       << \hornMvtII \outlineMvtII >>
     }
   }
@@ -36,7 +26,6 @@ instrument = "Horn"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
-      #(set-accidental-style 'modern)
       << \hornMvtIII \outlineMvtIII >>
     }
   }
@@ -44,9 +33,7 @@ instrument = "Horn"
   {
     \new Staff %\with { \consists "Page_turn_engraver" }
     {
-      #(set-accidental-style 'modern)
       << \hornMvtIV \outlineMvtIV >>
     }
   }
 }
-

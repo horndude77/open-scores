@@ -1,22 +1,17 @@
-\version "2.13.5"
+\version "2.13.16"
 
-\include "horn_notes.lyi"
-\include "oboe_notes.lyi"
-\include "piano_notes.lyi"
-\include "defs.lyi"
+\include "horn.ily"
+\include "oboe.ily"
+\include "piano.ily"
+\include "defs.ily"
 
 instrument = "Piano"
-
-\paper
-{
-  ragged-last-bottom = ##f
-}
 
 #(set-global-staff-size 18)
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   %mvt I
   \score
   {
@@ -30,7 +25,6 @@ instrument = "Piano"
       {
         \set Staff.midiInstrument = "oboe"
         \set Staff.instrumentName = "Oboe"
-        #(set-accidental-style 'modern)
         \oboeMvtI
       }
       \new Staff
@@ -42,7 +36,6 @@ instrument = "Piano"
       {
         \set Staff.midiInstrument = "french horn"
         \set Staff.instrumentName = "Horn in F"
-        #(set-accidental-style 'modern)
         \hornMvtI
       }
       \new PianoStaff
@@ -50,8 +43,6 @@ instrument = "Piano"
         \set PianoStaff.instrumentName = "Piano"
         \new Staff="RH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           \rightMvtI
         }
 
@@ -59,8 +50,6 @@ instrument = "Piano"
 
         \new Staff="LH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \leftMvtI \outlineMvtI >>
         }
 
@@ -82,7 +71,6 @@ instrument = "Piano"
       {
         \set Staff.midiInstrument = "oboe"
         \set Staff.instrumentName = "Oboe"
-        #(set-accidental-style 'modern)
         \oboeMvtII
       }
       \new Staff
@@ -94,7 +82,6 @@ instrument = "Piano"
       {
         \set Staff.midiInstrument = "french horn"
         \set Staff.instrumentName = "Horn in F"
-        #(set-accidental-style 'modern)
         \hornMvtII
       }
       \new PianoStaff
@@ -102,8 +89,6 @@ instrument = "Piano"
         \set PianoStaff.instrumentName = "Piano"
         \new Staff="RH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \rightMvtII \dynamicsMvtII >>
         }
 
@@ -111,8 +96,6 @@ instrument = "Piano"
 
         \new Staff="LH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \leftMvtII \pedalsMvtII \outlineMvtII >>
         }
 
@@ -134,7 +117,6 @@ instrument = "Piano"
       {
         \set Staff.midiInstrument = "oboe"
         \set Staff.instrumentName = "Oboe"
-        #(set-accidental-style 'modern)
         \oboeMvtIII
       }
       \new Staff
@@ -146,7 +128,6 @@ instrument = "Piano"
       {
         \set Staff.midiInstrument = "french horn"
         \set Staff.instrumentName = "Horn in F"
-        #(set-accidental-style 'modern)
         \hornMvtIII
       }
       \new PianoStaff
@@ -154,8 +135,6 @@ instrument = "Piano"
         \set PianoStaff.instrumentName = "Piano"
         \new Staff="RH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \rightMvtIII \dynamicsMvtIII >>
         }
 
@@ -163,8 +142,6 @@ instrument = "Piano"
 
         \new Staff="LH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \leftMvtIII \pedalsMvtIII \outlineMvtIII >>
         }
 
@@ -186,7 +163,6 @@ instrument = "Piano"
       {
         \set Staff.midiInstrument = "oboe"
         \set Staff.instrumentName = "Oboe"
-        #(set-accidental-style 'modern)
         \oboeMvtIV
       }
       \new Staff
@@ -198,7 +174,6 @@ instrument = "Piano"
       {
         \set Staff.midiInstrument = "french horn"
         \set Staff.instrumentName = "Horn in F"
-        #(set-accidental-style 'modern)
         \hornMvtIV
       }
       \new PianoStaff
@@ -206,8 +181,6 @@ instrument = "Piano"
         \set PianoStaff.instrumentName = "Piano"
         \new Staff="RH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \rightMvtIV \dynamicsMvtIV >>
         }
 
@@ -215,8 +188,6 @@ instrument = "Piano"
 
         \new Staff="LH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \leftMvtIV \pedalsMvtIV \outlineMvtIV >>
         }
 
@@ -280,14 +251,7 @@ instrument = "Piano"
         }
       >>
     >>
-    \midi
-    {
-      \context
-      {
-        \Voice
-        \remove "Dynamic_performer"
-      }
-    }
+    \midi { }
   }
 }
 
