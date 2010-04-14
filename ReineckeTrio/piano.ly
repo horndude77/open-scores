@@ -52,19 +52,19 @@ instrument = "Piano"
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \rightMvtI \dynamicsMvtI >>
+          \rightMvtI
         }
 
-        %\new Dynamics = "dynamics" \dynamics
+        \new Dynamics \dynamicsMvtI
 
         \new Staff="LH"
         {
           #(set-accidental-style 'modern)
           \set Staff.extraNatural = ##f
-          << \leftMvtI \pedalsMvtI \outlineMvtI >>
+          << \leftMvtI \outlineMvtI >>
         }
 
-        %\new Dynamics = "pedals" \pedals
+        \new Dynamics \pedalsMvtI
       >>
     >>
   }

@@ -37,17 +37,83 @@ tempoMark = #(define-music-function (parser location markp) (string?)
   \mark \markup { \bold $markp }
 #})
 
-mdolce = \markup{\italic dolce}
+dolce = \markup{\italic dolce}
+mdolce = \dolce
 mdolceespr = \markup{\italic "dol. espress."}
-mespr = \markup{\italic espress.}
+espr = \markup{\italic espress.}
+mespr = \espr
 mmaespr = \markup{\italic "ma espress."}
-mfsempre = #(make-dynamic-script (markup "mf" #:normal-text #:italic "sempre"))
-fsempre = #(make-dynamic-script (markup "f" #:normal-text #:italic "sempre"))
-ppdolce = #(make-dynamic-script (markup "pp" #:normal-text #:italic "dolce"))
-pdolce = #(make-dynamic-script (markup "p" #:normal-text #:italic "dolce"))
-pcongrazia = #(make-dynamic-script (markup "p" #:normal-text #:italic "con grazia"))
-pcalando = #(make-dynamic-script (markup "p" #:normal-text #:italic "calando"))
+calando = \markup{\italic calando}
+colFuoco = \markup{\italic {col fuoco}}
+congrazia = \markup{\italic {con grazia}}
+mfsempre = #(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "sempre"))
+mfconagitazione = #(make-dynamic-script (markup #:dynamic "mf" #:normal-text #:italic "con agitazione"))
+fsempre = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "sempre"))
+fconanima = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "con anima"))
+fconfuoco = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "con fuoco"))
+sempref = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "f"))
+piuf = #(make-dynamic-script (markup #:normal-text #:italic "più" #:dynamic "f"))
+ppdolce = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "dolce"))
+pdolce = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce"))
+pDol = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dol"))
+pcongrazia = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "con grazia"))
+pcalando = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "calando"))
+ppcalando = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic "calando"))
+ptranquillo = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "tranquillo"))
 sfpp = #(make-dynamic-script "sfpp")
+
+crescTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
+}
+
+crescTextCrescMolto =
+{
+  \set crescendoText = \markup { \italic "cresc. molto" }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
+}
+
+crescJustTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+crescJustTextUnPocoCresc =
+{
+  \set crescendoText = \markup { \italic "un poco cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+dimJustTextDecresc =
+{
+  \set decrescendoText = \markup { \italic "decresc." }
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+dimTextDecresc =
+{
+  \set decrescendoText = \markup { \italic "decresc." }
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
+}
+
+dimTextSempreDim =
+{
+  \set decrescendoText = \markup { \italic "sempre dim." }
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'style = #'dashed-line
+  \override DynamicTextSpanner #'dash-period = #3.0
+}
 
 outlineMvtI =
 {
@@ -66,9 +132,18 @@ outlineMvtI =
     {s1*2 |}
     {s1 |}
   }
-  s1*92 | \bar "||"
+  s1*27 |
+  %cal
+  s1 |
+  \tempo "a tempo"
+  s1*17 |
+  %cal
+  s1 |
+  \tempo "a tempo"
+  s1*46 | \bar "||"
 
   %a major
+  \tempo "a tempo"
   s1*24 | \bar "||"
 
   %a minor
@@ -134,13 +209,13 @@ outlineMvtIII =
   \tempoMark "Adagio"
   s1*42 |
 
-  %a tempo
+  \tempo "a tempo"
   s1*12 |
 
   %rit
   s1 |
 
-  %a tempo
+  \tempo "a tempo"
   s1*24 | \bar "|."
 }
 
@@ -149,13 +224,13 @@ midiOutlineMvtIII =
   \tempo 4 = 60
   s1*42 |
 
-  %a tempo
+  \tempo "a tempo"
   s1*12 |
 
   %rit
   s1 |
 
-  %a tempo
+  \tempo "a tempo"
   s1*24 |
 }
 
@@ -167,10 +242,10 @@ outlineMvtIV =
   \time 4/4
   \tempoMark "Allegro ma non troppo"
   \partial 4 s4 |
-  s1*76 |
+  s1*87 |
 
-  %a tempo
-  s1*189 | \bar "|."
+  \tempo "a tempo"
+  s1*178 | \bar "|."
 }
 
 midiOutlineMvtIV =
@@ -179,7 +254,41 @@ midiOutlineMvtIV =
   s4 |
   s1*76 |
 
-  %a tempo
+  \tempo "a tempo"
   s1*189 |
 }
 
+afterGraceFraction = #(cons 15 16)
+
+\layout
+{
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    \override NoteCollision #'merge-differently-dotted = ##t
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+  }
+}
+
+\midi
+{
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
+  }
+}
+
+\paper
+{
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
+}

@@ -102,7 +102,7 @@ hornMvtI = \relative c'
   d( cis8.) e16 cis2~( |
   cis4 b) a-.( fis-.) |
   \crescTextCresc
-  a(\< gis) b-.( a-.) |
+  a(\< gis) b-.( ais-.) |
   \crescHairpin
   cis( b) fis'2~ |
   fis4 a2(\f c,4) |

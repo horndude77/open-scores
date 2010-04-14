@@ -144,8 +144,8 @@ rightMvtI = \relative c'
   <bes, ees g>4) <c f>( <bes ees>) <aes c> |
   <g bes ees>2
   <<
-    {\voiceOne <f d'~>2 | d'4}
-    \new Voice {\voiceTwo bes4( gis)( | \voiceOne <fis a>)}
+    {\voiceOne <f d'~>2 | \oneVoice <fis a d>4}
+    \new Voice {\voiceTwo bes4( gis)( | \oneVoice s4)} %TODO: slur doesn't look attached to note.
   >> \oneVoice <g b e> <fis a d> <g b e> |
   <b d g>( <a d fis>2) <cis fis>8.( a'16 |
   <a, d fis>4) <g b e>( <fis a d>) <g b> |
@@ -651,10 +651,307 @@ leftMvtI = \relative c,
 
 dynamicsMvtI =
 {
+  s1\pp |
+  s
+  \repeat volta 2
+  {
+    s1*7 |
+    s2 s4 s\f |
+    s1*3 |
+    s1\> |
+    \dimJustTextDecresc
+    s2\mf s4 s\> |
+    s1 |
+    s\p |
+    \crescHairpin
+    s2 s4 s\< |
+    s2 s\! |
+    \dimHairpin
+    s1\> |
+    s2\f\< s\> |
+    s1\mf |
+    s\f |
+    s1-\colFuoco |
+    \dimHairpin
+    s1\> |
+    s |
+    s\p |
+    s\f |
+    \dimTextDecresc
+    s\> |
+    s1*3 |
+    s1\p |
+    s1 |
+    s\pp |
+    s\pDol |
+    s2 s4 s\pp |
+    s4 s\< s s |
+    s2\p s\< |
+    s1 |
+    \dimHairpin
+    s\> |
+    s4\! s\p s2 |
+    s8*3 s8*5\< |
+    s1\> |
+    s\p |
+    s1 |
+    \crescTextCrescMolto
+    s2 s\< |
+    s1*3 |
+    s1\f |
+    s1*2 |
+    s2 s\mf |
+    s1\p |
+    s1*3 |
+    \crescHairpin
+    s1\< |
+    s1\f |
+    \dimHairpin
+    s2 s\> |
+    s1 |
+    s4\! s2.\p |
+    s1*3 |
+    \dimTextDecresc
+    s4 s2.\> |
+    s1 |
+  }
+  \alternative
+  {
+    {s1 | s8 s8*7\pp |}
+    {s1 |}
+  }
+  s1\mf |
+  s\f |
+  s1*5 |
+  \dimHairpin
+  s2.\> s4\ptranquillo |
+  s1*7 |
+  \crescHairpin
+  s2 s\< |
+  s1\piuf |
+  s1 |
+  s\f |
+  s |
+  s\sempref |
+  s1*4 |
+  s1\crescTextCresc |
+  s1\ff |
+  s1-\calando |
+  %a tempo
+  s1\p |
+  s2. s4\pp |
+  \crescHairpin
+  s1\< |
+  \dimHairpin
+  s\> |
+  s1\p |
+  s1*2 |
+  \crescTextCresc
+  s1\< |
+  s1 |
+  s2 s\f |
+  s1*6 |
+  s1\ff |
+  s1-\calando |
+  %a tempo
+  \crescHairpin
+  s2\p s\< |
+  s s\f\> |
+  s1 |
+  s\! |
+  s\p |
+  s |
+  \crescTextCresc
+  s4 s2.\< |
+  s1*4 |
+  s1\f |
+  s |
+  \dimHairpin
+  s2 s\> |
+  s s\! |
+  s1\p |
+  s1*6 |
+  s2. s4\f |
+  s1*11 |
+  s1\p |
+  \crescTextCresc
+  s\< |
+  s |
+  s\f |
+  s2 s\p |
+  s1*2 |
+  \crescHairpin
+  s1\< |
+  \dimHairpin
+  s2.\> s4\! |
+  s1*2 |
+  s1\ppcalando |
+  %a major
+  %a tempo
+  s1\pdolce |
+  s1*8 |
+  s1\mfconagitazione |
+  s1 |
+  \crescTextCresc
+  s4 s2.\< |
+  s1*2 |
+  \dimHairpin
+  s2 s\> |
+  s1\p |
+  s1*3 |
+  s1\pdolce |
+  s1 |
+  \crescTextCresc
+  s8 s8*7\< |
+  s1*2 |
+  %a minor
+  s1\f |
+  s1*4 |
+  s1\mf |
+  s1 |
+  \dimTextDecresc
+  s1\> |
+  s1\p |
+  s1*2 |
+  s2 s\pp |
+  s4 s2.\p |
+  s1*3 |
+  \dimTextDecresc
+  s4 s2.\> |
+  s2 s\pp |
+  s1*3 |
 }
 
 pedalsMvtI =
 {
+  s1\sustainOn |
+  s |
+  \repeat volta 2
+  {
+    s1*2 |
+    s1\sustainOff\sustainOn |
+    s1\sustainOff\sustainOn |
+    s1 |
+    s1\sustainOff\sustainOn |
+    s2\sustainOff\sustainOn s\sustainOff |
+    s2.\sustainOn s4\sustainOff\sustainOn |
+    s1 |
+    s2.\sustainOff\sustainOn s4\sustainOff\sustainOn |
+    s1 |
+    s1\sustainOff\sustainOn |
+    s1\sustainOff\sustainOn |
+    s1 |
+    s1\sustainOff\sustainOn |
+    s2\sustainOff\sustainOn s\sustainOff\sustainOn |
+    s4\sustainOff\sustainOn s\sustainOff s2\sustainOn |
+    s1\sustainOff\sustainOn |
+    s1\sustainOff\sustainOn |
+    s2.\sustainOff\sustainOn s4\sustainOff |
+    s4\sustainOn s\sustainOff s2 |
+    s2\sustainOn s\sustainOff\sustainOn |
+    s2 s\sustainOff |
+    s1*2 |
+    s2\sustainOn s\sustainOff\sustainOn |
+    \repeat unfold 7 {s2\sustainOff\sustainOn s\sustainOff\sustainOn |}
+    s1\sustainOff |
+    s1*8 |
+    s1\sustainOn |
+    s8 s8*7\sustainOff |
+    s4 s2.\sustainOn |
+    s8 s8*5\sustainOff s4\sustainOn |
+    s8 s8*7\sustainOff |
+    s1 |
+    s\sustainOn |
+    s8 s8*7\sustainOff |
+    s1\sustainOn |
+    s2 s\sustainOff |
+    s1*7 |
+    s1\sustainOn |
+    s2\sustainOff\sustainOff s\sustainOn |
+    s1 |
+    s2\sustainOff\sustainOff s\sustainOn |
+    s1*3 |
+  }
+  \alternative
+  {
+    {s1\sustainOn | s\sustainOff\sustainOn}
+    {s1\sustainOn}
+  }
+
+  s1\sustainOff\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff |
+  s1\sustainOn |
+  s4\sustainOff s\sustainOn s2\sustainOff\sustainOn |
+  s4 s\sustainOff s\sustainOn s\sustainOff |
+  \repeat unfold 4 {s2.\sustainOn s4\sustainOff |}
+  s4 s2\sustainOn s4\sustainOff |
+  s1\sustainOn |
+  s4 s2.\sustainOff |
+  s2\sustainOn s\sustainOff |
+  s1 |
+  s1\sustainOn |
+  s4\sustainOff\sustainOn s2.\sustainOff\sustainOn
+  s2.\sustainOff\sustainOn s4\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s2\sustainOn s\sustainOff\sustainOn |
+  s1\sustainOff\sustainOn |
+  s1\sustainOff |
+  s1*7 |
+  %a tempo
+  s1*3 |
+  s2\sustainOn s\sustainOff |
+  s1*4 |
+  s4 s2.\sustainOn |
+  s4 s2.\sustainOff |
+  s1*8 |
+  %a tempo
+  s1*15 |
+  s1\sustainOn |
+  s1\sustainOff\sustainOn |
+  s2.\sustainOff\sustainOn s4\sustainOff |
+  s1\sustainOn |
+  s1\sustainOff\sustainOn |
+  s1\sustainOff\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff\sustainOn |
+  s2.\sustainOff\sustainOn s4\sustainOff\sustainOn |
+  s1 |
+  s2.\sustainOff\sustainOn s4\sustainOff\sustainOn |
+  s1 |
+  \repeat unfold 6 {s1\sustainOff\sustainOn |}
+  s1\sustainOff |
+  s1 |
+  s2 s\sustainOn |
+  \repeat unfold 2 {s4\sustainOff s\sustainOn s2\sustainOff\sustainOn |}
+  s1\sustainOff\sustainOn |
+  s1 |
+  s1\sustainOff\sustainOn |
+  s4 s2.\sustainOff |
+  s1 |
+  s4 s2.\sustainOn |
+  s1 |
+  s\sustainOff |
+  s |
+  %a tempo
+  s1*3 |
+  s2 s\sustainOn |
+  s1*3 |
+  s2\sustainOff\sustainOn s2\sustainOff\sustainOn |
+  s1 |
+  s1\sustainOff |
+  s1*14 |
+  %a minor
+  s1\sustainOn |
+  s |
+  s2. s4\sustainOff\sustainOn |
+  s1 |
+  s1\sustainOff |
+  s\sustainOn |
+  s1\sustainOff\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff\sustainOn |
+  s1\sustainOff\sustainOn |
+  s1*2 |
+  s4 s2.\sustainOff |
+  s1*9 |
 }
 
 %==============================================
@@ -1099,10 +1396,199 @@ leftMvtII = \relative c,
 
 dynamicsMvtII =
 {
+  s8 s |
+  s2.*2 |
+  \repeat volta 2
+  {
+    s2.\p |
+    s2.*3 |
+    s2.\mf |
+    s2.*3 |
+    s4. s\p |
+    s2.*3 |
+  }
+  s4. s8 s\> s |
+  s2.\fconanima |
+  s2.\< |
+  s2. |
+  s4.\ff s\> |
+  s2.*2 |
+  s2.\mf |
+  s2.\> |
+  s |
+  s\p |
+  s |
+  s\pp |
+  s2.*3 |
+  s2.\p |
+  s2.*3 |
+  s2.\mf |
+  s2.*3 |
+  s4. s\p |
+  s2.*4 |
+  s2.\fconfuoco |
+  s4. s\< |
+  s2. |
+  s4.\ff s\> |
+  s2.*2 |
+  s2.\! |
+  s\mf |
+  s |
+  s\p |
+  s |
+  s\pp |
+  s2.*3 |
+  s2.\p |
+  s2.*3 |
+  s2.\mf |
+  s2.*3 |
+  s2.\p |
+  s2.*4 |
+  s2.\< |
+  s2. |
+  %a flat major
+  s2.\mf |
+  s2.*2 |
+  s4. s\pcongrazia |
+  s2.*4 |
+  s2.\mf |
+  s2.*2 |
+  s4. s\p |
+  s2.*4 |
+  s2.\mf |
+  s2.*3 |
+  s2.\f |
+  s2. |
+  s4. s\> |
+  s2. |
+  s\< |
+  s\! |
+  s\> |
+  s |
+  s\p |
+  s |
+  s\f |
+  s2.*2 |
+  s4. s\p |
+  s2.*4 |
+  s2.\f |
+  s2.*2 |
+  s4. s\> |
+  s2.*2 |
+  s2.\p |
+  s2.*3 |
+  s2.\> |
+  s |
+  %c major
+  s2.\pp |
+  s |
+  s\p |
+  s2.*12 |
+  s2.\fconfuoco |
+  s\< |
+  s |
+  s4.\ff s\> |
+  s2.*2 |
+  s2.\! |
+  s\mf |
+  s |
+  s\p |
+  s |
+  s\pp |
+  s2.*3 |
+  s2.\p |
+  s2.*3 |
+  s2.\mf |
+  s2.*6 |
+  s8 s8*5\p |
+  s2. |
 }
 
 pedalsMvtII =
 {
+  s8 s |
+  s2.*2 |
+  \repeat volta 2
+  {
+    s2.*12 |
+  }
+  s2.*4 |
+  s2.\sustainOn |
+  s4. s\sustainOff |
+  s2.*2 |
+  s2.\sustainOn
+  \repeat unfold 4 {s\sustainOff\sustainOn |}
+  s2.*3 |
+  s2.\sustainOff |
+  s2.*15 |
+  s2.\sustainOn |
+  s\sustainOff |
+  s2.*2 |
+  s2.\sustainOn |
+  \repeat unfold 4 {s\sustainOff\sustainOn |}
+  s2.*3 |
+  s2.\sustainOff |
+  s2.*10 |
+  s2.\sustainOn |
+  s2.*3 |
+  %key aes major
+  s2.\sustainOff\sustainOn | %EDIT: added \sustainOff
+  s2. |
+  s2.\sustainOff\sustainOn |
+  s4. s\sustainOff |
+  s2.\sustainOn |
+  s2.\sustainOff\sustainOn |
+  s2.\sustainOff\sustainOn |
+  s2. |
+  s2.\sustainOff\sustainOn |
+  s2. |
+  s2.\sustainOff\sustainOn |
+  s4. s\sustainOff |
+  s2.*2 |
+  s2.\sustainOn |
+  s4. s\sustainOff |
+  s2.\sustainOn | %EDIT: added sustainOn
+  s2.\sustainOff\sustainOn |
+  s2.\sustainOff\sustainOn |
+  s2.*2 |
+  s2.\sustainOff\sustainOn |
+  s2.\sustainOff\sustainOn |
+  s2. |
+  s2.\sustainOff |
+  s2.\sustainOn |
+  s\sustainOff |
+  s\sustainOn |
+  s2.*2 |
+  s2.\sustainOff\sustainOn |
+  s2. |
+  s2.\sustainOff\sustainOn |
+  s4. s\sustainOff |
+  s2. |
+  s\sustainOn |
+  s2.\sustainOff\sustainOn |
+  s2. |
+  s2.\sustainOff\sustainOn |
+  s2. |
+  s2.\sustainOff\sustainOn |
+  s4. s\sustainOff |
+  s2.*2 |
+  s2.\sustainOn |
+  s\sustainOff |
+  s\sustainOn |
+  s\sustainOff |
+  s2.*2 |
+  %key c major
+  s2.*18 |
+  s2.\sustainOn |
+  s4. s\sustainOff |
+  s2.*2 |
+  s2.\sustainOn |
+  \repeat unfold 4 {s2.\sustainOn\sustainOff |}
+  s2.*3 |
+  s2.\sustainOff |
+  s2.*10 |
+  s2.\sustainOn |
+  s8*5 s8\sustainOff |
 }
 
 %==============================================
@@ -1217,9 +1703,9 @@ rightMvtIII = \relative c'
     {a4 \times 2/3 {g4( c,8)} f4( e) | d2}
     \\
     {
-      \times 2/3 {a'8 a, c g' g, c f f, a e' f, a} |
+      \times 2/3 {a'8 a, c} \times 2/3 {g' g, c} \times 2/3 {f f, a} \times 2/3 {e' f, a} |
       \change Staff=LH
-      \times 2/3 {\stemUp b,( d f \change Staff=RH \stemNeutral g b d)}
+      \times 2/3 {\voiceOne b,( d f} \change Staff=RH \oneVoice \times 2/3 {g b d)}
     }
   >> <c g e>2 |
   c2 \clef bass <c g e> |
@@ -1300,9 +1786,12 @@ leftMvtIII = \relative c'
   << {\voiceOne \times 2/3 {r8 b'( cis d f aes) r b,( cis d ees g)}} \new Voice {\voiceTwo f,2 ees} >> \oneVoice |
   <g e'>2 <f d'> |
   fis1 |
-  f2 <a' f'> |
+  \once \override Score.NoteCollision #'merge-differently-headed = ##t
+  \voiceTwo f2 \oneVoice <a' f'> |
   << {\voiceOne \times 2/3 {e4 b'8} e2.} \new Voice {\voiceTwo e,1} >> \oneVoice |
   \times 2/3 {r8 e,( b' e gis e')} e4 r |
+
+  %a tempo
   <<
     {a,2 gis4.( b8) | b4( a) a2 |}
     \\
@@ -1335,7 +1824,7 @@ leftMvtIII = \relative c'
   \octaves #-1 {c1 | d4 c bes a} |
   \voiceTwo <g g,>2 \oneVoice <e' c,>2 |
   << {f4( e d c)} \\ f,1 >> |
-  << f1 \\ {s2 bes} >>
+  << {\voiceThree f1} \new Voice {\voiceTwo s2 bes} >>
   << {bes4( a)} \\ f2 >> <bes bes,>2 |
   <a c, a>1 |
   <g g,>2 c, |
@@ -1345,10 +1834,147 @@ leftMvtIII = \relative c'
 
 dynamicsMvtIII =
 {
+  s1\p |
+  \crescJustTextUnPocoCresc
+  s\< |
+  s |
+  \crescHairpin
+  s\<
+  s\f\> |
+  s |
+  s\p |
+  s\< |
+  s2\> s\< |
+  s4\mf\> s2 s4\p |
+  s1 |
+  s\< |
+  s\> |
+  s\! |
+  s8 s8*7-\dolce |
+  s1*7 |
+  s1\mf |
+  s1*3 |
+  s2 s\< |
+  s1\> |
+  s\! |
+  s |
+  s\f |
+  s1*3 |
+  %stringendo
+  s1*5 |
+  %rit
+  s1 |
+  s1\p |
+  s\pp |
+  %a tempo
+  s1\p |
+  s |
+  s\< |
+  s\f\> |
+  s\mf |
+  s\< |
+  s\f |
+  s |
+  s8*7 s8\pp |
+  s1*2 |
+  \crescTextCresc
+  s1\< |
+  s2 %{ rit %} s |
+  %a tempo
+  s1\ff |
+  s1*6 |
+  s4 s2.\p |
+  s1\mf |
+  s1*3 |
+  \crescHairpin
+  s1\< |
+  s1\> |
+  s\! |
+  s-\espr |
+  s1 |
+  s\< |
+  s\> |
+  s\! |
+  s |
+  \dimTextDecresc
+  s\> |
+  s\pp |
+  s |
 }
 
 pedalsMvtIII =
 {
+  s1*4 |
+  s1\sustainOn |
+  s1\sustainOff\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff\sustainOn |
+  s1\sustainOff |
+  s\sustainOn |
+  s4 s2.\sustainOff |
+  s1\sustainOn |
+  s4 s2\sustainOff s4\sustainOn |
+  s1 |
+  s\sustainOff |
+  s2\sustainOn s\sustainOff |
+  s1 |
+  s2 s\sustainOn |
+  s1\sustainOff\sustainOn |
+  s1\sustainOff\sustainOn |
+  s1\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s1\sustainOn |
+  s1\sustainOff\sustainOn |
+  s1\sustainOff |
+  s2\sustainOn s2\sustainOff\sustainOn |
+  s1\sustainOff |
+  s1\sustainOn |
+  s1\sustainOff |
+  s2\sustainOn s\sustainOff\sustainOn |
+  s1\sustainOff |
+  s2\sustainOn s\sustainOff |
+  s1\sustainOn |
+  s1\sustainOff\sustainOn |
+  s1\sustainOff |
+  s2\sustainOn s\sustainOff\sustainOn |
+  s1\sustainOff |
+  s2\sustainOn s\sustainOff\sustainOn |
+  s2\sustainOff s\sustainOn |
+  s1\sustainOff\sustainOn |
+  s\sustainOff\sustainOn |
+  s\sustainOff\sustainOn |
+  s |
+  s2\sustainOff\sustainOn s\sustainOff\sustainOn |
+  s2\sustainOff s\sustainOn |
+  s1\sustainOff\sustainOn |
+  \repeat unfold 3 {s2\sustainOff\sustainOn s2\sustainOff\sustainOn |}
+  s2\sustainOff s\sustainOn |
+  s1 |
+  s\sustainOff |
+  s1*3 |
+  s2\sustainOn s4\sustainOff\sustainOn s4\sustainOff\sustainOn |
+  s2\sustainOff\sustainOn s2\sustainOff\sustainOn |
+  s4 s\sustainOff s2\sustainOn |
+  s1\sustainOff |
+  s |
+  s2\sustainOn s\sustainOff\sustainOn |
+  s1\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s2 s\sustainOn |
+  s1\sustainOff |
+  s1*2 |
+  s2 s\sustainOn |
+  s1\sustainOff\sustainOn |
+  s2\sustainOff\sustainOn s2\sustainOff\sustainOn |
+  s2\sustainOff\sustainOn s2\sustainOff\sustainOn |
+  s1\sustainOff |
+  s2\sustainOn s\sustainOff\sustainOn |
+  s1\sustainOff |
+  s2\sustainOn s\sustainOff\sustainOn |
+  s2\sustainOff s\sustainOn |
+  s1\sustainOff\sustainOn |
+  s2\sustainOff\sustainOn s2\sustainOff\sustainOn |
+  s1\sustainOn |
+  s2. s4\sustainOff |
 }
 
 %==============================================
@@ -2018,9 +2644,424 @@ leftMvtIV = \relative c'
 
 dynamicsMvtIV =
 {
+  s4\p |
+  s1*3 |
+  s2. s4\f |
+  s1*4 |
+  s2\f s\> |
+  s4 s2-\dolce s4\f |
+  s2 s\> |
+  s4 s2.\< |
+  s1\mf |
+  s1*3 |
+  s1\f |
+  s1*2 |
+  s2. s4\p |
+  s2. s4\< |
+  s2 s\! |
+  s1\f |
+  s1*2 |
+  s2. s4\p |
+  s2 s\< |
+  s s\! |
+  s1\f |
+  s |
+  s\fp |
+  s2 s-\congrazia |
+  s1*2 |
+  s1\mf |
+  s1*3 |
+  s1\< |
+  s\f |
+  s\> |
+  s |
+  s\! |
+  s |
+  \crescTextCresc
+  s2 s\< |
+  s2. s4\f |
+  s1*3 |
+  s2. s4\p |
+  s1*2 |
+  \crescHairpin
+  s1\< |
+  s\> |
+  s\f |
+  s1*2 |
+  s2. s4\f |
+  s1 |
+  \dimTextDecresc
+  s\> |
+  s |
+  s2.\p s4\ff |
+  s1 |
+  s2\mf s\ff |
+  s2. s4\f |
+  s1 |
+  \dimHairpin
+  s\> |
+  s2.\! s4\p |
+  s2 s\< |
+  s1\f |
+  s1*2 |
+  s2. s4\mf |
+  s1 |
+  s\> |
+  s |
+  s4 s2\! s4\pdolce |
+  s1*2 |
+  s2 s\> |
+  s1 |
+  s\pp |
+  s1*3 |
+  s1 | %poco cal
+  s2. s4\mf |
+  %a tempo
+  s1*3 |
+  s2. s4\f |
+  s1\> |
+  s2.\mf s4\f |
+  s1 |
+  s\< |
+  s\f |
+  \crescJustTextCresc
+  s2. s4\< |
+  \crescHairpin
+  s1\< |
+  s2. s4\ff |
+  s1*3 |
+  s2. s4\sempref |
+  s1*6 |
+  s2. s4\ff |
+  s1*6 |
+  s2. s4\f |
+  s1 |
+  \dimHairpin
+  s2. s4\> |
+  s1*2 |
+  s1\mf |
+  s |
+  \dimTextDecresc
+  s\> |
+  s |
+  s\p |
+  s1*2 |
+  s2. s4\pp |
+  s1*3 |
+  s2. s4-\espr |
+  s1*3 |
+  s2. s4\p |
+  s1 |
+  s2 s\pp |
+  s2. s4\mf |
+  s1*2 |
+  s1-\congrazia |
+  s2. s4\f |
+  s1*5 |
+  s2. s4-\congrazia |
+  s1*2 |
+  s1\f |
+  s1*2 |
+  s2. s4\p |
+  s2. s4\mf |
+  \crescHairpin
+  s2\< s2\! |
+  s1\f |
+  s1*2 |
+  s2. s4\p |
+  s2. s4\mf |
+  s2.\< s4\! |
+  s2.\mf s4\p |
+  s1 |
+  s2.\mf s4\p |
+  s1 |
+  s1\f |
+  s1*4 |
+  \dimHairpin
+  s2 s\> |
+  s1*2 |
+  s1\p |
+  s1*3 |
+  s2 s\< |
+  s1 |
+  s1\> |
+  s\! |
+  s2 s\< |
+  s1 |
+  s\> |
+  s\! |
+  s1*4 |
+  s4\p s2.-\congrazia |
+  s1*3 |
+  s4 s2.\< |
+  s1 |
+  s\> |
+  s\! |
+  s\f |
+  s1*2 |
+  s1\> |
+  s\mf |
+  s1*3 |
+  s1\f |
+  s1*8 |
+  s1\< |
+  s |
+  s2 s\! |
+  s1 |
+  s\mf |
+  s |
+  s\> |
+  s\p |
+  \crescTextCresc
+  s\< |
+  s\f |
+  s |
+  s4 s2.\mf |
+  s1 |
+  s2. s4\p |
+  s1 |
+  \dimTextSempreDim
+  s2. s4\> |
+  s1 |
+  s2. s4\pp |
+  s1 |
+  \crescJustTextCresc
+  s2. s4\< |
+  s1 |
+  s |
+  \crescTextCresc
+  s\< |
+  s1*2 |
+  s1\f |
+  s1 |
+  s2 s\< |
+  s1 |
+  s\! |
+  s1*6 |
+  s1\ff |
+  s1 |
+  \dimHairpin
+  s2 s\> |
+  s1 |
+  s4 s2.\p |
+  s1*3 |
+  s2. s4\ff |
+  s1\sf |
+  s\sf |
+  s |
 }
 
 pedalsMvtIV =
 {
+  s4 |
+  s1\sustainOn |
+  s2.\sustainOff\sustainOn s4\sustainOff |
+  s1\sustainOn |
+  s\sustainOff |
+  s\sustainOn |
+  s2.\sustainOff\sustainOn s4\sustainOff |
+  s1\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff |
+  s1\sustainOn |
+  s2\sustainOff s\sustainOn |
+  s1\sustainOff\sustainOn |
+  s\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s1 |
+  s1\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff |
+  s1\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff |
+  s1*2 |
+  s1\sustainOn |
+  s2\sustainOff\sustainOn s4\sustainOff\sustainOn s\sustainOff |
+  s1\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff |
+  s1*2 |
+  s2.\sustainOn s4\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s1\sustainOn |
+  s2 s\sustainOff |
+  s1*2 |
+  s2.\sustainOn s4\sustainOff |
+  s4 s\sustainOn s\sustainOff s |
+  s1\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff |
+  s1\sustainOn |
+  s\sustainOff\sustainOn |
+  s\sustainOff |
+  s |
+  s2.\sustainOn s4\sustainOff |
+  s1*3 |
+  s1\sustainOn |
+  s2.\sustainOff\sustainOn s4\sustainOff |
+  s1 |
+  s2. s4\sustainOn |
+  s2. s4\sustainOff\sustainOn |
+  s2. s4\sustainOff\sustainOn |
+  s2. s4\sustainOff\sustainOn |
+  s1 |
+  s2.\sustainOff\sustainOn s4\sustainOff |
+  s4.\sustainOn s8\sustainOff s2 |
+  s2.\sustainOn s4\sustainOff |
+  s4.\sustainOn s8\sustainOff s4 s\sustainOn |
+  s2. s4\sustainOff\sustainOn |
+  s2. s4\sustainOff\sustainOn |
+  s1 |
+  s2.\sustainOff\sustainOn s4\sustainOff\sustainOn |
+  s2. s4\sustainOff |
+  s2.\sustainOn s4\sustainOff\sustainOn |
+  s2. s4\sustainOff |
+  s1*5 |
+  s2.\sustainOn s4\sustainOff |
+  s1 |
+  s2.\sustainOn s4\sustainOff\sustainOn |
+  s2. s4\sustainOff\sustainOn |
+  s2. s4\sustainOff\sustainOn |
+  s2. s4\sustainOff |
+  s1\sustainOn |
+  s4 s2.\sustainOff |
+  s1\sustainOn |
+  s4 s2.\sustainOff |
+  s1\sustainOn |
+  s\sustainOff\sustainOn |
+  s2. s4\sustainOff |
+  s1*4 |
+
+  %a tempo
+  s2\sustainOn s\sustainOff |
+  s2\sustainOn s\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s2\sustainOn s\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s1 |
+  s2\sustainOn s\sustainOff |
+  s2\sustainOn s\sustainOff\sustainOn |
+  s2.\sustainOff\sustainOn s4\sustainOff |
+  s2.\sustainOn s4\sustainOff\sustainOn |
+  s1 |
+  s2. s4\sustainOff\sustainOn |
+  s1 |
+  s2 s\sustainOff |
+  s1*9 |
+  s1\sustainOn |
+  s1\sustainOff | %EDIT: added sustainOff
+  s1*3 |
+  s1\sustainOn |
+  s\sustainOff |
+  s1*2 |
+  s1\sustainOn |
+  s1*2 |
+  s1\sustainOff |
+  s2.\sustainOn s4\sustainOff\sustainOn |
+  s2. s4\sustainOff\sustainOn |
+  s2. s4\sustainOff\sustainOn |
+  s2. s4\sustainOff |
+  s1*4 |
+  s2.\sustainOn s4\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s1*5 |
+  s2\sustainOn s\sustainOff |
+  s2\sustainOn s\sustainOff |
+  s2\sustainOn s\sustainOff |
+  s1 |
+  \repeat unfold 6 {s2.\sustainOn s4\sustainOff |}
+  s1*2 |
+  s1\sustainOn |
+  s\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s1*3 |
+  s1\sustainOn |
+  s\sustainOff |
+  s1\sustainOn |
+  s\sustainOff |
+  s1*2 |
+  s1\sustainOn |
+  s2. s4\sustainOff |
+  s1\sustainOn |
+  s |
+  s\sustainOff\sustainOn |
+  s\sustainOff |
+  s |
+  s\sustainOn |
+  s2.\sustainOff\sustainOn s4\sustainOff |
+  s1 |
+  s\sustainOn |
+  s\sustainOff\sustainOn |
+  s\sustainOff\sustainOn |
+  s\sustainOff\sustainOn |
+  s\sustainOff |
+  s\sustainOn |
+  s\sustainOff\sustainOn |
+  s1 |
+  s\sustainOff\sustainOn |
+  s |
+  s\sustainOff\sustainOn |
+  s |
+  s\sustainOff |
+  s2 s\sustainOn |
+  s1 |
+  s2 s\sustainOff |
+  s1\sustainOn |
+  s\sustainOff\sustainOn |
+  s\sustainOff\sustainOn |
+  s1\sustainOff | %EDIT: added sustainOff
+  s1*10 |
+  s2.\sustainOn s4\sustainOff |
+  s1*5 |
+  s1\sustainOn |
+  s1\sustainOff\sustainOn |
+  s2 s\sustainOff\sustainOn |
+  s1 |
+  s2 s\sustainOff\sustainOn |
+  s1 |
+  s\sustainOff |
+  s1\sustainOn |
+  s\sustainOff |
+  s |
+  s\sustainOn |
+  s\sustainOff |
+  s\sustainOn |
+  s2 s\sustainOff |
+  s1\sustainOn |
+  s2\sustainOff\sustainOn s\sustainOff\sustainOn |
+  s1\sustainOff\sustainOn |
+  s2 s\sustainOff |
+  s1\sustainOn |
+  s\sustainOff |
+  s1\sustainOn |
+  s4 s2.\sustainOff |
+  s2.\sustainOn s4\sustainOff |
+  s1 |
+  s1\sustainOn |
+  s\sustainOff\sustainOn |
+  s\sustainOff\sustainOn |
+  s\sustainOff |
+  s1\sustainOn |
+  s\sustainOff |
+  s1*2 |
+  s1\sustainOn |
+  s\sustainOff |
+  s1*2 |
+  s1\sustainOn |
+  s\sustainOff |
+  s1*4 |
+  s1\sustainOn |
+  s\sustainOff\sustainOn |
+  s4 s2.\sustainOff |
+  s1\sustainOn |
+  s\sustainOff |
+  s1\sustainOn |
+  s\sustainOff |
+  s1\sustainOn |
+  s4 s2.\sustainOff |
+  s2 s\sustainOn |
+  s\sustainOff s\sustainOn |
+  s1 |
+  s4 s2.\sustainOff |
 }
 
