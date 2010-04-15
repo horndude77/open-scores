@@ -202,12 +202,12 @@ instrument = "Piano"
     <<
       \new Staff
       {
-        << \outlineMvtI \midiOutlineMvtI >>
+        \outlineMvtI
         s8*4
-        << \outlineMvtII \midiOutlineMvtII >>
-        << \outlineMvtIII \midiOutlineMvtIII >>
+        \outlineMvtII
+        \outlineMvtIII
         s4*3
-        << \outlineMvtIV \midiOutlineMvtIV >>
+        \outlineMvtIV
       }
       \new Staff
       {

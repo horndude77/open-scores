@@ -121,7 +121,7 @@ outlineMvtI =
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \set Score.skipBars = ##t
   \time 4/4
-  \tempoMark "Allegro moderato"
+  \tempo "Allegro moderato" 4=120
   s1*2 |
   \repeat volta 2
   {
@@ -150,33 +150,14 @@ outlineMvtI =
   s1*21 | \bar "|."
 }
 
-midiOutlineMvtI =
-{
-  \tempo 4 = 120
-  s1*2 |
-  %repeat
-  s1*66 |
-  %first ending
-  s1*2 |
-  %second ending
-  s1 |
-
-  s1*92 |
-
-  %a major
-  s1*24 |
-
-  %a minor
-  s1*21 |
-}
-
 outlineMvtII =
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \set Score.skipBars = ##t
   \time 6/8
-  \tempoMark "Scherzo" %TODO Molto vivace
+  \tempoMark "Scherzo"
+  \tempo "Molto vivace" 4.=116
   \partial 8*2 s8 s |
   s2.*2 |
   \repeat volta 2
@@ -187,26 +168,13 @@ outlineMvtII =
   s2.*93 | \bar "|."
 }
 
-midiOutlineMvtII =
-{
-  \tempo 4. = 116
-  s8 s |
-  s2.*2 |
-  %repeat
-  s2.*12 |
-
-  %end repeat
-  s2.*59 |
-  s2.*93 |
-}
-
 outlineMvtIII =
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \set Score.skipBars = ##t
   \time 4/4
-  \tempoMark "Adagio"
+  \tempo "Adagio" 4=60
   s1*42 |
 
   \tempo "a tempo"
@@ -219,43 +187,19 @@ outlineMvtIII =
   s1*24 | \bar "|."
 }
 
-midiOutlineMvtIII =
-{
-  \tempo 4 = 60
-  s1*42 |
-
-  \tempo "a tempo"
-  s1*12 |
-
-  %rit
-  s1 |
-
-  \tempo "a tempo"
-  s1*24 |
-}
-
 outlineMvtIV =
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \set Score.skipBars = ##t
   \time 4/4
-  \tempoMark "Allegro ma non troppo"
+  \tempoMark "Finale"
+  \tempo "Allegro ma non troppo" 4=152
   \partial 4 s4 |
   s1*87 |
 
   \tempo "a tempo"
   s1*178 | \bar "|."
-}
-
-midiOutlineMvtIV =
-{
-  \tempo 4 = 152
-  s4 |
-  s1*76 |
-
-  \tempo "a tempo"
-  s1*189 |
 }
 
 afterGraceFraction = #(cons 15 16)
