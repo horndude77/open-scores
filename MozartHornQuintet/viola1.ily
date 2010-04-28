@@ -1,3 +1,5 @@
+\version "2.13.18"
+
 violaOneMvtI = \relative c'
 {
   \clef alto
@@ -141,10 +143,6 @@ violaOneMvtI = \relative c'
 
 violaOneMvtII = \relative c'
 {
-  #(override-auto-beam-setting '(end 1 32 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 32 * *) 2 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 2 8)
   \clef alto
   \key bes \major
   bes8(\p d f) |
@@ -467,4 +465,3 @@ violaOneMvtIII = \relative c'
   ees4 bes8. bes16 |
   bes4 r |
 }
-

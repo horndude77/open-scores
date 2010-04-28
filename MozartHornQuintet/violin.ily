@@ -1,3 +1,5 @@
+\version "2.13.18"
+
 violinMvtI = \relative c'
 {
   \key ees \major
@@ -133,10 +135,6 @@ violinMvtI = \relative c'
 
 violinMvtII = \relative c''
 {
-  #(override-auto-beam-setting '(end 1 32 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 32 * *) 2 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 2 8)
   \key bes \major
   f4.\p |
   d4 \appoggiatura f32 ees16( d32 c) |
@@ -421,4 +419,3 @@ violinMvtIII = \relative c'''
   <g bes, ees,>4 <ees, g,>8. <ees g,>16 |
   <ees g,>4 r |
 }
-

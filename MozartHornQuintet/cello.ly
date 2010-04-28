@@ -1,7 +1,7 @@
-\version "2.11.62"
+\version "2.13.18"
 
-\include "defs.lyi" 
-\include "cello_notes.lyi" 
+\include "defs.ily" 
+\include "cello.ily" 
 
 instrument = "Cello"
 
@@ -9,5 +9,4 @@ notesMvtI = \celloMvtI
 notesMvtII = \celloMvtII
 notesMvtIII = \celloMvtIII
 
-\include "part.lyi"
-
+\include "part.ily"

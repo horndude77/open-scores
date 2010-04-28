@@ -1,3 +1,5 @@
+\version "2.13.18"
+
 hornMvtI = \relative c''
 {
   \transposition ees
@@ -142,10 +144,6 @@ hornMvtI = \relative c''
 
 hornMvtII = \relative c''
 {
-  #(override-auto-beam-setting '(end 1 32 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 32 * *) 2 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 2 8)
   \transposition ees
   R4.*18 |
   d4.\p |

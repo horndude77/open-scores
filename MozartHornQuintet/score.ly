@@ -1,22 +1,11 @@
-\version "2.11.62"
+\version "2.13.18"
 
-\include "defs.lyi"
-\include "horn_notes.lyi"
-\include "violin_notes.lyi"
-\include "viola1_notes.lyi"
-\include "viola2_notes.lyi"
-\include "cello_notes.lyi"
-
-\paper
-{
-  %#(define page-breaking ly:minimal-breaking)
-  %#(define page-breaking ly:page-turn-breaking)
-  ragged-last-bottom = ##f
-  between-system-space = 0.5\cm
-  between-system-padding = #0
-  page-limit-inter-system-space = ##t
-  page-limit-inter-system-space-factor = 1.5
-}
+\include "defs.ily"
+\include "horn.ily"
+\include "violin.ily"
+\include "viola1.ily"
+\include "viola2.ily"
+\include "cello.ily"
 
 #(set-global-staff-size 16)
 
@@ -26,7 +15,7 @@ spacerIItoIII = {s8*3}
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     \new StaffGroup
@@ -141,10 +130,10 @@ spacerIItoIII = {s8*3}
     <<
       \new Staff
       {
-        << \outlineMvtI \midiOutlineMvtI >>
-        << \outlineMvtII \midiOutlineMvtII >>
+        \outlineMvtI
+        \outlineMvtII
         \spacerIItoIII
-        << \outlineMvtIII \midiOutlineMvtIII >>
+        \outlineMvtIII
       }
       \new Staff
       {
@@ -190,4 +179,3 @@ spacerIItoIII = {s8*3}
     \midi {}
   }
 }
-

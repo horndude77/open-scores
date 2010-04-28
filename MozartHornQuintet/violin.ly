@@ -1,7 +1,7 @@
-\version "2.11.62"
+\version "2.13.18"
 
-\include "defs.lyi" 
-\include "violin_notes.lyi" 
+\include "defs.ily" 
+\include "violin.ily" 
 
 instrument = "Violin"
 
@@ -9,5 +9,4 @@ notesMvtI = \violinMvtI
 notesMvtII = \violinMvtII
 notesMvtIII = \violinMvtIII
 
-\include "part.lyi"
-
+\include "part.ily"

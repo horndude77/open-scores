@@ -1,3 +1,5 @@
+\version "2.13.18"
+
 celloMvtI = \relative c,
 {
   \key ees \major
@@ -135,10 +137,6 @@ celloMvtI = \relative c,
 
 celloMvtII = \relative c
 {
-  #(override-auto-beam-setting '(end 1 32 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 32 * *) 2 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 2 8)
   \clef bass
   \key bes \major
   R4. |
@@ -429,4 +427,3 @@ celloMvtIII = \relative c
   ees4 ees, |
   ees r |
 }
-

@@ -1,7 +1,7 @@
-\version "2.11.62"
+\version "2.13.18"
 
-\include "defs.lyi" 
-\include "horn_notes.lyi" 
+\include "defs.ily" 
+\include "horn.ily" 
 
 instrument = "Horn"
 
@@ -9,5 +9,4 @@ notesMvtI = \hornMvtI
 notesMvtII = \hornMvtII
 notesMvtIII = \hornMvtIII
 
-\include "part.lyi"
-
+\include "part.ily"
