@@ -1,6 +1,6 @@
-\version "2.11.65"
+\version "2.13.18"
 
-\include "defs.lyi"
+\include "defs.ily"
 
 rightNotes = \relative c'
 {
@@ -197,9 +197,9 @@ leftNotes = \relative c,
   \dimHairpin
   f,16( c' f a c f a4) r8 r4. |
   \clef bass
-  f,,,,,16\< c' f a c f a c f \clef treble a\> c f
+  f,,,,,16(\< c' f a c f a c f \clef treble a\> c f
     \ottava #1
-    \times 6/5 {a c f a c} |
+    \times 6/5 {a c f a c)} |
     \ottava #0
   <f,,, c' a'>2.~\! <f c' a'>4 r8 |
 }
@@ -277,4 +277,3 @@ pedals =
   s4.*3\sustainOff\sustainOn |
   s4.*3*5 |
 }
-

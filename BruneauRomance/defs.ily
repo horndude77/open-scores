@@ -1,4 +1,4 @@
-\version "2.11.65"
+\version "2.13.18"
 
 %====
 %Octave function
@@ -36,13 +36,6 @@ octaves = #(define-music-function (parser location arg mus) (integer? ly:music?)
  (octavize mus arg))
 %====
 
-tempoMark = #(define-music-function (parser location markp) (string?)
-#{
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \mark \markup { \bold $markp }
-#})
-
 espress = \markup {\italic espress.}
 dolcissespress = \markup {\italic "dolciss. espress."}
 pocorall = \markup {\italic "poco rall."}
@@ -62,11 +55,10 @@ outline =
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \set Score.skipBars = ##t
   \time 9/8
-  \tempo 4. = 60
-  \tempoMark "Andante moderato"
+  \tempo "Andante moderato" 4. = 60
   s4.*3*11 |
 
-  \tempoMark "Un poco più mosso"
+  \tempo "Un poco più mosso"
   s4.*3*9 |
   s2.
   %poco rall.
@@ -78,7 +70,7 @@ outline =
   %rall
   s2. |
 
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s4.*3*15 |
   s4.
   %poco alarg.
@@ -88,3 +80,36 @@ outline =
   s4.*3*6 | \bar "|."
 }
 
+afterGraceFraction = #(cons 15 16)
+
+\layout
+{
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+  }
+}
+
+\midi
+{
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
+  }
+}
+
+\paper
+{
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
+}

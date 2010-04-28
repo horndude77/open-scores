@@ -1,24 +1,16 @@
-\version "2.11.65"
+\version "2.13.18"
 
-\include "horn_notes.lyi"
-\include "piano_notes.lyi"
-\include "defs.lyi"
+\include "horn.ily"
+\include "piano.ily"
+\include "defs.ily"
 
 instrument = "Piano"
-
-\paper
-{
-  %between-system-space = #0.0
-  %between-system-padding = #0.0
-  ragged-last-bottom = ##f
-  %ragged-bottom = ##f
-}
 
 #(set-global-staff-size 18)
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     <<
@@ -27,33 +19,16 @@ instrument = "Piano"
       {
         fontSize = #-3
         \override StaffSymbol #'staff-space = #(magstep -3)
+        instrumentName = "Horn in F"
       }
-      {
-        \set Staff.midiInstrument = "french horn"
-        \set Staff.instrumentName = "Horn in F"
-        #(set-accidental-style 'modern)
-        \hornNotes
-      }
+      { \hornNotes }
       \new PianoStaff
       <<
         \set PianoStaff.instrumentName = "Piano"
-        \new Staff="RH"
-        {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
-          << \rightNotes \dynamics >>
-        }
-
-        %\new Dynamics = "dynamics" \dynamics
-
-        \new Staff="LH"
-        {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
-          << \leftNotes \pedals \outline >>
-        }
-
-        %\new Dynamics = "pedals" \pedals
+        \new Staff="RH" { \rightNotes }
+        \new Dynamics \dynamics
+        \new Staff="LH" { << \leftNotes \outline >> }
+        \new Dynamics \pedals
       >>
     >>
   }
@@ -66,31 +41,14 @@ instrument = "Piano"
       {
         \outline
       }
-      \new Staff
-      {
-        \set Staff.midiInstrument = "french horn"
-        \hornNotes
-      }
+      \new Staff \with { midiInstrument = "french horn" } { \hornNotes }
       \new PianoStaff
       <<
-        \new Staff="RH"
-        {
-          << \rightNotes \dynamics >>
-        }
-        \new Staff="LH"
-        {
-          << \leftNotes \pedals >>
-        }
+        \new Staff="RH" { << \rightNotes \dynamics >> }
+        \new Staff="LH" { << \leftNotes \pedals >> }
       >>
     >>
-    \midi
-    {
-      \context
-      {
-        \Voice
-        \remove "Dynamic_performer"
-      }
-    }
+    \midi { }
   }
 }
 
