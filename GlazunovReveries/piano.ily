@@ -1,12 +1,9 @@
-\version "2.11.62"
+\version "2.13.18"
 
-\include "defs.lyi"
+\include "defs.ily"
 
 pianoRight = \relative c'
 {
-  #(override-auto-beam-setting '(end * * * *) 1 4)
-  #(override-auto-beam-setting '(end * * * *) 2 4)
-  #(override-auto-beam-setting '(end * * * *) 3 4)
   \key des \major
   <f des aes f>2\arpeggio <f des aes f>4\arpeggio |
   <f des aes f>2\arpeggio <f des aes>4\arpeggio |
@@ -228,7 +225,6 @@ pianoLeft = \relative c
       <des bes' des f>
     }
     {
-      %TODO: This is fixed in 2.11.20 remove the '%' when it comes out.
       \change Staff=RH
       \times 2/3 {des''8( f des} \change Staff=LH
       \clef treble \times 2/3 {bes8 f des} \times 2/3 {f bes des} |
@@ -329,4 +325,3 @@ pianoDynamics =
 pianoPedals =
 {
 }
-

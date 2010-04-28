@@ -1,10 +1,9 @@
-\include "defs.lyi"
+\version "2.13.18"
+
+\include "defs.ily"
 
 horn = \relative c''
 {
-  #(override-auto-beam-setting '(end * * * *) 1 4)
-  #(override-auto-beam-setting '(end * * * *) 2 4)
-  #(override-auto-beam-setting '(end * * * *) 3 4)
   \key c \major
   \transposition f
   \time 3/4
@@ -79,4 +78,3 @@ horn = \relative c''
   ees2.~-+ | ees-\open\< |
   ees2.~\mf^\morendo | ees\fermata |
 }
-
