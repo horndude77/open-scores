@@ -1,8 +1,70 @@
 \version "2.13.18"
 
+div = \markup {div.}
+unis = \markup {unis.}
+pizz = \markup {pizz.}
+arco = \markup {arco}
+sourdines = \markup {\italic sourdines}
+otezLesSourdines = \markup {\italic {otez les sourdines}}
+vibrato = \markup {\italic vibrato.}
+conDolcezza = \markup {\italic {con dolcezza}}
+pppEspressivo = #(make-dynamic-script (markup #:line(#:dynamic "ppp" #:normal-text #:italic "espressivo")))
+fpp = #(make-dynamic-script "fpp")
+
+crescTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #3.0
+}
+
+crescJustTextCresc =
+{
+  \set crescendoText = \markup { \italic "cresc." }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+crescJustTextCrescPoco =
+{
+  \set crescendoText = \markup { \italic "cresc. poco" }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+crescJustTextCrescSempre =
+{
+  \set crescendoText = \markup { \italic "cresc. sempre" }
+  \set crescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+dimJustTextDim =
+{
+  \set decrescendoText = \markup { \italic "dim." }
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
+stop =
+#(define-music-function (parser location music) (ly:music?)
+  (set! (ly:music-property music 'tweaks)
+        (acons 'before-line-breaking
+               (lambda (grob)
+                 (let ((dots (ly:grob-object grob 'dot)))
+                   (ly:grob-set-property! grob 'duration-log 2)
+                   (and (ly:grob? dots)
+                        (ly:grob-set-property! dots 'dot-count 0))))
+               (ly:music-property music 'tweaks)))
+  music)
+
 outline =
 {
   \time 3/4
+  \overrideBeamSettings #'Score #'(3 . 4) #'end
+  #'((* . (3))
+     ((1 . 24) . (6 6 6))
+     ((1 . 12) . (3 3 3)))
 
   s2.*5 \bar "||"
   s2.*3 \bar "||"
