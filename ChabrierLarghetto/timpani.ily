@@ -1,3 +1,5 @@
+\version "2.13.18"
+
 timpani = \relative c
 {
   \clef bass

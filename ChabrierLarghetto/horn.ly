@@ -1,9 +1,9 @@
-\version "2.11.54"
+\version "2.13.18"
 
-\include "horn_notes.lyi"
+\include "horn.ily"
 
 instrument = "Horn"
 notes = \horn
 
-\include "part.lyi"
+\include "part.ily"
 

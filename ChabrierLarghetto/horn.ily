@@ -1,4 +1,6 @@
-\include "defs.lyi"
+\version "2.13.18"
+
+\include "defs.ily"
 
 horn =  \relative c' \context Voice = "horn"
 {
@@ -212,4 +214,3 @@ horn =  \relative c' \context Voice = "horn"
   c4~ c8 \!\) r8 r4 |
   R2.*7 |
 }
-

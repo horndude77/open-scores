@@ -1,35 +1,30 @@
-\version "2.11.54"
+\version "2.13.18"
 
-\include "flute1_notes.lyi"
-\include "flute2_notes.lyi"
-\include "oboe1_notes.lyi"
-\include "oboe2_notes.lyi"
-\include "clarinet1_notes.lyi"
-\include "clarinet2_notes.lyi"
-\include "bassoon1_notes.lyi"
-\include "bassoon2_notes.lyi"
-\include "harp_notes.lyi"
-\include "horn_notes.lyi"
-\include "timpani_notes.lyi"
-\include "violin1_notes.lyi"
-\include "violin2_notes.lyi"
-\include "viola_notes.lyi"
-\include "cello_notes.lyi"
-\include "bass_notes.lyi"
-\include "defs.lyi"
+\include "flute1.ily"
+\include "flute2.ily"
+\include "oboe1.ily"
+\include "oboe2.ily"
+\include "clarinet1.ily"
+\include "clarinet2.ily"
+\include "bassoon1.ily"
+\include "bassoon2.ily"
+\include "harp.ily"
+\include "horn.ily"
+\include "timpani.ily"
+\include "violin1.ily"
+\include "violin2.ily"
+\include "viola.ily"
+\include "cello.ily"
+\include "bass.ily"
+\include "defs.ily"
 
 instrument = "Orchestra"
-
-\paper
-{
-  ragged-last-bottom = ##f
-}
 
 #(set-global-staff-size 16)
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     \new StaffGroup
@@ -201,14 +196,7 @@ instrument = "Orchestra"
         }
       >>
     }
-    \midi
-    {
-      \context
-      {
-        \Voice
-        \remove "Dynamic_performer"
-      }
-    }
+    \midi { }
   }
 }
 
