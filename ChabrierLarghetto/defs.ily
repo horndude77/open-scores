@@ -4,12 +4,20 @@ div = \markup {div.}
 unis = \markup {unis.}
 pizz = \markup {pizz.}
 arco = \markup {arco}
+solo = \markup {solo}
+soli = \markup {soli}
+marcato = \markup {\italic marcato}
+suivez = \markup {\italic suivez}
+rall = \markup {\italic rall.}
+dolce = \markup {\italic dolce}
 sourdines = \markup {\italic sourdines}
 otezLesSourdines = \markup {\italic {otez les sourdines}}
 vibrato = \markup {\italic vibrato.}
 conDolcezza = \markup {\italic {con dolcezza}}
-pppEspressivo = #(make-dynamic-script (markup #:line(#:dynamic "ppp" #:normal-text #:italic "espressivo")))
+pppEspressivo = #(make-dynamic-script (markup #:dynamic "ppp" #:normal-text #:italic "espressivo"))
+semprePP = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "pp"))
 fpp = #(make-dynamic-script "fpp")
+sfpp = #(make-dynamic-script "sfpp")
 
 crescTextCresc =
 {
@@ -46,6 +54,13 @@ dimJustTextDim =
   \override DynamicTextSpanner #'dash-period = #-1.0
 }
 
+dimJustTextDimMolto =
+{
+  \set decrescendoText = \markup { \italic "dim. molto" }
+  \set decrescendoSpanner = #'text
+  \override DynamicTextSpanner #'dash-period = #-1.0
+}
+
 stop =
 #(define-music-function (parser location music) (ly:music?)
   (set! (ly:music-property music 'tweaks)
@@ -60,6 +75,7 @@ stop =
 
 outline =
 {
+  \tempo 4=92
   \time 3/4
   \overrideBeamSettings #'Score #'(3 . 4) #'end
   #'((* . (3))
@@ -133,7 +149,7 @@ afterGraceFraction = #(cons 15 16)
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
-    markFormatter = #format-mark-numbers
+    %markFormatter = #format-mark-numbers
   }
 }
 

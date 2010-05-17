@@ -1,5 +1,6 @@
 \version "2.13.18"
 
+\include "defs.ily"
 \include "flute1.ily"
 \include "flute2.ily"
 \include "oboe1.ily"
@@ -16,7 +17,6 @@
 \include "viola.ily"
 \include "cello.ily"
 \include "bass.ily"
-\include "defs.ily"
 
 instrument = "Orchestra"
 
@@ -81,11 +81,11 @@ instrument = "Orchestra"
       <<
         \set PianoStaff.instrumentName = "Harp"
         \set PianoStaff.shortInstrumentName = "Hp."
-        \new Staff
+        \new Staff=RH
         {
           \harpRightHand
         }
-        \new Staff
+        \new Staff=LH
         {
           \harpLeftHand
         }
@@ -164,11 +164,12 @@ instrument = "Orchestra"
           \set Staff.midiInstrument = "bassoon"
           << \bassoonOne \bassoonTwo >>
         }
-        \new Staff
-        {
-          \set Staff.midiInstrument = "pizzicato strings"
-          << \harpRightHand \harpLeftHand >>
-        }
+        \new PianoStaff
+        <<
+          \set PianoStaff.midiInstrument = "pizzicato strings"
+          \new Staff=RH \harpRightHand
+          \new Staff=LH \harpLeftHand
+        >>
         \new Staff
         {
           \set Staff.midiInstrument = "timpani"

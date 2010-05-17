@@ -10,7 +10,7 @@ violinOne = \relative c''
 
   %A
   R2.*2 |
-  r8^\div
+  r8 s1*0^\div
   <<
     {
       f4-^\f f-^ f8[~-^ |
