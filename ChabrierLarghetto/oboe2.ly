@@ -1,9 +1,9 @@
 \version "2.13.18"
 
 \include "defs.ily"
-\include "horn.ily"
+\include "oboe2.ily"
 
-instrument = "Horn"
-notes = \horn
+instrument = "Oboe II"
+notes = \oboeTwo
 
 \include "part.ily"
