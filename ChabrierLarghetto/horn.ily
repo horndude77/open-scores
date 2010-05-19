@@ -4,10 +4,8 @@
 
 horn =  \relative c' \context Voice = "horn"
 {
-  \set Staff.instrumentName = \markup { \column { "Horn" "en Fa" } }
   \transposition f
   \clef treble
-  \key c \major
 
   R2.*5 |
   r8^\fermata c[-.(^\markup{\italic dolce}_\markup{\italic {quasi recitativo}} e-. g-. bes-. c]-.) |
