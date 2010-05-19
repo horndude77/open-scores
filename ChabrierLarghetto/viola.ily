@@ -30,7 +30,7 @@ viola = \relative c'
   r8 b'4-.(\mf bis-.) cis8[(\< |
   d\sf\> cis])\! r4 r |
   r8 a4-.(\< bes-.)\! b8[(\< |
-  c\sf\> b]) r4 r |
+  c\sf\> b])\! r4 r |
   r8 fis4-.( fis-. fis8-.) |
   r8 a4-.( a-. a8-.) |
   R2.*2 |

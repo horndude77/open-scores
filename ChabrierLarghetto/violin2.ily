@@ -71,7 +71,9 @@ violinTwo = \relative c''
   r ees( f a) r <c ees,>[~( |
   q] q4 q q8[~ |
   q] q4 <a f> q8[~ |
-  q] f4 f fis8[~\> |
+  q] f4 f
+    \lengthenHairpin #4
+    fis8[~\> |
   fis]\! <g bes,>4) s1*0^\div
   <<
     {

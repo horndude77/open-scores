@@ -1,6 +1,7 @@
 \version "2.13.18"
 
 \include "defs.ily"
+\include "merge_rests.ily"
 \include "flute1.ily"
 \include "flute2.ily"
 \include "oboe1.ily"
@@ -22,6 +23,11 @@ instrument = "Orchestra"
 
 #(set-global-staff-size 16)
 
+\paper
+{
+  short-indent = 4\mm
+}
+
 \book
 {
   \include "header.ily"
@@ -30,52 +36,44 @@ instrument = "Orchestra"
     \new StaffGroup
     <<
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Flute I"
-        \set Staff.shortInstrumentName = "Fl.I"
-        \fluteOne
+        \set Staff.instrumentName = "Flute I,II"
+        \set Staff.shortInstrumentName = "Fl."
+        <<
+          \new Voice {\voiceOne \dynamicUp \fluteOne}
+          \new Voice {\voiceTwo \dynamicDown \fluteTwo}
+        >>
       }
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Flute II"
-        \set Staff.shortInstrumentName = "Fl.II"
-        \fluteTwo
+        \set Staff.instrumentName = "Oboe I,II"
+        \set Staff.shortInstrumentName = "Ob."
+        <<
+          \new Voice {\voiceOne \dynamicUp \oboeOne}
+          \new Voice {\voiceTwo \dynamicDown \oboeTwo}
+        >>
       }
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Oboe I"
-        \set Staff.shortInstrumentName = "Ob.I"
-        \oboeOne
+        \set Staff.instrumentName = "Clarinet I,II"
+        \set Staff.shortInstrumentName = "Cl."
+        <<
+          \new Voice {\voiceOne \dynamicUp \clarinetOne}
+          \new Voice {\voiceTwo \dynamicDown \clarinetTwo}
+        >>
       }
       \new Staff
+      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
-        \set Staff.instrumentName = "Oboe II"
-        \set Staff.shortInstrumentName = "Ob.II"
-        \oboeTwo
-      }
-      \new Staff
-      {
-        \set Staff.instrumentName = "Clarinet I"
-        \set Staff.shortInstrumentName = "Cl.I"
-        \clarinetOne
-      }
-      \new Staff
-      {
-        \set Staff.instrumentName = "Clarinet II"
-        \set Staff.shortInstrumentName = "Cl.II"
-        \clarinetTwo
-      }
-      \new Staff
-      {
-        \set Staff.instrumentName = "Bassoon I"
-        \set Staff.shortInstrumentName = "Bsn.I"
-        \bassoonOne
-      }
-      \new Staff
-      {
-        \set Staff.instrumentName = "Bassoon II"
-        \set Staff.shortInstrumentName = "Bsn.II"
-        \bassoonTwo
+        \set Staff.instrumentName = "Bassoon I,II"
+        \set Staff.shortInstrumentName = "Bsn."
+        <<
+          \new Voice {\voiceOne \dynamicUp \bassoonOne}
+          \new Voice {\voiceTwo \dynamicDown \bassoonTwo}
+        >>
       }
       \new PianoStaff
       <<

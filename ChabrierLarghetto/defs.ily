@@ -61,6 +61,12 @@ dimJustTextDimMolto =
   \override DynamicTextSpanner #'dash-period = #-1.0
 }
 
+lengthenHairpin = #(define-music-function (parser location len) (number?)
+#{
+  \once \override Hairpin #'to-barline = ##f
+  \once \override Hairpin #'minimum-length = #$len
+#})
+
 stop =
 #(define-music-function (parser location music) (ly:music?)
   (set! (ly:music-property music 'tweaks)
@@ -93,7 +99,9 @@ outline =
   s2.*14 |
 
   \mark \default
-  s2.*16 |
+  %s2.*16 |
+  s2.*8 | %\break
+  s2.*8 |
 
   \mark \default
   s2.*16 | \bar "||"
@@ -149,7 +157,13 @@ afterGraceFraction = #(cons 15 16)
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
-    %markFormatter = #format-mark-numbers
+    markFormatter = #format-mark-numbers
+    \override Beam #'breakable = ##t
+  }
+
+  \context
+  {
+    \RemoveEmptyStaffContext
   }
 }
 

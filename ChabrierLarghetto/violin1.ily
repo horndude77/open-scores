@@ -53,7 +53,8 @@ violinOne = \relative c''
   f] f4-.( f-. f8[~ |
   f] f4-. f-. f8[~) |
   f] f4-.( f-. f8[~ |
-  f] f4-. f-.) r8 |
+  %\override Score.Beam #'breakable = ##t
+  f] f4-. f-.) r8 | %\break
   R2. |
   r4 r8 c4( f8[~ |
   f] f4 f d8[~\sf |
@@ -77,7 +78,9 @@ violinOne = \relative c''
   \crescJustTextCresc
   bes(\< a g |
   f)\! c( f) |
-  f( d) d(\> |
+  f( d)
+    \lengthenHairpin #4
+    d(\> |
   bes)\! g'2~( |
   g4 f) a,( |
   bes c2)\ppp |

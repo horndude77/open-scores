@@ -31,7 +31,9 @@ clarinetTwo = \relative c''
   a,2.~\ppp |
   a( |
   g~) |
-  g2 d'4~\sfpp\> |
+  g2
+    \lengthenHairpin #7
+    d'4~\sfpp\> |
   d2.~\! |
   d8 r r4 r |
   R2.*4 |
@@ -46,7 +48,9 @@ clarinetTwo = \relative c''
   r2 d4~\sfp |
   d2.~ |
   d2( g,4~ |
-  g~ g8) r gis'4(\sf\> |
+  g~ g8) r
+    \lengthenHairpin #5
+    gis'4(\sf\> |
   a8)\! r r4 r |
   R2. |
   d,8 e4-.( eis-. fis8[~ |

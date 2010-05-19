@@ -34,7 +34,9 @@ bassoonTwo = \relative c,
   %C
   R2.*10 |
   \clef bass
-  r4 r bes~\sfpp\> |
+  r4 r
+    \lengthenHairpin #7
+    bes~\sfpp\> |
   bes8\! r r4 r |
   r4 f2\pp |
   r4 fis( g) |
@@ -45,7 +47,9 @@ bassoonTwo = \relative c,
   r4 r fis( |
   g2 gis4 |
   a4~) a8 r r4 |
-  r2 d,4(\sf\> |
+  r2
+    \lengthenHairpin #5
+    d,4(\sf\> |
   ees8)\! r r4 r |
   R2.*4 |
 

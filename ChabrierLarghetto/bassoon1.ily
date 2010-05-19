@@ -37,7 +37,9 @@ bassoonOne = \relative c,
   r4 r fis,(\sfpp |
   g c, bes' |
   a8) r r4 r |
-  r r d(\sfpp\> |
+  r r
+    \lengthenHairpin #7
+    d(\sfpp\> |
   c8)\! r r4 r |
   r4 a2\pp |
   r4 bes2 |
@@ -54,7 +56,9 @@ bassoonOne = \relative c,
   r4 r fis( |
   g2 gis4 |
   a2) a,4 |
-  bes2( bes'4~)\sf\> |
+  bes2(
+    \lengthenHairpin #5
+    bes'4~)\sf\> |
   bes8\! r r4 r |
   R2.*4 |
 

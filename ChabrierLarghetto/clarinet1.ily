@@ -36,7 +36,9 @@ clarinetOne = \relative c''
   f,2.~\ppp |
   f~ |
   f~ |
-  f2 f4~\sfpp\> |
+  f2
+    \lengthenHairpin #7
+    f4~\sfpp\> |
   f2.~\! |
   f8 r r4 r |
   R2.*4 |
@@ -51,7 +53,9 @@ clarinetOne = \relative c''
   f2 f4~\sfp |
   f2.~ |
   f2\( dis4( |
-  e~ e8)\) r c'4~\sf\> |
+  e~ e8)\) r
+    \lengthenHairpin #5
+    c'4~\sf\> |
   c8\! r e,4( ees |
   d2.) |
   r8 g4-.( gis-. a8[~ |

@@ -49,7 +49,9 @@ cello = \relative c,
   f~ f8 r fis'4(\sfpp |
   g c, bes' |
   a) ees2( |
-  a,4 bes fis(\sf\> |
+  a,4 bes
+    \lengthenHairpin #7
+    fis(\sf\> |
   g)\! d' des |
   c2.~_( |
   <c, c'>) |
@@ -68,8 +70,10 @@ cello = \relative c,
   f4~ f8 r fis'4(\< |
   g2 gis4 |
   a2 a,4 |
-  bes2) bes4~\sf\> |
-  bes\~ r r |
+  bes2)
+    \lengthenHairpin #5
+    bes4~\sf\> |
+  bes\! r r |
   r r c4~\p |
   c2.^~_( |
   <f, c'>2.~) |

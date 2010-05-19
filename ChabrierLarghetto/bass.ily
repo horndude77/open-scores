@@ -38,7 +38,9 @@ bass = \relative c,
   r4 r f8 r |
   R2.*2 |
   r4 ees'2(^\arco |
-  a,4 bes) fis(\sf\> |
+  a,4 bes)
+    \lengthenHairpin #7
+    fis(\sf\> |
   g)\! d' des |
   R2. |
   c8^\pizz r r4 r |
@@ -53,7 +55,9 @@ bass = \relative c,
   f4~ f8 r r4 |
   R2. |
   r4 r a'( |
-  bes2 d,4)(\sf\> |
+  bes2
+    \lengthenHairpin #5
+    d,4)(\sf\> |
   ees4)\! r r |
   R2. |
   r4 c2(\pp |
