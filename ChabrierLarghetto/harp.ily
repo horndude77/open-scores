@@ -142,7 +142,9 @@ harpLeftHand = \relative c
   %F
   \clef treble
   r4 a'32[( c ees f] \change Staff=RH a[ c ees f]) \change Staff=LH c,[( ees f a] \change Staff=RH c[ ees f a]) \change Staff=LH |
+  \override TupletBracket #'transparent = ##t
   r4 \times 4/6 {bes,,16[( ees f] \change Staff=RH bes[ ees f])} \change Staff=LH \times 4/6 {ees,16[( f bes] \change Staff=RH ees[ f bes])} \change Staff=LH |
+  \revert TupletBracket #'transparent
   r4 a,,32[( c ees f] \change Staff=RH a[ c ees f]) \change Staff=LH c,[( ees f a] \change Staff=RH c[ ees f a]) \change Staff=LH |
   r4 c,,32[( ees f a] \change Staff=RH c[ ees f a]) \change Staff=LH ees,[( f a c] \change Staff=RH ees[ f a c]) \change Staff=LH |
   r4 bes,,32[( ees f g] \change Staff=RH bes[ ees f g]) \change Staff=LH ees,[( f g bes] \change Staff=RH ees[ f g bes]) \change Staff=LH |
@@ -156,8 +158,12 @@ harpLeftHand = \relative c
   %H
   R2.*12 |
   \clef bass
+  \override TupletBracket #'transparent = ##t
+  \override TupletNumber #'transparent = ##t
   \times 4/6 {g,,,16[( d' f] \change Staff=RH b[ f' a])} \change Staff=LH \times 4/6 {g,16[( b d] \change Staff=RH f[ a d])} \change Staff=LH r4 |
   \times 4/6 {g,,,16[( d' f] \change Staff=RH b[ f' a])} \change Staff=LH \times 4/6 {g,16[( b d] \change Staff=RH f[ a d])} \change Staff=LH \clef treble \times 4/6 {g,[( b d] \change Staff=RH f[ a d])} \change Staff=LH |
+  \revert TupletBracket #'transparent
+  \revert TupletNumber #'transparent
   \clef bass
   <c,,, c,>8 r <f a c>\arpeggio r <g bes e>\arpeggio r |
   <c, c,> r \clef treble <a' c f>\arpeggio r <c f a>\arpeggio r |
