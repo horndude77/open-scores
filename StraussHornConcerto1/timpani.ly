@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "timpani_notes.lyi"
+\include "timpani.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = \markup {Timpani}
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \timpani
 
-\include "part.lyi"
+\include "part.ily"
 

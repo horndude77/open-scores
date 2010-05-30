@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "cello_notes.lyi"
+\include "cello.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = "Cello"
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \cello
 
-\include "part.lyi"
+\include "part.ily"
 

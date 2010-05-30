@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "horn1_notes.lyi"
+\include "horn1.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = \markup {Horn I in E\flat}
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \hornOne
 
-\include "part.lyi"
+\include "part.ily"
 

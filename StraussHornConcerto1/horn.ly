@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "horn_notes.lyi"
+\include "horn.ily"
 
 \paper
 {
@@ -12,9 +12,9 @@
 
 instrument = "Solo Horn in F"
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \horn
 
-\include "part.lyi"
+\include "part.ily"
 

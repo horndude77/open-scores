@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "defs.lyi"
+\include "defs.ily"
 
 hornMvtI = \relative c''
 {
@@ -94,12 +94,12 @@ hornMvtI = \relative c''
     d4->\> \times 2/3 { c8-. d-. ees-.} |
   \times 2/3 {d4\! d,8-.} \times 2/3 {d8-.\< fis-. a-.}
     d4->\> \times 2/3 { c8-. d-. ees-.} |
-  d4\! r \times 2/3 { r8 d,-. ees'~(} \times 2/3 { ees8 d) c-. } |
+  d4\! r \times 2/3 { r8 d,-. ees'~(} \times 2/3 {ees8 d) c-. } |
   \times 2/3 {bes4-. d8-.} \times 2/3 {d8-. e-. f-.}
     \times 2/3 {g,4(\( a8)} \times 2/3 {bes4( c8)\)} |
-  \times 2/3 {a4 c,8-.} \times 2/3 { c8-.\< f-. a-.}
+  \times 2/3 {a4 c,8-.} \times 2/3 {c8-.\< f-. a-.}
     c4->\> \times 2/3 {g8-. a-. bes-.} |
-  \times 2/3 {a4\! c,8-.} \times 2/3 { c8-.\< f-. a-.}
+  \times 2/3 {a4\! c,8-.} \times 2/3 {c8-.\< f-. a-.}
     c4->\> \times 2/3 {g8-. a-. bes-.} |
   a4\! r \times 2/3 {r8 f-. f'~(} \times 2/3 {f8 e) d-.} |
   \times 2/3 {c4-. f8-.} \times 2/3 {c8-. a-. f-.}
@@ -322,7 +322,7 @@ hornMvtIII = \relative c'
 
   %\time 6/8
   %s1*0^\markup{\bold{Tempo I.}}
-  \partial 4. r4.  |
+  r4.  |
   R2.*12 |
   bes4.^\markup{Solo \italic espressivo}(\p c |
   bes\< d4 c8 |

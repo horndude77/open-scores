@@ -1,8 +1,8 @@
 \version "2.12.2"
 
-\include "defs.lyi"
-\include "horn_notes.lyi"
-\include "bassoon1_notes.lyi"
+\include "defs.ily"
+\include "horn.ily"
+\include "bassoon1.ily"
 
 \addQuote "solo" { \hornCue }
 \addQuote "bassoon" { \bassoonOne }

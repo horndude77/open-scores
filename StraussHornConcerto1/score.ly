@@ -1,37 +1,37 @@
 \version "2.12.2"
 
-\include "flute1_notes.lyi"
-\include "flute2_notes.lyi"
-\include "oboe1_notes.lyi"
-\include "oboe2_notes.lyi"
-\include "clarinet1_notes.lyi"
-\include "clarinet2_notes.lyi"
-\include "bassoon1_notes.lyi"
-\include "bassoon2_notes.lyi"
-\include "horn1_notes.lyi"
-\include "horn2_notes.lyi"
-\include "trumpet1_notes.lyi"
-\include "trumpet2_notes.lyi"
-\include "timpani_notes.lyi"
-\include "horn_notes.lyi"
-\include "violin1_notes.lyi"
-\include "violin2_notes.lyi"
-\include "viola_notes.lyi"
-\include "cello_notes.lyi"
-\include "bass_notes.lyi"
+\include "flute1.ily"
+\include "flute2.ily"
+\include "oboe1.ily"
+\include "oboe2.ily"
+\include "clarinet1.ily"
+\include "clarinet2.ily"
+\include "bassoon1.ily"
+\include "bassoon2.ily"
+\include "horn1.ily"
+\include "horn2.ily"
+\include "trumpet1.ily"
+\include "trumpet2.ily"
+\include "timpani.ily"
+\include "horn.ily"
+\include "violin1.ily"
+\include "violin2.ily"
+\include "viola.ily"
+\include "cello.ily"
+\include "bass.ily"
 
 #(set-global-staff-size 14)
 %#(set-default-paper-size "a3")
 
 \paper
 {
-  #(define page-breaking ly:minimal-breaking)
+  %#(define page-breaking ly:minimal-breaking)
   %ragged-last-bottom = ##f
 }
 
 instrument = "Orchestra"
 
-\include "header.lyi"
+\include "header.ily"
 \book
 {
   \score
@@ -48,7 +48,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Flute I"
             \set Staff.shortInstrumentName = "Fl.I"
             \set Staff.midiInstrument = "flute"
-            \fluteOne
+            \killCues \fluteOne
           }
           \new Staff
           {
@@ -56,7 +56,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Flute II"
             \set Staff.shortInstrumentName = "Fl.II"
             \set Staff.midiInstrument = "flute"
-            \fluteTwo
+            \killCues \fluteTwo
           }
         >>
         \new GrandStaff
@@ -67,7 +67,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Oboe I"
             \set Staff.shortInstrumentName = "Ob.I"
             \set Staff.midiInstrument = "oboe"
-            \oboeOne
+            \killCues \oboeOne
           }
           \new Staff
           {
@@ -75,7 +75,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Oboe II"
             \set Staff.shortInstrumentName = "Ob.II"
             \set Staff.midiInstrument = "oboe"
-            \oboeTwo
+            \killCues \oboeTwo
           }
         >>
         \new GrandStaff
@@ -86,7 +86,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Clarinet I"
             \set Staff.shortInstrumentName = "Cl.I"
             \set Staff.midiInstrument = "clarinet"
-            \clarinetOne
+            \killCues \clarinetOne
           }
           \new Staff
           {
@@ -94,7 +94,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Clarinet II"
             \set Staff.shortInstrumentName = "Cl.II"
             \set Staff.midiInstrument = "clarinet"
-            \clarinetTwo
+            \killCues \clarinetTwo
           }
         >>
         \new GrandStaff
@@ -105,7 +105,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Bassoon I"
             \set Staff.shortInstrumentName = "Bsn.I"
             \set Staff.midiInstrument = "bassoon"
-            \bassoonOne
+            \killCues \bassoonOne
           }
           \new Staff
           {
@@ -113,7 +113,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Bassoon II"
             \set Staff.shortInstrumentName = "Bsn.II"
             \set Staff.midiInstrument = "bassoon"
-            \bassoonTwo
+            \killCues \bassoonTwo
           }
         >>
       >>
@@ -128,7 +128,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Horn I"
             \set Staff.shortInstrumentName = "Hn.I"
             \set Staff.midiInstrument = "french horn"
-            \hornOne
+            \killCues \hornOne
           }
           \new Staff
           {
@@ -136,7 +136,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Horn II"
             \set Staff.shortInstrumentName = "Hn.II"
             \set Staff.midiInstrument = "french horn"
-            \hornTwo
+            \killCues \hornTwo
           }
         >>
         \new GrandStaff
@@ -147,7 +147,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Trumpet I"
             \set Staff.shortInstrumentName = "Tp.I"
             \set Staff.midiInstrument = "trumpet"
-            \trumpetOne
+            \killCues \trumpetOne
           }
           \new Staff
           {
@@ -155,7 +155,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Trumpet II"
             \set Staff.shortInstrumentName = "Tp.II"
             \set Staff.midiInstrument = "trumpet"
-            \trumpetTwo
+            \killCues \trumpetTwo
           }
         >>
       >>
@@ -165,7 +165,7 @@ instrument = "Orchestra"
         \set Staff.instrumentName = "Timpani"
         \set Staff.shortInstrumentName = "Timp."
         \set Staff.midiInstrument = "timpani"
-        \timpani
+        \killCues \timpani
       }
       \new Staff
       {
@@ -173,7 +173,7 @@ instrument = "Orchestra"
         \set Staff.instrumentName = "Solo Horn"
         \set Staff.shortInstrumentName = "Hn"
         \set Staff.midiInstrument = "french horn"
-        << \horn \outline >>
+        \killCues << \horn \outline >>
       }
       \new StaffGroup
       <<
@@ -185,7 +185,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Violin I"
             \set Staff.shortInstrumentName = "Vl.I"
             \set Staff.midiInstrument = "string ensemble 1"
-            \violinOne
+            \killCues \violinOne
           }
           \new Staff
           {
@@ -193,7 +193,7 @@ instrument = "Orchestra"
             \set Staff.instrumentName = "Violin II"
             \set Staff.shortInstrumentName = "Vl.II"
             \set Staff.midiInstrument = "string ensemble 1"
-            \violinTwo
+            \killCues \violinTwo
           }
         >>
         \new Staff
@@ -202,7 +202,7 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "Viola"
           \set Staff.shortInstrumentName = "Vla."
           \set Staff.midiInstrument = "string ensemble 1"
-          \viola
+          \killCues \viola
         }
         \new Staff
         {
@@ -210,7 +210,7 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "Cello"
           \set Staff.shortInstrumentName = "Vlc."
           \set Staff.midiInstrument = "string ensemble 1"
-          \cello
+          \killCues \cello
         }
         \new Staff
         {
@@ -218,7 +218,7 @@ instrument = "Orchestra"
           \set Staff.instrumentName = "Bass"
           \set Staff.shortInstrumentName = "Cb."
           \set Staff.midiInstrument = "string ensemble 1"
-          \bass
+          \killCues \bass
         }
       >>
     >>

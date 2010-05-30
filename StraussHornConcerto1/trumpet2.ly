@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "trumpet2_notes.lyi"
+\include "trumpet2.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = \markup {Trumpet II in E\flat}
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \trumpetTwo
 
-\include "part.lyi"
+\include "part.ily"
 

@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "bassoon2_notes.lyi"
+\include "bassoon2.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = "Bassoon II"
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \bassoonTwo
 
-\include "part.lyi"
+\include "part.ily"
 

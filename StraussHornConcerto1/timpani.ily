@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "defs.lyi"
+\include "defs.ily"
 
 timpaniMvtI = \relative c
 {

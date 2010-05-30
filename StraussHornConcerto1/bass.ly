@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "bass_notes.lyi"
+\include "bass.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = "Bass"
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \bass
 
-\include "part.lyi"
+\include "part.ily"
 

@@ -1,7 +1,7 @@
 \version "2.12.2"
 
-\include "defs.lyi"
-\include "horn_notes.lyi"
+\include "defs.ily"
+\include "horn.ily"
 
 \addQuote "solo" { \hornCue }
 

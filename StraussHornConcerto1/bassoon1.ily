@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "defs.lyi"
+\include "defs.ily"
 
 bassoonOneMvtI = \relative c
 {
@@ -115,6 +115,7 @@ bassoonOneMvtI = \relative c
   beses |
   aes~ |
   aes2 r2 |
+  s1*0\!
 }
 
 bassoonOneMvtII = \relative c'

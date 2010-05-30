@@ -8,13 +8,6 @@ smaller = {
     #(lambda (beam mult) (* 0.8 (Beam::space_function beam mult)))
 }
 
-tempoMark = #(define-music-function (parser location markp) (string?)
-#{
-  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \mark \markup { \smaller \bold $markp }
-#})
-
 setDimECalando = #(define-music-function (parser location) ()
 #{
   \set decrescendoText = \markup { \italic "dim. e calando" }
@@ -29,9 +22,8 @@ solo = \markup{Solo}
 
 outline =
 {
-  \override Score.MetronomeMark #'transparent = ##t
-  \tempo 4=112
-  \tempoMark "Allegro"
+  \set Score.tempoHideNote = ##t
+  \tempo "Allegro" 4=112
   \time 4/4
   s1*28 |
 
@@ -78,16 +70,16 @@ outline =
 
   %Third mvt
   \time 4/4
-  \tempo 4=132
+  \tempo "Allegro" 4=132
   \mark \default
-  s1*0^\markup {\larger \bold Allegro}
-  \partial 4 s4
+  s8 \partial 8 s8 | \noBreak
   s1*8 | \bar "||"
 
   \time 6/8
-  \tempo 4.=132
-  \tempoMark "Rondo"
-  s1*0^\markup {\larger \bold Allegro}
+  \tempo "Allegro" 4.=132
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \mark \markup { \smaller \bold Rondo }
   s2.*16 |
 
   \mark \default
@@ -100,11 +92,10 @@ outline =
   \tempo 4=132
   \mark \default
   s1*3 |
-  \partial 2. s2. \bar "||"
+  s4 \partial 2 s2 \bar "||"
 
   \time 6/8
-  \tempo 4.=132
-  s1*0^\markup{\bold {Tempo primo}}
+  \tempo "Tempo primo" 4.=132
   \partial 4. s4. |
   s2.*49 |
 
@@ -122,6 +113,6 @@ outline =
   \time 6/8
   \tempo 4.=144
   \mark \default
-  s1*0^\markup{\bold {Tempo I} \italic {un poco più mosso}}
+  \tempo \markup{\bold {Tempo I} \normal-text \italic {un poco più mosso}}
   s2.*53 | \bar "|."
 }

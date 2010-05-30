@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "clarinet2_notes.lyi"
+\include "clarinet2.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = "clarinet II"
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \clarinetTwo
 
-\include "part.lyi"
+\include "part.ily"
 

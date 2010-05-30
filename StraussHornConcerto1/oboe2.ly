@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "oboe2_notes.lyi"
+\include "oboe2.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = \markup {Oboe II}
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \oboeTwo
 
-\include "part.lyi"
+\include "part.ily"
 

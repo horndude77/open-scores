@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "violin1_notes.lyi"
+\include "violin1.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = \markup {Violin I}
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \violinOne
 
-\include "part.lyi"
+\include "part.ily"
 

@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "viola_notes.lyi"
+\include "viola.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = \markup {Viola}
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \viola
 
-\include "part.lyi"
+\include "part.ily"
 

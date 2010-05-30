@@ -1,6 +1,6 @@
 \version "2.12.2"
 
-\include "flute1_notes.lyi"
+\include "flute1.ily"
 
 \paper
 {
@@ -9,9 +9,9 @@
 
 instrument = "Flute I"
 
-\include "header.lyi"
+\include "header.ily"
 
 notes = \fluteOne
 
-\include "part.lyi"
+\include "part.ily"
 
