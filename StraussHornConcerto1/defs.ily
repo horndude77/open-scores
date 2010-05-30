@@ -1,9 +1,9 @@
-\version "2.12.2"
+\version "2.13.22"
 
 smaller = {
   \set fontSize = #-2
   \override Stem #'length = #5.5
-  \override Beam #'thickness = #0.384
+  \override Beam #'beam-thickness = #0.384
   \override Beam #'space-function =
     #(lambda (beam mult) (* 0.8 (Beam::space_function beam mult)))
 }
