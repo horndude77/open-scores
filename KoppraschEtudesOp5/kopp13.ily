@@ -1,4 +1,7 @@
+\version "2.13.22"
+
 \include "rhythm.ily"
+\include "defs.ily"
 
 rhythm = #(define-music-function (parser location music) (ly:music?)
 #{
@@ -54,9 +57,7 @@ koppThirteen = \relative c''
   {
     g,\p a bes c d g ees g |
     d\< g c, g' bes, g' a, g' |
-    \crescTextCresc
-    b,\< d c ees d\f fis a fis |
-    \crescHairpin
+    b,\justcresc d c ees d\f fis a fis |
     d\ff g bes g d a' c a |
     g bes d bes g\> d bes g |
     c\p ees bes ees a, ees' g, ees' |

@@ -1,3 +1,5 @@
+\version "2.13.22"
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Here begins the scheme functions definitions
 %% You can put all this section in a separate file (rhythm.ly for example)

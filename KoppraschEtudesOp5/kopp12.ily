@@ -1,3 +1,5 @@
+\version "2.13.22"
+
 koppTwelveArticulations = \relative c'' \new Voice
 {
   \transposition f

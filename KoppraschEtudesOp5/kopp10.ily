@@ -1,3 +1,5 @@
+\version "2.13.22"
+
 koppTenArticulations = \relative c'' \new Voice
 {
   \time 4/4

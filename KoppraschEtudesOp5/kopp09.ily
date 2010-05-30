@@ -1,3 +1,5 @@
+\version "2.13.22"
+
 koppNineArticulations = \relative c''
 {
   \key bes \major
