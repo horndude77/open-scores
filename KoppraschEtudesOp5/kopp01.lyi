@@ -1,6 +1,7 @@
 koppOne = \relative c'
 {
   \transposition f
+  \tempo 4=88
   \time 4/4
   \repeat volta 2
   {

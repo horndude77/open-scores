@@ -1,6 +1,7 @@
 koppTwo = \relative c'
 {
   \transposition f
+  \tempo 2=72
   \partial 4 c4->( |
   d8) r c4->( e8) r c4->( |
   f8) r c4->( g'8) r c,4->( |

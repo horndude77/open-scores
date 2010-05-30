@@ -16,8 +16,9 @@ koppTenArticulations = \relative c'' \new Voice
 koppTen = \relative c''
 {
   \transposition f
-  \time 4/4
   \key c \major
+  \tempo 4=88
+  \time 4/4
   \repeat volta 2
   {
     c16-.\f e-. a( g) f( e) d-. c-. b-. d-. g( f) e( d) c-. b-. |

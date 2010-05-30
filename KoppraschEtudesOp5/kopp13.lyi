@@ -8,6 +8,7 @@ rhythm = #(define-music-function (parser location music) (ly:music?)
 koppThirteen = \relative c''
 {
   \transposition f
+  \tempo 4=96
   \time 2/2
   \key g \minor
   \repeat volta 2
@@ -53,9 +54,9 @@ koppThirteen = \relative c''
   {
     g,\p a bes c d g ees g |
     d\< g c, g' bes, g' a, g' |
-    \setTextCresc
+    \crescTextCresc
     b,\< d c ees d\f fis a fis |
-    \setHairpinCresc
+    \crescHairpin
     d\ff g bes g d a' c a |
     g bes d bes g\> d bes g |
     c\p ees bes ees a, ees' g, ees' |

@@ -21,6 +21,7 @@ koppEight = \relative c''
 {
   \transposition f
   \key f \major
+  \tempo 4=100
   \time 4/4
   a8(\p f) g-. a-. bes( g) a-. bes-. |
   c( a) bes-. c-. d(_\markup{\italic cresc.} bes) c-. d-. |

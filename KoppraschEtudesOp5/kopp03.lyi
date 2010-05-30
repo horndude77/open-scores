@@ -1,6 +1,7 @@
 koppThree = \relative c'
 {
   \transposition f
+  \tempo 4=72
   \time 4/4
   c8 d16 e f g a b c b a g f e d c |
   d8 e16 f g a b c d c b a g f e d |
