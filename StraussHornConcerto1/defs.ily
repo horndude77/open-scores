@@ -1,5 +1,18 @@
 \version "2.13.22"
 
+ppDolceMarkup = \markup {\dynamic pp \normal-text \italic dolce}
+ppDolce = #(make-dynamic-script ppDolceMarkup)
+
+patetico = \markup {\italic patetico}
+vivo = \markup {\italic vivo}
+pizz = \markup {\italic pizz.}
+arco = \markup {\italic arco}
+div = \markup {\italic div.}
+rit = \markup {\italic rit.}
+solo = \markup {Solo}
+
+dimECalando = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim. e calando")
+
 smaller = {
   \set fontSize = #-2
   \override Stem #'length = #5.5
@@ -14,11 +27,6 @@ setDimECalando = #(define-music-function (parser location) ()
   \set decrescendoSpanner = #'text
   \override DynamicTextSpanner #'style = #'dashed-line
 #})
-
-pizz = \markup{\italic pizz.}
-arco = \markup{\italic arco}
-vivo = \markup{\italic vivo}
-solo = \markup{Solo}
 
 outline =
 {
@@ -47,9 +55,8 @@ outline =
 
   %Second mvt
   \time 3/8
-  \tempo 8=69
+  \tempo "Andante" 8=69
   \mark \default
-  s1*0^\markup {\larger \bold Andante}
   s4.*33 |
 
   \mark \default
@@ -115,4 +122,45 @@ outline =
   \mark \default
   \tempo \markup{\bold {Tempo I} \normal-text \italic {un poco più mosso}}
   s2.*53 | \bar "|."
+}
+
+afterGraceFraction = #(cons 15 16)
+
+\layout
+{
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+    %markFormatter = #format-mark-numbers
+    \override Beam #'breakable = ##t
+  }
+
+  \context
+  {
+    \RemoveEmptyStaffContext
+  }
+}
+
+\midi
+{
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
+  }
+}
+
+\paper
+{
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
 }

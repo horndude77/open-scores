@@ -1,11 +1,7 @@
 \version "2.13.22"
 
+\include "defs.ily"
 \include "violin1.ily"
-
-\paper
-{
-  ragged-last-bottom = ##f
-}
 
 instrument = \markup {Violin I}
 
