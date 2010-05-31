@@ -1,4 +1,4 @@
-\include "defs.lyi"
+\include "defs.ily"
 
 koppTenArticulations = \relative c'
 {
