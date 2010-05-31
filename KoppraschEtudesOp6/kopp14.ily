@@ -1,6 +1,7 @@
 koppFourteen = \relative c''
 {
   \key c \major
+  \tempo 4=88
   \time 4/4
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \override TupletNumber #'transparent = ##t

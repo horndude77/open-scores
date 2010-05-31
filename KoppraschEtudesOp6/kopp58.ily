@@ -1,6 +1,7 @@
 koppFiftyEight = \relative c'
 {
   \transposition f
+  \tempo 4=92
   \time 4/4
   \repeat volta 2
   {

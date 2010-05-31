@@ -4,6 +4,7 @@ koppFiftyTwo = \relative c'
 {
   \transposition f
   \key e \minor
+  \tempo 4=100
   \time 4/4
   e16(\f dis) e-. fis-. g( fis) g-. a-. b( ais) b-. c-. b8 r |
   c16( b c) e-. b( a b) e-. a,( g a) e'-. g,( fis g) e'-. |
@@ -55,7 +56,7 @@ koppFiftyTwo = \relative c'
   a( b) c b a g fis e dis( fis) b a g fis e dis |
   e8 r e16( fis) g a b( ais) b c b( a) g fis |
   e( dis) e fis g( fis) g a b( ais) b cis dis( b) cis dis |
-  \tempoMark "Adagio"
+  \tempo "Adagio"
   e4\> c, b dis\p |
   e4.( g16 fis e4) r | \bar "|."
 }

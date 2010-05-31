@@ -1,11 +1,12 @@
 koppFortyFour = \relative c''
 {
   \transposition f
+  \tempo 4=92
   \time 4/4
   \partial 4 c4\p |
   d( c d c |
   d8 c d c d c d c |
-  \times 2/3 {\cresc d8 c d} \times 2/3 {c d c} \times 2/3 {d c d} \times 2/3 {c d c} |
+  \times 2/3 {d8\cresc c d} \times 2/3 {c d c} \times 2/3 {d c d} \times 2/3 {c d c} |
   \repeat unfold 8 {d16 c} |
   d\f \repeat unfold 6 {c d} c b c) |
   e4. c8 g\> a16 g\! e8 c |
@@ -14,7 +15,7 @@ koppFortyFour = \relative c''
   d'4\p |
   e( d e d |
   e8 d e d e d e d |
-  \times 2/3 {\cresc e8 d e} \times 2/3 {d e d} \times 2/3 {e d e} \times 2/3 {d e d} |
+  \times 2/3 {e8\cresc d e} \times 2/3 {d e d} \times 2/3 {e d e} \times 2/3 {d e d} |
   \repeat unfold 8 {e16 d} |
   e\f \repeat unfold 6 {d e} d c d) |
   f4. d8 b( c16 b) g8 f |

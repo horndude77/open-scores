@@ -1,5 +1,6 @@
 koppSeven = \relative c'
 {
+  \tempo 4=88
   \repeat volta 2
   {
     c2\p\< e4 g |

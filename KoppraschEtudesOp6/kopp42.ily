@@ -2,6 +2,7 @@ koppFortyTwo = \relative c'
 {
   \transposition f
   \key g \major
+  \tempo 4=92
   \time 3/4
   \repeat volta 2
   {

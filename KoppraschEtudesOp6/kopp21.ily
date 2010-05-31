@@ -2,6 +2,7 @@ koppTwentyOne = \relative c'
 {
   \transposition f
   \key f \major
+  \tempo 4=100
   \time 3/4
   \repeat volta 2
   {

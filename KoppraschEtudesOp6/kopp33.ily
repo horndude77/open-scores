@@ -1,9 +1,9 @@
 koppThirtyThree = \relative c'
 {
   \transposition f
+  \tempo 4=60
   \time 2/4
   \partial 8 g8(\p
-  #(revert-auto-beam-setting '(end * * 2 4) 1 4)
   \override Beam #'auto-knee-gap = #1
   c16) r c'8( e16) r c,8( |
   b16) r d'8( f16) r g,,8( |
@@ -14,7 +14,7 @@ koppThirtyThree = \relative c'
   g16) r f''8( d16) r g,,8( |
   c16) r e'8( c16) r\fermata \bar "||"
 
-  \tempoMark "Allegro"
+  \tempo "Allegro"
   g,8-.\p |
   c-. c'-. e-. c,-. |
   b-. d'-. f-. g,,-. |
@@ -25,7 +25,7 @@ koppThirtyThree = \relative c'
   g-. f''-. d-. b,-. |
   c[-. e'-. c]-. \bar "||"
 
-  \tempoMark "Adagio"
+  \tempo "Adagio"
   c,8(\p |
   b16) r d'8( f16) r b,,8( |
   c16) r e'8( g16) r e,8( |
@@ -44,7 +44,7 @@ koppThirtyThree = \relative c'
   c16) r aes'8( g16) r g,8( |
   c4) r8\fermata \bar "||"
 
-  \tempoMark "Allegro"
+  \tempo "Allegro"
   c8-. |
   b-. d'-. f-. b,,-. |
   c-. e'-. g-. e,-. |

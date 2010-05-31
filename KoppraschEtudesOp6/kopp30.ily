@@ -1,11 +1,13 @@
 koppThirty = \relative c''
 {
+  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
+                                                   ((1 . 24) . (3 3 3 3)))
   \transposition f
+  \tempo 4=60
   \time 2/4
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
   \override TupletNumber #'transparent = ##t
-  #(override-auto-beam-setting '(end * * * *) 1 8)
-  #(override-auto-beam-setting '(end * * * *) 3 8)
+  \override TupletBracket #'transparent = ##t
   \grace d16 \times 2/3 {c16(\p b) c g a b c( b) c e d c} |
   \times 2/3 {g\f a b c( g) e g( e) c} g8\fermata |
   \grace e''16 \times 2/3 {d16(\p cis) d g, b cis d( cis) d f e d} |

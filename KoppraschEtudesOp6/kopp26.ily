@@ -1,6 +1,7 @@
 koppTwentySix = \relative c'
 {
   \transposition f
+  \tempo 4=96
   \time 2/4
   \repeat volta 2
   {

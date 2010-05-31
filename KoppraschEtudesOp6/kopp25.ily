@@ -2,6 +2,7 @@ koppTwentyFive = \relative c'
 {
   \transposition f
   \key g \major
+  \tempo 8=220
   \time 6/8
   g8^\markup{\italic sempre \dynamic p} b d g\< b c |
   cis(\> d c)\! \grace c b a g |

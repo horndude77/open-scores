@@ -1,5 +1,6 @@
 koppFifty = \relative c''
 {
+  \tempo 4=116
   \time 4/4
   \key f \major
   \transposition f

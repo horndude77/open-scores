@@ -1,6 +1,7 @@
 koppFive = \relative c''
 {
   \time 4/4
+  \tempo 4=88
   \repeat volta 2
   {
     \set tupletSpannerDuration = #(ly:make-moment 1 4)

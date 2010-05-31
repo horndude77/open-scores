@@ -1,5 +1,6 @@
 koppEighteen = \relative c''
 {
+  \tempo 4=88
   \time 2/4
   \repeat volta 2
   {

@@ -1,6 +1,7 @@
 koppThirteen = \relative c'
 {
   \transposition f
+  \tempo 4=96
   \time 3/4
   \key c \major
   \repeat volta 2

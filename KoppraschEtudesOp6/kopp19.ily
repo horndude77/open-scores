@@ -1,7 +1,8 @@
 koppNineteen = \relative c''
 {
-  \time 6/8
   \key g \major
+  \tempo 8=144
+  \time 6/8
   \transposition f
   \repeat volta 2
   {

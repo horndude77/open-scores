@@ -4,19 +4,19 @@ koppEightArticulations = \relative c'
 {
   %Note: These were not very legible
   \time 2/4
-  \tempoMark "1"
+  \mark "1"
   c16( e) e-. g-. g( c) c-. b-. |
   b( a) a-. g-. g8 r | \bar "||"
 
-  \tempoMark "2"
+  \mark "2"
   c,16-. e-. e( g) g-. c-. c( b) |
   b-. a-. a( g) g8 r | \bar "||"
 
-  \tempoMark "3"
+  \mark "3"
   c,16-. e~ e g-. g-. c~ c b-. |
   b-. a~ a g-. g8-. r | \bar "||"
 
-  \tempoMark "4"
+  \mark "4"
   c,16-. e~ e g~ g c~ c b~ |
   b a~ a g~ g8 r | \bar "||"
 }
@@ -24,6 +24,7 @@ koppEightArticulations = \relative c'
 koppEight = \relative c'
 {
   \transposition f
+  \tempo 4=88
   \time 2/4
   \repeat volta 2
   {

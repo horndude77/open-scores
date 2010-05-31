@@ -1,10 +1,7 @@
 koppSixty = \relative c
 {
   \transposition f
-  #(revert-auto-beam-setting '(end 1 32 4 4) 1 8)
-  #(revert-auto-beam-setting '(end 1 32 4 4) 3 8)
-  #(revert-auto-beam-setting '(end 1 32 4 4) 5 8)
-  #(revert-auto-beam-setting '(end 1 32 4 4) 7 8)
+  \tempo 4=80
   \time 4/4
   \repeat volta 2
   {

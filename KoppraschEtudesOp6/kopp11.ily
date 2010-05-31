@@ -1,6 +1,7 @@
 koppEleven = \relative c'
 {
   \key g \major
+  \tempo 4=88
   \time 3/2
   \repeat volta 2
   {

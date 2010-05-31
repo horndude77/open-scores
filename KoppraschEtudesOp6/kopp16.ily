@@ -1,7 +1,8 @@
 koppSixteen = \relative c'
 {
-  \time 4/4
   \key c \major
+  \tempo 4=88
+  \time 4/4
   \repeat volta 2
   {
     e16(\p f) g-. a-. g-. c( d c) e,( f) g-. a-. g-. c( d c) |

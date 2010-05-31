@@ -1,6 +1,7 @@
 koppTwentyThree = \relative c'
 {
   \transposition f
+  \tempo 4=100
   \time 6/4
 
   c4(\f\> e')\! c g e c |

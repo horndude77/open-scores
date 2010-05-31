@@ -1,6 +1,7 @@
 koppThree = \relative c'
 {
   \transposition f
+  \tempo 4=72
   \time 3/4
   \repeat volta 2
   {

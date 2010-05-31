@@ -1,6 +1,7 @@
 koppThirtyOne = \relative c'
 {
   \transposition f
+  \tempo 4=80
   \time 3/4
   g16(\p c) e g a( g) fis g e8 r |
   c16( e) g b d( c) b c g8 r |

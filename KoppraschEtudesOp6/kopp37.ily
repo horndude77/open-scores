@@ -1,6 +1,7 @@
 koppThirtySeven = \relative c'
 {
   \transposition f
+  \tempo 4=60
   \time 4/4
   c16(\f e) g,-. b-.  c( e) g,-. b-.  c( e) g-. e-. c8 r |
   f16( a) c, e f( a) c, e f( a) c a f8 r |

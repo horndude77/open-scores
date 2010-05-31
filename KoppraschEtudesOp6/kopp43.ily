@@ -2,6 +2,7 @@ koppFortyThree = \relative c'
 {
   \transposition f
   \key ees \major
+  \tempo 4.=80
   \time 6/8
   \repeat volta 2
   {

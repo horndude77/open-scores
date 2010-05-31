@@ -2,10 +2,13 @@
 
 koppFiftyNine = \relative c'
 {
+  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
+                                                   ((1 . 24) . (3 3 3 3))
+                                                   ((1 . 32) . (4 4 4 4))
+                                                   ((1 . 64) . (8 8 8 8)))
   \transposition f
-  #(override-auto-beam-setting '(end 1 24 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 3 8)
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
+  \tempo 4=48
   \time 2/4
   \partial 8 e8\p
   a e c'16( d32 c) b16 a |
@@ -27,7 +30,7 @@ koppFiftyNine = \relative c'
   c( d32 c) b16 c e( d g b,) |
   c8 g16 e c8 r16 \bar "||"
 
-  \tempoMark "Variation."
+  \sectionMark "Variation."
   e16 |
   a32 e fis gis a gis a b c( d64 c) b32 c d c b a |
   \times 2/3 {gis16 e fis gis a ais} b8 r16 e, |
@@ -48,7 +51,7 @@ koppFiftyNine = \relative c'
   c64 g a b c d e f g32( e) c g f( d) b g fis( g) a b |
   c e g c e c g e c8 r16 \bar "||"
 
-  \tempoMark "Coda."
+  \sectionMark "Coda."
   e16\p |
   a8 e c'16( d32 c) b16 a |
   gis8.[( \grace {a32[ gis fis gis]} a16]) b8 r |

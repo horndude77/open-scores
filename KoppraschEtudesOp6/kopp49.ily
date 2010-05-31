@@ -1,6 +1,7 @@
 koppFortyNine = \relative c'
 {
   \transposition f
+  \tempo 4=52
   \time 4/4
   g2\p c4\< e |
   g4.(\> a16\! g) f8 e d c |

@@ -2,29 +2,30 @@
 
 koppTwelveArticulations = \relative c''
 {
-  \time 4/4
   \key g \major
-  \tempoMark "1"
+  \time 4/4
+  \mark "1"
   \partial 8 d8 |
   e16-. d-. c( b) d-. c-. b( a) c-. b-. a( g) b-. a-. g( fis) | \bar "||"
 
-  \tempoMark "2"
+  \mark "2"
   \partial 8 d'8 |
   e16( d c) b-. d( c b) a-. c( b a) g-. b( a g) fis-. | \bar "||"
 
-  \tempoMark "3"
+  \mark "3"
   \partial 8 d'8 |
   e16-. d( c b) d-. c( b a) c-. b( a g) b-. a( g fis) | \bar "||"
 
-  \tempoMark "4"
+  \mark "4"
   \partial 8 d'8 |
   e16-. d( c) b( d) c( b) a( c) b( a) g( b) a( g) fis\laissezVibrer | \bar "||"
 }
 
 koppTwelve = \relative c''
 {
-  \time 4/4
   \key g \major
+  \tempo 4=88
+  \time 4/4
   \partial 8 d8\p |
   e16( d) c-. b-. d( c) b-. a-. c( b) a-. g-. b( a) g-. fis-. |
   g( a) b-. c-. a( b) c-. d-. b( c) d-. e-. a,8 r16 d |

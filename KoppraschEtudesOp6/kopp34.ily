@@ -1,6 +1,7 @@
 koppThirtyFour = \relative c'
 {
   \transposition f
+  \tempo 4=80
   \time 4/4
   \repeat volta 2
   {

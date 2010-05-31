@@ -17,6 +17,7 @@ koppThirtySix = \relative c''
 {
   \key f \major
   \transposition f
+  \tempo 4=72
   \time 2/4
   \repeat volta 2
   {
@@ -71,10 +72,10 @@ koppThirtySix = \relative c''
     e g f a g bes a c |
     bes4\fermata r |
 
-    \tempoMark "Adagio"
+    \tempo "Adagio"
     g16\p bes a c bes d c e | \bar "||"
 
-    \tempoMark "a tempo"
+    \tempo "a tempo"
     f16\f d e c d bes c a |
     d bes c a bes g a f |
     e g f a g bes a c |

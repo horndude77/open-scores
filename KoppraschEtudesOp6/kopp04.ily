@@ -2,21 +2,22 @@
 
 koppFourArticulations = \relative c'
 {
-  \tempoMark "1"
-  c8 d16-. e-. f-. g-. a-. b-. c( b) a-. g-. f-. e-. d-. c-. | \bar "||"
-  \tempoMark "2"
-  c8 d16-. e-. f-. g-. a-. b( c b) a-. g-. f-. e-. d-. c-. | \bar "||"
-  \tempoMark "3"
-  c8 d16-. e-. f( g) a-. b-. c( b) a-. g-. f( e) d-. c-. | \bar "||"
-  \tempoMark "4"
-  c8 d16( e) f-. g-. a( b) c-. b-. a( g) f-. e-. d( c) | \bar "||"
-  \tempoMark "5"
+  \mark "1"
+  c8 d16-. e-. f-. g-. a-. b-. c( b) a-. g-. f-. e-. d-. c-. | \bar "||" \noBreak
+  \mark "2"
+  c8 d16-. e-. f-. g-. a-. b( c b) a-. g-. f-. e-. d-. c-. | \bar "||" \noBreak
+  \mark "3"
+  c8 d16-. e-. f( g) a-. b-. c( b) a-. g-. f( e) d-. c-. | \bar "||" \noBreak
+  \mark "4"
+  c8 d16( e) f-. g-. a( b) c-. b-. a( g) f-. e-. d( c) | \bar "||" \noBreak
+  \mark "5"
   c8 d16( e) f( g) a( b) c( b) a( g) f( e) d( c) | \bar "||"
 }
 
 koppFour = \relative c'
 {
   \transposition f
+  \tempo 4=88
   \time 4/4
   \repeat volta 2
   {

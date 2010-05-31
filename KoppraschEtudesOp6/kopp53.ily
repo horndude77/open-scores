@@ -1,18 +1,22 @@
 koppFiftyThree = \relative c'
 {
+  \overrideBeamSettings #'Score #'(3 . 4) #'end #'((* . (1 1))
+                                                   ((1 . 24) . (3 3 3 3))
+                                                   ((1 . 32) . (4 4 4 4)))
   \transposition f
   \key aes \major
+  \tempo 4=52
   \time 3/4
   \repeat volta 2
   {
     aes4\p c ees |
     aes2\fermata r4 |
     c4 bes aes |
-    g8.[( \grace {\stemDown aes32[ g f g] \stemNeutral} aes16] bes4 r |
+    g8.[( \grace {\stemDown aes32[ g f g] \stemNeutral} aes16]) bes4 r |
     ees, g bes |
     des2\fermata r4 |
     f4( ees des) |
-    c8.[( \grace {des32[ c bes c]} des16] ees4 r |
+    c8.[( \grace {des32[ c bes c]} des16]) ees4 r |
     aes\fz aes, ges |
     e8( f) f4 r |
     ees16\< g bes des\! f8.( g32 f) ees8\> des\! |
@@ -27,7 +31,7 @@ koppFiftyThree = \relative c'
   g8 bes ees des c16 f aes f |
   ees8.( d32 ees) d4 r |
   ees(\p g b,) |
-  c8.[( \grace {d32[ c b c]} d16] ees16( b c g) aes( e) \times 2/3 {f16[( aes c])} |
+  c8.[( \grace {d32[ c b c]} d16]) ees16( b c g) aes( e) \times 2/3 {f16[( aes c])} |
   bes16[\< r32 bes ees16 g] bes8.\f\> g16 ees bes g ees\! |
   \times 2/3 {d16[( f aes])} ces16(-> bes) c(-> bes) d32 bes d f aes8 d, |
   ees4 ees, r\fermata | \bar "||"

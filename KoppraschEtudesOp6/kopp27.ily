@@ -2,6 +2,7 @@ koppTwentySeven = \relative c''
 {
   \transposition f
   \key f \major
+  \tempo 4=92
   \time 2/4
   \repeat volta 2
   {

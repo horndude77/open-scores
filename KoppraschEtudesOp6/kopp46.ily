@@ -1,8 +1,11 @@
 koppFortySix = \relative c''
 {
+  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
+                                                   ((1 . 32) . (4 4 4 4)))
   \transposition f
-  \time 2/4
   \key f \major
+  \tempo 4=52
+  \time 2/4
   \partial 8 a16_\markup{\dynamic p \italic dolce} bes |
   c8 d16 e \grace g16 f8( e16 d) |
   cis8~ cis32 d bes g e8 c |
@@ -31,17 +34,17 @@ koppFortySix = \relative c''
   bes8~\f bes32 d e fis g16 f e d |
   cis-.\p a( bes a) e'-. g,( a g) |
   fis8~\f fis32 g a b c8 g32 b c d |
-  bes8\p\> d cis a |
+  ees8\p\> d cis a |
   bes\f fis'32( g) d b a8 d32( ees) c a |
   g8 cis32( d) b g d8 fis |
   g4 r8 g16(\p a) |
-  << {g8. c16} {s8 s\turn} >> des16( bes g f) |
+  << {bes8. c16} {s8 s\turn} >> des16( bes g f) |
   e8 a32( bes) g e c8 a'16( bes) |
   c8\< d16 e\! g( f e d) |
   cis8~\> cis32 d bes g\! e8 c |
   f g16 a bes( d c bes) |
   c8 bes\trill \appoggiatura {a16[ bes]} a8 f16 g |
-  a8 a16 bes c8.(\< \grace {d16[ c bes c])} d16\! |
+  a8 a16 bes c8.[(\< \grace {d16[ c bes c])} d16]\! |
   ees8 d16 cis d8\fermata bes16(\p a) |
   g16.( a32 f16. g32) e8 c |
   f4 f,16 a'\f g f |

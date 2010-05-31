@@ -2,6 +2,7 @@ koppTwentyTwo = \relative c''
 {
   \transposition f
   \key g \major
+  \tempo 8=100
   \time 4/4
   \repeat volta 2
   {
@@ -11,7 +12,7 @@ koppTwentyTwo = \relative c''
     g8.[( \times 2/3 {a32 g fis])} g8 a16 b a4(\< ais)\! |
     b4.\> \grace d16 c( b)\! fis' e( dis) c( b) a( g) fis |
     g4 g16( a b g) e8 g' fis e |
-    d16( cis b a) e'( b) cis g' fis( cis) d ais b( fis g32 b g e) |
+    d16( cis b a) e'( b) cis g' fis( cis) d ais b( fis g32[ b g e]) |
     fis8 a d ais b( fis) g16( fis g e) |
     << {a8. b16} {s8 s_\turn} >>
       << {cis8.\< d16} {s8 s\turn} >>
@@ -21,7 +22,7 @@ koppTwentyTwo = \relative c''
   \repeat volta 2
   {
     d4~_\markup{\italic "rinf."} d8.[ \grace {e32[ d cis d]} e16] f8 d b a |
-    gis16 e fis gis a b c d e4 \afterGrace d4\trill( {c16[ d])} |
+    gis16 e fis gis a b c d e4 \afterGrace d4\trill_( {c16[ d])} |
     c4( \grace {d16[ c])} b16( c d c) b a( c) b( d) c \times 2/3 {e16[( c a])} |
     g4.( a16 g) fis4 r |
     \grace g,8 g'4~\p g8.[ \grace {\stemDown a32[ g fis g] \stemNeutral} a16] b8.( c32 b) a8 g |

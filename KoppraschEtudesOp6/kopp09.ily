@@ -1,6 +1,7 @@
 koppNine = \relative c''
 {
   \key f \major
+  \tempo 4=88
   \time 3/4
   \repeat volta 2
   {

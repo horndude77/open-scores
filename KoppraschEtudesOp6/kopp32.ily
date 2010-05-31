@@ -74,6 +74,7 @@ koppThirtyTwo = \relative c
 {
   \transposition f
   \key c \major
+  \tempo 4=60
   \time 4/4
   << \high \low >>
 }

@@ -1,6 +1,7 @@
 koppTwentyFour = \relative c'
 {
   \transposition f
+  \tempo 4=72
   \time 4/4
   c16\f c' b c a c g c f, c' e, c' d, c' c, c' |
   b,\p g c g d' g, e' g, f'4 r |

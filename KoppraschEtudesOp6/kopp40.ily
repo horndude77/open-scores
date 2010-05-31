@@ -1,5 +1,6 @@
 koppForty = \relative c'
 {
+  \tempo 4.=80
   \time 6/8
   \transposition f
   c8->(\p g') g-. g-. g-. g-. |

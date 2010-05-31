@@ -1,27 +1,28 @@
 koppSixArticulations = \relative c'
 {
   \time 2/4
-  \tempoMark "1"
+  \mark "1"
   \partial 8 g8 c16-. e-. d-. f-. e[-. g-. f-. a]-. | \bar "||"
 
-  \tempoMark "2"
+  \mark "2"
   \partial 8 g,8 c16( e) d-. f-. e[( g) f-. a]-. | \bar "||"
 
-  \tempoMark "3"
+  \mark "3"
   \partial 8 g,8 c16-. e-. d( f) e[-. g-. f( a]) | \bar "||"
 
-  \tempoMark "4"
+  \mark "4"
   \partial 8 g,8 c16( e) d( f) e[( g) f( a]) | \bar "||"
 
-  \tempoMark "5"
+  \mark "5"
   \partial 8 g,8 c16( e d) f-. e[( g f) a]-. | \bar "||"
 
-  \tempoMark "6"
+  \mark "6"
   \partial 8 g,8 c16-. e( d f) e[-. g( f a]) | \bar "||"
 }
 
 koppSix = \relative c'
 {
+  \tempo 4=88
   \time 2/4
   \repeat volta 2
   {

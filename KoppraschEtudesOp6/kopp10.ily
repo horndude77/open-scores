@@ -3,24 +3,25 @@
 koppTenArticulations = \relative c'
 {
   \time 4/4
-  \tempoMark "1"
+  \mark "1"
   e8-. c-. d( e) f-. d-. e( f) | \bar "||"
 
-  \tempoMark "2"
+  \mark "2"
   e8-. c( d) e-. f-. d( e) f-. | \bar "||"
 
-  \tempoMark "3"
+  \mark "3"
   e8-. c( d) e( f) d( e) f\laissezVibrer | \bar "||"
 
-  \tempoMark "4"
+  \mark "4"
   e8( c d) e-. f( d e) f-. | \bar "||"
 
-  \tempoMark "5"
+  \mark "5"
   e8( c) d( e) f( d) e( f) | \bar "||"
 }
 
 koppTen = \relative c'
 {
+  \tempo 4=88
   \time 4/4
   \repeat volta 2
   {

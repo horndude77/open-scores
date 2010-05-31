@@ -1,8 +1,9 @@
 koppFourtyFive = \relative c'
 {
-  \time 2/2
-  \key e \minor
   \transposition f
+  \key e \minor
+  \tempo 2=72
+  \time 2/2
   \partial 4
   e8\p g \bar "||" \mark \markup { \musicglyph #"scripts.segno" }
   b( ais) b-. c-. b( a) g-. fis-. |

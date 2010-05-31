@@ -1,9 +1,11 @@
 koppFiftyFive = \relative c'
 {
+  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
+                                                   ((1 . 24) . (3 3 3 3))
+                                                   ((1 . 32) . (4 4 4 4)))
   \transposition f
-  #(override-auto-beam-setting '(end 1 24 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 3 8)
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
+  \tempo 4=52
   \time 2/4
   c4\p e8 g |
   c8.[ \grace {d32[ c b c]} d16] e8 r64 g,-.\< a-. b-. c-. d-. e-. f-. |
@@ -51,10 +53,7 @@ koppFiftyFive = \relative c'
   f g,, ees''( c) b g, ees'( c) |
   \appoggiatura g8 g'2\fermata |
   \appoggiatura c,16 e'8.(\fz b16) \times 2/3 {d16( c gis)} \times 2/3 {b( a e)} |
-  f16\p
-    \set stemLeftBeamCount = #2
-    \set stemRightBeamCount = #3
-    \times 2/3 {g32( \set stemLeftBeamCount = #3 f e)} \times 2/3 {f16\< fis g a b c cis d e} |
+  f16\p \times 2/3 {g32( f e)} \times 2/3 {f16\< fis g a b c cis d e} |
   \appoggiatura e,16 f'8.->\fz cis16 \times 2/3 {e16( d) ais c( b) fis} |
   g8.[(\p \grace {a32[ g fis g]} a16]) \times 2/3 {b16\< c d e f fis} |
   \times 2/3 {g\f\> e c bes g e c\p d e f g aes} |
@@ -62,7 +61,7 @@ koppFiftyFive = \relative c'
   a8 r fis,,4->(\f |
   g32) e' c g' e c' g e' fis, c' a ees' a, c fis, a |
   g4\trill a8\trill \afterGrace b(\trill {a16[ b])} |
-  c8.( g32 e) c8.( g32 e) |
+  c8.[( g32 e]) c8.[( g32 e]) |
   c4 r | \bar "|."
 }
 

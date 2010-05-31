@@ -4,6 +4,7 @@ koppThirtyEight = \relative c''
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \override TupletNumber #'transparent = ##t
   \key g \minor
+  \tempo 4=88
   \time 4/4
   \repeat volta 2
   {

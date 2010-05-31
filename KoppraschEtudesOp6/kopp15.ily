@@ -1,6 +1,7 @@
 koppFifteen = \relative c''
 {
   \key c \major
+  \tempo 4=88
   \time 3/4
   \repeat volta 2
   {
@@ -28,13 +29,12 @@ koppFifteen = \relative c''
     c8.( g32 e) c4 r8. e32(\p c) |
     g8.( b32 d) g4 r8. g32(\f f) |
     e8.( gis32 b) e4 r8 d\p |
-    c8. b16 a( b c cis d e) f32 a, e' d |
+    c8. b16 a( b c cis d e) f32[ a, e' d] |
     c8.[( \grace {d32[ c b c]} e16]) g,( c) e,( a) g8 b, |
     c8.( e32 g) c4 r8. e,32(\p g) |
     bes8.( g32 e) c4 r8. f32( a) |
     c8.( a32 f) c4 r8. f32(_\markup{\italic dimin.} g) |
     aes8.( f32 d) b4 r8. g32( b) |
-    c8.( g32 e) c,4 r8
+    c8.( g32 e) c4 r8
   }
 }
-

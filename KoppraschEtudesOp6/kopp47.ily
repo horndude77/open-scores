@@ -1,11 +1,12 @@
 koppFortySeven = \relative c
 {
+  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
+                                                   ((1 . 24) . (3 3 3 3)))
   \transposition f
-  #(override-auto-beam-setting '(end 1 24 * *) 1 8)
-  #(override-auto-beam-setting '(end 1 24 * *) 3 8)
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
   \override TupletNumber #'transparent = ##t
   \override TupletBracket #'transparent = ##t
+  \tempo 4=52
   \time 2/4
   \times 2/3 {c16 g' c e g c e g f e d c} |
   \times 2/3 {b g, cis'( d) g, c( b) g, ais'( b) g b(} |

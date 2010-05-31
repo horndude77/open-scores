@@ -1,6 +1,7 @@
 koppTwo = \relative c'
 {
   \transposition f
+  \tempo 2=72
   \time 4/2
   c2 e d f | e g f a |
   g2 b a c | b d c1\fermata |
