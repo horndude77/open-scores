@@ -261,17 +261,17 @@
     \layout { }
     \midi { }
   }
-  %{
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.15. Adagio}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.15. Moderato}}
       \koppFifteen
     }
     \layout { }
     \midi { }
   }
+  %{
   \score
   {
     \new Staff
