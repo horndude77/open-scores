@@ -271,12 +271,11 @@
     \layout { }
     \midi { }
   }
-  %{
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.16. Moderato}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.16. Allegretto}}
       \koppSixteen
     }
     \layout { }
@@ -286,12 +285,13 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.17. Allegro molto}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.17. Adagio}}
       \koppSeventeen
     }
     \layout { }
     \midi { }
   }
+  %{
   \score
   {
     \new Staff
