@@ -1,5 +1,6 @@
 \version "2.13.22"
 
+dolce = \markup {\italic dolce}
 justcresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1.0)))
 
 afterGraceFraction = #(cons 15 16)

@@ -291,12 +291,11 @@
     \layout { }
     \midi { }
   }
-  %{
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.18. Vivace}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.18. Poco Andante}}
       \koppEighteen
     }
     \layout { }
@@ -306,7 +305,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.19. Allegro}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.19. Moderato}}
       \koppNineteen
     }
     \layout { }
@@ -316,12 +315,13 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.20. Moderato risoluto}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.20. Allegro vivace}}
       \koppTwenty
     }
     \layout { }
     \midi { }
   }
+  %{
   \score
   {
     \new Staff
