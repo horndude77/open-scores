@@ -321,12 +321,11 @@
     \layout { }
     \midi { }
   }
-  %{
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.21. Allegro vivace}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.21. Presto}}
       \koppTwentyOne
     }
     \layout { }
@@ -336,7 +335,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.22. Adagio espressivo}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.22. Moderato risoluto}}
       \koppTwentyTwo
     }
     \layout { }
@@ -346,7 +345,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.23. Moderato}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.23. Allegro vivace}}
       \koppTwentyThree
     }
     \layout { }
@@ -356,12 +355,13 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.24. Allegro risoluto}}
+      \set Staff.instrumentName = \markup{\bold \center-column {No.24. Adagio con espressivo}}
       \koppTwentyFour
     }
     \layout { }
     \midi { }
   }
+  %{
   \score
   {
     \new Staff
