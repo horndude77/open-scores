@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 koppFiftyFive = \relative c'
 {
   \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
@@ -5,7 +7,7 @@ koppFiftyFive = \relative c'
                                                    ((1 . 32) . (4 4 4 4)))
   \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
-  \tempo 4=52
+  \tempo "Largo" 4=52
   \time 2/4
   c4\p e8 g |
   c8.[ \grace {d32[ c b c]} d16] e8 r64 g,-.\< a-. b-. c-. d-. e-. f-. |
@@ -64,4 +66,3 @@ koppFiftyFive = \relative c'
   c8.[( g32 e]) c8.[( g32 e]) |
   c4 r | \bar "|."
 }
-

@@ -1,8 +1,10 @@
+\version "2.13.26"
+
 koppTwentyTwo = \relative c''
 {
   \transposition f
   \key g \major
-  \tempo 8=100
+  \tempo "Adagio Espressivo" 8=100
   \time 4/4
   \repeat volta 2
   {
@@ -37,4 +39,3 @@ koppTwentyTwo = \relative c''
     g8.\p d16 b'8. a16 g4 r |
   }
 }
-

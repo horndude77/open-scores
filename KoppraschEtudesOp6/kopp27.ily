@@ -1,8 +1,10 @@
+\version "2.13.26"
+
 koppTwentySeven = \relative c''
 {
   \transposition f
   \key f \major
-  \tempo 4=92
+  \tempo "Allegro" 4=92
   \time 2/4
   \repeat volta 2
   {
@@ -61,4 +63,3 @@ koppTwentySeven = \relative c''
     f4 r8 \bar "|."
   }
 }
-

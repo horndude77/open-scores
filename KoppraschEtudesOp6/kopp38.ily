@@ -1,10 +1,12 @@
+\version "2.13.26"
+
 koppThirtyEight = \relative c''
 {
   \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \override TupletNumber #'transparent = ##t
   \key g \minor
-  \tempo 4=88
+  \tempo "Presto" 4=88
   \time 4/4
   \repeat volta 2
   {
@@ -75,4 +77,3 @@ koppThirtyEight = \relative c''
   \times 2/3 {d( e d c d c b c b a b a)} |
   \times 2/3 {g( a g b c b} g4) r | \bar "|."
 }
-

@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppTwentyFour = \relative c'
 {
   \transposition f
-  \tempo 4=72
+  \tempo "Allegro Risoluto" 4=72
   \time 4/4
   c16\f c' b c a c g c f, c' e, c' d, c' c, c' |
   b,\p g c g d' g, e' g, f'4 r |
@@ -35,4 +37,3 @@ koppTwentyFour = \relative c'
   c,8\p e16 g, f' g, d' g, e' g, c g d' g, b g |
   c g' d g e g d g c,4 r | \bar "|."
 }
-

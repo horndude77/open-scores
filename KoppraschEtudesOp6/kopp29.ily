@@ -1,8 +1,10 @@
+\version "2.13.26"
+
 koppTwentyNine = \relative c''
 {
   \transposition f
   \key c \major
-  \tempo 4=60
+  \tempo "Andante" 4=60
   \time 4/4
 
   \partial 8*3 g8\f\< a b |
@@ -53,4 +55,3 @@ koppTwentyNine = \relative c''
   \once \override Score.RehearsalMark #'self-alignment-X = #right
   \mark \markup{\bold {Da Capo al Fine.} }
 }
-

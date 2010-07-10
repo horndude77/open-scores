@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 koppSixArticulations = \relative c'
 {
   \time 2/4
@@ -22,7 +24,7 @@ koppSixArticulations = \relative c'
 
 koppSix = \relative c'
 {
-  \tempo 4=88
+  \tempo "Allegro Vivace" 4=88
   \time 2/4
   \repeat volta 2
   {

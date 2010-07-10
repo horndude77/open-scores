@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppFiftyOne = \relative c'
 {
   \transposition f
-  \tempo 4=88
+  \tempo "Moderato" 4=88
   \time 4/4
   \repeat volta 2
   {
@@ -28,4 +30,3 @@ koppFiftyOne = \relative c'
   f, f' f, f' fis, fis' fis, fis' g, g'( fis g) g'-. g,,( fis g) |
   c,2 r | \bar "|."
 }
-

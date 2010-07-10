@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppThirtySeven = \relative c'
 {
   \transposition f
-  \tempo 4=60
+  \tempo "Allegro" 4=60
   \time 4/4
   c16(\f e) g,-. b-.  c( e) g,-. b-.  c( e) g-. e-. c8 r |
   f16( a) c, e f( a) c, e f( a) c a f8 r |
@@ -35,4 +37,3 @@ koppThirtySeven = \relative c'
   c( e) g,-. b-. c( e) e,-. f-. g( c) c,-. d-. e( g) g,-. b-. |
   c( e) g, b c( e) g, b c4 r | \bar "|."
 }
-

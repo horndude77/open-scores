@@ -1,8 +1,10 @@
+\version "2.13.26"
+
 koppFourtyFive = \relative c'
 {
   \transposition f
   \key e \minor
-  \tempo 2=72
+  \tempo "Allegro Vivace" 2=72
   \time 2/2
   \partial 4
   e8\p g \bar "||" \mark \markup { \musicglyph #"scripts.segno" }
@@ -77,4 +79,3 @@ koppFourtyFive = \relative c'
   \once \override Score.RehearsalMark #'self-alignment-X = #right
   \mark \markup{\bold {Dal segno al Fine.} }
 }
-

@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppTwenty = \relative c'
 {
   \transposition f
-  \tempo 4=80
+  \tempo "Molto Risoluto" 4=80
   \time 4/4
   \partial 4 c4->(\p 
   d8) r8 c4->( e8) r8 c4->( |
@@ -52,4 +54,3 @@ koppTwenty = \relative c'
   d'8) r8 c'4(-> c,8) r8 e'4(-> |
   c,,2.) \bar "|."
 }
-

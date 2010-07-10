@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppFourteen = \relative c''
 {
   \key c \major
-  \tempo 4=88
+  \tempo "Allegro Vivace" 4=88
   \time 4/4
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \override TupletNumber #'transparent = ##t
@@ -55,4 +57,3 @@ koppFourteen = \relative c''
   c4 \times 2/3 {c'8( g) e-. e'( c) g-. f8( d) b-.} |
   c2 r4 \bar "|."
 }
-

@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppThirtyOne = \relative c'
 {
   \transposition f
-  \tempo 4=80
+  \tempo "Allegro Moderato" 4=80
   \time 3/4
   g16(\p c) e g a( g) fis g e8 r |
   c16( e) g b d( c) b c g8 r |
@@ -57,6 +59,4 @@ koppThirtyOne = \relative c'
   g,16( b) d f a( g) fis g d8 r |
   d16(\f c) b c f( e) dis e a( g) fis g |
   c-. c,( b c) c,4 r | \bar "|."
-
 }
-

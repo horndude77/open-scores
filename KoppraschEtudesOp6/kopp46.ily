@@ -1,10 +1,12 @@
+\version "2.13.26"
+
 koppFortySix = \relative c''
 {
   \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
                                                    ((1 . 32) . (4 4 4 4)))
   \transposition f
   \key f \major
-  \tempo 4=52
+  \tempo "Adagio con Espressione" 4=52
   \time 2/4
   \partial 8 a16_\markup{\dynamic p \italic dolce} bes |
   c8 d16 e \grace g16 f8( e16 d) |
@@ -60,4 +62,3 @@ koppFortySix = \relative c''
   c8 a'32( bes) g e c,8 b''32( c) bes g |
   f8 e32( f) c-. a-. f8-. \bar "|."
 }
-

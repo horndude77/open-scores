@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppNineteen = \relative c''
 {
   \key g \major
-  \tempo 8=144
+  \tempo "Allegro" 8=144
   \time 6/8
   \transposition f
   \repeat volta 2
@@ -61,4 +63,3 @@ koppNineteen = \relative c''
   a( g) a b c a fis( e) fis g a fis |
   g4 r8 r4 r8 | \bar "|."
 }
-

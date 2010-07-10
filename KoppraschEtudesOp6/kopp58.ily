@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppFiftyEight = \relative c'
 {
   \transposition f
-  \tempo 4=92
+  \tempo "Allegro" 4=92
   \time 4/4
   \repeat volta 2
   {
@@ -49,4 +51,3 @@ koppFiftyEight = \relative c'
   g( e) c g e'( c) g e c'( g) e c g'( e) c g |
   c,4 r r2 | \bar "|."
 }
-

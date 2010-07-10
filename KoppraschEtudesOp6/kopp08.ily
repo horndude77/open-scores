@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 \include "defs.ily"
 
 koppEightArticulations = \relative c'
@@ -24,7 +26,7 @@ koppEightArticulations = \relative c'
 koppEight = \relative c'
 {
   \transposition f
-  \tempo 4=88
+  \tempo "Allegro" 4=88
   \time 2/4
   \repeat volta 2
   {
@@ -63,4 +65,3 @@ koppEight = \relative c'
     c( d) d( e) c8 r |
   }
 }
-

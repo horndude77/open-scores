@@ -1,6 +1,8 @@
+\version "2.13.26"
+
 koppSeventeen = \relative c''
 {
-  \tempo 4=88
+  \tempo "Allegro Molto" 4=88
   \time 6/8
   \repeat volta 2
   {
@@ -51,4 +53,3 @@ koppSeventeen = \relative c''
     c g e c4 r8 |
   }
 }
-

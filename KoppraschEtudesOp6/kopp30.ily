@@ -1,9 +1,11 @@
+\version "2.13.26"
+
 koppThirty = \relative c''
 {
   \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
                                                    ((1 . 24) . (3 3 3 3)))
   \transposition f
-  \tempo 4=60
+  \tempo "Presto" 4=60
   \time 2/4
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
   \override TupletNumber #'transparent = ##t
@@ -54,4 +56,3 @@ koppThirty = \relative c''
   \times 2/3 {c16-. g'( e) c-. e( c) g-. c( g) e-. g( e)} |
   c4 r\fermata | \bar "|."
 }
-

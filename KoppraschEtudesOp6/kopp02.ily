@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppTwo = \relative c'
 {
   \transposition f
-  \tempo 2=72
+  \tempo "Moderato" 2=72
   \time 4/2
   c2 e d f | e g f a |
   g2 b a c | b d c1\fermata |
@@ -18,4 +20,3 @@ koppTwo = \relative c'
   a f d' b | g e c' a |
   f d b g | c g c,1\fermata |
 }
-

@@ -1,8 +1,10 @@
+\version "2.13.26"
+
 koppFortyTwo = \relative c'
 {
   \transposition f
   \key g \major
-  \tempo 4=92
+  \tempo "Allegro Moderato" 4=92
   \time 3/4
   \repeat volta 2
   {
@@ -68,4 +70,3 @@ koppFortyTwo = \relative c'
   g b d g d b |
   g2 r4 | \bar "|."
 }
-

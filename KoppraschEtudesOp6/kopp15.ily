@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppFifteen = \relative c''
 {
   \key c \major
-  \tempo 4=88
+  \tempo "Adagio" 4=88
   \time 3/4
   \repeat volta 2
   {

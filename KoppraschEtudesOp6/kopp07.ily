@@ -1,6 +1,8 @@
+\version "2.13.26"
+
 koppSeven = \relative c'
 {
-  \tempo 4=88
+  \tempo "Adagio" 4=88
   \repeat volta 2
   {
     c2\p\< e4 g |
@@ -36,4 +38,3 @@ koppSeven = \relative c'
     c2\fermata r |
   }
 }
-

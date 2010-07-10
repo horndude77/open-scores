@@ -1,6 +1,8 @@
+\version "2.13.26"
+
 koppForty = \relative c'
 {
-  \tempo 4.=80
+  \tempo "Presto" 4.=80
   \time 6/8
   \transposition f
   c8->(\p g') g-. g-. g-. g-. |
@@ -55,4 +57,3 @@ koppForty = \relative c'
   c( c,) \repeat unfold 10 c |
   c4 r8 r4 r8 | \bar "|."
 }
-

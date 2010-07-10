@@ -1,8 +1,10 @@
+\version "2.13.26"
+
 koppFortyThree = \relative c'
 {
   \transposition f
   \key ees \major
-  \tempo 4.=80
+  \tempo "Allegretto" 4.=80
   \time 6/8
   \repeat volta 2
   {
@@ -61,4 +63,3 @@ koppFortyThree = \relative c'
     ees4 r8 r4 r8 |
   }
 }
-

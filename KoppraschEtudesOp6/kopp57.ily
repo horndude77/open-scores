@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppFiftySeven = \relative c'
 {
   \transposition f
-  \tempo 4=88
+  \tempo "Moderato" 4=88
   \time 4/4
   c4\f e8 g c g e g |
   c, e g e c g c e |
@@ -57,4 +59,3 @@ koppFiftySeven = \relative c'
   g f d b g f d b |
   c4 e8 g c g e g c, g e g c,4 r | \bar "|."
 }
-

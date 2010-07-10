@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppFortyFour = \relative c''
 {
   \transposition f
-  \tempo 4=92
+  \tempo "Allegro" 4=92
   \time 4/4
   \partial 4 c4\p |
   d( c d c |
@@ -106,4 +108,3 @@ koppFortyFour = \relative c''
   c4 r8 g, c e g c e c g e c g e g |
   c,2 r4 \bar "|."
 }
-

@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppFiftyFour = \relative c'
 {
   \transposition f
-  \tempo 4=92
+  \tempo "Allegro con Spirito" 4=92
   \time 3/4
   \repeat volta 2
   {
@@ -48,4 +50,3 @@ koppFiftyFour = \relative c'
   c( g) c e g( c,) e g c( g) c e |
   c4 c, r | \bar "|."
 }
-

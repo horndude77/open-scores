@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppThirteen = \relative c'
 {
   \transposition f
-  \tempo 4=96
+  \tempo "Allegro" 4=96
   \time 3/4
   \key c \major
   \repeat volta 2
@@ -51,4 +53,3 @@ koppThirteen = \relative c'
     c4 c, r |
   }
 }
-

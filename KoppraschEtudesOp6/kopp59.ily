@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 \include "defs.ily"
 
 koppFiftyNine = \relative c'
@@ -8,7 +10,7 @@ koppFiftyNine = \relative c'
                                                    ((1 . 64) . (8 8 8 8)))
   \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
-  \tempo 4=48
+  \tempo "Larghetto" 4=48
   \time 2/4
   \partial 8 e8\p
   a e c'16( d32 c) b16 a |
@@ -62,4 +64,3 @@ koppFiftyNine = \relative c'
   a8 r a' r |
   a,4. r16 \bar "|."
 }
-

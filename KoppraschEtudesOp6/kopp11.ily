@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppEleven = \relative c'
 {
   \key g \major
-  \tempo 4=88
+  \tempo "Maestoso" 4=88
   \time 3/2
   \repeat volta 2
   {
@@ -24,4 +26,3 @@ koppEleven = \relative c'
     g2\f g,, r |
   }
 }
-

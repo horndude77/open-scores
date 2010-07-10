@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 koppFiftyThree = \relative c'
 {
   \overrideBeamSettings #'Score #'(3 . 4) #'end #'((* . (1 1))
@@ -5,7 +7,7 @@ koppFiftyThree = \relative c'
                                                    ((1 . 32) . (4 4 4 4)))
   \transposition f
   \key aes \major
-  \tempo 4=52
+  \tempo "Largo" 4=52
   \time 3/4
   \repeat volta 2
   {
@@ -48,4 +50,3 @@ koppFiftyThree = \relative c'
   aes8[\p \times 2/3 {ees16-. f-. g]-.} \times 2/3 {aes[-. bes-. c]-.} \times 2/3 {des[-. ees-. e]-.} f8( g,) |
   aes4 aes, r | \bar "|."
 }
-

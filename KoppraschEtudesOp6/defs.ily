@@ -16,6 +16,7 @@ afterGraceFraction = #(cons 15 16)
   \context
   {
     \Score
+    \accepts "ArticulationStaff"
     skipBars = ##t
     extraNatural = ##f
     tempoHideNote = ##t
@@ -25,6 +26,18 @@ afterGraceFraction = #(cons 15 16)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
     \override Beam #'breakable = ##t
+  }
+
+  \context
+  {
+    \Staff
+    \type "Engraver_group"
+    \name "ArticulationStaff"
+    \alias "Staff"
+
+    fontSize = #-3
+    \override StaffSymbol #'staff-space = #(magstep -3)
+    \override RehearsalMark #'font-size = #0
   }
 }
 
@@ -36,6 +49,8 @@ afterGraceFraction = #(cons 15 16)
     \remove "Dynamic_performer"
   }
 }
+
+\pointAndClickOff
 
 \paper
 {

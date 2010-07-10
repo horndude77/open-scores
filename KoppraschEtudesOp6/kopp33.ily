@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppThirtyThree = \relative c'
 {
   \transposition f
-  \tempo 4=60
+  \tempo "Adagio" 4=60
   \time 2/4
   \partial 8 g8(\p
   \override Beam #'auto-knee-gap = #1
@@ -63,4 +65,3 @@ koppThirtyThree = \relative c'
   c-. aes'-. g-. g,-. |
   c4 r8 \bar "|."
 }
-

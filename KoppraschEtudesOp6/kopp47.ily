@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 koppFortySeven = \relative c
 {
   \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
@@ -6,7 +8,7 @@ koppFortySeven = \relative c
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
   \override TupletNumber #'transparent = ##t
   \override TupletBracket #'transparent = ##t
-  \tempo 4=52
+  \tempo "Moderato" 4=52
   \time 2/4
   \times 2/3 {c16 g' c e g c e g f e d c} |
   \times 2/3 {b g, cis'( d) g, c( b) g, ais'( b) g b(} |
@@ -37,4 +39,3 @@ koppFortySeven = \relative c
   \times 2/3 {c) c, dis'( e) c, fis'( g) c,, dis'( e) c, b''(} |
   \times 2/3 {c) c,, r} r8 r4 | \bar "|."
 }
-

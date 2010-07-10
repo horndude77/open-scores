@@ -1,8 +1,10 @@
+\version "2.13.26"
+
 koppTwentyEight = \relative c'
 {
   \transposition f
   \key c \minor
-  \tempo 4=72
+  \tempo "Maestoso" 4=72
   \time 4/4
   \repeat volta 2
   {

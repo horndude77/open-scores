@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppFortyNine = \relative c'
 {
   \transposition f
-  \tempo 4=52
+  \tempo "Adagio" 4=52
   \time 4/4
   g2\p c4\< e |
   g4.(\> a16\! g) f8 e d c |
@@ -77,4 +79,3 @@ koppFortyNine = \relative c'
   c2 r |
   c,1~\< | c2\> r\! | \bar "|."
 }
-

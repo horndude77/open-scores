@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppTwentySix = \relative c'
 {
   \transposition f
-  \tempo 4=96
+  \tempo "Allegro Vivace" 4=96
   \time 2/4
   \repeat volta 2
   {
@@ -67,4 +69,3 @@ koppTwentySix = \relative c'
     c4 r8
   }
 }
-

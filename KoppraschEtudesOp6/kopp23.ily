@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppTwentyThree = \relative c'
 {
   \transposition f
-  \tempo 4=100
+  \tempo "Moderato" 4=100
   \time 6/4
 
   c4(\f\> e')\! c g e c |
@@ -45,4 +47,3 @@ koppTwentyThree = \relative c'
   g( g') e c g e |
   c2. r4 r2 | \bar "|."
 }
-

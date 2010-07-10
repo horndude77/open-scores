@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppOne = \relative c'
 {
   \transposition f
-  \tempo 4=88
+  \tempo "Moderato" 4=88
   \time 4/4
   \repeat volta 2
   {
@@ -51,4 +53,3 @@ koppOne = \relative c'
     c2. r4 |
   }
 }
-

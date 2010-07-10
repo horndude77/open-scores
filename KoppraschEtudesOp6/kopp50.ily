@@ -1,6 +1,8 @@
+\version "2.13.26"
+
 koppFifty = \relative c''
 {
-  \tempo 4=116
+  \tempo "Presto" 4=116
   \time 4/4
   \key f \major
   \transposition f
@@ -46,4 +48,3 @@ koppFifty = \relative c''
   \times 2/3 {g( fis) g bes a g f e d c( d) e} |
   \times 2/3 {f c'-. a-. f-. c-. a-.} f4 r | \bar "|."
 }
-

@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppSixteen = \relative c'
 {
   \key c \major
-  \tempo 4=88
+  \tempo "Moderato" 4=88
   \time 4/4
   \repeat volta 2
   {
@@ -37,4 +39,3 @@ koppSixteen = \relative c'
     e8( c) r4 r2 |
   }
 }
-

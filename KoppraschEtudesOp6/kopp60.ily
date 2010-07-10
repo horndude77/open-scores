@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppSixty = \relative c
 {
   \transposition f
-  \tempo 4=80
+  \tempo "Moderato" 4=80
   \time 4/4
   \repeat volta 2
   {
@@ -40,4 +42,3 @@ koppSixty = \relative c
   c,-. c'32( e g e c16) e,-. g32( c e c g16) d-. b'32( d f d b16) g,-. g'32( b d b g16) |
   c,,-. c'32( e g e c16) e'-. c,32( e g e c16) c,4 r | \bar "|."
 }
-

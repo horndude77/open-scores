@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 \include "defs.ily"
 
 koppTenArticulations = \relative c'
@@ -21,7 +23,7 @@ koppTenArticulations = \relative c'
 
 koppTen = \relative c'
 {
-  \tempo 4=88
+  \tempo "Allegro Vivace" 4=88
   \time 4/4
   \repeat volta 2
   {
@@ -60,4 +62,3 @@ koppTen = \relative c'
     r |
   }
 }
-

@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 high = \relative c'
 {
   s8^\markup {\italic {sempre staccato.}} e s g s c s e |
@@ -74,8 +76,7 @@ koppThirtyTwo = \relative c
 {
   \transposition f
   \key c \major
-  \tempo 4=60
+  \tempo "Moderato" 4=60
   \time 4/4
   << \high \low >>
 }
-

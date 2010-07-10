@@ -1,7 +1,9 @@
+\version "2.13.26"
+
 koppThree = \relative c'
 {
   \transposition f
-  \tempo 4=72
+  \tempo "Poco Allegro" 4=72
   \time 3/4
   \repeat volta 2
   {
@@ -23,4 +25,3 @@ koppThree = \relative c'
     c d e f g e | c4 r8 e d c | b a g f e d | c2 r4 |
   }
 }
-

@@ -1,3 +1,5 @@
+\version "2.13.26"
+
 \include "defs.ily"
 
 koppTwelveArticulations = \relative c''
@@ -24,7 +26,7 @@ koppTwelveArticulations = \relative c''
 koppTwelve = \relative c''
 {
   \key g \major
-  \tempo 4=88
+  \tempo "Allegro Moderato" 4=88
   \time 4/4
   \partial 8 d8\p |
   e16( d) c-. b-. d( c) b-. a-. c( b) a-. g-. b( a) g-. fis-. |
@@ -57,4 +59,3 @@ koppTwelve = \relative c''
   g2 r |
   \bar "|."
 }
-

@@ -1,10 +1,12 @@
+\version "2.13.26"
+
 koppFortyEight = \relative c'
 {
   \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \override TupletNumber #'transparent = ##t
   \override TupletBracket #'transparent = ##t
-  \tempo 4=96
+  \tempo "Allegro Moderato" 4=96
   \time 4/4
   \times 2/3 {e8-.\p f-. fis-.} g4 \times 2/3 {c8-.-> b-. bes-.} a4 |
   \times 2/3 {fis8-. g-. gis-.} a4 \times 2/3 {d8-.-> cis-. c-.} b4 |
@@ -39,4 +41,3 @@ koppFortyEight = \relative c'
   r \times 2/3 {des,8-. c-. b-.} c4 r |
   r \times 2/3 {des,8-.^\markup{\italic ritard.} c-. b-.} c4 r |
 }
-
