@@ -8,7 +8,7 @@ koppThree = \relative c'
   \repeat volta 2
   {
     c8-. d-. e-. f-. g-. f-. | e8-. d-. c-. b-. a-. g-. |
-    a^\markup{\italic {sempre staccato}} b c d e f | g a b c d e |
+    a^\sempreStaccato b c d e f | g a b c d e |
     f8 e d c b a | g a g f e d | c e g c a f |
     g4 r8 f d b | c d e f g f | e d c b a g |
     a8 b c d e fis | g a b c d b | c a fis a d c |

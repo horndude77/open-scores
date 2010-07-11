@@ -59,7 +59,7 @@ koppFiftyFive = \relative c'
   \appoggiatura e,16 f'8.->\fz cis16 \times 2/3 {e16( d) ais c( b) fis} |
   g8.[(\p \grace {a32[ g fis g]} a16]) \times 2/3 {b16\< c d e f fis} |
   \times 2/3 {g\f\> e c bes g e c\p d e f g aes} |
-  \times 2/3 {a bes b c_\markup{\italic cresc.} cis d dis e f fis g gis} |
+  \times 2/3 {a bes b c\justcresc cis d dis e f fis g gis} |
   a8 r fis,,4->(\f |
   g32) e' c g' e c' g e' fis, c' a ees' a, c fis, a |
   g4\trill a8\trill \afterGrace b(\trill {a16[ b])} |

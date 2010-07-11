@@ -4,22 +4,22 @@ koppSixArticulations = \relative c'
 {
   \time 2/4
   \mark "1"
-  \partial 8 g8 c16-. e-. d-. f-. e[-. g-. f-. a]-. | \bar "||"
+  \partial 8 g8 | \noBreak c16-. e-. d-. f-. e[-. g-. f-. a]-. | \bar "||" \noBreak
 
   \mark "2"
-  \partial 8 g,8 c16( e) d-. f-. e[( g) f-. a]-. | \bar "||"
+  \partial 8 g,8 | \noBreak c16( e) d-. f-. e[( g) f-. a]-. | \bar "||" \noBreak
 
   \mark "3"
-  \partial 8 g,8 c16-. e-. d( f) e[-. g-. f( a]) | \bar "||"
+  \partial 8 g,8 | \noBreak c16-. e-. d( f) e[-. g-. f( a]) | \bar "||" \noBreak
 
   \mark "4"
-  \partial 8 g,8 c16( e) d( f) e[( g) f( a]) | \bar "||"
+  \partial 8 g,8 | \noBreak c16( e) d( f) e[( g) f( a]) | \bar "||" \noBreak
 
   \mark "5"
-  \partial 8 g,8 c16( e d) f-. e[( g f) a]-. | \bar "||"
+  \partial 8 g,8 | \noBreak c16( e d) f-. e[( g f) a]-. | \bar "||" \noBreak
 
   \mark "6"
-  \partial 8 g,8 c16-. e( d f) e[-. g( f a]) | \bar "||"
+  \partial 8 g,8 | \noBreak c16-. e( d f) e[-. g( f a]) | \bar "||"
 }
 
 koppSix = \relative c'

@@ -1,25 +1,23 @@
 \version "2.13.26"
 
-\include "defs.ily"
-
 koppEightArticulations = \relative c'
 {
   %Note: These were not very legible
   \time 2/4
   \mark "1"
-  c16( e) e-. g-. g( c) c-. b-. |
-  b( a) a-. g-. g8 r | \bar "||"
+  c16( e) e-. g-. g( c) c-. b-. | \noBreak
+  b( a) a-. g-. g8 r | \bar "||" \noBreak
 
   \mark "2"
-  c,16-. e-. e( g) g-. c-. c( b) |
-  b-. a-. a( g) g8 r | \bar "||"
+  c,16-. e-. e( g) g-. c-. c( b) | \noBreak
+  b-. a-. a( g) g8 r | \bar "||" \noBreak
 
   \mark "3"
-  c,16-. e~ e g-. g-. c~ c b-. |
-  b-. a~ a g-. g8-. r | \bar "||"
+  c,16-. e~ e g-. g-. c~ c b-. | \noBreak
+  b-. a~ a g-. g8-. r | \bar "||" \noBreak
 
   \mark "4"
-  c,16-. e~ e g~ g c~ c b~ |
+  c,16-. e~ e g~ g c~ c b~ | \noBreak
   b a~ a g~ g8 r | \bar "||"
 }
 
@@ -49,7 +47,7 @@ koppEight = \relative c'
     aes( g) g( fis) g8 r |
 
     g16(\p a) a( b) b( c) c( d) |
-    b(\cresc c) c( d) d( e) e( f) |
+    b(\justcresc c) c( d) d( e) e( f) |
     e(\f e,) e( gis) gis( b) b( e) |
     e( e,) e( a) a( c) c( e) |
     e(\> f) f( d) d( b) b( g) |

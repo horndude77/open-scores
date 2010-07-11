@@ -30,7 +30,7 @@ koppForty = \relative c'
   f( c) c-. a'( c,) c-. |
   c'( c,) c-. c4 r8 |
   g'8( e) c'-. c-. c-. c-. |
-  a(_\markup{\italic cresc.} f) d'-. d-. d-. d-. |
+  a(\justcresc f) d'-. d-. d-. d-. |
   b( g) e'-. e-. e-. e-. |
   c( a) f'-. f-. f-. f-. |
   f( g,) g-. d'( g,) g-. |

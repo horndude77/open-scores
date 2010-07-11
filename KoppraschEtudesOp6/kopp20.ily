@@ -7,11 +7,11 @@ koppTwenty = \relative c'
   \time 4/4
   \partial 4 c4->(\p 
   d8) r8 c4->( e8) r8 c4->( |
-  f8)_\markup{\italic cresc.} r8 c4->( g'8) r8 c,4->( |
+  f8)\justcresc r8 c4->( g'8) r8 c,4->( |
   a'8) r8 c,4->( b'8) r8 c,4->( |
   c'2)\fermata r4 g4->(\p |
   a8) r8 g4->( b8) r8 g4->( |
-  c8) r8 g4->( d'8) r8 g,4->(_\markup{\italic cresc.} |
+  c8) r8 g4->( d'8) r8 g,4->(\justcresc |
   e'8) r8 g,4->( fis'8) r8 g,4->(\f |
   g'2)\fermata r4 g4->( |
   f8) r8 g4->( e8) r8 g4->( |
@@ -27,11 +27,11 @@ koppTwenty = \relative c'
   a,8) r8 fis4( c'8) r8 d,4( |
   g8) r8 f'4( b,8) r8\fermata c,,4(\p |
   d'8) r8 c,4( e'8) r8 c,4( |
-  f'8) r8 c,4(^\markup{\italic cresc.} g''8) r8 c,,4( |
+  f'8) r8 c,4(\justcresc g''8) r8 c,,4( |
   a''8) r8 c,,4( b''8) r8 c,,4(\f |
   c''2)\fermata r4 g,4(\p |
   g'8) r8 g,4( a'8) r8 g,4( |
-  b'8) r8 g,4(^\markup{\italic cresc.} c'8) r8 g,4( |
+  b'8) r8 g,4(\justcresc c'8) r8 g,4( |
   d''8) r8 g,,4( e''8) r8 g,,4(\f |
   f''2)\fermata r4 e4(\p |
   gis,8) r8 e4( a8) r8 f'4( |

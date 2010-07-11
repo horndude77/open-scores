@@ -35,8 +35,8 @@ koppFifteen = \relative c''
     c8.[( \grace {d32[ c b c]} e16]) g,( c) e,( a) g8 b, |
     c8.( e32 g) c4 r8. e,32(\p g) |
     bes8.( g32 e) c4 r8. f32( a) |
-    c8.( a32 f) c4 r8. f32(_\markup{\italic dimin.} g) |
-    aes8.( f32 d) b4 r8. g32( b) |
+    c8.( a32 f) c4 r8. f32(\justdimin g) |
+    aes8.(\! f32 d) b4 r8. g32( b) |
     c8.( g32 e) c4 r8
   }
 }

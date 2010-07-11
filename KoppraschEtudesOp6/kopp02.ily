@@ -19,4 +19,5 @@ koppTwo = \relative c'
   c a f' d | b g e' c |
   a f d' b | g e c' a |
   f d b g | c g c,1\fermata |
+  \bar "|."
 }

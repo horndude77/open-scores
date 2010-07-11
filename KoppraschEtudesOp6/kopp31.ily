@@ -40,10 +40,13 @@ koppThirtyOne = \relative c'
   g4 r r |
   g16(\p b) d g aes,( g) fis g g,8 r |
   g'16( c) ees g aes,( g) fis g g,8 r |
-  g16\f^\markup{\italic "poco ritard."} b d g aes, g fis g \clef bass g,8 r |
-  \clef treble g'16^\markup{\italic "ritard."} c ees g aes, g fis g c8 fis, |
+  \tempo "poco ritard."
+  g16\f b d g aes, g fis g \clef bass g,8 r |
+  \tempo "ritard."
+  \clef treble g'16 c ees g aes, g fis g c8 fis, |
   g4 \clef bass g,4\fermata r |
-  \clef treble g'16(^\markup{\italic "a tempo"} c) e g a( g) fis g e8 r |
+  \tempo "a tempo"
+  \clef treble g'16( c) e g a( g) fis g e8 r |
   c16( e) g c d( c) b c g8 r |
   g16(\f b) c e f( e) d e d( c) b c |
   a( g) fis g f( e) dis e c8 r |

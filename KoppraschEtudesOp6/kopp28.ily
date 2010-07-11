@@ -15,12 +15,12 @@ koppTwentyEight = \relative c'
     c8.\p ees16 g8. ees16 c'8. g16 ees'8. c16 |
     d8. bes16 d8. f16 aes8. f16 d8. bes16 |
     g8. ees'16 ees,8. ees'16 f,8.\< ees'16 g,8. ees'16\! |
-    aes,8._\markup{\italic "cresc."} ees'16 a,8. ees'16 bes8. ees16 ces8. ees16 |
+    aes,8.\justcresc ees'16 a,8. ees'16 bes8. ees16 ces8. ees16 |
     bes8.\f ees16 g8. ees16 bes8. aes16 f8. d'16 |
     ees8. bes16 g8. bes16 ees,4 r |
   }
   g8.\p bes16 des8. bes16 g8. e16 c'8. bes16 |
-  aes8._\markup{\italic "cresc."} f16 aes8. c16 f8. c16 aes8. f16 |
+  aes8.\justcresc f16 aes8. c16 f8. c16 aes8. f16 |
   a8. c16 ees8. c16 a8. fis16 d'8. c16 |
   bes8. g16 bes8. d16 g8. d16 bes8. g16 |
   b8.\f d16 f8. ees16 d8. b16 g'8. f16 |

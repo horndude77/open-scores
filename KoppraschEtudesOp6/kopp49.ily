@@ -13,7 +13,7 @@ koppFortyNine = \relative c'
   g4.(\fz fis16 g) a8 b c d |
   e4. a8 g4 fis\trill |
   g2 g,4 r |
-  c2^\markup {\italic ten.} c' |
+  c2^\ten c' |
   b r4 b, |
   a2 a' |
   g r4 g, |
@@ -25,7 +25,7 @@ koppFortyNine = \relative c'
   g b8 a g fis e d |
   c b a g fis e' d c |
   c4~ c16 b( d c b4) r |
-  g'2_\markup{\italic dolce} b4. dis,8 |
+  g'2_\dolce b4. dis,8 |
   e4.( \grace {fis16[ e dis e])} fis8 g4 b, |
   c8 e gis a bes4( \grace {c16[ bes])} a8 g |
   g2~( \grace {g16[ fis a g])} fis4 r |
@@ -53,7 +53,7 @@ koppFortyNine = \relative c'
   f r8 f'\p\< e f g aes\! |
   bes g e c b c d e |
   f2. r4 |
-  f,2\f^\markup{\italic ten.} f' |
+  f,2\f^\ten f' |
   ges r4 ges, |
   g2 g' |
   aes r4 aes, |
@@ -61,7 +61,7 @@ koppFortyNine = \relative c'
   g8 b c d ees b c fis, |
   g2(\p \grace {aes16[ g])} ees4 c |
   aes4-. c-. g-. c-. |
-  fis,1^\markup{\italic ten.} |
+  fis,1^\ten |
   g4.( fis16 g) c4 ees |
   g4.( aes16 g) f8 ees d c |
   aes2(-> g4) r8\fermata b |

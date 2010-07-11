@@ -7,7 +7,7 @@ koppThirtyFive = \relative c'
   \time 4/4
   \repeat volta 2
   {
-    c16\f e g f e d c b c d e f g a b c |
+    c16\f^\sempreStaccato e g f e d c b c d e f g a b c |
     g b d c b a g fis g a b c d e f g |
     e8 g16 f e d c b a c f e d c b a |
     g b e d c b a g f a d c b a g f |

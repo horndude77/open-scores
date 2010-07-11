@@ -2,7 +2,7 @@
 
 high = \relative c'
 {
-  s8^\markup {\italic {sempre staccato.}} e s g s c s e |
+  s8^\sempreStaccato e s g s c s e |
   s g s e s c s g |
   s b, s d s g s b |
   s d s f s d s b |

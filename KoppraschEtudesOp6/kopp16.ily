@@ -9,7 +9,7 @@ koppSixteen = \relative c'
   {
     e16(\p f) g-. a-. g-. c( d c) e,( f) g-. a-. g-. c( d c) |
     \repeat unfold 2 {f,( g) a-. bes-. a-. c( d c)} |
-    g(^\markup{\italic cresc.} b) b-. c-. b-. d( e d) c-. e( f e) d( c) b-. a-. |
+    g(\justcresc b) b-. c-. b-. d( e d) c-. e( f e) d( c) b-. a-. |
     b-. g( fis g) a( b) c-. d-. g,4 r |
 
     e16( f) g-. a-. g-. c( d c) f,( g) a-. bes-. a-. c( d c) |

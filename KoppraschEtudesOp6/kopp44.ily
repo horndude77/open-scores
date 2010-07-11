@@ -76,7 +76,7 @@ koppFortyFour = \relative c''
   g'4\f e c b |
   ais4.(\trill\> \grace {gis16[ ais])\!} cis8 g4 fis8 e |
   dis4 fis a c |
-  b e\fermata _\markup{\italic dolce} \grace {dis32[( e fis e d c b a gis fis a c])} b4.\fermata dis,8 |
+  b e\fermata_\dolce \grace {dis32[( e fis e d c b a gis fis a c])} b4.\fermata dis,8 |
   e4 r r2 |
   c4\p e g c |
   \appoggiatura {e16[ f]} e8( d) \appoggiatura {c16[ d]} c8( b) a(\prall g) f(\prall e) |

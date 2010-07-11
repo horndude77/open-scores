@@ -29,7 +29,7 @@ koppNineteen = \relative c''
     a16( b) cis d e cis d4 r8 |
     g16( fis) e d cis e d4 r8 |
   }
-  b16(\p ais) b cis d b cis( b) cis d e^\markup{\italic cresc.} cis |
+  b16(\p ais) b cis d b cis( b) cis d e\justcresc cis |
   d( cis) d e fis d b4 r8 |
   g'16(\f fis) e d cis e fis( e) d cis b d |
   e( d) cis b ais cis fis,4 r8 |
@@ -42,7 +42,7 @@ koppNineteen = \relative c''
   c'16(\p b) a g fis a b( a) g fis e g |
   a( g) fis e dis fis b,4 r8 |
   c16(\p b) c d e c d( c) d e f d |
-  e( d) e f g_\markup{\italic cresc.} e f( e) f g a f |
+  e( d) e f g\justcresc e f( e) f g a f |
   g( f) g a b g a(\f g) a b c a |
   b( a) b c d b c4 r8 |
   e,8(\p e' d) c16( d c) a-. b-. c-. |

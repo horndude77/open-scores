@@ -6,9 +6,9 @@ koppSeven = \relative c'
   \repeat volta 2
   {
     c2\p\< e4 g |
-    c1_\espressivo\fermata\! |
+    << {s2\< s\> } c1\fermata >> |
     g2\> b4\! d |
-    g1_\espressivo\fermata |
+    << {s2\< s\>} g1\fermata >> s1*0\! |
     e4 c a d |
     g,1\fermata |
     a2 b4 cis |

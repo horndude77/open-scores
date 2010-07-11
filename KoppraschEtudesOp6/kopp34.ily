@@ -35,12 +35,14 @@ koppThirtyFour = \relative c'
   d'16(\p e) c( d) b( c) a( b) g4 r |
   g16(\f e) g-. a-. b( c) a( b) g4 r |
   e'16(\p f) d( e) c( d) b( c) a4 r |
-  a16 f a b c(_\markup{\italic "cresc."} d) a( c) b g b c d( e) b( d) |
+  a16 f a b c(\justcresc d) a( c) b g b c d( e) b( d) |
   c(\f g' f) e-. d( f e) d-. c( e d) c-. b( d c) b-. |
   c( g) c d e( f) d( e) c( e,) b'-. c-. d( e) c( d) |
-  b(\> e,) a b c(\p d) b(_\markup{\italic "ritard."} c) a e gis a b( c) a( b) |
+  \tempo "ritard."
+  b(\> e,) a b c(\p d) b( c) a e gis a b( c) a( b) |
   gis2 r4\fermata e4\p |
-  a16(^\markup{\italic "a tempo"} e') d-. c-. b( d) c-. b-. a( c) b-. a-. gis( b) a-. gis-. |
+  \tempo "a tempo"
+  a16( e') d-. c-. b( d) c-. b-. a( c) b-. a-. gis( b) a-. gis-. |
   a( e) a b c( d) b( c) a( e) a b c( d) b( c) |
   a(\f cis) d e f( g) e( f) d( e) c( d) b( c) a( b) |
   gis16( e) gis-. b-. e8 r c16( a) c-. e-. a8 r |

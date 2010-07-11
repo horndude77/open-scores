@@ -18,7 +18,7 @@ koppFortyThree = \relative c'
     c f, g aes f d |
     ees8( g) bes bes bes bes |
     c( bes) bes a( bes) bes |
-    bes_\markup{\italic cresc.} c d ees d ees |
+    bes\justcresc c d ees d ees |
     g\f f ees d\< c bes |
     a\> bes b c\! cis d |
     ees\> d c bes\! a g |
@@ -35,7 +35,7 @@ koppFortyThree = \relative c'
   {
     \appoggiatura c16 bes8\p a bes d a bes |
     f' ees d c d bes |
-    \appoggiatura d16 c8_\markup{\italic cresc.} b c ees b c |
+    \appoggiatura d16 c8\justcresc b c ees b c |
     g' f ees d ees c |
     \appoggiatura ees16 d8\f cis d f e f |
     aes f ees d c bes |
@@ -58,8 +58,8 @@ koppFortyThree = \relative c'
     ees4\> d8 des c ces\! |
     bes a aes g f ees |
     r e\< f fis g aes\! |
-    a_\markup{\italic cresc.} bes b c cis d |
-    ees g f ees bes g |
+    a\justcresc bes b c cis d |
+    ees\f g f ees bes g |
     ees4 r8 r4 r8 |
   }
 }

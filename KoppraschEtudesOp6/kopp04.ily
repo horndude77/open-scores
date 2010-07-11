@@ -1,7 +1,5 @@
 \version "2.13.26"
 
-\include "defs.ily"
-
 koppFourArticulations = \relative c'
 {
   \mark "1"

@@ -1,16 +1,14 @@
 \version "2.13.26"
 
-\include "defs.ily"
-
 koppThirtySixArticulations = \relative c''
 {
   \time 2/4
   \partial 8 c8^"1"
-  f16( d) e-. c-. d[( bes) c-. a]-. | \bar "||"
+  f16( d) e-. c-. d[( bes) c-. a]-. | \bar "||" \noBreak
   \partial 8 c8^"2"
-  f16-. d-. e( c) d[-. bes-. c( a]) | \bar "||"
+  f16-. d-. e( c) d[-. bes-. c( a]) | \bar "||" \noBreak
   \partial 8 c8(^"3"
-  f16) d( e) c( d[) bes( c) a]\laissezVibrer | \bar "||"
+  f16) d( e) c( d[) bes( c) a]\laissezVibrer | \bar "||" \noBreak
   \partial 8 c8^"4"
   f16-. d( e c) d[-. bes( c a]) | \bar "||"
 }

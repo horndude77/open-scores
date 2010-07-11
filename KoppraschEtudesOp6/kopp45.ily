@@ -7,7 +7,7 @@ koppFourtyFive = \relative c'
   \tempo "Allegro Vivace" 2=72
   \time 2/2
   \partial 4
-  e8\p g \bar "||" \mark \markup { \musicglyph #"scripts.segno" }
+  e8\p g \bar "||" \mark \segno
   b( ais) b-. c-. b( a) g-. fis-. |
   e( g) fis-. e-. fis-. b,( c b) |
   e( dis) e-. g-. fis( e) fis-. a-. |
@@ -17,9 +17,9 @@ koppFourtyFive = \relative c'
   e( g) b e g( fis) e dis |
   e( b) g b e,4 \bar "||" g8\p b |
   d( cis) d e d( c) b a |
-  gis(_\markup{\italic cresc.} b) d f e(\> f) e d |
+  gis(\justcresc b) d f e(\> f) e d |
   c(\p b) c d c b a g |
-  fis(\< a) c e d_\markup{\italic cresc.} e d c |
+  fis(\< a) c e d\justcresc e d c |
   b\> c b a g fis e g\! |
   fis r g e dis b e g |
   fis( b) g e dis b e g |
@@ -30,14 +30,16 @@ koppFourtyFive = \relative c'
   b cis dis e fis g a fis |
   g( e) c a g e b' b, |
   e b g b e4 r4\fermata \bar "||"
-  \once \override Score.RehearsalMark #'break-visibility = #begin-of-line-invisible
-  \once \override Score.RehearsalMark #'direction = #DOWN
-  \once \override Score.RehearsalMark #'font-size = 0
-  \once \override Score.RehearsalMark #'self-alignment-X = #right
+  \once \override Staff.RehearsalMark #'break-visibility = #begin-of-line-invisible
+  \once \override Staff.RehearsalMark #'direction = #DOWN
+  \once \override Staff.RehearsalMark #'font-size = 0
+  \once \override Staff.RehearsalMark #'self-alignment-X = #right
   \mark \markup{\bold Fine}
 
   \key e \major
-  r2 b'4_\markup{\dynamic p \italic dolce} a |
+  r2
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    b'4\pDolce a |
   gis2 e |
   cis'4( a e' cis) |
   b4.( cis8) a4.( b8) |
@@ -73,9 +75,9 @@ koppFourtyFive = \relative c'
   e c b ais) |
   b fis g e |
   b2\fermata r4 \bar "||" \key e \minor e8 g \bar "||"
-  \once \override Score.RehearsalMark #'break-visibility = #begin-of-line-invisible
-  \once \override Score.RehearsalMark #'direction = #DOWN
-  \once \override Score.RehearsalMark #'font-size = 0
-  \once \override Score.RehearsalMark #'self-alignment-X = #right
+  \once \override Staff.RehearsalMark #'break-visibility = #begin-of-line-invisible
+  \once \override Staff.RehearsalMark #'direction = #DOWN
+  \once \override Staff.RehearsalMark #'font-size = 0
+  \once \override Staff.RehearsalMark #'self-alignment-X = #right
   \mark \markup{\bold {Dal segno al Fine.} }
 }

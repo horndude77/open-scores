@@ -1,7 +1,5 @@
 \version "2.13.26"
 
-\include "defs.ily"
-
 koppFiftyNine = \relative c'
 {
   \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))

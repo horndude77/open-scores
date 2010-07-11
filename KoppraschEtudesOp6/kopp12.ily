@@ -1,25 +1,23 @@
 \version "2.13.26"
 
-\include "defs.ily"
-
 koppTwelveArticulations = \relative c''
 {
   \key g \major
   \time 4/4
   \mark "1"
-  \partial 8 d8 |
-  e16-. d-. c( b) d-. c-. b( a) c-. b-. a( g) b-. a-. g( fis) | \bar "||"
+  \partial 8 d8 | \noBreak
+  e16-. d-. c( b) d-. c-. b( a) c-. b-. a( g) b-. a-. g( fis) | \bar "||" \noBreak
 
   \mark "2"
-  \partial 8 d'8 |
-  e16( d c) b-. d( c b) a-. c( b a) g-. b( a g) fis-. | \bar "||"
+  << {s16 \partial 16 s} d'8 >> | \noBreak
+  e16( d c) b-. d( c b) a-. c( b a) g-. b( a g) fis-. | \bar "||" \noBreak
 
   \mark "3"
-  \partial 8 d'8 |
-  e16-. d( c b) d-. c( b a) c-. b( a g) b-. a( g fis) | \bar "||"
+  << {s16 \partial 16 s} d'8 >> | \noBreak
+  e16-. d( c b) d-. c( b a) c-. b( a g) b-. a( g fis) | \bar "||" \noBreak
 
   \mark "4"
-  \partial 8 d'8 |
+  << {s16 \partial 16 s} d'8 >> | \noBreak
   e16-. d( c) b( d) c( b) a( c) b( a) g( b) a( g) fis\laissezVibrer | \bar "||"
 }
 
@@ -50,7 +48,7 @@ koppTwelve = \relative c''
   g4 g'16( f) ees-. d-. cis4 g16( a) bes-. g-. |
   d4 r r r8. d'16-.\p |
   e16( d) c-. b-. d( c) b-. a-. c( b) a-. g-. b( a) g-. fis-. |
-  g(_\markup {\italic cresc.} a) b-. c-. a( b) c-. d-. b( c) d-. e-. c( d) e-. fis-. |
+  g(\justcresc a) b-. c-. a( b) c-. d-. b( c) d-. e-. c( d) e-. fis-. |
   g8 r e16( fis) g-. a-. d,( e) fis-. g-. c,( d) e-. fis-. |
   g8 r e16(\f fis) g-. a-. d,( e) fis-. g-. c,( d) e-. fis-. |
   b,( c) d-. e-. a,( b) c-. d-. g,( a) b-. c-. fis,( g) a-. b-. |

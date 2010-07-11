@@ -6,15 +6,18 @@ koppTwentyFive = \relative c'
   \key g \major
   \tempo "Andantino" 8=220
   \time 6/8
-  g8^\markup{\italic sempre \dynamic p} b d g\< b c |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  g8^\sempreP b d g\< b c |
   cis(\> d c)\! \grace c b a g |
   g, c e g\< c d |
   dis(\> e d)\! c b a |
   d, fis a c( b a) |
   e'( d cis) d( b g) |
-  fis g a d, e fis_\markup{\italic "ritard."} |
+  fis g a d, e fis |
+  \tempo "ritard."
   g a b a4\fermata r8 |
-  g,8^\markup{\italic "a tempo"} b d g\< b c |
+  \tempo "a tempo"
+  g,8 b d g\< b c |
   cis(\> d c)\! b a g |
   g, c e g\< c d |
   dis(\> e d)\! c b a |
@@ -28,9 +31,11 @@ koppTwentyFive = \relative c'
   b d fis g a b |
   dis, fis b dis( cis b) |
   e b g fis a c |
-  b(_\markup{\italic "ritard."} g' e) dis cis dis |
+  \tempo "ritard."
+  b( g' e) dis cis dis |
   e b g e4 r8
-  g,8^\markup{\italic "a tempo"} b d g\< b c |
+  \tempo "a tempo"
+  g,8 b d g\< b c |
   cis(\> d c)\! b a g |
   g, c e g\< c d |
   dis(\> e d)\! c b a |
@@ -39,7 +44,7 @@ koppTwentyFive = \relative c'
   b g' dis e cis d |
   b\> c ais b fis g |
   e\p f fis g gis a |
-  ais^\markup{\italic "cresc."} b c cis d dis |
+  ais\justcresc b c cis d dis |
   e\f fis g dis e cis |
   d cis c b a g |
   \afterGrace a2.\trill {g16[ a]} |

@@ -20,7 +20,7 @@ koppThirtyEight = \relative c''
     d1~\> |
     \times 2/3 {d8\p ees( d c d c bes c bes a bes a)} |
     \times 2/3 {g( fis g a g a)} bes4( g8) r |
-    \times 2/3 {ees'(_\markup{\italic cresc.} f ees d ees d c d c bes c bes)} |
+    \times 2/3 {ees'(\justcresc f ees d ees d c d c bes c bes)} |
     \times 2/3 {a( g a bes a bes)} c4( a8) r |
     \times 2/3 {f'(\f g f ees f ees d ees d c d c)} |
     \times 2/3 {bes( c bes a bes a g a g f g f)} |
@@ -28,7 +28,9 @@ koppThirtyEight = \relative c''
     a4-. \times 2/3 {f8( e f) g( f g) a( g a)} |
     \times 2/3 {bes( a bes c bes c d c d ees d ees)} |
     \times 2/3 {f( e f g ees c f d bes ees c a)} |
-    bes4 r f(_\markup{\dynamic p \italic dolce} d'8) r |
+    bes4 r
+      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+      f(\pDolce d'8) r |
     c4( ees,8) r c4( a'8) r |
     bes( d) f,4 g( ees'8) r |
     d4( b8) r \times 2/3 {c8(\< d c) ees( f ees)} |
@@ -43,7 +45,7 @@ koppThirtyEight = \relative c''
   c4( g8) r \times 2/3 {d'( c d ees d ees)} |
   f4( b,8) r c4( fis,8) r |
   g4\p \times 2/3 {g8( a g a\< b a b) c( b} |
-  \times 2/3 {c\! d c d ees d ees_\markup{\italic cresc.} f ees f g f)} |
+  \times 2/3 {c\! d c d ees d ees\justcresc f ees f g f)} |
   \times 2/3 {g(\f aes g f g f ees f ees d ees d} |
   \times 2/3 {c b c d c d)} ees4( c8) r |
   \times 2/3 {aes8(\p g aes) bes( a bes)} c4( aes8) r |
@@ -61,7 +63,7 @@ koppThirtyEight = \relative c''
   \times 2/3 {d c d ees d c d c bes c bes a)} |
   \times 2/3 {bes( a bes c bes a bes a g a g f)} | \bar "||"
   \key g \major
-  g4 r b(_\markup{\italic dolce} g8) r |
+  g4 r b(_\dolce g8) r |
   c,4( a'8) r c4( fis,8) r |
   g8( b) d,4 e( c'8) r |
   b4( gis8) r \times 2/3 {a8(\< b a) c( d c)} |

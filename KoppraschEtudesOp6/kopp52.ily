@@ -1,7 +1,5 @@
 \version "2.13.26"
 
-\include "defs.ily"
-
 koppFiftyTwo = \relative c'
 {
   \transposition f
@@ -12,12 +10,13 @@ koppFiftyTwo = \relative c'
   c16( b c) e-. b( a b) e-. a,( g a) e'-. g,( fis g) e'-. |
   a,( b) c b a g fis e dis( fis) b a g fis e dis |
   e( dis) e fis g( fis) g e fis( b) fis dis b4\fermata |
-  e16( dis) e-. fis-. g( fis) g-. a-. b( ais) b-. cis-. dis(_\markup{\italic cresc.} b) cis-. dis-. |
+  e16( dis) e-. fis-. g( fis) g-. a-. b( ais) b-. cis-. dis(\justcresc b) cis-. dis-. |
   e(\f dis) e-. fis-. g( fis) e d c b c d e( d) c b |
   a( g) a b c( b) a g fis( e) fis g a( g) fis e |
   d8 e16 fis g( fis) g a b( a) b c d8 r |
   fis,16( e) fis g a( g) a b c( b) c d e( d) e fis |
-  g4_\markup{\dynamic p \italic dolce} r d( fis,) |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  g4\pDolce r d( fis,) |
   g r c16( b c) d-. b( a b) c-. |
   a4 r e'( gis,) |
   a r d16( c d) e-. c( b c) d-. |

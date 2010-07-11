@@ -8,12 +8,14 @@ koppFortySix = \relative c''
   \key f \major
   \tempo "Adagio con Espressione" 4=52
   \time 2/4
-  \partial 8 a16_\markup{\dynamic p \italic dolce} bes |
+  \partial 8
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  a16\pDolce bes |
   c8 d16 e \grace g16 f8( e16 d) |
   cis8~ cis32 d bes g e8 c |
   f g16 a bes( d c bes) |
   c8( bes\trill \grace {a16[ bes]} a8) f16( g) |
-  a8 b16 cis d8_\markup{\italic cresc.} e |
+  a8 b16 cis d8\justcresc e |
   f(\f cis) d c16( bes) |
   a8~\> a32 g f e f8\< g |
   a4.\fermata\f a16(\p g) |
@@ -23,7 +25,7 @@ koppFortySix = \relative c''
   b8~ b32 c g e c16 e' d c |
   cis8~\p cis32 d b g f16 a g f |
   e-. c( b c) e(\< g) c e |
-  g4\f^\markup{\italic tenuto} e, |
+  g4\f^\ten e, |
   f16-. c( b c) ees fis a c |
   ees4 fis,, |
   g8 dis'32( e) c-. g-. fis'( g) e-. c-. b'( c) g-. e-. |

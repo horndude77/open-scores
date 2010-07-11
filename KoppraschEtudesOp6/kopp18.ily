@@ -6,7 +6,7 @@ koppEighteen = \relative c''
   \time 2/4
   \repeat volta 2
   {
-    \partial 8 g8\f^\markup{\italic "sempre staccato."} |
+    \partial 8 g8\f^\sempreStaccato |
     c16 g e' g, g' g, e' g, |
     f' g, d' g, e' g, c g |
     d' g, b g c g e' g, |

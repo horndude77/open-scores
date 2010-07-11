@@ -11,7 +11,7 @@ koppFourteen = \relative c''
   \acciaccatura a8\p \partial 4 \times 2/3 {g fis-. g-.} |
   \times 2/3 {c8( g) e-. d'( b) g-. e'( c) g-. d'( b) g-.} |
   \times 2/3 {c8( g) e-. d'( b) g-.}
-    e'4 \times 2/3 {\acciaccatura d8^\markup{\italic cresc.} c b-. c-.} |
+    e'4 \times 2/3 {\acciaccatura d8\justcresc c b-. c-.} |
 
   \times 2/3 {d8( b) g-. e'( c) g-. f'( d) g,-. e'( c) g-.} |
   \times 2/3 {d'8( b) g-. e'( c) g-.}

@@ -20,7 +20,7 @@ koppTwentyOne = \relative c'
     f8\p c f a c a |
     bes g e g e c |
     f c f a c a |
-    b g b_\markup{\italic cresc.} d f d |
+    b g b\justcresc d f d |
     c g c e g e |
     d e f\f g a g |
     f e d c d e |
@@ -52,7 +52,7 @@ koppTwentyOne = \relative c'
   {
     c8\p g c e g e |
     f d b d b g |
-    c^\markup{\italic cresc.} g c e g e |
+    c\justcresc g c e g e |
     f c f a c a |
     g\f e cis' a e' cis |
     d a f' d a' r |

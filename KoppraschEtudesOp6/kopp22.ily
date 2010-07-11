@@ -8,7 +8,7 @@ koppTwentyTwo = \relative c''
   \time 4/4
   \repeat volta 2
   {
-    g4\p g8.[(_\markup{\italic "dolce"} \grace {\stemDown a32[ g fis g] \stemNeutral} a16]) b8.( c32 b) a8 g |
+    g4\p g8.[(_\dolce \grace {\stemDown a32[ g fis g] \stemNeutral} a16]) b8.( c32 b) a8 g |
     d'4( \grace {e16[ d])} cis16( d e d) a4 \afterGrace b4\trill {a16[ b]} |
     c4( \grace {d16[ c])} b16( c d c) e,4 \afterGrace fis4\trill {e16[ fis]} |
     g8.[( \times 2/3 {a32 g fis])} g8 a16 b a4(\< ais)\! |
@@ -23,7 +23,7 @@ koppTwentyTwo = \relative c''
   }
   \repeat volta 2
   {
-    d4~_\markup{\italic "rinf."} d8.[ \grace {e32[ d cis d]} e16] f8 d b a |
+    d4~_\rinf d8.[ \grace {e32[ d cis d]} e16] f8 d b a |
     gis16 e fis gis a b c d e4 \afterGrace d4\trill_( {c16[ d])} |
     c4( \grace {d16[ c])} b16( c d c) b a( c) b( d) c \times 2/3 {e16[( c a])} |
     g4.( a16 g) fis4 r |

@@ -12,7 +12,7 @@ koppNine = \relative c''
     g16-. g( a g) c-. c( d c) bes-. bes( c bes) |
     a-. a( bes a) g-. g( a g) f8 r |
 
-    g16-. g( a g) a-._\markup {\italic cresc.} a( b a) b-. b( c b) |
+    g16-. g( a g) a-.\justcresc a( b a) b-. b( c b) |
     c-. c( d c) d-. d( e d) e-.\f e( f e) |
     d-. d( c d) a-. a( g a) b-. b( a b) |
     c-. c( d c) e-. e( f e) c8 r |
@@ -37,7 +37,7 @@ koppNine = \relative c''
     g16-. g( a g) c-. c( d c) bes-. bes( c bes) |
     a-. a( bes a) g-. g( a g) f8 r |
 
-    a16-._\markup {cresc.} a( g a) bes-. bes( a bes) c-. c( bes c) |
+    a16-.\justcresc a( g a) bes-. bes( a bes) c-. c( bes c) |
     d-. d( c d) e-. e( d e) f-. f( e f) |
     d-. d( e d) bes-. bes( c bes) g-. g( a g) |
     f-. f( g f) a-. a( bes a) f8 r |
