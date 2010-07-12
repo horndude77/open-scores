@@ -51,7 +51,6 @@ afterGraceFraction = #(cons 15 16)
     \name "ArticulationStaff"
 
     \alias "Staff"
-    \consists "Mark_engraver"
 
     fontSize = #-3
     \override StaffSymbol #'staff-space = #(magstep -3)

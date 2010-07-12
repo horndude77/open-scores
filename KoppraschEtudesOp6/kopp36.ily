@@ -3,13 +3,20 @@
 koppThirtySixArticulations = \relative c''
 {
   \time 2/4
-  \partial 8 c8^"1"
+  \mark "1"
+  \partial 8 c8 | \noBreak
   f16( d) e-. c-. d[( bes) c-. a]-. | \bar "||" \noBreak
-  \partial 8 c8^"2"
+
+  \mark "2"
+  \partial 8 c8 | \noBreak
   f16-. d-. e( c) d[-. bes-. c( a]) | \bar "||" \noBreak
-  \partial 8 c8(^"3"
+
+  \mark "3"
+  \partial 8 c8( | \noBreak
   f16) d( e) c( d[) bes( c) a]\laissezVibrer | \bar "||" \noBreak
-  \partial 8 c8^"4"
+
+  \mark "4"
+  \partial 8 c8 | \noBreak
   f16-. d( e c) d[-. bes( c a]) | \bar "||"
 }
 
