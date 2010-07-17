@@ -1,10 +1,20 @@
 \version "2.13.22"
 
+koppFiveArticulations = \relative c''
+{
+  \time 2/4
+  g16( b) a-. c-. b( d) g,-. b-. | \bar "||" \noBreak
+  g16-. b-. a( c) b-. d-. g,( b) | \bar "||" \noBreak
+  g16-. b( a) c( b) d( g,) b-. | \bar "||" \noBreak
+  g16( b a) c-. b( d g,) b-. | \bar "||" \noBreak
+  g16-. b( a c) b-. d( g, b) | \bar "|."
+}
+
 koppFive = \relative c''
 {
   \transposition f
   \key g \major
-  \tempo 4=88
+  \tempo "Allegro" 4=88
   \time 2/4
   \repeat volta 2
   {
@@ -51,4 +61,3 @@ koppFive = \relative c''
     d( g) fis( a) g8 r | \bar "|."
   }
 }
-

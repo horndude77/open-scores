@@ -1,6 +1,7 @@
 \version "2.13.22"
 
 \include "defs.ily"
+\include "rhythm.ily"
 \include "kopp01.ily"
 \include "kopp02.ily"
 \include "kopp03.ily"
@@ -77,7 +78,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.1. Moderato}}
+      \set Staff.instrumentName = \markup{\bold No.1.}
       \koppOne
     }
     \layout { }
@@ -87,7 +88,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.2. Moderato}}
+      \set Staff.instrumentName = \markup{\bold No.2.}
       \koppTwo
     }
     \layout { }
@@ -97,7 +98,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.3. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.3.}
       \koppThree
     }
     \layout { }
@@ -105,9 +106,13 @@
   }
   \score
   {
+    \new ArticulationStaff { \koppThreeArticulations }
+  }
+  \score
+  {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.4.}}
+      \set Staff.instrumentName = \markup{\bold No.4.}
       \koppFour
     }
     \layout { }
@@ -117,7 +122,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.5. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.5.}
       \koppFive
     }
     \layout { }
@@ -125,9 +130,13 @@
   }
   \score
   {
+    \new ArticulationStaff { \koppFiveArticulations }
+  }
+  \score
+  {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.6. Adagio}}
+      \set Staff.instrumentName = \markup{\bold No.6.}
       \koppSix
     }
     \layout { }
@@ -137,7 +146,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.7. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.7.}
       \koppSeven
     }
     \layout { }
@@ -147,7 +156,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.8. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.8.}
       \koppEight
     }
     \layout { }
@@ -155,21 +164,13 @@
   }
   \score
   {
-    \new Staff
-    \with
-    {
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-    }
-    {
-      \koppEightArticulations
-    }
+    \new ArticulationStaff { \koppEightArticulations }
   }
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.9. Tempo Giusto}}
+      \set Staff.instrumentName = \markup{\bold No.9.}
       \koppNine
     }
     \layout { }
@@ -177,21 +178,13 @@
   }
   \score
   {
-    \new Staff
-    \with
-    {
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-    }
-    {
-      \koppNineArticulations
-    }
+    \new ArticulationStaff { \koppNineArticulations }
   }
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.10. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.10.}
       \koppTen
     }
     \layout { }
@@ -199,21 +192,13 @@
   }
   \score
   {
-    \new Staff
-    \with
-    {
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-    }
-    {
-      \koppTenArticulations
-    }
+    \new ArticulationStaff { \koppTenArticulations }
   }
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.11. Adagio}}
+      \set Staff.instrumentName = \markup{\bold No.11.}
       \koppEleven
     }
     \layout { }
@@ -223,7 +208,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.12. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.12.}
       \koppTwelve
     }
     \layout { }
@@ -231,21 +216,13 @@
   }
   \score
   {
-    \new Staff
-    \with
-    {
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-    }
-    {
-      \koppTwelveArticulations
-    }
+    \new ArticulationStaff { \koppTwelveArticulations }
   }
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.13. Maestoso}}
+      \set Staff.instrumentName = \markup{\bold No.13.}
       \koppThirteen
     }
     \layout { }
@@ -255,7 +232,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.14. Vivace}}
+      \set Staff.instrumentName = \markup{\bold No.14.}
       \koppFourteen
     }
     \layout { }
@@ -265,7 +242,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.15. Moderato}}
+      \set Staff.instrumentName = \markup{\bold No.15.}
       \koppFifteen
     }
     \layout { }
@@ -275,7 +252,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.16. Allegretto}}
+      \set Staff.instrumentName = \markup{\bold No.16.}
       \koppSixteen
     }
     \layout { }
@@ -285,7 +262,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.17. Adagio}}
+      \set Staff.instrumentName = \markup{\bold No.17.}
       \koppSeventeen
     }
     \layout { }
@@ -295,7 +272,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.18. Poco Andante}}
+      \set Staff.instrumentName = \markup{\bold No.18.}
       \koppEighteen
     }
     \layout { }
@@ -305,7 +282,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.19. Moderato}}
+      \set Staff.instrumentName = \markup{\bold No.19.}
       \koppNineteen
     }
     \layout { }
@@ -315,7 +292,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.20. Allegro vivace}}
+      \set Staff.instrumentName = \markup{\bold No.20.}
       \koppTwenty
     }
     \layout { }
@@ -325,7 +302,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.21. Presto}}
+      \set Staff.instrumentName = \markup{\bold No.21.}
       \koppTwentyOne
     }
     \layout { }
@@ -335,7 +312,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.22. Moderato risoluto}}
+      \set Staff.instrumentName = \markup{\bold No.22.}
       \koppTwentyTwo
     }
     \layout { }
@@ -345,7 +322,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.23. Allegro vivace}}
+      \set Staff.instrumentName = \markup{\bold No.23.}
       \koppTwentyThree
     }
     \layout { }
@@ -355,18 +332,17 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.24. Adagio con espressivo}}
+      \set Staff.instrumentName = \markup{\bold No.24.}
       \koppTwentyFour
     }
     \layout { }
     \midi { }
   }
-  %{
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.25. Andantino}}
+      \set Staff.instrumentName = \markup{\bold No.25.}
       \koppTwentyFive
     }
     \layout { }
@@ -376,17 +352,18 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.26. Allegro vivace}}
+      \set Staff.instrumentName = \markup{\bold No.26.}
       \koppTwentySix
     }
     \layout { }
     \midi { }
   }
+  %{
   \score
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.27. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.27.}
       \koppTwentySeven
     }
     \layout { }
@@ -396,7 +373,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.28. Maestoso}}
+      \set Staff.instrumentName = \markup{\bold No.28.}
       \koppTwentyEight
     }
     \layout { }
@@ -406,7 +383,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.29. Andante}}
+      \set Staff.instrumentName = \markup{\bold No.29.}
       \koppTwentyNine
     }
     \layout { }
@@ -416,7 +393,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.30. Presto}}
+      \set Staff.instrumentName = \markup{\bold No.30.}
       \koppThirty
     }
     \layout { }
@@ -426,7 +403,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.31. Allegro moderato}}
+      \set Staff.instrumentName = \markup{\bold No.31.}
       \koppThirtyOne
     }
     \layout { }
@@ -436,7 +413,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.32. Moderato}}
+      \set Staff.instrumentName = \markup{\bold No.32.}
       \koppThirtyTwo
     }
     \layout { }
@@ -446,7 +423,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.33. Adagio}}
+      \set Staff.instrumentName = \markup{\bold No.33.}
       \koppThirtyThree
     }
     \layout { }
@@ -456,7 +433,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.34. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.34.}
       \koppThirtyFour
     }
     \layout { }
@@ -466,7 +443,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.35. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.35.}
       \koppThirtyFive
     }
     \layout { }
@@ -476,7 +453,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.36. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.36.}
       \koppThirtySix
     }
     \layout { }
@@ -485,20 +462,8 @@
   \score
   {
     \new Staff
-    \with
     {
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-    }
-    {
-      \koppThirtySixArticulations
-    }
-  }
-  \score
-  {
-    \new Staff
-    {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.37. Allegro}}
+      \set Staff.instrumentName = \markup{\bold No.37.}
       \koppThirtySeven
     }
     \layout { }
@@ -508,7 +473,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.38. Presto}}
+      \set Staff.instrumentName = \markup{\bold No.38.}
       \koppThirtyEight
     }
     \layout { }
@@ -518,7 +483,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.39. Allegro molto.}}
+      \set Staff.instrumentName = \markup{\bold No.39.}
       \koppThirtyNine
     }
     \layout { }
@@ -528,7 +493,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.40. Presto}}
+      \set Staff.instrumentName = \markup{\bold No.40.}
       \koppForty
     }
     \layout { }
@@ -538,7 +503,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.41. Allegro moderato.}}
+      \set Staff.instrumentName = \markup{\bold No.41.}
       \koppFortyOne
     }
     \layout { }
@@ -548,7 +513,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.42. Allegro moderato.}}
+      \set Staff.instrumentName = \markup{\bold No.42.}
       \koppFortyTwo
     }
     \layout { }
@@ -558,7 +523,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.43. Allegretto.}}
+      \set Staff.instrumentName = \markup{\bold No.43.}
       \koppFortyThree
     }
     \layout { }
@@ -568,7 +533,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.44. Allegro.}}
+      \set Staff.instrumentName = \markup{\bold No.44.}
       \koppFortyFour
     }
     \layout { }
@@ -578,7 +543,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.45. Allegro vivace}}
+      \set Staff.instrumentName = \markup{\bold No.45.}
       \koppFourtyFive
     }
     \layout { }
@@ -588,7 +553,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.46. Adagio con espressione.}}
+      \set Staff.instrumentName = \markup{\bold No.46.}
       \koppFortySix
     }
     \layout { }
@@ -598,7 +563,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.47. Moderato.}}
+      \set Staff.instrumentName = \markup{\bold No.47.}
       \koppFortySeven
     }
     \layout { }
@@ -608,7 +573,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.48. Allegro Moderato.}}
+      \set Staff.instrumentName = \markup{\bold No.48.}
       \koppFortyEight
     }
     \layout { }
@@ -618,7 +583,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.49. Adagio.}}
+      \set Staff.instrumentName = \markup{\bold No.49.}
       \koppFortyNine
     }
     \layout { }
@@ -628,7 +593,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.50. Presto}}
+      \set Staff.instrumentName = \markup{\bold No.50.}
       \koppFifty
     }
     \layout { }
@@ -638,7 +603,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.51. Moderato}}
+      \set Staff.instrumentName = \markup{\bold No.51.}
       \koppFiftyOne
     }
     \layout { }
@@ -648,7 +613,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.52. Allegro vivace.}}
+      \set Staff.instrumentName = \markup{\bold No.52.}
       \koppFiftyTwo
     }
     \layout { }
@@ -658,7 +623,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.53. Largo.}}
+      \set Staff.instrumentName = \markup{\bold No.53.}
       \koppFiftyThree
     }
     \layout { }
@@ -668,7 +633,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.54. Allegro con spirito.}}
+      \set Staff.instrumentName = \markup{\bold No.54.}
       \koppFiftyFour
     }
     \layout { }
@@ -678,7 +643,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.55. Largo.}}
+      \set Staff.instrumentName = \markup{\bold No.55.}
       \koppFiftyFive
     }
     \layout { }
@@ -688,7 +653,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.56. Moderato.}}
+      \set Staff.instrumentName = \markup{\bold No.56.}
       \koppFiftySix
     }
     \layout { }
@@ -698,7 +663,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.57. Moderato.}}
+      \set Staff.instrumentName = \markup{\bold No.57.}
       \koppFiftySeven
     }
     \layout { }
@@ -708,7 +673,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.58. Allegro.}}
+      \set Staff.instrumentName = \markup{\bold No.58.}
       \koppFiftyEight
     }
     \layout { }
@@ -718,7 +683,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.59. Larghetto.}}
+      \set Staff.instrumentName = \markup{\bold No.59.}
       \koppFiftyNine
     }
     \layout { }
@@ -728,7 +693,7 @@
   {
     \new Staff
     {
-      \set Staff.instrumentName = \markup{\bold \center-column {No.60. Moderato.}}
+      \set Staff.instrumentName = \markup{\bold No.60.}
       \koppSixty
     }
     \layout { }

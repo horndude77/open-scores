@@ -55,4 +55,3 @@ koppFour = \relative c''
   a16 \repeat unfold 7 {b a} b) |
   c2 r | \bar "|."
 }
-

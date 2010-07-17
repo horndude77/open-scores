@@ -2,7 +2,7 @@
 
 koppTwentyTwo = \relative c''
 {
-  \tempo 4=120
+  \tempo "Moderato risoluto" 4=120
   \transposition f
   \key c \major
   \time 4/4

@@ -3,6 +3,7 @@
 koppTwenty = \relative c''
 {
   \transposition f
+  \tempo "Allegro vivace" 4.=100
   \key g \major
   \time 6/8
   \repeat volta 2

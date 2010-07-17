@@ -1,9 +1,19 @@
 \version "2.13.22"
 
+koppThreeArticulations = \relative c'
+{
+  \time 4/4
+  c8 d16-. e-. f-. g-. a-. b-. c( b) a-. g-. f-. e-. d-. c-. | \bar "||" \noBreak
+  c8 d16-. e-. f-. g-. a-. b( c b) a-. g-. f-. e-. d-. c-. | \bar "||" \noBreak
+  c8 d16-. e-. f( g) a-. b-. c( b) a-. g-. f( e) d-. c-. | \bar "||" \noBreak
+  c8 d16( e) f-. g-. a( b) c-. b-. a( g) f-. e-. d( c) | \bar "||" \noBreak
+  c8 d16( e) f( g) a( b) c( b) a( g) f( e) d( c) | \bar "|."
+}
+
 koppThree = \relative c'
 {
   \transposition f
-  \tempo 4=72
+  \tempo "Allegro" 4=72
   \time 4/4
   c8 d16 e f g a b c b a g f e d c |
   d8 e16 f g a b c d c b a g f e d |
@@ -22,4 +32,3 @@ koppThree = \relative c'
   d8 c16 b a g f e d e f g a b c d |
   c8 b16 a g f e d c4 r\fermata | \bar "|."
 }
-

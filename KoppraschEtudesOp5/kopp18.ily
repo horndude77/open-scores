@@ -3,6 +3,7 @@
 koppEighteen = \relative c''
 {
   \transposition f
+  \tempo "Poco andante" 4=100
   \key f \major
   \time 2/4
   \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))

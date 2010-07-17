@@ -3,6 +3,7 @@
 koppFifteen = \relative c''
 {
   \transposition f
+  \tempo "Moderato" 4=100
   \time 3/4
   \key f \major
   \repeat volta 2

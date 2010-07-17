@@ -1,8 +1,5 @@
 \version "2.13.22"
 
-\include "rhythm.ily"
-\include "defs.ily"
-
 rhythm = #(define-music-function (parser location music) (ly:music?)
 #{
   \makeRhythm $music "8. 16"
@@ -11,7 +8,7 @@ rhythm = #(define-music-function (parser location music) (ly:music?)
 koppThirteen = \relative c''
 {
   \transposition f
-  \tempo 4=96
+  \tempo "Maestoso" 4=96
   \time 2/2
   \key g \minor
   \repeat volta 2
@@ -71,4 +68,3 @@ koppThirteen = \relative c''
   }
   g2 r | \bar "|."
 }
-

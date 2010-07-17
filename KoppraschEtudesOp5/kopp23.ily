@@ -2,9 +2,9 @@
 
 koppTwentyThree = \relative c'' \new Voice
 {
-  \tempo 4=100
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \transposition f
+  \tempo "Allegro vivace" 4=100
   \key c \major
   \time 4/4
   \repeat volta 2

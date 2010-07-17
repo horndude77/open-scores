@@ -19,7 +19,7 @@ koppTwelveArticulations = \relative c'' \new Voice
 
 koppTwelve = \relative c''
 {
-  \tempo 4=88
+  \tempo "Allegro" 4=88
   e16(\f f) g-. a-. d,( e) f-. g-. c,( d) e-. f-. b,( c) d-. e-. |
   a,( b) c-. d-. g,( a) b-. c-. a( b) c-. d-. b( c) d-. e-. |
   c8 r c16(\p d) e-. f-. d( e) f g f( e) d c |
@@ -46,7 +46,7 @@ koppTwelve = \relative c''
   c8 r c16( e) d c d( e) f d c( b) a g |
   c( e) d c d( e) f g c,( d) e f b,( c) d e |
   a,( b) c d g,( a) b c a( b) c d b( c) d e |
-  c2 r | \bar "||"
+  c2 r | \bar "|."
   \override Staff.RehearsalMark #'break-visibility = #begin-of-line-invisible
   \mark \markup { \musicglyph #"scripts.ufermata" }
 }

@@ -2,7 +2,7 @@
 
 koppTwentyOne = \relative c'
 {
-  \tempo 2=80
+  \tempo "Presto" 2=80
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \set beatLength = #(ly:make-moment 1 4)
   \overrideBeamSettings #'Score #'(2 . 2) #'end #'((* . (1 1 1 1)))

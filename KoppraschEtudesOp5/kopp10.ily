@@ -4,13 +4,13 @@ koppTenArticulations = \relative c'' \new Voice
 {
   \time 4/4
   <<
-    \repeat unfold 5 { c16 e a g f e d c \bar "||"}
+    \repeat unfold 5 { c16 e a g f e d c}
     {
-      s16( s) s-. s-. s( s) s-. s-.
-      s16-. s( s s) s-. s( s s)
-      s16-. s-. s( s) s-. s-. s( s)
-      s16( s) s( s) s( s) s( s)
-      s16-. s( s) s( s) s( s) s\laissezVibrer
+      s16( s) s-. s-. s( s) s-. s-. \bar "||" \noBreak
+      s16-. s( s s) s-. s( s s) | \bar "||" \noBreak
+      s16-. s-. s( s) s-. s-. s( s) \bar "||" \noBreak
+      s16( s) s( s) s( s) s( s) | \bar "||" \noBreak
+      s16-. s( s) s( s) s( s) s\laissezVibrer \bar "|."
     }
   >>
 }
@@ -19,7 +19,7 @@ koppTen = \relative c''
 {
   \transposition f
   \key c \major
-  \tempo 4=88
+  \tempo "Allegro" 4=88
   \time 4/4
   \repeat volta 2
   {
@@ -46,4 +46,3 @@ koppTen = \relative c''
     b( c) d-. e-. f-. g-. a-. b-. c4 r |
   }
 }
-

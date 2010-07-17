@@ -104,5 +104,4 @@ makeRhythm  = #(define-music-function (parser location m str) (ly:music? string?
        )
 ))
 %% End of the scheme functions definitions
-%% ( end of rhythm.ly if you use this separate file for them)
-
+%% (end of rhythm.ly if you use this separate file for them)

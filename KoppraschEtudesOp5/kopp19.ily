@@ -3,6 +3,7 @@
 koppNineteen = \relative c'
 {
   \transposition f
+  \tempo "Moderato" 4=100
   \time 2/4
   \repeat volta 2
   {

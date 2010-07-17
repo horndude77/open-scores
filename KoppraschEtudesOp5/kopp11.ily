@@ -3,7 +3,7 @@
 koppEleven = \relative c''
 {
   \transposition f
-  \tempo 8=88
+  \tempo "Adagio" 8=88
   \time 2/4
   \repeat volta 2
   {

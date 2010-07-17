@@ -3,7 +3,7 @@
 koppSeven = \relative c''
 {
   \transposition f
-  \tempo 4=88
+  \tempo "Allegro" 4=88
   \time 4/4
   \repeat volta 2
   {
@@ -28,4 +28,3 @@ koppSeven = \relative c''
     c-. c( d c) e-. e( f e) c4 r |
   }
 }
-

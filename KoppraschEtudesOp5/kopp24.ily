@@ -2,8 +2,8 @@
 
 koppTwentyFour = \relative c'''
 {
-  \tempo 4=72
   \transposition f
+  \tempo "Adagio con espressivo" 4=72
   \key c \major
   \time 3/4
   c4(\f g) r8 e |

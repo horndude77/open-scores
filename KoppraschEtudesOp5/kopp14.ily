@@ -1,12 +1,10 @@
 \version "2.13.22"
 
-\include "defs.ily"
-
 koppFourteen = \relative c''
 {
   \transposition f
   \key g \major
-  \tempo 8=120
+  \tempo "Vivace" 8=120
   \time 6/8
   \repeat volta 2
   {

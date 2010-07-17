@@ -3,6 +3,7 @@
 koppSixteen = \relative c''
 {
   \transposition f
+  \tempo "Allegretto" 4=100
   \time 2/4
   \repeat volta 2
   {

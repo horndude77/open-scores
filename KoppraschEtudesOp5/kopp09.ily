@@ -22,7 +22,7 @@ koppNineArticulations = \relative c''
 koppNine = \relative c''
 {
   \key bes \major
-  \tempo 4=88
+  \tempo "Tempo giusto" 4=88
   \time 3/4
   \transposition f
   \repeat volta 2
@@ -52,4 +52,3 @@ koppNine = \relative c''
     bes,2 r4 |
   }
 }
-

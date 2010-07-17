@@ -3,7 +3,7 @@
 koppSix = \relative c''
 {
   \transposition f
-  \tempo 4=88
+  \tempo "Adagio" 4=88
   \time 4/4
   << {c1( | e4) r r2} {s2\p\< s\> | s1\!} >> |
   << {e1( | g4) r r2} {s2\< s\> | s1\!} >> |
@@ -35,4 +35,3 @@ koppSix = \relative c''
   d,1(\< | b'4)\! r r2 |
   << {c1( | c,4) r r2} {s2\< s\> | s1\!} >> | \bar "|."
 }
-

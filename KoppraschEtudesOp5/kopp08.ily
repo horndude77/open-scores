@@ -23,7 +23,7 @@ koppEight = \relative c''
 {
   \transposition f
   \key f \major
-  \tempo 4=100
+  \tempo "Allegro" 4=100
   \time 4/4
   a8(\p f) g-. a-. bes( g) a-. bes-. |
   c( a) bes-. c-. d(_\markup{\italic cresc.} bes) c-. d-. |
@@ -59,4 +59,3 @@ koppEight = \relative c''
   d(\f bes) c-. d-. e( c) d-. e-. |
   f4 r r2 | \bar "|."
 }
-
