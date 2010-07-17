@@ -1,8 +1,10 @@
 \version "2.13.22"
 
+dolceP = #(make-dynamic-script (markup #:normal-text #:italic "dolce" #:dynamic "p"))
 dolce = \markup {\italic dolce}
 ten = \markup {\italic ten.}
 justcresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1.0)))
+justdimin = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dimin." 'tweaks '((dash-period . -1.0)))
 
 tupletOff =
 {
