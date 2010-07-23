@@ -378,7 +378,6 @@
     \layout { }
     \midi { }
   }
-  %{
   \score
   {
     \new Staff
@@ -409,6 +408,7 @@
     \layout { }
     \midi { }
   }
+  %{
   \score
   {
     \new Staff
