@@ -2,6 +2,7 @@
 
 koppThirtyFive = \relative c''
 {
+  \override Staff.NoteHead #'style = #'baroque
   \transposition f
   \tempo "Adagio" 4=120
   \time 4/2
@@ -22,13 +23,13 @@ koppThirtyFive = \relative c''
   d a b g c g b g |
   c b c cis d g, g' f |
   e c b c d g, a b |
-  << {c8 r} \\ {c b c cis} >> d a a' g |
+  << {c8 r} \\ {\teeny c b \normalsize c cis} >> d a a' g |
   f d cis d e a, b c |
   d cis d dis e b b' a |
   g e dis e fis b, cis dis |
   e g fis e c' fis, g a |
   b e, fis g a d, e fis |
-  << {g8 r} \\ {g fis g gis} >> a d, e fis |
+  << {g8 r} \\ {\teeny g fis \normalsize g gis} >> a d, e fis |
   g b, c d e c fis d |
   g fis g b a d, e fis |
   g b, c d e c a' fis |
@@ -55,17 +56,17 @@ koppThirtyFive = \relative c''
   a e fis d g d e c |
   fis c d b e b c a |
   b g f g a g d' c |
-  << {b8 r} \\ {b8 g' fis g} >> a d, e fis |
+  << {b8 r} \\ {\teeny b8 g' \normalsize fis g} >> a d, e fis |
   g b, a b c a d c |
   b g fis g a fis b a |
   g e' fis e f d g f |
   e c a' g f d g f |
   e c f e d b e d |
-  << {c8 r} \\ {c b c cis} >> d g, g' f |
+  << {c8 r} \\ {\teeny c b \normalsize c cis} >> d g, g' f |
   e c b c d g, a b |
   c e g e a d, e f |
   g c, d e f b, c d |
-  << {e8 r} \\ {e c d e} >> f b, c d |
+  << {e8 r} \\ {\teeny e c \normalsize d e} >> f b, c d |
   e a, b c d g, a b |
   c e g e c' g e c |
   a2.\> aes4 |
