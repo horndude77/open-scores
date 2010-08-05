@@ -2,7 +2,6 @@
 
 koppTwentyFive = \relative c''
 {
-  \overrideBeamSettings #'Score #'(3 . 4) #'end #'((* . (1 1 1)) ((1 . 8) . (6)))
   \tempo "Presto" 4=132
   \transposition f
   \key g \major
@@ -10,6 +9,8 @@ koppTwentyFive = \relative c''
   \partial 8*3
   \repeat volta 2
   {
+    % NOTE: This version of lilypond doesn't beam these three pick-up notes
+    % together. Consider manually beaming.
     g8-.\f fis-. g-. |
     a-. b-. c-. d-. e-. fis-. |
     g-. a-. b-. a-. g-. fis-. |

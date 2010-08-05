@@ -5,7 +5,7 @@ koppFortyTwo = \relative c'
   \transposition f
   \key e \minor
   \time 4/4
-  \overrideBeamSettings #'Score #'(4 . 4) #'end #'((* . (1 1 1 1)) ((1 . 8) . (4 4)) ((1 . 16) . (8 8)))
+  \set beamExceptions = #'((end . (((1 . 8) . (4 4)) ((1 . 16) . (8 8)))))
   \tempo "Maestoso" 4=88
   e8.\f e'16 g8. e16 b'8. b,16 dis8. b16 |
   e8. e,16 g8. e16 b'8. b'16 b,8 r16 g'16 |

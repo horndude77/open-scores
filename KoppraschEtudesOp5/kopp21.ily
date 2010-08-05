@@ -4,11 +4,10 @@ koppTwentyOne = \relative c'
 {
   \tempo "Presto" 2=80
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
-  \set beatLength = #(ly:make-moment 1 4)
-  \overrideBeamSettings #'Score #'(2 . 2) #'end #'((* . (1 1 1 1)))
   \transposition f
   \key c \major
   \time 2/2
+  \set beamExceptions = #'((end . (((1 . 12) . (3 3 3 3)))))
   \partial 4
   \repeat volta 2
   {

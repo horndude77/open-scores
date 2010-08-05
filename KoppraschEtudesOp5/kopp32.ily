@@ -2,12 +2,11 @@
 
 koppThirtyTwo = \relative c''
 {
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
-                                                   ((1 . 24) . (3 3 3 3)))
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
   \transposition f
   \tempo "Allegretto" 4=72
   \time 2/4
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3)))))
   \key bes \major
   \partial 8
   \repeat volta 2

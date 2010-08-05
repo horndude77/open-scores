@@ -5,11 +5,12 @@ koppFortyOne = \relative c''
   \transposition f
   \key f \major
   \time 3/4
-  \overrideBeamSettings #'Score #'(3 . 4) #'end #'((* . (1 1 1)) ((1 . 8) . (6)))
   \tempo "Presto" 4=120
   \partial 8*3
   \repeat volta 2
   {
+    % NOTE: This version of lilypond doesn't beam these three pick-up notes.
+    % Consider manually beaming them.
     c8\f a bes |
     c f a, bes c f |
     a, bes c f a, bes |

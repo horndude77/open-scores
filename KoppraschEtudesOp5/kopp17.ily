@@ -6,8 +6,6 @@ koppSeventeen = \relative c''
   \tempo "Adagio" 4=60
   \key c \minor
   \time 4/4
-  \overrideBeamSettings #'Score #'(4 . 4) #'end #'((* . (1 1 1 1))
-                                                   ((1 . 8) . (4 4)))
   \repeat volta 2
   {
     c4(\f c' g ees) |

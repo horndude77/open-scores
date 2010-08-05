@@ -6,8 +6,7 @@ koppEighteen = \relative c''
   \tempo "Poco andante" 4=100
   \key f \major
   \time 2/4
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
-                                                   ((1 . 24) . (3 3 3 3)))
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3)))))
   c4~\p \times 2/3 {c16 d-. e-.} \times 2/3 {f-. g-. a-.} |
   bes4( g8) r |
   a f d[\trill \grace {cis16[ d]} a'16( g]) |

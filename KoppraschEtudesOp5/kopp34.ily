@@ -2,13 +2,11 @@
 
 koppThirtyFour = \relative c''
 {
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
-                                                   ((1 . 24) . (3 3 3 3))
-                                                   ((1 . 32) . (4 4 4 4)))
   \transposition f
   \key d \major
   \tempo "Larghetto" 8=100
   \time 2/4
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3)) ((1 . 32) . (4 4 4 4)))))
   d8.[(\p e32 d] cis8 b) |
   fis'8.[( a32 g]) fis4 |
   e32( fis g16) d32( e fis16) cis32( d e16) b32( cis d16) |
