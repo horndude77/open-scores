@@ -1,15 +1,14 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppFiftyNine = \relative c'
 {
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
-                                                   ((1 . 24) . (3 3 3 3))
-                                                   ((1 . 32) . (4 4 4 4))
-                                                   ((1 . 64) . (8 8 8 8)))
   \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
   \tempo "Larghetto" 4=48
   \time 2/4
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3))
+                                   ((1 . 32) . (4 4 4 4))
+                                   ((1 . 64) . (8 8 8 8)))))
   \partial 8 e8\p
   a e c'16( d32 c) b16 a |
   gis8.[( \grace {a32[ gis fis gis]} a16]) b8 r16 e, |

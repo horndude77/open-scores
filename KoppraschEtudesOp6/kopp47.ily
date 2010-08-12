@@ -1,15 +1,13 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppFortySeven = \relative c
 {
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
-                                                   ((1 . 24) . (3 3 3 3)))
   \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
-  \override TupletNumber #'transparent = ##t
-  \override TupletBracket #'transparent = ##t
+  \tupletOff
   \tempo "Moderato" 4=52
   \time 2/4
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3)))))
   \times 2/3 {c16 g' c e g c e g f e d c} |
   \times 2/3 {b g, cis'( d) g, c( b) g, ais'( b) g b(} |
   c8) \times 2/3 {c,,16 g' c e g c e d c} |

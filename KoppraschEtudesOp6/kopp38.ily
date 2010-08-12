@@ -1,10 +1,10 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppThirtyEight = \relative c''
 {
   \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
-  \override TupletNumber #'transparent = ##t
+  \tupletOff
   \key g \minor
   \tempo "Presto" 4=88
   \time 4/4

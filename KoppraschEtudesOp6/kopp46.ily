@@ -1,13 +1,12 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppFortySix = \relative c''
 {
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
-                                                   ((1 . 32) . (4 4 4 4)))
   \transposition f
   \key f \major
   \tempo "Adagio con Espressione" 4=52
   \time 2/4
+  \set beamExceptions = #'((end . (((1 . 32) . (4 4 4 4)))))
   \partial 8
   \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   a16\pDolce bes |

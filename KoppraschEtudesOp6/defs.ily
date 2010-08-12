@@ -1,4 +1,4 @@
-\version "2.13.26"
+\version "2.13.29"
 
 sectionMark = #(define-music-function (parser location markp) (string?)
 #{
@@ -17,6 +17,18 @@ sempreStaccato = \markup{\italic {sempre staccato}}
 sempreP = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "p"))
 pDolce = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce"))
 segno = \markup{\musicglyph #"scripts.segno"}
+
+tupletOff =
+{
+  \override TupletNumber #'stencil = ##f
+  \override TupletBracket #'stencil = ##f
+}
+
+tupletOn =
+{
+  \revert TupletNumber #'stencil
+  \revert TupletBracket #'stencil
+}
 
 afterGraceFraction = #(cons 15 16)
 
@@ -38,6 +50,7 @@ afterGraceFraction = #(cons 15 16)
                                ,(make-accidental-rule 'same-octave 1))
     \override Beam #'breakable = ##t
   }
+
   \context
   {
     \Staff

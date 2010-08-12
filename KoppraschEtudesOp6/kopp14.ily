@@ -1,4 +1,4 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppFourteen = \relative c''
 {
@@ -6,8 +6,7 @@ koppFourteen = \relative c''
   \tempo "Allegro Vivace" 4=88
   \time 4/4
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
-  \override TupletNumber #'transparent = ##t
-  \override TupletBracket #'transparent = ##t
+  \tupletOff
   \acciaccatura a8\p \partial 4 \times 2/3 {g fis-. g-.} |
   \times 2/3 {c8( g) e-. d'( b) g-. e'( c) g-. d'( b) g-.} |
   \times 2/3 {c8( g) e-. d'( b) g-.}

@@ -1,11 +1,10 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppFiftySix = \relative c'
 {
   \transposition f
-  \override TupletNumber #'transparent = ##t
-  \override TupletBracket #'transparent = ##t
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
+  \tupletOff
   \tempo "Moderato" 4=88
   \time 4/4
   \times 2/3 {c8-.\f b'( c) b,-. cis'( d) c,-. dis'( e) e,-. b'( c)} |

@@ -1,4 +1,4 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppFifty = \relative c''
 {
@@ -7,8 +7,7 @@ koppFifty = \relative c''
   \key f \major
   \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
-  \override TupletNumber #'transparent = ##t
-  \override TupletBracket #'transparent = ##t
+  \tupletOff
   \repeat volta 2
   {
     \times 2/3 {c8(\f b) c-. a( g) a-. f( e) f-. c d e} |

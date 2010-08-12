@@ -1,14 +1,13 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppFiftyFive = \relative c'
 {
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
-                                                   ((1 . 24) . (3 3 3 3))
-                                                   ((1 . 32) . (4 4 4 4)))
   \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
   \tempo "Largo" 4=52
   \time 2/4
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3))
+                                   ((1 . 32) . (4 4 4 4)))))
   c4\p e8 g |
   c8.[ \grace {d32[ c b c]} d16] e8 r64 g,-.\< a-. b-. c-. d-. e-. f-. |
   g8.\f e16 c g e c |

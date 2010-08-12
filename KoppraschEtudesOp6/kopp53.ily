@@ -1,14 +1,13 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppFiftyThree = \relative c'
 {
-  \overrideBeamSettings #'Score #'(3 . 4) #'end #'((* . (1 1))
-                                                   ((1 . 24) . (3 3 3 3))
-                                                   ((1 . 32) . (4 4 4 4)))
   \transposition f
   \key aes \major
   \tempo "Largo" 4=52
   \time 3/4
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3 3 3))
+                                   ((1 . 32) . (4 4 4 4 4 4)))))
   \repeat volta 2
   {
     aes4\p c ees |

@@ -1,15 +1,13 @@
-\version "2.13.26"
+\version "2.13.29"
 
 koppThirty = \relative c''
 {
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
-                                                   ((1 . 24) . (3 3 3 3)))
   \transposition f
   \tempo "Presto" 4=60
   \time 2/4
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3)))))
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
-  \override TupletNumber #'transparent = ##t
-  \override TupletBracket #'transparent = ##t
+  \tupletOff
   \grace d16 \times 2/3 {c16(\p b) c g a b c( b) c e d c} |
   \times 2/3 {g\f a b c( g) e g( e) c} g8\fermata |
   \grace e''16 \times 2/3 {d16(\p cis) d g, b cis d( cis) d f e d} |
