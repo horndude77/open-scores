@@ -2,6 +2,7 @@
 
 koppFifteen = \relative c''
 {
+  \transposition f
   \key c \major
   \tempo "Adagio" 4=88
   \time 3/4

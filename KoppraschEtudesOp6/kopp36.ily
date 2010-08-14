@@ -22,8 +22,8 @@ koppThirtySixArticulations = \relative c''
 
 koppThirtySix = \relative c''
 {
-  \key f \major
   \transposition f
+  \key f \major
   \tempo "Allegro" 4=72
   \time 2/4
   \repeat volta 2

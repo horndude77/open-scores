@@ -4,7 +4,7 @@ koppFortySix = \relative c''
 {
   \transposition f
   \key f \major
-  \tempo "Adagio con Espressione" 4=52
+  \tempo "Adagio con espressione" 4=52
   \time 2/4
   \set beamExceptions = #'((end . (((1 . 32) . (4 4 4 4)))))
   \partial 8

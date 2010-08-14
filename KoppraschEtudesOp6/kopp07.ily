@@ -2,6 +2,7 @@
 
 koppSeven = \relative c'
 {
+  \transposition f
   \tempo "Adagio" 4=88
   \repeat volta 2
   {

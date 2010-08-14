@@ -2,6 +2,7 @@
 
 koppEleven = \relative c'
 {
+  \transposition f
   \key g \major
   \tempo "Maestoso" 4=88
   \time 3/2

@@ -1,10 +1,10 @@
 \version "2.13.29"
 
-koppFourtyFive = \relative c'
+koppFortyFive = \relative c'
 {
   \transposition f
   \key e \minor
-  \tempo "Allegro Vivace" 2=72
+  \tempo "Allegro vivace" 2=72
   \time 2/2
   \partial 4
   e8\p g \bar "||" \mark \segno

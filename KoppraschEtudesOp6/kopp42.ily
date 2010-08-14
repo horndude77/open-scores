@@ -4,7 +4,7 @@ koppFortyTwo = \relative c'
 {
   \transposition f
   \key g \major
-  \tempo "Allegro Moderato" 4=92
+  \tempo "Allegro moderato" 4=92
   \time 3/4
   \repeat volta 2
   {

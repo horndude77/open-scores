@@ -2,9 +2,9 @@
 
 koppForty = \relative c'
 {
+  \transposition f
   \tempo "Presto" 4.=80
   \time 6/8
-  \transposition f
   c8->(\p g') g-. g-. g-. g-. |
   c8->( g) g-. g-. g-. g-. |
   e'8->( g,) g-. g-. g-. g-. |

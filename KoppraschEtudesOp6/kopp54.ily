@@ -3,7 +3,7 @@
 koppFiftyFour = \relative c'
 {
   \transposition f
-  \tempo "Allegro con Spirito" 4=92
+  \tempo "Allegro con spirito" 4=92
   \time 3/4
   \repeat volta 2
   {

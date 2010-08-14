@@ -2,8 +2,9 @@
 
 koppFourteen = \relative c''
 {
+  \transposition f
   \key c \major
-  \tempo "Allegro Vivace" 4=88
+  \tempo "Allegro vivace" 4=88
   \time 4/4
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \tupletOff

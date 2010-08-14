@@ -23,8 +23,9 @@ koppTwelveArticulations = \relative c''
 
 koppTwelve = \relative c''
 {
+  \transposition f
   \key g \major
-  \tempo "Allegro Moderato" 4=88
+  \tempo "Allegro moderato" 4=88
   \time 4/4
   \partial 8 d8\p |
   e16( d) c-. b-. d( c) b-. a-. c( b) a-. g-. b( a) g-. fis-. |

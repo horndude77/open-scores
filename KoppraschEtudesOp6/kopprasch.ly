@@ -545,7 +545,7 @@
     \new Staff
     {
       \set Staff.instrumentName = \markup{\bold No.45}
-      \koppFourtyFive
+      \koppFortyFive
     }
     \layout { }
     \midi { }

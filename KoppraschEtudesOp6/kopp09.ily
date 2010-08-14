@@ -2,8 +2,9 @@
 
 koppNine = \relative c''
 {
+  \transposition f
   \key f \major
-  \tempo "Tempo Giusto" 4=88
+  \tempo "Tempo giusto" 4=88
   \time 3/4
   \repeat volta 2
   {

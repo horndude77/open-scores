@@ -3,7 +3,7 @@
 koppTwentySix = \relative c'
 {
   \transposition f
-  \tempo "Allegro Vivace" 4=96
+  \tempo "Allegro vivace" 4=96
   \time 2/4
   \repeat volta 2
   {

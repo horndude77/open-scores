@@ -3,7 +3,7 @@
 koppTwenty = \relative c'
 {
   \transposition f
-  \tempo "Molto Risoluto" 4=80
+  \tempo "Molto risoluto" 4=80
   \time 4/4
   \partial 4 c4->(\p 
   d8) r8 c4->( e8) r8 c4->( |

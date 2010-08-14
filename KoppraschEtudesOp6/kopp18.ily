@@ -2,6 +2,7 @@
 
 koppEighteen = \relative c''
 {
+  \transposition f
   \tempo "Vivace" 4=88
   \time 2/4
   \repeat volta 2

@@ -3,7 +3,7 @@
 koppThree = \relative c'
 {
   \transposition f
-  \tempo "Poco Allegro" 4=72
+  \tempo "Poco allegro" 4=72
   \time 3/4
   \repeat volta 2
   {

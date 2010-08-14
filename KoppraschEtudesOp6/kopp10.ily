@@ -21,7 +21,8 @@ koppTenArticulations = \relative c'
 
 koppTen = \relative c'
 {
-  \tempo "Allegro Vivace" 4=88
+  \transposition f
+  \tempo "Allegro vivace" 4=88
   \time 4/4
   \repeat volta 2
   {

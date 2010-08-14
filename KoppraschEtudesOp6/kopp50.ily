@@ -2,10 +2,10 @@
 
 koppFifty = \relative c''
 {
+  \transposition f
   \tempo "Presto" 4=116
   \time 4/4
   \key f \major
-  \transposition f
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \tupletOff
   \repeat volta 2

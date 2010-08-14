@@ -2,10 +2,10 @@
 
 koppNineteen = \relative c''
 {
+  \transposition f
   \key g \major
   \tempo "Allegro" 8=144
   \time 6/8
-  \transposition f
   \repeat volta 2
   {
     g16(\p fis) g a b g a(\< g) a b c a\! |

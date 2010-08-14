@@ -4,7 +4,7 @@ koppFiftyTwo = \relative c'
 {
   \transposition f
   \key e \minor
-  \tempo "Allegro Vivace" 4=100
+  \tempo "Allegro vivace" 4=100
   \time 4/4
   e16(\f dis) e-. fis-. g( fis) g-. a-. b( ais) b-. c-. b8 r |
   c16( b c) e-. b( a b) e-. a,( g a) e'-. g,( fis g) e'-. |

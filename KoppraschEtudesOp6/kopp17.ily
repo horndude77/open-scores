@@ -2,7 +2,8 @@
 
 koppSeventeen = \relative c''
 {
-  \tempo "Allegro Molto" 4=88
+  \transposition f
+  \tempo "Allegro molto" 4=88
   \time 6/8
   \repeat volta 2
   {

@@ -3,7 +3,7 @@
 koppFortyOne = \relative c
 {
   \transposition f
-  \tempo "Allegro Moderato" 4=88
+  \tempo "Allegro moderato" 4=88
   \time 2/4
   c16-.\fz fis( g-.) b( c-.) dis( e-.) fis( |
   g-.) dis( e-.) b( c-.) b'( c8-.) |

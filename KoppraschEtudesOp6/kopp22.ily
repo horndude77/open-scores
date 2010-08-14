@@ -4,7 +4,7 @@ koppTwentyTwo = \relative c''
 {
   \transposition f
   \key g \major
-  \tempo "Adagio Espressivo" 8=100
+  \tempo "Adagio espressivo" 8=100
   \time 4/4
   \repeat volta 2
   {
