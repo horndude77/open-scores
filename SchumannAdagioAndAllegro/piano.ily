@@ -574,9 +574,10 @@ pianoLeft = \relative c
   <bes bes,>1 |
 
   %A
-  <ees, ees,>2.( <f f,>4 |
-  <aes aes,> <g g,> <des' des,> <bes bes,>8 <g g,> |
-  <bes bes,>4 <aes aes,>2 <ges ges,>4 |
+  \once \override Staff.Slur #'outside-staff-priority = #251
+  <ees, ees,>2.( <f f,>4\< |
+  <aes aes,> <g g,> <des' des,>\> <bes bes,>8 <g g,> |
+  <bes bes,>4\! <aes aes,>2 <ges ges,>4 |
   <f f,>8) f'( <a ees'> f) r f( <a ees' f> f) |
   <bes, bes,>2 <e, e,> |
   <f f,> <des' des,> |
@@ -918,6 +919,38 @@ pianoLeft = \relative c
 
 pianoDynamics =
 {
+  s1\pMoltoLegato\< |
+  s\> |
+  s\! |
+  s4 s\< s2\> |
+  s\< s\> |
+  s\p s\< |
+  s s\> |
+  s1\! |
+  s |
+  s2\< s\> |
+  s\! s |
+  s4 s\< s2\> |
+  s1\! |
+  s2\< s\> |
+
+  %A
+  s8\! s8*7\justdim |
+  s1\! |
+  s |
+  s4 s\< s2\> |
+  s1\! |
+  s8 s8*7\p |
+  s1*2 |
+  s2 s\justcresc |
+  s1\p\< |
+  s\! |
+  s1*2 |
+  s2 s\sf |
+  s1\< |
+  s2\! s\fp |
+
+  %B
 }
 
 pianoPedals =

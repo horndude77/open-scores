@@ -2,6 +2,8 @@
 
 pMoltoLegatoMarkup = \markup {\dynamic p \normal-text \italic {molto legato}}
 pMoltoLegato = #(make-dynamic-script pMoltoLegatoMarkup)
+justcresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1.0)))
+justdim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1.0)))
 
 slashedGrace = #(define-music-function (parser location music) (ly:music?)
 #{
