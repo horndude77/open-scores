@@ -5,6 +5,7 @@ koppEleven = \relative c''
   \transposition f
   \tempo "Adagio" 8=88
   \time 2/4
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3)) ((1 . 32) . (4 4 4 4)))))
   \repeat volta 2
   {
     c4~\p c32( d e d f e d c) |

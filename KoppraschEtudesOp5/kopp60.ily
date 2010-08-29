@@ -8,15 +8,15 @@ koppSixty = \relative c'
   f'( d) b gis e'( d) b gis d'( b) gis b d( b) gis e |
   a8 c,16 e a( e) a c e( a,) c e a( e) c a |
   g'( e) c bes e( c) bes g c( bes) g e bes'( g) e c |
-  f8 c16 f a( f) a c f( a,) c f << {a8 r} \\ {\teeny a16 f c a \normalsize} >> |
+  f8 c16 f a( f) a c f( a,) c f << {a8 r} \\ {\teeny a16( f) c a \normalsize} >> |
   a'16( g) e cis g'( e) cis a e'( cis) a g cis( a) g e |
   f8 d16 f a( f) a d f( a,) d f a( f) d a |
   a'( f) ees c f( ees) c a ees'( c) a f c'( a) f a |
-  bes8 r16 f bes( f) bes d f( bes,) d f << {bes8 r} \\ {\teeny bes16 f d bes \normalsize} >> |
+  bes8 r16 f bes( f) bes d f( bes,) d f << {bes8 r} \\ {\teeny bes16( f) d bes \normalsize} >> |
   bes'( aes) f d aes'( f) d bes f'( d) bes aes d( bes) aes f |
   ees8 g16 bes ees( g,) bes ees g( bes,) ees g bes( g) ees bes |
   aes'( f) d b g'( f) d b f'( d) b g d'( b) g b |
-  c8 g16 c ees( g,) c ees g( c,) ees g << {c8 r} \\ {\teeny c16 g ees c \normalsize} >> |
+  c8 g16 c ees( g,) c ees g( c,) ees g << {c8 r} \\ {\teeny c16( g) ees c \normalsize} >> |
   bes'16( g) ees des g( ees) des bes ees( des) bes g des'( bes) g bes |
   aes8 c,16 ees aes( ees) aes c ees( aes,) c ees aes( ees) c aes |
   bes'( g) e c g'( e) c bes e( c) bes g c( bes) g e |
@@ -34,7 +34,7 @@ koppSixty = \relative c'
   fisis'( dis) cis ais fisis( ais) cis dis fisis( dis) cis ais dis( cis) ais fisis |
   gis8 b16 dis gis( b,) dis gis b( gis) dis b gis'( dis) b gis |
   a( b) dis fis a( fis) dis b c( a) fis e dis( a') fis dis |
-  e8 gis16 b e'( b') gis e b( gis') e b gis( e') b gis |
+  e8 gis16 b e( b') gis e b( gis') e b gis( e') b gis |
   bis( dis) fis dis a'( fis) dis b gis'( dis) dis b fis'( dis) b gis |
   cis8 e,16 gis cis( gis) cis e gis( e) cis gis e'( cis) gis e |
   d'( b) gis e dis( e) gis b d( e) gis e b'( gis) e d |
