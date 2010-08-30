@@ -2,11 +2,12 @@
 
 \header
 {
-  title = "60 Studies for High Horn"
+  title = "60 Etudes for High Horn"
   composer = "Georg Kopprasch"
   copyright = "Creative Commons Attribution-ShareAlike 3.0"
+  opus = "Op.5"
   maintainer = "Jay Anderson"
-  mutopiatitle = "60 Studies for Low Horn"
+  mutopiatitle = "60 Etudes for High Horn"
   mutopiacomposer = "KoppraschG"
   mutopiaopus = "Op.5"
   mutopiainstrument = "Horn"
