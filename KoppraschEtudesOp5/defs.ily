@@ -1,4 +1,4 @@
-\version "2.13.29"
+\version "2.13.31"
 
 dolceP = #(make-dynamic-script (markup #:normal-text #:italic "dolce" #:dynamic "p"))
 pocoF = #(make-dynamic-script (markup #:normal-text #:italic "poco" #:dynamic "f"))
@@ -71,6 +71,8 @@ afterGraceFraction = #(cons 15 16)
     \remove "Dynamic_performer"
   }
 }
+
+\pointAndClickOff
 
 \paper
 {
