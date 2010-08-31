@@ -5,6 +5,7 @@
   title = "60 Studies for Low Horn"
   composer = "Georg Kopprasch"
   copyright = "Creative Commons Attribution-ShareAlike 3.0"
+  opus = "Op.6"
   maintainer = "Jay Anderson"
   mutopiatitle = "60 Studies for Low Horn"
   mutopiacomposer = "KoppraschG"

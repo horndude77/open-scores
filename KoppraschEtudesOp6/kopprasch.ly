@@ -64,9 +64,28 @@
 
 #(set-global-staff-size 18)
 
+\paper
+{
+  #(define page-breaking ly:page-turn-breaking)
+
+  bookTitleMarkup = \markup \column
+  {
+    \vspace #15
+    \fill-line { \fontsize #12 \fromproperty #'header:title }
+    \vspace #10
+    \fill-line { \fontsize #8 \fromproperty #'header:composer }
+    \vspace #1
+    \fill-line { \fontsize #6 \fromproperty #'header:opus }
+  }
+
+  scoreTitleMarkup = \markup \null
+}
+
 \book
 {
   \include "header.ily"
+  \markup ""
+  \pageBreak
   %Junk midi file inorder to get correct numeric suffix.
   \score
   {
@@ -116,6 +135,8 @@
     \layout { }
     \midi { }
   }
+  \noPageBreak
+  \noPageTurn
   \score
   {
     \new ArticulationStaff { \koppFourArticulations }
@@ -140,6 +161,8 @@
     \layout { }
     \midi { }
   }
+  \noPageBreak
+  \noPageTurn
   \score
   {
     \new ArticulationStaff { \koppSixArticulations }
@@ -164,6 +187,8 @@
     \layout { }
     \midi { }
   }
+  \noPageBreak
+  \noPageTurn
   \score
   {
     \new ArticulationStaff { \koppEightArticulations }
@@ -188,6 +213,8 @@
     \layout { }
     \midi { }
   }
+  \noPageBreak
+  \noPageTurn
   \score
   {
     \new ArticulationStaff { \koppTenArticulations }
@@ -212,6 +239,8 @@
     \layout { }
     \midi { }
   }
+  \noPageBreak
+  \noPageTurn
   \score
   {
     \new ArticulationStaff { \koppTwelveArticulations }
@@ -456,6 +485,8 @@
     \layout { }
     \midi { }
   }
+  \noPageBreak
+  \noPageTurn
   \score
   {
     \new ArticulationStaff { \koppThirtySixArticulations }

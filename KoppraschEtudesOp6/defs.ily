@@ -55,6 +55,7 @@ afterGraceFraction = #(cons 15 16)
   {
     \Staff
     \consists "Mark_engraver"
+    \consists "Page_turn_engraver"
   }
 
   \context

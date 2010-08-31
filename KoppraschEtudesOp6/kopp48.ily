@@ -40,5 +40,5 @@ koppFortyEight = \relative c'
   \times 2/3 {e-. f-. fis-.} g4 \times 2/3 {e,8-.\< f-. fis-. g-. gis-. a-.\!} |
   \times 2/3 {ais-. b-. c-. des-. c-. b-.} c4 r |
   r \times 2/3 {des,8-. c-. b-.} c4 r |
-  r \tempo "ritard." \times 2/3 {des,8-. c-. b-.} c4 r |
+  r \tempo "ritard." \times 2/3 {des,8-. c-. b-.} c4 r | \bar "|."
 }
