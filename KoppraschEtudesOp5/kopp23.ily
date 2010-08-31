@@ -41,5 +41,4 @@ koppTwentyThree = \relative c'' \new Voice
     \times 2/3 {g( e) c-. c'( g) e e'( c) g g'( e) c} |
     c'2 r |
   }
-  \bar "|."
 }
