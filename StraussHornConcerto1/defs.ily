@@ -2,6 +2,10 @@
 
 ppDolceMarkup = \markup {\dynamic pp \normal-text \italic dolce}
 ppDolce = #(make-dynamic-script ppDolceMarkup)
+ppGraziosoMarkup = \markup {\dynamic pp \normal-text \italic grazioso}
+ppGrazioso = #(make-dynamic-script ppGraziosoMarkup)
+pppGraziosoMarkup = \markup {\dynamic ppp \normal-text \italic grazioso}
+pppGrazioso = #(make-dynamic-script pppGraziosoMarkup)
 
 patetico = \markup {\italic patetico}
 vivo = \markup {\italic vivo}
@@ -93,17 +97,17 @@ outline =
   s2.*20 |
 
   \mark \default
-  s2.*84 |
+  s2.*84 | \bar "||"
 
   \time 4/4
   \tempo 4=132
   \mark \default
   s1*3 |
-  s4 \partial 2 s2 \bar "||"
+  s2 \partial 4 s4 \bar "||"
 
   \time 6/8
   \tempo "Tempo primo" 4.=132
-  \partial 4. s4. |
+  s4 \partial 8 s8 |
   s2.*49 |
 
   \mark \default

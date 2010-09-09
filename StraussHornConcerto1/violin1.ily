@@ -170,18 +170,18 @@ violinOneMvtII = \relative c'
   %E
   \key aes \minor
   ees8\ppp \times 2/3 {ees16-.( aes-. ces-.} ees8-.) |
-  r8 \times 2/3 {c,16-.( ees-. aes-.} c8-.) |
-  r8 \times 2/3 {c,16-.( ees-. aes-.} c8-.) |
+  r8 \times 2/3 {ces,16-.( ees-. aes-.} ces8-.) |
+  r8 \times 2/3 {ces,16-.( ees-. aes-.} ces8-.) |
   r8 \times 2/3 {ees,16-.( aes-. ces-.} ees8-.) |
-  r8 \times 2/3 {c,16-.( ees-. aes-.} c8-.) |
+  r8 \times 2/3 {ces,16-.( ees-. aes-.} ces8-.) |
   r8 \times 2/3 {ees,16-.( aes-. ces-.} ees8-.) |
   r8 \times 2/3 {bes,16-.( ees-. aes-.} bes8-.) |
   r8 \times 2/3 {ees,16-.( g-. bes-.} ees8-.) |
   ees8~ \times 2/3 {ees16 ces( ees} aes8~ |
   \times 2/3 {aes16 g f} g8) ees,~ |
-  ees \times 2/3 {c16-.( ees-. aes-.} c8-.) |
+  ees \times 2/3 {ces16-.( ees-. aes-.} ces8-.) |
   r8 \times 2/3 {ees,16-.( aes-. ces-.} ees8-.) |
-  r8 \times 2/3 {c,16-.( ees-. aes-.} c8-.) |
+  r8 \times 2/3 {ces,16-.( ees-. aes-.} ces8-.) |
   r8 \times 2/3 {ees,16-.(\> aes-. ces-.} beses8) |
   beses8( \times 2/3 {aes16-. ces-. fes-.} ees8-.)\! |
   ees8( \times 2/3 {des16-. aes-. f-.} fes8-.) |
@@ -203,7 +203,7 @@ violinOneMvtII = \relative c'
   ees8-.) \times 2/3 {c,16-.( ees-. g-.} c8-.) |
 
   %F
-  r8 \times 2/3 {c,16-.(\ppp ees-. aes-.} ces8-.) |
+  r8 \times 2/3 {ces,16-.(\ppp ees-. aes-.} ces8-.) |
   r8 \times 2/3 {ees,16-.( aes-. ces-.} ees8-.) |
   r8 \times 2/3 {ces,16-.( ees-. aes-.} ces8-.) |
   r8 \times 2/3 {ces,16-.( fes-. aes-.} ces8-.) |
@@ -224,15 +224,15 @@ violinOneMvtII = \relative c'
   R4.*2 |
 
   %G
-  \key a \major
+  \key e \major
   <e gis,>16-.\f^\pizz <gis b,>-. r8 \times 2/3 {r16 <gis b,>-. <gis b,>-.} |
   <gis b,>16 <b e, gis,> r8 \times 2/3 {r16 <e, gis,> <e gis,>} |
   <dis a>16 <fis a,> r8 \times 2/3 {r16 <fis dis> <b fis dis>} |
   <gis gis,>16 <gis gis,> r8 \times 2/3 {r16 <e gis,> <e gis,>} |
-  <e a,>16 <cis' e, a,> r8 \times 2/3 {r16 <a e, a,> <a e, a,>} |
+  <e a,>16 <cis' e, a,> r8 \times 2/3 {r16 <a e a,> <a e a,>} |
   <a fis a,>16 <a fis fis'> r8 \times 2/3 {r16 <fis a,> <fis a,>} |
   <e gis,>16 <e gis, b'> r8 \times 2/3 {r16 <eis gis,> <eis gis,>} |
-  <fis b,>16 <fis b, d'> r8 \times 2/3 {r16 <fis a,> <fis a,>} |
+  <fis b,>16 <fis b, dis'> r8 \times 2/3 {r16 <fis a,> <fis a,>} |
   <e gis,>16 <gis b,> r8 \times 2/3 {r16 <gis b,> <gis b,>} |
   <gis b,>16 <b e, gis,> r8 \times 2/3 {r16 <e, gis,> <e gis,>} |
   <dis a>16 <fis a,> r8 \times 2/3 {r16 <fis dis> <b fis dis>} |
@@ -285,7 +285,7 @@ violinOneMvtII = \relative c'
   R4.*2 |
   r8 r \times 2/3 {bes16-.(\pp ces-. des-.} |
   ces4-.) r8 |
-  c'8\f r r |
+  ces'8\f r r |
   ees,\pp r r |
   ces'^\pizz r r |
   aes r r\fermata |

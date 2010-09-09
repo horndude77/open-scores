@@ -172,7 +172,7 @@ bassMvtII = \relative c,
   fis g r |
   R4.*2 |
   r8 r c\p |
-  r r cis\pp |
+  r r c\pp |
 
   %F
   aes r r |
@@ -236,7 +236,7 @@ bassMvtII = \relative c,
   R4.*2 |
   r8 r ees'^\pizz |
   aes, r r |
-  f'\f^\arco r r |
+  fes'\f^\arco r r |
   aes\pp r r |
   aes^\pizz r r |
   aes, r r\fermata |
