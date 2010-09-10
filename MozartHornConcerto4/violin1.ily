@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.32"
 
 violinOneMvtI = \relative c''
 {
@@ -26,9 +24,7 @@ violinOneMvtI = \relative c''
   g4 r16 g( f g aes g f g aes g f g) |
   aes8-. aes-. r16 aes( g aes bes aes g aes bes aes g aes) |
   bes8-. bes-. r16 bes( a bes c bes a bes c bes a bes) |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  c-. c( b c d c b c) d-.\< d( c d ees d c d) |
+  c-. c( b c d c b c) d-.\justCresc d( c d ees d c d) |
   f( ees d ees) g( f ees f) aes( g f g) bes( aes g aes) |
   bes bes bes bes b b b b c c c c d d d d |
   ees2\f g,,,4. g8 aes4 r8 aes''16 bes c8 c c c |
@@ -258,9 +254,7 @@ violinOneMvtII = \relative c'
   d2( c4) |
   d2( c4) |
   d4. f8 g( ees') |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  d4( c8\< d ees e) |
+  d4( c8\justCresc d ees e) |
 
   %N
   f2.\f |

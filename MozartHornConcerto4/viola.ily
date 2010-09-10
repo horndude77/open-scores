@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.32"
 
 violaMvtI = \relative c'
 {
@@ -27,9 +25,7 @@ violaMvtI = \relative c'
   ees4) ees,2 ees'4 |
   d1 |
   des |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  c2 aes\< |
+  c2 aes\justCresc |
   g8 g aes aes g g f f |
   ees ees ees' ees ees ees aes aes |
   g\f ees ees ees des des des des |
@@ -303,9 +299,7 @@ violaMvtII = \relative c'
   f2.~ |
   f4 r r |
   f'8( g) f r ees r |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  d <bes f'>4\< <bes f'> <bes f'>8 |
+  d <bes f'>4\justCresc <bes f'> <bes f'>8 |
   c4\f f, bes |
   c f, bes |
   ees f f, |

@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.32"
 
 violinTwoMvtI = \relative c''
 {
@@ -28,9 +26,7 @@ violinTwoMvtI = \relative c''
   ees4 r16 ees( d ees f ees d ees f ees d ees) |
   f8-. f-. r16 f( e f g f e f g f e f) |
   g8-. g-. r16 g( fis g aes g fis g aes g fis g) |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  aes-. aes( g aes bes aes g aes) f-.\< f( ees f g f ees f) |
+  aes-. aes( g aes bes aes g aes) f-.\justCresc f( ees f g f ees f) |
   aes( g f g) ees( d c d) f( ees d ees) g( f ees f) |
   g g g g g' g g g aes aes aes aes f f f f |
   \repeat tremolo 8 g16\f \repeat tremolo 8 <ees, bes> |
@@ -260,9 +256,7 @@ violinTwoMvtII = \relative c'
   bes2( a4) |
   bes2( a4) |
   bes4. d8 ees( c') |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  bes4 a8(\< bes c cis) |
+  bes4 a8(\justCresc bes c cis) |
 
   %N
   d2.\f |

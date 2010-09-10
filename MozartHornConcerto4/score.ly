@@ -1,7 +1,7 @@
-\version "2.13.10"
+\version "2.13.32"
 
 \include "defs.ily"
-\include "merge_rests.ily"
+\include "merge-rests.ily"
 
 \include "oboe1.ily"
 \include "oboe2.ily"
@@ -14,6 +14,11 @@
 \include "bass.ily"
 
 #(set-global-staff-size 16)
+  
+\layout
+{
+  \mergeRests
+}
 
 \paper
 {
@@ -32,7 +37,6 @@ instrument = "Orchestra"
       \new StaffGroup
       <<
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \override StaffGroup.SystemStartBracket #'collapse-height = #1
           \override Score.SystemStartBar #'collapse-height = #1
@@ -53,7 +57,6 @@ instrument = "Orchestra"
       \new StaffGroup
       <<
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = \hornsInstrumentName
           \set Staff.shortInstrumentName = "Hns."
@@ -113,7 +116,6 @@ instrument = "Orchestra"
         \override StaffGroup.SystemStartBracket #'collapse-height = #1
         \override Score.SystemStartBar #'collapse-height = #1
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = "Oboes"
           \set Staff.shortInstrumentName = "Ob."
@@ -126,7 +128,6 @@ instrument = "Orchestra"
       \new StaffGroup
       <<
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = \hornsInstrumentName
           \set Staff.shortInstrumentName = "Hns."
@@ -186,7 +187,6 @@ instrument = "Orchestra"
         \override StaffGroup.SystemStartBracket #'collapse-height = #1
         \override Score.SystemStartBar #'collapse-height = #1
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = "Oboes"
           \set Staff.shortInstrumentName = "Ob."
@@ -199,7 +199,6 @@ instrument = "Orchestra"
       \new StaffGroup
       <<
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = \hornsInstrumentName
           \set Staff.shortInstrumentName = "Hns."

@@ -1,4 +1,4 @@
-\version "2.13.10"
+\version "2.13.32"
 
 hornOneMvtI = \relative c''
 {
@@ -23,9 +23,7 @@ hornOneMvtI = \relative c''
   c1~ |
   c~ |
   c~ |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  << c~ {s2 s\<} >> |
+  << c~ {s2 s\justCresc} >> |
   c1~ |
   c4 c c c |
   c1~\f |

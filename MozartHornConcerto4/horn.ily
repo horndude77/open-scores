@@ -1,4 +1,4 @@
-\version "2.13.10"
+\version "2.13.32"
 
 hornMvtI = \relative c''
 {
@@ -22,8 +22,7 @@ hornMvtI = \relative c''
   c1~ |
   c1~ |
   c1~ |
-  \crescJustTextCresc
-  c1~\< |
+  c1~\justCresc |
   c1~ |
   c4 c c c |
   c1~\f |
@@ -63,7 +62,6 @@ hornMvtI = \relative c''
   g'8( f) e2( d4) |
   c^\tutti r r2 |
   R1 |
-  \crescHairpin
   r4 g\p\<^\solo c e |
   g2.\!_\espress c,4 |
   cis( d) r8 d d d |
@@ -96,8 +94,7 @@ hornMvtI = \relative c''
   ees2 d4 c |
   b( d) e-. g-. |
   d2~ d8( e fis g) |
-  \crescJustTextCresc
-  fis1\<\startTrillSpan
+  fis1\justCresc\startTrillSpan
 
   %E
   g4\stopTrillSpan\f d2.^\tutti |
@@ -180,8 +177,7 @@ hornMvtI = \relative c''
   d( cis) cis2 e4 |
   f2~( f8 ees d c) |
   c( b) b4. g8-. g-. g-. |
-  \crescJustTextCresc
-  c\< r d r e r fis r |
+  c\justCresc r d r e r fis r |
   g4\f r r2 |
   r2 r4 g\p |
   f16( g) e-. f-. d( e) c-. d-. b4 r |
@@ -192,7 +188,6 @@ hornMvtI = \relative c''
   e4 r c2 |
   b f' |
   e bes |
-  \crescHairpin
   a8\< b( c) cis( d) e( f) fis-. |
   g(\f e c4.\> e8 d b) |
 
@@ -212,8 +207,7 @@ hornMvtI = \relative c''
   g4 f16( e d c) \afterGrace d2(\startTrillSpan {c16[\stopTrillSpan d])} |
   c8 d16-. e-. f-. g-. a-. b-. c4 r |
   a,8 b16-. c-. d-. e-. f-. g-. a4 r |
-  \crescJustTextCresc
-  g,4\< g'2 f16( e d c) |
+  g,4\justCresc g'2 f16( e d c) |
   \afterGrace d1(\f\startTrillSpan {c16[\stopTrillSpan d])} |
   c4^\tutti c8. c16 c2~ |
   c1~ |
@@ -277,13 +271,11 @@ hornMvtII = \relative c''
   g8( e cis2) |
   d8 c4( d16 c b8 a) |
   \times 2/3 {g8( a b)} a4 r |
-  \crescJustTextCresc
-  b4\< cis d |
+  b4\justCresc cis d |
   dis e f |
   fis4.\> g8( e cis) |
   d4\! r e |
   fis4. g8( e cis) |
-  \crescHairpin
   d4 r8 dis-.\< e-. f-. |
   fis4.\> g8( e cis) |
   d2.~\! |
@@ -313,8 +305,7 @@ hornMvtII = \relative c''
   d( c) b4 r |
   g2( f'4) |
   f8( e) r e e( d) |
-  \crescJustTextCresc
-  d(\< cis) cis4.( g'8) |
+  d(\justCresc cis) cis4.( g'8) |
   g8( fis)\! r fis fis( e) |
   e( dis4 c8 b a) |
   g4 g'4. fis16( e) |
@@ -329,12 +320,8 @@ hornMvtII = \relative c''
   g2. |
   c |
   b8( d) d4. fis16( d) |
-  \crescJustTextCresc
-  g8(\< fis e d cis d) |
-  \crescHairpin
-  d16(\< b e\> c)
-    \dimJustTextDim
-    b4\> a |
+  g8(\justCresc fis e d cis d) |
+  d16(\< b e\> c) b4\justDim a |
 
   %Q
   g\p r r |
@@ -420,8 +407,7 @@ hornMvtIII = \relative c''
   d2.\> |
   g,4\! r8 r4. |
   R2. |
-  \crescJustTextCresc
-  g'2.(\< |
+  g'2.(\justCresc |
   fis |
   f) |
   e4 f8 c( d) e-. |
@@ -509,7 +495,6 @@ hornMvtIII = \relative c''
   g2. |
   c,4. ees |
   aes2. |
-  \crescHairpin
   c,4.\< ees |
   fis2.(\> |
   g4)\! r8 r4 d8\mf |

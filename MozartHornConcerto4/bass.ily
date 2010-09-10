@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.32"
 
 bassMvtI = \relative c
 {
@@ -24,10 +22,8 @@ bassMvtI = \relative c
   g4( ees d bes) |
   ees2( f4 aes) |
   g( ees d bes) |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
   <<
-    {s1*3 | s2 s\<}
+    {s1*3 | s2 s\justCresc}
     \repeat unfold 6 { \repeat unfold 8 ees8 | }
   >>
   ees8\f ees ees ees des des des des |

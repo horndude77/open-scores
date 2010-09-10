@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.32"
 
 pianoRightMvtI = \relative c''
 {
@@ -69,14 +67,15 @@ pianoRightMvtI = \relative c''
   %C
   \repeat unfold 3
   {
-    r8 <ees, bes g>-. q-. q-. \repeat tremolo 4 q |
+    %TODO: Lilypond bug with chord repetition symbol and tremolo repeats.
+    r8 <ees, bes g>-. q-. q-. \repeat tremolo 4 <ees bes g> |
   }
   <f bes, aes> q <d bes aes> q <ees bes g> q << {d des} \\ {<aes f>( <bes g>)} >> |
-  <c aes> <ees c aes> q q \repeat tremolo 4 q |
+  <c aes> <ees c aes> q q \repeat tremolo 4 <ees c aes> |
   r <ees bes g> q q << {d( ees f g)} \\ bes,2 >> |
   << {aes'8( g f ees)} \\ bes2 >> <d bes>8 q <f d> q |
   <d bes aes> q <ees bes g> q <d aes f> q <des bes g> q |
-  <c aes> <ees c aes> q q \repeat tremolo 4 q |
+  <c aes> <ees c aes> q q \repeat tremolo 4 <ees c aes> |
   <ees bes>4-. <aes d, bes>-. <g ees bes>-. r |
   <bes g>8( <aes f>) <g ees>2( <f d>4) |
   <<
@@ -93,8 +92,8 @@ pianoRightMvtI = \relative c''
     }
   >> \oneVoice |
   <ees bes g>4 r r2 |
-  r8 <ees, bes g> q q \repeat tremolo 4 q |
-  r <f d bes> q q \repeat tremolo 4 q |
+  r8 <ees, bes g> q q \repeat tremolo 4 <ees bes g> |
+  r <f d bes> q q \repeat tremolo 4 <f d bes> |
   r <ees bes g> q q \repeat tremolo 4 <ees c a> |
   \repeat tremolo 4 <ees c a> d( bes) ees( c) |
   \repeat tremolo 4 <f bes,> \repeat tremolo 4 <aes f bes,> |
@@ -105,9 +104,9 @@ pianoRightMvtI = \relative c''
   %D
   \repeat unfold 2 {\repeat tremolo 4 <ees c a>8} |
   q-. <ees' c>16( <d bes> <c a>8-.) <c a>16( <bes g> <a f>8-.) <a f>16( <g ees> <f d>8-.) <f d>16( <ees c> |
-  \repeat tremolo 4 <d bes>8) \repeat tremolo 4 q |
+  \repeat tremolo 4 <d bes>8) \repeat tremolo 4 <d bes> |
   q-. <f' d>16( <ees c> <d bes>8-.) <d bes>16( <c a> <bes g>8-.) <bes g>16( <a f> <g ees>8-.) <g ees>16( <f d> |
-  \repeat tremolo 4 <ees c a>8) \repeat tremolo 4 q |
+  \repeat tremolo 4 <ees c a>8) \repeat tremolo 4 <ees c a> |
   r q q q r q q q |
   r <d bes> q q r <aes' d, b> q q |
   r <fis c a> q q r <g bes, g> q q |
@@ -182,8 +181,8 @@ pianoRightMvtI = \relative c''
 
   %F
   \clef bass
-  <c ees,>8 <c g ees> q q \repeat tremolo 4 q |
-  r \clef treble <f d g,> q q \repeat tremolo 4 q |
+  <c ees,>8 <c g ees> q q \repeat tremolo 4 <c g ees> |
+  r \clef treble <f d g,> q q \repeat tremolo 4 <f d g,> |
   r \clef bass <b, g d> q q q q <b g f> q |
   r q q q \repeat tremolo 4 <c g ees> |
   r \clef treble <des aes f> q q r <e des bes> q q |
@@ -205,8 +204,8 @@ pianoRightMvtI = \relative c''
   \clef bass
   \repeat tremolo 4 <ees bes ees,> q q <des bes ees,> q |
   r <des bes g ees> q q <c aes ees> <c aes> <ees c aes> q |
-  r \clef treble <f des aes> q q \repeat tremolo 4 q |
-  r <ees aes, ees> q q \repeat tremolo 4 q |
+  r \clef treble <f des aes> q q \repeat tremolo 4 <f des aes> |
+  r <ees aes, ees> q q \repeat tremolo 4 <ees aes, ees> |
   r \clef bass <des bes ees,> q q q q <c aes ees> q |
   <c aes ees>4( <bes g>8) \clef treble <ees ees'> <d d'>( <ees ees'>) q-. q-. |
   r <bes g>( <des bes> <bes g>) \repeat tremolo 4 <des bes> |
@@ -234,17 +233,17 @@ pianoRightMvtI = \relative c''
   aes8-.) aes-. g(\trill f16 g) f8-. f-. ees(\trill d16 ees) |
   d8 ees f ees d ees d c |
   bes <bes' g> r <aes f> r <g ees> r <f d> |
-  ees <ees, bes g> q q \repeat tremolo 4 q |
+  ees <ees, bes g> q q \repeat tremolo 4 <ees bes g> |
   \repeat unfold 2
   {
-    r <ees bes g> q q \repeat tremolo 4 q |
+    r <ees bes g> q q \repeat tremolo 4 <ees bes g> |
   }
   <f bes, aes> q <d bes aes> q <ees bes g> <g' ees>( <aes f> <bes g>) |
   <c aes ees>4 aes,, r8 <ees'' c>16( <aes ees> <c aes>8) q-. |
   <bes g>4 <ees,, g,> r8 <ees' g,>16( <g ees> <bes g>8) q-. |
   aes8 c16 bes aes g f ees d8 f16 ees d c bes aes |
   g bes aes g aes bes c d ees f g aes bes8 r |
-  r <ees,, c aes> q q \repeat tremolo 4 q |
+  r <ees,, c aes> q q \repeat tremolo 4 <ees c aes> |
   <ees bes>4-. <aes d, bes>-. <g ees bes>-. r |
   <bes g>8( <aes f>) <g ees>2( <f d>4) |
   <<
@@ -263,9 +262,9 @@ pianoRightMvtI = \relative c''
 
   %K
   <ees bes g>4 r r2 |
-  r8 <f, bes,> q q \repeat tremolo 4 q |
+  r8 <f, bes,> q q \repeat tremolo 4 <f bes,> |
   r <bes g c,> q q q q <bes e, c> q |
-  r <ees, aes,> q q \repeat tremolo 4 q |
+  r <ees, aes,> q q \repeat tremolo 4 <ees aes,> |
   r <aes f bes,> q q << {<aes f> <aes f>( <g ees> <f d>)} \\ {bes,4.( aes8)} >> |
   r8 <ees' g,> r <f bes,> r <g bes,> r <a ees c> |
   <bes f d> bes'-. bes-. bes-. f-. bes-. d,-. f-. |
@@ -490,7 +489,7 @@ pianoLeftMvtI = \relative c
   aes4.( g8) f4( ees) |
   d( g c,) fis |
   g2~ g4 r |
-  c8 <ees c'> q q \repeat tremolo 4 q |
+  c8 <ees c'> q q \repeat tremolo 4 <ees c'> |
   d f f f f f f f |
   g, <d' g> q q << {g g g g} \\ {d d f f} >> |
   c f f f \repeat tremolo 4 ees |
@@ -659,8 +658,7 @@ pianoDynamicsMvtI =
   %A
   s1\p |
   s1*6 |
-  \crescJustTextCresc
-  s4 s2.\< |
+  s4 s2.\justCresc |
   s1*2 |
   s1\f |
   s1*8 |
@@ -678,15 +676,13 @@ pianoDynamicsMvtI =
   s1*2 |
   s1\p |
   s1*5 |
-  \crescHairpin
   s1\< |
   s8\! s8*7\f |
 
   %D
   s1\p |
   s1*20 |
-  \crescJustTextCresc
-  s1\< |
+  s1\justCresc |
 
   %E
   s1\f |
@@ -702,7 +698,6 @@ pianoDynamicsMvtI =
   s1 |
   s1\p |
   s1 |
-  \crescHairpin
   s\< |
   s2 s\! |
   s1\> |
@@ -714,8 +709,7 @@ pianoDynamicsMvtI =
   %H
   s1\p |
   s1*3 |
-  \crescJustTextCresc
-  s4 s2.\< |
+  s4 s2.\justCresc |
   s1\f |
 
   %I
@@ -734,20 +728,17 @@ pianoDynamicsMvtI =
   s1 |
   s1\p |
   s1*3 |
-  \crescJustTextCresc
-  s4 s2.\< |
+  s4 s2.\justCresc |
   s8 s8*7\f |
   s8 s8*7\p |
   s1*8 |
-  \crescHairpin
   s4 s2.\< |
   s4\f s2.\> |
 
   %L
   s1\!-\dolce |
   s1*14 |
-  \crescTextCresc
-  s1\< |
+  s1\cresc |
   s1\f |
   s1*7 |
   s1 | %fermata
@@ -796,12 +787,12 @@ pianoRightMvtII = \relative c'
   <bes d,>4 bes, r |
 
   %O
-  r8 <f' c a> \repeat tremolo 4 q |
-  r <e bes g> \repeat tremolo 4 q |
+  r8 <f' c a> \repeat tremolo 4 <f c a> |
+  r <e bes g> \repeat tremolo 4 <e bes g> |
   r <ees c a> q q <ees' c a> <a, ees c> |
   <bes f d>( <d bes> <c a>) <f f,>( <e e,> <f f,>) |
-  r <f, c a> \repeat tremolo 4 q |
-  r <e bes g> \repeat tremolo 4 q |
+  r <f, c a> \repeat tremolo 4 <f c a> |
+  r <e bes g> \repeat tremolo 4 <e bes g> |
   r8 <ees c a> q <ees' c a>( <d bes> <c a ees>) |
   <bes d,>( <d bes> <c a>) <f f,>( <e e,> <f f,>) |
   r <d bes> r <e bes g> r <f c> |
@@ -827,21 +818,21 @@ pianoRightMvtII = \relative c'
 
   %P
   bes4 r r |
-  r8 <d, bes g> \repeat tremolo 4 q |
-  r8 <d c a> \repeat tremolo 4 q |
-  r8 <d c a fis> \repeat tremolo 4 q |
-  r8 <d bes g> \repeat tremolo 4 q |
-  r8 <d bes g> \repeat tremolo 4 q |
-  r8 <ees bes g> \repeat tremolo 4 q |
-  r8 <ees c a> \repeat tremolo 4 q |
+  r8 <d, bes g> \repeat tremolo 4 <d bes g> |
+  r8 <d c a> \repeat tremolo 4 <d c a> |
+  r8 <d c a fis> \repeat tremolo 4 <d c a fis> |
+  r8 <d bes g> \repeat tremolo 4 <d bes g> |
+  r8 <d bes g> \repeat tremolo 4 <d bes g> |
+  r8 <ees bes g> \repeat tremolo 4 <ees bes g> |
+  r8 <ees c a> \repeat tremolo 4 <ees c a> |
   r <c a f>( <d bes f>) q q q |
-  r <aes' f bes,> \repeat tremolo 4 q |
+  r <aes' f bes,> \repeat tremolo 4 <aes f bes,> |
   r <g ees bes> q q <b f b,> q |
   r <c g e> q q <bes g c,> q |
   r <a f c> q q <cis g cis,> q |
   r << {d d( ees d c)} \\ {<a fis>8 <a fis>4 a} >> |
-  r8 <bes g d> \repeat tremolo 4 q |
-  r <c, bes g> \repeat tremolo 4 q |
+  r8 <bes g d> \repeat tremolo 4 <bes g d> |
+  r <c, bes g> \repeat tremolo 4 <c bes g> |
   <c a>4( <d bes> <bes g>) |
   <c a>8( <ees c> <des bes>4. <bes g>8) |
   <c a>( <a f> <bes g> <c a> <d bes> <ees c>) |
@@ -986,9 +977,14 @@ pianoLeftMvtII = \relative c
     {
       \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
+      \voiceFour
+      bes2.~ | %TODO: Fix dot collision.
       \voiceTwo
+      \repeat unfold 3 bes2.~ |
+      \voiceFour
       bes2.~ |
-      \repeat unfold 7 bes2.~ |
+      \voiceTwo
+      \repeat unfold 3 bes2.~ |
       bes4 r f'( |
       bes) r f( |
       bes,)
@@ -1022,36 +1018,30 @@ pianoDynamicsMvtII =
   s2.\p |
   s2.*7 |
   s2\< s4\> |
-  s4\! \crescJustTextCresc s2\< |
+  s4\! s2\justCresc |
 
   %N
   s2.\f |
   s2.*2 |
-  \dimJustTextDim
-  s4. s\> |
+  s4. s\justDim |
   s2.\p |
   s |
-  \crescJustTextCresc
-  s4 s2\< |
+  s4 s2\justCresc |
   s2.\sf |
-  \dimJustTextDim
-  s2.\> |
+  s2.\justDim |
   s |
 
   %O
   s2.\p |
   s2.*7 |
-  \crescJustTextCresc
-  s2.\< |
+  s2.\justCresc |
   s2. |
-  \dimHairpin
   s2 s4\> |
   s4 s\! s |
   s2.*11 |
-  \crescHairpin
   s4. s\< |
   s2.\> |
-  s4\! \crescJustTextCresc s2\< |
+  s4\! s2\justCresc |
   s2.\f |
   s\sf |
   s2. |
@@ -1060,14 +1050,11 @@ pianoDynamicsMvtII =
   s2. |
   s\p |
   s2.*9 |
-  \crescJustTextCresc
-  s2.\< |
+  s2.\justCresc |
   s2.\! |
   s2.*13 |
-  \crescJustTextCresc
-  s4. s\< |
-  \dimJustTextDim
-  s4 s2\> |
+  s4. s\justCresc |
+  s4 s2\justDim |
 
   %Q
   s2.\p |
@@ -1624,11 +1611,9 @@ pianoDynamicsMvtIII =
   s\> |
   s\p |
   s |
-  \crescJustTextCresc
-  s\< |
+  s\justCresc |
   s2.*3 |
-  \dimJustTextDim
-  s2.\fp\> |
+  s2.\fp\justDim |
   s |
 
   %T
@@ -1641,14 +1626,11 @@ pianoDynamicsMvtIII =
   s2. |
   s\p |
   s2.*20 |
-  \crescJustTextCresc
-  s4. s\< |
+  s4. s\justCresc |
   s2.*2 |
-  \crescHairpin
   s2.\< |
   s\f |
   s2.*9 |
-  \dimHairpin
   s2.\> |
 
   %V
@@ -1660,9 +1642,7 @@ pianoDynamicsMvtIII =
   s2.*3 |
   s2.\pp |
   s2.*3 |
-  \crescHairpin
   s2.\< |
-  \dimHairpin
   s2.\> |
   s2.\mf |
   s2.*3 |
@@ -1703,8 +1683,7 @@ pianoDynamicsMvtIII =
   s2. |
   s8*5 s8\pp |
   s2.*2 |
-  \crescJustTextCresc
-  s2.\< |
+  s2.\justCresc |
   s2.\f |
   s2.*2 |
 }

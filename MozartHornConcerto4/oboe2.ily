@@ -1,4 +1,4 @@
-\version "2.13.10"
+\version "2.13.32"
 
 oboeTwoMvtI = \relative c''
 {
@@ -23,9 +23,7 @@ oboeTwoMvtI = \relative c''
   ees1 |
   f |
   g |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  aes2 aes,\< |
+  aes2 aes,\justCresc |
   g4 d' ees f |
   g b, c d |
   ees1~\f |
@@ -164,9 +162,7 @@ oboeTwoMvtII = \relative c''
 
   %O
   R2.*25 |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  r4 f\< f |
+  r4 f\justCresc f |
   a8.\f bes16 c4( bes) |
   a8. bes16 c4( bes8) d |
   ees4 d8( bes c a) |

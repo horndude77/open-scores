@@ -1,4 +1,4 @@
-\version "2.13.10"
+\version "2.13.32"
 
 stop =
 #(define-music-function (parser location music) (ly:music?)
@@ -27,27 +27,8 @@ hornsInstrumentName = \markup
 hornInstrumentName = \markup
 \center-column {\line {Solo Horn} \line {in E\flat}}
 
-crescTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-crescJustTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimJustTextDim =
-{
-  \set decrescendoText = \markup { \italic "dim." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((style . none)))
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
 
 space = {s1}
 
@@ -107,7 +88,8 @@ outlineMvtI =
 outlineMvtII =
 {
   \time 3/4
-  \tempo "Andante" 4=63
+  %TODO: This causes a segmentation fault in 2.13.32
+  %\tempo "Andante" 4=63
   s2.*10 |
 
   \rMark "N"
@@ -163,16 +145,34 @@ outlineMvtIII =
   \context
   {
     \Score
+    \accepts "SoloStaff"
     skipBars = ##t
     extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+    \override Beam #'breakable = ##t
   }
 
   \context
   {
-    \RemoveEmptyStaffContext
+    \Staff
+    \RemoveEmptyStaves
+  }
+
+  \context
+  {
+    \Staff
+    \type "Engraver_group"
+    \name "SoloStaff"
+
+    \alias "Staff"
+
+    fontSize = #-3
+    \override StaffSymbol #'staff-space = #(magstep -3)
+    \override RehearsalMark #'font-size = #0
   }
 }
 
@@ -192,4 +192,3 @@ outlineMvtIII =
   ragged-bottom = ##f
   ragged-last-bottom = ##f
 }
-

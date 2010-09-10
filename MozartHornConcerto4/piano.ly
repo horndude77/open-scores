@@ -1,4 +1,4 @@
-\version "2.13.10"
+\version "2.13.32"
 
 \include "defs.ily"
 \include "piano.ily"
@@ -12,29 +12,12 @@ instrument = "Piano"
 \score
 {
   <<
-    \new Staff
-    \with
-    {
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-    }
-    {
-      << \hornMvtI \outlineMvtI >>
-    }
+    \new SoloStaff { << \hornMvtI \outlineMvtI >> }
     \new PianoStaff
     <<
-      \new Staff="RH"
-      {
-        \pianoRightMvtI
-      }
-      \new Dynamics
-      {
-        \pianoDynamicsMvtI
-      }
-      \new Staff="LH"
-      {
-        \pianoLeftMvtI
-      }
+      \new Staff="RH" { \pianoRightMvtI }
+      \new Dynamics { \pianoDynamicsMvtI }
+      \new Staff="LH" { \pianoLeftMvtI }
     >>
   >>
   \layout { }
@@ -43,29 +26,12 @@ instrument = "Piano"
 \score
 {
   <<
-    \new Staff
-    \with
-    {
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-    }
-    {
-      << \hornMvtII \outlineMvtII >>
-    }
+    \new SoloStaff { << \hornMvtII \outlineMvtII >> }
     \new PianoStaff
     <<
-      \new Staff="RH"
-      {
-        \pianoRightMvtII
-      }
-      \new Dynamics
-      {
-        \pianoDynamicsMvtII
-      }
-      \new Staff="LH"
-      {
-        \pianoLeftMvtII
-      }
+      \new Staff="RH" { \pianoRightMvtII }
+      \new Dynamics { \pianoDynamicsMvtII }
+      \new Staff="LH" { \pianoLeftMvtII }
     >>
   >>
   \layout { }
@@ -74,28 +40,12 @@ instrument = "Piano"
 \score
 {
   <<
-    \new Staff
-    \with
-    {
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-    }
-    {
-      << \hornMvtIII \outlineMvtIII >>
-    }
+    \new SoloStaff { << \hornMvtIII \outlineMvtIII >> }
     \new PianoStaff
     <<
-      \new Staff="RH"
-      {
-        \pianoRightMvtIII
-      }
-      \new Dynamics
-      {
-        \pianoDynamicsMvtIII
-      }
-      \new Staff="LH"
-      {
-        \pianoLeftMvtIII
+      \new Staff="RH" { \pianoRightMvtIII }
+      \new Dynamics { \pianoDynamicsMvtIII }
+      \new Staff="LH" { \pianoLeftMvtIII
       }
     >>
   >>
