@@ -164,7 +164,7 @@ oboeOneMvtII = \relative c''
   r8 f\pp r |
   r g-.\p\> g-. |
   g\! r \times 2/3 {d16-.(\pp ees-. f-.} |
-  e8-.) r r |
+  ees8-.) r r |
   R4.*2 |
 
   %J

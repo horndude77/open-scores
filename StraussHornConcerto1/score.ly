@@ -202,6 +202,7 @@ instrument = "Orchestra"
   %midi
   \score
   {
+    \unfoldRepeats
     <<
       \new Staff
       {

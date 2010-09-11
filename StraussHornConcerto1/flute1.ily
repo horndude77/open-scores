@@ -135,7 +135,7 @@ fluteOneMvtII = \relative c'''
   %E
   \key aes \minor
   R4.*17 |
-  r8 r ees~\pp |
+  r8 r ees~\ppp |
   ees4 ees8~ |
   ees4 r8 |
   R4.*3 |
@@ -185,7 +185,7 @@ fluteOneMvtII = \relative c'''
 
   %H
   R4.*3 |
-  r8 f'(\pp f |
+  r8 f(\pp f |
   f4) r8 |
   R4.*2 |
   r8 c\pp r |
@@ -289,6 +289,7 @@ fluteOneMvtIII = \relative c''
   R2.*7 |
 
   %N
+  %4/4
   R1*3 |
   r2 r4\fermata |
 
@@ -330,6 +331,8 @@ fluteOneMvtIII = \relative c''
   ces,4(\f\< ees8 ces4) aes'8( |
   ees4 ces'8 ees)\ff r r |
   R2.*16 |
+
+  %P
   r8 ees,-.\ff g-. bes4.~ |
   bes8 ees-. ees-. ees-. ees-. ees-. |
   ees4 ees8 ees4.~ |

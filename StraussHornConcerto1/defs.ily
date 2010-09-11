@@ -13,9 +13,12 @@ pizz = \markup {\italic pizz.}
 arco = \markup {\italic arco}
 div = \markup {\italic div.}
 rit = \markup {\italic rit.}
+dolce = \markup {\italic dolce}
 solo = \markup {Solo}
 
 dimECalando = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim. e calando")
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((style . none)))
 
 smaller = {
   \set fontSize = #-2
