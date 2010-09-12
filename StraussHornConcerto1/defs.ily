@@ -6,7 +6,21 @@ ppGraziosoMarkup = \markup {\dynamic pp \normal-text \italic grazioso}
 ppGrazioso = #(make-dynamic-script ppGraziosoMarkup)
 pppGraziosoMarkup = \markup {\dynamic ppp \normal-text \italic grazioso}
 pppGrazioso = #(make-dynamic-script pppGraziosoMarkup)
+mfEnergicoMarkup = \markup {\dynamic mf \normal-text \italic energico}
+mfEnergico = #(make-dynamic-script mfEnergicoMarkup)
+fEnergicoMarkup = \markup {\dynamic f \normal-text \italic energico}
+fEnergico = #(make-dynamic-script fEnergicoMarkup)
+ffEnergicoMarkup = \markup {\dynamic ff \normal-text \italic energico}
+ffEnergico = #(make-dynamic-script ffEnergicoMarkup)
+ffMaestosoMarkup = \markup {\dynamic ff \normal-text \italic maestoso}
+ffMaestoso = #(make-dynamic-script ffMaestosoMarkup)
 
+mitFreiemVortrag = \markup {Mit freiem Vortrag}
+unPocoAccelerando = \markup {\italic {un poco accelerando}}
+unPocoCalando = \markup {\italic {un poco calando}}
+aTempo = \markup {\italic {a tempo}}
+conEspressione = \markup {\italic {con espressione}}
+conBravura = \markup {\italic {con bravura}}
 patetico = \markup {\italic patetico}
 vivo = \markup {\italic vivo}
 pizz = \markup {\italic pizz.}
@@ -15,6 +29,7 @@ div = \markup {\italic div.}
 rit = \markup {\italic rit.}
 dolce = \markup {\italic dolce}
 solo = \markup {Solo}
+soloEspressivo = \markup {Solo \italic espressivo}
 
 dimECalando = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim. e calando")
 justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
@@ -109,7 +124,7 @@ outline =
   s2 \partial 4 s4 \bar "||"
 
   \time 6/8
-  \tempo "Tempo primo" 4.=132
+  \tempo "Tempo I" 4.=132
   s4 \partial 8 s8 |
   s2.*49 |
 
@@ -122,7 +137,9 @@ outline =
   \time 4/4
   \tempo 4=132
   \mark \default
-  s1*12 | \bar "||"
+  s1*10 |
+  \tempo "Lento"
+  s1*2 | \bar "||"
 
   \time 6/8
   \tempo 4.=144

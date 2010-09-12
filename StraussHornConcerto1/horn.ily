@@ -6,16 +6,18 @@ hornMvtI = \relative c''
 {
   \transposition f
   \key bes \major
-  %\time 4/4
+  %4/4
   r2\fermata r4\fermata
-  bes8.^\markup{Solo}_\markup{\dynamic f \italic energico} d16 |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \once \override Staff.DynamicText #'X-offset = #'-1.5
+  bes8.^\solo\fEnergico d16 |
   f2. d8. g16 |
   f4 d8. bes16 f4 bes8. d16 |
   c4 bes8. f16 d4 bes8. g'16 |
   f2 f, |
   R1*22 |
-  r2.^\markup{Solo} f'4(\p\< |
-  f'2.^\markup{\italic{con espressione}} d4\> |
+  r2.^\solo f'4(\p\< |
+  f'2.^\conEspressione d4\> |
   bes2.)\! bes4(\< |
   ees4 d c bes8.\> c16) |
   bes4(\! a2) f4(\< |
@@ -54,7 +56,9 @@ hornMvtI = \relative c''
   bes\! r r2 |
   R1*11 | \break
 
-  d2->^\markup{Solo}_\markup{\dynamic ff \italic energico}
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \once \override Staff.DynamicText #'X-offset = #'-1.5
+  d2->^\solo\ffEnergico
     a4..-> f16-> |
   d2~-> d8 e16-. f-. g-. a-. b-. cis-. |
   d2-> f-> |
@@ -64,7 +68,7 @@ hornMvtI = \relative c''
   a) c(\> f2 b,4)\! |
   c2. c,4 |
 
-  c2_\markup{\italic dolce}( f4. a8) |
+  c2_\dolce( f4. a8) |
   c2. c,4~(\< |
   c4 f a c |
   f2\!) a,4( b |
@@ -107,17 +111,17 @@ hornMvtI = \relative c''
   \times 2/3 {a4 a8-.} \times 2/3 {a8(\< bes) c-.}
     \times 2/3 {d8-. a-. a-.} \times 2/3 {a8( bes) c-.} |
   d4\f r r2 |
-  %\time 2/4
+
+  %2/4
   \tupletUp \times 2/3 {r8 c-.\f c-.} \tupletNeutral \times 2/3 {c8( d) ees} |
-  %\time 4/4
+
+  %4/4
   \times 2/3 {f4-. d8-.} \times 2/3 {bes8-. f-. d-.}
     \times 2/3 {bes4 d'8-.} \times 2/3 {d( e) f-.} |
   \times 2/3 {aes4-. f8-.} \times 2/3 {d8-. b-. aes-.}
     \times 2/3 {f4 f8-.\p} \times 2/3 {f( g) gis-.} |
   \times 2/3 {a4( f8)} \times 2/3 {a4( f8)}
-    \crescTextCresc
-    \times 2/3 {a4\< a8-.} \times 2/3 { a8( bes) b-.} |
-    \crescHairpin
+    \times 2/3 {a4\cresc a8-.} \times 2/3 { a8( bes) b-.} |
   \times 2/3 {c4( a8)} \times 2/3 {c4( a8)}
     \tupletUp \times 2/3 {c4 c8-.} \tupletNeutral \times 2/3 { c8( d) e-.} |
   f4-. f-> f-> f-> |
@@ -131,11 +135,12 @@ hornMvtI = \relative c''
 
 hornMvtII = \relative c''
 {
-  \transposition f
-  %\time 3/8
+  %3/8
   \key ees \major
   R4.*2 |
-  bes4.(^\markup{Solo}_\markup{\dynamic pp \italic dolce} |
+  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \once \override Staff.DynamicText #'X-offset = #'-1.5
+  bes4.(^\solo\ppDolce |
   ees) |
   bes( | ges4) ees8( |
   bes4.\< | bes'4) aes8 |
@@ -151,19 +156,17 @@ hornMvtII = \relative c''
   r8 r bes16(\mp c) | des4( bes8) |
   f4 f16( g | aes bes) c8-.( c-. |
   c4-.) c8 | ees4( c8) |
-  aes4^\markup{\italic {un poco accelerando}}\< aes16( bes |
+  aes4^\unPocoAccelerando\< aes16( bes |
   c d ees8) d( | g4) ees16(\f f |
   <<
     {
-      \dimTextDim
-      \stemUp g16 a bes8) fis(\> | g)
-      \dimHairpin
+      \stemUp g16 a bes8) fis(\dim | g)
     }
     %This new Voice breaks quoting anything else in this part. Remove this tag
     %when quoting.
     \tag #'alt \new Voice {\smaller \stemDown g16 g, bes8 a( | g)}
   >> \stemNeutral d'4~ | d8 d4~ | d8 bes4 | bes8 r r |
-  bes4.(^\markup{\italic {a tempo}}\pp | ees4) ees8( |
+  bes4.(^\aTempo\pp | ees4) ees8( |
   bes4. | ges4) ees8( | bes4) bes8(\< |
   bes'4) aes8 | aes8(\> ges~ \times 2/3 {ges16 f ees} |
   f4)\! des8(\p |
@@ -171,11 +174,10 @@ hornMvtII = \relative c''
   bes'4. | ees4) ees8(\< | bes4) bes8( |
   ges'4)\! fes8~(\> | fes ees8.) des16~( | des8 c ces) |
   bes4-.(\pp bes8-. | bes4-.) r8 |
-  R4.* 4 |
+  R4.*4 |
 
   r8 r fis->\ff
   \key b \major
-  \bar "||"
   fis'4-> dis8-> |
   b8.-> fis16( dis e |
   fis8.[) fis16]( \times 2/3 {ais16[ gis fis]} |
@@ -193,14 +195,13 @@ hornMvtII = \relative c''
   dis)\< dis8 dis ees16 |
   g4->\> ees8 |
   bes4\! \times 2/3 {g16( aes bes)} |
-  \dimTextDim
-  c4.\> | d8( c bes) \bar "||"
-  \dimHairpin
-  \key ees \major
+  c4.\dim |
+  d8( c bes) |
 
+  \key ees \major
   ees4.(\p | bes4) \slurUp ees,16(\> f | g4.~ | g8)\! \slurNeutral r r |
   R4.*10 |
-  r8 d'4~^\markup{Solo}\p | d8 bes4~ | bes8 r r |
+  r8 d'4~^\solo\p | d8 bes4~ | bes8 r r |
 
   bes4.(\pp |
   ees) |
@@ -224,10 +225,11 @@ hornMvtIII = \relative c'
 {
   \transposition f
   \key bes \major
-  r4
+  r4 |
   R1*7 |
-  r2 \times 2/3 {r8^\markup{Solo} r f\mf} \times 2/3 {f8 bes d} \bar "||"
-  %\time 6/8
+  r2 \times 2/3 {r8^\solo r f\mf} \times 2/3 {f8 bes d} |
+
+  %6/8
   f4.~ f8 d-. g-. |
   f( d) bes-. f-. bes-. d-. |
   c4.~ c8 bes( b |
@@ -280,12 +282,13 @@ hornMvtIII = \relative c'
   R2.*2 |
 
   r4. r8 g-.\mf c-. |
-  \dimTextDim
-  e2.\> |
-  \dimHairpin
+  e2.\dim |
   c4. g4 e8 |
   c2.~ |
-  c4 c8-.\mf c-._\markup{\italic energico} f-. a-. |
+  c4
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    \once \override Staff.DynamicText #'X-offset = #'-1.5
+    c8-.\mfEnergico c-. f-. a-. |
   c4.( a | f~ f4) c8 |
   f2.~ |
   f4 c8-. c-. f-. a-. |
@@ -313,18 +316,18 @@ hornMvtIII = \relative c'
 
   r8 f,-.\< bes-. d4.( |
   ees8) f,-. c'-. ees-.\! r r |
-  r8 f,-.\pp f-. f-. bes-. d-. \bar "||"
-  %\time 4/4
+  r8 f,-.\pp f-. f-. bes-. d-. |
+
+  %4/4
   f2. d8. g16 |
   f4 d8. bes16 f4 bes8. d16 |
-  c2.^\markup{\italic{un poco calando}} c8. c16 |
-  c2.\fermata \bar "||" \break
+  c2.^\unPocoCalando c8. c16 |
+  c2.\fermata |
 
-  %\time 6/8
-  %s1*0^\markup{\bold{Tempo I.}}
+  %6/8
   r4.  |
   R2.*12 |
-  bes4.^\markup{Solo \italic espressivo}(\p c |
+  bes4.^\soloEspressivo(\p c |
   bes\< d4 c8 |
   bes4. c | bes)\! ees~->( |
   ees\> d~ | d des | c) c~\! | c\< c |
@@ -342,7 +345,7 @@ hornMvtIII = \relative c'
   ges2.~ | ges4.\> f | ees4)\! r8 r4. |
   R2.*15 |
 
-  r4. r8 bes'-.^\markup{Solo}\f d-. |
+  r4. r8 bes'-.^\solo\f d-. |
   f4.~ f8 d-. g-. |
   f( d) bes-. f-. bes-. d-. |
   c4.~ c8 bes( b |
@@ -359,27 +362,27 @@ hornMvtIII = \relative c'
   bes4 g8-. ees-. c-. d-. |
   ees4 c8-. f4.~->( |
   f4. bes,4) r8 |
-  R2.*20 \bar "||"
+  R2.*20 |
 
-  %\time 4/4
-  r4^\markup{Mit freiem Vortrag} f'2->_\markup{\dynamic ff \italic maestoso}
-    ees8( d) |
+  %4/4
+  r4^\mitFreiemVortrag
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    \once \override Staff.DynamicText #'X-offset = #'-1.5
+    f'2->\ffMaestoso ees8( d) |
   c8( bes) bes4~ bes8 d( c bes) |
-  bes( d,) d4~ d8_\markup{\italic dim.} c bes g |
+  bes( d,) d4~ d8\justDim c bes g |
   f2. ees4 |
   d4 f''2->\f\> ees8( d) |
   c( bes) bes4~\! bes8 d( c bes) |
   bes( d,) d4~( d8 d' c bes) |
   \times 2/3 {bes4\< d,8} \times 2/3 {f8 bes d} f2~\ff |
-  \dimTextDim
-  f4 d2\> bes4~ |
-  \dimHairpin
-  bes4 bes2-.^\markup{\italic rit.}( bes4-.) |
-  f2^\markup{\italic Lento.}\! r | R1 \bar "||" \break
+  f4 d2\dim bes4~ |
+  bes4 bes2-.^\rit( bes4-.) |
+  f2\! r |
+  R1 |
 
-  %\time 6/8
-  %s1*0^\markup{\bold {Tempo I, un poco più mosso}}
-  r8 r f-._\markup{\italic {con bravura}} e( f) bes-. |
+  %6/8
+  r8 r f-._\conBravura e( f) bes-. |
   d( c) bes-. a( bes) g-. |
   f r f-. e( f) bes-. |
   d( c) bes-. a( bes) g-. |
@@ -409,9 +412,7 @@ hornMvtIII = \relative c'
   ees4)\> d8-. c!( bes) a-. |
   bes(\< f) d-. f( bes) d-. |
   f(\> ees) d-. c( bes) a-. |
-  \crescTextCresc
-  bes4.\! b->\< | c-> cis-> | d-> d-> |
-  \crescHairpin
+  bes4.\! b->\cresc | c-> cis-> | d-> d-> |
   ees-> e-> |
   f4-> r8 f4(->\f d8) |
   f4->( d8) f4->( d8) |
@@ -426,9 +427,7 @@ hornMvtIII = \relative c'
   r8 r bes,\p bes( d) f |
   bes2.~ |
   bes4 d,8 d( f) bes-. |
-  \crescTextCresc
-  d2.~\< |
-  \crescHairpin
+  d2.~\cresc |
   d8 bes-. d-. f4.~ |
   f8 bes,-. d-. f4.~ |
   f4 f8~ f4 f8~ |
