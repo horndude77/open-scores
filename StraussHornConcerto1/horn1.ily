@@ -11,8 +11,7 @@ hornOneMvtI = \relative c''
 {
   \transposition ees
   e2\fermata r4\fermata
-  \new CueVoice \with { instrumentCueName = "solo" }
-  \cueDuring #"solo" #UP { r4 | R1*4 | }
+  \namedCueDuring #"solo" #"solo" #UP { r4 | R1*4 | }
   d2\f g, |
   d'4 d8. d16 d2~ |
   d4 f8. f16 f2~ |
@@ -40,9 +39,9 @@ hornOneMvtI = \relative c''
   r2 r4
 
   %A
-  \cueDuring #"solo" #UP { r4 | R1*2 | }
+  \namedCueDuring #"solo" #"solo" #UP { r4 | R1*2 | }
   R1*30 |
-  \cueDuring #"solo" #UP { R1*3 | }
+  \namedCueDuring #"solo" #"solo" #UP { R1*3 | }
 
   %B
   c4\f e8. e16 e2~ |
@@ -59,9 +58,9 @@ hornOneMvtI = \relative c''
   e4 e r dis |
 
   %C
-  \cueDuring #"solo" #UP { R1*2 | }
+  \namedCueDuring #"solo" #"solo" #UP { R1*2 | }
   R1*36 |
-  \cueDuring #"solo" #UP { R1*3 | }
+  \namedCueDuring #"solo" #"solo" #UP { R1*3 | }
   \times 2/3 {r8 d-.\f d-.} \times 2/3 {d( e) f-.} \times 2/3 {g-. d-. d-.} \times 2/3 {d( e) f-.} |
 
   %2/4
@@ -149,14 +148,15 @@ hornOneMvtIII = \relative c''
   e4 g8. g16 g2~ |
   g4 g8. g16 g4 c8. c16 |
   c4 e8. e16 e4\f
-  \cueDuring #"solo" #UP { r4 |
+  \namedCueDuring #"solo" #"solo" #UP
+  { r4 |
   \crescHairpin
 
   %Rondo
   %6/8
   R2.*2 |}
   R2.*11 |
-  \cueDuring #"solo" #UP { R2.*3 | }
+  \namedCueDuring #"solo" #"solo" #UP { R2.*3 | }
 
   %L
   r8 g,8\ff c e4.~ |
@@ -179,14 +179,17 @@ hornOneMvtIII = \relative c''
   }
   ees8 bes g~ g b g~ |
   g c g~ g bes a |
-  a4 \cueDuring #"solo" #UP { r8 r4. |
+  a4
+  \namedCueDuring #"solo" #"solo" #UP
+  { r8 r4. |
 
   %M
   R2.*3 | }
   R2.*82 |
 
   %4/4
-  \cueDuring #"solo" #UP {
+  \namedCueDuring #"solo" #"solo" #UP
+  {
   R1*3 |
   r2 r4\fermata |}
 
@@ -208,8 +211,7 @@ hornOneMvtIII = \relative c''
   R2.*37 |
 
   %O
-  \new CueVoice \with { instrumentCueName = "bassoon" }
-  \cueDuring #"bassoon" #UP {R2.*4 |}
+  \namedCueDuring #"bassoon" #"bassoon" #UP { R2.*4 | }
   R2.*4 |
   \crescTextCresc
   c2.~\p | c~ | c~\< | c~ |

@@ -4,7 +4,6 @@
 
 hornMvtI = \relative c''
 {
-  \transposition f
   \key bes \major
   %4/4
   r2\fermata r4\fermata
@@ -223,7 +222,6 @@ hornMvtII = \relative c''
 
 hornMvtIII = \relative c'
 {
-  \transposition f
   \key bes \major
   r4 |
   R1*7 |
@@ -438,8 +436,11 @@ hornMvtIII = \relative c'
   f ees8 d c | bes4 r8 r4. |
 }
 
-horn = {\hornMvtI \hornMvtII \hornMvtIII}
+horn =
+{
+  \transposition f
+  \hornMvtI \hornMvtII \hornMvtIII
+}
 
 %Use this variable to quote this part.
 hornCue = \removeWithTag #'alt \horn
-

@@ -9,8 +9,7 @@ hornTwoMvtI = \relative c''
 {
   \transposition ees
   g2\fermata r4\fermata
-  \new CueVoice \with { instrumentCueName = "solo" }
-  \cueDuring #"solo" #UP { r4 | R1*4 | }
+  \namedCueDuring #"solo" #"solo" #UP { r4 | R1*4 | }
   b2\f g, |
   \repeat unfold 3 {f'4 f8. f16 f2~ |}
   f4 f8. f16 f4 aes |

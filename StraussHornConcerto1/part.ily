@@ -5,5 +5,5 @@
 
 \score
 {
-  \new Staff \new Voice { << \notes \outline >> }
+  \new Staff \new Voice { << \removeWithTag #'score \notes \outline >> }
 }

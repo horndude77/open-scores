@@ -35,7 +35,8 @@ dimECalando = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 't
 justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
 justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((style . none)))
 
-smaller = {
+smaller =
+{
   \set fontSize = #-2
   \override Stem #'length = #5.5
   \override Beam #'beam-thickness = #0.384
@@ -48,6 +49,18 @@ setDimECalando = #(define-music-function (parser location) ()
   \set decrescendoText = \markup { \italic "dim. e calando" }
   \set decrescendoSpanner = #'text
   \override DynamicTextSpanner #'style = #'dashed-line
+#})
+
+setCue = #(define-music-function (parser location name) (string?)
+#{ \set Voice.instrumentCueName = $name #})
+
+namedCueDuring = #(define-music-function (parser location cuevoice cuename direction cuemusic) (string? string? number? ly:music?)
+#{
+  \tag #'part
+  {
+    \cueDuring #$cuevoice #$direction { \setCue #$cuename $cuemusic }
+  }
+  \tag #'score $cuemusic
 #})
 
 outline =
@@ -168,7 +181,8 @@ afterGraceFraction = #(cons 15 16)
 
   \context
   {
-    \RemoveEmptyStaffContext
+    \Staff
+    \RemoveEmptyStaves
   }
 }
 
