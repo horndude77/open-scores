@@ -1,4 +1,4 @@
-\version "2.13.32"
+\version "2.13.33"
 
 \include "defs.ily"
 \include "merge-rests.ily"
@@ -14,7 +14,7 @@
 \include "bass.ily"
 
 #(set-global-staff-size 16)
-  
+
 \layout
 {
   \mergeRests

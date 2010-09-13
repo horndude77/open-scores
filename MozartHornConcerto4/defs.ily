@@ -1,4 +1,4 @@
-\version "2.13.32"
+\version "2.13.33"
 
 stop =
 #(define-music-function (parser location music) (ly:music?)
@@ -13,7 +13,7 @@ stop =
   music)
 
 tutti = \markup {Tutti}
-solo = \markup {Solo}
+solo = \markup {\whiteout \pad-markup #0.5 Solo}
 dolce = \markup {\italic {dolce} }
 espress = \markup {\italic {espress.} }
 conEspress = \markup {\italic {con espress.} }
@@ -27,8 +27,8 @@ hornsInstrumentName = \markup
 hornInstrumentName = \markup
 \center-column {\line {Solo Horn} \line {in E\flat}}
 
-justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((style . none)))
-justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
 
 space = {s1}
 
@@ -88,8 +88,7 @@ outlineMvtI =
 outlineMvtII =
 {
   \time 3/4
-  %TODO: This causes a segmentation fault in 2.13.32
-  %\tempo "Andante" 4=63
+  \tempo "Andante" 4=63
   s2.*10 |
 
   \rMark "N"
@@ -173,6 +172,12 @@ outlineMvtIII =
     fontSize = #-3
     \override StaffSymbol #'staff-space = #(magstep -3)
     \override RehearsalMark #'font-size = #0
+  }
+
+  \context
+  {
+    \Dynamics
+    \consists "Tweak_engraver"
   }
 }
 
