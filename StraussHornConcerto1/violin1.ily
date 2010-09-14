@@ -1,4 +1,4 @@
-\version "2.13.22"
+\version "2.13.33"
 
 \include "defs.ily"
 
@@ -26,9 +26,7 @@ violinOneMvtI = \relative c'
   bes4 g8. ees16 bes4 ees8. g16 |
   f4 ees8. bes16 g4 ees8. c'16 |
   <c ees,>2 <bes d,> |
-  \dimTextDim
-  <g, ees' ees'>4 r r <bes f'>8.\> g'16 |
-  \dimHairpin
+  <g, ees' ees'>4 r r <bes f'>8.\dim g'16 |
   <bes, ees>4 r r <bes f'>8. g'16 |
   <bes, ees>4\p r <g ees'>\ppp r |
   <g ees'> r r2 |

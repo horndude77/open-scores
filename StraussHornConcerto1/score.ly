@@ -193,8 +193,8 @@ instrument = "Orchestra"
       {
         \set Staff.midiInstrument = "french horn"
         <<
-          \hornOne
-          \hornTwo
+          \removeWithTag #'part \hornOne
+          \removeWithTag #'part \hornTwo
         >>
       }
       \new Staff

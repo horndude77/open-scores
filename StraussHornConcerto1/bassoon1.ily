@@ -1,4 +1,4 @@
-\version "2.13.22"
+\version "2.13.33"
 
 \include "defs.ily"
 
@@ -101,16 +101,14 @@ bassoonOneMvtI = \relative c
   f bes8. d16 f4 d |
   c2 f |
   bes,2. bes,4~ |
-  \dimTextDim
-  bes des8.\> f16 bes4 bes |
+  bes des8.\dim f16 bes4 bes |
   aes2 ges4 f |
   des1~\p |
   des4 des( d2) |
   ees1~ |
   ees4 ees( d des) |
   c1 |
-  \set decrescendoText = \markup {\italic {dim. e calando}}
-  ces\> |
+  ces\dimECalando |
   bes |
   beses |
   aes~ |
@@ -143,17 +141,14 @@ bassoonOneMvtII = \relative c'
   ees8-.( ees-. ees-.) |
   ees\pp r r |
   r \times 2/3 {ees,16-.( ees-. ees-.)} \times 2/3 {ees16-.( ees-. ees-.)} |
-  \crescTextCresc
-  \times 2/3 {ees16-.\< ees-. ees-.} \times 2/3 {ees16-. ees-. ees-.} \times 2/3 {ees16-. ees-. ees-.} |
+  \times 2/3 {ees16-.\cresc ees-. ees-.} \times 2/3 {ees16-. ees-. ees-.} \times 2/3 {ees16-. ees-. ees-.} |
   \times 2/3 {ees16-. ees-. ees-.} \times 2/3 {ees16-. ees-. ees-.} \times 2/3 {ees16-. ees-. ees-.} |
 
   %G
   \key e \major
   fes16\f r r8 r |
-  \crescHairpin
   R4.*13 |
-  \dimTextDim
-  << c'4 {s8 s\>} >> aes8 |
+  << c'4 {s8 s\dim} >> aes8 |
   ees4 \times 2/3 {c16( des ees)} |
   f4. |
   g8( f ees) |
@@ -170,8 +165,7 @@ bassoonOneMvtII = \relative c'
   des8( des \times 2/3 {c16 des ees} |
   des4) r8 |
   f4. |
-  \crescTextCresc
-  f4 des16(\< ees |
+  f4 des16(\cresc ees |
   f g aes8) g( |
   c4) aes16(\mf bes |
   c d ees8) b[( |
@@ -199,13 +193,11 @@ bassoonOneMvtIII = \relative c
   R1 |
   r2 r4 aes4\p |
   aes1~ |
-  \crescTextCresc
-  aes2. aes4\< |
+  aes2. aes4\cresc |
   g \times 2/3 {g'8 bes ees} g4 r |
   r \times 2/3 {g,8 bes ees} g4 r |
   \times 2/3 {r4 g,8} \times 2/3 {g bes ees} \times 2/3 {g4 g,8} \times 2/3 {g bes ees}
   \times 2/3 {r4 g,8} \times 2/3 {g bes ees} g4\f r |
-  \crescHairpin
 
   %6/8
   R2.*16 |
@@ -290,10 +282,9 @@ bassoonOneMvtIII = \relative c
   ees'4.~ ees4 des8) |
   des4( ces8~ ces bes aes |
   bes2.) |
-  \crescTextCresc
   ces'~\pp |
   ces~ |
-  ces~\< |
+  ces~\cresc |
   ces~ |
   ces4. ces~ |
   ces4. ces~ |
@@ -367,5 +358,3 @@ bassoonOneMvtIII = \relative c
 }
 
 bassoonOne = {\bassoonOneMvtI \bassoonOneMvtII \bassoonOneMvtIII}
-
-

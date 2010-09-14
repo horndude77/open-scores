@@ -1,4 +1,4 @@
-\version "2.13.22"
+\version "2.13.33"
 
 \include "defs.ily"
 \include "horn.ily"
@@ -9,7 +9,7 @@ hornTwoMvtI = \relative c''
 {
   \transposition ees
   g2\fermata r4\fermata
-  \namedCueDuring #"solo" #"solo" #UP { r4 | R1*4 | }
+  %{ \namedCueDuring #"solo" #"solo" #UP %} { r4 | R1*4 | }
   b2\f g, |
   \repeat unfold 3 {f'4 f8. f16 f2~ |}
   f4 f8. f16 f4 aes |
@@ -27,10 +27,8 @@ hornTwoMvtI = \relative c''
   c4 c8. c16 c4 g8. g16 |
   g4 e8. e16 e4 c' |
   a2 b |
-  \dimTextDim
-  c4 r r g,8\> g |
+  c4 r r g,8\dim g |
   g4 r\! r2 |
-  \dimHairpin
   R1*2 |
 
   %A
@@ -71,12 +69,10 @@ hornTwoMvtI = \relative c''
   \times 2/3 {cis a fis} a4 r eis8. eis16 |
   fis4 r r fis8. fis16 |
   g4 e a f |
-  \crescTextCresc
-  e4 a\< g gis | %crescendo in part, not in score
+  e4 a\cresc g gis | %crescendo in part, not in score
   a gis a b |
   c b c cis |
   d\ff r r2 |
-  \crescHairpin
   r2 g,4\ff r |
   r g\ff g r |
   g^\vivo r r a |
@@ -132,12 +128,10 @@ hornTwoMvtIII = \relative c'
   g1~ |
   g4 g8. g16 g2~ |
   g1~ |
-  \crescTextCresc
-  g4 c8. c16 c2~\< |
+  g4 c8. c16 c2~\cresc |
   c4 c8. c16 c2~ |
   c4 c8. c16 c4 c8. c16 |
   c4 c'8. c16 c4\f r |
-  \crescHairpin
 
   %Rondo
   %6/8
@@ -192,9 +186,7 @@ hornTwoMvtIII = \relative c'
 
   %O
   R2.*8 |
-  \crescTextCresc
-  c,2.~\p | c~ | c~\< | c~ |
-  \crescHairpin
+  c,2.~\p | c~ | c~\cresc | c~ |
   c4. c~ |
   c c~ |
   c4 c8 c4 c8~ |
@@ -255,4 +247,3 @@ hornTwoMvtIII = \relative c'
 }
 
 hornTwo = {\hornTwoMvtI \hornTwoMvtII \hornTwoMvtIII}
-

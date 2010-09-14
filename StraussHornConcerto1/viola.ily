@@ -1,4 +1,4 @@
-\version "2.13.22"
+\version "2.13.33"
 
 \include "defs.ily"
 
@@ -27,9 +27,7 @@ violaMvtI = \relative c'
   bes4 g'8. ees16 bes4 ees8. g16 |
   f4 ees8. bes16 g4 ees8. c'16 |
   <ees, c'>2 <aes f'> |
-  \dimTextDim
-  <g ees' bes'>4 r r f8.\> g16 |
-  \dimHairpin
+  <g ees' bes'>4 r r f8.\dim g16 |
   ees4 r r f8. g16 |
   ees4\p r bes'\ppp r |
   bes r r2 |
@@ -46,5 +44,3 @@ violaMvtIII = \relative c'
 }
 
 viola = {\violaMvtI \violaMvtII \violaMvtIII}
-
-

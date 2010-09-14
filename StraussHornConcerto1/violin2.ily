@@ -1,4 +1,4 @@
-\version "2.13.22"
+\version "2.13.33"
 
 \include "defs.ily"
 
@@ -26,9 +26,7 @@ violinTwoMvtI = \relative c'
   bes4 g8. ees16 bes4 ees8. g16 |
   f4 ees8. bes16 g4 ees8. c'16 |
   <ees a>2 <d bes'> |
-  \dimTextDim
-  <g, ees' ees'>4 r r <aes d>\> |
-  \dimHairpin
+  <g, ees' ees'>4 r r <aes d>\dim |
   <g ees'>4 r r <aes d> |
   <g ees'>4\p r <g ees'>\ppp r |
   <g ees'> r r2 |
@@ -45,5 +43,3 @@ violinTwoMvtIII = \relative c'
 }
 
 violinTwo = {\violinTwoMvtI \violinTwoMvtII \violinTwoMvtIII}
-
-

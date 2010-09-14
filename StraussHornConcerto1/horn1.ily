@@ -1,4 +1,4 @@
-\version "2.13.22"
+\version "2.13.33"
 
 \include "defs.ily"
 \include "horn.ily"
@@ -31,10 +31,8 @@ hornOneMvtI = \relative c''
   e4 e8. e16 e4 e8. e16 |
   e4 c8. c16 c4 e |
   fis2 f |
-  \dimTextDim
-  e4 r r g,8\> g |
+  e4 r r g,8\dim g |
   g4 r\! r2 |
-  \dimHairpin
   R1 |
   r2 r4
 
@@ -80,12 +78,10 @@ hornOneMvtI = \relative c''
   \times 2/3 {cis a fis} a4 r gis8. gis16 |
   a4 r r a8. a16 |
   b4 b c \times 2/3 {d4( dis8)} |
-  \crescTextCresc
-  e4 b\< b d | %crescendo in part, not in score
+  e4 b\cresc b d | %crescendo in part, not in score
   d gis, a b |
   c b c cis |
   g'\ff r r2 |
-  \crescHairpin
   r2 b,4\ff r |
   r b\ff b r |
   e^\vivo r r c |
@@ -143,14 +139,12 @@ hornOneMvtIII = \relative c''
   g1~ |
   g4 g8. g16 g2~ |
   g1~ |
-  \crescTextCresc
-  g4 e8. e16 e2~\< |
+  g4 e8. e16 e2~\cresc |
   e4 g8. g16 g2~ |
   g4 g8. g16 g4 c8. c16 |
   c4 e8. e16 e4\f
   \namedCueDuring #"solo" #"solo" #UP
   { r4 |
-  \crescHairpin
 
   %Rondo
   %6/8
@@ -213,9 +207,7 @@ hornOneMvtIII = \relative c''
   %O
   \namedCueDuring #"bassoon" #"bassoon" #UP { R2.*4 | }
   R2.*4 |
-  \crescTextCresc
-  c2.~\p | c~ | c~\< | c~ |
-  \crescHairpin
+  c2.~\p | c~ | c~\cresc | c~ |
   c4. c~ |
   c c~ |
   c4 c8 c4 c8~ |
@@ -276,4 +268,3 @@ hornOneMvtIII = \relative c''
 }
 
 hornOne = {\hornOneMvtI \hornOneMvtII \hornOneMvtIII}
-

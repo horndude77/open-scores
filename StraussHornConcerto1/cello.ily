@@ -1,4 +1,4 @@
-\version "2.13.22"
+\version "2.13.33"
 
 \include "defs.ily"
 
@@ -27,9 +27,7 @@ celloMvtI = \relative c,
   bes ees8. g16 bes4 bes,~ |
   bes ees8. g16 bes4 g |
   f2 bes, |
-  \dimTextDim
-  ees,4 r r bes'\>
-  \dimHairpin
+  ees,4 r r bes'\dim
   ees, r r bes' |
   ees,\p r ees'\ppp r |
   ees r r2 |
@@ -46,5 +44,3 @@ celloMvtIII = \relative c'
 }
 
 cello = {\celloMvtI \celloMvtII \celloMvtIII}
-
-

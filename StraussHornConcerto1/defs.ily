@@ -1,4 +1,4 @@
-\version "2.13.22"
+\version "2.13.33"
 
 ppDolceMarkup = \markup {\dynamic pp \normal-text \italic dolce}
 ppDolce = #(make-dynamic-script ppDolceMarkup)
@@ -32,8 +32,8 @@ solo = \markup {Solo}
 soloEspressivo = \markup {Solo \italic espressivo}
 
 dimECalando = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim. e calando")
-justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
-justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((style . none)))
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
 
 smaller =
 {
@@ -44,22 +44,12 @@ smaller =
     #(lambda (beam mult) (* 0.8 (Beam::space_function beam mult)))
 }
 
-setDimECalando = #(define-music-function (parser location) ()
-#{
-  \set decrescendoText = \markup { \italic "dim. e calando" }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-#})
-
 setCue = #(define-music-function (parser location name) (string?)
 #{ \set Voice.instrumentCueName = $name #})
 
 namedCueDuring = #(define-music-function (parser location cuevoice cuename direction cuemusic) (string? string? number? ly:music?)
 #{
-  \tag #'part
-  {
-    \cueDuring #$cuevoice #$direction { \setCue #$cuename $cuemusic }
-  }
+  \tag #'part {\cueDuring #$cuevoice #$direction { \setCue #$cuename $cuemusic }}
   \tag #'score $cuemusic
 #})
 
