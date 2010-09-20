@@ -1,27 +1,16 @@
-\version "2.11.62"
+\version "2.13.33"
 
-\include "defs.lyi"
-\include "horn_notes.lyi"
+\include "defs.ily"
+\include "horn.ily"
 
 instrument = "Horn in F"
 
-\paper
-{
-  ragged-last-bottom = ##f
-  ragged-bottom = ##f
-}
-
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
-    \new Staff
-    {
-      #(set-accidental-style 'modern)
-      \set Score.skipBars = ##t
-      << \horn \outline >>
-    }
+    \new Staff { << \horn \outline >> }
   }
 }
 

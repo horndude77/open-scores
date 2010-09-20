@@ -1,3 +1,5 @@
+\version "2.13.33"
+
 righthand = \relative c
 {
   \key bes \minor
@@ -359,4 +361,3 @@ pedals =
 {
   s1
 }
-

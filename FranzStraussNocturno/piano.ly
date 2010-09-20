@@ -1,34 +1,23 @@
-\version "2.11.62"
+\version "2.13.33"
 
-\include "horn_notes.lyi"
-\include "piano_notes.lyi"
-\include "defs.lyi"
+\include "horn.ily"
+\include "piano.ily"
+\include "defs.ily"
 
 instrument = "Piano"
-
-\paper
-{
-  ragged-last-bottom = ##f
-}
 
 #(set-global-staff-size 18)
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     <<
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
+      \new SoloStaff
       {
         \set Staff.midiInstrument = "french horn"
         \set Staff.instrumentName = "Horn in F"
-        #(set-accidental-style 'modern)
         \horn
       }
       \new PianoStaff
@@ -37,33 +26,16 @@ instrument = "Piano"
         \set PianoStaff.connectArpeggios = ##t
         \new Staff="RH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \righthand \dynamics \outline >>
         }
 
         \new Staff="LH"
         {
-          #(set-accidental-style 'modern)
-          \set Staff.extraNatural = ##f
           << \lefthand \pedals >>
         }
       >>
     >>
     \layout { }
-    \midi
-    {
-      \context
-      {
-        \Score
-        tempoWholesPerMinute = #(ly:make-moment 80 4)
-      }
-      \context
-      {
-        \Voice
-        \remove "Dynamic_performer"
-      }
-    }
+    \midi { }
   }
 }
-
