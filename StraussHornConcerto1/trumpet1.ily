@@ -68,7 +68,7 @@ trumpetOneMvtI = \relative c''
   c d d d |
   d d d d |
   d\ff r r2 |
-  r2 g4\ff r |
+  r2 g,4\ff r |
   r b\ff b^\vivo r |
   b r r d |
   d b b g |

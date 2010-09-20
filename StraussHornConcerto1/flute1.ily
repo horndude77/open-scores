@@ -75,7 +75,7 @@ fluteOneMvtI = \relative c'''
   b4 r r \times 2/3 {c8-. c-. c-.} |
   b4 r r2 |
   R1 |
-  r2 r4 \times 2/3 {aes8-.\p bes-. c-.} |
+  r2 r4 \times 2/3 {a8-.\p bes-. c-.} |
   bes4 r r \times 2/3 {a8-. bes-. c-.} |
   bes4-. r r2 |
   R1*2 |

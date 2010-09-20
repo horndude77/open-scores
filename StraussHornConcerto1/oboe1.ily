@@ -71,9 +71,9 @@ oboeOneMvtI = \relative c'''
   r4 f2.-> |
 
   %D
-  s1*0 \repeat unfold 2
+  s1*0\ff \repeat unfold 2
   {
-    \times 2/3 {bes4\ff d,8} \times 2/3 {d f bes} bes4 \times 2/3 {a8 bes c} |
+    \times 2/3 {bes4 d,8} \times 2/3 {d f bes} d4 \times 2/3 {a8 bes c} |
   }
   bes4 g f a |
   a a \times 2/3 {c4 gis8} \times 2/3 {gis8( a) b-.} |
@@ -87,7 +87,8 @@ oboeOneMvtI = \relative c'''
   r2 g4\ff r |
   r f\ff d8^\vivo d( c bes) |
   \times 2/3 {bes4 d8} \times 2/3 {g, bes d} f4 c' |
-  bes a g f ees f g ges |
+  bes a g f |
+  ees f g ges |
   f2. f8. g16 |
   \repeat unfold 2 {f4 f8. f16} |
   f4 d8. d16 d4 bes8. g'16 |
@@ -150,7 +151,7 @@ oboeOneMvtII = \relative c''
   r8 \times 4/6 {a'32-. a-. a-. a-. a-. a-.} a16-. r |
   r8 \times 4/6 {a32-. a-. a-. a-. a-. a-.} a16-. r |
   r8 \times 4/6 {b32-. b-. b-. b-. b-. b-.} ces16-. r |
-  r8 \times 4/6 {c32-.\dim c-. c-. c-. c-. c-.} c16-.\! r |
+  r8 \times 4/6 {c32-.\dim c-. c-. c-. c-. c-.} c16-. r\! |
   R4.*3 |
 
   \key aes \minor
@@ -187,7 +188,7 @@ oboeOneMvtIII = \relative c''
   R1 |
   r4 \times 2/3 {aes8\p bes d} d4 r |
   R1 |
-  r4 \times 2/3 {aes8\p bes d} d4 r\cresc |
+  r4 \times 2/3 {aes8 bes d} d4 r\cresc |
   r4 \times 2/3 {ees,8 g bes} ees4 r |
   r4 \times 2/3 {g,8 bes ees} g4 r |
   \times 2/3 {r4 g,8} \times 2/3 {g bes ees} \times 2/3 {g4 bes,8} \times 2/3 {bes ees g} |
@@ -248,9 +249,9 @@ oboeOneMvtIII = \relative c''
   r2 r4\fermata |
 
   %6/8
-  r8 ees'-.\ff ees-. |
-  ees2.~ |
-  ees8 ees ees ees ees ees |
+  r8 c'-.\ff c-. |
+  c2.~ |
+  c8 c c c c c |
   bes4 bes8 bes4.~ |
   bes8 bes bes bes4. |
   r8 ees, g bes4. |
@@ -292,7 +293,7 @@ oboeOneMvtIII = \relative c''
   c8-. aes-. ees~ ees f-. f~ |
   f d g,~ g g g'~ |
   g ees a,~ a bes bes'~ |
-  bes4. a, |
+  bes4. e, |
   f g |
   aes g |
   aes a |
@@ -333,7 +334,7 @@ oboeOneMvtIII = \relative c''
   aes4.~( aes8 a bes) |
   ces\ff r r r4 r8 |
   R2.*16 |
-  r4 r8 f\pp r r |
+  r4 r8 f,\pp r r |
   g r r r4 r8 |
   R2.*7 |
   g4\p r8 g4 r8 |

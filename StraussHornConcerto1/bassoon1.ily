@@ -314,6 +314,7 @@ bassoonOneMvtIII = \relative c
   f e |
   f fis |
 
+  %Q
   %4/4
   g4 r r2 |
   r2 a4\f r |
@@ -323,12 +324,12 @@ bassoonOneMvtIII = \relative c
   R1*1 |
   r2 r4 bes~\mf |
   bes g2 ees4~ |
-  ees\> ees2( f4) |
+  ees\> ees2(^\rit f4) |
   bes,1\p |
-  bes2. bes4 |
+  bes2. bes4^\rit |
 
   %6/8
-  bes4 r8 r4. | \noBreak
+  bes4 r8 r4. |
   R2.*3 |
   r4. c'8-.\pp c-. c-. |
   ees4 r8 c8-. c-. c-. |

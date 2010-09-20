@@ -85,11 +85,11 @@ outline =
   s4.*33 |
 
   \mark \default
-  s4.*21
+  s4.*21 | \bar "||"
 
   %key change
   \mark \default
-  s4.*18
+  s4.*18 | \bar "||"
 
   %key change
   s4.*4 |
@@ -166,6 +166,7 @@ afterGraceFraction = #(cons 15 16)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
     %markFormatter = #format-mark-numbers
+    markFormatter = #format-mark-box-alphabet
     \override Beam #'breakable = ##t
   }
 

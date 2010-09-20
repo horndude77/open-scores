@@ -135,7 +135,7 @@ hornMvtI = \relative c''
 hornMvtII = \relative c''
 {
   %3/8
-  \key ees \major
+  \key ees \minor
   R4.*2 |
   \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   \once \override Staff.DynamicText #'X-offset = #'-1.5
@@ -197,7 +197,7 @@ hornMvtII = \relative c''
   c4.\dim |
   d8( c bes) |
 
-  \key ees \major
+  \key ees \minor
   ees4.(\p | bes4) \slurUp ees,16(\> f | g4.~ | g8)\! \slurNeutral r r |
   R4.*10 |
   r8 d'4~^\solo\p | d8 bes4~ | bes8 r r |

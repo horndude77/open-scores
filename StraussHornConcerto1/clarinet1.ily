@@ -126,7 +126,7 @@ clarinetOneMvtI = \relative c''
   r f8. des'16 c4 r |
   r ees,8. ees'16 ees4 r |
   r \times 2/3 {d,8 f bes} d4 r |
-  r \times 2/3 {d,8 f bes} d4 r\! |
+  r \times 2/3 {d,8 f bes} d4 r s1*0\! |
 }
 
 clarinetOneMvtII = \relative c''
@@ -364,7 +364,7 @@ clarinetOneMvtIII = \relative c'
   R1 |
   r2 r4 g(\mf |
   f e d c |
-  bes)\> c(\(^\rit bes) bes-.\) |
+  bes)\> c(^\rit bes bes) |
   f1\p |
   f4 \times 2/3 {f8 g bes} c4^\rit c |
 
@@ -381,14 +381,13 @@ clarinetOneMvtIII = \relative c'
   r4 r8 d8-.\pp d-. d-. |
   c4 r8 d8-. d-. d-. |
   c4 r8 r4 r8 |
-  R2. |
-  r4 a8\f\< a4 a8 |
-  bes4.~( bes8 b c) |
-  des\ff r r r4 r8 |
-  R2. |
-  r4 a8\f\< a4 a8 |
-  bes4.~( bes8 b c) |
-  des8\ff r r r4 r8 |
+  \repeat unfold 2
+  {
+    R2. |
+    r4 a8\f\< a4 a8 |
+    bes4.~( bes8 b c) |
+    des\ff r r r4 r8 |
+  }
   R2.*13 |
   r4 r8 c4.\pp |
   c c |
@@ -398,7 +397,7 @@ clarinetOneMvtIII = \relative c'
   r8 a a a a a |
   a r r r4 r8 |
   r8 c c c c c |
-  c r r r g'-. g-. |
+  c r r r g' g |
   a r r r4 r8 |
   R2.*5 |
   g4\ff r8 r4 r8 |
