@@ -30,6 +30,17 @@ rit = \markup {\italic rit.}
 dolce = \markup {\italic dolce}
 solo = \markup {Solo}
 soloEspressivo = \markup {Solo \italic espressivo}
+dottedQuarterEqualsQuarter = \markup
+{
+  \concat
+  {
+    (
+    \smaller \general-align #Y #DOWN \note #"4." #1
+    " = "
+    \smaller \general-align #Y #DOWN \note #"4" #1
+    )
+  }
+}
 
 dimECalando = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim. e calando")
 justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
@@ -53,6 +64,11 @@ namedCueDuring = #(define-music-function (parser location cuevoice cuename direc
   \tag #'score $cuemusic
 #})
 
+boxMark = #(define-music-function (parser location markp) (string?)
+#{
+  \mark \markup { \box \bold $markp }
+#})
+
 outline =
 {
   \set Score.tempoHideNote = ##t
@@ -60,13 +76,13 @@ outline =
   \time 4/4
   s1*28 |
 
-  \mark \default
+  \boxMark "A"
   s1*35 |
 
-  \mark \default
+  \boxMark "B"
   s1*12 |
 
-  \mark \default
+  \boxMark "C"
   s1*42 |
 
   \time 2/4
@@ -75,35 +91,35 @@ outline =
   \time 4/4
   s1*12 |
 
-  \mark \default
+  \boxMark "D"
   s1*33 | \bar "||"
 
   %Second mvt
   \time 3/8
   \tempo "Andante" 8=69
-  \mark \default
+  \boxMark "E"
   s4.*33 |
 
-  \mark \default
+  \boxMark "F"
   s4.*21 | \bar "||"
 
   %key change
-  \mark \default
+  \boxMark "G"
   s4.*18 | \bar "||"
 
   %key change
   s4.*4 |
 
-  \mark \default
+  \boxMark "H"
   s4.*13 |
 
-  \mark \default
+  \boxMark "J"
   s4.*24 | \bar "||"
 
   %Third mvt
   \time 4/4
   \tempo "Allegro" 4=132
-  \mark \default
+  \boxMark "K"
   s8 \partial 8 s8 | \noBreak
   s1*8 | \bar "||"
 
@@ -114,15 +130,15 @@ outline =
   \mark \markup { \smaller \bold Rondo }
   s2.*16 |
 
-  \mark \default
+  \boxMark "L"
   s2.*20 |
 
-  \mark \default
+  \boxMark "M"
   s2.*84 | \bar "||"
 
   \time 4/4
-  \tempo 4=132
-  \mark \default
+  \tempo \dottedQuarterEqualsQuarter 4=132
+  \boxMark "N"
   s1*3 |
   s2 \partial 4 s4 \bar "||"
 
@@ -131,22 +147,22 @@ outline =
   s4 \partial 8 s8 |
   s2.*49 |
 
-  \mark \default
+  \boxMark "O"
   s2.*32 |
 
-  \mark \default
+  \boxMark "P"
   s2.*20 | \bar "||"
 
   \time 4/4
-  \tempo 4=132
-  \mark \default
+  \tempo \dottedQuarterEqualsQuarter 4=132
+  \boxMark "Q"
   s1*10 |
-  \tempo "Lento"
+  \tempo "Lento" 4=92
   s1*2 | \bar "||"
 
   \time 6/8
   \tempo 4.=144
-  \mark \default
+  \boxMark "R"
   \tempo \markup{\bold {Tempo I} \normal-text \italic {un poco più mosso}}
   s2.*53 | \bar "|."
 }
