@@ -281,9 +281,7 @@ dynamics =
   s2 s4\< s\> |
   s1\pp |
   s1*2 |
-  \crescTextCresc
-  s2 s\< |
-  \crescHairpin
+  s2 s\cresc |
   s1 |
   s\f |
   s1 |
@@ -321,9 +319,7 @@ dynamics =
   s1*3 |
   s2. s4\ff |
   s1 |
-  \dimTextDim
-  s8 s\> s2. |
-  \dimHairpin
+  s8 s\dim s2. |
   s1\p |
   s1*4 |
   s4 s\< s\> s\! |
@@ -339,9 +335,7 @@ dynamics =
   s2. s4\ff |
   s1*2 |
   s1\mf |
-  \dimTextDim
-  s4 s2.\> |
-  \dimHairpin
+  s4 s2.\dim |
   s1\pp |
   s1 |
   s4 s2\< s8. s16\! |

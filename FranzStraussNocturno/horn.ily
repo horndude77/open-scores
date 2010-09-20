@@ -18,9 +18,7 @@ horn = \relative c''
   f\! g,)
     \once \override Beam #'positions = #'(3.5 . 3.5) %Avoid beam collisions
     aes8[\( \grace {bes32[( aes])} g16 aes] des8 c\) |
-  \crescTextCresc
-  bes2~ bes8 bes(\<
-  \crescHairpin
+  bes2~ bes8 bes(\cresc
     \once \override Stem #'stroke-style = #"grace"
     \grace d8 c8 bes) |
   bes2~ \times 2/3 {bes8 a( bes} \times 2/3 {d c bes)} |
