@@ -5,7 +5,7 @@
 fluteOneMvtI = \relative c'''
 {
   \key ees \major
-  ees2\fermata r4\fermata r |
+  ees2\f\fermata r4\fermata r |
   R1*5 |
   aes,2.\f aes8. des16 |
   c4 c8. c16 c4 c8. c16
@@ -34,7 +34,7 @@ fluteOneMvtI = \relative c'''
   R1*35 |
 
   %B
-  ees,2. g8. c16 |
+  ees,2.\f g8. c16 |
   bes4 bes8. bes16 bes4 bes8. bes16 |
   bes4 g8. g16 g4 ees8. c'16 |
   bes2 f |
@@ -49,7 +49,7 @@ fluteOneMvtI = \relative c'''
 
   %C
   R1*8 |
-  f,8-.(\ppDolce f4-. f-. f-.) f8~( |
+  f,8-.(\pp^\dolce f4-. f-. f-.) f8~( |
   f f4-. f-. f-.) f8~( |
   f f4-. f-. f-.) f8(\( |
   g) g4-. g-. g-.\) g8(\( |
@@ -103,11 +103,11 @@ fluteOneMvtI = \relative c'''
   \times 2/3 {c8 d e} \times 2/3 {a,4 e8} \times 2/3 {f8 a c} f4~ |
   \times 2/3 {f8 d g,} \times 2/3 {d g, g'~} \times 2/3 {g ees bes~} \times 2/3 {bes bes bes'~} |
   \times 2/3 {bes g d} \times 2/3 {d d d'~} \times 2/3 {d bes ees,~} \times 2/3 {ees ees ees'~} |
-  \times 2/3 {ees8 c f,} \times 2/3 {b4 f8} \times 2/3 {c'4 f,8} \times 2/3 {d'4 f,8} |
+  \times 2/3 {ees8 c f,} \times 2/3 {b4\cresc f8} \times 2/3 {c'4 f,8} \times 2/3 {d'4 f,8} | %EDIT: cresc added
   \times 2/3 {ees'4 f,8} \times 2/3 {d'4 f,8} \times 2/3 {ees'4 f,8} \times 2/3 {e'4 f,8} |
   f'4\ff r r2 |
   r2 bes,4\ff r |
-  r bes~\ff bes8^\vivo d( c bes) |
+  r bes~\ff bes8 d(^\vivo c bes) |
   \times 2/3 {bes4 d,8} \times 2/3 {g8 bes d} f4 ees |
   d c bes aes |
   g bes g ges |
@@ -122,7 +122,7 @@ fluteOneMvtI = \relative c'''
   des2 r |
   r4 g8. ces16 bes4 g8. ees16 |
   bes4 r r2 |
-  r4 ees8. bes'16 aes4 r\dimECalando |
+  r4 ees8. bes'16 aes4\dimECalando r |
   r ees8. bes'16 aes4 r |
   r ees8. ces'16 bes4 r |
   r ees,8. ees'16 ees4 r |

@@ -45,7 +45,7 @@ violaMvtI = \relative c'
   ees,2( d4 ees) |
   aes2. r4 |
   r2 s1*0\< \repeat unfold 4 aes8 s1*0\!|
-  \repeat unfold 2 g8 \repeat unfold 2 f8 s1*0\> \repeat unfold 4 g8 |
+  \repeat unfold 2 g8 s1*0\> \repeat unfold 2 f8 \repeat unfold 4 g8 |
   \repeat unfold 4 bes8 s1*0\! \repeat unfold 4 aes8 |
   \repeat unfold 4 g8 g-. g( bes aes) |
   \repeat unfold 4 g8 \repeat unfold 4 aes |
@@ -101,7 +101,7 @@ violaMvtI = \relative c'
   f4 r bes2(\> |
   a4)\! r r2 |
   R1*16 |
-  f'8(\ppDolce f4-. f-. f-.) f8~( |
+  f'8(\pp^\dolce f4-. f-. f-.) f8~( |
   f f4-. f-. f-.) f8~( |
   f f4-. f-. f-.) f8(\( |
   g) g4-. g-. g-.\) g8( |

@@ -10,7 +10,7 @@
 hornOneMvtI = \relative c''
 {
   \transposition ees
-  e2\fermata r4\fermata
+  e2\f\fermata r4\fermata
   \namedCueDuring #"solo" #"solo" #UP { r4 | R1*4 | }
   d2\f g, |
   d'4 d8. d16 d2~ |
@@ -78,13 +78,13 @@ hornOneMvtI = \relative c''
   \times 2/3 {cis a fis} a4 r gis8. gis16 |
   a4 r r a8. a16 |
   b4 b c \times 2/3 {d4( dis8)} |
-  e4 b\cresc b d | %crescendo in part, not in score
-  d gis, a b |
+  e4 b b d |
+  d gis,\cresc a b | %EDIT: cresc added
   c b c cis |
   g'\ff r r2 |
   r2 b,4\ff r |
-  r b\ff b r |
-  e^\vivo r r c |
+  r b\ff b^\vivo r |
+  e r r c |
   b fis' e d |
   c d c g |
   \times 2/3 {g4 g8} \times 2/3 {g8 b d} g4 g8. g16 |
@@ -98,11 +98,11 @@ hornOneMvtI = \relative c''
   g4 g8. g16 g4 g8. g16 |
   c1~ |
   c4 c,8. c16 c4 c8. c16 |
-  c2. c8. c16 |
+  << {s2 s4\dimECalando} {c2.} >> c8. c16 |
   c2. c8. c16 |
   c2. c'8. c16 |
   c2. c8. c16 |
-  c2. r4 |
+  c2. r4\! |
   R1 |
 }
 

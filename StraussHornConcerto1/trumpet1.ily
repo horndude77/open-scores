@@ -64,8 +64,8 @@ trumpetOneMvtI = \relative c''
   \times 2/3 {cis8 ais fis} cis4 r cis8. cis16 |
   cis4 r r d8. d16 |
   d4 e e g |
-  g b b\cresc c |
-  c d d d |
+  g b b c |
+  c d\cresc d d | %EDIT: cresc added
   d d d d |
   d\ff r r2 |
   r2 g,4\ff r |
@@ -84,7 +84,7 @@ trumpetOneMvtI = \relative c''
   bes4 g'8. g16 g4 g8. g16 |
   g1~ |
   g4 c,8. c16 c4 c8. c16 |
-  c2. c8.\dimECalando c16 |
+  << {s2 s4\dimECalando} {c2.} >> c8. c16 |
   c2. c8. c16 |
   c2. r4\! |
   R1*3 |

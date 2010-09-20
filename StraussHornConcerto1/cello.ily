@@ -47,7 +47,7 @@ celloMvtI = \relative c,
   f2. aes'4( |
   g2\< f |
   ees4)\! d( c2\> |
-  g) f'(\! |
+  << {s4 s\!} {g2)} >> f'( |
   ees4) d( c aes) |
   bes1( |
   ees,4) r r bes'(\p\> |
@@ -59,8 +59,8 @@ celloMvtI = \relative c,
   bes4) r r2 |
   aes,1 |
   g2. cis4~ |
-  cis d2 d4(\< |
-  ees) ees( f fis |
+  cis d2 d4( |
+  ees) ees(\< f fis |
   g2)\! f2->(\> |
   ees4)\! d( c aes) |
   bes2( aes) |
@@ -142,7 +142,7 @@ celloMvtI = \relative c,
   r4 g\f r2 |
   r4 f\f r e\f |
   r ees\f r c\f |
-  f2.\> \times 2/3 {f,8\mf\cresc f f} |
+  f2. \times 2/3 {f,8\mf\cresc f f} |
   f'2. \times 2/3 {f8 f f} |
 
   %D
@@ -152,12 +152,12 @@ celloMvtI = \relative c,
   \times 2/3 {<a, e' c'>4 e'8} \times 2/3 {e a c} e4 e,, |
   \times 2/3 {a4 e'8} \times 2/3 {e a c} d4 f,, |
   bes b c d |
-  ees\justCresc fis g gis |
-  a gis a b |
+  ees fis g gis |
+  a gis\cresc a b | %EDIT: cresc added
   c b c cis |
   d\ff r r2 |
   r <d, g, e>4\ff r |
-  r <bes' d, f,>\ff <bes d, fis,> r |
+  r <bes' d, f,>\ff <bes d, fis,>^\vivo r |
   \times 2/3 {<bes d, g,>4 d,8} \times 2/3 {g bes d} f4 a, |
   bes fis g d |
   ees d ees <c c,> |
@@ -172,8 +172,8 @@ celloMvtI = \relative c,
   ges4 ges'( f fes) |
   ees1~ |
   ees4 ees( d des) |
-  c1( |
-  ces)\dimECalando |
+  << {s2 s\dimECalando} {c1(} >> |
+  ces) |
   bes( |
   beses) |
   aes~ |

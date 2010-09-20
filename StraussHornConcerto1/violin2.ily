@@ -37,8 +37,8 @@ violinTwoMvtI = \relative c'
   <aes ees'> q <g ees'> q bes bes bes bes |
   \repeat unfold 16 bes |
   ees ees ees ees ees\< ees ees ees |
-  ees\! ees ees ees ees\> ees ees ees |
-  d4\! r r2 |
+  ees ees ees\! ees ees\> ees ees ees |
+  d4 r\! r2 |
   s1*0\pp \repeat unfold 16 <g, ees'>8 |
   <aes ees'> q <g ees'> q bes bes bes bes |
   \repeat unfold 8 bes |
@@ -86,7 +86,7 @@ violinTwoMvtI = \relative c'
   r c2.\mf |
   bes4 r r2 |
   R1*18 |
-  s1*0^\div\ppDolce
+  s1*0^\div\pp^\dolce
   <<
     {
       d'8( d4-. d-. d-.) d8~( |

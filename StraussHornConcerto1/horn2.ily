@@ -8,8 +8,8 @@
 hornTwoMvtI = \relative c''
 {
   \transposition ees
-  g2\fermata r4\fermata
-  %{ \namedCueDuring #"solo" #"solo" #UP %} { r4 | R1*4 | }
+  g2\f\fermata r4\fermata
+  \namedCueDuring #"solo" #"solo" #UP { r4 | R1*4 | }
   b2\f g, |
   \repeat unfold 3 {f'4 f8. f16 f2~ |}
   f4 f8. f16 f4 aes |
@@ -69,13 +69,13 @@ hornTwoMvtI = \relative c''
   \times 2/3 {cis a fis} a4 r eis8. eis16 |
   fis4 r r fis8. fis16 |
   g4 e a f |
-  e4 a\cresc g gis | %crescendo in part, not in score
-  a gis a b |
+  e4 a g gis |
+  a gis\cresc a b | %EDIT: cresc added
   c b c cis |
   d\ff r r2 |
   r2 g,4\ff r |
-  r g\ff g r |
-  g^\vivo r r a |
+  r g\ff g^\vivo r |
+  g r r a |
   g a g f |
   e g e ees |
   \times 2/3 {d4 d8} \times 2/3 {d8 g b} d4 d8. e16 |
@@ -89,11 +89,11 @@ hornTwoMvtI = \relative c''
   ees4 g8. g16 g4 g8. g16 |
   g1~ |
   g4 c,8. c16 c4 c8. c16 |
+  << {s2 s4\dimECalando} {c2.} >> c8. c16 |
   c2. c8. c16 |
   c2. c8. c16 |
   c2. c8. c16 |
-  c2. c8. c16 |
-  c2. r4 |
+  c2. r4\! |
   R1 |
 }
 

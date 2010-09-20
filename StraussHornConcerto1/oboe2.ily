@@ -5,7 +5,7 @@
 oboeTwoMvtI = \relative c''
 {
   \key ees \major
-  ees2\fermata r4\fermata r |
+  ees2\f\fermata r4\fermata r |
   R1*4 |
   d2\f bes |
   aes2.\f aes8. des16 |
@@ -74,11 +74,11 @@ oboeTwoMvtI = \relative c''
   \times 2/3 {c,8 d e} \times 2/3 {c4 a8} \times 2/3 {a c f} a4 |
   \times 2/3 {bes4 d,8~} \times 2/3 {d8 g, g'~} \times 2/3 {g ees bes~} \times 2/3 {bes bes bes'~} |
   \times 2/3 {bes g d~} \times 2/3 {d8 d d'~} \times 2/3 {d bes ees,~} \times 2/3 {ees ees ees~} |
-  \times 2/3 {ees c f} b,4 c d |
+  \times 2/3 {ees c f} b,4\cresc c d | %EDIT: cresc added
   ees d ees e |
   f\ff r r2 |
   r2 bes,4\ff r |
-  r d\ff bes8^\vivo d( c bes) |
+  r d\ff bes8 d(^\vivo c bes) |
   \times 2/3 {bes4 d8} \times 2/3 {g, bes d} f4 f |
   f d d bes |
   bes bes ees ees |
@@ -93,7 +93,7 @@ oboeTwoMvtI = \relative c''
   des'2 r |
   r4 g,8. ces16 bes4 g8. ees16 |
   bes'4 r r2 |
-  r4 ees,8. bes'16 aes4 r\dimECalando |
+  r4 ees,8. bes'16 aes4\dimECalando r |
   r ees8. bes'16 aes4 r |
   r ees8. ces'16 bes4 r |
   r ees,8. ees'16 ees4 r |

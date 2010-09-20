@@ -64,8 +64,8 @@ trumpetTwoMvtI = \relative c'
   \times 2/3 {cis8 ais fis} cis4 r cis8. cis16 |
   cis4 r r d8. d16 |
   d4 e e g, |
-  g fis' g\cresc gis |
-  a d, d f |
+  g fis' g gis |
+  a d,\cresc d f | %EDIT: cresc added
   fis f fis g |
   g\ff r r2 |
   r2 e4\ff r |
@@ -84,7 +84,7 @@ trumpetTwoMvtI = \relative c'
   g4 g'8. g16 g4 g8. g16 |
   e1~ |
   e4 c8. c16 c4 c8. c16 |
-  c2. c8.\dimECalando c16 |
+  << {s2 s4\dimECalando} {c2.} >> c8. c16 |
   c2. r4\! |
   R1*4 |
 }

@@ -5,7 +5,7 @@
 oboeOneMvtI = \relative c'''
 {
   \key ees \major
-  g2\fermata r4\fermata r |
+  g2\f\fermata r4\fermata r |
   R1*4 |
   f2\f bes, |
   f'2.\f f8. f16 |
@@ -81,11 +81,11 @@ oboeOneMvtI = \relative c'''
   \times 2/3 {a8 b c} \times 2/3 {e,4 c8} \times 2/3 {c f a} c4 |
   \times 2/3 {d4 d,8~} \times 2/3 {d8 g, g'~} \times 2/3 {g ees bes~} \times 2/3 {bes bes bes'~} |
   \times 2/3 {bes g d~} \times 2/3 {d8 d d'~} \times 2/3 {d bes ees,~} \times 2/3 {ees ees ees~} |
-  \times 2/3 {ees c f} b,4 c d |
+  \times 2/3 {ees c f} b,4\cresc c d | %EDIT: cresc added
   ees d ees e |
   bes'\ff r r2 |
   r2 g4\ff r |
-  r f\ff d8^\vivo d( c bes) |
+  r f\ff d8 d(^\vivo c bes) |
   \times 2/3 {bes4 d8} \times 2/3 {g, bes d} f4 c' |
   bes a g f |
   ees f g ges |
@@ -100,7 +100,7 @@ oboeOneMvtI = \relative c'''
   des'2 r |
   r4 g8. ces16 bes4 g8. ees16 |
   bes4 r r2 |
-  r4 ees,8. bes'16 aes4 r\dimECalando |
+  r4 ees,8. bes'16 aes4\dimECalando r |
   r ees8. bes'16 aes4 r |
   r ees8. ces'16 bes4 r |
   r ees,8. ees'16 ees4 r |

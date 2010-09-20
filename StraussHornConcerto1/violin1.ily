@@ -92,7 +92,7 @@ violinOneMvtI = \relative c'
   bes4) r8 d( des2)\> |
   c4 r\! r2 |
   R1*16 |
-  f'8(\ppDolce f4-. f-. f-.) f8~( |
+  f'8(\pp^\dolce f4-. f-. f-.) f8~( |
   f f4-. f-. f-.) f8~( |
   f f4-. f-. f-.) f8\(( |
   g) g4-. g-. g-.\) d8( |
@@ -138,7 +138,7 @@ violinOneMvtI = \relative c'
   \times 2/3 {d8 g, g'~} \times 2/3 {g f d} \times 2/3 {ees bes bes'~} \times 2/3 {bes aes fis} |
   \times 2/3 {g8 d d'~} \times 2/3 {d c a} \times 2/3 {bes ees, ees'~} \times 2/3 {ees d b} |
   \times 2/3 {c8 f, f'~} \repeat unfold 7 {\times 2/3 {f8 f, f'~}} |
-  f4 f2->\ff^\patetico ees8( d) |
+  f4 f2->\ff ees8(^\patetico d) |
   c( bes) bes4~ bes8 d( c bes) |
   bes( d,) d4~ d8 d'(^\vivo c bes) |
   \times 2/3 {bes4 d,8} \times 2/3 {g8 bes d} f4 ees |

@@ -6,7 +6,7 @@ bassoonTwoMvtI = \relative c,
 {
   \clef bass
   \key ees \major
-  ees2\fermata r4\fermata r |
+  ees2\f\fermata r4\fermata r |
   R1*4 |
   bes'2\f bes, |
   \repeat unfold 3 {f''4 f8. f16 f2~ |}
@@ -89,12 +89,12 @@ bassoonTwoMvtI = \relative c,
   a r r f |
   bes b, c d |
   ees fis g gis |
-  a gis a b |
+  a gis\cresc a b | %EDIT: cresc added
   c b c cis |
   d\ff r r2 |
   r2 e,4\ff r |
-  r f\ff fis r |
-  \times 2/3 {g4^\vivo d'8} \times 2/3 {g8 bes d} f4 a,, |
+  r f\ff fis^\vivo r |
+  \times 2/3 {g4 d'8} \times 2/3 {g8 bes d} f4 a,, |
   bes fis g d |
   ees d ees c |
   f2. f4~ |
@@ -108,13 +108,12 @@ bassoonTwoMvtI = \relative c,
   ges4 ges( f) fes |
   ees1~ |
   ees4 ees'( d des) |
-  c1 |
-  ces\dimECalando |
+  << {s2 s\dimECalando} {c1} >> |
+  ces1 |
   bes |
   beses |
-  aes2 r |
+  aes2 r\! |
   R1 |
-  s1*0\!
 }
 
 bassoonTwoMvtII = \relative c'

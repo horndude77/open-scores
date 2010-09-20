@@ -47,7 +47,7 @@ bassMvtI = \relative c,
   f2. aes'4( |
   g2 f\< |
   ees4)\! d( c2\> |
-  g)\! f'( |
+  << {s4 s\!} {g2)} >> f'( |
   ees4) d( c aes) |
   bes1( |
   ees4) r r2 |
@@ -114,11 +114,11 @@ bassMvtI = \relative c,
   a r r f |
   bes b c d |
   ees fis g gis |
-  a gis a b |
+  a gis\cresc a b | %EDIT: cresc added
   c b c cis |
   d\ff r r2 |
   r2 e,4\ff r |
-  r f\ff fis r^\vivo |
+  r f\ff fis^\vivo r |
   g r r a |
   bes fis g d |
   ees d ees c |
@@ -133,7 +133,7 @@ bassMvtI = \relative c,
   ges4 ges'( f fes) |
   ees1~ |
   ees4 ees( d des) |
-  c1(\dimECalando |
+  << {s2 s\dimECalando} {c1(} >> |
   ces) |
   bes( |
   beses) |

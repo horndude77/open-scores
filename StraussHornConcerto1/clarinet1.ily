@@ -6,7 +6,7 @@ clarinetOneMvtI = \relative c''
 {
   \transposition bes
   \key f \major
-  f2\fermata r4\fermata r |
+  f2\f\fermata r4\fermata r |
   R1*4 |
   c2\f c, |
   d'2.\f d8. ees16 |
@@ -102,7 +102,7 @@ clarinetOneMvtI = \relative c''
   \times 2/3 {d8 e fis} \times 2/3 {b,4 fis8} \times 2/3 {g8 b d} g4 |
   \times 2/3 {g4 e8~} \times 2/3 {e a, a'~} \times 2/3 {a f c~} \times 2/3 {c c, c'~} |
   \times 2/3 {c a e~} \times 2/3 {e e e'~} \times 2/3 {e c f,~} \times 2/3 {f f f'~} |
-  \times 2/3 {f d g,} \times 2/3 {e4\cresc g8} \times 2/3 {f4 g8} \times 2/3 {bes4 g8} |
+  \times 2/3 {f d g,} \times 2/3 {e4\cresc g8} \times 2/3 {f4 g8} \times 2/3 {bes4 g8} | %EDIT: cresc added
   \times 2/3 {b4 g8} \times 2/3 {bes4 g8} \times 2/3 {b4 g8} \times 2/3 {c4 g8} |
   e'4\ff r r2 |
   r2 e4\ff r |
@@ -115,18 +115,18 @@ clarinetOneMvtI = \relative c''
   d4 c8. c16 c4 r |
   d2 d |
   e2. ees8. ees16 |
-  ees4\justDim ees8. ees16 c4 g8. g16 |
+  ees4 ees8.\dim ees16 c4 g8. g16 |
   g2 aes4 bes |
   c\p c8. f16 ees4 c8. aes16 |
   ees2 r |
   r4 a8. des16 c4 a8. f16 |
   c4 r r2 |
-  r4 f8. c'16 bes4 r |
-  r f8.\dimECalando c'16 bes4 r |
+  r4 f8. c'16 bes4\dimECalando r |
+  r f8. c'16 bes4 r |
   r f8. des'16 c4 r |
   r ees,8. ees'16 ees4 r |
   r \times 2/3 {d,8 f bes} d4 r |
-  r \times 2/3 {d,8 f bes} d4 r s1*0\! |
+  r \times 2/3 {d,8 f bes} d4 r\! |
 }
 
 clarinetOneMvtII = \relative c''
