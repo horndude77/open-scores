@@ -319,7 +319,7 @@ hornMvtIII = \relative c'
   %4/4
   f2. d8. g16 |
   f4 d8. bes16 f4 bes8. d16 |
-  c2.^\unPocoCalando c8. c16 |
+  c2. c8. c16 |
   c2.\fermata |
 
   %6/8
