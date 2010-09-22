@@ -131,7 +131,7 @@ fluteTwoMvtII = \relative c'''
   %E
   \key aes \minor
   R4.*18 |
-  aes8 aes \times 2/3 {g16( aes bes} |
+  aes8\ppp aes \times 2/3 {g16( aes bes} |
   aes4) r8 |
   R4.*3 |
   r8 bes(\pp \times 2/3 {a16 bes c} |
@@ -240,7 +240,7 @@ fluteTwoMvtIII = \relative c''
 
   %M
   R2.*15 |
-  r4 r8 r8 bes,-.\pppGrazioso^\solo des-. |
+  r4 r8 r8 bes,-.\ppGrazioso^\solo des-. |
   \repeat unfold 5 {ges-. r r r bes,-. des-.} |
   f-. r r r bes,-. des-. |
   f4.( ees8) ges,-. ces-. |
@@ -384,7 +384,7 @@ fluteTwoMvtIII = \relative c''
   r4 r8 ees,4.\pp |
   ees ees |
   ees4 r8 r4 r8 |
-  r4 r8 bes' r r |
+  r4 r8 bes'\pp r r |
   bes r r r4 r8 |
   r bes, bes bes bes bes |
   bes r r r4 r8 |

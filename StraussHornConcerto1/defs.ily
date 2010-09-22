@@ -120,7 +120,7 @@ outline =
   \time 4/4
   \tempo "Allegro" 4=132
   \boxMark "K"
-  s8 \partial 8 s8 | \noBreak
+  s8 \partial 8 s8 | %\noBreak
   s1*8 | \bar "||"
 
   \time 6/8
@@ -139,7 +139,9 @@ outline =
   \time 4/4
   \tempo \dottedQuarterEqualsQuarter 4=132
   \boxMark "N"
-  s1*3 |
+  s1*2 |
+  \tempo "un poco calando" 4=100
+  s1 |
   s2 \partial 4 s4 \bar "||"
 
   \time 6/8

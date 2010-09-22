@@ -177,7 +177,7 @@ bassoonOneMvtII = \relative c'
   ees8 r r |
   R4.*15 |
   ees8-.(\ppp ees-. ees-.) |
-  ees8\ppp r r |
+  ees8 r r |
   R4.*2 |
   aes,8\f r r |
   ces\pp r r |
@@ -230,7 +230,7 @@ bassoonOneMvtIII = \relative c
   f8 f-. f-. f-. f-. f-. |
   f r r r4. |
   R2.*12 |
-  f2.~ | f4. r |
+  f2.~\p | f4. r |
   bes,2.~ | bes |
   R2. |
   \clef bass
@@ -276,14 +276,14 @@ bassoonOneMvtIII = \relative c
   ees2.(\p\< |
   aes |
   ees)\> |
-  ces4.~( ces4 aes8 |
+  ces4.~(\! ces4 aes8 |
   ees2. |
   ees'4.~ ees4 des8) |
   des4( ces8~ ces bes aes |
   bes2.) |
   ces'~\pp |
+  << {s4. s\cresc} {ces2.~} >> |
   ces~ |
-  ces~\cresc |
   ces~ |
   ces4. ces~ |
   ces4. ces~ |

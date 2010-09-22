@@ -128,7 +128,7 @@ hornTwoMvtIII = \relative c'
   g1~ |
   g4 g8. g16 g2~ |
   g1~ |
-  g4 c8. c16 c2~\cresc |
+  g4 c8.\cresc c16 c2~ |
   c4 c8. c16 c2~ |
   c4 c8. c16 c4 c8. c16 |
   c4 c'8. c16 c4\f r |
@@ -190,7 +190,7 @@ hornTwoMvtIII = \relative c'
   c4. c~ |
   c c~ |
   c4 c8 c4 c8~ |
-  c4 c8~\ff c r r |
+  c4 c8~ c\ff r r |
   R2.*16 |
 
   %P

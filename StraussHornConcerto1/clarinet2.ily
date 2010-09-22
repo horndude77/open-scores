@@ -159,7 +159,7 @@ clarinetTwoMvtII = \relative c''
   r8 \times 4/6 {\repeat unfold 6 b32-.} b16 r |
   r8 \times 4/6 {\repeat unfold 6 b32-.} b16 r |
   r8 \times 4/6 {\repeat unfold 6 cis32-.} cis16 r |
-  r8\dim \times 4/6 {\repeat unfold 6 d32-.} d16 r |
+  r8 s1*0\dim \times 4/6 {\repeat unfold 6 d32-.} d16 r |
   r8 \times 4/6 {\repeat unfold 6 d32-.} d16 r |
   r8 \times 4/6 {\repeat unfold 6 e32-.} e16 r |
   r8 \times 4/6 {\repeat unfold 6 ees32-.} ees16 r |
@@ -199,8 +199,8 @@ clarinetTwoMvtIII = \relative c'
   R1 |
   r4 \times 2/3 {c8\p c e} e4 r |
   R1 |
-  r4 \times 2/3 {c8 c e} e4 r |
-  r4 \times 2/3 {a,8\justCresc c e} a4 r |
+  r4 \times 2/3 {c8 c e} e4 r\cresc |
+  r4 \times 2/3 {a,8 c e} a4 r |
   r4 \times 2/3 {a,8 c f} a4 r |
   \times 2/3 {r8 r a,} \times 2/3 {a c f} \times 2/3 {a4 c,8} \times 2/3 {c f a} |
   \times 2/3 {c4 f,8} \times 2/3 {f a c} f4\f r |
@@ -279,8 +279,8 @@ clarinetTwoMvtIII = \relative c'
   ees4( des8~ des c bes |
   c2.) |
   f,(\p |
-  bes) |
-  f(\cresc |
+  << {s4. s\cresc} {bes2.)} >> |
+  f( |
   des') |
   bes4.( des |
   bes f') |

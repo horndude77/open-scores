@@ -179,8 +179,8 @@ violinOneMvtII = \relative c'
   \times 2/3 {aes16 g f} g8) ees,~ |
   ees \times 2/3 {ces16-.( ees-. aes-.} ces8-.) |
   r8 \times 2/3 {ees,16-.( aes-. ces-.} ees8-.) |
-  r8 \times 2/3 {ces,16-.( ees-. aes-.} ces8-.) |
-  r8 \times 2/3 {ees,16-.(\> aes-. ces-.} beses8) |
+  r8 \times 2/3 {ces,16-.(\< ees-. aes-.} ces8-.) |
+  r8\! \times 2/3 {ees,16-.(\> aes-. ces-.} beses8) |
   beses8( \times 2/3 {aes16-. ces-. fes-.} ees8-.)\! |
   ees8( \times 2/3 {des16-. aes-. f-.} fes8-.) |
   ees8-.(\ppp ees-. \times 2/3 {ees16-. ees-. ees-.} |
@@ -264,7 +264,7 @@ violinOneMvtII = \relative c'
   ees8-.) \times 2/3 {c,16-.( ees-. g-.} c8-.) |
 
   %J
-  r8 \times 2/3 {ces,16-.(\ppp ees-. aes-.} ces8-.) |
+  r8 \times 2/3 {ces,16-.( ees-. aes-.} ces8-.) |
   r8 \times 2/3 {ees,16-.( aes-. ces-.} ees8-.) |
   r8 \times 2/3 {ces,16-.( ees-. aes-.} ces8-.) |
   r8 \times 2/3 {ees,16-.( aes-. ces-.} ees8-.) |
@@ -375,7 +375,7 @@ violinOneMvtIII = \relative c'
   d4.( bes |
   f~ f4) d8-. |
   f4 bes8 d f bes |
-  d8\pp <f d>_\div \repeat unfold 4 <f d> |
+  d8 <f d>^\div\pp \repeat unfold 4 <f d> |
   \repeat unfold 3 {\repeat tremolo 6 <f d> |} |
   <f d>8 r r r4 r8 |
   R2.*8 |
@@ -446,8 +446,8 @@ violinOneMvtIII = \relative c'
   ees) ces'-. aes-. ees'\ff r r |
   r8 ees,,-.\p g-. bes4 r8 |
   R2. |
-  r8 ees,-.\> ees-. ees4.\! |
-  r8 ees-.\> ees-. ees4.\! |
+  r8 ees,-.\> ees-. ees4. |
+  r8 ees-. ees-. ees4. |
   r8 ees-.\pp ees-. ees4 r8 |
   R2. |
   r8 e-. e-. f4. |
@@ -526,7 +526,7 @@ violinOneMvtIII = \relative c'
   ees d |
   ees8) ees-.\cresc ees-. ees-. ees-. ees-. |
   \repeat unfold 3 {\repeat tremolo 6 ees8} |
-  g4 r8 bes4.\p |
+  g4\! r8 bes4.\p |
   bes bes |
   bes 4 r8 r4 r8 |
   r4 r8 <f' bes, d,>4\ff r8 |

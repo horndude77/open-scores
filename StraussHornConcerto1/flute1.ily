@@ -392,7 +392,7 @@ fluteOneMvtIII = \relative c''
   r4 r8 bes,4.\pp |
   bes bes |
   bes4 r8 r4 r8 |
-  r4 r8 bes r r |
+  r4 r8 bes\pp r r |
   ees r r r4 r8 |
   r ees, ees ees ees ees |
   ees r r r4 r8 |

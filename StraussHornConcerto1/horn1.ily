@@ -139,7 +139,7 @@ hornOneMvtIII = \relative c''
   g1~ |
   g4 g8. g16 g2~ |
   g1~ |
-  g4 e8. e16 e2~\cresc |
+  g4 e8.\cresc e16 e2~ |
   e4 g8. g16 g2~ |
   g4 g8. g16 g4 c8. c16 |
   c4 e8. e16 e4\f
@@ -153,7 +153,7 @@ hornOneMvtIII = \relative c''
   \namedCueDuring #"solo" #"solo" #UP { R2.*3 | }
 
   %L
-  r8 g,8\ff c e4.~ |
+  r8 g,8\f c e4.~ |
   e8 e-. e-. e-. e-. e-. |
   d4 d8 d4.~ |
   d8 d-. d-. d4. |
@@ -211,7 +211,7 @@ hornOneMvtIII = \relative c''
   c4. c~ |
   c c~ |
   c4 c8 c4 c8~ |
-  c4 c8~\ff c r r |
+  c4 c8~ c\ff r r |
   R2.*16 |
 
   %P

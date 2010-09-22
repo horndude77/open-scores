@@ -179,7 +179,7 @@ clarinetOneMvtII = \relative c''
   r8 \times 4/6 {\repeat unfold 6 dis32-.} dis16 r |
   r8 \times 4/6 {\repeat unfold 6 cis32-.} cis16 r |
   r8 \times 4/6 {\repeat unfold 6 fis32-.} fis16 r |
-  r8\dim \times 4/6 {\repeat unfold 6 f32-.} f16 r |
+  r8 s1*0\dim \times 4/6 {\repeat unfold 6 f32-.} f16 r |
   r8 \times 4/6 {\repeat unfold 6 f32-.} f16 r |
   r8 \times 4/6 {\repeat unfold 6 g32-.} g16 r |
   r8 \times 4/6 {\repeat unfold 6 f32-.} f16 r |
@@ -198,7 +198,7 @@ clarinetOneMvtII = \relative c''
   r8 bes\pp r |
   r d-.\p\> e-. |
   d\! r \times 2/3 {a16-.(\pp a-. a-.} |
-  d,8-.) r \times 2/3 {e16-.( f-. g-.} |
+  d,8-.) r \times 2/3 {e16-.(\pp f-. g-.} |
   f8-.) r r |
   R4. |
 
@@ -228,8 +228,8 @@ clarinetOneMvtIII = \relative c'
   R1 |
   r4 \times 2/3 {e8\p e bes'} bes4 r |
   R1 |
-  r4 \times 2/3 {e,8 e bes'} bes4 r |
-  r4 \times 2/3 {c,8\justCresc f a} c4 r |
+  r4 \times 2/3 {e,8 e bes'} bes4 r\cresc |
+  r4 \times 2/3 {c,8 f a} c4 r |
   r4 \times 2/3 {c,8 f a} c4 r |
   \times 2/3 {r8 r c,} \times 2/3 {c f a} \times 2/3 {c4 f,8} \times 2/3 {f a c} |
   \times 2/3 {f4 a,8} \times 2/3 {a c f} a4\f r |
@@ -322,8 +322,8 @@ clarinetOneMvtIII = \relative c'
   ees4( des8~ des c bes |
   c2.) |
   f,(\p |
-  bes) |
-  f(\cresc |
+  << {s4. s\cresc} {bes2.)} >> |
+  f( |
   des') |
   bes4.( des |
   bes f') |

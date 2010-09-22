@@ -53,7 +53,7 @@ hornMvtI = \relative c''
   d4\! d(\< bes f'8 ees) |
   d2.(\> c4) |
   bes\! r r2 |
-  R1*11 | \break
+  R1*11 |
 
   \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   \once \override Staff.DynamicText #'X-offset = #'-1.5
@@ -368,7 +368,9 @@ hornMvtIII = \relative c'
     \once \override Staff.DynamicText #'X-offset = #'-1.5
     f'2->\ffMaestoso ees8( d) |
   c8( bes) bes4~ bes8 d( c bes) |
-  bes( d,) d4~ d8\justDim c bes g |
+  % The diminuendo shouldn't end here. This is done to work around
+  % lilypond issue 1259.
+  bes( d,) d4~ d8\justDim c bes g\! |
   f2. ees4 |
   d4 f''2->\f\> ees8( d) |
   c( bes) bes4~\! bes8 d( c bes) |

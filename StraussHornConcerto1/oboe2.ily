@@ -225,7 +225,7 @@ oboeTwoMvtIII = \relative c''
   %O
   R2.*8 |
   ees,2.(\p |
-  aes)\cresc |
+  << {s4. s\cresc} {aes2.)} >> |
   ees( |
   ces') |
   aes2.~ |

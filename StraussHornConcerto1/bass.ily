@@ -192,7 +192,7 @@ bassMvtII = \relative c,
   \repeat unfold 3 {\times 2/3 {ees16-. ees-. ees-.} r8 \times 2/3 {r16 ees-. ees-.} |}
 
   \key aes \minor
-  \times 2/3 {aes,16-.\ppp aes-. aes-.} r8 \times 2/3 {r16 aes-. aes-.} |
+  \times 2/3 {aes,16-.\pp aes-. aes-.} r8 \times 2/3 {r16 aes-. aes-.} |
   aes8 \times 2/3 {r16 aes aes} aes8 |
   aes r aes |
   r aes r |
@@ -267,55 +267,22 @@ bassMvtIII = \relative c,
   R2. |
 
   %M
-  R2. |
-  a4.( f) |
-  bes( f) |
-  bes( f) |
-  c'2.~ |
-  c |
-  b4.( g |
-  a b) |
-  c( g) |
-  c( g) |
-  b( g) |
-  c( ees,) |
-  f2.~ |
-  f |
-  r4. f'( |
-
-  %NOTE: In the source score I'm assuming the bass joins the lower cello line
-  %here. The score is ambiguous.
-  bes,4) r8 r4. |
-  ges'2.~\ppp | \repeat unfold 3 ges~ | ges |
-  bes( |
-  ces |
-  bes4. aes) |
-  \repeat unfold 3 ges2.~ | ges |
-  bes~ | bes |
-  ees,( |
-  des |
-  c4.( c' |
-  bes4.~ bes4 aes8) |
-  g2.( | ges |
-  f8) r r r ges-.\pp ges-. |
-  f8 r r r4. |
-  r4. r8 ges'-. ges-. |
-  f r r r4. |
-  R2.*20 |
-  bes,,2.~\mf | bes~ | bes~ |
+  R2.*60 |
+  bes2.~\mf | bes~ | bes~ |
   bes8 r r r4. |
   R2.*15 |
   r4. ces4^\pizz r8 |
   bes4 r8 r4. |
   bes4\< r8 r4. |
-  bes4 r8 bes4 r8 |
-  bes4\! r8 r4. |
+  bes4 r8 bes4\! r8 |
+  bes4 r8 r4. |
 
+  %N
   %4/4
   r4 ees8.\pp^\arco ees16 ees4 r4 |
   R1 |
   r4 g,2.(\< |
-  g4\! aes8.) g16-. aes4\fermata
+  g4 aes8.)\! g16-. aes4\fermata
 
   %6/8
   r8 aes'-.\ff g-. |
@@ -386,9 +353,9 @@ bassMvtIII = \relative c,
   r4 bes\p^\pizz b r |
   c\< r r d\f |
   ees b\dim c g |
-  aes g aes f |
+  aes g^\rit aes f |
   bes\p r r2 |
-  bes4 r r bes' |
+  bes4 r r bes'^\rit |
 
   %R
   %6/8
@@ -398,11 +365,11 @@ bassMvtIII = \relative c,
   ees4 r8 r4. |
   R2.*6 |
   r4. bes4\p^\pizz r8 |
-  b4 c8\f^\arco c c c |
+  b4 c8\f\<^\arco c c c |
   c c c c c c |
   ces\ff r r r4. |
   bes4\p^\pizz r8 r4. |
-  b4 c8\f^\arco c c c |
+  b4 c8\f\<^\arco c c c |
   c c c c c c |
   ces\ff r r r4. |
   R2.*5 |

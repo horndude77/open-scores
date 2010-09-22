@@ -242,7 +242,7 @@ violaMvtII = \relative c
   <e a e'>16-. q-. r8 \times 2/3 {r16 <a e' a>-. q-.} |
   <a fis' a>16-. q-. r8 \times 2/3 {r16 <b fis'>-. q-.} |
   \times 2/3 {<b e>16 q q} r8 \times 2/3 {r16 <aes d> q} |
-  \times 2/3 {<aes ees'>16 q q} r8 \times 2/3 {r16\justDim q q} |
+  \times 2/3 {<aes ees'>16 q q} r8 \times 2/3 {r16\dim q q} |
   \times 2/3 {q16 q q} r8 \times 2/3 {r16 aes aes} |
   \times 2/3 {aes16 aes aes} r8 \times 2/3 {r16 aes aes} |
   \times 2/3 {bes16 bes bes} r8 \times 2/3 {r16 g g} |
@@ -301,7 +301,7 @@ violaMvtIII = \relative c
   d1~ |
   d2. d8. d16 |
   d1~ |
-  d2. d8. d16 |
+  d2. d8.\cresc d16 |
   ees4 \times 2/3 {ees8 g bes} ees4 bes8. bes16 |
   bes4 \times 2/3 {g8 bes ees} g4 ees8. ees16 |
   \times 2/3 {ees4 ees,8} \times 2/3 {ees g bes} \times 2/3 {ees4 g,8} \times 2/3 {g bes ees} |
@@ -430,7 +430,7 @@ violaMvtIII = \relative c
   r4 ees,8.^\arco\pp g16 bes4 r |
   R1 |
   r4 f2.(\< |
-  f4~\! f8.) f16-. f4\fermata
+  f4~ f8.)\! f16-. f4\fermata
 
   %6/8
   r8 f'-.\ff g-. |
@@ -565,10 +565,10 @@ violaMvtIII = \relative c
   r2 <ees g, c,>4\ff^\arco r |
   r <g, ees>\p^\arco q r |
   q\< r r aes\f |
-  g f ees\dim ees |
+  g f\dim ees ees |
   ees ees^\rit ees ees |
   \times 2/3 {r4 bes'8(\p\<} \times 2/3 {a bes ees)} \times 2/3 {g(\> f ees} \times 2/3 {d ees c)} |
-  bes2. bes4^\rit\pp |
+  bes2.\! bes4^\rit |
 
   %R
   bes4 r8 r4 r8 |
@@ -579,11 +579,10 @@ violaMvtIII = \relative c
   R2.*2 |
   r4 r8 <bes, f' d'>4\ff r8 |
   <bes g' ees'>4 r8 r4 r8 |
-  \repeat unfold 2
-  {
-    r4 r8 r4 g'8-.\pp |
-    g-. r r r4 r8 |
-  }
+  r4 r8 r4 g'8-.\pp |
+  g-. r r r4 r8 |
+  r4 r8 r4 g8-. |
+  g-. r r r4 r8 |
   R2.*2 |
   r4 r8 aes,4^\pizz\p r8 |
   \repeat unfold 2
@@ -602,9 +601,9 @@ violaMvtIII = \relative c
   aes) aes( |
   g) g( |
   f2.)( |
-  g8) ees ees s1*0\< \repeat tremolo 3 ees8 |
+  g8) ees\cresc ees \repeat tremolo 3 ees8 |
   \repeat unfold 3 {\repeat tremolo 6 ees8 |}
-  ees'4 r8 ees4.\p |
+  ees'4\! r8 ees4.\p |
   ees ees |
   ees4 r8 r4 r8 |
   r4 r8 <bes f' d'>4\ff r8 |
@@ -617,7 +616,7 @@ violaMvtIII = \relative c
   \repeat unfold 4 {g-. f-. f-.} |
   g\mf r r r4 r8 |
   R2.*2 |
-  <bes, f' d'>4 r8 r4 r8 |
+  <bes, f' d'>4\ff r8 r4 r8 |
   <bes g' ees'>4 r8 r4 r8 |
 }
 

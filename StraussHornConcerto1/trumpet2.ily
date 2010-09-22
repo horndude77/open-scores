@@ -118,7 +118,7 @@ trumpetTwoMvtIII = \relative c'
   g2 r |
   r r4 g8. g16 |
   g2 r |
-  r4 g8. g16 g2~ |
+  r4 g8.\cresc g16 g2~ |
   g4 c8. c16 c2~ |
   c4 c8. c16 c4 e8. e16 |
   e4 g8. g16 g4\f r |
@@ -127,7 +127,7 @@ trumpetTwoMvtIII = \relative c'
   R2.*16 |
 
   %L
-  r8 c,-.\ff e-. g4.~ |
+  r8 c,-.\f e-. g4.~ |
   g8 c,-. c-. c-. c-. c-. |
   c4 c8 c4.~ |
   c8 c c c4. |
@@ -203,8 +203,8 @@ trumpetTwoMvtIII = \relative c'
   %Q
   %4/4
   c4 r r2 |
-  r2 c8\ff r r4 |
-  r2 e8\ff r r4 |
+  r2 c8\f r r4 |
+  r2 e8 r r4 |
   R1*2 |
   r2 c8\f r r4 |
   R1*4_\rit |

@@ -135,7 +135,7 @@ celloMvtI = \relative c,
   g8 r r4 r2 |
   \times 2/3 {e4 r8} r4 r2 |
   R1 |
-  aes,4(\pp\justCresc g aes) r |
+  aes,4(\pp\cresc g aes) r |
   r aes-> g-> f-> |
   g-> aes'\f g c, |
   f r r2 |
@@ -166,7 +166,7 @@ celloMvtI = \relative c,
   f bes8. d16 f4 d, |
   c2 f |
   bes,2. bes4~ |
-  bes des8.\justDim f16 bes4 bes, |
+  bes des8.\dim f16 bes4 bes, |
   aes2 ges4 f |
   ges1~\p |
   ges4 ges'( f fes) |
@@ -236,9 +236,9 @@ celloMvtII = \relative c
     {
       s4.*2 |
       s4.\< |
-      s\! |
-      s |
       s\> |
+      s |
+      s\! |
       s\ppp |
     }
   >> \oneVoice r8 |
@@ -260,7 +260,7 @@ celloMvtII = \relative c
     }
   >> r8 |
   <<
-    {s4. | s\justCresc | }
+    {s4. | s\cresc | }
     <<
       { f'4. | f | }
       \\
@@ -320,9 +320,9 @@ celloMvtII = \relative c
       s4.\ppp |
       s4.*9 |
       s4.\< |
-      s\! |
-      s |
       s\> |
+      s |
+      s\! |
       s\ppp |
     }
   >> \oneVoice r8 |
@@ -346,13 +346,13 @@ celloMvtII = \relative c
   <cis a'>16-. <cis a' e'>-. r8 \times 2/3 {r16 cis-. cis-.} |
   dis16-. <dis b' fis'>16-. r8 \times 2/3 {r16 <dis b' fis'>-. q-.} |
   \times 2/3 {<e b'>16 q q} r8 \times 2/3 {r16 q q} |
-  \times 2/3 {<ees c'>16 q q} r8\justDim \times 2/3 {r16 q q} |
+  \times 2/3 {<ees c'>16 q q} r8 \times 2/3 {r16\dim q q} |
   \times 2/3 {q q q} r8 \times 2/3 {r16 ees ees} |
   \times 2/3 {ees ees ees} r8 \times 2/3 {r16 ees ees} |
   \times 2/3 {ees ees ees} r8 \times 2/3 {r16 ees ees} |
 
   \key aes \minor
-  \times 2/3 {ees16\p ees ees} r8 \times 2/3 {r16 ees ees} |
+  \times 2/3 {ees16\pp ees ees} r8 \times 2/3 {r16 ees ees} |
   ees8 \times 2/3 {r16 ees ees} ees8 |
   ees r ees |
   r ees \clef tenor ees'16(^\arco_\conEspressione f) |
@@ -363,18 +363,18 @@ celloMvtII = \relative c
   des ees) f8-.( f-. |
   f4-.) f8 |
   aes4 f8 |
-  des4 des16( ees |
+  des4 des16(\cresc ees |
   f g aes8) g( |
   c4) \clef treble aes16(\f bes |
   c d) ees8-. b[( |
-  c]) g4~\justDim |
+  c]) g4~\dim |
   g8\p r r |
   R4. |
   \clef bass
   c,,4.\pp |
 
   %I
-  s1*0^\div\ppp
+  s1*0^\div
   <<
     {
       aes4.( |
@@ -427,7 +427,7 @@ celloMvtII = \relative c
       s4.\< |
       s\! |
       s |
-      s\> |
+      s |
       s\ppp |
     }
   >> \oneVoice r8 |
@@ -447,7 +447,7 @@ celloMvtIII = \relative c
   f1~ |
   f2. f8. f16 |
   fes1~ |
-  fes2. fes8.\justCresc fes16 |
+  fes2. fes8.\cresc fes16 |
   ees2. ees8. ees16 |
   ees2. ees8. ees16 |
   \times 2/3 {ees4 bes'8} \times 2/3 {bes ees g} \times 2/3 {bes4 ees,8} \times 2/3 {ees g bes} |
@@ -461,10 +461,10 @@ celloMvtIII = \relative c
   R2. |
   \repeat unfold 2 {r8 bes-. bes-. bes4. |}
   \repeat unfold 2 {g2.( | aes) |}
-  g4 r8 r4 ees'8 |
+  g4 r8 r4 ees'8\mf |
   aes,4 r8 r4 r8 |
-  r4 f'8-. bes,4.~ |
-  bes( ees8)\ff ees-. g-. |
+  r4 f'8-. bes,4.~\> |
+  bes( ees8) ees-.\ff g-. |
 
   %L
   bes4.~ bes8 g-. c-. |
@@ -491,7 +491,7 @@ celloMvtIII = \relative c
   R2. |
 
   %M
-  a4.(\p f) |
+  a4.(\pp f) |
   a( f) |
   bes( f) |
   bes( f) |
@@ -561,15 +561,15 @@ celloMvtIII = \relative c
   ces4. ces4^\pizz r8 |
   bes4 r8 r bes-.^\arco\< bes-. |
   bes4 r8 r bes-. bes-. |
-  bes4 r8 bes4^\pizz r8 |
-  bes4\! r8 r4 r8 |
+  bes4 r8 bes4^\pizz\! r8 |
+  bes4 r8 r4 r8 |
 
   %N
   %4/4
   r4 ees8.\pp^\arco ees16 ees4 r |
   R1 |
   r4 g,2.~(\< |
-  g4^\rit aes8.) g16-. aes4\fermata
+  g4 aes8.)\! g16-. aes4\fermata
 
   %6/8
   \clef tenor
@@ -604,9 +604,10 @@ celloMvtIII = \relative c
   ees |
   r4 r8 ees'4.( |
   aes4) r8 r4 r8 |
-  s1*0^\div\ppp
   <<
+    \new Voice
     {
+      \voiceOne
       \repeat unfold 4 {b,2.~ |}
       b |
       gis( |
@@ -623,8 +624,8 @@ celloMvtIII = \relative c
       aes( |
       g) |
     }
-    \\
     {
+      \voiceTwo
       \repeat unfold 4 {e,2.~ |}
       e |
       gis( |
@@ -641,7 +642,12 @@ celloMvtIII = \relative c
       f4.~( f4 fes8 |
       ees2.) |
     }
-  >>
+    {
+      s2.\ppp |
+      s2.*18 |
+      s2.\> |
+    }
+  >> \oneVoice
   s1*0\pp \repeat tremolo 12 f16 |
 
   %O
@@ -664,8 +670,7 @@ celloMvtIII = \relative c
     }
     {
       s2.\p |
-      s |
-      s\cresc |
+      s4. s\cresc |
     }
   >>
   \repeat tremolo 6 f16 f8\ff r r |
@@ -708,6 +713,7 @@ celloMvtIII = \relative c
   f e |
   f fis |
 
+  %Q
   %4/4
   g4 r r2 |
   r a,4\f r |
@@ -717,11 +723,12 @@ celloMvtIII = \relative c
   r2 a4\f^\arco r |
   r bes\p^\pizz b r |
   c\< r r d\f |
-  ees\justDim b c g |
-  aes^\rit g aes f |
+  ees b\dim c g |
+  aes g^\rit aes f |
   bes4\p r r2 |
   bes4 r r bes'^\rit |
 
+  %R
   %6/8
   ees,4 r8 r4 r8 |
   r4 r8 r4 c'8-.\pp^\arco |
@@ -741,7 +748,7 @@ celloMvtIII = \relative c
   \repeat tremolo 6 c8 |
   ces8-.\ff r r r4 r8 |
   bes4\p^\pizz r8 r4 r8 |
-  b4 c8 \repeat tremolo 3 c8 |
+  b4 c8\f\< \repeat tremolo 3 c8 |
   \repeat tremolo 6 c8 |
   ces8-.\ff r r r4 r8 |
   bes2.(\p |
@@ -749,11 +756,11 @@ celloMvtIII = \relative c
   f) bes( |
   ees,) g4( c8 |
   bes2. |
-  ees,4) r8 g4.(\justCresc |
+  ees,4) r8 g4.(\cresc |
   aes a |
-  bes) des(\! |
+  bes) des( |
   c ces |
-  bes4) r8 bes4.\p |
+  bes4)\! r8 bes4.\p |
   bes bes |
   bes4 r8 r4 r8 |
   r4 r8 <bes f' d'>4 r8 |
@@ -762,7 +769,7 @@ celloMvtIII = \relative c
   r4 r8 bes'\pp^\pizz r r |
   ees,8 r r r4 r8 |
   R2.*4 |
-  r4 r8 r bes'-.\p\justCresc^\arco bes-. |
+  r4 r8 r bes'-.\p\cresc^\arco bes-. |
   \repeat unfold 4 {ees-. bes-. bes-.} |
   ees\mf r r r4 r8 |
   R2.*2 |

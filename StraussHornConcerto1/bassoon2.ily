@@ -231,14 +231,14 @@ bassoonTwoMvtIII = \relative c,
   ees'2.(\p\< |
   aes |
   ees)\> |
-  ces4.~( ces4 aes8 |
+  ces4.~(\! ces4 aes8 |
   ees2. |
   ees'4.~ ees4 des8) |
   des4( ces8~ ces bes aes |
   bes2.) |
   aes'~\pp |
+  << {s4. s\cresc} {aes2.~} >> |
   aes~ |
-  aes~\cresc |
   aes~ |
   aes4. aes~ |
   aes4. aes~ |

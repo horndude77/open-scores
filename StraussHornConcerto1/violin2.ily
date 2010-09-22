@@ -214,7 +214,7 @@ violinTwoMvtII = \relative c'
   bes4) r8 |
   r8 \times 2/3 {bes16-.( des-. f-.} bes8-.) |
   r8 \times 2/3 {aes,16-.(\cresc des-. f-.} aes8-.) |
-  \times 2/3 {aes,16-.(\cresc des-. f-.} aes8-.) \times 2/3 {g,16-.( c-. e-.} |
+  \times 2/3 {aes,16-.( des-. f-.} aes8-.) \times 2/3 {g,16-.( c-. e-.} |
   f8-.) \times 2/3 {aes,16-.( c-. f-.} aes8-.)\mf |
   \times 2/3 {aes,16-.( c-. ees-.} g8-.) f^\pizz |
   e8 r r |
@@ -283,7 +283,7 @@ violinTwoMvtII = \relative c'
   \times 2/3 {des16 des des} r8 \times 2/3 {r16 des des} |
 
   \key aes \minor
-  \times 2/3 {c16\ppp c c} r8 \times 2/3 {r16 c c} |
+  \times 2/3 {c16\pp c c} r8 \times 2/3 {r16 c c} |
   c8 \times 2/3 {r16 c c} c8 |
   \times 2/3 {c16-.(^\arco ees-. aes-.} c8-.) \times 2/3 {c,16-.( ees-. aes-.} |
   c8-.) \times 2/3 {aes,16-.( c-. ees-.} aes8-.) |
@@ -314,8 +314,8 @@ violinTwoMvtII = \relative c'
   ees4) des,8( |
   ces) \times 2/3 {aes16-.( ces-. ees-.} aes8-.) |
   r8 \times 2/3 {ces,16-.( ees-. aes-.} ces8-.) |
-  r8 \times 2/3 {aes,16-.( ces-. ees-.} aes8-.) |
-  r8 \times 2/3 {ces,16-.( ees-. aes-.} <ces, ges'>8-.)^\div |
+  r8 \times 2/3 {aes,16-.(\< ces-. ees-.} aes8-.) |
+  r8\! \times 2/3 {ces,16-.( ees-. aes-.} <ces, ges'>8-.)^\div |
   <ces~ ges'>^(\( \times 2/3 {<ces fes>16) <fes aes>-. <aes ces>-.} <ges c>8-.\) |
   <ges aes~>8( \times 2/3 {<f aes>16-. <des f>-. <aes des>-.} q8) |
   <aes~ c>(\ppp <aes ces> \times 2/3 {<g bes>16 <aes ces> <bes des>} |
@@ -333,7 +333,7 @@ violinTwoMvtIII = \relative c'
 {
   %K
   \key ees \major
-  aes4\pp^\arco |
+  aes4\p^\arco |
   aes1~ |
   aes2. aes8. aes16 |
   aes1~ |
@@ -358,7 +358,7 @@ violinTwoMvtIII = \relative c'
   ees4 r8 r4 g8\mf |
   aes4 r8 r4 r8 |
   r4 ees8-. d4.~(\> |
-  d ees8) ees-.\mf g-. |
+  d ees8) ees-.\ff g-. |
 
   %L
   bes4.~ bes8 g-. c-. |
@@ -429,7 +429,7 @@ violinTwoMvtIII = \relative c'
   r4 <g, ees'>8.\pp^\arco q16 q4 r |
   R1 |
   r4 b2.~(\< |
-  b4\! c8.) b16-. c4\fermata
+  b4 c8.)\! b16-. c4\fermata
 
   %6/8
   r8 f-.\ff g-. |
