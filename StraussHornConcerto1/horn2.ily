@@ -243,7 +243,7 @@ hornTwoMvtIII = \relative c'
   f8\ff r r r4. |
   R2.*28 |
   b4\ff r8 r4. |
-  c4\ff r8 r4. |
+  c4 r8 r4. |
 }
 
 hornTwo = {\hornTwoMvtI \hornTwoMvtII \hornTwoMvtIII}

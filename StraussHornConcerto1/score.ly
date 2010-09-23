@@ -31,6 +31,11 @@
   \mergeRests
 }
 
+\paper
+{
+  short-indent = 5\mm
+}
+
 instrument = "Orchestra"
 
 \include "header.ily"
