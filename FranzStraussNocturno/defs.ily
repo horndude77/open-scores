@@ -13,10 +13,10 @@ outline =
 
   \override TextSpanner #'bound-details #'left #'text = "accel."
   s1\startTextSpan |
-  s1 |
+  s16*15 s16\stopTextSpan |
 
   \tempo "Tempo I"
-  s1\stopTextSpan
+  s1
   s1*8 |
 
   \override TextSpanner #'bound-details #'left #'text = "rit."
