@@ -4,7 +4,7 @@ violaOneMvtI = \relative c'
 {
   \clef alto
   \key ees \major
-  bes4\f bes bes r8 g'16( bes) |
+  bes4\f bes bes r8 g'16(\p bes) |
   ees8-. d-. c-. bes-. aes-. g-. f-. ees-. |
   d32(\f ees f8.) f f16 f4 r8 f16(\p g) |
   aes8-. g-. f-. ees-. d-. f-. ees-. d-. |
@@ -33,7 +33,7 @@ violaOneMvtI = \relative c'
   e1 |
   r8 ees4\fp ees8 r ees4\fp ees8 |
   d8 r r4 bes'8 r r4 |
-  a4 r8 f e( g a bes |
+  a4 r8 f\f e( g a bes |
   a8) c, c c c2~ |
   c4. e8\p << {f8( e f e | f4)} \\ {c2~ | c4} >> c4( d ees) |
   d8 bes[-.\p bes-. bes]-. r bes-. bes-. bes-. |
@@ -291,7 +291,7 @@ violaOneMvtIII = \relative c'
   <ees g,>2~\p |
   <ees g,>4 bes'\f |
   c8( bes) aes-. aes-. |
-  g4 ees\f |
+  g4 ees\p |
   ees4. d8 |
   ees4 r8 d |
   ees4 r8 ees |

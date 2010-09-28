@@ -50,9 +50,10 @@ violinMvtI = \relative c'
   c4 r r8 f-. f-. f-. |
   f4 r r2 |
   R1 |
+  s1*0\p
   \repeat unfold 2
   {
-    bes,8(\p d f aes) g( ees c a') |
+    bes,8( d f aes) g( ees c a') |
     bes( f) r d f( ees) r a, |
   }
   bes\f bes' <bes, d,> <bes d,> <bes d,>4 r |
@@ -74,7 +75,7 @@ violinMvtI = \relative c'
   }
   aes16( g f g aes8) r aes16( g f g aes8) r |
   aes16( g f g) f( ees d es) d( c bes c) bes( aes g f) |
-  <ees g,>4\f <ees g,>8. <ees g,>16 <ees g,>4 r8 bes''16( aes) |
+  <ees g,>4\f <ees g,>8. <ees g,>16 <ees g,>4 r8 bes''16(\p aes) |
   g8-. f-. ees-. d-. c-. bes-. aes-. g-. |
   f32(\f g aes8.) aes aes16 aes4 r8 aes'16(\p g) |
   f8-. ees-. d-. c-. bes-. aes-. g-. f-. |
@@ -144,7 +145,7 @@ violinMvtII = \relative c''
   f8.( ees32 d c8) |
   cis( d ees) |
   d16( c bes a g f) |
-  f'4. |
+  f'4.\f |
   d4 \appoggiatura f32 ees16( d32 c) |
   bes8( ees g) |
   bes8.( a32 g f8) |
@@ -155,7 +156,7 @@ violinMvtII = \relative c''
   \times 2/3 {c16( ees g)} bes,8 c\trill |
   bes4 r8 |
   R4.*4 |
-  bes8( ees g) |
+  bes8(\p ees g) |
   bes8.( a32 g f8) |
   R4.*2 |
   c8( e g) |

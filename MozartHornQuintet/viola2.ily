@@ -12,7 +12,7 @@ violaTwoMvtI = \relative c
   g1 |
   c2( bes) |
   bes4 r bes2\f |
-  bes2( aes) |
+  bes2(\p aes) |
   g1 |
   c2( bes) |
   bes4 r r8 c8( bes aes) |
@@ -282,7 +282,7 @@ violaTwoMvtIII = \relative c'
   ees4. d8 |
   ees4 r |
   bes2( |
-  c4 ees\f |
+  c4) ees\f |
   ees4. d8 |
   ees4 g,\p |
   c8( bes aes4) |
@@ -301,7 +301,7 @@ violaTwoMvtIII = \relative c'
   bes2(\fp |
   c8) r r4 |
   R2*4 |
-  ees,4( f) |
+  ees,4(\p f) |
   f2~ |
   f8 g( f ees) |
   d4 r |

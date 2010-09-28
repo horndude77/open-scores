@@ -8,7 +8,7 @@ celloMvtI = \relative c,
   R1 |
   bes'4\f bes bes r |
   R1 |
-  ees2( bes) |
+  ees2(\p bes) |
   c( g) |
   aes( bes) |
   ees4 r bes4.(\f c16 d) |
@@ -74,7 +74,7 @@ celloMvtI = \relative c,
   R1 |
   ees,4\f ees ees r |
   R1 |
-  bes'4 bes bes r |
+  bes'4\f bes bes r |
   R1 |
   ees2(\p bes) |
   c( g) |
@@ -227,7 +227,7 @@ celloMvtII = \relative c
   r16. ees'32\p f8 f, |
   g4\f ees8 |
   d4 r8\fermata |
-  r16. ees'32\p f8 f, |
+  r16. ees'32 f8 f, |
   bes8 r f''( |
   bes,) r f( |
   bes,) r16 f'-. f-. f-. |
@@ -241,7 +241,7 @@ celloMvtIII = \relative c
   \clef bass
   \key ees \major
   r4
-  ees( aes,) |
+  ees(\p aes,) |
   bes8( aes g ees') |
   d( bes ees aes,) |
   bes-. r d4 |
@@ -352,7 +352,7 @@ celloMvtIII = \relative c
 
   %repeat
   r |
-  g''2( |
+  g''2(\f |
   c,4) r |
   ees2( |
   aes,4) r |
