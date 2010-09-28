@@ -68,7 +68,7 @@ bass = \relative c,
   e'8 fis gis4 |
   a8( fis gis ais |
   b) r b,4\> |
-  e4. r8 |
+  e4.\! r8 |
   \repeat volta 2
   {
     \repeat unfold 2
@@ -89,7 +89,7 @@ bass = \relative c,
   }
   b'4. r8 |
   R2 |
-  r8 fis'8 gis a |
+  r8 fis'8 gis ais |
   b4( b,8) r |
   b4. r8 |
   R2 |
@@ -247,6 +247,129 @@ bass = \relative c,
   R2.*6 |
   b'2.( |
   e8) e'( cis b gis e |
-  d) d'-. \repeat tremolo 4 e |
+  dis) dis'-. \repeat tremolo 4 dis |
+  cis, cis' \repeat tremolo 4 cis |
+  gis, gis \repeat tremolo 4 gis' |
+  cis, cis' \repeat tremolo 4 cis |
+  gis,8\f gis' gis, gis' gis, gis' |
+  cis, cis' \repeat tremolo 4 cis |
+  cis cis, \repeat unfold 2 {cis16( bis) cis8-.} |
+  cis2.-> |
+  a4\p r r |
+  a r r |
+  d r r |
+  d r r |
+  e r r |
+  e r r |
+  a, r r |
+  e'2 e4 |
+  \repeat unfold 2
+  {
+    a,8 r a r a r |
+    e'4 r r |
+  }
+  a,4 r r |
+  d r r |
+  e2.( |
+  a,4) r r |
+  a r r |
+  d r r |
+  e r e |
+  a8\ff r a r a r |
+  e r e r e,4-> |
+  e'4\pp r r |
+  e, r r |
+  a'8\ff r a r a r |
+  e r e r e,4-> |
+  a4\pp r r |
+  a r r |
+  \repeat tremolo 3 {c8 c'} |
+  \repeat tremolo 3 {g,8 c'} |
+  \repeat tremolo 2 {c,,8 c'} c c' |
+  \repeat tremolo 2 {g,8 c'} g,4 |
+  c4\p r r |
+  f, r r |
+  g r g |
+  g g c |
+  c r c |
+  f, f' r8 f, |
+  g4 r g |
+  g'8 r g, r c r |
+  c16\ff d e f g a bes g a g a f |
+  e f g a b c d c b c g e |
+  c d e f g a bes g f c a f |
+  \repeat tremolo 6 c'8 |
+  \repeat tremolo 6 c8 |
+  c2.~ |
+  c~ |
+  c~ |
+  c |
+  b( |
+  a |
+  b8 r b r b r |
+  e4) r r |
+  %come prima
+  e4\p r r |
+  a, r r |
+  b8 r b r b r |
+  e4 r r |
+  e r r |
+  a, r r |
+  b8 r b r b r |
+  e4 r e, |
+  e'8\ff r e r e r |
+  a,4 a a |
+  r8 b r b r b | |
+  \repeat tremolo 4 e8 e,4 |
+  e'-. e-. e-. |
+  a,-. a-. a-. |
+  r8 b r b r b |
+  \repeat tremolo 4 e8 e,4 |
+  b'4\p r ais->( |
+  b) r b |
+  %end come prima
+  \repeat unfold 3 {b8 r} |
+  \repeat unfold 3 {b8 r} |
+  b4 r r |
+  e e r |
+  g,2.( |
+  g)-> |
+  \repeat tremolo 6 b8 |
+  \repeat tremolo 6 b8 |
+  \repeat tremolo 6 e,8 |
+  \repeat tremolo 6 a8 |
+  \repeat tremolo 6 b8 |
+  g2.->\f |
+  cis2(\> fis,8 a) s1*0\! |
+  \repeat tremolo 6 b8 |
+  s1*0\< \repeat tremolo 6 b8 |
+  b4\f b b' |
+  \repeat unfold 2
+  {
+    e,8 r e r e r |
+    e r r4 e8 r |
+    r b \repeat tremolo 4 b8 |
+    r b \repeat tremolo 4 b8 |
+  }
+  e4 r r |
+  d2-> cis8( b) |
+  a8-. r a'-. r r4 |
+  a,2->\< gis8. gis16 |
+  fis8. fis'16 e4 cis |
+  b2.~\p |
+  b4 r r |
+  \repeat tremolo 6 b8 |
+  b4 r r |
+  e8 r cis r fis, r |
+  b r b r b r |
+  e r cis r fis, r |
+  b r b r b r |
+  \repeat tremolo 4 gis8 d8 gis |
+  b8 b16 b \repeat tremolo 4 b8 |
+  b4. r8 r4 |
+  R2. |
+  b'8\ff b16 b \repeat tremolo 4 b8 |
+  \repeat tremolo 6 e,8 |
+  e8-. b'-. e,-. b'-. e,-. b'-. |
+  e,8. e16 e4 r |
 }
-

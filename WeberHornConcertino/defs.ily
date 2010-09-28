@@ -6,6 +6,7 @@ arco = \markup{\italic "arco"}
 outline =
 {
   \set tupletSpannerDuration = #(ly:make-moment 1 8)
+  %{
   \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (1 1))
                                                    ((1 . 8) . (4))
                                                    ((1 . 12) . (3 3))
@@ -21,6 +22,7 @@ outline =
                                                    ((1 . 8) . (4 4))
                                                    ((1 . 12) . (3 3 3 3))
                                                    ((1 . 24) . (3 3 3 3 3 3 3 3)))
+  %}
   \tempo "Adagio" 4=72
   \time 4/4
   s1*4 | \bar "||"
@@ -29,6 +31,7 @@ outline =
   s2.*23 | \bar "||"
   \tempo 4=92
   \time 2/4
+  \set Score.beamExceptions = #'((end . (((1 . 8) . (4)) ((1 . 12) . (3 3)) ((1 . 24) . (3 3 3 3)) ((1 . 32) . (4 4 4 4)))))
   \repeat volta 2 { s2*8 }
   \repeat volta 2 { s2*8 }
   s2*8 |
@@ -50,7 +53,9 @@ outline =
   s1 | \bar "|"
   s1*30 | \bar "||"
 
+  \tempo "Alla Polacca"
   \time 3/4
+  \set Score.beamExceptions = #'((end . (((1 . 8) . (6)) ((1 . 12) . (3 3 3)) ((1 . 24) . (3 3 3 3 3 3)) ((1 . 32) . (4 4 4 4 4 4)))))
   s2.*163 | \bar "|."
 }
 
