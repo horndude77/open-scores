@@ -1,4 +1,4 @@
-\version "2.13.16"
+\version "2.13.34"
 
 \include "defs.ily"
 \include "bass.ily"
@@ -8,6 +8,7 @@ instrument = "Basses and Cellos"
 \score { \new Staff { << \bassMvtI \outlineMvtI >> } }
 \score
 {
+  \new StaffGroup
   <<
     \new Staff { \celloSoloMvtII }
     \new Staff { << \bassMvtII \outlineMvtII >> }

@@ -1,4 +1,4 @@
-\version "2.13.16"
+\version "2.13.34"
 
 \include "defs.ily"
 
@@ -575,6 +575,7 @@ bassMvtIV = \relative c
     \new Staff
     \with
     {
+      \remove "Time_signature_engraver"
       alignAboveContext = #"basses"
       midiInstrument = "string ensemble 1"
       instrumentName = \markup {\center-column {Solo Cello}}
@@ -713,6 +714,7 @@ bassMvtIV = \relative c
     \new Staff
     \with
     {
+      \remove "Time_signature_engraver"
       alignAboveContext = #"basses"
       midiInstrument = "string ensemble 1"
       instrumentName = \markup {\center-column {Solo Cello}}
