@@ -1,5 +1,6 @@
 \version "2.13.16"
 
+\include "merge-rests.ily"
 \include "defs.ily"
 \include "flute.ily"
 \include "oboe1.ily"
@@ -23,6 +24,11 @@ instrument = "Orchestra"
   system-separator-markup = \slashSeparator
 }
 
+\layout
+{
+  \mergeRests
+}
+
 \score
 {
   <<
@@ -41,7 +47,12 @@ instrument = "Orchestra"
         instrumentName = "Oboes I,II"
         shortInstrumentName = "Ob.I,II"
       }
-      { << \oboeOneMvtI \\ \oboeTwoMvtI >> }
+      {
+        <<
+          \new Voice { \voiceOne \dynamicUp \oboeOneMvtI }
+          \new Voice { \voiceTwo \dynamicDown \oboeTwoMvtI }
+        >>
+      }
       \new GrandStaff
       <<
         \new Staff
@@ -50,14 +61,27 @@ instrument = "Orchestra"
           instrumentName = "Horns I,II"
           shortInstrumentName = "Hn.I,II"
         }
-        { << << \hornOneMvtI \\ \hornTwoMvtI >> \outlineMvtI >> }
+        {
+          <<
+            <<
+              \new Voice { \voiceOne \dynamicUp \hornOneMvtI }
+              \new Voice { \voiceTwo \dynamicDown \hornTwoMvtI }
+            >>
+            \outlineMvtI
+          >>
+        }
         \new Staff
         \with
         {
           instrumentName = "Horns III,IV"
           shortInstrumentName = "Hn.III,IV"
         }
-        { << \hornThreeMvtI \\ \hornFourMvtI >> }
+        {
+          <<
+            \new Voice { \voiceOne \dynamicUp \hornThreeMvtI }
+            \new Voice { \voiceTwo \dynamicDown \hornFourMvtI }
+          >>
+        }
       >>
     >>
     \new StaffGroup
@@ -110,14 +134,27 @@ instrument = "Orchestra"
           instrumentName = "Horns I,II"
           shortInstrumentName = "Hn.I,II"
         }
-        { << << \hornOneMvtII \\ \hornTwoMvtII >> \outlineMvtII >> }
+        {
+          <<
+            <<
+              \new Voice { \voiceOne \dynamicUp \hornOneMvtII }
+              \new Voice { \voiceTwo \dynamicDown \hornTwoMvtII }
+            >>
+            \outlineMvtII
+          >>
+        }
         \new Staff
         \with
         {
           instrumentName = "Horns III,IV"
           shortInstrumentName = "Hn.III,IV"
         }
-        { << \hornThreeMvtII \\ \hornFourMvtII >> }
+        {
+          <<
+            \new Voice { \voiceOne \dynamicUp \hornThreeMvtII }
+            \new Voice { \voiceTwo \dynamicDown \hornFourMvtII }
+          >>
+        }
       >>
     >>
     \new StaffGroup
@@ -182,7 +219,12 @@ instrument = "Orchestra"
         instrumentName = "Oboes I,II"
         shortInstrumentName = "Ob.I,II"
       }
-      { << \oboeOneMvtIII \\ \oboeTwoMvtIII >> }
+      {
+        <<
+          \new Voice { \voiceOne \dynamicUp \oboeOneMvtIII }
+          \new Voice { \voiceTwo \dynamicDown \oboeTwoMvtIII }
+        >>
+      }
       \new GrandStaff
       <<
         \new Staff
@@ -191,14 +233,27 @@ instrument = "Orchestra"
           instrumentName = "Horns I,II"
           shortInstrumentName = "Hn.I,II"
         }
-        { << << \hornOneMvtIII \\ \hornTwoMvtIII >> \outlineMvtIII >> }
+        {
+          <<
+            <<
+              \new Voice { \voiceOne \dynamicUp \hornOneMvtIII }
+              \new Voice { \voiceTwo \dynamicDown \hornTwoMvtIII }
+            >>
+            \outlineMvtIII
+          >>
+        }
         \new Staff
         \with
         {
           instrumentName = "Horns III,IV"
           shortInstrumentName = "Hn.III,IV"
         }
-        { << \hornThreeMvtIII \\ \hornFourMvtIII >> }
+        {
+          <<
+            \new Voice { \voiceOne \dynamicUp \hornThreeMvtIII }
+            \new Voice { \voiceTwo \dynamicDown \hornFourMvtIII }
+          >>
+        }
       >>
     >>
     \new StaffGroup
@@ -256,7 +311,12 @@ instrument = "Orchestra"
         instrumentName = "Oboes I,II"
         shortInstrumentName = "Ob.I,II"
       }
-      { << \oboeOneMvtIV \\ \oboeTwoMvtIV >> }
+      {
+        <<
+          \new Voice { \voiceOne \dynamicUp \oboeOneMvtIV }
+          \new Voice { \voiceTwo \dynamicDown \oboeTwoMvtIV }
+        >>
+      }
       \new GrandStaff
       <<
         \new Staff
@@ -265,14 +325,27 @@ instrument = "Orchestra"
           instrumentName = "Horns I,II"
           shortInstrumentName = "Hn.I,II"
         }
-        { << << \hornOneMvtIV \\ \hornTwoMvtIV >> \outlineMvtIV >> }
+        {
+          <<
+            <<
+              \new Voice { \voiceOne \dynamicUp \hornOneMvtIV }
+              \new Voice { \voiceTwo \dynamicDown \hornTwoMvtIV }
+            >>
+            \outlineMvtIV
+          >>
+        }
         \new Staff
         \with
         {
           instrumentName = "Horns III,IV"
           shortInstrumentName = "Hn.III,IV"
         }
-        { << \hornThreeMvtIV \\ \hornFourMvtIV >> }
+        {
+          <<
+            \new Voice { \voiceOne \dynamicUp \hornThreeMvtIV }
+            \new Voice { \voiceTwo \dynamicDown \hornFourMvtIV }
+          >>
+        }
       >>
     >>
     \new StaffGroup
