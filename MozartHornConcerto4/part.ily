@@ -1,19 +1,30 @@
 \version "2.13.33"
 
+\paper
+{
+  #(define page-breaking ly:page-turn-breaking)
+}
+
 \book
 {
   \include "header.ily"
   \score
   {
-    \new Staff { << \mvtI \outlineMvtI >> }
+    \new Staff
+    \with { \consists "Page_turn_engraver" }
+    { << \mvtI \outlineMvtI >> }
   }
   \score
   {
-    \new Staff { << \mvtII \outlineMvtII >> }
+    \new Staff
+    \with { \consists "Page_turn_engraver" }
+    { << \mvtII \outlineMvtII >> }
   }
   \score
   {
-    \new Staff { << \mvtIII \outlineMvtIII >> }
+    \new Staff
+    \with { \consists "Page_turn_engraver" }
+    { << \mvtIII \outlineMvtIII >> }
   }
 }
 

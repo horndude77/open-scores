@@ -410,16 +410,23 @@ hornMvtIII = \relative c''
   g'2.(\justCresc |
   fis |
   f) |
-  e4 f8 c( d) e-. |
+  e4 d8 c( d) e-. |
   f4\f r8 d(\p e) f-. |
   g4 r8 g,( a) b-. |
 
   %T
-  c8-. c-. c-. \repeat tremolo 3 c8^\staccatoThree |
+  c8-. c-.  c-.
+    %TODO: figure out how to do this automatically
+    \once \override Staff.TextScript #'Y-offset = #'1.5
+    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
+    \repeat tremolo 3 c8^\staccatoThree |
   b( d g) g( f d) |
   c-. c-. c-. c( b) c-. |
   d( g,) g-. g4 g8 |
-  c8-. c-. c-. \repeat tremolo 3 c8^\staccatoThree |
+  c8-. c-. c-.
+    \once \override Staff.TextScript #'Y-offset = #'1.5
+    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
+    \repeat tremolo 3 c8^\staccatoThree |
   b( d g) g( f d) |
   e( g) c,-. \acciaccatura e8 d-. c-. c-. |
   c-. c,-. c-. c4 r8 |
@@ -469,11 +476,17 @@ hornMvtIII = \relative c''
   b2.(\> |
 
   %V
-  c8)\p c-. c-. \repeat tremolo 3 c^\staccatoThree |
+  c8)\p c-. c-.
+    \once \override Staff.TextScript #'Y-offset = #'1.5
+    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
+    \repeat tremolo 3 c^\staccatoThree |
   b8( d g) g( f d) |
   c-. c-. c-. c( b) c-. |
   d( g,) g-. g4 g8 |
-  c8-. c-. c-. \repeat tremolo 3 c^\staccatoThree |
+  c8-. c-. c-.
+    \once \override Staff.TextScript #'Y-offset = #'1.5
+    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
+    \repeat tremolo 3 c^\staccatoThree |
   b8( d g) g( f d) |
   e( g) c,-. d( c) d-. |
   c-. c,-. c-. c4 r8 |
@@ -532,11 +545,17 @@ hornMvtIII = \relative c''
   b4.~\f b8\fermata r8 g-.\p |
 
   %Y
-  c8-. c-. c-. \repeat tremolo 3 c8^\staccatoThree |
+  c8-. c-. c-.
+    \once \override Staff.TextScript #'Y-offset = #'1.5
+    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
+    \repeat tremolo 3 c8^\staccatoThree |
   b( d g) g( f d) |
   c-. c-. c-. c( b c) |
   d( g,) g-. g4 g8 |
-  c8-. c-. c-. \repeat tremolo 3 c8^\staccatoThree |
+  c8-. c-. c-.
+    \once \override Staff.TextScript #'Y-offset = #'1.5
+    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
+    \repeat tremolo 3 c8^\staccatoThree |
   b( d g) g( f d) |
   e( g) c,-. \acciaccatura e8 d( c) d |
   c4^\tutti r8 r4. |
@@ -546,11 +565,17 @@ hornMvtIII = \relative c''
   r4. r4 c8-.\p^\solo |
 
   %Z
-  c8-. c-. c-. \repeat tremolo 3 c8^\staccatoThree |
+  c8-. c-. c-.
+    \once \override Staff.TextScript #'Y-offset = #'1.5
+    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
+    \repeat tremolo 3 c8^\staccatoThree |
   b( d g) g( f d) |
   e( g) c,-. d( c) d-. |
   c4.~ c4 c,8 |
-  c'8-. c-. c-. \repeat tremolo 3 c8^\staccatoThree |
+  c'8-. c-. c-.
+    \once \override Staff.TextScript #'Y-offset = #'1.5
+    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
+    \repeat tremolo 3 c8^\staccatoThree |
   b( d g) g( f d) |
   e( g) c,-. \acciaccatura e8 d( c) d-. |
   c4 r8 r4. |
