@@ -1,6 +1,4 @@
-\version "2.13.13"
-
-\include "defs.ily"
+\version "2.13.37"
 
 pianoRightMvtI = \relative c''
 {
@@ -527,7 +525,7 @@ pianoRightMvtII = \relative c'
     }
     \\
     {
-      \repeat unfold 2 {b,8. r32 b}
+      \repeat unfold 2 {b,8.[ r32 b]}
     }
   >> |
   <e c'>8-. <c g>-. r4 |
@@ -563,7 +561,7 @@ pianoLeftMvtII = \relative c,
     }
     \\
     {
-      \repeat unfold 2 {des,8. r32 des}
+      \repeat unfold 2 {des,8.[ r32 des]}
     }
   >> |
   <g c,>8-. <e c>-. r4 |

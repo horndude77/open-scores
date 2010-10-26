@@ -1,4 +1,4 @@
-\version "2.13.13"
+\version "2.13.37"
 
 staccato = \markup{staccato}
 calando = \markup{\italic calando}
@@ -103,8 +103,7 @@ outlineMvtII =
 outlineMvtIII =
 {
   \time 2/2
-  \overrideBeamSettings #'Score #'(2 . 2) #'end
-    #'((* . (1 1)) ((1 . 16) . (4 4 4 4)) ((1 . 12) . (3 3 3 3)) ((1 . 24) . (6 6 6 6)))
+  \set Score.beamExceptions =  #'((end . (((1 . 16) . (4 4 4 4)) ((1 . 12) . (3 3 3 3)) ((1 . 24) . (6 6 6 6)))))
   \tempo "Rondo Allegro moderato"
   \partial 2 s2
   s1*16 |
@@ -166,14 +165,17 @@ midiOutlineMvtIII =
     \Score
     skipBars = ##t
     extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+    markFormatter = #format-mark-box-alphabet
   }
 
   \context
   {
-    \RemoveEmptyStaffContext
+    \Staff \RemoveEmptyStaves
   }
 }
 

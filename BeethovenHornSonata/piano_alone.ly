@@ -1,18 +1,9 @@
-\version "2.13.13"
+\version "2.13.37"
 
-\include "piano.ily"
 \include "defs.ily"
+\include "piano.ily"
 
 instrument = "Piano"
-
-\paper
-{
-  between-system-spacing #'padding = #0.1
-  between-scores-system-spacing #'padding = #0.1
-  %between-system-spacing #'space = #0.1
-  between-scores-system-spacing #'space = #0.1
-  ragged-last-bottom = ##f
-}
 
 \book
 {
@@ -81,4 +72,3 @@ instrument = "Piano"
     \midi { }
   }
 }
-
