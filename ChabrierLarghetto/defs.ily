@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.37"
 
 div = \markup {div.}
 unis = \markup {unis.}
@@ -19,47 +19,11 @@ semprePP = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynam
 fpp = #(make-dynamic-script "fpp")
 sfpp = #(make-dynamic-script "sfpp")
 
-crescTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-crescJustTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-crescJustTextCrescPoco =
-{
-  \set crescendoText = \markup { \italic "cresc. poco" }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-crescJustTextCrescSempre =
-{
-  \set crescendoText = \markup { \italic "cresc. sempre" }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimJustTextDim =
-{
-  \set decrescendoText = \markup { \italic "dim." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimJustTextDimMolto =
-{
-  \set decrescendoText = \markup { \italic "dim. molto" }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1.0)))
+justCrescPoco = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc. poco" 'tweaks '((dash-period . -1.0)))
+justCrescSempre = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc. sempre" 'tweaks '((dash-period . -1.0)))
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1.0)))
+justDimMolto = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim. molto" 'tweaks '((dash-period . -1.0)))
 
 lengthenHairpin = #(define-music-function (parser location len) (number?)
 #{
@@ -83,10 +47,6 @@ outline =
 {
   \tempo 4=92
   \time 3/4
-  \overrideBeamSettings #'Score #'(3 . 4) #'end
-  #'((* . (3))
-     ((1 . 24) . (6 6 6))
-     ((1 . 12) . (3 3 3)))
 
   s2.*5 \bar "||"
   s2.*3 \bar "||"

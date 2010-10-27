@@ -1,7 +1,8 @@
-\version "2.13.18"
+\version "2.13.37"
 
 \include "defs.ily"
-\include "merge_rests.ily"
+\include "merge-rests.ily"
+
 \include "flute1.ily"
 \include "flute2.ily"
 \include "oboe1.ily"
@@ -23,6 +24,11 @@ instrument = "Orchestra"
 
 #(set-global-staff-size 16)
 
+\layout
+{
+  \mergeRests
+}
+
 \paper
 {
   short-indent = 4\mm
@@ -36,7 +42,6 @@ instrument = "Orchestra"
     \new StaffGroup
     <<
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = "Flute I,II"
         \set Staff.shortInstrumentName = "Fl."
@@ -46,7 +51,6 @@ instrument = "Orchestra"
         >>
       }
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = "Oboe I,II"
         \set Staff.shortInstrumentName = "Ob."
@@ -56,7 +60,6 @@ instrument = "Orchestra"
         >>
       }
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = "Clarinet I,II"
         \set Staff.shortInstrumentName = "Cl."
@@ -66,7 +69,6 @@ instrument = "Orchestra"
         >>
       }
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = "Bassoon I,II"
         \set Staff.shortInstrumentName = "Bsn."

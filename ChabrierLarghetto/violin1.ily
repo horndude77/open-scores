@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.37"
 
 violinOne = \relative c''
 {
@@ -75,8 +75,7 @@ violinOne = \relative c''
   bes2(\< g'4)\sf |
   g2(\> a,4)\! |
   a2(\< a'4)\sf |
-  \crescJustTextCresc
-  bes(\< a g |
+  bes(\justCresc a g |
   f)\! c( f) |
   f( d)
     \lengthenHairpin #4
@@ -108,12 +107,10 @@ violinOne = \relative c''
   r8 g4-.(\sf\> g-. g8-.)\! |
   r8 des'( bes g ees bes) |
   r8 d'( bes g d bes) |
-  \crescJustTextCrescPoco
-  r8 ees'(\< bes g ees bes) |
+  r8 ees'(\justCrescPoco bes g ees bes) |
   r8 e'( bes g e bes) |
   r8 bes(\p ees g, a ees') |
-  \crescJustTextCrescSempre
-  r8 f(\< g, f' a, f') |
+  r8 f(\justCrescSempre g, f' a, f') |
   r8 f( a, f' bes, f') |
   r8 a( b, a' cis, a') |
   r8 a( cis, a' d, d') |
@@ -124,7 +121,6 @@ violinOne = \relative c''
   r8 <ees' a,>4-> q-> <d a>8-> |
 
   %F
-  \crescHairpin
   r8^\div << {s8\f s\< s\! s\> s\!} << {f'8 f( a) a( f)} \\ {ees ees( f) f( ees)} >> >> |
   r8 << {s8 s\< s\! s\> s\!} << {f8 f( bes) bes( f)} \\ {ees ees( f) f( ees)} >> >> |
   r8 << {s8 s\< s\! s\> s\!} << {f8 f( c') c( f,)} \\ {ees ees( f) f( ees)} >> >> |
@@ -218,8 +214,7 @@ violinOne = \relative c''
   bes a g |
   f) f,( g |
   aes aes8) r r4 |
-  \crescJustTextCresc
-  r r bes'(\< |
+  r r bes'(\justCresc |
   ees d c |
   bes) ees,( bes') |
   R2.*3 |
@@ -252,9 +247,7 @@ violinOne = \relative c''
   ees2.~ |
   ees2.~ |
   ees8 r\fermata ees4-^\f ees-^ |
-  \dimJustTextDim
-  d2.~\> |
-  \dimHairpin
+  d2.~\justDim |
   d~\> |
   d8\! r r4 r |
   R2.*3 |

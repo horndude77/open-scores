@@ -1,6 +1,4 @@
-\version "2.13.18"
-
-\include "defs.ily"
+\version "2.13.37"
 
 bass = \relative c,
 {
@@ -193,9 +191,7 @@ bass = \relative c,
   r4 r8 bes4.~\fpp |
   \repeat unfold 4 {bes2.~} |
   bes8 r\fermata bes4-^\f bes-^ |
-  \dimJustTextDim
-  bes2.~\> |
-  \dimHairpin
+  bes2.~\justDim |
   bes2.~\> |
   bes8\! r r4 r |
   R2.*3 |

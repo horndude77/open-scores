@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.37"
 
 timpani = \relative c,
 {
@@ -33,15 +33,13 @@ timpani = \relative c,
 
   %F
   s1*0\ppp \repeat unfold 6 {\repeat tremolo 24 f32 |}
-  \dimJustTextDimMolto
-  s1*0\> \repeat tremolo 24 f32 s1*0\! |
+  s1*0\justDimMolto \repeat tremolo 24 f32 s1*0\! |
   R2.*15 |
 
   %G
   R2.*8 |
 
   %H
-  \dimHairpin
   r8. \times 2/3 {d'32->\p\> d-. d-.} d8-.\! r r4 |
   R2. |
   r8. \times 2/3 {d32->\p\> d-. d-.} d8-.\! r r4 |

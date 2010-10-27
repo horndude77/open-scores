@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.37"
 
 viola = \relative c'
 {
@@ -63,7 +63,7 @@ viola = \relative c'
   r8 ees(\p g f) a4~ |
   a8 f[( c' bes]) bes4~ |
   bes8 bes[(\sf\< g ees bes g] |
-  gis[\> a d]) \dimJustTextDim c[-.(\>^\suivez a-. f]-.) s1*0\! |
+  gis[\> a d]) c[-.(\justDim^\suivez a-. f]-.) s1*0\! |
   \repeat unfold 2 {r8 g( bes f' bes, g') |}
   r c,( f a c, f) |
   r c( ees f) r <c ees>8[~( |
@@ -89,8 +89,7 @@ viola = \relative c'
   ees] d'4-. d-. d8-.) |
   r8 g,( b d g b) |
   R2.*8 |
-  \crescJustTextCresc
-  ees,,2.(\< |
+  ees,,2.(\justCresc |
   d)( |
   g)( |
   fis) |
@@ -104,7 +103,6 @@ viola = \relative c'
   ees'2.(_\vibrato |
   f2 d4 |
   c2.~) |
-  \crescHairpin
   c2(\< g'4)\! |
   g2( bes,4) |
   bes2(\< g'4)\! |
@@ -123,7 +121,6 @@ viola = \relative c'
   f~) |
   f8 r r4 r |
   <g c,>2.(\< |
-  \dimHairpin
   f)\sf\> s1*0\! |
 
   %G
@@ -281,9 +278,7 @@ viola = \relative c'
   ees] ees4-^ f,4.~\fpp |
   \repeat unfold 4 {f2.~ |}
   f8 r\fermata f4-^\f f-^ |
-  \dimJustTextDim
-  f2.~\> |
-  \dimHairpin
+  f2.~\justDim |
   f2.~ |
   f8\! r r4 r |
   R2.*3 |

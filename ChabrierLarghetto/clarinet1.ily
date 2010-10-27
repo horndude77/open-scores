@@ -1,6 +1,4 @@
-\version "2.13.18"
-
-\include "defs.ily"
+\version "2.13.37"
 
 clarinetOne = \relative c''
 {
@@ -186,14 +184,13 @@ clarinetOne = \relative c''
   R2.*4 |
   r8 a,(^\solo cis e g a) | %TODO: _something?_ a piacere
   \times 2/3 {b8( cis a} \times 2/3 {g4 e8)} \times 2/3 {r4 fis8(} |
-  \times 2/3 {a8\< g e)\!} d'4( \crescJustTextCresc cis8\< e) |
+  \times 2/3 {a8\< g e)\!} d'4( cis8\justCresc e) |
   e2\sf\> a,4~ |
   a~\pp a8 r r4 |
   R2.*5 |
   r4\fermata r r |
   R2. |
   r8 g'4(_\dolce e c8) |
-  \crescHairpin
   c8~ c16 r e4.(\p\< c8)\! |
   b4.(\sf\> c8 e g)\! |
   R2. |

@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.37"
 
 \include "defs.ily"
 
@@ -41,7 +41,7 @@ horn =  \relative c' \context Voice = "horn"
   d2( f,4) |
   f2 d'4\sfz |
   d2( e,4) |
-  e2 e'4(_\markup{\dynamic sf \italic cresc.} |
+  e2 e'4(\sf\justCresc |
   f4 e d |
   c4 g c |
   c4 a) a(\sf |
@@ -83,9 +83,9 @@ horn =  \relative c' \context Voice = "horn"
   f4 g gis |
   a2)\sfz\! \times 4/5 {b,16-.( c-. b-. ais-. b-.)} |
   d2(\> c4~ |
-  c8)\! r8 d4_\markup{\italic cresc.}( g |
+  c8)\! r8 d4\justCresc( g |
   f4 e d |
-  c4) b(_\markup{\italic sempre} e) |
+  c4)\! b(_\markup{\italic sempre} e) |
   e2( e,4)~ |
   e8 r8 r4 r4 |
   R2. |
@@ -107,7 +107,7 @@ horn =  \relative c' \context Voice = "horn"
   d4) a( d) |
   d4( ees8) d-.(\pp c-. bes-. |
   f'2) f4(^\markup{\italic appassionato} |
-  e2._\markup{\dynamic sf \italic cresc.} |
+  e2.\sf\justCresc |
   f2 d4-> |
   bes4.) g8[-.\f e-. c]-. |
   c'8-.^\markup{rit.} a[-.( bes-. b-. c-. cis]-.) |
@@ -139,7 +139,7 @@ horn =  \relative c' \context Voice = "horn"
   r8^\markup{\bold {Moderato}} c,[-.(_\markup{\italic dolce} e-. g-. bes-. c]-.) |
   \times 2/3 {d8( e) c} \times 2/3 {bes4(\sf g8)} \times 2/3 {r4 a8(} |
   \times 2/3 {c8) bes g} << {e'2(\>} {s4 s8 s16 \hideNotes e16) \unHideNotes} >> | %a hack to slur to nothing
-  s1*0\pp\! %a hack to get the decrescendo to end where I want
+  s1*0\pp\!
   R2.*2 |
   r8 c,[-.(\ppp e-. g-. bes-. c]-.) |
   \times 2/3 {d8( e) c} \times 2/3 {bes4(\sf g8)} \times 2/3 {r4 a8(} |
@@ -148,7 +148,7 @@ horn =  \relative c' \context Voice = "horn"
 
   bes2.~^\markup{\italic beaucoup de sonorité}_\markup{\italic tranquillo} |
   bes4 f'-.( c-.) |
-  bes2.~_\markup{\italic cresc.} |
+  bes2.~\justCresc |
   bes4 fis'-.(\> c-.)\! |
   bes2. |
   r4 g'2~(_\markup{\dynamic sf \italic rallent.} |
@@ -175,7 +175,7 @@ horn =  \relative c' \context Voice = "horn"
   c2^\markup{\bold Pressez}( g4) |
   c2( d8 e |
   c2.~ |
-  c8) r8 r4 f4_\markup{\italic cresc.} |
+  c8) r8 r4 f4\justCresc |
   f2( c4\< |
   f2 g8 a\! |
   f2.~\p |
@@ -204,7 +204,7 @@ horn =  \relative c' \context Voice = "horn"
   R2.*6 |
   r8 g,[-.(\mf c-. e-. g-. bes]-.) |
   d16( g) c, b \times 2/3 {bes4( g8)} \times 2/3 {r4 a8(} |
-  \times 2/3 {c8) bes g} \tupletUp \times 2/3 {cis4_\markup{\italic cresc.}( d8)} \times 2/3 {r4 cis?8(} | \tupletNeutral
+  \times 2/3 {c8) bes g} \tupletUp \times 2/3 {cis4\justCresc( d8)\!} \times 2/3 {r4 cis?8(} | \tupletNeutral
   \times 2/3 {d8) bes g} \tupletUp \times 2/3 {dis'4\f( e8~)\<} e4~ | \tupletNeutral
   e4\fermata\! d?->\f g-> |
   f2( \( c4~)\> |

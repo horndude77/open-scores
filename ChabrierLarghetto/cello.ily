@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.37"
 
 cello = \relative c,
 {
@@ -66,8 +66,7 @@ cello = \relative c,
   f4 f2~\semprePP |
   f2.~ |
   f4 f2~ |
-  \crescJustTextCresc
-  f4~ f8 r fis'4(\< |
+  f4~ f8 r fis'4(\justCresc |
   g2 gis4 |
   a2 a,4 |
   bes2)
@@ -116,7 +115,6 @@ cello = \relative c,
   ees2.(_\vibrato |
   f2 d4 |
   c2.~) |
-  \crescHairpin
   c2(\< g'4)\! |
   g2( bes,4) |
   bes2(\< g'4)\! |
@@ -304,9 +302,7 @@ cello = \relative c,
   f~ |
   f~ |
   f8 r\fermata f4-^\f f-^ |
-  \dimJustTextDim
-  f2.~\> |
-  \dimHairpin
+  f2.~\justDim |
   f~\> |
   f8\! r r4 r |
   R2.*3 |

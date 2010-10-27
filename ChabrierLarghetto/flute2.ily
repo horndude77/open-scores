@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.37"
 
 fluteTwo = \relative c'
 {
@@ -29,8 +29,7 @@ fluteTwo = \relative c'
 
   %D
   R2.*7 |
-  \crescJustTextCresc
-  r4 r a(\sfp\< |
+  r4 r a(\sfp\justCresc |
   bes a g |
   f c f |
   f d8)\! r r4 |
@@ -46,7 +45,6 @@ fluteTwo = \relative c'
   ees'2.(\f |
   f2 d4 |
   c2.) |
-  \crescHairpin
   c2(\< g'4)\ff |
   g2( bes4) |
   bes2\(( g4) |

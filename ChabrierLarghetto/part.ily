@@ -1,6 +1,4 @@
-\version "2.13.18"
-
-\include "defs.ily"
+\version "2.13.37"
 
 \include "header.ily"
 \score

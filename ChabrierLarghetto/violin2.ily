@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.37"
 
 violinTwo = \relative c''
 {
@@ -276,9 +276,7 @@ violinTwo = \relative c''
   c] c4-^ a4.~\fpp |
   \repeat unfold 4 {a2.~} |
   a8 r\fermata bes4-^\f a-^ |
-  \dimJustTextDim
-  d2.~\> |
-  \dimHairpin
+  d2.~\justDim |
   d~\> |
   d8\! r r4 r |
   R2.*3 |
