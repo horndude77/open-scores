@@ -34,10 +34,20 @@ hornOneMvtI = \relative c''
   e4 r r g,8\dim g |
   g4 r\! r2 |
   R1 |
-  r2 r4
+  \tag #'part
+  {
+    r2 r4
 
-  %A
-  \namedCueDuring #"solo" #"solo" #UP { r4 | R1*2 | }
+    %A
+    \cueDuring #"solo" #UP { \setCue #"solo" r4 | R1*2 | }
+  }
+  \tag #'score
+  {
+    R1 |
+
+    %A
+    R1*2 |
+  }
   R1*30 |
   \namedCueDuring #"solo" #"solo" #UP { R1*3 | }
 
