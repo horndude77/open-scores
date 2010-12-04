@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.41"
 
 ppDolceMarkup = \markup {\dynamic pp \normal-text \italic dolce}
 ppDolce = #(make-dynamic-script ppDolceMarkup)
@@ -120,7 +120,9 @@ outline =
   \time 4/4
   \tempo "Allegro" 4=132
   \boxMark "K"
-  s8 \partial 8 s8 | %\noBreak
+  \set Timing.measureLength = #(ly:make-moment 1 4)
+  s4 |
+  \set Timing.measureLength = #(ly:make-moment 4 4)
   s1*8 | \bar "||"
 
   \time 6/8
@@ -142,11 +144,14 @@ outline =
   s1*2 |
   \tempo "un poco calando" 4=100
   s1 |
-  s2 \partial 4 s4 \bar "||"
+  \set Timing.measureLength = #(ly:make-moment 3 4)
+  s2. \bar "||"
 
   \time 6/8
   \tempo "Tempo I" 4.=132
-  s4 \partial 8 s8 |
+  \set Timing.measureLength = #(ly:make-moment 3 8)
+  s4. |
+  \set Timing.measureLength = #(ly:make-moment 6 8)
   s2.*49 |
 
   \boxMark "O"

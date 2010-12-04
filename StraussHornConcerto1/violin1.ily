@@ -1,11 +1,11 @@
-\version "2.13.33"
+\version "2.13.41"
 
 \include "defs.ily"
 
 violinOneMvtI = \relative c'
 {
   \key ees \major
-  <bes g' ees'>2\f\fermata r4 r |
+  <bes g' ees'>2\f\fermata r4\fermata r |
   R1*4 |
   <d bes' f'>2\f bes |
   <f' c' aes'>2. aes'8. des16 |

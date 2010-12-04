@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.41"
 
 \include "defs.ily"
 
@@ -204,8 +204,8 @@ celloMvtII = \relative c
       aes( |
       f) |
       ees~ |
-      ees~ |
-      ees' |
+      ees |
+      ees'~ |
       ees4
     }
   >> r8 |

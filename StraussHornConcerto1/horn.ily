@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.41"
 
 \include "defs.ily"
 
@@ -15,7 +15,7 @@ hornMvtI = \relative c''
   c4 bes8. f16 d4 bes8. g'16 |
   f2 f, |
   R1*22 |
-  r2.^\solo f'4(\p\< |
+  r2 r4 f'4(\p\<^\solo |
   f'2.^\conEspressione d4\> |
   bes2.)\! bes4(\< |
   ees4 d c bes8.\> c16) |

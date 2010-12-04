@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.41"
 
 \include "defs.ily"
 
@@ -10,8 +10,8 @@ bassMvtI = \relative c,
   R1*4 |
   bes'2\f bes, |
   f'2 f, |
-  f4 aes8. c16 f4 <c, c'>4~ | %TODO: parenthesize low c
-  <c c'>4 f8. aes16 c4 aes |
+  f4 aes8. c16 f4 <\parenthesize c, c'>4~ |
+  <\parenthesize c c'>4 f8. aes16 c4 aes |
   aes c8. f16 aes4 f, |
   bes2 bes |
   g1 |

@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.41"
 
 \include "defs.ily"
 
@@ -247,7 +247,10 @@ fluteOneMvtIII = \relative c''
 
   %M
   R2.*15 |
-  r8 bes-.\ppGrazioso^\solo d-. f-. r r |
+  r8
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    \once \override Staff.DynamicText #'X-offset = #'-1.5
+    bes-.\ppGrazioso^\solo d-. f-. r r |
   \repeat unfold 5 {r8 bes,-. des-. ges-. r r} |
   r8 bes,-. des-. f-. r r |
   r8 ges, ces ees4.( |
@@ -309,7 +312,10 @@ fluteOneMvtIII = \relative c''
   r4 aes8 f4.~( |
   f ees4) r8 |
   R2.*15 |
-  r8 aes,-.\pppGrazioso c-. ees-. r r |
+  r8
+    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+    \once \override Staff.DynamicText #'X-offset = #'-1.5
+    aes,-.\pppGrazioso c-. ees-. r r |
   \repeat unfold 5 {r gis,-. b-. e-. r r} |
   r gis,-. b-. dis-. r r |
   r e,-. a-. cis4.( |
