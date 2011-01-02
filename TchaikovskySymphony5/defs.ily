@@ -126,13 +126,6 @@ twelvex =  #(define-music-function (parser location x) (ly:music?)
   \repeat unfold 12 $x
 #})
 
-tempoMark = #(define-music-function (parser location markp) (string?)
-#{
-  \once \override Score . RehearsalMark #'self-alignment-X = #left
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \mark \markup { \smaller \bold $markp }
-#})
-
 sempreff = \markup{\italic sempre \dynamic ff}
 semprefff = \markup{\italic sempre \dynamic fff}
 pcrescmolto = \markup{\dynamic p \italic "cresc. molto"}
@@ -147,14 +140,7 @@ sfff = #(make-dynamic-script "sfff")
 
 outlineMvtI =
 {
-  #(set-accidental-style 'modern)
-  \set Score.skipBars = ##t
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
-  \set Score.markFormatter = #tchaik-mark-formatter
-  \override Score.MetronomeMark #'transparent = ##t
-
-  \tempoMark "Andante"
+  \tempo "Andante"
   \time 4/4
   \tempo 4 = 80
   s1*20 |
@@ -162,7 +148,7 @@ outlineMvtI =
   \mark \default
   s1*17 | \bar "||"
 
-  \tempoMark "Allegro con anima"
+  \tempo "Allegro con anima"
   \time 6/8
   \tempo 4 = 104
   s2.*19 |
@@ -183,32 +169,32 @@ outlineMvtI =
   s2.*13 |
 
   \textLengthOn
-  s1*0^\markup{\bold \bigger "Poco meno animato"}
+  s1*0^\markup{\bold \larger "Poco meno animato"}
   s2.*3 |
 
-  s1*0^\markup{\bold \bigger "string."}
+  s1*0^\markup{\bold \larger "string."}
   s2. |
   \textLengthOff
 
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s2.*8 |
 
   \mark \default
   s2.*12 |
 
-  \tempoMark "Un pochettino più animato"
+  \tempo "Un pochettino più animato"
   s2.*18 |
 
-  \tempoMark "Molto più tranquillo"
+  \tempo "Molto più tranquillo"
   s2.*12 |
 
   \mark \default
   s2.*6 |
 
-  \tempoMark "stringendo"
+  \tempo "stringendo"
   s2.*6 |
 
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s2.*8
 
   \mark \default
@@ -245,32 +231,32 @@ outlineMvtI =
   s2.*20 |
 
   \textLengthOn
-  s1*0^\markup{\bold \bigger "Poco meno animato"}
+  s1*0^\markup{\bold \larger "Poco meno animato"}
   s2.*3 |
 
-  s1*0^\markup{\bold \bigger "string."}
+  s1*0^\markup{\bold \larger "string."}
   s2. |
   \textLengthOff
 
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s2.*8 |
 
   \mark \default
   s2.*12 |
 
-  \tempoMark "Un pochettino più mosso"
+  \tempo "Un pochettino più mosso"
   s2.*18 |
 
-  \tempoMark "Molto più tranquillo come sopra"
+  \tempo "Molto più tranquillo come sopra"
   s2.*12 |
 
   \mark \default
   s2.*6 |
 
-  \tempoMark "stringendo"
+  \tempo "stringendo"
   s2.*6 |
 
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s2.*8 |
 
   \mark \default
@@ -294,74 +280,68 @@ outlineMvtI =
 
 outlineMvtII =
 {
-  #(set-accidental-style 'modern)
-  \set Score.skipBars = ##t
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
-  \set Score.markFormatter = #tchaik-mark-formatter
-
-  \tempoMark "Andante cantabile, con alcuna licenza"
+  \tempo "Andante cantabile, con alcuna licenza"
   \time 12/8
   s1.*12 |
 
-  \tempoMark "animando"
+  \tempo "animando"
   s1.*2 |
-  s2. \tempoMark "riten." s2. |
+  s2. \tempo "riten." s2. |
 
   \mark \default %TODO: sostenuto
   s1.*3 |
-  s8 \tempoMark "animando" s s s4.*3 |
+  s8 \tempo "animando" s s s4.*3 |
   
-  \tempoMark "sostenuto"
+  \tempo "sostenuto"
   s1.*4 |
 
-  \tempoMark "Con moto"
+  \tempo "Con moto"
   s1. |
-  s2. \tempoMark "animato" s2. |
+  s2. \tempo "animato" s2. |
   s1.*2 |
 
-  \tempoMark "sostenuto"
+  \tempo "sostenuto"
   s1.*5 |
 
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s1.*2 |
-  \tempoMark "animando"
+  \tempo "animando"
   s1. |
-  s4. \tempoMark "riten." s4.*3 |
+  s4. \tempo "riten." s4.*3 |
 
-  \tempoMark "Sostenuto"
+  \tempo "Sostenuto"
   s1.*2 |
-  \tempoMark "Poco più animato" |
+  \tempo "Poco più animato" |
   s1.*4 |
-  \tempoMark "riten." |
+  \tempo "riten." |
   s1. |
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s1. |
 
   \mark \default
   s1. |
-  \tempoMark "animando"
+  \tempo "animando"
   s1.*2 |
-  \tempoMark "riten."
+  \tempo "riten."
   s1.*2 |
-  \tempoMark "animando"
+  \tempo "animando"
   s1.*2 |
 
   \mark \default
-  s1*0^\markup{\bold \bigger "Poco più mosso"} s1.*4 |
-  \tempoMark "Tempo I"
+  s1*0^\markup{\bold \larger "Poco più mosso"} s1.*4 |
+  \tempo "Tempo I"
   s1. |
-  \tempoMark "animando"
+  \tempo "animando"
   s1. |
-  s2. \tempoMark "riten." s |
-  \tempoMark "Più animato"
+  s2. \tempo "riten." s |
+  \tempo "Più animato"
   s1. |
-  s2. \tempoMark "riten." s |
-  \tempoMark "Poco meno"
+  s2. \tempo "riten." s |
+  \tempo "Poco meno"
   s1.*5 | \bar "||"
 
   \time 4/4
-  \tempoMark "Moderato con anima"
+  \tempo "Moderato con anima"
   s1*9 |
 
   \mark \default
@@ -372,80 +352,74 @@ outlineMvtII =
 
   \mark \default
   s1*5 |
-  \tempoMark "Stringendo"
+  \tempo "Stringendo"
   s1*3 |
 
-  \tempoMark "Tempo precedente"
+  \tempo "Tempo precedente"
   s1*9 | \bar "||"
 
   \time 12/8
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s1.*8 |
 
   \mark \default
-  s1*0^\markup{\bold \bigger "animando"} s1.*2 |
-  s2. \tempoMark "riten." s2. |
-  \tempoMark "sostenuto" s1.*3 |
-  \tempoMark "animando" s1. |
-  \tempoMark "sostenuto" s1. |
+  s1*0^\markup{\bold \larger "animando"} s1.*2 |
+  s2. \tempo "riten." s2. |
+  \tempo "sostenuto" s1.*3 |
+  \tempo "animando" s1. |
+  \tempo "sostenuto" s1. |
 
   \mark \default
   s1.*2 |
-  \tempoMark "animando"
+  \tempo "animando"
   s1. |
-  s2. \tempoMark "riten." s2. |
-  \tempoMark "Più mosso"
+  s2. \tempo "riten." s2. |
+  \tempo "Più mosso"
   s1.*6 |
-  \tempoMark "Un poco più animato"
+  \tempo "Un poco più animato"
   s1.*4 |
 
   \mark \default
   s1.*2 |
-  \tempoMark "ritenuto"
+  \tempo "ritenuto"
   s1.*2 |
-  \tempoMark "Andante mosso"
+  \tempo "Andante mosso"
   s1.*2 |
-  \tempoMark "animando"
+  \tempo "animando"
   s1. |
-  s2. \tempoMark "riten." s2. |
+  s2. \tempo "riten." s2. |
   s1. |
-  \tempoMark "animando un poco"
+  \tempo "animando un poco"
   s1.*4 |
 
   \mark \default
   s1.*2 |
-  \tempoMark "Molto più andante"
+  \tempo "Molto più andante"
   s1. |
-  \tempoMark "animando"
+  \tempo "animando"
   s1. |
-  s2. \tempoMark "riten." s2. |
-  \tempoMark "Più animato"
-  s2. \tempoMark "riten." s2. |
+  s2. \tempo "riten." s2. |
+  \tempo "Più animato"
+  s2. \tempo "riten." s2. |
   s1. | \bar "||"
 
   \time 4/4
-  \tempoMark "Allegro non troppo"
+  \tempo "Allegro non troppo"
   s1*8 |
-  \tempoMark "ritenuto"
+  \tempo "ritenuto"
   s1*4 | \bar "||"
 
   \time 12/8
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s1.*13 |
-  \tempoMark "ritenuto molto"
+  \tempo "ritenuto molto"
   s1.*2 | \bar "|."
 }
 
 outlineMvtIII =
 {
-  #(set-accidental-style 'modern)
-  \set Score.skipBars = ##t
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
-  \set Score.markFormatter = #tchaik-mark-formatter
-
   \time 3/4
-  \tempoMark "Allegro moderato"
+  \tempo "Allegro moderato"
   s2.*11 |
 
   \mark \default
@@ -499,14 +473,8 @@ outlineMvtIII =
 
 outlineMvtIV =
 {
-  #(set-accidental-style 'modern)
-  \set Score.skipBars = ##t
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
-  \set Score.markFormatter = #tchaik-mark-formatter
-
   \time 4/4
-  \tempoMark "Andante maestoso"
+  \tempo "Andante maestoso"
   s1*15 |
 
   \mark \default
@@ -518,7 +486,7 @@ outlineMvtIV =
   \mark \default
   s1*12 | \bar "||"
 
-  \tempoMark "Allegro vivace (alla breve)"
+  \tempo "Allegro vivace (alla breve)"
   \time 2/2
   s1*12 |
   
@@ -561,10 +529,10 @@ outlineMvtIV =
   \mark \default
   s1*14 |
 
-  \tempoMark "Poco più animato"
+  \tempo "Poco più animato"
   s1*16 |
 
-  \tempoMark "Tempo I"
+  \tempo "Tempo I"
   s1*12 |
 
   \mark \default
@@ -588,20 +556,20 @@ outlineMvtIV =
   \mark \default
   s1*12 |
 
-  \tempoMark "Poco meno messo"
+  \tempo "Poco meno messo"
   s1*10 |
 
-  \tempoMark "Molto vivace"
+  \tempo "Molto vivace"
   s1*16 |
 
   \mark \default
   s1*16 |
 
-  \tempoMark "riten. molto"
+  \tempo "riten. molto"
   s1*4 | \bar "||"
 
   \time 4/4
-  \tempoMark "Moderato assai e molto maestoso"
+  \tempo "Moderato assai e molto maestoso"
   s1*10 |
 
   \mark \default
@@ -614,7 +582,7 @@ outlineMvtIV =
   s1*5 | \bar "||"
 
   \time 2/2
-  \tempoMark "Presto"
+  \tempo "Presto"
   s1*8 |
 
   \mark \default
@@ -624,10 +592,51 @@ outlineMvtIV =
   s1*20 | \bar "||"
 
   \time 6/4
-  \tempoMark "Molto meno mosso"
+  \tempo "Molto meno mosso"
   s1.*8 |
 
   \mark \default
   s1.*12 | \bar "|."
 }
 
+afterGraceFraction = #(cons 15 16)
+
+\layout
+{
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+    markFormatter = #tchaik-mark-formatter
+    \override Beam #'breakable = ##t
+  }
+
+  \context
+  {
+    \Staff
+    \RemoveEmptyStaves
+  }
+}
+
+\midi
+{
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
+  }
+}
+
+\paper
+{
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
+}

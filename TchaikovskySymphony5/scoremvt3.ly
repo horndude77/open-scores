@@ -1,25 +1,25 @@
-\version "2.10.34"
+\version "2.13.44"
 
-\include "Flute1MvtIII.lyi"
-\include "Flute2MvtIII.lyi"
-\include "CelloMvtIII.lyi"
-\include "Oboe1MvtIII.lyi"
-\include "Oboe2MvtIII.lyi"
-\include "Violin1MvtIII.lyi"
-\include "Violin2MvtIII.lyi"
-\include "Horn1MvtIII.lyi"
-\include "Horn2MvtIII.lyi"
-\include "Horn3MvtIII.lyi"
-\include "Bassoon1MvtIII.lyi"
-\include "Bassoon2MvtIII.lyi"
-\include "ViolaMvtIII.lyi"
-\include "Clarinet1MvtIII.lyi"
-\include "Clarinet2MvtIII.lyi"
-\include "TimpaniMvtIII.lyi"
-\include "BassMvtIII.lyi"
-\include "Trumpet1MvtIII.lyi"
-\include "Trumpet2MvtIII.lyi"
-\include "defs.lyi"
+\include "defs.ily"
+\include "flute1.ily"
+\include "flute2.ily"
+\include "oboe1.ily"
+\include "oboe2.ily"
+\include "clarinet1.ily"
+\include "clarinet2.ily"
+\include "bassoon1.ily"
+\include "bassoon2.ily"
+\include "horn1.ily"
+\include "horn2.ily"
+\include "horn3.ily"
+\include "trumpet1.ily"
+\include "trumpet2.ily"
+\include "timpani.ily"
+\include "violin1.ily"
+\include "violin2.ily"
+\include "viola.ily"
+\include "cello.ily"
+\include "bass.ily"
 
 #(set-global-staff-size 17)
 %#(set-default-paper-size "a3")
@@ -34,7 +34,7 @@ instrument = "Orchestra"
 
 \book
 {
-  \include "Header.lyi"
+  \include "header.ily"
   \score
   {
     <<
@@ -156,7 +156,7 @@ instrument = "Orchestra"
     \header { piece = \MvtIII }
     \layout
     {
-      %\context { \RemoveEmptyStaffContext }
+      %\context { \Staff \RemoveEmptyStaves }
     }
   }
 
@@ -239,4 +239,3 @@ instrument = "Orchestra"
     }
   }
 }
-

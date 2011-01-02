@@ -1,4 +1,6 @@
-\include "defs.lyi"
+\version "2.13.44"
+
+\include "defs.ily"
 
 hornOneMvtI = \relative c'
 {
@@ -118,9 +120,9 @@ hornOneMvtI = \relative c'
   s4*0\! R2.*8 |
 
   %H
-  \setTextCresc
+  \crescTextCresc
   r8 e4~\p\< e8 e,( e') |
-  \setHairpinCresc
+  \crescHairpin
   r8 e4~ e8 e,( e') |
   r8 e,( e'~) e\f e,( e') |
   r b( b,) b'( b, b') |
@@ -128,13 +130,13 @@ hornOneMvtI = \relative c'
   R2. |
   a,4_\pcrescmolto a8~ a b4 |
   b b8~ b b4 |
-  \setTextCresc
+  \crescTextCresc
   e\mf\< e8 d d4 |
-  \setHairpinCresc
+  \crescHairpin
   dis4 dis8 d d4 |
-  \setTextCresc
+  \crescTextCresc
   cis4\f\< cis8~ cis cis cis |
-  \setHairpinCresc
+  \crescHairpin
   d4 d8~ d b4 |
 
   %tempo I
@@ -241,9 +243,9 @@ hornOneMvtI = \relative c'
   gis8. gis16 gis8~ gis4. |
   g8.\mf g16 g8~ g4. |
   g8. g16 g8~ g4. |
-  \setTextDim
+  \dimTextDim
   g4.\> g |
-  \setHairpinDim
+  \dimHairpin
   g g |
   g2.\p |
   g |
@@ -331,9 +333,9 @@ hornOneMvtI = \relative c'
   R2.*2 |
 
   %V
-  \setTextCresc
+  \crescTextCresc
   r8 fis'4~\p\< fis8 fis,( fis') |
-  \setHairpinCresc
+  \crescHairpin
   \repeat unfold 2 {r8 fis4~ fis8 fis,( fis') |}
   r8 cis(\f cis,) cis'( cis, cis') |
   fis8 r r r4. |
@@ -344,9 +346,9 @@ hornOneMvtI = \relative c'
   cis4 cis8~ cis cis4 |
   fis4 fis8 e e4 |
   f4 f8 e e4 |
-  \setTextCresc
+  \crescTextCresc
   dis4\f\< dis8~ dis dis dis |
-  \setHairpinCresc
+  \crescHairpin
   e4 e8~ e cis4 |
 
   %tempo I
@@ -393,15 +395,15 @@ hornOneMvtI = \relative c'
   fis8 r r fis r r |
   e r r fis r b, |
   b r r fis' r r |
-  \setTextCresc
+  \crescTextCresc
   r4. a,8\< r r |
-  \setHairpinCresc
+  \crescHairpin
   cis r r b r r |
   g' r r a, r r |
   b r r d r r |
-  \setTextCresc
+  \crescTextCresc
   fis8\f\< r r d r r |
-  \setHairpinCresc
+  \crescHairpin
   d r r b r r |
   fis' r r fis r r |
   e r r g r r |
@@ -422,9 +424,9 @@ hornOneMvtI = \relative c'
 
   %AA
   d r r fis,\mf r r |
-  \setTextDim
+  \dimTextDim
   b\> r r fis r r |
-  \setHairpinDim
+  \dimHairpin
   fis r r fis r r |
   b r r fis r r |
   fis r r fis\p r r |
@@ -492,7 +494,7 @@ hornOneMvtII = \relative c'
 
   %C
   \set crescendoText = \markup {\italic "cresc. poco a poco"}
-  \set crescendoSpanner = #'dashed-line
+  \set crescendoSpanner = #'text
   b\mf\< \fivex b \sixx c |
   \twelvex cis |
   \sixx cis \threex fis \threex f |
@@ -559,9 +561,9 @@ hornOneMvtII = \relative c'
   %H
   cis4.~\p cis8 r r r2. |
   b4.~ b8 r r r2. |
-  \setTextCresc
+  \crescTextCresc
   a4.\mf\< a a e' |
-  \setHairpinCresc
+  \crescHairpin
   e\f dis d\> \times 3/2 {cis8\mf a} |
   d2. d8( cis d) d4. |
   \set Staff.timeSignatureFraction = #'(4 . 4)
@@ -571,9 +573,9 @@ hornOneMvtII = \relative c'
     a8\< d4 fis8 fis4( e) |
     e\f cis e2\> |
     d2\mf \times 2/3 {d8( cis d)} d4 |
-    \setTextCresc
+    \crescTextCresc
     e8(\< cis~ cis4) c8( cis~ cis4) |
-    \setHairpinCresc
+    \crescHairpin
   }
   \set Staff.timeSignatureFraction = #'(12 . 8)
   dis4.\f dis4 dis8 dis4. r |
@@ -588,21 +590,21 @@ hornOneMvtII = \relative c'
   \scaleDurations #'(3 . 2)
   {
     e16\ff cis\f \sixx cis \fourx b cis cis d d |
-    \setTextCresc
+    \crescTextCresc
     a a \fourx fis a a gis\< gis \sixx gis |
-    \setHairpinCresc
+    \crescHairpin
     \eightx c a\ff a \sixx cis |
     d d cis cis \eightx b \fourx d |
     e16\fff cis\f \sixx cis \fourx b cis cis d d |
-    \setTextCresc
+    \crescTextCresc
     a a \fourx fis a a gis\< gis \sixx gis |
-    \setHairpinCresc
+    \crescHairpin
     \eightx c a\ff a \sixx a |
     b\ff b \sixx b \eightx c |
     \eightx cis \eightx cis |
-    \setTextCresc
+    \crescTextCresc
     cis\< cis \sixx cis \fourx fis \fourx f |
-    \setHairpinCresc
+    \crescHairpin
     \eightx f \eightx fis |
     fis\ffff \threex fis a, a c c d\> d \sixx d |
     d\ff d a a fis fis a a b\> b \sixx b |
@@ -783,9 +785,9 @@ hornOneMvtIII = \relative c''
   %O
   e8\! r e4\f e |
   e f_\pesante f |
-  \setTextCresc
+  \crescTextCresc
   e f\< f |
-  \setHairpinCresc
+  \crescHairpin
   e f f |
   e8\! r r4 r |
   R2.*2 |
@@ -798,9 +800,9 @@ hornOneMvtIII = \relative c''
   e~\mf\> |
   e8\! r e4\f e |
   e f_\pesante f |
-  \setTextCresc
+  \crescTextCresc
   e f\< f |
-  \setHairpinCresc
+  \crescHairpin
   e f f |
   e8\! r r4 r |
   R2.*2 |
@@ -825,7 +827,7 @@ hornOneMvtIV = \relative c''
   %A
   fis4.\sf\> fis16\pp fis fis4. fis16 fis |
   \set crescendoText = \markup {\italic "cresc. poco a poco"}
-  \set crescendoSpanner = #'dashed-line
+  \set crescendoSpanner = #'text
   fis8\< r fis2. |
   fis4. fis16 fis fis4. fis16 fis |
   fis8 r fis2. |
@@ -842,9 +844,9 @@ hornOneMvtIV = \relative c''
   fis~\> fis8. gis16 ais8. b16 ais8. fis16 |
 
   %B
-  \setTextCresc
+  \crescTextCresc
   gis2\pp ais\< |
-  \setHairpinCresc
+  \crescHairpin
   b fis8. gis16 ais8. b16 |
   e2 e, |
   dis' dis,8.\f d16 dis8. eis16 |
@@ -918,9 +920,9 @@ hornOneMvtIV = \relative c''
   \fourx e e\< \threex e |
   \fourx g fis\> fis fis, fis |
   \fourx gis e\mf \threex e' |
-  \setTextCresc
+  \crescTextCresc
   \twelvex e e\< \threex e |
-  \setHairpinCresc
+  \crescHairpin
   \fourx g \fourx fis |
 
   %G
@@ -1027,26 +1029,26 @@ hornOneMvtIV = \relative c''
   %P
   R1*8 |
   fis1~->\f |
-  \setTextDim
+  \dimTextDim
   fis~\> |
-  \setHairpinDim
+  \dimHairpin
   fis~ | fis\> |
   r2\! fis\mf |
   fis fis |
   fis g |
   g g |
-  \setTextDim
+  \dimTextDim
   g1~\sf\> |
-  \setHairpinDim
+  \dimHairpin
   g~ | g~ | g\> | s1*0\!
   R1*2 |
   r2 e\p |
   e e |
 
   %Q
-  \setTextDim
+  \dimTextDim
   e1~->\> |
-  \setHairpinDim
+  \dimHairpin
   e1~ | e~ | e | s1*0\!
   R1*10 |
 
@@ -1104,9 +1106,9 @@ hornOneMvtIV = \relative c''
   e\< \sevenx e |
   \fourx g fis\> fis fis, fis |
   \fourx gis e e' e e\! |
-  \setTextCresc
+  \crescTextCresc
   \twelvex e e\< \threex e |
-  \setHairpinCresc
+  \crescHairpin
   \fourx g \fourx fis |
 
   %T
@@ -1133,9 +1135,9 @@ hornOneMvtIV = \relative c''
   %V
   g1(\mf |
   f) |
-  \setTextCresc
+  \crescTextCresc
   aes1(\< |
-  \setHairpinCresc
+  \crescHairpin
   ges) |
   bes2( aes) |
   c( bes) |
@@ -1254,9 +1256,9 @@ hornOneMvtIV = \relative c''
   %presto
   b4 r dis\p r |
   fis r gis, r |
-  \setTextCresc
+  \crescTextCresc
   gis\< r gis r |
-  \setHairpinCresc
+  \crescHairpin
   gis r cis r |
   cis r cis r |
   dis2\f b\ff |
@@ -1266,9 +1268,9 @@ hornOneMvtIV = \relative c''
   %CC
   fis r dis\f r |
   fis r gis, r |
-  \setTextCresc
+  \crescTextCresc
   gis\< r gis r |
-  \setHairpinCresc
+  \crescHairpin
   gis r cis r |
   cis r cis r |
   dis2\f b\ff |

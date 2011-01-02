@@ -1,4 +1,6 @@
-\include "defs.lyi"
+\version "2.13.44"
+
+\include "defs.ily"
 
 hornFourMvtI = \relative c'
 {
@@ -19,4 +21,3 @@ hornFourMvtIV = \relative c'
 {
   \transposition f
 }
-

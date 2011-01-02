@@ -2,7 +2,7 @@
 {
   title = \markup{Symphony No. 5 in E Minor}
   subtitle = ""
-  opus = "Op.64"
+  %opus = "Op.64"
   composer = "Pyotr Ilyich Tchaikovsky (1840-1889)"
   copyright = "Creative Commons Attribution-ShareAlike 3.0"
   instrument = \instrument
@@ -18,4 +18,3 @@
   maintainerEmail = "horndude77@gmail.com"
   lastupdated = "2008/April/10"
 }
-

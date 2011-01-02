@@ -1,4 +1,6 @@
-\include "defs.lyi"
+\version "2.13.44"
+
+\include "defs.ily"
 
 hornTwoMvtI = \relative c'
 {
@@ -123,7 +125,7 @@ hornTwoMvtI = \relative c'
   R2. |
 
   %H
-  \setTextCresc
+  \crescTextCresc
   r8 e4~\p\< e8 e'( e,) |
   r8 e4~ e8 e'( e,) |
   r8 e'( e,~) e\f e'( e,) |
@@ -132,10 +134,10 @@ hornTwoMvtI = \relative c'
   e4 e8~ e e4 |
   d4_\pcrescmolto d8~ d a'4 |
   gis4 gis8~ gis gis4 |
-  \setTextCresc
+  \crescTextCresc
   e4\mf\< e8 d d4 |
   dis4 dis8 d d4 |
-  \setTextCresc
+  \crescTextCresc
   cis4\f\< cis8~ cis cis cis |
   d4 d8~ d a'4 |
   cis,8[\fff r16 cis cis8] cis e a |
@@ -177,7 +179,7 @@ hornTwoMvtI = \relative c'
   ees8\f r r r4. |
   R2.*10 |
   cis2.\p |
-  \setTextCresc
+  \crescTextCresc
   cis\< | s1*0\!
   R2. |
   cis'2.\f |
@@ -229,7 +231,7 @@ hornTwoMvtI = \relative c'
   gis8. gis16 gis8~ gis4. |
   g8.\mf g16 g8~ g4. |
   g8. g16 g8~ g4. |
-  \setTextDim
+  \dimTextDim
   g4.\> g |
   g g |
   g2.\p |
@@ -307,7 +309,7 @@ hornTwoMvtI = \relative c'
   R2. |
 
   %V
-  \setTextCresc
+  \crescTextCresc
   r8 fis4~\p\< fis8 fis'( fis,) |
   \twox {r8 fis4~ fis8 fis'( fis,) |}
   r8 cis(\f cis') cis,( cis' cis,) |
@@ -317,7 +319,7 @@ hornTwoMvtI = \relative c'
   bes bes8~ bes bes4 |
   fis4 fis8 e e4 |
   f4 f8 e e4 |
-  \setTextCresc
+  \crescTextCresc
   dis4\f\< dis8~ dis dis dis |
   e4 e8~ e b'4 |
   dis,8[\ff r16 dis dis8] dis fis b |
@@ -363,12 +365,12 @@ hornTwoMvtI = \relative c'
   fis8 r r fis r r |
   e r r fis r b, |
   b r r fis' r r |
-  \setTextCresc
+  \crescTextCresc
   r4. e8\< r r |
   e r r fis r r |
   g r r d r r |
   g r r g r r |
-  \setTextCresc
+  \crescTextCresc
   fis\f\< r r f r r |
   fis r r fis r r |
   fis r r fis r r |
@@ -390,7 +392,7 @@ hornTwoMvtI = \relative c'
 
   %AA
   d r r d,\mf r r |
-  \setTextDim
+  \dimTextDim
   b\> r r e r r |
   d r r d r r |
   b r r e r r |
@@ -419,9 +421,9 @@ hornTwoMvtII = \relative c'
   fis e |
   r4. d2.\p\> d4. |
   cis8\pp \fivex cis b\< b b cis cis d |
-  \setTextCresc
+  \crescTextCresc
   cis\p\< \fivex cis \sixx gis' |
-  \setHairpinCresc
+  \crescHairpin
   a\mf\< \fivex a a\f\> a a fis\mf fis fis |
   fis\> \fivex fis \sixx d |
   cis\pp \fivex cis b\< b b b cis d |
@@ -432,9 +434,9 @@ hornTwoMvtII = \relative c'
   \set crescendoText = \markup {\italic "cresc. poco a poco"}
   \set crescendoSpanner = #'text
   \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #-1.0
+  \override DynamicTextSpanner #'style = #'none
   fis\mf\< \fivex fis \sixx c |
-  \setHairpinCresc
+  \crescHairpin
   \twelvex cis |
   \sixx cis \sixx b' |
   \sixx b \sixx d |
@@ -498,9 +500,9 @@ hornTwoMvtII = \relative c'
   %H
   cis4.~\p cis8 r r r2. |
   b4.~\p b8 r r r2. |
-  \setTextCresc
+  \crescTextCresc
   a4.\mf\< a a e' |
-  \setHairpinCresc
+  \crescHairpin
   e\f dis d\> \times 3/2 {cis8\mf a} |
   d2. d8( cis d) d4. |
   \set Staff.timeSignatureFraction = #'(4 . 4)
@@ -510,9 +512,9 @@ hornTwoMvtII = \relative c'
     a8\< d4 fis8 fis4( e) |
     e\f cis e2\>
     d2\mf \times 2/3 {d8( cis d)} d4 |
-    \setTextCresc
+    \crescTextCresc
     e8(\< cis~ cis4) c8( cis~ cis4) |
-    \setHairpinCresc
+    \crescHairpin
   }
   \set Staff.timeSignatureFraction = #'(12 . 8)
   dis4.\f dis4 dis8 dis4. r4. |
@@ -527,22 +529,22 @@ hornTwoMvtII = \relative c'
   \scaleDurations #'(3 . 2)
   {
     cis'16\ff e,\f \sixx e \fourx d cis cis b b |
-    \setTextCresc
+    \crescTextCresc
     \eightx cis cis\< \sevenx cis
-    \setHairpinCresc
+    \crescHairpin
     a'16 a \fourx fis a a fis\ff fis a a \fourx fis |
     \twelvex fis \fourx d |
     e\fff e\f \sixx e \fourx d cis cis b b |
-    \setTextCresc
+    \crescTextCresc
     \eightx cis cis\< \sevenx cis
     a'16 a \fourx fis a a \eightx fis |
     fis\ff fis fis fis \twelvex fis |
     \eightx gis \eightx a |
-    \setTextCresc
+    \crescTextCresc
 
     %K
     bes\< \sevenx bes \eightx b |
-    \setHairpinCresc
+    \crescHairpin
     \eightx b \eightx d |
     cis\ffff cis cis cis fis, fis a a gis\> gis gis gis a a b b |
     a\ff a \fourx d, fis fis f\> f f f fis fis gis gis |
@@ -592,4 +594,3 @@ hornTwoMvtIV = \relative c'
 {
   \transposition f
 }
-

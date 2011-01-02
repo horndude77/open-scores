@@ -1,7 +1,7 @@
-\version "2.11.43"
+\version "2.13.44"
 
-\include "defs.lyi" 
-\include "bassnotes.lyi" 
+\include "defs.ily" 
+\include "bass.ily" 
 
 instrument = "Bass"
 
@@ -10,5 +10,4 @@ notesMvtII = \bassMvtII
 notesMvtIII = \bassMvtIII
 notesMvtIV = \bassMvtIV
 
-\include "part.lyi"
-
+\include "part.ily"

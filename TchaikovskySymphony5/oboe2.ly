@@ -1,7 +1,7 @@
-\version "2.11.43"
+\version "2.13.44"
 
-\include "defs.lyi" 
-\include "oboe2notes.lyi" 
+\include "defs.ily" 
+\include "oboe2.ily" 
 
 instrument = "Oboe II"
 
@@ -10,5 +10,4 @@ notesMvtII = \oboeTwoMvtII
 notesMvtIII = \oboeTwoMvtIII
 notesMvtIV = \oboeTwoMvtIV
 
-\include "part.lyi"
-
+\include "part.ily"

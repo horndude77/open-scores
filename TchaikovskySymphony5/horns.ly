@@ -1,10 +1,10 @@
-\version "2.10.44"
+\version "2.13.44"
 
-\include "horn1notes.lyi"
-\include "horn2notes.lyi"
-\include "horn3notes.lyi"
-\include "horn4notes.lyi"
-\include "defs.lyi"
+\include "horn1.ily"
+\include "horn2.ily"
+\include "horn3.ily"
+\include "horn4.ily"
+\include "defs.ily"
 
 \paper
 {
@@ -16,7 +16,7 @@ instrument = "Horns"
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     \new StaffGroup
@@ -53,7 +53,7 @@ instrument = "Horns"
     \midi { }
     \layout
     {
-      %\context { \RemoveEmptyStaffContext }
+      %\context { \Staff \RemoveEmptyStaves }
     }
   }
 
@@ -93,8 +93,7 @@ instrument = "Horns"
     \midi { }
     \layout
     {
-      %\context { \RemoveEmptyStaffContext }
+      %\context { \Staff \RemoveEmptyStaves }
     }
   }
 }
-

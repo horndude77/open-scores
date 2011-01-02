@@ -1,7 +1,7 @@
-\version "2.11.43"
+\version "2.13.44"
 
-\include "defs.lyi" 
-\include "bassoon2notes.lyi" 
+\include "defs.ily" 
+\include "bassoon2.ily" 
 
 instrument = "Bassoon II"
 
@@ -10,5 +10,4 @@ notesMvtII = \bassoonTwoMvtII
 notesMvtIII = \bassoonTwoMvtIII
 notesMvtIV = \bassoonTwoMvtIV
 
-\include "part.lyi"
-
+\include "part.ily"

@@ -1,7 +1,7 @@
-\version "2.11.43"
+\version "2.13.44"
 
-\include "defs.lyi" 
-\include "trumpet1notes.lyi" 
+\include "defs.ily" 
+\include "trumpet1.ily" 
 
 instrument = "Trumpet I"
 
@@ -10,5 +10,4 @@ notesMvtII = \trumpetOneMvtII
 notesMvtIII = \trumpetOneMvtIII
 notesMvtIV = \trumpetOneMvtIV
 
-\include "part.lyi"
-
+\include "part.ily"

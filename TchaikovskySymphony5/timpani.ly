@@ -1,7 +1,7 @@
-\version "2.11.43"
+\version "2.13.44"
 
-\include "defs.lyi" 
-\include "timpaninotes.lyi" 
+\include "defs.ily" 
+\include "timpani.ily" 
 
 instrument = "Timpani"
 
@@ -10,5 +10,4 @@ notesMvtII = \timpaniMvtII
 notesMvtIII = \timpaniMvtIII
 notesMvtIV = \timpaniMvtIV
 
-\include "part.lyi"
-
+\include "part.ily"

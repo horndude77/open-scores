@@ -1,7 +1,7 @@
-\version "2.11.43"
+\version "2.13.44"
 
-\include "defs.lyi" 
-\include "violanotes.lyi" 
+\include "defs.ily" 
+\include "viola.ily" 
 
 instrument = "Viola"
 
@@ -10,5 +10,4 @@ notesMvtII = \violaMvtII
 notesMvtIII = \violaMvtIII
 notesMvtIV = \violaMvtIV
 
-\include "part.lyi"
-
+\include "part.ily"
