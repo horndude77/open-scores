@@ -23,7 +23,7 @@ koppFortyFive = \relative c'
   b\> c b a g fis e g\! |
   fis r g e dis b e g |
   fis( b) g e dis b e g |
-  a4 r b8(\p c) b ais |
+  b4 r b8(\p c) b ais |
   b( ais) b c b( a) g fis |
   e( g) fis e fis-. b,( c b) |
   e\f fis g a b cis dis e |
