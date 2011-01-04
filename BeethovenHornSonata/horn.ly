@@ -1,4 +1,4 @@
-\version "2.13.37"
+\version "2.13.44"
 
 \include "defs.ily"
 \include "horn.ily"
@@ -10,23 +10,14 @@ instrument = "Horn in F"
   \include "header.ily"
   \score
   {
-    \new Staff
-    {
-      << \hornMvtI \outlineMvtI >>
-    }
+    \new Staff { << \hornMvtI \outlineMvtI >> }
   }
   \score
   {
-    \new Staff
-    {
-      << \hornMvtII \outlineMvtII >>
-    }
+    \new Staff { << \hornMvtII \outlineMvtII >> }
   }
   \score
   {
-    \new Staff
-    {
-      << \hornMvtIII \outlineMvtIII >>
-    }
+    \new Staff { << \hornMvtIII \outlineMvtIII >> }
   }
 }

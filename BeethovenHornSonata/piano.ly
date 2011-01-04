@@ -1,4 +1,4 @@
-\version "2.13.37"
+\version "2.13.44"
 
 \include "defs.ily"
 \include "piano.ily"
@@ -101,9 +101,9 @@ instrument = "Piano"
         }
       >>
       {
-        << \midiOutlineMvtI \outlineMvtI >>
-        << \midiOutlineMvtII \outlineMvtII >>
-        << \midiOutlineMvtIII \outlineMvtIII >>
+        \outlineMvtI
+        \outlineMvtII
+        \outlineMvtIII
       }
     >>
     \midi { }

@@ -1,4 +1,4 @@
-\version "2.13.37"
+\version "2.13.44"
 
 hornMvtI = \relative c''
 {
@@ -17,8 +17,7 @@ hornMvtI = \relative c''
     e( d) d-. d-. d( e16 d) c8-. d-. |
     dis4( e) r c8. d16 |
 
-    \crescJustTextCresc
-    e4-.(\< e-. e-. e-.) |
+    e4-.(\justCresc e-. e-. e-.) |
     f2~ f8 e16 f g f e d |
     d4(\p c2) d8.( b16) |
     c4 r r2 |
@@ -26,7 +25,7 @@ hornMvtI = \relative c''
     d4. c8 c( b) a-. g-. |
     c4 r r2 |
     cis8( d) e( d) c( b) a-. g-. |
-    c4\< c, r c'8. c16 |
+    c4\justCresc c, r c'8. c16 |
     c4 c, r b'-.\f |
     c-. d-. e-. fis-. |
     g8 g,16 a b8-. g-. c4 c, |
@@ -45,7 +44,7 @@ hornMvtI = \relative c''
     R1 |
     r8 d'' d d d4 r |
     R1 |
-    r8 d\< d d d d d d |
+    r8 d\justCresc d d d d d d |
     d-.\f g,,-. f''4.\sf g,8-. a-. b-. |
     c4 r r2 |
     R1 |
@@ -60,7 +59,6 @@ hornMvtI = \relative c''
     d4 d r d8. d16 |
     e4 c, r2 |
     R1*3 |
-    \crescHairpin
     \clef "bass^8"
     << {\once \override Hairpin #'minimum-length = #7 s4\pp\< s s\> s\!} {g2.( fis4)} >> |
     g4 r r2 |
@@ -98,8 +96,7 @@ hornMvtI = \relative c''
   f r r2 |
   f'2 c4-. a-. |
   f r r2 |
-  \crescJustTextCresc
-  f'2\< f4 f |
+  f'2\justCresc f4 f |
   f2 f4 f |
 
   c4\! r r2 |
@@ -117,13 +114,12 @@ hornMvtI = \relative c''
   R1 |
 
   \clef treble
-  g4 r r g'8.\< g16 |
+  g4 r r g'8.\justCresc g16 |
   g,4 r r g'8. g16 |
   g,4 g'8. g16 g,4 g'8. g16 |
   g,8 g' g, g' g, g' g, g' |
   %NOTE: On the second triplet g there was a \ff, but it seems silly to have. A
   %crescendo seems appropriate.
-  \crescHairpin
   \times 2/3 {g,8 g'\< g} \times 2/3 {g g g} \times 2/3 {g g g} \times 2/3 {g a b} |
   c2\ff g4 e |
   c r r2 |
@@ -132,8 +128,7 @@ hornMvtI = \relative c''
   d( c) c-. c-. c( d16 c) b8-. c-. |
   cis2( d8) g,( f' e) |
   e( d) d-. d-. d( e16 d) c8-. d-. |
-  \crescJustTextCresc
-  dis4(\< e~) e8 c( d e) |
+  dis4(\justCresc e~) e8 c( d e) |
   f2 e8( d c bes) |
   a(\p bes b c) c( bes a g) |
   f4 r r2 |
@@ -157,7 +152,6 @@ hornMvtI = \relative c''
   R1 |
   r8 e'\pp e e e4 r |
   R1 |
-  \crescHairpin
   r8 e\< e e e e e e |
   e-.\f c,-. g''4. c,8-. d-. e-. |
   f4 r r2 |
@@ -210,8 +204,7 @@ hornMvtII = \relative c''
   d( c) c-. c-. c-. d32( c) b16-. c-. |
   d8\pp g16. g32 g8 r |
   r g,16. g32 g8 r |
-  \crescJustTextCresc
-  r8 \repeat unfold 4 {g,16.\sf g32 g8} g'\< g, g |
+  r8 \repeat unfold 4 {g,16.\sf g32 g8} g'\justCresc g, g |
   g4\fermata\p r\fermata |
 }
 
@@ -221,8 +214,7 @@ hornMvtIII = \relative c''
   r2 |
   R1*3 |
   r2 g4-.\p g-. |
-  \crescJustTextCresc
-  c2\< c, |
+  c2\justCresc c, |
   b f''\sf |
   f8(\p e) e( d) d( c) c( b) |
   d2( c4) g |
@@ -230,7 +222,7 @@ hornMvtIII = \relative c''
   g' r r g, |
   d'2( e4)-. c-. |
   g' r g,\p g |
-  c2\< c, |
+  c2\justCresc c, |
   b f''\sf |
   f8(\p e) e( d) d( c) c( b) |
   d2( c4) g |
@@ -240,7 +232,6 @@ hornMvtIII = \relative c''
   e2( d4) r |
   R1*3 |
   r4 d-.\p d-. d-. |
-  \crescHairpin
   << {s4\< s s\> s\!} {d2.( cis4)} >> |
   d4 d d d |
   << {s4\< s s\> s\!} {d2.( cis4)} >> |
@@ -263,8 +254,7 @@ hornMvtIII = \relative c''
   g'2( g,) |
   R1*3 |
   r2 g'4-.\p g-. |
-  \crescJustTextCresc
-  c2\< c, |
+  c2\justCresc c, |
   b f''\sf |
   f8(\p e) e( d) d( c) c( b) |
   d2( c4) g |
@@ -273,7 +263,7 @@ hornMvtIII = \relative c''
   d'2( e4)-. c-. |
   g' r r2 |
   R1 |
-  g,2\< g, |
+  g,2\justCresc g, |
   c4\! r r2 |
   r r4 e |
   e'2 d8( c b a) |
@@ -317,7 +307,7 @@ hornMvtIII = \relative c''
   f8( e) d( c) b( a) g'( f) |
   e2( d4) r |
   R1 |
-  g,2\p\< g, |
+  g,2\p\justCresc g, |
   c4\! r r2 |
   r2 r4 g' |
   d'2( e4-.) c-. |
@@ -325,7 +315,7 @@ hornMvtIII = \relative c''
   d'2( e4-.) c-. |
   g'4 r r2 |
   R1 |
-  g,2\< g, |
+  g,2\justCresc g, |
   c4\! r r2 |
   r r4 c'~\sf |
   c c, r c'~\sf |
@@ -336,12 +326,11 @@ hornMvtIII = \relative c''
     {
       c4 r \times 2/3 {c,8 c' c} \times 2/3{c c c} |
     }
-    {s1*2 | s2 s\< |}
+    {s1*2 | s2 s\justCresc |}
   >>
   \repeat unfold 2 { \times 2/3 {c,8 c' c} \times 2/3{c c c} } |
   \repeat unfold 4 { \times 2/3 {g,8 g' g} \times 2/3{g g g} } |
   g,4\f r r2 |
-  \crescHairpin
   \times 2/3 {g8\ff g'\< g} \times 2/3{g g g} %NOTE: I like a crescendo here.
     \times 2/3 {g a b} \times 2/3{c d e} |
   f1~\sf\> |

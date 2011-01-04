@@ -1,4 +1,4 @@
-\version "2.13.37"
+\version "2.13.44"
 
 pianoRightMvtI = \relative c''
 {
@@ -443,21 +443,18 @@ pianoDynamicsMvtI =
   s1\f |
   s1\f |
   s1 |
-  \crescJustTextCresc
-  s4 s\< s2 |
+  s4 s\justCresc s2 |
   s1*4 |
   s1\f |
   s1*5 |
   s1\p |
-  \crescHairpin
   s4\pp\< s s\> s\! |
   s1\f |
   s1 |
   s1\p |
   s4\pp\< s s\> s\! |
   s1*10 |
-  \crescJustTextCresc
-  s8 s\< s4 s2 |
+  s8 s\justCresc s4 s2 |
   s1\ff | s4 s s
   %repeat
 
@@ -468,18 +465,18 @@ pianoDynamicsMvtI =
   s4 s\pp s2 |
   s1 |
   s1*10\f |
-  s2 s\< |
+  s2 s\justCresc |
   s1*9 |
   s1*5\pp |
-  s1\< |
+  s1\justCresc |
   s1*3 |
   s1\ff |
   s1 |
   s1\ff |
   s1*7\p |
-  s1\< |
+  s1\justCresc |
   s1*6 |
-  s1\< |
+  s1\justCresc |
   s1*5 |
   s1*4\p |
   \override TextSpanner #'(bound-details left text) = #"calando"
@@ -490,9 +487,8 @@ pianoDynamicsMvtI =
   s1\pp |
   s1\f |
   s1*2 |
-  s2 s\< |
+  s2 s\justCresc |
   s1*10 |
-  \crescHairpin
   s2\pp\< s | s\> s |
   s4\! r r r |
   s1 |
@@ -996,10 +992,8 @@ pianoDynamicsMvtIII =
   s1\<
   s2 s4 s\sf |
   s1*5\p |
-  \crescJustTextCresc
-  s1\< |
+  s1\justCresc |
   s1\p
-  \crescHairpin
   s2\< s\sf |
   s1*2\p |
   s1*8\p |
@@ -1022,30 +1016,25 @@ pianoDynamicsMvtIII =
   s1\< |
   s2 s4 s\sf |
   s1*6\p |
-  \crescJustTextCresc
-  s1\< |
+  s1\justCresc |
   s1*3 |
   s1*8\p |
   s1*19\p |
-  \crescHairpin
   s2.\< s8 s\! |
   s1*3\p |
   s2 s\p |
   s1 |
-  \dimTextDim
-  s1*2\> |
+  s1*2\justDim |
   s1\pp |
   s4 s\sf s2 |
   s4 s\sf s2 |
   s4 s\sf s2 |
   s1 |
   s1*5\p |
-  \crescJustTextCresc
-  s1*3\< |
+  s1*3\justCresc |
   s1*4\p |
-  s1*7\< |
-  \crescTextCresc
-  s1*6\< |
+  s1*7\justCresc |
+  s1*6\cresc |
   s1\f |
   s\ff |
   s\sf |
@@ -1054,7 +1043,7 @@ pianoDynamicsMvtIII =
   s1*4 |
   s1\ff |
   s2\p s\pp |
-  s s\< |
+  s s\cresc |
   s1\f |
   s1*7 |
   s1*8\p |

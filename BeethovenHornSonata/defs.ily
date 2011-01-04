@@ -1,8 +1,11 @@
-\version "2.13.37"
+\version "2.13.44"
 
 staccato = \markup{staccato}
 calando = \markup{\italic calando}
 cantabile = \markup{\italic cantabile}
+
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
 
 crescTextCresc =
 {
@@ -36,56 +39,57 @@ dimJustTextDim =
 
 outlineMvtI =
 {
-  \tempo "Allegro moderato"
+  \tempo "Allegro moderato" 4=120
   \time 4/4
+  \partial 4
   \repeat volta 2
   {
-    \partial 4 s4
-    s1*10
+    s4 |
+    s1*10 |
 
     \mark \default
-    s1*9
+    s1*9 |
 
     \mark \default
-    s1*11
+    s1*11 |
 
     \mark \default
-    s1*15
+    s1*15 |
 
     \mark \default
-    s1*17
+    s1*17 |
 
     \mark \default
-    s1*12
+    s1*12 |
     s4*3
   }
 
-  s4
-  s1*18
+  s4 |
+  s1*18 |
 
   \mark \default
-  s1*18
+  s1*18 |
 
   \mark \default
-  s1*12
+  s1*12 |
 
   \mark \default
-  s1*10
+  s1*10 |
 
   \mark \default
-  s1*15
+  s1*15 |
 
   \mark \default
-  s1*17
+  s1*17 |
 
   \mark \default
-  s1*14
+  s1*14 |
   s4*3 \bar "|."
 }
 
 outlineMvtII =
 {
-  \tempo "Poco Adagio, quasi Andante"
+  \tempo "Poco Adagio, quasi Andante" 8=84
   \time 2/4
   \partial 8 s8 |
   s2*8 |
@@ -104,58 +108,44 @@ outlineMvtIII =
 {
   \time 2/2
   \set Score.beamExceptions =  #'((end . (((1 . 16) . (4 4 4 4)) ((1 . 12) . (3 3 3 3)) ((1 . 24) . (6 6 6 6)))))
-  \tempo "Rondo Allegro moderato"
-  \partial 2 s2
+  \tempo "Rondo Allegro moderato" 4=132
+  \partial 2
+  s2 |
   s1*16 |
 
   \mark \default
-  s1*15
+  s1*15 |
 
   \mark \default
-  s1*14
+  s1*14 |
 
   \mark \default
-  s1*16
+  s1*16 |
 
   \mark \default
-  s1*16
+  s1*16 |
 
   \mark \default
-  s1*24
+  s1*24 |
 
   \mark \default
-  s1*16
+  s1*16 |
 
   \mark \default
-  s1*13
+  s1*13 |
 
   \mark \default
-  s1*16
+  s1*16 |
 
   \mark \default
-  s1*12
+  s1*12 |
 
   \mark \default
-  s1*3
+  s1*3 |
 
   \tempo "Allegro molto"
-  s1*5
+  s1*5 |
   s2 \bar "|."
-}
-
-midiOutlineMvtI =
-{
-  \tempo 4=120
-}
-
-midiOutlineMvtII =
-{
-  \tempo 4=42
-}
-
-midiOutlineMvtIII =
-{
-  \tempo 4=132
 }
 
 \layout
@@ -171,11 +161,19 @@ midiOutlineMvtIII =
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
     markFormatter = #format-mark-box-alphabet
+    tempoHideNote = ##t
   }
 
   \context
   {
-    \Staff \RemoveEmptyStaves
+    \Staff
+    \RemoveEmptyStaves
+  }
+
+  \context
+  {
+    \Dynamics
+    \consists "Tweak_engraver"
   }
 }
 
