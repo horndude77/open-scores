@@ -1,12 +1,8 @@
-\version "2.13.18"
+\version "2.13.47"
 
 \include "horn.ily"
 
 instrument = "Horn in F"
+notes = \horn
 
-\include "header.ily"
-\score
-{
-  \new Staff { << \horn \outline >> }
-}
-
+\include "part.ily"

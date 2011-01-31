@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.47"
 
 \include "defs.ily"
 
@@ -248,9 +248,7 @@ pianoLeft = \relative c
 
 pianoDynamics =
 {
-  \dimTextDim
-  s2.*2\f\> |
-  \dimHairpin
+  s2.*2\f\dim |
   s2.*2\p |
   s4 s2\> |
   s2\! s4\< |
@@ -272,23 +270,14 @@ pianoDynamics =
   s2. |
   s4 s2\> |
   s2.\! |
-  \crescTextCresc
-  \once \override DynamicTextSpanner #'dash-period = #-1.0
-  s4\p s2\< |
-  \crescHairpin
+  s4\p s2\justCresc |
   s2. |
   s4\mf s2\< |
   s2.\! |
-  \dimTextDim
-  \once \override DynamicTextSpanner #'dash-period = #-1.0
-  s2.\> |
-  \dimHairpin
+  s2.\justDim |
   s2.\! |
   s2.*2 |
-  \crescTextCresc
-  \once \override DynamicTextSpanner #'dash-period = #-1.0
-  s2.\< |
-  \crescHairpin
+  s2.\justCresc |
   s2.*3 |
   s2.\f-\agitato |
   s2.\< |
@@ -298,19 +287,13 @@ pianoDynamics =
   s4 s2\> |
   s2\! s4\< |
   s2\> s4\< |
-  s4\!
-  \crescTextCresc
-  \once \override DynamicTextSpanner #'dash-period = #-1.0
-    s2\< |
-  \crescHairpin
+  s4\! s2\justCresc |
   s2. |
   s2 s4\ff |
   s2.-\legato |
   s2.\f |
   s2.\mf |
-  \crescTextCresc
-  s2.\p\< |
-  \crescHairpin
+  s2.\p\justCresc |
   s2. |
   s2.\f\> |
   s2.\p-\collaParte |
@@ -319,7 +302,7 @@ pianoDynamics =
   s2.*9 |
   s2.\mf |
   s4 s2\> |
-  s2.\! |
+  s2. s1*0\! |
 }
 
 pianoPedals =

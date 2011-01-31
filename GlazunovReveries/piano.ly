@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.47"
 
 \include "piano.ily"
 \include "horn.ily"
@@ -47,4 +47,3 @@ instrument = "Piano"
     \midi { }
   }
 }
-

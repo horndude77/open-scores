@@ -1,4 +1,4 @@
-\version "2.13.18"
+\version "2.13.47"
 
 \include "defs.ily"
 
@@ -6,7 +6,7 @@ horn = \relative c''
 {
   \key c \major
   \transposition f
-  \time 3/4
+  %3/4
   R2. |
   r4 r \times 2/3 {aes8(\<^\dolce bes c)} |
   c4->(\> f,)\! \times 2/3 {aes8(\< bes c)} |
@@ -29,22 +29,14 @@ horn = \relative c''
   ees8. r16 des4.( f,8) |
   c'2\> c8.(\! g16) |
   bes8. r16 aes4.( d,8) |
-  \crescTextCresc
-  g2.~\p\< | g |
-  \crescHairpin
+  g2.~\p\cresc | g |
   g8(\mf aes bes) bes ees8.(\< bes16) |
   des2.~->( |
-  \dimTextDim
-  \once \override DynamicTextSpanner #'dash-period = #-1.0
-  des2\> c4) |
-  \dimHairpin
+  des2\justDim c4) |
   bes2( aes4) |
   g2.~\! |
   g4 f2 |
-  \crescTextCresc
-  \once \override DynamicTextSpanner #'dash-period = #-1.0
-  des2\< bes4~ |
-  \crescHairpin
+  des2\justCresc bes4~\! |
   bes aes( g) |
   f2 \clef bass des4~ |
   des bes( aes) |
@@ -62,10 +54,7 @@ horn = \relative c''
   \times 2/3 {aes8 f des)} \times 2/3 {bes8( des f)} \times 2/3 {ees4 ees8~(\f} |
   \times 2/3 {ees8 c aes)} \times 2/3 {f8( aes c)} \times 2/3 {bes4 bes8~(\mf} |
   \times 2/3 {bes8 g ees)} \times 2/3 {c8( ees g)} f4~\> |
-  \crescTextCresc
-  \once \override DynamicTextSpanner #'dash-period = #-1.0
-  f2\p\< g4 |
-  \crescHairpin
+  f2\p\justCresc g4 |
   aes des4.( aes8) |
   c2.~->(\f\> |
   c4\! bes4. aes8) |
@@ -76,5 +65,5 @@ horn = \relative c''
   aes2-+(\pp^\bouche bes4-+ |
   c-+) f4.-+( c8-+) |
   ees2.~-+ | ees-\open\< |
-  ees2.~\mf^\morendo | ees\fermata |
+  ees2.~\mf\> | ees\fermata^\morendo s1*0\! |
 }
