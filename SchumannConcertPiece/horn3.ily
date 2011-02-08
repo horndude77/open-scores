@@ -1,4 +1,4 @@
-\version "2.11.63"
+\version "2.13.48"
 
 hornThree = \relative c''
 {
@@ -44,9 +44,7 @@ hornThree = \relative c''
   d2\< dis(\sf |
   e4) r r2 |
   a,2( ais |
-  \crescTextCresc
-  b) b~\< |
-  \crescHairpin
+  b) b~\cresc |
   b d |
   d1~\sf\> |
   d4\! r r2 |
@@ -58,9 +56,7 @@ hornThree = \relative c''
   a4. a8 a4. a8 |
   a4. r8 r4 r8. a16 |
   a4. r8 r4 r8. a16 |
-  \crescTextCresc
-  a4. a8 a4.\< a8 |
-  \crescHairpin
+  a4. a8 a4.\cresc a8 |
   a4. a8 a4. a8 |
   g2\! r |
   g-^(\f d-^) |
@@ -109,22 +105,16 @@ hornThree = \relative c''
     r4 b'-.(\< b-. b-.) |
     c2.\sfp r4 |
   }
-  \dimTextDim
-  a1~\p\> | a |
-  \dimHairpin
+  a1~\p\dim | a |
   gis4\! r r2 |
   R1*2 |
   a,1(\fp |
   b4) r e( d |
   c) r r2 |
   R1*3 |
-  \crescTextCresc
-  \times 2/3 {r8 e,->\p e} \times 2/3 {e->( g) g-.} \times 2/3 {g->(\< c) c-.} \times 2/3 {c->( e) e-.} |
-  \crescHairpin
+  \times 2/3 {r8 e,->\p e} \times 2/3 {e->( g) g-.} \times 2/3 {g->(\cresc c) c-.} \times 2/3 {c->( e) e-.} |
   f8\! r r4 r2 |
-  \crescTextCresc
-  \times 2/3 {r8 g, g} \times 2/3 {g->(\< a) a-.} \times 2/3 {a->( cis) cis-.} \times 2/3 {cis->( e) e-.} |
-  \crescHairpin
+  \times 2/3 {r8 g, g} \times 2/3 {g->(\cresc a) a-.} \times 2/3 {a->( cis) cis-.} \times 2/3 {cis->( e) e-.} |
 
   %E
   f8\! r r4 r2 |
@@ -157,9 +147,7 @@ hornThree = \relative c''
   a1 |
   dis2( e) |
   cis( d) |
-  \crescTextCresc
-  b(\< c~ |
-  \crescHairpin
+  b(\cresc c~ |
   c c |
   \times 2/3 {b8) e,,\f e} \times 2/3 {e gis b} c8 r r4 |
   r2 r4 c\f |
@@ -179,9 +167,7 @@ hornThree = \relative c''
   g2\< gis(\sf |
   a4) r r2 |
   d,2( dis |
-  \crescTextCresc
-  e) e~\< |
-  \crescHairpin
+  e) e~\cresc |
   e g |
   g1~\sf\> |
   g8\! c,( e' b c g e c) |
@@ -193,9 +179,7 @@ hornThree = \relative c''
   d4. d8 d4. d8 |
   d4. r8 r4 r8. d16 |
   d4. r8 r4 r8. d16 |
-  \crescTextCresc
-  d4.\< d8 \repeat unfold 3 {d4. d8} |
-  \crescHairpin
+  d4.\cresc d8 \repeat unfold 3 {d4. d8} |
   c2\! r |
   c-^(\f g-^) |
   g2.-^ r4 |
@@ -248,9 +232,7 @@ hornThree = \relative c''
   aes) g ees( |
   des f) f~( |
   f ees) r |
-  \dimTextDim
-  r f(\> d) |
-  \dimHairpin
+  r f(\dim d) |
   r a( g) |
   r f'(\< e\> |
   c2)\! r4 |
@@ -268,9 +250,7 @@ hornThree = \relative c''
   c-. r r4 |
   R2*5 |
   r4 r8 c~-> |
-  \crescTextCresc
-  c16\< b g e b8 a'-.\f |
-  \crescHairpin
+  c16\cresc b g e b8 a'-.\f |
   g-.\f r r4 |
   R2 |
   r4 r8 g-.\f |
@@ -303,9 +283,7 @@ hornThree = \relative c''
   g r r4 |
   r8 e'4 e8 |
   e4 e8 e |
-  \crescTextCresc
-  b2->(\< |
-  \crescHairpin
+  b2->(\cresc |
   e8)\! r r4 |
 
   %N
@@ -354,9 +332,7 @@ hornThree = \relative c''
   fis'->) |
   R2 |
   r4 r8 gis,,( |
-  \crescTextCresc
-  cis\< dis eis fis |
-  \crescHairpin
+  cis\cresc dis eis fis |
   gis) r r4 |
   r4 r8 b( |
   a fis cis a |
@@ -392,15 +368,11 @@ hornThree = \relative c''
   a-. |
   gis8-. r r4 |
   R2*5 |
-  \crescTextCresc
-  a'2~(\< |
-  \crescHairpin
+  a'2~(\cresc |
   a |
   d4)\! r |
   R2 |
-  \crescTextCresc
-  b2(\< |
-  \crescHairpin
+  b2(\cresc |
   e4.) a,16\f a |
 
   %Q
@@ -417,9 +389,7 @@ hornThree = \relative c''
   f'8. e16 d8 b'-.\f |
   c-. c-. r4 |
   R2*5 |
-  \crescTextCresc
-  r4 r8 c~(\p\< |
-  \crescHairpin
+  r4 r8 c~(\p\cresc |
   c16 b) g-. e-. b8 a'-.\f |
   g-.\f r r4 |
   R2 |
@@ -502,18 +472,14 @@ hornThree = \relative c''
   R2*3 |
   f,8\p r r4 |
   \repeat unfold 3 { f8 r r4 | } |
-  \crescTextCresc
-  bes8\< r r4 |
-  \crescHairpin
+  bes8\cresc r r4 |
   \repeat unfold 2 { bes8 r r4 | } |
   bes8\! r r4 |
   R2*12 |
   r8 e( d e) |
   d r r4 |
   r8 d( c d) |
-  \crescTextCresc
-  c2~\< |
-  \crescHairpin
+  c2~\cresc |
   c~ |
   c8 f,( a d) |
   g,2(\f |
@@ -545,9 +511,7 @@ hornThree = \relative c''
   c4-^ b-^ |
   b8-.\sf r r4 |
   \times 2/3 {r8 g, g} \times 2/3 {g->( b) b-.} |
-  \crescTextCresc
-  \times 2/3 {b-.(\< d) d-.} \times 2/3 {d->( g) g-.} |
-  \crescHairpin
+  \times 2/3 {b-.(\cresc d) d-.} \times 2/3 {d->( g) g-.} |
   \times 2/3 {g-.( b) b-.} \times 2/3 {b->( d) d-.} |
   e8-. b-.\ff c-. gis-. |
   a-. a-. b-. b-. |
@@ -555,4 +519,3 @@ hornThree = \relative c''
   e-. r e-. r |
   e2\fermata |
 }
-

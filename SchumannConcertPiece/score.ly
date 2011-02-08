@@ -1,18 +1,20 @@
-\version "2.11.63"
+\version "2.13.48"
 
-\include "horn1notes.lyi"
-\include "horn2notes.lyi"
-\include "horn3notes.lyi"
-\include "horn4notes.lyi"
-\include "horn5notes.lyi"
-\include "horn6notes.lyi"
-\include "defs.lyi"
+\include "defs.ily"
+\include "horn1.ily"
+\include "horn2.ily"
+\include "horn3.ily"
+\include "horn4.ily"
+\include "horn5.ily"
+\include "horn6.ily"
 
 \paper
 {
   #(define page-breaking ly:minimal-breaking)
-  ragged-last-bottom = ##f
   short-indent = 4\mm
+  top-system-spacing #'stretchability = #0
+  last-bottom-spacing #'stretchability = #0
+  system-system-spacing #'stretchability = #2
 }
 
 #(set-global-staff-size 18)
@@ -21,7 +23,7 @@ instrument = "Horns"
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     <<
@@ -74,18 +76,7 @@ instrument = "Horns"
         }
       >>
     >>
-    \layout
-    {
-      %\context { \RemoveEmptyStaffContext }
-    }
-    \midi
-    {
-      \context
-      {
-        \Voice
-        \remove "Dynamic_performer"
-      }
-    }
+    \layout { }
+    \midi { }
   }
 }
-

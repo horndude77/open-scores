@@ -1,6 +1,4 @@
-\version "2.11.63"
-
-\include "defs.lyi"
+\version "2.13.48"
 
 hornOne = \relative c''
 {
@@ -47,9 +45,7 @@ hornOne = \relative c''
   b1~\< |
   b8\! a c b a g fis e) |
   dis4( e~ e8 fis g4) |
-  \crescTextCresc
-  fis(\< g~ g8 a b4) |
-  \crescHairpin
+  fis(\cresc g~ g8 a b4) |
   ais4( b~ b8 cis d4) |
   d2.(\sf\> c4) |
   b\! r r2 |
@@ -61,9 +57,7 @@ hornOne = \relative c''
   c4. c8 cis4. cis8 |
   d4. d8( c'4 a8.) e16 |
   d4. d8( c'4 a8.) e16 |
-  \crescTextCresc
-  d4. d8 dis4.\< dis8 |
-  \crescHairpin
+  d4. d8 dis4.\cresc dis8 |
   e4. e8 fis4. fis8 |
   g2\! r |
   e2-^(\f a,-^ |
@@ -132,9 +126,7 @@ hornOne = \relative c''
     r4 f'-.(\< f-. f-.) |
     a4.(\sfp g8 f2) |
   }
-  \dimTextDim
-  dis1~\p\> | dis |
-  \dimHairpin
+  dis1~\p\dim | dis |
   e4\! r r2 |
   R1 |
   r2 e~(\fp |
@@ -143,13 +135,9 @@ hornOne = \relative c''
   c) r r2 |
   R1*2 |
   r2 \times 2/3 {r8 c\p c} \times 2/3 {c f a} |
-  \crescTextCresc
-  \times 2/3 {bes( g) g-.} \times 2/3 {g->(\< e) e-.} \times 2/3 {e->( c) c-.} \times 2/3 {c->( bes) bes-.} |
-  \crescHairpin
+  \times 2/3 {bes( g) g-.} \times 2/3 {g->(\cresc e) e-.} \times 2/3 {e->( c) c-.} \times 2/3 {c->( bes) bes-.} |
   a8\! r r4 \times 2/3 {r8 a a} \times 2/3 {a d f} |
-  \crescTextCresc
-  \times 2/3 {g( e) e-.} \times 2/3 {e->(\< cis) cis-.} \times 2/3 {cis->( a) a-.} \times 2/3 {a->( g) g-.} |
-  \crescHairpin
+  \times 2/3 {g( e) e-.} \times 2/3 {e->(\cresc cis) cis-.} \times 2/3 {cis->( a) a-.} \times 2/3 {a->( g) g-.} |
 
   %E
   f8\! r r4 r2 |
@@ -182,9 +170,7 @@ hornOne = \relative c''
   c'8 b a g fis e dis e) |
   b'1( |
   a) |
-  \crescTextCresc
-  gis2(\< a~ |
-  \crescHairpin
+  gis2(\cresc a~ |
   a~ a8 gis b a |
   gis)\! r r4 r2 |
   \times 2/3 {r8 f,\f f} \times 2/3 {f a c} f4( dis |
@@ -204,9 +190,7 @@ hornOne = \relative c''
   e1\< |
   e8\! d f e d c b a) |
   gis4( a~ a8 b c4) |
-  \crescTextCresc
-  b4( c~ c8\< d e4) |
-  \crescHairpin
+  b4( c~ c8\cresc d e4) |
   dis4( e~ e8 fis g4) |
   g2.(\sf\> f4 |
   e)\! r r2 |
@@ -218,9 +202,7 @@ hornOne = \relative c''
   f4. f8 fis4. fis8 |
   g4. r8 r4 r8. a16 |
   g4. r8 r4 r8. a16 |
-  \crescTextCresc
-  g4.\< g8 gis4. gis8 |
-  \crescHairpin
+  g4.\cresc g8 gis4. gis8 |
   a4. a8 b4. b8 |
   c2\! r |
   a-^( d,-^ |
@@ -302,9 +284,7 @@ hornOne = \relative c''
   f) bes,( c |
   des2 d4 |
   f4\espressivo ees des |
-  \dimTextDim
-  c\> a bes) |
-  \dimHairpin
+  c\dim a bes) |
   a( f g |
   c4~ c8 cis\< d\> g,\! |
   bes4 a) r |
@@ -320,9 +300,7 @@ hornOne = \relative c''
   c4( b) f,8.( a'16) |
   a4( g a) |
   f8. d16 e4 e |
-  \dimTextDim
-  a,2.~\> |
-  \dimHairpin
+  a,2.~\dim |
   a4\! r r |
   R2.*5 |
 
@@ -338,9 +316,7 @@ hornOne = \relative c''
   r4 r8 c'~->\p |
   c16 b g e b8 fis'-. |
   g8. a16 b8 fis-. |
-  \crescTextCresc
-  g8.\< a16 b8 dis,-.\f |
-  \crescHairpin
+  g8.\cresc a16 b8 dis,-.\f |
   e-.\f r r4 |
   R2 |
   r4 r8 d-.\f |
@@ -379,9 +355,7 @@ hornOne = \relative c''
   e) r r4 |
   r8 e'( b' d,~ |
   d) c( e a,) |
-  \crescTextCresc
-  g2->(\< |
-  \crescHairpin
+  g2->(\cresc |
   e8)\! r r4 |
 
   %N
@@ -408,9 +382,7 @@ hornOne = \relative c''
   c'4~ c16\> a g f) |
   f8(\p e dis fis |
   e b d cis |
-  \crescTextCresc
-  d\< c b d |
-  \crescHairpin
+  d\cresc c b d |
   c g b ais |
   b)\! r r4 |
   d,4~-^\f d16 g b d |
@@ -441,9 +413,7 @@ hornOne = \relative c''
   fis) r r4 |
   R2*4 |
   r4 r8 fis( |
-  \crescTextCresc
-  gis\< cis eis gis |
-  \crescHairpin
+  gis\cresc cis eis gis |
   a\sf fis cis b |
   a) r r4 |
   r4 r8 g( |
@@ -481,17 +451,13 @@ hornOne = \relative c''
   R2*2 |
   r8 b'( ais gis |
   cis4.\fp gis8 |
-  \crescTextCresc
-  a8) a(\< gis fis) |
-  \crescHairpin
+  a8) a(\cresc gis fis) |
   fis'2~\! |
   fis4. fis8( |
   a4 g) |
   r4 r8 g( |
-  \crescTextCresc
-  gis2~\< |
-  \crescHairpin
-  gis4.) a16\ff a |
+  gis2~\cresc |
+  gis4.) a16\f a |
 
   %Q
   a8 r r4 |
@@ -512,9 +478,7 @@ hornOne = \relative c''
   r4 r8 c'~->\p |
   c16 b g e b8 fis'-. |
   g8. a16 b8 fis-. |
-  \crescTextCresc
-  g8.\< a16 b8 dis,-.\f |
-  \crescHairpin
+  g8.\cresc a16 b8 dis,-.\f |
   e-.\f r r4 |
   R2 |
   r4 r8 d-.\f |
@@ -572,14 +536,12 @@ hornOne = \relative c''
   d4.\fp\> c16 bes) |
   bes8(\p a gis b |
   a e g fis) |
-  \crescTextCresc
-  g(\< f e g |
-  \crescHairpin
+  g(\cresc f e g |
   f c e dis |
   e)\! r r4 |
-  g,4~-^ g16 c e g |
+  g,4~-^\f g16 c e g |
   R2 |
-  g,4~-^ g16 c e g |
+  g,4~-^\f g16 c e g |
   a8-. b-. c4~-^ |
   c8 e,( f g) |
   f-. g-. a4~-^ |
@@ -608,9 +570,7 @@ hornOne = \relative c''
   aes) r r d( |
   f d b g |
   aes) r r g'( |
-  \crescTextCresc
-  bes\< g e c |
-  \crescHairpin
+  bes\cresc g e c |
   des) r r g( |
   bes g e c |
   des[ bes g]) c,-. |
@@ -619,9 +579,7 @@ hornOne = \relative c''
   r8 b(\p e d) |
   d( cis b cis |
   d a d c) |
-  \crescTextCresc
-  c(\< b a b |
-  \crescHairpin
+  c(\cresc b a b |
   c g c bes) |
   a16-. c-. f-. a-. c4~(\f |
   c8 a f d) |
@@ -630,9 +588,7 @@ hornOne = \relative c''
   r e( a g) |
   g( fis e fis |
   g d g f) |
-  \crescTextCresc
-  f(\< e d e) |
-  \crescHairpin
+  f(\cresc e d e) |
   f\! r a,16\< c f a |
   c8(\f a f d) |
   d( e f g) |
@@ -660,9 +616,7 @@ hornOne = \relative c''
   a4-^ g-^ |
   g8\sf r r4 |
   \times 2/3 {r8 d, d} \times 2/3 {d->( g) g-.} |
-  \crescTextCresc
-  \times 2/3 {g->(\< b) b-.} \times 2/3 {b->( d) d-.} |
-  \crescHairpin
+  \times 2/3 {g->(\cresc b) b-.} \times 2/3 {b->( d) d-.} |
   \times 2/3 {d->( g) g-.} \times 2/3 {g->( b) b-.} |
   c8-. d-.\ff e-. b-. |
   c-. fis,-. g-. g-. |
@@ -670,4 +624,3 @@ hornOne = \relative c''
   c-. r c-. r |
   c2\fermata |
 }
-

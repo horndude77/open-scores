@@ -1,4 +1,4 @@
-\version "2.11.63"
+\version "2.13.48"
 
 hornFour = \relative c''
 {
@@ -42,8 +42,7 @@ hornFour = \relative c''
   c4)\! r r2 |
   \clef "bass^8"
   c,2( cis) |
-  \crescTextCresc
-  d( dis)\< |
+  d( dis)\cresc |
   e( \clef treble f) |
   fis1(\sf\> |
   g4)\! r r2 |
@@ -55,8 +54,7 @@ hornFour = \relative c''
   dis4. dis8 e4. e8 |
   fis4. r8 r4 r8. g16 |
   fis4. r8 r4 r8. g16 |
-  \crescTextCresc
-  fis4. fis8 f4.\< f8 |
+  fis4. fis8 f4.\cresc f8 |
   e4. e8 dis4. dis8 |
   e2\! r |
   cis-^(\f c-^ |
@@ -99,9 +97,7 @@ hornFour = \relative c''
     r4 gis-.(\< gis-. gis-.) |
     a2.\sfp r4 |
   }
-  \dimTextDim
-  fis1~\p\> |
-  \dimHairpin
+  fis1~\p\dim |
   fis |
   gis4\! r r2 |
   R1*5 |
@@ -109,14 +105,10 @@ hornFour = \relative c''
   e4) r r2 |
   R1 |
   \clef "bass^8"
-  \crescTextCresc
-  \times 2/3 {r8 c,->\p c} \times 2/3 {c->( e) e-.} \times 2/3 {e->(\< g) g-.} \times 2/3 {g->( c) c-.} |
-  \crescHairpin
+  \times 2/3 {r8 c,->\p c} \times 2/3 {c->( e) e-.} \times 2/3 {e->(\cresc g) g-.} \times 2/3 {g->( c) c-.} |
   \clef treble
   f8\! r r4 r2 |
-  \crescTextCresc
-  \times 2/3 {r8 e, e} \times 2/3 {e->(\< g) g-.} \times 2/3 {g->( a) a-.} \times 2/3 {a->( cis) cis-.} |
-  \crescHairpin
+  \times 2/3 {r8 e, e} \times 2/3 {e->(\cresc g) g-.} \times 2/3 {g->( a) a-.} \times 2/3 {a->( cis) cis-.} |
 
   %E
   d8\! r r4 r2 |
@@ -149,9 +141,7 @@ hornFour = \relative c''
   a1 |
   a'2( g~ |
   g f~) |
-  \crescTextCresc
-  f1(\< |
-  \crescHairpin
+  f1(\cresc |
   e2 dis |
   e8)\! r r4 e,8 r r4 |
   r2 r4 e\f |
@@ -168,9 +158,7 @@ hornFour = \relative c''
   e1(\< |
   f4)\! r r2 |
   f,2( fis) |
-  \crescTextCresc
-  g( gis)\<
-  \crescHairpin
+  g( gis)\cresc
   a( bes) |
   b1(\sf\> |
   c4)\! r r2 |
@@ -182,9 +170,7 @@ hornFour = \relative c''
   gis4. gis8 a4. a8 |
   \repeat unfold 2
   { b4. r8 r4 r8. c16 | }
-  \crescTextCresc
-  b4.\< b8 bes4. bes8 |
-  \crescHairpin
+  b4.\cresc b8 bes4. bes8 |
   a4. a8 gis4. gis8 |
   a2\! r |
   fis-^(\f f-^ |
@@ -236,9 +222,7 @@ hornFour = \relative c''
   d ees) c'~( |
   c bes aes |
   g2 f4) |
-  \dimTextDim
-  e(\> f g
-  \dimHairpin
+  e(\dim f g
   \clef "bass^8"
   cis, d b) |
   << c2.( {s4\< s\> s\!} >>
@@ -257,9 +241,7 @@ hornFour = \relative c''
   c-.\f r r4 |
   R2*5 |
   r4 r8 a-. |
-  \crescTextCresc
-  b8.\< b16 b8 b-. |
-  \crescHairpin
+  b8.\cresc b16 b8 b-. |
   e-.\f r r4 |
   R2 |
   r4 r8 b-.\f |
@@ -291,9 +273,7 @@ hornFour = \relative c''
   e r r4 |
   r8 gis4\p gis8 |
   a4 r8 c |
-  \crescTextCresc
-  b2->(\< |
-  \crescHairpin
+  b2->(\cresc |
   e8)\! r r4 |
 
   %N
@@ -317,9 +297,7 @@ hornFour = \relative c''
   a~\fp\> |
   a8\p r a-. r |
   gis-. r g-. r |
-  \crescTextCresc
-  fis-.\< r f-. r |
-  \crescHairpin
+  fis-.\cresc r f-. r |
   e-. r e-. r |
   \repeat unfold 2
   {
@@ -340,9 +318,7 @@ hornFour = \relative c''
   %O
   g4 r |
   R2*30 |
-  \crescTextCresc
-  r4 r8 gis,(\< |
-  \crescHairpin
+  r4 r8 gis,(\cresc |
   cis dis eis fis |
   gis) r r4 |
   r4 r8 b( |
@@ -381,16 +357,12 @@ hornFour = \relative c''
   R2*3 |
   f2(\fp |
   fis8) r r4 |
-  \crescTextCresc
-  d2(\< |
-  \crescHairpin
+  d2(\cresc |
   c |
   b4)\! r |
   R2 |
   \clef treble
-  \crescTextCresc
-  e'2~\< |
-  \crescHairpin
+  e'2~\cresc |
   e4. a,16\f a |
 
   %Q
@@ -407,9 +379,7 @@ hornFour = \relative c''
   g8. g16 g8 g-.\f |
   c-. c-. r4 |
   R2*5 |
-  \crescTextCresc
-  r4 r8 a-.\p\< |
-  \crescHairpin
+  r4 r8 a-.\p\cresc |
   b8. b16 b8 b-.\f |
   e-.\f r r4 |
   R2 |
@@ -459,9 +429,7 @@ hornFour = \relative c''
   d~\fp\> |
   d8\p r d'-. r |
   cis-. r c-. r |
-  \crescTextCresc
-  b-.\< r bes-. r |
-  \crescHairpin
+  b-.\cresc r bes-. r |
   a-. r a-. r |
   \repeat unfold 2
   {
@@ -489,9 +457,7 @@ hornFour = \relative c''
   R2*3 |
   b,8\p r r4 |
   \repeat unfold 3 {b8 r r4} |
-  \crescTextCresc
-  e8\< r r4 |
-  \crescHairpin
+  e8\cresc r r4 |
   e8 r r4 |
   e8 r r4 |
   e8\! r r4 |
@@ -501,9 +467,7 @@ hornFour = \relative c''
   a |
   d |
   g, |
-  \crescTextCresc
-  c\< |
-  \crescHairpin
+  c\cresc |
   f,~ |
   f |
   g(\f |
@@ -532,9 +496,7 @@ hornFour = \relative c''
   fis-^ g-^ |
   \times 2/3 {r8 g, g} \times 2/3 {g->( b) b-.} |
   \times 2/3 {b->( d) d-.} \times 2/3 {d->( g) g-.} |
-  \crescTextCresc
-  \times 2/3 {g->\< g g} \times 2/3 {g->( d) d-.} |
-  \crescHairpin
+  \times 2/3 {g->\cresc g g} \times 2/3 {g->( d) d-.} |
   \times 2/3 {d->( b) b-.} \times 2/3 {b->( g) g-.} |
   c8-. g-.\ff c-. e-. |
   a-. d,-. g-. g,-. |
@@ -542,4 +504,3 @@ hornFour = \relative c''
   c-. r c-. r |
   c2\fermata |
 }
-

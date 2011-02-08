@@ -1,4 +1,4 @@
-\version "2.13.26"
+\version "2.13.48"
 
 customMark = #(define-music-function (parser location markp) (string?)
 #{
@@ -29,16 +29,25 @@ justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 
   tagline = ""
 }
 
+\layout
+{
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+  }
+}
+
 violinLastPage = \relative c''
 {
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'((* . (2))
-                                                   ((1 . 8) . (4))
-                                                   ((1 . 16) . (4 4))
-                                                   ((1 . 12) . (3 3)))
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
+  \set beamExceptions = #'((end . (((1 . 8) . (4)) ((1 . 16) . (4 4)) ((1 . 12) . (3 3)))))
   \set Score.currentBarNumber = #571
-  \set Score.skipBars = ##t
   \bar "" % Permit first bar number to be printed
   \clef treble
   \key f \major
@@ -180,10 +189,7 @@ violinLastPage = \relative c''
 
 \score
 {
-  \new Staff \with
-  {
-    \remove "Time_signature_engraver"
-  }
+  \new Staff \with { \remove "Time_signature_engraver" }
   {
     \violinLastPage
   }

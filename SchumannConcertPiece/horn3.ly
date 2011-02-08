@@ -1,12 +1,10 @@
-\version "2.11.63"
+\version "2.13.48"
 
-\include "defs.lyi" 
-\include "horn3notes.lyi" 
+\include "defs.ily"
+\include "horn3.ily"
 
 instrument = "Solo Horn III"
 
 notes = \hornThree
 
-\include "part.lyi"
-
-
+\include "part.ily"
