@@ -1,7 +1,8 @@
-\version "2.11.65"
+\version "2.13.49"
 
 horn = \relative c''
 {
+  \transposition e
   R1 |
   r2 r4 g\p |
   e'2.( d8 c) |
@@ -36,7 +37,7 @@ horn = \relative c''
     g'4(\> f8\! ees d2) |
   }
   R1 |
-  bes4 bes_\markup{\italic cresc.} bes8( ees) ees( d) |
+  bes4 bes\justCresc bes8( ees) ees( d) |
   d(\< c) c( f) f-.( f-. f-. f-.) |
   f2\f f8(\p d b d) |
   d(\< c) e,( g) g( f) a(\> f') |
@@ -50,7 +51,7 @@ horn = \relative c''
   g2.(\> fis8\! e) |
   fis1\> |
   f2.\! f4\p |
-  e( f16 e d e f4 d)_\markup{\italic cresc.} |
+  e( f16 e d e f4 d)\justCresc |
   c2 b |
   a4 r r2 |
   a4.\mf a8 a( gis a b) |
@@ -111,7 +112,7 @@ horn = \relative c''
     g'4(\> f8 ees d2)\! |
   }
   R1 |
-  bes4. bes8_\markup{\italic cresc.} bes( ees) ees( d) |
+  bes4. bes8\justCresc bes( ees) ees( d) |
   c(\< f) f-. f-. f-. f( ees f) |
   << {g2( aes)} {s4\ff-> s s-> s} >> | %NOTE: decrescendi are written, but accents look better to me here.
   g2(\< f4 ees8 f) |
@@ -176,7 +177,7 @@ horn = \relative c''
     g'4(\> f8\! e d2) |
   }
   R1 |
-  bes4. bes8_\markup{\italic cresc.} bes8( ees) ees( d) |
+  bes4. bes8\justCresc bes8( ees) ees( d) |
   d(\< c) c( f) f-.( f-. f-. f-.) |
   f2~\f\> f8( d b d) |
   d(\pp c) e,( g) g(\< f) a( f') |
@@ -203,12 +204,8 @@ horn = \relative c''
   d4( c8) r d4-.(\pp d-.) |
   d2~ d8( f e d) |
   << g1~ {s2\< s\>} >> |
-  g8(\! f_\markup{\italic ritard.} d b g f d g) |
-  c4 r
-    \clef bass
-    \set Staff.middleCPosition = #-1
-    c,,2 |
+  g8(\! f d b g f d g) |
+  c4 r \clef "bass^8" c,,2 |
   c c |
   << {c1\fermata} {s2\< s4..\> s16\!} >> |
 }
-

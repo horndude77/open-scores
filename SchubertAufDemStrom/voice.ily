@@ -1,4 +1,4 @@
-\version "2.11.65"
+\version "2.13.49"
 
 voice = \relative c''
 {
@@ -230,4 +230,3 @@ text = \lyricmode
   dort be -- gegn' ich ih -- rem Blick,
   dort be -- gegn' ich ih -- rem Blick.
 }
-

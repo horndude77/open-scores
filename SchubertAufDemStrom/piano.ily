@@ -1,10 +1,7 @@
-\version "2.11.65"
+\version "2.13.49"
 
 right = \relative c'
 {
-  #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-  #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-  #(override-auto-beam-setting '(end 1 12 * *) 3 4)
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \key e \major
   \times 2/3 {gis8 e' b gis' e b b' gis e e' b gis} |
@@ -32,9 +29,6 @@ right = \relative c'
     {a'2( gis4) r}
     \\
     {
-      #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 3 4)
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
       \override TupletNumber #'transparent = ##t
       \override TupletBracket #'transparent = ##t
@@ -48,9 +42,6 @@ right = \relative c'
     {\voiceOne e2(}
     \new Voice
     {
-      #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 3 4)
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
       \override TupletNumber #'transparent = ##t
       \override TupletBracket #'transparent = ##t
@@ -128,9 +119,6 @@ right = \relative c'
     \new Voice
     {
       \voiceTwo
-      #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 3 4)
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
       \override TupletNumber #'transparent = ##t
       \override TupletBracket #'transparent = ##t
@@ -146,9 +134,6 @@ right = \relative c'
     \new Voice
     {
       \voiceTwo
-      #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 3 4)
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
       \override TupletNumber #'transparent = ##t
       \override TupletBracket #'transparent = ##t
@@ -162,9 +147,6 @@ right = \relative c'
     \new Voice
     {
       \voiceTwo
-      #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 3 4)
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
       \override TupletNumber #'transparent = ##t
       \override TupletBracket #'transparent = ##t
@@ -219,9 +201,6 @@ right = \relative c'
     \new Voice
     {
       \voiceTwo
-      #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 3 4)
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
       \override TupletNumber #'transparent = ##t
       \override TupletBracket #'transparent = ##t
@@ -246,9 +225,6 @@ right = \relative c'
     \new Voice
     {
       \voiceTwo
-      #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 3 4)
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
       \override TupletNumber #'transparent = ##t
       \override TupletBracket #'transparent = ##t
@@ -263,9 +239,6 @@ right = \relative c'
     \new Voice
     {
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 3 4)
       \override TupletNumber #'transparent = ##t
       \override TupletBracket #'transparent = ##t
       \voiceTwo \times 2/3 {r8 fis, ais cis ais fis}
@@ -314,9 +287,6 @@ right = \relative c'
 
 left = \relative c
 {
-  #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-  #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-  #(override-auto-beam-setting '(end 1 12 * *) 3 4)
   \override TupletNumber #'transparent = ##t
   \override TupletBracket #'transparent = ##t
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
@@ -414,9 +384,6 @@ left = \relative c
   {
     <<
       {
-        #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-        #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-        #(override-auto-beam-setting '(end 1 12 * *) 3 4)
         \set tupletSpannerDuration = #(ly:make-moment 1 4)
         \override TupletNumber #'transparent = ##t
         \override TupletBracket #'transparent = ##t
@@ -546,9 +513,6 @@ left = \relative c
   << {b'4( e)} \\ {e,2} >> <e b'>4 <e b'> |
   <<
     {
-      #(override-auto-beam-setting '(end 1 12 * *) 1 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 2 4)
-      #(override-auto-beam-setting '(end 1 12 * *) 3 4)
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
       \override TupletNumber #'transparent = ##t
       \override TupletBracket #'transparent = ##t
@@ -597,7 +561,7 @@ dynamics =
   s1\fp |
   s2 s4\> s\! |
   s4\> s\! s2 |
-  s4 s-\markup{\italic cresc.} s2\< |
+  s4 s\justCresc s2\< |
   s s\! |
   s1\< |
   s2\f\> s\p |
@@ -606,12 +570,12 @@ dynamics =
   s\p |
   s1*4 |
   s1\< |
-  s\> | \noBreak %See lilypond issue #558
+  s\> |
   s\! |
   s1*3 |
   s1\mf |
   s1 |
-  s2\< s\> | \noBreak %See lilypond issue #558
+  s2\< s\> |
   s1\! |
   s2 s\< |
   s\> s\! |
@@ -621,10 +585,10 @@ dynamics =
   s |
   s4\fp\> s s s\! |
   s1*2 |
-  s4 s-\markup{\italic cresc.} s2 |
+  s4 s\justCresc s2 |
   s1\mf |
   s1 |
-  s2\< s\> | \noBreak %See lilypond issue #558
+  s2\< s\> |
   s1\! |
   s2 s\< |
   s\> s\! |
@@ -659,16 +623,16 @@ dynamics =
   s2 \crescTextCresc s\< |
   \crescHairpin
   s1 |
-  s2\f s-\markup{\italic cresc.} |
+  s2\f s\justCresc |
   s2\ff\> s\! |
   s1 |
   s4\> s s s\! |
-  s4 s-\markup{\italic decresc.} s2 |
+  s4 s\justDecresc s2 |
   s1\p |
   s1*4 |
   s1\mf |
   s |
-  s2\< s\> | \noBreak %See lilypond issue #558
+  s2\< s\> |
   s1\! |
   s2 s\< |
   s\> s\! |
@@ -679,10 +643,10 @@ dynamics =
   s2\fz\> s |
   s1\p\< |
   s4\f\> s s s\! |
-  s4\< s\> s\! s-\markup{\italic decresc.} |
+  s4\< s\> s\! s\justDecresc |
   s1\fp |
   s |
-  s2\< s\> | \noBreak %See lilypond issue #558
+  s2\< s\> |
   s1\! |
   s2 s\< |
   s\> s\! |
@@ -693,7 +657,7 @@ dynamics =
   s2\fz\> s\! |
   s1\p\< |
   s2.\f\> s4\! |
-  s4\< s\> s\! s-\markup{\italic decresc.} |
+  s4\< s\> s\! s\justDecresc |
   s1\p |
   s1*6 |
   s1\pp |
@@ -722,19 +686,19 @@ dynamics =
   s1*2 |
   s2 s\pp |
   s1*7 |
-  s2 s-\markup{\italic cresc.} |
-  s\< s\> | \noBreak %See lilypond issue #558
+  s2 s\justCresc |
+  s\< s\> |
   s1\! |
   s2 s2\< |
   s\> s\f |
   s1\< |
-  s\> | \noBreak %See lilypond issue #558
+  s\> |
   s2\! s\p |
-  s4 s-\markup{\italic decresc.} s2 |
+  s4 s\justDecresc s2 |
   s2 s\pp |
   s1 |
   s2\< s\> |
-  s1\!-\markup{\italic ritard.} |
+  s1\! |
   s2 s\pp |
   s1*2 |
 }
@@ -742,4 +706,3 @@ dynamics =
 pedals =
 {
 }
-

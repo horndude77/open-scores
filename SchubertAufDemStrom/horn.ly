@@ -1,26 +1,13 @@
-\version "2.11.65"
+\version "2.13.49"
 
-\include "horn_notes.lyi"
-\include "defs.lyi"
-
-\paper
-{
-  #(define page-breaking ly:page-turn-breaking)
-  ragged-last-bottom = ##f
-}
+\include "defs.ily"
+\include "horn.ily"
 
 instrument = \markup{Horn}
 
-\include "header.lyi"
+\include "header.ily"
 
 \score
 {
-  \new Staff
-  {
-    #(set-accidental-style 'modern)
-    \set Score.skipBars = ##t
-    \clef treble
-    << \horn \outline >>
-  }
+  \new Staff << \horn \outline >>
 }
-
