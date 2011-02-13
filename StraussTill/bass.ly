@@ -1,12 +1,10 @@
-\version "2.12.2"
+\version "2.13.49"
 
-\include "defs.lyi" 
-\include "bassnotes.lyi" 
+\include "defs.ily" 
+\include "bass.ily" 
 
 instrument = "Contrabass"
 
 notes = \bass
 
-\include "part.lyi"
-
-
+\include "part.ily"

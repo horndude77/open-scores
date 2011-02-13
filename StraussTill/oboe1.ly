@@ -1,11 +1,10 @@
-\version "2.12.2"
+\version "2.13.49"
 
-\include "defs.lyi" 
-\include "oboe1notes.lyi" 
+\include "defs.ily" 
+\include "oboe1.ily" 
 
 instrument = "Oboe I"
 
 notes = \oboeOne
 
-\include "part.lyi"
-
+\include "part.ily"

@@ -1,55 +1,56 @@
-\version "2.12.2"
+\version "2.13.49"
 
-\include "piccolonotes.lyi"
-\include "flute1notes.lyi"
-\include "flute2notes.lyi"
-\include "flute3notes.lyi"
-\include "oboe1notes.lyi"
-\include "oboe2notes.lyi"
-\include "oboe3notes.lyi"
-\include "englishhornnotes.lyi"
-\include "clarinet1notes.lyi"
-\include "clarinet2notes.lyi"
-\include "clarinet3notes.lyi"
-\include "bassclarinetnotes.lyi"
-\include "bassoon1notes.lyi"
-\include "bassoon2notes.lyi"
-\include "bassoon3notes.lyi"
-\include "contrabassoonnotes.lyi"
-\include "horn1notes.lyi"
-\include "horn2notes.lyi"
-\include "horn3notes.lyi"
-\include "horn4notes.lyi"
-\include "trumpet1notes.lyi"
-\include "trumpet2notes.lyi"
-\include "trumpet3notes.lyi"
-\include "trombone1notes.lyi"
-\include "trombone2notes.lyi"
-\include "trombone3notes.lyi"
-\include "tubanotes.lyi"
-\include "violanotes.lyi"
-\include "timpaninotes.lyi"
-\include "violin1notes.lyi"
-\include "violin2notes.lyi"
-\include "cellonotes.lyi"
-\include "bassnotes.lyi"
-\include "defs.lyi"
+\include "defs.ily"
+\include "piccolo.ily"
+\include "flute1.ily"
+\include "flute2.ily"
+\include "flute3.ily"
+\include "oboe1.ily"
+\include "oboe2.ily"
+\include "oboe3.ily"
+\include "englishhorn.ily"
+\include "clarinet1.ily"
+\include "clarinet2.ily"
+\include "clarinet3.ily"
+\include "bassclarinet.ily"
+\include "bassoon1.ily"
+\include "bassoon2.ily"
+\include "bassoon3.ily"
+\include "contrabassoon.ily"
+\include "horn1.ily"
+\include "horn2.ily"
+\include "horn3.ily"
+\include "horn4.ily"
+\include "trumpet1.ily"
+\include "trumpet2.ily"
+\include "trumpet3.ily"
+\include "trombone1.ily"
+\include "trombone2.ily"
+\include "trombone3.ily"
+\include "tuba.ily"
+\include "viola.ily"
+\include "timpani.ily"
+\include "violin1.ily"
+\include "violin2.ily"
+\include "cello.ily"
+\include "bass.ily"
 
 #(set-global-staff-size 17)
 #(set-default-paper-size "a3")
 
 \paper
 {
-  #(define page-breaking ly:minimal-breaking)
-  %ragged-last-bottom = ##f
+  short-indent = 5\mm
+  top-system-spacing #'stretchability = #0
+  last-bottom-spacing #'stretchability = #0
+  system-system-spacing #'stretchability = #2
 }
 
 instrument = "Orchestra"
 
 \book
 {
-  %{
-  \include "Header.lyi"
+  \include "header.ily"
   \score
   {
     <<
@@ -168,13 +169,7 @@ instrument = "Orchestra"
         }
       >>
     >>
-    \header { piece = \ }
-    \layout
-    {
-      %\context { \RemoveEmptyStaffContext }
-    }
   }
-  %}
 
   \score
   {
@@ -248,12 +243,10 @@ instrument = "Orchestra"
           \violinTwo
           \viola
           \cello
-          << \bass \outline \midiOutline >>
+          << \bass \outline >>
         >>
       }
     >>
     \midi { }
   }
 }
-
-

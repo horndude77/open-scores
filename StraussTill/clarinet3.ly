@@ -1,11 +1,10 @@
-\version "2.12.2"
+\version "2.13.49"
 
-\include "defs.lyi" 
-\include "clarinet3notes.lyi" 
+\include "defs.ily" 
+\include "clarinet3.ily" 
 
 instrument = "Clarinet III"
 
 notes = \clarinetThree
 
-\include "part.lyi"
-
+\include "part.ily"

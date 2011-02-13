@@ -1,0 +1,540 @@
+\version "2.13.49"
+
+hornOne = \relative c''
+{
+  \transposition f
+  r8
+  R2*5 |
+
+  %6/8
+  r8 g-.\p c-. d-. dis4~( |
+  dis8 e) g,-. c-. d-. dis~( |
+  dis4 e8) g,-. c-. d-. |
+  dis4-> e-> f8-. fis-. |
+  a-. g-. e-.\justCresc c-. g-. e-. |
+  \clef "bass^8"
+  c4. g-> |
+  c,->\! r |
+  R2. |
+  \clef treble
+  r8 g''-.\mf c-. d-. dis4~( |
+  dis8 e) g,-. c-. d-. dis~(\cresc |
+  dis4 e8) g,-. c-. d-. |
+  dis4-> e-> f8-. fis-. |
+  a-. g-. e-. c-. g-. e-. |
+  \clef "bass^8"
+  c4. g->\ff |
+  c,-> r |
+  R2.*8 |
+  \clef treble
+  r8 f''4~\sfz f4.~ |
+  f2. |
+  R2.*2 |
+  r4. r4 f,8-.\mf |
+  a-. b-. c-. cis-. r r |
+  R2. |
+  r4 b8-. d-. ees-. e-. |
+  f-.\cresc fis-. \repeat unfold 10 {g-.} |
+  g\f r r r4. |
+  r r8 g\ff g |
+  g r r r4. |
+  r r8 g\ff g |
+  g g r r4. |
+  r r4 r16 g,\ff |
+  g2.\fermata |
+  R2.*3 |
+  r8 r g'\ff r4. |
+  R2. |
+
+  %3
+  R2.*4 |
+  r8 r e->\mf c-> r r |
+  r4. r4 fis,8-> |
+  r4. r4 g8-> |
+  r4. r8 gis-> r |
+  c-> r r r4. |
+  R2.*2 |
+  r4. dis,->\ff |
+
+  %4
+  r4. r8 f'16(\f d a8) |
+  b4.(\> c8-.)\mf des-. d-. |
+  e-. r r r4. |
+  R2. |
+  r4. r8 e16(\f cis fis,8) |
+  g8 r r r4. |
+  R2.*4 |
+  c4.~\ff c8 d\f e |
+  f e d g r r |
+  g,2.~ |
+  g8 r r g\ff c d |
+  dis e c d dis e |
+  c d dis e\< f fis |
+  g2.~\! |
+  g4.~\justDim g8\p r r |
+
+  %6
+  R2.*16 |
+
+  %7
+  R2.*6 |
+  ees4.~\p\> ees8\! r r |
+  R2. |
+
+  %8
+  R2.*2 |
+  g8(\f f e dis16) r r8 r |
+  R2.*2 |
+  g4.~\f g8 r r |
+  R2.*8 |
+  g,2.~\p\> | g8\! r r r4. |
+  R2.*2 |
+  g2.~\p | g~ | g8 r r r4. |
+  R2. |
+  g2.~(\mf | g |
+
+  %9
+  \clef "bass^8"
+  c,8) r r r4. |
+  R2.*9 |
+  \clef treble
+  a'8(\ff b16 c d e fis8) r c |
+  b r c b r c |
+  dis4.~( dis16 d dis e fis g |
+  a4.~ a8) r r |
+
+  %10
+  r4. r4 r16 g,(\ff |
+  e8) r r r4 r16 g'( |
+  e8) r r r4. |
+  R2. |
+  e8(\ff dis16 e fis g a8) r e |
+  a r e a r e |
+  e4.~( e16 f fis g gis a |
+  bes4.~ bes8) r r |
+  cis,,16(\f d e f g a bes c cis d e f |
+  g8) r r r g16->( e bes8) |
+  R2.*2
+
+  %11
+  R2.*12 |
+
+  %12
+  R2.*6 |
+  g4.\mf g |
+  g r |
+  \clef "bass^8"
+  c,8 r r r4. |
+  g'8 r r r4. |
+  \clef treble
+  c8-.\pp r r c-. r r |
+  c8-. r r c-. r r |
+
+  %2/4
+  r8 c-.\pp r c-. |
+  r c-. r c-. |
+  r c-. r c-. |
+  R2 |
+  r8 c-.\pp r c-. |
+  r c-. r c-. |
+  R2*2 |
+
+  %13
+  r8 c-.\pp r c-. |
+  r c-. r c-. |
+  r c-. r4 |
+  R2 |
+  r4 d4(\p |
+  c8) r r4 |
+  R2*3 |
+
+  %14
+  \times 2/3 {c16(\mf^\markup{(mit Dämpfern)} b bes} a4) r16 \times 2/3 {c32( b bes} |
+  a8) \times 2/3 {c16( b bes} a8) \times 2/3 {c16( b bes} |
+  a8 f' d) \times 2/3 {g16(\< ges f} |
+  e2~\f |
+  e8) r r4 |
+  R2*2 |
+  R2 |
+  \times 2/3 {c16(\mf\dim b bes} a4.) |
+  << s4*0\!_\markup {(Dämpfern weg)} R2*2 >> |
+  R2^\fermataMarkup |
+
+  %6/8
+  R2.*3 |
+  \repeat unfold 2
+  {
+    r4. aes(\p |
+    bes~ bes8) r r |
+  }
+  R2.*4 |
+
+  %15
+  r4. aes(\p |
+  bes~ bes8) r r |
+  R2. |
+  \transposition e
+  r4^"(in E)" g8( b4\< c8 |
+  cis4 d8\! b4 a'8 |
+  g2.) |
+
+  %16
+  R2.*3 |
+  \transposition f
+  r4^"(in F)" a,8(_\mespr\< cis4 d8 |
+  e4.\! f4 g8 |
+  gis4.\> a4)\! r8 |
+  R2.*8 |
+  d,4.~\p d8 r r |
+  R2.*3 |
+  a2.~\ff |
+  a4.~\justDim a8 a-.\p d-. |
+
+  %17
+  e-. eis4~( eis8 fis) r |
+  R2. |
+  r4. g->(\pp |
+  fis-> e-> |
+  d4) r8 r4. |
+  R2.
+  r4. g->(\pp |
+  fis-> e-> |
+  d8) r r d4.\f |
+  r f |
+  d2.~ | d4 r8 r4. |
+
+  %18
+  r8 f,-.\f g-. gis-. a-. f-. |
+  g-. gis-. a-. f-. g-. gis-. |
+  a-. bes4~ bes4.~\p |
+  bes~ bes8 r r |
+  r c-.\f des-. d-. ees-. c-. |
+  des-. d-. ees-. c-. d-. ees-. |
+  e-. f4~( f4.\p |
+  e dis\< |
+  d8)\! r r r4. |
+  R2. |
+  r4. e(\f\cresc |
+  c fis, |
+  g4) r8 e'4.( |
+  c g |
+
+  %19
+  gis4)\! r8 e'4.->\ff |
+  c-> gis~-> |
+  gis a |
+  bes b |
+  e dis |
+  cis d |
+  c ees |
+  d fis |
+  g a |
+  ais e |
+  gis d |
+  ees c |
+  a g |
+  gis e'\ff |
+  c b |
+  bes( aes8) r r |
+  r f->\fff a-> bes-> b4~( |
+  b8 c4)\fermata_\mlonga r4. |
+  R2.*2 |
+  dis4^"(gestopft)"\f r8 r4. |
+  R2. |
+
+  %20
+  R2.*6 |
+  r4. e,8[-.\p^"(offen)" r g]-. |
+  g4-. ais8~-> ais4\< b8-. |
+  d4.->\! cis~-> |
+  cis c4-. b8-. |
+  ais4-. r8 r4. |
+  R2.*4 |
+
+  %21
+  R2.*11
+
+  %22
+  R2.*3 |
+  r4. \clef "bass^8" ees8[-.\p r ees]-. |
+  ees8 r r ees8[-. r ees]-. |
+  \clef treble
+  ces'4.~( ces8 bes a) |
+  ees'4.( d) |
+  f( fis |
+  g4) r8 r4. |
+  R2. |
+
+  %23
+  c,4.(\f b~ |
+  b d~ |
+  d4\> des8 c)\! r r |
+  R2.*3 |
+  r4. g8[-.\pp r g]-. |
+  g r r g[ r g] |
+  e'4.( eis8) r r |
+  R2. |
+  r4. bes,8[-.\pp r bes]-. |
+  bes-. r r bes[-. r bes]-. |
+  ges'4.~(\cresc ges8 f e) |
+  b'4( ais8 a4 gis8 |
+  g4. fis8) r r |
+
+  %24
+  \repeat unfold 2
+  {
+    R2.*2 |
+    f2.~->(\ff |
+    f4. e8) r r |
+  }
+  R2. |
+  des'4.~(\ff des8 c b |
+  bes2.) |
+  b4.~->( b8 a gis |
+  d'2.~ |
+  d4. c8) r r |
+
+  %25
+  \clef "bass^8"
+  fis,,4.~(\p fis8 e dis) |
+  a'4.~(\cresc a8 g fis) |
+  c'4.~( c8 b bes) |
+  e4.~( e8 d cis) |
+  g'4.( aes8)\! r r |
+  R2.*2 |
+  \clef treble
+  r4. r4 b8(\ff |
+  g'2.) |
+  r4. g8[\fff r g] |
+  g r r r4. |
+  R2. |
+  f2.\fermata_"(gestopft)" |
+  f4.~( f4~ f16 e |
+  f8) r_"(offen)" r r4. |
+  R2.*2 | \bar "||"
+
+  %2/4
+  r8 d-.\pp r d-. |
+  r ees16-. ees-. ees8-. r |
+  r d-. r d-. |
+  r ees16-. ees-. ees8-. r |
+  r c-. r c-. |
+  r ees-. r ees-. |
+  r d-. r d-. |
+  R2 |
+  r8 d\pp r d |
+  R2*18 |
+
+  %27
+  R2*4 |
+  a2~(\mf | a~^\justDim | a~ | a |
+
+  %6/8
+  b4)\! r8 r4. |
+  R2.*7 |
+
+  %28
+  R2.*11 |
+  r8 g-.\p c-. d-. dis4~( |
+  dis8 e) g,-. c-. d-. dis~( |
+  dis4 e8) g,-. c-. d-. |
+  dis4-> e-> f8-. fis-. |
+  a-. g-. e-.\justCresc c-. g-. e-. |
+  \clef "bass^8"
+  c4. g-> |
+  c,->\! r |
+  a'8\p r r r4. |
+  R2.*5 |
+  r4. \clef treble f'8\mf r r |
+  R2.*6 |
+
+  %29
+  R2.*12 |
+  r8 b8-.\f_\mmarc e-. fis-. g4~( |
+  g8 gis) e-.\< gis-. a-. b-. |
+  c2.\! |
+  R2. |
+
+  %30
+  r4. r8 f,16(\f d a8) |
+  b4.(\> c8) des-.\mf d-. |
+  e-. r r r4. |
+  R2. |
+  r4. r8 e16(\f cis fis,8) |
+  g r r r4. |
+  R2.*2 |
+  g'4.~\mf g8\< g16-. g-. g8-. |
+  g2. |
+  << s2.*0\! R2. >> |
+  a8-.\ff e-. g-. c,-. e-. g,-. |
+  c4.~\ff c8 d\f e |
+  f e d g\< g g |
+  e2.~\ff |
+  e8 r r g,\ff c d |
+  dis e c d dis e |
+  c d dis e\< f fis |
+  g2.~\! |
+  g8 r r r4. |
+
+  %31
+  r g,\ff^\mmoltomarc |
+  c d |
+  dis e |
+  g( f4) e8 |
+  d4 r8 g,4.\ff |
+  c d |
+  dis e |
+  g( f4) e8 |
+  d4 r8 g,4. |
+  e' f |
+  fis g |
+  bes( a4) g8 |
+  f4. e4 d8 |
+  c4.( e) |
+  g4.(\ff f4) d8 |
+
+  %32
+  c8 r g-. c-. d-. dis~( |
+  dis e) g,-. c-. d-. dis~( |
+  dis e) g,-. c-. d-. dis~( |
+  dis e) r r4. |
+  R2.*2 |
+  r4 g,8-.\mf b-. c-. cis~( |
+  cis d) e-. fis-. a-. g-. |
+  
+  %33
+  e-. c-. g-. e-. c-. g-. |
+  \clef "bass^8"
+  c,2. |
+  R2.*5 |
+  \clef treble
+  c'2.~\pp |
+  c8 c-. f-. g-. gis4~( |
+  gis8 a) c,-. f-. g-. gis~( |
+  gis4 a8) r4. |
+  R2. |
+  r8 c,-.\pp f-. g-. gis4~( |
+  gis8 a) c,-. f-. g-. gis8~( |
+  gis4 a8) r4. |
+  R2. |
+
+  %34
+  r8 ees-.\p aes-. bes-. b4~( |
+  b8 c) ees,-. aes-. bes-. b~( |
+  b4 c8) r4. |
+  R2. |
+  r8 fis,-.\mf b-. cis-. d4~( |
+  d dis8 e) r r |
+  r gis,-.\justCresc cis-. dis-. e4~( |
+  e eis8 fis)\! r r |
+
+  %35
+  d4. cis~\fp |
+  cis8 cis16\cresc cis cis8 cis cis cis |
+  d4.(\f\> f8)\! r r |
+  R2. |
+  \once \override Hairpin #'minimum-length = #5
+  f4.\f\< aes~\ffp |
+  aes8 ees16-.\cresc ees-. ees8-. ees-. ees-. ees-. |
+  f4.(\f\> e8)\! r r |
+  r4. r4 cis16(\ff a |
+  dis,4.~ dis8) r f'16(\mf d |
+  a4.~ a8) r fis'16(\cresc dis |
+  ais4.~ ais8) r fis'16( dis |
+  ais4.) g'4.( |
+
+  %36
+  b8)\ff a gis g\fff f e |
+  d4.~ d8 g,\ff c |
+  d dis e g f e |
+  d4.~ d8 g,\f c |
+  d dis e a g f |
+  e4.~\cresc e8 g, c |
+  d dis e bes' a g |
+  f4\! r8 r4. |
+  R2. |
+  fis2.~ |
+  fis8 r r r4. |
+  R2.*3 |
+
+  %37
+  r8 e->\ff c-> fis,-> g-> gis-> |
+  c-> dis, e f fis g |
+  gis a-> f-> b,-> c-> cis-> |
+  f-> gis a bes b c |
+  cis d-> bes-> e,-> c cis |
+  e c e fis d g |
+  ges f aes ees bes' b |
+  a aes d c ees d |
+  des\< c a ais b bis |
+  cis4.->\ff cis-> |
+  cis-> b-> |
+  a4.~( a4 b8 |
+  cis4) r8 e,4. |
+  d'->( cis) |
+  d->( cis) |
+  g'8\fff r r r4. |
+  \repeat unfold 2
+  {
+    R2.*2 |
+    r4.^"(drohend)" r4 r16 g,\ff |
+    \repeat unfold 4 g2. |
+  }
+  \alternative
+  {
+    {g2.\fermata |}
+    {c2.\fermata |}
+  }
+  R2.*3 |
+  r4. r4 r16 g\ff |
+  g2. | g |
+  g~ |
+  g4. r4 r16 g\ff |
+  g2. | g |
+  c~ | c4. r |
+
+  %39
+  R2.*2 |
+  bes8(\ff_"(mit Dämpfern)" a aes g4.~ |
+
+  %2/4
+  g4) r8 \times 2/3 {bes16(\mf a aes} |
+  g8) \times 2/3 {bes16( a aes} g8) \times 2/3 {bes16( a aes} |
+  g8 ees' c \times 2/3 {f16(\< e ees} |
+  des8)\f r r4 |
+  R2 |
+  c8\mf r r4 |
+  R2*2 |
+  \clef "bass^8"
+  r4^"(Dämpfern weg)" c,\ff |
+  des,2\fermata |
+
+  %40
+  R2*3 |
+  R2^\fermataMarkup |
+  R2*3 |
+  f'2~(^"(mit Dämpfern)" | f |
+  \repeat unfold 4 e2~ | e2)\> |
+  e8-.\pp r r4 |
+  R2 |
+  e8-. r r4\fermata_"(Dämpfern weg)" |
+  \clef treble
+
+  %Epilog
+  %4/8
+  R2*12 |
+  r4 r16 g(\p c d |
+  dis8. e16\> g)\! r r8 |
+  R2*3 |
+  g2\fermata\pp |
+
+  %6/8
+  f2.\f\startTrillSpan\justCresc |
+  \afterGrace f( {g16_[ f]\stopTrillSpan} |
+  e8)\! r r r4. |
+  dis2.~(\ff |
+  dis4.~\< dis8. e16 g8)\! |
+  r4. r8. dis16( e8) |
+  r4. r8. fis16( g8) |
+  r4. e8\fff r r |
+}

@@ -1,12 +1,10 @@
-\version "2.12.2"
+\version "2.13.49"
 
-\include "defs.lyi" 
-\include "bassoon1notes.lyi" 
+\include "defs.ily" 
+\include "bassoon1.ily" 
 
 instrument = "bassoon I"
 
 notes = \bassoonOne
 
-\include "part.lyi"
-
-
+\include "part.ily"

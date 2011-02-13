@@ -1,12 +1,10 @@
-\version "2.12.2"
+\version "2.13.49"
 
-\include "defs.lyi" 
-\include "bassclarinetnotes.lyi" 
+\include "defs.ily" 
+\include "bassclarinet.ily" 
 
 instrument = "Bass Clarinet"
 
 notes = \bassclarinet
 
-\include "part.lyi"
-
-
+\include "part.ily"

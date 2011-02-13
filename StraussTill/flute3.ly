@@ -1,11 +1,10 @@
-\version "2.12.2"
+\version "2.13.49"
 
-\include "defs.lyi" 
-\include "flute3notes.lyi" 
+\include "defs.ily" 
+\include "flute3.ily" 
 
 instrument = "flute III"
 
 notes = \fluteThree
 
-\include "part.lyi"
-
+\include "part.ily"

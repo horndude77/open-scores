@@ -1,12 +1,10 @@
-\version "2.12.2"
+\version "2.13.49"
 
-\include "defs.lyi" 
-\include "contrabassoonnotes.lyi" 
+\include "defs.ily" 
+\include "contrabassoon.ily" 
 
 instrument = "Contrabassoon"
 
 notes = \contrabassoon
 
-\include "part.lyi"
-
-
+\include "part.ily"
