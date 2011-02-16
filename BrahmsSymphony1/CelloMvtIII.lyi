@@ -1,6 +1,0 @@
-\include "defs.lyi"
-
-celloMvtIII = \relative c'
-{
-}
-
