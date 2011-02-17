@@ -1,4 +1,4 @@
-\version "2.13.19"
+\version "2.13.50"
 
 \include "defs.ily"
 \include "horn.ily"
@@ -13,5 +13,3 @@ instrument = "Horn"
     << \horn \outline >>
   }
 }
-
-

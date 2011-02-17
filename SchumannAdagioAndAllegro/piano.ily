@@ -1,4 +1,4 @@
-\include "defs.ily"
+\version "2.13.50"
 
 pianoRight = \relative c
 {
@@ -668,7 +668,7 @@ pianoLeft = \relative c
   << {bes4 a aes g |} \\ {bes,2. ees4 |} >> |
   aes,4 \times 2/3 {r8 c c} \times 2/3 {c ees aes} \times 2/3 {c ees aes} |
   aes,,4 <ees'' aes> f,, <c'' f> |
-  \times 2/3 {bes,,8( bes' d} \times 2/3 {f bes d} ees4
+  \times 2/3 {bes,,8( bes' d} \times 2/3 {f bes d} ees4)
 
   %D
   r4 |
@@ -935,14 +935,14 @@ pianoDynamics =
   s2\< s\> |
 
   %A
-  s8\! s8*7\justdim |
+  s8\! s8*7\justDim |
   s1\! |
   s |
   s4 s\< s2\> |
   s1\! |
   s8 s8*7\p |
   s1*2 |
-  s2 s\justcresc |
+  s2 s\justCresc |
   s1\p\< |
   s\! |
   s1*2 |
@@ -951,6 +951,152 @@ pianoDynamics =
   s2\! s\fp |
 
   %B
+  s2 s\sf |
+  s2 s\< |
+  s1\sfp\> |
+  s2\< s\f |
+  s4 s2.\> |
+  s8\p s8*7\justCresc |
+  s1\< |
+  s\f\> |
+  s\! |
+  s4 s2.\justDim |
+  s1\! |
+  s2 s4\< s\> s1*0\! |
+  s4\justCresc s\! s4\< s\> s1*0\! |
+  s2 s\f |
+  s1\p |
+  s2 s\< |
+  s s\> |
+  s1\! |
+  s2 s4\< s\> s1*0\! |
+
+  %C
+  s1\p |
+  s1*3 |
+  s1\< |
+  s\> |
+  s\pp\< |
+  s\> |
+  s\! |
+  s\justDimin |
+  s2 s\pp |
+  s2.
+
+  %rasch und feurig
+  s4\f |
+  s2. s4\f |
+  s\f s\f s2 |
+  s1*8 |
+  s4 s2.\justCresc |
+  s1 |
+  s2. s8*2/3 s4*2/3\ff |
+  s1 |
+  s4 s8*2/3 s4*2/3\< s2 |
+  s1\sf |
+  s2.\sf
+
+  %D
+  s4\p |
+  s1*5 |
+  s4 s2.\fp |
+  s4 s2.\justCresc |
+  s4 s2.\p\< |
+  s1\p |
+  s1 |
+  s4. s8*5\justCresc |
+  s1\! |
+  s4. s8*5\< |
+  s1\! |
+  s1*7 |
+  s4\f s2.\> |
+
+  %E
+  s4\! s2.\< |
+  s2.\! s8*2/3 s4*2/3\ff |
+  s2. s4\f |
+  s\f s\f s2 |
+  s1*8 |
+  s4 s2.\justCresc |
+  s1\! |
+  s2. s8*2/3 s4*2/3\ff |
+  s1 |
+  s4 s8*2/3 s4*2/3\< s2 |
+  s1\! |
+  s1\sf |
+
+  %F
+  s1\p |
+  s1*3 |
+  s8 s8*7\justCresc |
+  s1*3 |
+  s8 s8*7\justDim |
+  s1 |
+  s\p |
+  s1*2 |
+  s8 s8*7\justCresc |
+  s1 |
+  s4 s2.\< |
+  s4 s2.\! |
+  s2 s\justCresc |
+  s1 |
+
+  %G
+  s8 s8*7\cresc |
+  s1*6 |
+  s2. s8*2/3 s4*2/3\f |
+  s1 |
+  s4 s\f s2 |
+  s1*3 |
+  s1\sf |
+  s1*4 |
+  s2 s\justCresc |
+  s1 |
+  s2. s8*2/3 s4*2/3\ff |
+  s1 |
+  s4 s8*2/3 s4*2/3\< s2 |
+  s1\sf |
+  s2.\sf s4\p |
+
+  %H
+  s1*5 |
+  s4 s2.\fp |
+  s4 s2.\justCresc |
+  s4 s2.\< |
+  s1\p |
+  s1 |
+  s2 s\justCresc |
+  s1 |
+  s4. s8*5\< |
+  s1\! |
+  s1*7 |
+  s4\f s2.\> |
+
+  %I
+  s4\! s2.\< |
+  s2.\! s8*2/3 s4*2/3\f |
+  s2. s4\f |
+  s\f s\f s2 |
+  s1*4 |
+  s4 s2.\justCresc |
+  s1*5 |
+  s2\sf s\< |
+  s s\! |
+  s1*4 |
+
+  %K
+  s1\ff |
+  s1*3 |
+  s1\ff |
+  s1*2 |
+
+  %schneller
+  s1*3 |
+  s2 s\sf |
+  s s\< |
+  s1\sf |
+  s4.\sf s8*5\ff |
+  s1*2 |
 }
 
 pianoPedals =

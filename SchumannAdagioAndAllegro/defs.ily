@@ -1,9 +1,10 @@
-\version "2.13.19"
+\version "2.13.50"
 
 pMoltoLegatoMarkup = \markup {\dynamic p \normal-text \italic {molto legato}}
 pMoltoLegato = #(make-dynamic-script pMoltoLegatoMarkup)
-justcresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1.0)))
-justdim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1.0)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1.0)))
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1.0)))
+justDimin = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dimin." 'tweaks '((dash-period . -1.0)))
 
 slashedGrace = #(define-music-function (parser location music) (ly:music?)
 #{
@@ -143,6 +144,12 @@ afterGraceFraction = #(cons 15 16)
     markFormatter = #format-mark-numbers
     \override Beam #'breakable = ##t
     \override NoteCollision #'merge-differently-dotted = ##t
+  }
+
+  \context
+  {
+    \Dynamics
+    \consists "Tweak_engraver"
   }
 
   \context

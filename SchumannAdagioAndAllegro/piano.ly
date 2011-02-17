@@ -1,8 +1,8 @@
-\version "2.13.18"
+\version "2.13.50"
 
+\include "defs.ily"
 \include "piano.ily"
 \include "horn.ily"
-\include "defs.ily"
 
 instrument = "Piano"
 
@@ -25,7 +25,7 @@ instrument = "Piano"
         \new Staff="RH" { \pianoRight }
         \new Dynamics \pianoDynamics
         \new Staff="LH" { << \pianoLeft \pianoPedals \outline >> }
-        %\new Dynamics = "pedals" \pianoPedalsMvtI
+        %\new Dynamics = "pedals" \pianoPedals
       >>
     >>
     \layout { }

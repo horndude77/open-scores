@@ -1,6 +1,4 @@
-\version "2.13.19"
-
-\include "defs.ily"
+\version "2.13.50"
 
 horn = \relative c''
 {
@@ -22,19 +20,15 @@ horn = \relative c''
   bes a\<\< ees'\> c8 a |
 
   %A
-  \dimJustTextDim
-  c4\> bes2) r4\! |
+  c4\justDim bes2) r4\! |
   R1 |
-  r4 bes2(\< b4 |
-  \dimHairpin
+  r4 bes2(\justDim b4 |
   des\> c2.) |
   r4\! f,(\< aes\> f8 d |
   ees4)\! r r2 |
   r4 ees'4\p ees8( a,4 b8 |
   c4) r r2 |
-  \crescJustTextCresc
-  r4 ees4\< ees8( bes4 b8 |
-  \crescHairpin
+  r4 ees4\justCresc ees8( bes4 b8 |
   c2.)\p\< d4( |
   f ees2\! des4) |
   c4( c'2 aes8 f |
@@ -49,29 +43,25 @@ horn = \relative c''
   des4(\sf\> c8 bes aes g f e |
   g4\< f) c'2~(\f |
   c4 d\> f8 ees ees, aes) |
-  \crescJustTextCresc
-  f2.(\< bes,4 |
+  f2.(\justCresc bes,4 |
   bes'2. ees,4)\! |
   ees'2.(\f\> e4 |
   g f2 ees4) |
-  \dimJustTextDim
-  g,4(\> f2 ees4)\! |
+  g,4(\justDim f2 ees4)\! |
   \clef "bass^8"
   g,4( aes2 d,4 |
   ees1~) |
   ees |
-  \crescHairpin
-  \dimHairpin
   <<
     {
       \override Hairpin #'minimum-length = #4
-      s4\< s s\> s s1*0\!
+      s2\< s\> s1*0\!
       \revert Hairpin #'minimum-length
     }
     a,1(
   >> |
   bes1) |
-  ees2(\< d4 ees |
+  ees2( d4\< ees |
   f g a2\>) s1*0\! |
   \clef treble
   bes4.( a8 bes ees g bes |
@@ -87,8 +77,7 @@ horn = \relative c''
   ees)(\pp |
   bes~) |
   bes~ |
-  \dimJustTextDim
-  bes~\> |
+  bes~\justDim |
   bes4\! r r2 |
   r2 r4\fermata
 
@@ -105,20 +94,17 @@ horn = \relative c''
   g4( c,8.) f16 f4( bes,) |
   aes'2(\sf f4 d) |
   f4( ees~ ees8 e f des) |
-  \crescJustTextCresc
-  c4( bes8.)\< aes16 ees'8( d c bes) |
+  c4( bes8.)\justCresc aes16 ees'8( d c bes) |
   ees4( d8.) c16 g'8( f e f) |
   g4 a bes4~ \times 2/3 {bes8 bes-.\ff bes} |
   \times 2/3 {bes( d,) d} \times 2/3 {d( g) g} \times 2/3 {g( c,) c} \times 2/3 {c( f) f} |
   \times 2/3 {f( bes,) bes} bes4 r2 |
-  \crescHairpin
   \times 2/3 {ees,8 g bes} ees4 \times 2/3 {c,8\< ees g} c4 |
   f2(\sf bes,4)
 
   %D
   r4 |
   R1 |
-  \dimHairpin
   r4 b(\p\< des4.\> c8) |
   c4\! r r2 |
   r4 cis(\< ees4.\> d8) |
@@ -127,10 +113,8 @@ horn = \relative c''
   r4 d,(\p\< ees f |
   g8\! g[(\p ees' d] c bes a g |
   f1) |
-  \crescJustTextCresc
-  r8 ees(\< c' gis a e f ees |
+  r8 ees(\justCresc c' gis a e f ees |
   d1)\! |
-  \crescHairpin
   c4.( b8 c->\< d-> ees-> f->) |
   fis4(\! g2 c4( |
   f,2) r |
@@ -155,13 +139,11 @@ horn = \relative c''
   g4( c,8.) f16 f4( bes,) |
   aes'2(\sf f4 d) |
   f4( ees~ ees8 e f des) |
-  \crescJustTextCresc
-  c4( bes8.)\< aes16 ees'8( d c bes) |
+  c4( bes8.)\justCresc aes16 ees'8( d c bes) |
   ees4( d8.) c16 g'8( f e f) |
   g4 a bes4~ \times 2/3 {bes8 bes-.\ff bes} |
   \times 2/3 {bes( d,) d} \times 2/3 {d( g) g} \times 2/3 {g( c,) c} \times 2/3 {c( f) f} |
   \times 2/3 {f( bes,) bes} bes4 r2 |
-  \crescHairpin
   \times 2/3 {ees,8 g bes} ees4 \times 2/3 {c,8\< ees g} c4 |
   f2(\sf bes,4) r4 |
 
@@ -172,8 +154,7 @@ horn = \relative c''
   dis1~) | \noBreak
   dis4 dis( gis fis |
   eis1) |
-  \crescJustTextCresc
-  fis2.( fisis4 |
+  fis2.(\justCresc fisis4 |
   ais2\! gis4 fis~ |
   fis eis fis gis |
   b2 ais4 eis |
@@ -183,15 +164,15 @@ horn = \relative c''
   cis1~ |
   cis4) cis( fis e |
   dis1) |
-  e2.(\< eis4 |
+  e2.(\justCresc eis4 |
   gis2 fis4 e~ |
   e dis eis fisis |
-  ais gis2\< fis4~ |
+  ais gis2\justCresc fis4~ |
   fis e2 dis4) |
 
   %G
   \key ees \major
-  ees2.(->\< e4 |
+  ees2.(->\cresc e4 |
   f2) r |
   f2.(-> fis4 |
   g2) r |
@@ -212,12 +193,11 @@ horn = \relative c''
   g4( c,8. f16 f4( bes,4) |
   aes'2(\sf f4 d) |
   f( ees~ ees8 e f des) |
-  c4( bes8.)\< aes16 ees'8( d c bes) |
+  c4( bes8.)\justCresc aes16 ees'8( d c bes) |
   ees4( d8.) c16 g'8( f e f) |
   g4 a bes~ \times 2/3 {bes8 bes-.\ff bes-.} |
   \times 2/3 {bes( d,) d} \times 2/3 {d( g) g} \times 2/3 {g( c,) c} \times 2/3 {c( f) f} |
   \times 2/3 {f( bes,) bes} bes4 r2 |
-  \crescHairpin
   \times 2/3 {ees,8 g bes} ees4 \times 2/3 {c,8\< ees g} c4 |
   f2(\sf bes,4) r |
 
@@ -231,10 +211,8 @@ horn = \relative c''
   r4 d,(\p\< ees f |
   g8\! g[(\p ees' d] c bes a g |
   f1) |
-  \crescJustTextCresc
-  r8 ees(\< c' gis a e f ees |
+  r8 ees(\justCresc c' gis a e f ees |
   d1)\! |
-  \crescHairpin
   c4.( b8 c->\< d-> ees-> f->) |
   fis4(\! g2 c4( |
   f,2) r |
@@ -255,15 +233,13 @@ horn = \relative c''
   bes4. c8 d ees f g |
   aes2(\sf f4 d) |
   f( ees~ ees8 e f des) |
-  \crescJustTextCresc
-  c4( bes8.)\< aes16 ees'8( d c bes) |
+  c4( bes8.)\justCresc aes16 ees'8( d c bes) |
   ees4( d8.) c16 g'8( f e f) |
   \repeat unfold 2
   {
     g4 a( bes2~)\sf |
     bes4 f( aes4. g8) |
   }
-  \crescHairpin
   g4.\sf\< f8 ees d des c |
   bes aes g f ees4(\! b) |
   c8( b c ees d g ees aes) |
