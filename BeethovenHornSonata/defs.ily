@@ -7,36 +7,6 @@ cantabile = \markup{\italic cantabile}
 justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
 justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
 
-crescTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-crescJustTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimTextDim =
-{
-  \set decrescendoText = \markup { \italic "dim." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-dimJustTextDim =
-{
-  \set decrescendoText = \markup { \italic "dim." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
 outlineMvtI =
 {
   \tempo "Allegro moderato" 4=120
