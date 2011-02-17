@@ -1,15 +1,16 @@
-\version "2.13.13"
+\version "2.13.50"
 
 rall = \markup {\italic rall.}
 pocorall = \markup {\italic {poco rall.} }
 sempref = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "f"))
 
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
+
 outline =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 4/4
-  \tempo "Andante sostenuto"
+  \tempo "Andante sostenuto" 4=52
   s1*14 | \bar "||"
 
   \tempo "Adagio molto"
@@ -21,10 +22,7 @@ outline =
   \tempo "Allegro"
   s1*3 |
 
-  %Prevent stacking with next markup.
-  \once \override Score.RehearsalMark #'self-alignment-X = #left
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(0 . 0)
-  \mark \markup { \bold "Andante" }
+  \tempo "Andante"
   s1 |
 
   \tempo "Allegro"
@@ -40,11 +38,6 @@ outline =
   s1*2 | \bar "|."
 }
 
-midiOutline =
-{
-  \tempo 4=52
-}
-
 \layout
 {
   \context
@@ -57,11 +50,18 @@ midiOutline =
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+    tempoHideNote = ##t
   }
 
   \context
   {
-    \RemoveEmptyStaffContext
+    \Dynamics
+    \consists "Tweak_engraver"
+  }
+
+  \context
+  {
+    \Staff \RemoveEmptyStaves
   }
 }
 

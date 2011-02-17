@@ -1,6 +1,4 @@
-\version "2.13.13"
-
-\include "defs.ily"
+\version "2.13.50"
 
 pianoRight = \relative c'
 {
@@ -271,69 +269,47 @@ pianoLeft = \relative c
   f c' g f |
   c' g f2 |
   c'4 g r <c f,>~ |
-  \dimTextDim
-  <c f,>2 << <c f,>\fermata {s4.\> s8\!} >> |
+  <c f,>2 << <c f,>\fermata {s4.\justDim s8\!} >> |
 }
 
 pianoDynamics =
 {
-  \override DynamicTextSpanner #'dash-period = #-1.0
   %placeholder
   s1*8\p |
   s4 s\< s s8 s\! |
-  \dimTextDim
-  s4\f s2.\> |
-  \dimHairpin
+  s4\f s2.\justDim |
   s1\!\mf |
-  \revert DynamicTextSpanner #'dash-period
-  \dimTextDim
-  s2 s\> |
-  \dimHairpin
-  \override DynamicTextSpanner #'dash-period = #-1.0
+  s2 s\dim |
   s1 |
   \override TextSpanner #'edge-text = #'("rall " . "")
   s4\!\startTextSpan s s s\stopTextSpan
 
   s1*3\mp |
-  \dimTextDim
-  s2 s\> |
-  \dimHairpin
+  s2 s\justDim |
   s2\p\< s4\fz\> s8 s\! |
   s2\< s4\fz\> s8 s\! |
-  \revert DynamicTextSpanner #'dash-period
-  \crescTextCresc
-  s4 s\< s s\f |
-  \crescHairpin
-  \override DynamicTextSpanner #'dash-period = #-1.0
+  s4 s\cresc s s\f |
   s1\fz |
-  \dimTextDim
-  s4\fz s2.\> |
-  \dimHairpin
+  s4\fz s2.\justDim |
 
   s2\p\< s\ff |
   s1\sempref |
   s4 s\fz s2\ff |
-  \dimTextDim
-  s4 s\> s2 |
-  s4\> s2.-\rall
-  \dimHairpin
+  s4 s\justDim s2 |
+  s4\justDim s2.-\rall
 
   s1*6\p |
   s2.\< s4\! |
   s2.\> s4\! |
   s1*2\f |
   s2 s-\rall |
-  \dimTextDim
-  s4\> s s s\fz |
-  \dimHairpin
+  s4\justDim s s s\fz |
   s1*2 |
   s2 s-\rall |
   s1 |
   s4 s2.\f |
   s4 s\> s s8 s\! |
-  \dimTextDim
-  s4 s2.\> |
-  \dimTextDim
+  s4 s2.\justDim |
   s4 s2.\> |
   s2 s2\! |
 }
@@ -341,4 +317,3 @@ pianoDynamics =
 pianoPedals =
 {
 }
-
