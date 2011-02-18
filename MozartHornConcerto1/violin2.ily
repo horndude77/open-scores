@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 violinIIMvtI = \relative c'
 {
@@ -333,4 +331,3 @@ violinIIMvtII = \relative c'
   \repeat unfold 3 <cis e,>8 <d d,>4 r8 |
   \repeat unfold 3 <fis a,>8 <fis a,>4 r8 |
 }
-

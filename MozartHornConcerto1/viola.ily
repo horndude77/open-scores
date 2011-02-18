@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 violaMvtI = \relative c'
 {
@@ -309,4 +307,3 @@ violaMvtII = \relative c'
   g g g <fis a,>4 r8 |
   d8 fis a d,4 r8 |
 }
-

@@ -1,7 +1,18 @@
-\version "2.13.10"
+\version "2.13.50"
+
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
+piuCrescAl = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "più cresc. al")
 
 dolce = #(make-dynamic-script (markup #:normal-text #:italic "dolce"))
+pConMoltaEspressione = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "con molta espressione"))
 aTwo = "a2"
+
+dynamicLeftAlign =
+{
+  \once \override DynamicText #'self-alignment-X = #LEFT
+  \once \override DynamicText #'X-offset = #'-1.5
+}
 
 hornInstrumentName = \markup
 \center-column {\line {Solo Horn} \line {in D}}
@@ -108,6 +119,12 @@ outlineMvtII =
                                ,(make-accidental-rule 'same-octave 1))
     \override PaperColumn #'keep-inside-line = ##t
     \override NonMusicalPaperColumn #'keep-inside-line = ##t
+  }
+
+  \context
+  {
+    \Dynamics
+    \consists "Tweak_engraver"
   }
 
   \context

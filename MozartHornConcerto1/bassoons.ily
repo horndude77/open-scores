@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 bassoonsMvtI = \relative c'
 {
@@ -123,4 +121,3 @@ bassoonsMvtII = \relative c''
   r8^"Tacit"
   R2.*141 |
 }
-

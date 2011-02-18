@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 oboesMvtI = \relative c''
 {
@@ -226,4 +224,3 @@ oboesMvtII = \relative c''
   <cis e>8 <cis e> <cis e> << d4 \\ d >> r8 |
   <fis a,>8 <fis a,> <fis a,> <fis a,>4 r8 |
 }
-

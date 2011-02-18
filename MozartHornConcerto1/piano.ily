@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 pianoMvtIRight = \relative c''
 {
@@ -349,8 +347,9 @@ pianoMvtILeft = \relative c
 
 pianoMvtIDynamics =
 {
-  s4_\markup{\dynamic p \italic {con molta espressione}}
-  s1*4
+  \dynamicLeftAlign
+  s4\pConMoltaEspressione |
+  s1*4 |
   s1\< |
   s4 s2.\!
   s1 |
@@ -383,13 +382,8 @@ pianoMvtIDynamics =
   s1\f |
   s2 s\p |
   s1 |
-  s4 s2._\markup{\italic cresc.} |
-  \set crescendoText = \markup {\italic "più cresc. al"}
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-  s1\< |
-  \crescHairpin
+  s4 s2.\justCresc |
+  s1\piuCrescAl |
 
   %C
   s4 s2.\ff |
@@ -397,7 +391,7 @@ pianoMvtIDynamics =
   s8 s2..\p |
   s1_\markup {\italic espressivo}
   s1*6 |
-  s4. s8_\markup {\italic cresc.} s2 |
+  s4. s8\justCresc s2 |
   s1\< | s\> |
 
   %D
@@ -413,14 +407,14 @@ pianoMvtIDynamics =
   s8 s\p\> s2. |
   s1\pp |
   s1*5 |
-  s8 s2.._\markup {\italic cresc.} |
+  s8 s2..\justCresc |
   s8 s2..\f |
   s8 s2..\p |
   s8 s2..\f |
   s8 s2..\p |
   s8 s2..\f |
   s8 s2..\p |
-  s1_\markup {\italic cresc.} |
+  s1\justCresc |
   s8 s2..\f |
   s1 |
 
@@ -436,13 +430,8 @@ pianoMvtIDynamics =
   s1*2 |
   s1\p |
   s1 |
-  s4 s2._\markup {\italic cresc.} |
-  \set crescendoText = \markup {\italic "più cresc. al"}
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-  s1\< |
-  \crescHairpin
+  s4 s2.\justCresc |
+  s1\piuCrescAl |
   s1*2 |
   s1\ff |
   s1*6 |
@@ -823,17 +812,17 @@ pianoMvtIIDynamics =
   s4. s4 s8\f |
   s4. s\p |
   s2. |
-  s8 s_\markup {\italic cresc.} s s4. |
+  s8 s\justCresc s s4. |
   s2. |
   s\> |
-  s4.\f s_\markup{\italic dim.} |
+  s4.\f s\justDim |
   s2.\p |
   s2.*6 |
   s4. s4 s8\f |
   s2. |
   s4. s4 s8\f |
   s2.*7 |
-  s8 s8_\markup {\italic dolce} s s4. |
+  s8 s8\dolce s s4. |
   s2.*2 |
   s4.\< s\> |
   s2.\p |
@@ -844,7 +833,7 @@ pianoMvtIIDynamics =
   s2.*4 |
   s2.\p |
   s2.*8 |
-  s8 s_\markup {\italic cresc.} s s4. |
+  s8 s\justCresc s s4. |
   s2.*2 |
   s4. s4 s8\f |
   s2.*3 |
@@ -883,7 +872,7 @@ pianoMvtIIDynamics =
   s2.*2 |
   s4. s4 s8\p |
   s2.*2 |
-  s2._\markup {\italic cresc.} |
+  s2.\justCresc |
   s4. s4 s8\ff |
   s2.*3 |
 }
@@ -891,4 +880,3 @@ pianoMvtIIDynamics =
 pianoMvtIIPedals =
 {
 }
-

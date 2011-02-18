@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 bassMvtI = \relative c
 {
@@ -285,4 +283,3 @@ bassMvtII = \relative c
   a a a d,4 r8 |
   d fis a d,4 r8 |
 }
-
