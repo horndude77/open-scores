@@ -1,4 +1,4 @@
-\version "2.13.10"
+\version "2.13.50"
 
 hornsInstrumentName = \markup
 \center-column {\line {Horns} \line {in E\flat}}
@@ -8,6 +8,16 @@ hornInstrumentName = \markup
 pDolceMarkup = \markup {\dynamic p \normal-text \italic { dolce } }
 pDolce = #(make-dynamic-script pDolceMarkup)
 dolce = \markup {\italic "dolce"}
+
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
+justPocoRitenutoEDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "poco ritenuto e dim." 'tweaks '((dash-period . -1)))
+
+dynamicLeftAlign =
+{
+  \once \override DynamicText #'self-alignment-X = #LEFT
+  \once \override DynamicText #'X-offset = #'-1.5
+}
 
 afterGraceFraction = #(cons 15 16)
 
@@ -22,35 +32,6 @@ stop =
                         (ly:grob-set-property! dots 'dot-count 0))))
                (ly:music-property music 'tweaks)))
   music)
-
-crescTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-crescJustTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimJustTextDim =
-{
-  \set decrescendoText = \markup { \italic "dim." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimJustTextPocoRitenutoEDim =
-{
-  \set decrescendoText = \markup { \italic "poco ritenuto e dim." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
 
 spaceA = {s1}
 spaceB = {s4.}
@@ -201,6 +182,12 @@ outlineMvtIII =
                                ,(make-accidental-rule 'same-octave 1))
     \override PaperColumn #'keep-inside-line = ##t
     \override NonMusicalPaperColumn #'keep-inside-line = ##t
+  }
+
+  \context
+  {
+    \Dynamics
+    \consists "Tweak_engraver"
   }
 
   \context

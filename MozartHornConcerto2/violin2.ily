@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 violinIIMvtI = \relative c'
 {
@@ -85,8 +83,7 @@ violinIIMvtI = \relative c'
   bes4 r8 f,8\p bes4 ees |
   f8 r r4 bes,8 r r4 |
   \repeat unfold 8 bes8 |
-  \crescJustTextCresc
-  bes16\< bes bes bes \repeat tremolo 4 bes16 \repeat tremolo 8 a |
+  bes16\justCresc bes bes bes \repeat tremolo 4 bes16 \repeat tremolo 8 a |
 
   %tutti
   bes16(\f d f d f d f d) f(\p ees d c bes a g f) |
@@ -124,8 +121,7 @@ violinIIMvtI = \relative c'
   d d' d d ees ees ees ees |
   d d,4 d d d8 |
   r d4 d d d8 |
-  \crescJustTextCresc
-  r bes4\< bes bes bes8 |
+  r bes4\justCresc bes bes bes8 |
 
   %tutti
   g16\p( \repeat unfold 7 {bes ees} bes) |
@@ -199,8 +195,7 @@ violinIIMvtI = \relative c'
   ees4 r8 ees,8\p ees4 aes |
   g r ees r |
   \repeat unfold 8 ees8 |
-  \crescJustTextCresc
-  \repeat tremolo 8 ees16\< \repeat tremolo 8 d |
+  \repeat tremolo 8 ees16\justCresc \repeat tremolo 8 d |
 
   %tutti
   ees16(\f g bes g bes g bes g) bes(\p aes g f ees d c bes) |

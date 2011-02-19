@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 violaMvtI = \relative c'
 {
@@ -88,8 +86,7 @@ violaMvtI = \relative c'
   d r8 d\p g4 bes |
   bes8 r r4 ees,8 r r4 |
   \repeat unfold 8 f8 |
-  \crescJustTextCresc
-  f\< f f f ees ees ees ees |
+  f\justCresc f f f ees ees ees ees |
 
   %tutti
   d16(\f bes' d bes d bes d bes) d(\p c bes a g f ees d) |
@@ -206,8 +203,7 @@ violaMvtI = \relative c'
   g r8 ees'8\p ees4 ees |
   ees r bes r |
   \repeat unfold 8 bes8 |
-  \crescJustTextCresc
-  \repeat tremolo 8 bes16\< \repeat tremolo 8 aes |
+  \repeat tremolo 8 bes16\justCresc \repeat tremolo 8 aes |
   g8\f g' g g g16(\p f ees d c bes aes g) |
   aes8\f c c c aes'16(\p g f ees d c bes aes) |
   g8\f bes bes bes g'16(\p f ees d c bes aes g) |

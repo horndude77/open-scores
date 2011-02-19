@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 bassMvtI = \relative c
 {
@@ -84,8 +82,7 @@ bassMvtI = \relative c
   d r8 bes'\p g4 ees |
   d8 r r4 ees8 r r4 |
   \repeat unfold 8 f8 |
-  \crescJustTextCresc
-  f\< \repeat unfold 7 f |
+  f\justCresc \repeat unfold 7 f |
 
   %tutti
   \repeat unfold 3 { bes,8\f bes bes bes bes\p bes bes bes | }
@@ -110,8 +107,7 @@ bassMvtI = \relative c
   g, r g' r |
   g, g' g g |
   f f f f |
-  \crescJustTextCresc
-  bes,\< bes bes bes |
+  bes,\justCresc bes bes bes |
 
   %tutti
   ees8 ees\p \repeat unfold 14 ees |
@@ -178,8 +174,7 @@ bassMvtI = \relative c
   g r8 ees''8\p c4 aes |
   g r ees r |
   \repeat unfold 8 bes8 |
-  \crescJustTextCresc
-  bes\< \repeat unfold 7 bes |
+  bes\justCresc \repeat unfold 7 bes |
 
   %tutti
   \repeat unfold 3 { ees8\f ees ees ees ees\p ees ees ees | }

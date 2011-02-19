@@ -1,5 +1,6 @@
-\version "2.13.10"
+\version "2.13.50"
 
+\include "defs.ily"
 \include "oboes.ily"
 \include "horns.ily"
 \include "horn.ily"
@@ -15,6 +16,9 @@ instrument = "Orchestra"
 \paper
 {
   short-indent = 5\mm
+  top-system-spacing #'stretchability = #0
+  last-bottom-spacing #'stretchability = #0
+  system-system-spacing #'stretchability = #2
 }
 
 \book
@@ -306,4 +310,3 @@ instrument = "Orchestra"
     }
   }
 }
-

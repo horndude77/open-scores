@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 pianoRightMvtI = \relative c''
 {
@@ -490,8 +488,7 @@ pianoDynamicsMvtI =
   s1*2 |
   s1\p |
   s1*7 |
-  \crescTextCresc
-  s8 s2..\< |
+  s8 s2..\cresc |
   s1 |
   s1\f |
   s1*4 |
@@ -523,16 +520,14 @@ pianoDynamicsMvtI =
   s1*3 |
   s2 s\pp |
   s1 |
-  \crescJustTextCresc
-  s2 s\< |
+  s2 s\justCresc |
   s1*2 |
   s2 s\p |
   s1 |
   s1\f |
   s4. s8\p s2 |
   s1 |
-  \crescJustTextCresc
-  s2 s\< |
+  s2 s\justCresc |
   s1 |
 
   %F
@@ -545,10 +540,8 @@ pianoDynamicsMvtI =
   %G
   s1\pp |
   s1*5 |
-  \crescJustTextCresc
-  s1\< |
-  \dimJustTextDim
-  s4 s2.\> |
+  s1\justCresc |
+  s4 s2.\justDim |
 
   %H
   s1\! |
@@ -556,9 +549,7 @@ pianoDynamicsMvtI =
 
   %I
   s1*3 |
-  \crescHairpin
   s1\< |
-  \dimHairpin
   s1\> |
   s1\p |
   s1*3 |
@@ -580,7 +571,6 @@ pianoDynamicsMvtI =
   s1 |
   s1\fp |
   s1*8 |
-  \crescHairpin
   s2 s\< |
 
   %M
@@ -599,19 +589,16 @@ pianoDynamicsMvtI =
   s1 |
 
   %O
-  \crescHairpin
   s2 s\< |
   s1*2 |
   s2\! s\p |
-  \crescJustTextCresc
-  s2 s\< |
+  s2 s\justCresc |
   s1\f |
   s4. s8\p s2 |
   s1 |
 
   %P
-  \crescJustTextCresc
-  s1\< |
+  s1\justCresc |
   s1 |
   s2\f s\p |
   s\f s\p |
@@ -854,6 +841,7 @@ pianoLeftMvtII = \relative c
 
 pianoDynamicsMvtII =
 {
+  \dynamicLeftAlign
   s4.\pDolce |
   s4.*8 |
   s16 s\> s4 |
@@ -871,17 +859,14 @@ pianoDynamicsMvtII =
 
   %R
   s4.\! |
-  \crescJustTextCresc
-  s4.\< |
+  s4.\justCresc |
   s4.*2 |
-  \dimJustTextDim
-  s4.\> |
+  s4.\justDim |
   s4. |
   s\p |
   s4.*6 |
   s8. s-\dolce |
   s4. |
-  \crescHairpin
   s8 s\< s |
   s4. |
   s\! |
@@ -891,19 +876,15 @@ pianoDynamicsMvtII =
   s4.*3 |
   s4.-\dolce |
   s4.*3 |
-  \crescJustTextCresc
-  s4 s8\< |
+  s4 s8\justCresc |
   s4. |
-  \dimHairpin
   s4.\> |
   s\p |
 
   %T
   s4.*7 |
-  \crescJustTextCresc
-  s8. s\< |
+  s8. s\justCresc |
   s4. |
-  \crescHairpin
   s4.\< |
   s |
   s\! |
@@ -913,16 +894,13 @@ pianoDynamicsMvtII =
   %U
   s4.-\dolce |
   s4.*3 |
-  \crescHairpin
   s4 s8\< |
   s4. |
-  \dimHairpin
   s4.\> |
   s4.\p\< |
   s4.*2 |
   s4.\> |
-  \crescJustTextCresc
-  s4.\p\< |
+  s4.\p\justCresc |
   s4.*2 |
   s4.\f\> |
   \grace s8\! s8 s4\pp |
@@ -1374,8 +1352,7 @@ pianoDynamicsMvtIII =
 
   %B
   s2. |
-  \dimJustTextDim
-  s4. s\> |
+  s4. s\justDim |
   s2. |
   s4. s\fp |
   s2. |
@@ -1384,14 +1361,12 @@ pianoDynamicsMvtIII =
   s4. s\< |
   s2. |
   s4. s |
-  \dimHairpin
   s2.\> |
 
   %C
   s2.\< |
   s |
-  \dimJustTextPocoRitenutoEDim
-  s4.\! s\p\> |
+  s4.\! s\p\justPocoRitenutoEDim |
   s2.*3 |
   s2. | %fermata
 
@@ -1419,11 +1394,9 @@ pianoDynamicsMvtIII =
 
   %G
   s2.*3 |
-  \crescJustTextCresc
-  s4 s8\p s4 s8\< |
+  s4 s8\p s4 s8\justCresc |
   s2. |
-  \dimTextDim
-  s8*5\f s8\> |
+  s8*5\f s8\dim |
   s2. |
 
   %H
@@ -1440,21 +1413,17 @@ pianoDynamicsMvtIII =
   s2.*6 |
 
   %K
-  \dimJustTextDim
-  s4. s\> |
+  s4. s\justDim |
   s2. |
   s4. s\sf |
   s2. |
-  \dimJustTextDim
-  s4.\p s\> |
+  s4.\p s\justDim |
   s2. |
-  \crescHairpin
   s4. s\< |
   s2. |
-  \dimHairpin
   s4.\> s\< |
   s2. |
-  s4.\> \crescJustTextCresc s\< |
+  s4.\> s\justCresc |
   s2. |
 
   %L
