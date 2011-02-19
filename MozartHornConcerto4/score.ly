@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.50"
 
 \include "defs.ily"
 \include "merge-rests.ily"
@@ -23,6 +23,9 @@
 \paper
 {
   short-indent = 5\mm
+  top-system-spacing #'stretchability = #0
+  last-bottom-spacing #'stretchability = #0
+  system-system-spacing #'stretchability = #2
 }
 
 instrument = "Orchestra"

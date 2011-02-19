@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.50"
 
 hornMvtI = \relative c''
 {
@@ -48,7 +48,7 @@ hornMvtI = \relative c''
   R1*2 |
 
   %C
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \dynamicLeftAlign
   c1\pConEspressione^\solo |
   e |
   g2 f8( e d c) |
@@ -108,7 +108,6 @@ hornMvtI = \relative c''
   R1*2 |
 
   %F
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   e2_\conEspress^\solo d8( c b a) |
   a2( gis4) r |
   f'2 e8( d c b) |
@@ -156,7 +155,7 @@ hornMvtI = \relative c''
   r4 g'\p^\solo g' g |
   \times 2/3 {g8( a g)} \times 2/3 {f( g f)}
     \times 2/3 {e( f e)} \times 2/3 {d( e d)} |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \dynamicLeftAlign
   c1\pConEspressione |
   e |
   g2 f8( e d c) |
@@ -243,7 +242,7 @@ hornMvtI = \relative c''
 hornMvtII = \relative c''
 {
   \transposition ees
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \dynamicLeftAlign
   d2.\pConEspressione^\solo |
   \times 2/3 {e8( fis g)} g4~( g16 fis e d) |
   \times 2/3 {c8( d e)} e4~( e16 d c b) |
@@ -292,9 +291,7 @@ hornMvtII = \relative c''
   s1*0^\tutti R2.*3 |
 
   %P
-  r4
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    b\pEspress^\solo dis |
+  r4 \dynamicLeftAlign b\pEspress^\solo dis |
   e2( b4) |
   c8( b) b4 r |
   fis'2( b,4) |
@@ -416,17 +413,12 @@ hornMvtIII = \relative c''
 
   %T
   c8-. c-.  c-.
-    %TODO: figure out how to do this automatically
-    \once \override Staff.TextScript #'Y-offset = #'1.5
-    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
-    \repeat tremolo 3 c8^\staccatoThree |
+    \tremoloStaccatosOn #3 \repeat tremolo 3 c-. \tremoloStaccatosOff |
   b( d g) g( f d) |
   c-. c-. c-. c( b) c-. |
   d( g,) g-. g4 g8 |
   c8-. c-. c-.
-    \once \override Staff.TextScript #'Y-offset = #'1.5
-    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
-    \repeat tremolo 3 c8^\staccatoThree |
+    \tremoloStaccatosOn #3 \repeat tremolo 3 c-. \tremoloStaccatosOff |
   b( d g) g( f d) |
   e( g) c,-. \acciaccatura e8 d-. c-. c-. |
   c-. c,-. c-. c4 r8 |
@@ -477,16 +469,12 @@ hornMvtIII = \relative c''
 
   %V
   c8)\p c-. c-.
-    \once \override Staff.TextScript #'Y-offset = #'1.5
-    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
-    \repeat tremolo 3 c^\staccatoThree |
+    \tremoloStaccatosOn #3 \repeat tremolo 3 c-. \tremoloStaccatosOff |
   b8( d g) g( f d) |
   c-. c-. c-. c( b) c-. |
   d( g,) g-. g4 g8 |
   c8-. c-. c-.
-    \once \override Staff.TextScript #'Y-offset = #'1.5
-    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
-    \repeat tremolo 3 c^\staccatoThree |
+    \tremoloStaccatosOn #3 \repeat tremolo 3 c-. \tremoloStaccatosOff |
   b8( d g) g( f d) |
   e( g) c,-. d( c) d-. |
   c-. c,-. c-. c4 r8 |
@@ -546,16 +534,12 @@ hornMvtIII = \relative c''
 
   %Y
   c8-. c-. c-.
-    \once \override Staff.TextScript #'Y-offset = #'1.5
-    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
-    \repeat tremolo 3 c8^\staccatoThree |
+    \tremoloStaccatosOn #3 \repeat tremolo 3 c-. \tremoloStaccatosOff |
   b( d g) g( f d) |
   c-. c-. c-. c( b c) |
   d( g,) g-. g4 g8 |
   c8-. c-. c-.
-    \once \override Staff.TextScript #'Y-offset = #'1.5
-    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
-    \repeat tremolo 3 c8^\staccatoThree |
+    \tremoloStaccatosOn #3 \repeat tremolo 3 c-. \tremoloStaccatosOff |
   b( d g) g( f d) |
   e( g) c,-. \acciaccatura e8 d( c) d |
   c4^\tutti r8 r4. |
@@ -566,16 +550,12 @@ hornMvtIII = \relative c''
 
   %Z
   c8-. c-. c-.
-    \once \override Staff.TextScript #'Y-offset = #'1.5
-    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
-    \repeat tremolo 3 c8^\staccatoThree |
+    \tremoloStaccatosOn #3 \repeat tremolo 3 c-. \tremoloStaccatosOff |
   b( d g) g( f d) |
   e( g) c,-. d( c) d-. |
   c4.~ c4 c,8 |
   c'8-. c-. c-.
-    \once \override Staff.TextScript #'Y-offset = #'1.5
-    \once \override Staff.TextScript #'Y-extent = #'(1 . -1)
-    \repeat tremolo 3 c8^\staccatoThree |
+    \tremoloStaccatosOn #3 \repeat tremolo 3 c-. \tremoloStaccatosOff |
   b( d g) g( f d) |
   e( g) c,-. \acciaccatura e8 d( c) d-. |
   c4 r8 r4. |

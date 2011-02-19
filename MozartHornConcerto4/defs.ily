@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.50"
 
 stop =
 #(define-music-function (parser location music) (ly:music?)
@@ -12,6 +12,44 @@ stop =
                (ly:music-property music 'tweaks)))
   music)
 
+%Add multiple staccato dots for one note.
+tremoloStaccatosOn = #(define-music-function (parser location dots) (number?)
+#{
+   \override Script #'stencil = #ly:text-interface::print
+   %TODO: Remove eval. Automatically figure out how many dots to add.
+   \override Script #'text =
+   #(lambda (grob)
+     (define (build-lst count)
+       (let ((lst (list #:musicglyph "scripts.staccato")))
+         (if (> count 1) (append lst '(#:hspace 0.4) (build-lst (- count 1))) lst)))
+     (eval (list markup #:concat (build-lst $dots)) (interaction-environment)))
+   \override Script #'X-offset =
+   #(lambda (grob)
+     (let* ((parent (ly:grob-parent grob X))
+            (parent-extent (ly:grob-property parent 'X-extent '(0 . 0)))
+            (parent-start (car parent-extent))
+            (parent-end (cdr parent-extent))
+            (parent-center (/ (+ parent-start parent-end) 2.0))
+            (extent (ly:grob-property grob 'X-extent '(0 . 0)))
+            (start (car extent))
+            (end (cdr extent))
+            (val (- parent-center (/ (- end start) 2.0))))
+       val))
+#})
+
+tremoloStaccatosOff =
+{
+  \revert Script #'stencil
+  \revert Script #'text
+  \revert Script #'X-offset
+}
+
+dynamicLeftAlign =
+{
+  \once \override DynamicText #'self-alignment-X = #LEFT
+  \once \override DynamicText #'X-offset = #'-1.5
+}
+
 tutti = \markup {Tutti}
 solo = \markup {\whiteout \pad-markup #0.5 Solo}
 dolce = \markup {\italic {dolce} }
@@ -20,7 +58,6 @@ conEspress = \markup {\italic {con espress.} }
 cadenza = \markup {\italic {Cadenza ad lib} }
 pConEspressione = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "con espressione"))
 pEspress = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "espress."))
-staccatoThree = \markup{\musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato" \musicglyph #"scripts.staccato"}
 
 hornsInstrumentName = \markup
 \center-column {Horns \line {in E\flat}}
