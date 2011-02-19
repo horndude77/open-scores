@@ -1,6 +1,4 @@
-\version "2.13.9"
-
-\include "defs.ily"
+\version "2.13.50"
 
 hornAllegro = \relative c''
 {
@@ -41,13 +39,11 @@ hornAllegro = \relative c''
 
   %B
   R1*3
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   r2 r4 d8(_\conEspressione b) |
   a( g) d'( b) a( g) e'( c) |
   b8( a) a4 r4 a8 a |
   a(\< b c cis\> d4 c\!) |
-  \crescJustTextCresc
-  ais8( b) r8 b\< b( c) r c |
+  ais8( b) r8 b\justCresc b( c) r c |
   cis( d)\! r4 r2 |
   g,1~\f |
   g2~ g8 a16 b c( d) e c |
@@ -73,7 +69,7 @@ hornAllegro = \relative c''
   c4.( cis8 d4) r |
   R1*2 |
   ees1~ |
-  ees1|
+  ees1 |
   e |
   d |
   c |
@@ -123,8 +119,7 @@ hornAllegro = \relative c''
   R1 |
   c1~ |
   c |
-  \crescJustTextCresc
-  c8-. c-. r c-. cis( d) r\< d-. |
+  c8-. c-. r c-. cis( d) r\justCresc d-. |
   dis( e) r e-. e( f) r f-. |
   g4-.\f e-. c-. bes-. |
   g-.\ff e-. c-. r |
@@ -136,11 +131,9 @@ hornAllegro = \relative c''
   R1 |
 
   %H
-  \crescJustTextCresc
-  \times 2/3 { c8\< b a } \times 2/3 { g a b } \times 2/3 { c d e } \times 2/3 { f e d } |
+  \times 2/3 { c8\justCresc b a } \times 2/3 { g a b } \times 2/3 { c d e } \times 2/3 { f e d } |
   \times 2/3 { c b a } \times 2/3 { g a b } \times 2/3 { c d e } \times 2/3 { f e d } |
-  \crescJustTextPiuCresc
-  c4 \times 2/3 { r8 g'(\< e)} c4 \times 2/3 { r8 e( c)} |
+  c4 \times 2/3 { r8 g'(\justPiuCresc e)} c4 \times 2/3 { r8 e( c)} |
   g4 \times 2/3 { r8 c8( g) } \times 2/3 { e( g) e-. } \times 2/3 { c( e) c-. }|
   g4 r8 g'\f a b c d|
 
@@ -160,7 +153,7 @@ hornRomanze = \relative c''
 {
   \key f \major
   \transposition ees
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \dynamicLeftAlign
   c4.(\pConMoltoEspressione f8) a,4 a |
   bes8( c d bes g4) r8 g |
   a r bes r c r d( bes) |
@@ -343,8 +336,7 @@ hornRondo = \relative c''
   R2. |
   r8 g g g g g |
   ees'4.~ ees8 d c |
-  \crescJustTextCresc
-  b4.\< c4. |
+  b4.\justCresc c4. |
   d4. e4. |
 
   %F
@@ -372,8 +364,7 @@ hornRondo = \relative c''
   r4 r8 r4 g'8 |
   c( e) g,-. c( e) g,-. |
   c( e) g,-. c( e) g,-. |
-  \crescJustTextCresc
-  g'2.\< |
+  g'2.\justCresc |
   bes,2. |
   a4. b16 c d e f g |
   a4. f4 d8 |
@@ -385,8 +376,7 @@ hornRondo = \relative c''
   R2.*5 |
   r8 r8\fermata d8\p d e f |
   g( e) c d( e) d |
-  \crescJustTextCresc
-  c c\< c d e f |
+  c c\justCresc c d e f |
   g( e) c d( e) d |
   c4\f r8 r4 r8 |
   R2.*5 |

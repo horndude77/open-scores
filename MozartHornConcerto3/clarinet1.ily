@@ -1,6 +1,4 @@
-\version "2.13.9"
-
-\include "defs.ily"
+\version "2.13.50"
 
 clarinetIAllegro = \relative c'''
 {
@@ -15,8 +13,7 @@ clarinetIAllegro = \relative c'''
   e8 r bes'4. bes8 a a |
   g4 c, r2 |
   R1*8 |
-  \crescTextCresc
-  r4 r8 g'\< a a bes bes |
+  r4 r8 g'\cresc a a bes bes |
   c2\f f,~ |
   f bes4 d |
   c2 a4 g |
@@ -265,7 +262,7 @@ clarinetIRondo = \relative c''
   bes-. bes-. r bes-. bes-. r |
   bes-. bes-. r bes-. bes-. r |
   a r r r4 r8 |
-  r4 r8 r r c, |
+  r4 r8 r4 c,8 |
   \repeat unfold 4 {f a c,} |
   f4 r8 r4 r8 |
   R2.*3 |
@@ -291,4 +288,3 @@ clarinetIRondo = \relative c''
   f4 r8 f4 r8 |
   f4 r8 r4 r8 |
 }
-

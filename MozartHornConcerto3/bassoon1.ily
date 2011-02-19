@@ -1,6 +1,4 @@
-\version "2.13.9"
-
-\include "defs.ily"
+\version "2.13.50"
 
 bassoonIAllegro = \relative c'
 {
@@ -17,8 +15,7 @@ bassoonIAllegro = \relative c'
   R1*5 |
   ees'1~\p |
   ees~ |
-  \crescTextCresc
-  ees~\< |
+  ees~\cresc |
   ees |
   ees\f |
   ees |
@@ -303,4 +300,3 @@ bassoonIRondo = \relative c'
   bes4 r8 bes4 r8 |
   bes4 r8 r4 r8 |
 }
-

@@ -1,6 +1,4 @@
-\version "2.13.9"
-
-\include "defs.ily"
+\version "2.13.50"
 
 violaAllegro = \relative c
 {
@@ -21,8 +19,7 @@ violaAllegro = \relative c
   bes2~ bes8 bes( c d) |
   ees ees, ees ees ees ees ees ees |
   \repeat unfold 3 {ees ees ees ees ees ees ees ees |}
-  \crescTextCresc
-  ees\< ees ees ees ees ees ees ees |
+  ees\cresc ees ees ees ees ees ees ees |
   ees ees ees ees ees ees' ees ees |
   ees\f ees ees ees g, g g g |
   aes aes aes aes aes aes aes aes |
@@ -71,8 +68,7 @@ violaAllegro = \relative c
   aes'4-.\f f-. d-. bes-. |
   ees8\p ees ees ees ees ees ees ees |
   ees ees ees ees ees ees g, g |
-  \crescTextCresc
-  f f f\< f f f f f |
+  f f f\cresc f f f f f |
   f f f f f f' f f |
   f16\f f d d f f g g \repeat tremolo 4 a \repeat tremolo 4 fis |
   \repeat tremolo 4 g f f e e \repeat tremolo 4 f \repeat tremolo 4 d |
@@ -165,8 +161,7 @@ violaAllegro = \relative c
   bes r r bes |
   \times 2/3 {bes8 bes bes} bes4 \times 2/3 {r8 bes bes} bes4 |
   \times 2/3 {r8 ees ees} ees4 \times 2/3 {r8 g g} g4 |
-  \crescTextCresc
-  bes8 bes, bes bes bes\< bes bes bes |
+  bes8 bes, bes bes bes\cresc bes bes bes |
   bes bes bes bes bes bes bes bes |
   s1*0\f \repeat tremolo 4 bes16 \repeat tremolo 4 ges' \repeat tremolo 8 f |
   \repeat tremolo 8 ees \repeat tremolo 8 d |
@@ -461,4 +456,3 @@ violaRondo = \relative c
   ees4 r8 ees4 r8 |
   ees4 r8 r4 r8 |
 }
-

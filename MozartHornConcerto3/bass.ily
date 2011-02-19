@@ -1,6 +1,4 @@
-\version "2.13.9"
-
-\include "defs.ily"
+\version "2.13.50"
 
 bassAllegro = \relative c
 {
@@ -22,8 +20,7 @@ bassAllegro = \relative c
     {
       s1\p |
       s | s | s |
-      \crescTextCresc
-      s\< |
+      s\cresc |
       s |
     }
   >>
@@ -70,8 +67,7 @@ bassAllegro = \relative c
   bes,1 |
   aes'4-.\f f-. d-. bes-. |
   s1*0\p \repeat unfold 16 ees8 |
-  \crescTextCresc
-  f8 f f\< f \repeat unfold 12 f |
+  f8 f f\cresc f \repeat unfold 12 f |
   bes8\f bes bes bes a a a a |
   g g g g f f f f |
   ees ees ees ees d d des des |
@@ -154,8 +150,7 @@ bassAllegro = \relative c
   ees) r r bes( |
   \times 2/3 {ees8) ees ees} ees4 \times 2/3 {r8 ees ees} ees4 |
   \times 2/3 {r8 ees ees} ees4 \times 2/3 {r8 ees ees} ees4 |
-  \crescTextCresc
-  bes8 bes' bes bes bes\< bes bes bes |
+  bes8 bes' bes bes bes\cresc bes bes bes |
   bes bes bes bes bes, bes bes bes |
   ees\f ees' ees ees d d d d |
   c c c c bes bes bes bes |
@@ -455,4 +450,3 @@ bassRondo = \relative c
   ees4 r8 ees4 r8 |
   ees4 r8 r4 r8 |
 }
-

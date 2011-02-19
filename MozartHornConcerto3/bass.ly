@@ -1,7 +1,7 @@
-\version "2.13.9"
+\version "2.13.50"
 
-\include "bass.ily"
 \include "defs.ily"
+\include "bass.ily"
 
 instrument = \markup {Bass}
 \include "header.ily"

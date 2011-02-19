@@ -1,3 +1,5 @@
+\version "2.13.50"
+
 % tremolo functions
 #(define (tremolo-repeat-count dur music)
   (let* ((elements (ly:music-property music 'elements))
@@ -35,4 +37,3 @@ tremolos = #(define-music-function (parser location dur mus) (integer? ly:music?
 
 unfoldTremolos = #(define-music-function (parser location mus) (ly:music?)
   (music-map unfold-tremolos mus))
-

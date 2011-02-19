@@ -1,6 +1,4 @@
-\version "2.13.9"
-
-\include "defs.ily"
+\version "2.13.50"
 
 bassoonIIAllegro = \relative c
 {
@@ -17,8 +15,7 @@ bassoonIIAllegro = \relative c
   R1*5 |
   ees1~\p |
   ees~ |
-  \crescTextCresc
-  ees~\< |
+  ees~\justCresc |
   ees |
   g2\f bes |
   c1 |
@@ -303,4 +300,3 @@ bassoonIIRondo = \relative c'
   g4 r8 g4 r8 |
   g4 r8 r4 r8 |
 }
-

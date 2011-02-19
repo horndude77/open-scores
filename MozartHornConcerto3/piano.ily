@@ -1,4 +1,4 @@
-\version "2.13.10"
+\version "2.13.50"
 
 pianoRightAllegro = \relative c'
 {
@@ -452,11 +452,9 @@ pianoDynamicsAllegro =
   s1*3 |
   s2. s4\pConEspressione |
   s1*6 |
-  \crescJustTextPocoAPocoCresc
-  s1\< |
+  s1\justPocoAPocoCresc |
   s1 |
-  \crescJustTextCresc
-  s1\< |
+  s1\justCresc |
   s1\f
   s1*5 |
   s2 s\p |
@@ -470,16 +468,13 @@ pianoDynamicsAllegro =
 
   %B
   s1*2 |
-  \crescHairpin
   s2\< s\> |
   s1\! |
   s\p |
   s1*2 |
-  \crescJustTextCresc
-  s4. s\< s4 |
+  s4. s\justCresc s4 |
   s1 |
-  \crescJustTextPiuCresc
-  s\< |
+  s\justPiuCresc |
   s1*2 |
   s1\f |
   s\p |
@@ -508,18 +503,15 @@ pianoDynamicsAllegro =
   s1*10 |
   s2. s4\p |
   s1*2 |
-  \crescHairpin
   s1\< |
   s\! |
 
   %G
   s1*3 |
-  \crescJustTextCresc
-  s4. s\< s4 |
-  \dimJustTextDim
-  s2 s\> |
-  s4. s\< s4 |
-  s2 s\> |
+  s4. s\justCresc s4 |
+  s2 s\justDim |
+  s4. s\justCresc s4 |
+  s2 s\justDim |
   s1\! |
   s1*2 |
   s1\ff |
@@ -528,10 +520,9 @@ pianoDynamicsAllegro =
 
   %H
   s1*2 |
-  \crescJustTextCresc
-  s2 s\< |
+  s2 s\justCresc |
   s1*2 |
-  s1\< |
+  s1\justCresc |
   s1\f |
   s1*4 |
   s1\ff |
@@ -750,8 +741,7 @@ pianoDynamicsRomanze =
   s1\f |
   s2 s\p |
   s1 |
-  \crescJustTextCresc
-  s2 s8 s4.\< |
+  s2 s8 s4.\justCresc |
   s1\f |
   s2. s4\p |
   s1*4 |
@@ -768,7 +758,6 @@ pianoDynamicsRomanze =
   s1 |
   s2. s4\p |
   s1 |
-  \crescHairpin
   s2 s\< |
   s1\f |
   s2. s4\p |
@@ -780,7 +769,6 @@ pianoDynamicsRomanze =
   s1*2 |
   s4 s8. s16\p s2 |
   s1 |
-  \dimHairpin
   s4 s2.\> |
 
   %D
@@ -1279,8 +1267,7 @@ pianoDynamicsRondo =
   s2.\ff |
   s2. |
   s2.\p |
-  \crescJustTextCresc
-  s8 s8*5\< |
+  s8 s8*5\justCresc |
   s2. |
 
   %F
@@ -1306,8 +1293,7 @@ pianoDynamicsRondo =
   s2. |
   s4. s\p |
   s2. |
-  \crescJustTextCresc
-  s8 s8*5\< |
+  s8 s8*5\justCresc |
   s2. |
   s4 s8\f s4. |
   s2.*8 |

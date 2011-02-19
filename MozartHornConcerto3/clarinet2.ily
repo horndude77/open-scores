@@ -1,6 +1,4 @@
-\version "2.13.9"
-
-\include "defs.ily"
+\version "2.13.50"
 
 clarinetIIAllegro = \relative c''
 {
@@ -15,8 +13,7 @@ clarinetIIAllegro = \relative c''
   bes8 r g'4. g8 f f |
   e4 c r2 |
   R1*8 |
-  \crescTextCresc
-  r4 r8 e\< f f g g |
+  r4 r8 e\cresc f f g g |
   a2\f c, |
   d f4 bes |
   a2 f4 e |
@@ -293,4 +290,3 @@ clarinetIIRondo = \relative c''
   a4 r8 a4 r8 |
   a4 r8 r4 r8 |
 }
-

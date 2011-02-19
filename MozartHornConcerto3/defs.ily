@@ -1,4 +1,4 @@
-\version "2.13.9"
+\version "2.13.50"
 
 tutti = \markup { Tutti }
 solo = \markup { Solo }
@@ -18,40 +18,15 @@ clarinetInstrumentName = \markup
 hornInstrumentName = \markup
 \center-column {\line {Solo Horn} \line {in E\flat}}
 
-crescTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
+justPocoAPocoCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "poco a poco cresc." 'tweaks '((dash-period . -1)))
+justPiuCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "più cresc." 'tweaks '((dash-period . -1)))
 
-crescJustTextCresc =
+dynamicLeftAlign =
 {
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-crescJustTextPiuCresc =
-{
-  \set crescendoText = \markup { \italic "più cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-crescJustTextPocoAPocoCresc =
-{
-  \set crescendoText = \markup { \italic "poco a poco cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimJustTextDim =
-{
-  \set decrescendoText = \markup { \italic "dim." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
+  \once \override DynamicText #'self-alignment-X = #LEFT
+  \once \override DynamicText #'X-offset = #'-1.5
 }
 
 rMark = #(define-music-function (parser location markp) (string?)
@@ -157,6 +132,12 @@ outlineRondo =
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+  }
+
+  \context
+  {
+    \Dynamics
+    \consists "Tweak_engraver"
   }
 
   \context

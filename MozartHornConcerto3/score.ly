@@ -1,6 +1,6 @@
-\version "2.13.9"
+\version "2.13.50"
 
-\include "merge_rests.ily"
+\include "merge-rests.ily"
 \include "tremolo.ily"
 
 \include "defs.ily"
@@ -22,6 +22,14 @@ instrument = "Orchestra"
 \paper
 {
   short-indent = 5\mm
+  top-system-spacing #'stretchability = #0
+  last-bottom-spacing #'stretchability = #0
+  system-system-spacing #'stretchability = #2
+}
+
+\layout
+{
+  \mergeRests
 }
 
 \score
@@ -32,7 +40,6 @@ instrument = "Orchestra"
       \override StaffGroup.SystemStartBracket #'collapse-height = #1
       \override Score.SystemStartBar #'collapse-height = #1
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = \clarinetInstrumentName
         \set Staff.shortInstrumentName = "Cl."
@@ -54,7 +61,6 @@ instrument = "Orchestra"
         >>
       }
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = "Bassoons"
         \set Staff.shortInstrumentName = "Bsn."
@@ -131,7 +137,6 @@ instrument = "Orchestra"
       \override StaffGroup.SystemStartBracket #'collapse-height = #1
       \override Score.SystemStartBar #'collapse-height = #1
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = \clarinetInstrumentName
         \set Staff.shortInstrumentName = "Cl."
@@ -153,7 +158,6 @@ instrument = "Orchestra"
         >>
       }
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = "Bassoons"
         \set Staff.shortInstrumentName = "Bsn."
@@ -230,7 +234,6 @@ instrument = "Orchestra"
       \override StaffGroup.SystemStartBracket #'collapse-height = #1
       \override Score.SystemStartBar #'collapse-height = #1
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = \clarinetInstrumentName
         \set Staff.shortInstrumentName = "Cl."
@@ -252,7 +255,6 @@ instrument = "Orchestra"
         >>
       }
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = "Bassoons"
         \set Staff.shortInstrumentName = "Bsn."

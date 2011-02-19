@@ -1,6 +1,4 @@
-\version "2.13.9"
-
-\include "defs.ily"
+\version "2.13.50"
 
 violinIAllegro = \relative c'
 {
@@ -22,8 +20,7 @@ violinIAllegro = \relative c'
   a( bes) r ees16( d c8) f16( ees d8) bes'16( aes |
   g8) g-. r g,-. g( aes) r aes-. |
   a( bes) r ees16( d c8) f16( ees d8) bes'16( aes |
-  \crescTextCresc
-  g8)\< ees16( d c8) f16( ees d8) bes'16( aes g8) ees16( d |
+  g8)\cresc ees16( d c8) f16( ees d8) bes'16( aes g8) ees16( d |
   c8) f16( ees d8) bes'16( aes g) ees-. g-. bes-. aes-. f-. aes-. c-. |
   bes4~\f bes16 aes g f ees d c bes aes g f ees |
   c'4 aes, r8 ees''16 aes c8 c |
@@ -77,8 +74,7 @@ violinIAllegro = \relative c'
   aes1 |
   aes,4-.\f f-. d-. bes-. |
   << {s8\p} {\repeat unfold 14 g'} >> ees ees |
-  \crescTextCresc
-  \repeat tremolo 8 d16\< \repeat tremolo 8 d |
+  \repeat tremolo 8 d16\cresc \repeat tremolo 8 d |
   \repeat tremolo 8 ees \repeat tremolo 8 a |
 
   %C
@@ -181,8 +177,7 @@ violinIAllegro = \relative c'
   ees4 r r \times 2/3 {f8 ees d} |
   \times 2/3 {ees8 ees ees} ees4 \times 2/3 {r8 g g} g4 |
   \times 2/3 {r8 bes bes} bes4 \times 2/3 {r8 ees ees} ees4 |
-  \crescTextCresc
-  g8 g, g g g\< g g g |
+  g8 g, g g g\cresc g g g |
   \repeat tremolo 8 aes16 \repeat tremolo 8 d,16 |
   ees4.\f c''8 bes4 d,, |
   c4. aes''8 g4 bes,, |
@@ -217,8 +212,7 @@ violinIRomanze = \relative c'
   ees'4.(\f aes8) c, r c r |
   des( ees f des) bes4 r8 bes\p |
   c r des r ees r f8.( des16) |
-  \crescTextCresc
-  c2 bes8( c\< des d) |
+  c2 bes8( c\cresc des d) |
   ees4.(\f aes8) c, r c r |
   des( ees f des) bes4 r8 ees,\p |
   ees( g bes des c ees aes f) |
@@ -237,8 +231,7 @@ violinIRomanze = \relative c'
   ees4.( aes8) c, r c r |
   des( ees f des) bes4 r8 bes\p |
   c r des r ees r f8.( des16) |
-  \crescTextCresc
-  c2 bes8( c\< des d) |
+  c2 bes8( c\cresc des d) |
   ees4.(\f aes8) c, r c r |
   des( ees f des) bes4 r8 ees,\p |
   ees( g bes des c ees aes f) |
