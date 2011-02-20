@@ -1,21 +1,21 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 horn = \relative c''
 {
   %6/8
   \transposition f
   \override Script #'avoid-slur = #'inside
-  r4._"(sans les Pistons)" r4\f \times 2/3 {r16 g( d')} |
+  r4.^"(sans les Pistons)" r4\f \times 2/3 {r16 g( d')} |
   c4.-^ g-^ |
-  c,2.~-^\fp^\dimMolto | c~\pp | c~ |
+  c,2.~-^\fp\>^\dimMolto |
+  c~\pp |
+  c~ |
   c8 r r r4 \times 2/3 {r16\p g'( d')} |
   c4.-_( g-_ |
-  c,2.~-_)_\dim | c2.~\pp |
+  c,2.~-_)\justDim | c2.~\pp |
   c4~ c16 r r4
 
-  c8\(^(_\pEspress |
+  c8\(^(\pEspress |
   g'4 g8-.) bes( c d) |
   e4( d8 c4) e8( |
   d4) e8( d c b |
@@ -32,7 +32,7 @@ horn = \relative c''
   g'4) g8( f4) f8( |
   e4) e8( f d f |
   e4) e8( c d e |
-  d4.~) g,8\) r
+  d4.) g,8\) r
 
   \once \override PhrasingSlur #'positions = #'(3 . 0)
   c8\(( |
@@ -71,9 +71,7 @@ horn = \relative c''
   \times 2/3 {g-.->(\> f-. e-.} d4~)\!
     \times 2/3 {d8 e-_( f-_}
     \times 2/3 {d-_ e-_ f-_} |
-  \crescTextCresc
-  f8.)\< c16-.( f4~--) f8. des16( f4~--) |
-  \crescHairpin
+  f8.)\cresc c16-.( f4~--) f8. des16( f4~--) |
 
   %3/2
   f8. d16( f4~--) f8 e( g fis)
@@ -90,16 +88,14 @@ horn = \relative c''
   c g e a |
   g f8 e d4 c |
   g1~-> |
-  g8[) r8 a(_\pocoCresc b] c d e fis |
-  g1~ |
+  g8[) r8 a(\justPocoCresc b] c d e fis |
+  g1~\! |
   g8[) r d( e] fis g a b |
   c4) b8-. c-. a4-. d-. |
   c-. b8-. c-. a4-. d-. |
   c-. b-. a-. d-. |
   c-. b8-. c-. a4-. b8-. c-. |
-  \crescTextCresc
-  d2-> r4 g,->\< |
-  \crescHairpin
+  d2-> r4 g,->\cresc |
   \repeat unfold 2
   {
     d'2-> r4 g,-> |
@@ -134,24 +130,20 @@ horn = \relative c''
   R1*8 |
 
   %D
-  r2 r4 \times 2/3 {r8_\pDolce g''( d')} |
+  r2 r4 \times 2/3 {r8 g''(_\pDolce d')} |
   c1( g c,~ c~ |
-  c4) e(_\pocoCresc g c |
+  c4) e(\justPocoCresc g c |
   c d c d |
   ees2.\> d4 |
   c1)\! |
   r4 d(\p c d |
-  d_\pocoCresc ees c d |
+  d\justPocoCresc ees c d |
   ees2.\> d4 |
   c1)\! |
-  r4 d(_\pocoCresc c d |
+  r4 d(\justPocoCresc c d |
   d ees c d |
-  \dimTextDim
-  dis1~->\> dis~ dis |
-  \dimHairpin
-  \dimTextDim
-  b dis~\p\> dis~ dis~^\markup{\italic perdendosi} dis~ | dis4)\! r r2 |
-  \dimHairpin
+  dis1~->\dim dis~ dis |
+  b dis~\p\dim dis~ dis~^\markup{\italic perdendosi} dis~ | dis4)\! r r2 |
 
   dis1-_(\<^"(En echo)"_\markup{\smaller "(Doigtez un 1/2 ton au-dessus)"} | dis-_ | << dis-_) {s2. s4\!} >> |
   %légèrement retenu
@@ -171,9 +163,7 @@ horn = \relative c''
   e1~) |
   e2.~( e8 \breathe c\pp^"Ouvert" |
   e1~)( |
-  \crescTextCresc
-  e2.~\< e8 \breathe cis |
-  \crescHairpin
+  e2.~\cresc e8 \breathe cis |
   e1~) |
   e2( dis |
   fis e) |
@@ -191,15 +181,13 @@ horn = \relative c''
   d c8 b a4 g |
   \clef "bass^8"
     d1~ |
-  d4) \clef treble g(_\pocoCresc c d |
-  g1~) |
+  d4) \clef treble g(\justPocoCresc c d |
+  g1~)\! |
   g4 c,( g' a |
   d1~) \repeat unfold 5 {d1~} |
   d4 c8( bes) aes4-. bes-. |
   d-. c8( bes) aes4-. bes-. |
-  \dimTextDim
-  d1~->\> d~ d~ d~ |
-  \dimHairpin
+  d1~->\dim d~ d~ d~ |
   d4-.\! r d2-_(\p |
   d-_\> d-_ |
   ees2~\pp ees8) r r4 |
@@ -219,16 +207,14 @@ horn = \relative c''
   bes4-.) r r cis8( b |
   a4-.) r r cis8( b |
   a4-.) r r c8( b |
-  a4-.) r r c8(_\piuf bes |
-  \crescTextCresc
-  aes4-.) r r c8(\< bes |
-  \crescHairpin
+  a4-.) r r c8(\piuf bes |
+  aes4-.) r r c8(\cresc bes |
   aes4-.) r r bes8( aes |
   g4-.)\f^"Ôtez la Sourdine" r r2 |
   R1*5 |
 
   %G
-  r4 g-^_\piuf c-^ d-^ |
+  r4 g-^\piuf c-^ d-^ |
   g1~-^ |
   g2 e-^ |
   c-^ g4-^ e-^ |
@@ -250,7 +236,7 @@ horn = \relative c''
   g4( f8 e d4) e-. |
   c-. g-. e-. a-. |
   g1~\fp | g~ | g2 r |
-  r_\markup{\column{"(sans les" "Pistons)"}} g'_(\( | %TODO: I'm not totally happy with the slurs here
+  r_\markup{\column{"(sans les" "Pistons)"}} g'(\( |
   
   %6/8
   \grace {s8}
@@ -262,18 +248,18 @@ horn = \relative c''
   d4.~ d4) \breathe ees8( |
   d) ees( d~ d) e( d~ |
   d) e( d) e16( d) e( d) e( d) |
-  \afterGrace d2._\mcresc\startTrillSpan {cis16[( d])\stopTrillSpan} |
+  \afterGrace d2.\justCresc\startTrillSpan {cis16[( d])\stopTrillSpan} |
 
   %2/2
   g4-|\f r r2 |
   R1*3 |
-  r2^"(avec les Pistons)" f4-^_\ffmarcato e-^ |
+  r2^"(avec les Pistons)" f4-^\ffMarcato e-^ |
   d2-^ e-^ |
   c-^ g-^ |
   e-^ a-^ |
   g1~-^ g~ g |
   a2-^ b-^ |
-  c4-^ r \times 2/3 {e,4(_\sempreff g) c} |
+  c4-^ r \times 2/3 {e,4(\sempreff g) c} |
 
   %H
   \repeat unfold 2 {\times 2/3 {c4 c c}} |
@@ -313,4 +299,3 @@ horn = \relative c''
     }
   >>
 }
-

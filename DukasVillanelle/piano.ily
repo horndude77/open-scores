@@ -1,6 +1,4 @@
-\version "2.13.10"
-
-\include "defs.ily"
+\version "2.13.50"
 
 rightHand = \relative c''
 {
@@ -90,7 +88,7 @@ rightHand = \relative c''
   <e cis>-> d->) | %EDIT: removed double voices on d
   r4 <b f>2.^( |
   <cis a e>2) \times 8/12 {\repeat tremolo 6 {cis16( e)}} |
-  \override TupletNumber #'transparent = ##t
+  \tupletOff
   \times 8/12 {\repeat tremolo 6 {<ees bes>16( g,)}} \times 8/12 {\repeat tremolo 6 {<d' bes>16( g,)}} |
   \times 8/12 {\repeat tremolo 6 {<a' e cis>16( g,)}} \times 8/12 {\repeat tremolo 6 {<a' ees>16( a,)}} |
   \times 8/12 {\repeat tremolo 6 {des16( g,)}} \times 8/12 {\repeat tremolo 6 {<d' bes>16( g,)}} |
@@ -100,7 +98,7 @@ rightHand = \relative c''
   \times 8/12 {\repeat tremolo 6 {<bes' des,>16( bes,)}}
     \times 8/12 {\repeat tremolo 6 {<bes' des,>16( bes,)}}
     \times 4/6 {\repeat tremolo 3 {<bes' des,>16(-> bes,)}} <f' b,>4->\arpeggio |
-  \revert TupletNumber #'transparent
+  \tupletOn
 
   %2/2
   r4
@@ -611,7 +609,7 @@ leftHand = \relative c''
     \\
     {
       <d,, d,>1~ | <d d,>~ | <d d,>~ | <d d,>~ |
-      <d d,>2~ r |
+      <d d,>2 r |
       R1*3
     }
   >>
@@ -686,7 +684,7 @@ leftHand = \relative c''
       <bes' f>1~->) | <bes f>~ | <bes f>~ | <bes f> |
     }
   >> \oneVoice
-  c,~ | c,~ | c, |
+  c,,,~ | c~ | c |
   R1*2 |
   <g'' des bes ees,>1~\arpeggio |
   <g des bes ees,>~ |
@@ -800,16 +798,16 @@ pianoDynamics =
   s2.*2\f |
   s8 s\p s s s s |
   s2.*4 |
-  s2.*2-\piup |
+  s2.*2\piup |
   s2.*2-\pp |
   s2.*7-\p |
 
   %A
   s2.*8 |
   s2.*2\pp |
-  s4.\< s\> | s s8\! s s_\pEspressCresc |
+  s4.\< s\> | s s8\! s s\pEspress\justCresc |
   s2. |
-  s8\pocof\> s s s8\< s s |
+  s8\pocofDynAlign\> s s s8\< s s |
   s2.\> |
   s2.*4\p |
 
@@ -820,25 +818,25 @@ pianoDynamics =
   s4\pocosfz\> s2. |
   s1\p |
   s1*3_\suivez |
-  s1_\mcresc |
+  s1\justCresc |
 
   %3/2
-  s1. |
+  s1.\! |
 
   %2/2
   s4 s2.\p |
   s1*3 |
-  s4 s2._\pSempre |
+  s4 s2.\pSempre |
   s1*15 |
-  s4 s2._\pocoCresc |
+  s4 s2.\justPocoCresc |
   s1*2 |
   s1\> |
   s1*4\mfp | %horn enters
-  s4 s2._\pMarc |
+  s4 s2.\pMarc |
   s1 |
-  s4 s2._\pocoCresc |
+  s4 s2.\justPocoCresc |
   s1*5 |
-  s2 s_\mcresc |
+  s2 s\justCresc |
   s1*2 |
   s2 s\sf |
   s1 |
@@ -846,13 +844,13 @@ pianoDynamics =
   s1*2 |
   s4 s2.\mf |
   s1*3 |
-  s4 s2._\pocoCresc |
+  s4 s2.\justPocoCresc |
   s1*3 |
 
   %C
   s1\f |
   s1*11\f |
-  s2 s_\fMarc |
+  s2 s\fMarc |
   s1*3 |
   s1_\marc |
   s4 s2._\dim |
@@ -867,21 +865,19 @@ pianoDynamics =
 
   %legerement retenu
   s1*16\ppp |
-  \crescTextCresc
-  s1*6\< | %revenez
-  \crescHairpin
+  s1*6\cresc | %revenez
   %au mouvt
-  s2\mf s2_\pStaccLeggiero |
+  s4\mf s2._\pStaccLeggiero |
   s1*3 |
-  s1*4_\mcresc |
+  s1*4\justCresc |
 
   %E
   s1*4\fp |
-  s1*4_\pocoCresc |
-  r4 r2._\rinf |
+  s1*4\justPocoCresc |
+  r4 r2.\rinf |
   s1*2 |
   s1*5 | %dim span
-  s1_\rinf |
+  s1\rinf |
   s2 s2 | %dim span
   s1*4 |
   s1*8\p |
@@ -889,20 +885,18 @@ pianoDynamics =
   s1*3 |
   s4 s2._\scherzando |
   s1*4 |
-  s4 s2._\piuf |
-  \crescTextCresc
-  s4 s2.\< |
-  \crescHairpin
+  s4 s2.\piuf |
+  s4 s2.\cresc |
   s1 |
   s1*13\f |
-  s4 s2._\piuf |
+  s4 s2.\piuf |
   s1*4 |
-  s1*12_\rinf |
+  s1*12\rinf |
   s1*4\fp |
 
   %6/8
   s2.*8\ppp |
-  s2._\mcresc |
+  s2.\justCresc |
 
   %2/2
   s2\f s_\marcato |
@@ -914,4 +908,3 @@ pianoDynamics =
   s4 s2.\ff |
   s1*3 |
 }
-

@@ -1,63 +1,89 @@
-\version "2.13.10"
+\version "2.13.50"
 
-piup = \markup {\italic più \dynamic p}
-piuf = \markup {\italic più \dynamic f}
-%pocof = \markup {\italic poco \dynamic f}
+#(define-markup-command (align-dyn-text layout props dyn text) (string? markup?)
+  (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
+         (dyn-stencil (interpret-markup layout props (markup #:dynamic dyn)))
+         (text-x-ext (ly:stencil-extent text-stencil X))
+         (dyn-x-ext (ly:stencil-extent dyn-stencil X))
+         (text-x (- (cdr text-x-ext) (car text-x-ext)))
+         (dyn-x (- (cdr dyn-x-ext) (car dyn-x-ext)))
+         (hspace 0.5)
+         (x-align (- (/ (/ dyn-x 2.0) (+ text-x dyn-x hspace)) 1.0)))
+    (interpret-markup layout props (markup #:halign x-align #:whiteout #:concat (#:dynamic dyn #:hspace hspace #:normal-text #:italic text)))))
+
+#(define-markup-command (align-text-dyn layout props text dyn) (markup? string?)
+  (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
+         (dyn-stencil (interpret-markup layout props (markup #:dynamic dyn)))
+         (text-x-ext (ly:stencil-extent text-stencil X))
+         (dyn-x-ext (ly:stencil-extent dyn-stencil X))
+         (text-x (- (cdr text-x-ext) (car text-x-ext)))
+         (dyn-x (- (cdr dyn-x-ext) (car dyn-x-ext)))
+         (hspace 0.5)
+         (x-align (- 1.0 (/ (/ dyn-x 2.0) (+ text-x dyn-x hspace)))))
+    (interpret-markup layout props (markup #:halign x-align #:whiteout #:concat (#:normal-text #:italic text #:hspace hspace #:dynamic dyn)))))
+
+#(define (make-dynamic-script-dyn-text dyn text)
+  (let ((dynamic (make-dynamic-script (markup #:align-dyn-text dyn text))))
+        (ly:music-set-property! dynamic 'tweaks (acons 'X-offset 0 (ly:music-property dynamic 'tweaks)))
+    dynamic))
+
+#(define (make-dynamic-script-text-dyn text dyn)
+  (let ((dynamic (make-dynamic-script (markup #:align-text-dyn text dyn))))
+        (ly:music-set-property! dynamic 'tweaks (acons 'X-offset 0 (ly:music-property dynamic 'tweaks)))
+    dynamic))
+
+rinf = #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "rinf."))
 pocof = #(make-dynamic-script (markup #:normal-text #:italic "poco" #:dynamic "f"))
-pocosfz = #(make-dynamic-script (markup #:normal-text #:italic "poco" #:dynamic "sfz"))
-pocoCresc = \markup {\italic {poco cresc.}}
-pEspressCresc = \markup {\dynamic p \italic {espress. cresc.}}
-pEspress = \markup {\dynamic p \italic {espress.}}
-moltoEspress = \markup {\italic {molto espress.}}
-espress = \markup {\italic {espress.}}
-pSempre = \markup {\dynamic p \italic sempre}
-sempreff = \markup {\italic sempre \dynamic ff}
-pDolce = \markup {\dynamic p \italic dolce}
-marc = \markup {\italic marc.}
-dim = \markup {\italic dim.}
-%dim = #(make-dynamic-script (markup #:normal-text #:italic "dim."))
-dimMolto = \markup {\italic {dim. molto}}
-pocoMarc = \markup {\italic {poco marc.}}
-pMarc = \markup {\dynamic p \italic marc.}
-fMarc = \markup {\dynamic f \italic marc.}
-fRisoluto = #(make-dynamic-script (markup "f" #:normal-text #:italic "risoluto"))
-suivez = \markup {\italic suivez}
-mcresc = \markup {\italic cresc.}
-marcato = \markup {\italic marcato}
-ffmarcato = \markup {\dynamic ff \italic marcato}
-rinf = \markup {\italic rinf.}
-scherzando = \markup {\italic scherzando}
-pStaccLeggiero = \markup {\dynamic p \italic {stacc. leggiero}}
+pocosfz = #(make-dynamic-script (markup #:whiteout #:concat (#:normal-text #:italic "poco " #:dynamic "sfz")))
 mfp = #(make-dynamic-script "mf p")
 fSpaceP = #(make-dynamic-script "f p")
 
-tempoMark = #(define-music-function (parser location markp) (string?)
-#{
-  \once \override Score.RehearsalMark #'self-alignment-X = #left
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \mark \markup { \smaller \bold $markp }
-#})
+pocofDynAlign = #(make-dynamic-script-text-dyn "poco" "f")
+piup = #(make-dynamic-script-text-dyn "più" "p")
+piuf = #(make-dynamic-script-text-dyn "più" "f")
+sempreff = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "ff"))
 
-smallTempoMark = #(define-music-function (parser location markp) (string?)
-#{
-  \once \override Score.RehearsalMark #'self-alignment-X = #left
-  \once \override Score.RehearsalMark #'direction = #down
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \mark \markup { \small $markp }
-#})
+pEspress = #(make-dynamic-script-dyn-text "p" "espress.")
+fRisoluto = #(make-dynamic-script-dyn-text "f" "risoluto")
+pDolce = #(make-dynamic-script-dyn-text "p" "dolce")
+ffMarcato = #(make-dynamic-script-dyn-text "ff" "marcato")
+pSempre = #(make-dynamic-script-dyn-text "p" "sempre")
+pMarc = #(make-dynamic-script-dyn-text "p" "marc.")
+fMarc = #(make-dynamic-script-dyn-text "f" "marc.")
+pStaccLeggiero = #(make-dynamic-script-dyn-text "p" "stacc. leggiero")
 
-#(define (format-mark-a-tempo mark context)
-  (make-bold-markup
-    (make-left-align-markup (make-column-markup
-      `(,(make-markletter-markup (1- mark))
-      ,(make-smaller-markup "a Tempo"))))))
+moltoEspress = \markup {\italic {molto espress.}}
+espress = \markup {\italic {espress.}}
+marc = \markup {\italic marc.}
+dimMolto = \markup {\italic {dim. molto}}
+pocoMarc = \markup {\italic {poco marc.}}
+suivez = \markup {\italic suivez}
+marcato = \markup {\italic marcato}
+scherzando = \markup {\italic scherzando}
+
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justDimMolto = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim. molto" 'tweaks '((dash-period . -1)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
+justPocoCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "poco cresc." 'tweaks '((dash-period . -1)))
+
+tupletOff =
+{
+  \override TupletNumber #'transparent = ##t
+  \override TupletBracket #'transparent = ##t
+}
+
+tupletOn =
+{
+  \revert TupletNumber #'transparent
+  \revert TupletBracket #'transparent
+}
 
 outline =
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
   \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 6/8
-  \tempoMark "Très modéré"
+  \tempo "Très modéré" 4.=60
   s2.*18
 
   \mark \default
@@ -65,21 +91,22 @@ outline =
 
   \time 4/4
   %TODO: This muddies the score, but should be in here.
-  \smallTempoMark "La noire un peu moins lente que la noire pointée précédente"
+  \tempo \markup {\override #'(baseline-skip . 1) \normal-text \small \column {"La noire un peu moins lente" "que la noire pointée précédente"}}
   s1*2 |
-  s2 \tempoMark "En serrant un peu" s |
+  s2 \tempo "En serrant un peu" s |
   s1 |
-  \tempoMark "Retenu" %TODO: The spaces separate this markup with the next in the piano score.
+  \tempo "Retenu" %TODO: The spaces separate this markup with the next in the piano score.
   s1 |
-  \tempoMark "au Mouvt"
+  \tempo "au Mouvt"
   s1 |
-  \tempoMark "Sans trop de rigueur dans la mesure"
+  \tempo "Sans trop de rigueur dans la mesure"
   s1*4 \bar "||"
 
   \time 3/2
   s2*3 \bar "||"
 
   \time 2/2
+  \tempo 4=120
   s1*24
 
   \mark \default
@@ -91,108 +118,88 @@ outline =
   \mark \default
   s1*26
 
-  \tempoMark "Légèrement retenu"
+  \tempo "Légèrement retenu"
   s1*20
 
-  \tempoMark "Revenez"
+  \tempo "Revenez"
   s1*2
 
-  \tempoMark "au Mouvt"
+  \tempo "au Mouvt"
   s1*8
 
   \mark \default
   s1*22
 
-  \tempoMark "Poco rit."
+  \tempo "Poco rit."
   s1*4
 
-  \once \override Score.RehearsalMark #'self-alignment-X = #left
-  \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
-  \set Score.markFormatter = #format-mark-a-tempo
+  \tempo "a Tempo"
   \mark \default
   s1*22
 
-  \set Score.markFormatter = #format-mark-letters
   \mark \default
   s1*24
 
-  \tempoMark "Retenez beaucoup"
+  \tempo "Retenez beaucoup"
   s1*4 | \bar "||"
 
   \time 6/8
-  \tempoMark "Très modéré (comme au début)"
+  \tempo "Très modéré (comme au début)" 4.=60
   \grace {s8}
   s2.*9 | \bar "||"
 
   \time 2/2
-  \tempoMark "Très animé et en serrant le Mouvt jusqu'à la fin"
+  \tempo "Très animé et en serrant le Mouvt jusqu'à la fin" 2=160
   s1*13 |
   
   \mark \default
   s1*22 | \bar "|."
 }
 
-midiOutline =
+afterGraceFraction = #(cons 15 16)
+
+\layout
 {
-  %6/8
-  %Très modéré
-  \tempo 8=180
-  s2.*18
+  \context
+  {
+    \Score
+    skipBars = ##t
+    extraNatural = ##f
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
+    autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
+                               ,(make-accidental-rule 'any-octave 0)
+                               ,(make-accidental-rule 'same-octave 1))
+    tempoHideNote = ##t
+  }
 
-  %A
-  s2.*19
+  \context
+  {
+    \Staff
+    %\consists "Page_turn_engraver"
+  }
 
-  %4/4
-  s1*10
-
-  %3/2
-  s2*3
-
-  %2/2
-  \tempo 2=120
-  s1*24
-
-  %B
-  s1*28
-
-  %C
-  s1*26
-
-  %D
-  s1*26
-
-  %Légèrement retenu
-  s1*20
-
-  %Revenez
-  s1*2
-
-  %au Mouvt
-  s1*8
-
-  %E
-  s1*26
-
-  %F
-  s1*22
-
-  %G
-  s1*24
-
-  %Retenez beaucoup
-  s1*4
-
-  %6/8
-  %Très modéré (comme au début)
-  \tempo 8=180
-  s2.*9
-
-  %2/2
-  %Très animé et en serrant le Mouvt jusqu'à la fin
-  \tempo 2=160
-  s1*13 |
-  
-  %H
-  s1*22 |
+  \context
+  {
+    \Dynamics
+    \consists "Tweak_engraver"
+  }
 }
 
+\midi
+{
+  \context
+  {
+    \Voice
+    \remove "Dynamic_performer"
+  }
+}
+
+\paper
+{
+  ragged-right = ##f
+  ragged-last = ##f
+  ragged-bottom = ##f
+  ragged-last-bottom = ##f
+  %page-breaking = #ly:page-turn-breaking
+}
