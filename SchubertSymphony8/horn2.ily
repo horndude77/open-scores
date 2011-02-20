@@ -1,3 +1,5 @@
+\version "2.13.50"
+
 hornTwoMvtI = \relative c''
 {
   \transposition d
@@ -8,12 +10,12 @@ hornTwoMvtI = \relative c''
   << d2. {s4 s2\p} >> |
   R2.*4 |
   r4 c2~\p |
-  c2~_\mcresc c8( d) |
+  c2~\justCresc c8( d) |
   d2 d4\fz |
   d\fz d2~\fp\> |
   << d2. {s4 s2\!} >> |
   r4 c2~\p |
-  c2~_\mcresc c8( d) |
+  c2~\justCresc c8( d) |
   d2~ d8( e) |
   e2~\f e8 e, |
   e2~ e8 d'\ff |
@@ -75,8 +77,7 @@ hornTwoMvtI = \relative c''
   d2. |
   e2( f4) |
   d2( e4) |
-  \setTextCresc
-  f2(\< d4) |
+  f2(\cresc d4) |
   e2( f4) |
   d2( e4) |
   f4 d e |
@@ -116,8 +117,7 @@ hornTwoMvtI = \relative c''
   c'2.\ff |
   g\fz |
   e2.~\fp | e~ | e~ |
-  \setTextDecr
-  e~\> | e~ | e~ |
+  e~\decr | e~ | e~ |
   e~\pp | e~ | e~ | e~ | e4 r r |
   R2.*10 |
   d'2.~\p\< | d2(\> cis4\! |
@@ -175,7 +175,7 @@ hornTwoMvtI = \relative c''
   R2.*5 |
   e2.~\pp | e~ | e4 r r |
   R2.*7 |
-  e4_\mcresc r r |
+  e4\justCresc r r |
   e r r |
   e r e\< |
   r e\! r |
@@ -193,3 +193,111 @@ hornTwoMvtI = \relative c''
   c4\! r r |
 }
 
+hornTwoMvtII = \relative c'
+{
+  \transposition e
+  \lengthenHairpin
+  e4.(\pp\< | g~\> | g8)\! r r |
+  R4.*3 |
+  e4.(\< | g~\> | g8)\! r r |
+  R4.*5 |
+  g,4.( | c8) r r |
+  R4.*12 |
+  \repeat unfold 2 {g'4.~\> | g8\! r r |}
+  g4.\f |
+  g |
+  g8 g4 |
+  c4. |
+  d |
+  d |
+  d8 d4 |
+  g,4. |
+  e |
+  e |
+  e8 e4 |
+  e4. |
+  R4.*5 |
+  c4.(\fp\> |
+  g4)\! r8 |
+  R4. |
+  \repeat unfold 2 {g'4.~-> | g8 r r |}
+  R4. |
+  e4.(\ppp | g~ | g) |
+  R4.*35 |
+  c4.\ff | e | d | d |
+  c8 e4 |
+  d4 c8~ |
+  c e,-. e-. |
+  e r e\fz |
+  r r e\fz |
+  r r d'\fz |
+  r r e,\fz |
+  r r a\fz |
+  r r c |
+  c4. | c |
+  d8 r r |
+  R4.*27 |
+  c4(\ppp c,8) |
+  c'4( c,8) |
+  c'4( c,8) |
+  e4.(\pp\< | g~\> | g8)\! r r |
+  R4.*3 |
+  e4.(\< | g~\> | g8)\! r r |
+  R4.*5 |
+  g,4.(\p | c8) r r |
+  R4.*12 |
+  g'4.~-> | g8 r r |
+  g4.~-> | g4 r8 |
+  g4.\ff | g |
+  g8 g4\fz |
+  g4. |
+  c, |
+  c |
+  c8 c4\fz |
+  c4. |
+  a' |
+  a4 a8 |
+  a8 a4 |
+  a4. |
+  R4.*6 |
+  c,4.~\p | c8 r r |
+  \repeat unfold 2 {c'4.~-> | c8 r r |}
+  R4.*39 |
+  c,4.\ff | c | g' | g | c | f |
+  c8-. c-. g-. |
+  c, r c\fz |
+  r r c\fz |
+  r r c'\fz |
+  r r g\fz |
+  r r g\fz |
+  r c c |
+  c,4.\ff | c' |
+  f,8 r r |
+  R4. |
+  d'4.\ff | g, |
+  e8 r r |
+  c4.(\fp\> | g)\! |
+  c4.(\fp\> | g4)\! r8 |
+  R4. |
+  g'4.~-> | g8 r r |
+  g4-> d'8~-> |
+  d\pp d4-> |
+  d4\< d8 |
+  g,4.(\> |
+  c8)\! r r |
+  R4.*5 |
+  e,4.(\ppp | g~) | g(\< | a)( |
+  g4)(\> f8 |
+  g,4\! g8 |
+  c4) r8 |
+  R4.*15 |
+  c4.~\pp | c~ | c4( a'8) |
+  g4.( |
+  e8) r r |
+  R4. |
+  g8( e c) |
+  g4.~-> | g~ | g~ | g~ | g |
+  \clef "bass^8"
+  c,4.~ | c~ | c~ | c~ |
+  << {c\fermata} {s8.\< s\> s1*0\!} >> |
+}

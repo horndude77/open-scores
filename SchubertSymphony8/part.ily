@@ -1,20 +1,12 @@
-\version "2.11.39"
-
-\include "defs.lyi"
-
-\paper
-{
-  ragged-last-bottom = ##f
-}
+\version "2.13.50"
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \notesMvtI \outlineMvtI >>
     }
   }
@@ -22,9 +14,7 @@
   {
     \new Staff
     {
-      \set Score.skipBars = ##t
       << \notesMvtII \outlineMvtII >>
     }
   }
 }
-

@@ -1,6 +1,4 @@
-\version "2.11.39"
-
-\include "defs.lyi"
+\version "2.13.50"
 
 hornOneMvtI = \relative c''
 {
@@ -15,12 +13,12 @@ hornOneMvtI = \relative c''
   e4) r4 r4 |
   e2~->( e8 f |
   e4) c2~ \p |
-  c2~ _\markup{\italic cresc.} c8( d) |
+  c2~\justCresc c8( d) |
   d2 e4 \fz |
   f4 \fz f4.( \fp \> e8 |
   f4 e2) \! |
   r4 c2 \p |
-  c2~ _\markup{\italic cresc.} c8( d) |
+  c2~\justCresc c8( d) |
   d2~ d8( e) |
   e2~\f e8 e8 |
   e2~ e8 e8\ff |
@@ -96,8 +94,7 @@ hornOneMvtI = \relative c''
   d2. |
   e2( f4) |
   d2( e4) |
-  \setTextCresc
-  f2(\< d4) |
+  f2(\cresc d4) |
   e2( f4) |
   d2( e4) |
   f4 d e |
@@ -141,15 +138,13 @@ hornOneMvtI = \relative c''
   e2.\ff |
   d2.\fz |
   e2.~\fp |
-  \setTextDecr
-  e2.~ | e~ | e~\> | e~ | e~ | e~\pp | e~ | e~ | e~ | e4 r r |
+  e2.~ | e~ | e~\decr | e~ | e~ | e~\pp | e~ | e~ | e~ | e4 r r |
   R2.*10 |
   e4(\p\< f4. e8 |
   f4\> e2)(\! |
   f4) r r |
   R2.*9 |
-  \setTextCresc
-  r4 r r8 e8\< |
+  r4 r r8 e8\cresc |
   e4( d) a-.\f |
   c-.\fz r r |
   R2. |
@@ -165,8 +160,8 @@ hornOneMvtI = \relative c''
   g g4 r8 r g~ |
   g g4 r8 r g~ |
   g g4 r8 r g~ |
-  g g4 r8 r g~ |
-  a a4 r8 r a~ |
+  g g4 r8 r g( |
+  a) a4 r8 r a~ |
   a a4 r8 r4 |
   R2.*7 |
   d2.~\ff\> | d4\! r r |
@@ -202,7 +197,7 @@ hornOneMvtI = \relative c''
   R2.*5 |
   e'2.~\pp | e~ | e4 r r |
   R2.*7 |
-  e4_\mcresc r r |
+  e4\justCresc r r |
   e r r |
   e r e\< |
   r e\! r |
@@ -220,3 +215,115 @@ hornOneMvtI = \relative c''
   e4\! r r |
 } 
 
+hornOneMvtII = \relative c''
+{
+  \transposition e
+  \lengthenHairpin
+  c4.(\pp\< | d\> | e8)\! r r |
+  R4.*3 |
+  c4.(\< | d\> | e8)\! r r |
+  R4.*5 |
+  g,4.( | e8) r r |
+  R4.*12 |
+  \repeat unfold 2 {d'4.(\> | e8)\! r r |}
+  g4.\f |
+  g |
+  g8 g4 |
+  g4. |
+  d |
+  d |
+  d8 d4 |
+  d4. |
+  e |
+  e |
+  e8 e4 |
+  e4. |
+  R4.*5 |
+  \lengthenHairpin
+  c4.(\fp\> |
+  g4)\! r8 |
+  R4. |
+  \repeat unfold 2 {d'4.(-> | e8) r r |}
+  R4. |
+  c4.(\ppp | d | e) |
+  R4.*35 |
+  e4.\ff | e | f | e |
+  e4 g8~ |
+  g( f) c~ |
+  c e-. e-. |
+  e r e\fz |
+  r r e\fz |
+  r r f\fz |
+  r r e\fz |
+  r r e\fz |
+  r r c |
+  c4. | f |
+  f8 r r |
+  R4.*27 |
+  c4(\ppp c,8) |
+  c'4( c,8) |
+  c'4( c,8) |
+  \lengthenHairpin
+  c'4.(\pp\< | d\> | e8)\! r r |
+  R4.*3 |
+  c4.(\< | d\> | e8)\! r r |
+  R4.*5 |
+  g,4.(\p | e8) r r |
+  R4.*12 |
+  d'4.(-> | e8) r r |
+  d4.(-> | e4) r8 |
+  g4.\ff | g |
+  g8 g4\fz |
+  e4. |
+  c |
+  c |
+  c8 c4\fz |
+  c4. |
+  a |
+  a4 a8 |
+  a8 a4 |
+  a4. |
+  R4.*6 |
+  c4.~\p | c8 r r |
+  \repeat unfold 2 {e4.(-> | f8) r r |}
+  R4.*39 |
+  c4.\ff | c | f | e | c | f |
+  c8-. c-. g'-. |
+  c, r c\fz |
+  r r c\fz |
+  r r d\fz |
+  r r g\fz |
+  r r g\fz |
+  r c, c |
+  c4.\ff | c |
+  f8 r r |
+  R4. |
+  f4.\ff | d |
+  c8 r r |
+  \lengthenHairpin
+  c4.(\fp\> | g)\! |
+  \lengthenHairpin
+  c4.(\fp\> | g4)\! r8 |
+  R4. |
+  d'4.(-> | e8) r r |
+  d4-> f8~-> |
+  f\pp f4-> |
+  f4\< f8 |
+  g4.(\> |
+  e8)\! r r |
+  R4.*5 |
+  c4.(\ppp | d)( | e)(\< | dis)( |
+  e4)(\> f16 dis |
+  e4\! d16 b |
+  c4) r8 |
+  R4.*15 |
+  c4.~\pp | c~ | c |
+  d4.( |
+  g8)( e c) |
+  g4. |
+  g'8( e c) |
+  g4.~-> | g~ | g~ | g~ | g |
+  \clef "bass^8"
+  c,4.~ | c~ | c~ | c~ |
+  << {c\fermata} {s8.\< s\> s1*0\!} >> |
+}

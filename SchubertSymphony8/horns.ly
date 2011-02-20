@@ -1,32 +1,23 @@
-\version "2.11.39"
+\version "2.13.50"
 
-\include "defs.lyi"
-\include "horn1mvtI.lyi"
-\include "horn2mvtI.lyi"
-\include "horn1mvtII.lyi"
-\include "horn2mvtII.lyi"
+\include "defs.ily"
+\include "horn1.ily"
+\include "horn2.ily"
 
-\paper
-{
-  ragged-last-bottom = ##f
-}
-
-instrument = "horns"
+instrument = "Horns"
 
 \book
 {
-  \include "header.lyi"
+  \include "header.ily"
   \score
   {
     <<
       \new Staff
       {
-        \set Score.skipBars = ##t
         << \hornOneMvtI \outlineMvtI >>
       }
       \new Staff
       {
-        \set Score.skipBars = ##t
         \hornTwoMvtI
       }
     >>
@@ -36,15 +27,12 @@ instrument = "horns"
     <<
       \new Staff
       {
-        \set Score.skipBars = ##t
         << \hornOneMvtII \outlineMvtII >>
       }
       \new Staff
       {
-        \set Score.skipBars = ##t
         \hornTwoMvtII
       }
     >>
   }
 }
-
