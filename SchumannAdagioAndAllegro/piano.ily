@@ -109,9 +109,9 @@ pianoRight = \relative c
   <f des c f,>-| <f des bes f>-| r2 |
   \times 2/3 {r8 g,( <des' ees g>)} q4 \times 2/3 {r8 aes( <bes d aes'>)} q4 |
   << { \times 2/3 {r8 \voiceOne bes_( <des ees bes>} \oneVoice <bes des ees bes'>2.)} \new Voice {\times 2/3 {s8 \voiceTwo bes4}} >> |
+  \tupletOff
   \repeat unfold 2 {\times 2/3 {r8 des( <ees g des'>)} \times 2/3 {q des <ees g des'>}} |
   \clef bass
-  \tupletOff
   \times 2/3 {r8 ees,( <g bes ees>)} \times 2/3 {q ees <g bes ees>}
     \times 2/3 {r8 ees( <bes' des ees>)} \times 2/3 {q ees, <bes' des ees>} |
   \times 2/3 {r8 ees,( <aes c ees>)} \times 2/3 {q ees <aes c ees>}
@@ -135,6 +135,7 @@ pianoRight = \relative c
     {bes4( aes) g( f) |}
     \\
     {
+      \tupletOff
       \times 2/3 {r8 <c ees> q} q4 \times 2/3 {r8 <aes c> q} q4 |
     }
   >> |
@@ -163,6 +164,7 @@ pianoRight = \relative c
     \new Voice
     {
       \voiceTwo
+      \tupletOff
       \times 2/3 {r8 f, g} \repeat unfold 3 {\times 2/3 {aes g f}} |
     }
   >> \oneVoice
@@ -185,6 +187,7 @@ pianoRight = \relative c
     }
     \\
     {
+      \tupletOff
       \times 2/3 {d8 d, aes'} \times 2/3 {r8 f aes} \times 2/3 {ees ees' aes,} |
       \times 2/3 {ees' ees, ees'}
     }
@@ -205,6 +208,7 @@ pianoRight = \relative c
     \new Voice
     {
       \voiceTwo
+      \tupletOff
       \times 2/3 {r8 bes, ees} \times 2/3 {f8 g, bes} \times 2/3 {ees8 aes, c} \times 2/3 {bes' des, g} |
     }
   >> \oneVoice
@@ -217,16 +221,18 @@ pianoRight = \relative c
     }
     \\
     {
+      \tupletOff
       \times 2/3 {r8 aes,( <c ees aes>)} \times 2/3 {q8 aes <c ees aes>}
         \times 2/3 {r8 aes( <d f aes>)} \times 2/3 {q8 aes <d f aes>} |
     }
   >> |
   r8 g( ees' b
   <<
-    {\voiceOne c8 g aes e)} %The timing needs to be checked
+    {\voiceOne c8 g aes e)} %TODO: The timing needs to be checked
     \new Voice
     {
       \voiceTwo
+      \tupletOff
       \times 2/3 {c'8 c, g'} \times 2/3 {aes c, e}
     }
   >> \oneVoice |
@@ -235,7 +241,10 @@ pianoRight = \relative c
   <<
     { r4 bes4( des4. c8) | }
     \\
-    { \times 2/3 {r8 bes, ees} \times 2/3 {g f ees} \times 2/3 {r8 g aes} \times 2/3 {bes aes g} | }
+    {
+      \tupletOff
+      \times 2/3 {r8 bes, ees} \times 2/3 {g f ees} \times 2/3 {r8 g aes} \times 2/3 {bes aes g} |
+    }
   >>
   \times 2/3 {r8 c,( f} \times 2/3 {<aes c> c, f)} \times 2/3 {r8 ees( a} \times 2/3 {<c ees> d, d')}
   <<
@@ -245,6 +254,7 @@ pianoRight = \relative c
     }
     \\
     {
+      \tupletOff
       \times 2/3 {r8 d, g} \times 2/3 {bes d, g} \times 2/3 {f' f, g~} \times 2/3 {g ees g} |
       \times 2/3 {g' g, <aes c>} \times 2/3 {f' f, <aes c>} \times 2/3 {ees' ees, <f aes>} \times 2/3 {d' d, <f aes>} |
     }
@@ -253,7 +263,10 @@ pianoRight = \relative c
   <<
     { r4 c4( ees4. d8) | }
     \\
-    { \times 2/3 {r8 c, f} \times 2/3 {aes f c} \times 2/3 {c' a ees} \times 2/3 {c' aes d,} | }
+    {
+      \tupletOff
+      \times 2/3 {r8 c, f} \times 2/3 {aes f c} \times 2/3 {c' a ees} \times 2/3 {c' aes d,} |
+    }
   >>
   \times 2/3 {r8 d( g} \times 2/3 {bes c d)} \times 2/3 {r8 <des, ees>( g} \times 2/3 {bes des ees)} |
   \times 2/3 {r8 aes,( <c aes'>)} \times 2/3 {r8 f,( <aes c f>)} \times 2/3 {r8 c,( <f aes c>)} \times 2/3 {r8 d( <f aes d>)} |
@@ -265,7 +278,10 @@ pianoRight = \relative c
   << {<c aes c,>2.} \\ {ees,4 e( f)} >> <f ees c f,>-| |
   <f des c f,>-| <f des bes f>-| r2 |
   \times 2/3 {r8 g,( <des' ees g>)} <des ees g>4 \times 2/3 {r8 aes( <bes d aes'>)} q4 |
-  << { \times 2/3 {r8 \voiceOne bes_( <des ees bes>} \oneVoice <bes des ees bes'>2.)} \new Voice {\times 2/3 {s8 \voiceTwo bes4}} >> |
+  <<
+    { \times 2/3 {r8 \voiceOne bes_( <des ees bes>} \oneVoice <bes des ees bes'>2.)}
+    \new Voice {\tupletOff \times 2/3 {s8 \voiceTwo bes4}}
+  >> |
   \repeat unfold 2 {\times 2/3 {r8 des( <ees g des'>)} \times 2/3 {q des <ees g des'>}} |
   \clef bass
   \tupletOff
@@ -292,6 +308,7 @@ pianoRight = \relative c
     {bes4( aes) g( f) |}
     \\
     {
+      \tupletOff
       \times 2/3 {r8 <c ees> q} q4 \times 2/3 {r8 <aes c> q} q4 |
     }
   >> |
@@ -405,6 +422,7 @@ pianoRight = \relative c
     \new Voice
     {
       \voiceTwo
+      \tupletOff
       \times 2/3 {r8 f, g} \repeat unfold 3 {\times 2/3 {aes g f}} |
     }
   >> \oneVoice
@@ -427,6 +445,7 @@ pianoRight = \relative c
     }
     \\
     {
+      \tupletOff
       \times 2/3 {d8 d, aes'} \times 2/3 {r8 f aes} \times 2/3 {ees ees' aes,} |
       \times 2/3 {ees' ees, ees'}
     }
@@ -447,6 +466,7 @@ pianoRight = \relative c
     \new Voice
     {
       \voiceTwo
+      \tupletOff
       \times 2/3 {r8 bes, ees} \times 2/3 {f8 g, bes} \times 2/3 {ees8 aes, c} \times 2/3 {bes' des, g} |
     }
   >> \oneVoice
@@ -459,6 +479,7 @@ pianoRight = \relative c
     }
     \\
     {
+      \tupletOff
       \times 2/3 {r8 aes,( <c ees aes>)} \times 2/3 {q8 aes <c ees aes>}
         \times 2/3 {r8 aes( <d f aes>)} \times 2/3 {q8 aes <d f aes>} |
     }
@@ -469,6 +490,7 @@ pianoRight = \relative c
     \new Voice
     {
       \voiceTwo
+      \tupletOff
       \times 2/3 {c'8 c, g'} \times 2/3 {aes c, e}
     }
   >> \oneVoice |
@@ -477,7 +499,10 @@ pianoRight = \relative c
   <<
     { r4 bes4( des4. c8) | }
     \\
-    { \times 2/3 {r8 bes, ees} \times 2/3 {g f ees} \times 2/3 {r8 g aes} \times 2/3 {bes aes g} | }
+    {
+      \tupletOff
+      \times 2/3 {r8 bes, ees} \times 2/3 {g f ees} \times 2/3 {r8 g aes} \times 2/3 {bes aes g} |
+    }
   >>
   \times 2/3 {r8 c,( f} \times 2/3 {<aes c> c, f)} \times 2/3 {r8 ees( a} \times 2/3 {<c ees> d, d')}
   <<
@@ -487,6 +512,7 @@ pianoRight = \relative c
     }
     \\
     {
+      \tupletOff
       \times 2/3 {r8 d, g} \times 2/3 {bes d, g} \times 2/3 {f' f, g~} \times 2/3 {g ees g} |
       \times 2/3 {g' g, <aes c>} \times 2/3 {f' f, <aes c>} \times 2/3 {ees' ees, <f aes>} \times 2/3 {d' d, <f aes>} |
     }
@@ -495,7 +521,10 @@ pianoRight = \relative c
   <<
     { r4 c4( ees4. d8) | }
     \\
-    { \times 2/3 {r8 c, f} \times 2/3 {aes f c} \times 2/3 {c' a ees} \times 2/3 {c' aes d,} | }
+    {
+      \tupletOff
+      \times 2/3 {r8 c, f} \times 2/3 {aes f c} \times 2/3 {c' a ees} \times 2/3 {c' aes d,} |
+    }
   >>
   \times 2/3 {r8 d( g} \times 2/3 {bes c d)} \times 2/3 {r8 <des, ees>( g} \times 2/3 {bes des ees)} |
   \times 2/3 {r8 aes,( <c aes'>)} \times 2/3 {r8 f,( <aes c f>)} \times 2/3 {r8 c,( <f aes c>)} \times 2/3 {r8 d( <f aes d>)} |
@@ -507,7 +536,10 @@ pianoRight = \relative c
   << {<c aes c,>2.} \\ {ees,4 e( f)} >> <f ees c f,>-| |
   <f des c f,>-| <f des bes f>-| r2 |
   \times 2/3 {r8 g,( <des' ees g>)} <des ees g>4 \times 2/3 {r8 aes( <bes d aes'>)} q4 |
-  << { \times 2/3 {r8 \voiceOne bes_( <des ees bes>} \oneVoice <bes des ees bes'>2.)} \new Voice {\times 2/3 {s8 \voiceTwo bes4}} >> |
+  <<
+    { \times 2/3 {r8 \voiceOne bes_( <des ees bes>} \oneVoice <bes des ees bes'>2.)}
+    \new Voice {\tupletOff \times 2/3 {s8 \voiceTwo bes4}}
+  >> |
   \repeat unfold 2 {\times 2/3 {r8 des( <ees g des'>)} \times 2/3 {q des <ees g des'>}} |
   \times 2/3 {r8 aes,( <c ees aes>)} \times 2/3 {q aes <c ees aes>}
     \times 2/3 {r8 aes( <ees' ges aes>)} \times 2/3 {q aes, <ees' ges aes>} |
@@ -594,6 +626,7 @@ pianoLeft = \relative c
   <<
     {
       \times 2/3 {r8 g( bes} \times 2/3 {<ees g> bes g)}
+        \tupletOff
         \times 2/3 {r8 aes( bes} \times 2/3 {<d aes'> bes aes)}
     }
     \\
@@ -607,6 +640,7 @@ pianoLeft = \relative c
   <f aes c>4 r4 \acciaccatura bes,8 <aes' bes d>2~ |
   q4 << {<d f>2 ees4} \\ {aes,4 g g} >> |
   <c, aes'>2. <ees a c>4 |
+  \tupletOff
   <des f>2 \times 2/3 {d,8( bes' f'} \times 2/3 {aes bes f'} |
   aes4 <des, fes g>( <c ees> <f, aes>) |
   <ees g>1 |
@@ -685,7 +719,7 @@ pianoLeft = \relative c
     \new Voice
     {
       \voiceOne
-      \times 2/3 {r8 aes( bes} \times 2/3 {d aes bes)}
+      \times 2/3 {r8 aes( bes} \tupletOff \times 2/3 {d aes bes)}
     }
     {
       \voiceTwo
@@ -697,7 +731,7 @@ pianoLeft = \relative c
     \new Voice
     {
       \voiceOne
-      \times 2/3 {r8 f( g} \times 2/3 {b f g)}
+      \times 2/3 {r8 f( g} \tupletOff \times 2/3 {b f g)}
     }
     {
       \voiceTwo
@@ -818,7 +852,7 @@ pianoLeft = \relative c
     \new Voice
     {
       \voiceOne
-      \times 2/3 {r8 aes( bes} \times 2/3 {d aes bes)}
+      \times 2/3 {r8 aes( bes} \tupletOff \times 2/3 {d aes bes)}
     }
     {
       \voiceTwo
@@ -830,7 +864,7 @@ pianoLeft = \relative c
     \new Voice
     {
       \voiceOne
-      \times 2/3 {r8 f( g} \times 2/3 {b f g)}
+      \times 2/3 {r8 f( g} \tupletOff \times 2/3 {b f g)}
     }
     {
       \voiceTwo
