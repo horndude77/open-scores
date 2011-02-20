@@ -5,8 +5,7 @@ right = \relative c'
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \key e \major
   \times 2/3 {gis8 e' b gis' e b b' gis e e' b gis} |
-  \override TupletNumber #'transparent = ##t
-  \override TupletBracket #'transparent = ##t
+  \tupletOff
   \times 2/3 {b gis e gis e b a' fis b, fis' dis b} |
   \repeat unfold 2 { \times 2/3 {gis e' b gis' e b} } |
   \repeat unfold 2 { \times 2/3 {a fis' b, a' fis b,} } |
@@ -30,8 +29,7 @@ right = \relative c'
     \\
     {
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      \override TupletNumber #'transparent = ##t
-      \override TupletBracket #'transparent = ##t
+      \tupletOff
       \times 2/3 {r8 a, b fis' b, a r gis b e gis b,}
     }
   >> |
@@ -43,8 +41,7 @@ right = \relative c'
     \new Voice
     {
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      \override TupletNumber #'transparent = ##t
-      \override TupletBracket #'transparent = ##t
+      \tupletOff
       \voiceTwo \times 2/3 {r8 fis, ais cis ais fis}
     }
   >> \oneVoice \times 2/3 {dis') fis, b dis b fis'} |
@@ -120,8 +117,7 @@ right = \relative c'
     {
       \voiceTwo
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      \override TupletNumber #'transparent = ##t
-      \override TupletBracket #'transparent = ##t
+      \tupletOff
       \times 2/3 {r8 a, b fis' b, a}
     }
   >> \oneVoice \times 2/3 {gis') gis, b e b gis} |
@@ -135,8 +131,7 @@ right = \relative c'
     {
       \voiceTwo
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      \override TupletNumber #'transparent = ##t
-      \override TupletBracket #'transparent = ##t
+      \tupletOff
       \times 2/3 {r8 fis, ais cis ais fis}
     }
   >> \oneVoice \times 2/3 {dis') fis, b dis b fis} |
@@ -148,8 +143,7 @@ right = \relative c'
     {
       \voiceTwo
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      \override TupletNumber #'transparent = ##t
-      \override TupletBracket #'transparent = ##t
+      \tupletOff
       \times 2/3 {r8 fis, ais cis ais fis}
     }
   >> \oneVoice \times 2/3 {dis') fis, b \clef treble dis b fis'} |
@@ -202,8 +196,7 @@ right = \relative c'
     {
       \voiceTwo
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      \override TupletNumber #'transparent = ##t
-      \override TupletBracket #'transparent = ##t
+      \tupletOff
       \times 2/3 {r8 \repeat unfold 11 <e, gis>} |
       \times 2/3 {r \repeat unfold 5 <dis gis> \repeat unfold 3 <dis a'> \repeat unfold 3 <dis gis>}
     }
@@ -226,8 +219,7 @@ right = \relative c'
     {
       \voiceTwo
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      \override TupletNumber #'transparent = ##t
-      \override TupletBracket #'transparent = ##t
+      \tupletOff
       \times 2/3 {r8 a, b fis' b, a}
     }
   >> \oneVoice \times 2/3 {gis') gis, b e gis b,} |
@@ -239,8 +231,7 @@ right = \relative c'
     \new Voice
     {
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      \override TupletNumber #'transparent = ##t
-      \override TupletBracket #'transparent = ##t
+      \tupletOff
       \voiceTwo \times 2/3 {r8 fis, ais cis ais fis}
     }
   >> \oneVoice \times 2/3 {dis') fis, b dis b fis'} |
@@ -287,11 +278,10 @@ right = \relative c'
 
 left = \relative c
 {
-  \override TupletNumber #'transparent = ##t
-  \override TupletBracket #'transparent = ##t
-  \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \clef bass
   \key e \major
+  \set tupletSpannerDuration = #(ly:make-moment 1 4)
+  \tupletOff
   <e e,>2. <gis~ e'>4 |
   <gis b>
   <<
@@ -385,8 +375,7 @@ left = \relative c
     <<
       {
         \set tupletSpannerDuration = #(ly:make-moment 1 4)
-        \override TupletNumber #'transparent = ##t
-        \override TupletBracket #'transparent = ##t
+        \tupletOff
         \times 2/3 {r8 eis' gis cis gis eis}
       }
       \\
@@ -514,8 +503,7 @@ left = \relative c
   <<
     {
       \set tupletSpannerDuration = #(ly:make-moment 1 4)
-      \override TupletNumber #'transparent = ##t
-      \override TupletBracket #'transparent = ##t
+      \tupletOff
       b'4( gis) \times 2/3 {b8( c b c b c)} |
       b1~ |
       b4 b \times 2/3 {b8( cis b cis b cis)} |
@@ -620,8 +608,7 @@ dynamics =
   s1\fp |
   s4 s s\> s\! |
   s\> s\! s2 |
-  s2 \crescTextCresc s\< |
-  \crescHairpin
+  s2 s\cresc |
   s1 |
   s2\f s\justCresc |
   s2\ff\> s\! |
@@ -675,8 +662,7 @@ dynamics =
   s1\fp |
   s2 s4\> s\! |
   s2\> s\! |
-  s2 \crescTextCresc s\< |
-  \crescHairpin
+  s2 s\cresc |
   s1*2 |
   s2\f\> s\p |
   s s\< |

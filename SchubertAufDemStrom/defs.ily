@@ -6,6 +6,18 @@ justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 
 justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
 justDecresc = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "decresc." 'tweaks '((dash-period . -1)))
 
+tupletOff =
+{
+  \override TupletNumber #'stencil = ##f
+  \override TupletBracket #'stencil = ##f
+}
+
+tupletOn =
+{
+  \revert TupletNumber #'stencil
+  \revert TupletBracket #'stencil
+}
+
 outline =
 {
   \time 2/2
