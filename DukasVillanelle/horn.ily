@@ -61,7 +61,8 @@ horn = \relative c''
   {
     e8.->(\> d16) c4~\! \breathe c16\< d-_( c-_ d-_ d-_ e-_ c-_ d-_) |
   }
-  e2.->(\pocosfz c4\> |
+  \lengthenHairpin #13
+  e2.->(\pocosfz\> c4 |
 
   e2)\p r8 e-_(_\moltoEspress\< e-_ e-_) |
   \times 2/3 {g-.->(\> f-. e-.} d4~)\!

@@ -8,6 +8,15 @@
   #(define page-breaking ly:page-turn-breaking)
 }
 
+\layout
+{
+  \context
+  {
+    \Staff
+    \consists "Page_turn_engraver"
+  }
+}
+
 instrument = "Horn"
 
 \include "header.ily"

@@ -66,6 +66,9 @@ justDimMolto = #(make-music 'DecrescendoEvent 'span-direction START 'span-type '
 justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
 justPocoCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "poco cresc." 'tweaks '((dash-period . -1)))
 
+lengthenHairpin = #(define-music-function (parser location x) (number?)
+  #{ \once \override Hairpin #'minimum-length = $x #})
+
 tupletOff =
 {
   \override TupletNumber #'transparent = ##t
@@ -78,6 +81,11 @@ tupletOn =
   \revert TupletBracket #'transparent
 }
 
+boxMark = #(define-music-function (parser location markp) (string?)
+#{
+  \mark \markup { \box \bold $markp }
+#})
+
 outline =
 {
   \override Score.PaperColumn #'keep-inside-line = ##t
@@ -86,16 +94,15 @@ outline =
   \tempo "Très modéré" 4.=60
   s2.*18
 
-  \mark \default
+  \boxMark "A"
   s2.*19 \bar "||"
 
   \time 4/4
-  %TODO: This muddies the score, but should be in here.
   \tempo \markup {\override #'(baseline-skip . 1) \normal-text \small \column {"La noire un peu moins lente" "que la noire pointée précédente"}}
   s1*2 |
   s2 \tempo "En serrant un peu" s |
   s1 |
-  \tempo "Retenu" %TODO: The spaces separate this markup with the next in the piano score.
+  \tempo "Retenu"
   s1 |
   \tempo "au Mouvt"
   s1 |
@@ -109,13 +116,13 @@ outline =
   \tempo 4=120
   s1*24
 
-  \mark \default
+  \boxMark "B"
   s1*28
 
-  \mark \default
+  \boxMark "C"
   s1*26
 
-  \mark \default
+  \boxMark "D"
   s1*26
 
   \tempo "Légèrement retenu"
@@ -127,24 +134,24 @@ outline =
   \tempo "au Mouvt"
   s1*8
 
-  \mark \default
+  \boxMark "E"
   s1*22
 
   \tempo "Poco rit."
   s1*4
 
   \tempo "a Tempo"
-  \mark \default
+  \boxMark "F"
   s1*22
 
-  \mark \default
+  \boxMark "G"
   s1*24
 
   \tempo "Retenez beaucoup"
   s1*4 | \bar "||"
 
   \time 6/8
-  \tempo "Très modéré (comme au début)" 4.=60
+  \tempo \markup {"Très modéré" \normal-text "(comme au début)"} 4.=60
   \grace {s8}
   s2.*9 | \bar "||"
 
@@ -152,7 +159,7 @@ outline =
   \tempo "Très animé et en serrant le Mouvt jusqu'à la fin" 2=160
   s1*13 |
   
-  \mark \default
+  \boxMark "H"
   s1*22 | \bar "|."
 }
 
@@ -171,12 +178,6 @@ afterGraceFraction = #(cons 15 16)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
     tempoHideNote = ##t
-  }
-
-  \context
-  {
-    \Staff
-    %\consists "Page_turn_engraver"
   }
 
   \context
@@ -201,5 +202,4 @@ afterGraceFraction = #(cons 15 16)
   ragged-last = ##f
   ragged-bottom = ##f
   ragged-last-bottom = ##f
-  %page-breaking = #ly:page-turn-breaking
 }

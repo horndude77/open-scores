@@ -354,11 +354,11 @@ rightHand = \relative c''
   %6/8
   %Tres modere
   \grace {s8}
-  \repeat tremolo 12 {ees32 a,} |
-  \repeat tremolo 6 {d32 bes} \repeat tremolo 6 {d32 a} |
-  \repeat tremolo 6 {d32 b} \repeat tremolo 6 {c32 bes} |
-  \repeat tremolo 12 {f'32 bes,} |
-  \repeat unfold 5 {\repeat tremolo 12 {f'32 b,} |}
+  \repeat tremolo 12 {ees32( a,)} |
+  \repeat tremolo 6 {d32( bes)} \repeat tremolo 6 {d32( a)} |
+  \repeat tremolo 6 {d32( b)} \repeat tremolo 6 {c32( bes)} |
+  \repeat tremolo 12 {f'32( bes,)} |
+  \repeat unfold 5 {\repeat tremolo 12 {f'32( b,)} |}
 
   %2/2
   %Tres anime
@@ -723,21 +723,28 @@ leftHand = \relative c''
   <c, c,>1~-> | <c c,>~ | <c c,>~ | <c c,> |
 
   %6/8
-  %TODO: This measure should have a grace note slurred from the low f up to 
-  %the tremolo and tied to the f dotted half.
   <<
     {
-      \acciaccatura f,8 \repeat tremolo 12 {c''32 f} |
+      \voiceOne
+      \hideNotes \stemDown
+      \grace f,8(
+      \unHideNotes \stemUp
+      \repeat tremolo 12 {c''32)( f)} |
     }
-    \\
+    \new Voice
     {
-      f,,2. |
+      \voiceTwo
+      \stemUp
+      \once \override Stem #'stroke-style = #"grace"
+      \grace f,,8~
+      \stemDown
+      f2. |
     }
-  >>
-  \repeat tremolo 6 {bes'32 f'} \repeat tremolo 6 {b,32 f'} |
+  >> \oneVoice
+  \repeat tremolo 6 {bes'32( f')} \repeat tremolo 6 {b,32( f')} |
   \clef treble
-  \repeat tremolo 6 {c32 f} \repeat tremolo 6 {c32 e} |
-  \repeat tremolo 12 {des32 f} |
+  \repeat tremolo 6 {c32( f)} \repeat tremolo 6 {c32( e)} |
+  \repeat tremolo 12 {des32( f)} |
   \repeat unfold 3
   {
     <<
@@ -746,7 +753,7 @@ leftHand = \relative c''
       { des4.( d) | }
     >>
   }
-  \repeat tremolo 12 {ees32 g} |
+  \repeat tremolo 12 {ees32( g)} |
   <<
     {
       \repeat tremolo 6 {ees32( g)}
@@ -876,9 +883,9 @@ pianoDynamics =
   s1*4\justPocoCresc |
   r4 r2.\rinf |
   s1*2 |
-  s1*5 | %dim span
+  s1*5\dim |
   s1\rinf |
-  s2 s2 | %dim span
+  s2 s2\dim |
   s1*4 |
   s1*8\p |
   s4 s2.\p |
