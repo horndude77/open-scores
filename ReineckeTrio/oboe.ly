@@ -1,7 +1,21 @@
-\version "2.13.16"
+\version "2.13.50"
 
 \include "defs.ily" 
 \include "oboe.ily" 
+
+\paper
+{
+  #(define page-breaking ly:page-turn-breaking)
+}
+
+\layout
+{
+  \context
+  {
+    \Staff
+    \consists "Page_turn_engraver"
+  }
+}
 
 instrument = "Oboe"
 
@@ -10,31 +24,30 @@ instrument = "Oboe"
   \include "header.ily"
   \score
   {
-    \new Staff %\with { \consists "Page_turn_engraver" }
+    \new Staff
     {
       << \oboeMvtI \outlineMvtI >>
     }
   }
   \score
   {
-    \new Staff %\with { \consists "Page_turn_engraver" }
+    \new Staff
     {
       << \oboeMvtII \outlineMvtII >>
     }
   }
   \score
   {
-    \new Staff %\with { \consists "Page_turn_engraver" }
+    \new Staff
     {
       << \oboeMvtIII \outlineMvtIII >>
     }
   }
   \score
   {
-    \new Staff %\with { \consists "Page_turn_engraver" }
+    \new Staff
     {
       << \oboeMvtIV \outlineMvtIV >>
     }
   }
 }
-

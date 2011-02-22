@@ -1,6 +1,4 @@
-\version "2.13.16"
-
-\include "defs.ily"
+\version "2.13.50"
 
 hornMvtI = \relative c'
 {
@@ -8,7 +6,7 @@ hornMvtI = \relative c'
   R1*2 |
 
   %repeat
-  e2 r |
+  e2_\markup {\small \concat {(2 \super a} volta)} r |
   R1*3 |
   b'1~\pp\< | b~ |
   b2 ais4.(\p cis8) |
@@ -29,9 +27,7 @@ hornMvtI = \relative c'
   d2 r |
   R1 |
   r4 b8.\mf\> g16 b4 g8. b,16\! |
-  \dimTextDecr
-  e1\> | d~ | d2 r\! |
-  \dimHairpin
+  e1\decr | d~ | d2 r\! |
   R1*6 |
   g4(--_\mdolce a-- g-- a--) |
   c4( b8.) d16 b2~( |
@@ -75,9 +71,7 @@ hornMvtI = \relative c'
   g4 f8. d16 f4 r |
   r e,8.\ff d16 f4 r |
   r e8. d16 f4 r |
-  \dimTextDim
-  r8 e-.\ff^\markup{\italic "un poco pesante"} d-. f-. e-. d-. f-.\> e-. |
-  \dimHairpin
+  r8 e-.\ff^\markup{\italic "un poco pesante"} d-. f-. e-. d-. f-.\dim e-. |
   e4\p r r2 |
   R1*2 |
   r2 r4 gis(\p |
@@ -101,9 +95,7 @@ hornMvtI = \relative c'
   a4 b a b |
   d( cis8.) e16 cis2~( |
   cis4 b) a-.( fis-.) |
-  \crescTextCresc
-  a(\< gis) b-.( ais-.) |
-  \crescHairpin
+  a(\cresc gis) b-.( ais-.) |
   cis( b) fis'2~ |
   fis4 a2(\f c,4) |
   cis r r2 |
@@ -116,9 +108,7 @@ hornMvtI = \relative c'
   dis2( cis)\! |
   R1*2 |
   c4-.(\pp b-. c-. b-.) |
-  \crescTextCresc
-  d c2\< b8. d16 |
-  \crescHairpin
+  d c2\cresc b8. d16 |
   b4 a2 g4 |
   e'4 d2 c8. e16 |
   c4 b2 a4 |
@@ -158,9 +148,7 @@ hornMvtI = \relative c'
   c'1~ | c~ | c~ |
   c2 e~\mf |
   e2 e~\mf |
-  \dimTextDecr
-  e2\> e |
-  \dimHairpin
+  e2\decr e |
   e1~\p |
   e4 e( b) g4~ |
   g g( e) g, |
@@ -401,9 +389,7 @@ hornMvtIII = \relative c
   c2( b4) g |
   g2 r8 g'(\p\<^\mmaespr b e) |
   d4(\> c)\! g8( a e g) |
-  \dimTextDecr
-  f2\< b,4.( c8) |
-  \dimHairpin
+  f2\decresc b,4.( c8) |
   c1~\pp | c\fermata |
 }
 
@@ -512,9 +498,7 @@ hornMvtIV = \relative c
   f'4.-> f8 f4 r |
   r f8(\mf aes) aes4 r |
   r4 aes8( b) b2~( |
-  \dimTextDecr
-  b1~\> |
-  \dimHairpin
+  b1~\decr |
   b2 bes~ |
   bes4) r r f(\p^\mdolce |
   d c bes) r |
@@ -552,9 +536,7 @@ hornMvtIV = \relative c
   R1*2 |
   r4 c'8(\mf cis) cis2~ |
   cis2. r4 |
-  \crescTextCresc
-  r c8(\< cis) cis2~ |
-  \crescHairpin
+  r c8(\cresc cis) cis2~ |
   cis2. r4 |
   r gis8-.\f gis-. gis( fis) fis( cis') |
   cis2->( c) |
@@ -578,9 +560,7 @@ hornMvtIV = \relative c
   aes2\! des |
   des1 |
   c4( des f, c') |
-  \dimTextDim
-  bes1\> |
-  \dimHairpin
+  bes1\dim |
   aes2( ges) |
   f1(\p |
   ees2.) ges4 |
@@ -612,33 +592,21 @@ hornMvtIV = \relative c
   b4 a8( gis) gis4 r |
   r4 b,8(\< cis') cis2~\> |
   cis4 b8( a) a4 g\p |
-  \crescTextCresc
-  gis b, b'2~\< |
-  \crescHairpin
+  gis b, b'2~\cresc |
   b4 a8( gis) gis4\! r |
-  \set crescendoText = \markup {\italic "cresc. molto"}
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  r4 b,8(\< cis') cis2~ |
-  \crescHairpin
+  r4 b,8(\crescMolto cis') cis2~ |
   cis4 b8( a) a4 gis8( fis) |
   e4\f r r2 |
   r2 a2\mf |
   gis r |
   r a\p |
-  \set decrescendoText = \markup {\italic "sempre dim."}
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  aes2.( g4\> |
-  \dimHairpin
+  aes2.( g4\sempreDim |
   aes g aes g) |
   aes2.\! r4 |
   R1*2 |
   r2 gis\mf |
   cis1~ |
-  \crescTextCresc
-  cis2 c\< |
-  \crescHairpin
+  cis2 c\cresc |
   b1~ | b~ |
   b2 gis |
   a1~ |
@@ -663,4 +631,3 @@ hornMvtIV = \relative c
   e~ |
   e4 r r2 |
 }
-

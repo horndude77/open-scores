@@ -1,9 +1,9 @@
-\version "2.13.16"
+\version "2.13.50"
 
+\include "defs.ily"
 \include "horn.ily"
 \include "oboe.ily"
 \include "piano.ily"
-\include "defs.ily"
 
 instrument = "Piano"
 
@@ -16,23 +16,13 @@ instrument = "Piano"
   \score
   {
     <<
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
+      \new SoloStaff
       {
         \set Staff.midiInstrument = "oboe"
         \set Staff.instrumentName = "Oboe"
         \oboeMvtI
       }
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
+      \new SoloStaff
       {
         \set Staff.midiInstrument = "french horn"
         \set Staff.instrumentName = "Horn in F"
@@ -41,18 +31,9 @@ instrument = "Piano"
       \new PianoStaff
       <<
         \set PianoStaff.instrumentName = "Piano"
-        \new Staff="RH"
-        {
-          \rightMvtI
-        }
-
+        \new Staff="RH" { \rightMvtI }
         \new Dynamics \dynamicsMvtI
-
-        \new Staff="LH"
-        {
-          << \leftMvtI \outlineMvtI >>
-        }
-
+        \new Staff="LH" { << \leftMvtI \outlineMvtI >> }
         \new Dynamics \pedalsMvtI
       >>
     >>
@@ -62,23 +43,13 @@ instrument = "Piano"
   \score
   {
     <<
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
+      \new SoloStaff
       {
         \set Staff.midiInstrument = "oboe"
         \set Staff.instrumentName = "Oboe"
         \oboeMvtII
       }
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
+      \new SoloStaff
       {
         \set Staff.midiInstrument = "french horn"
         \set Staff.instrumentName = "Horn in F"
@@ -87,18 +58,9 @@ instrument = "Piano"
       \new PianoStaff
       <<
         \set PianoStaff.instrumentName = "Piano"
-        \new Staff="RH"
-        {
-          << \rightMvtII \dynamicsMvtII >>
-        }
-
+        \new Staff="RH" { << \rightMvtII \dynamicsMvtII >> }
         %\new Dynamics = "dynamics" \dynamics
-
-        \new Staff="LH"
-        {
-          << \leftMvtII \pedalsMvtII \outlineMvtII >>
-        }
-
+        \new Staff="LH" { << \leftMvtII \pedalsMvtII \outlineMvtII >> }
         %\new Dynamics = "pedals" \pedals
       >>
     >>
@@ -108,23 +70,13 @@ instrument = "Piano"
   \score
   {
     <<
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
+      \new SoloStaff
       {
         \set Staff.midiInstrument = "oboe"
         \set Staff.instrumentName = "Oboe"
         \oboeMvtIII
       }
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
+      \new SoloStaff
       {
         \set Staff.midiInstrument = "french horn"
         \set Staff.instrumentName = "Horn in F"
@@ -133,18 +85,9 @@ instrument = "Piano"
       \new PianoStaff
       <<
         \set PianoStaff.instrumentName = "Piano"
-        \new Staff="RH"
-        {
-          << \rightMvtIII \dynamicsMvtIII >>
-        }
-
+        \new Staff="RH" { << \rightMvtIII \dynamicsMvtIII >> }
         %\new Dynamics = "dynamics" \dynamics
-
-        \new Staff="LH"
-        {
-          << \leftMvtIII \pedalsMvtIII \outlineMvtIII >>
-        }
-
+        \new Staff="LH" { << \leftMvtIII \pedalsMvtIII \outlineMvtIII >> }
         %\new Dynamics = "pedals" \pedals
       >>
     >>
@@ -154,23 +97,13 @@ instrument = "Piano"
   \score
   {
     <<
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
+      \new SoloStaff
       {
         \set Staff.midiInstrument = "oboe"
         \set Staff.instrumentName = "Oboe"
         \oboeMvtIV
       }
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
+      \new SoloStaff
       {
         \set Staff.midiInstrument = "french horn"
         \set Staff.instrumentName = "Horn in F"
@@ -179,18 +112,9 @@ instrument = "Piano"
       \new PianoStaff
       <<
         \set PianoStaff.instrumentName = "Piano"
-        \new Staff="RH"
-        {
-          << \rightMvtIV \dynamicsMvtIV >>
-        }
-
+        \new Staff="RH" { << \rightMvtIV \dynamicsMvtIV >> }
         %\new Dynamics = "dynamics" \dynamics
-
-        \new Staff="LH"
-        {
-          << \leftMvtIV \pedalsMvtIV \outlineMvtIV >>
-        }
-
+        \new Staff="LH" { << \leftMvtIV \pedalsMvtIV \outlineMvtIV >> }
         %\new Dynamics = "pedals" \pedals
       >>
     >>
@@ -254,4 +178,3 @@ instrument = "Piano"
     \midi { }
   }
 }
-

@@ -1,4 +1,4 @@
-\version "2.13.16"
+\version "2.13.50"
 
 %====
 %Octave function
@@ -62,64 +62,15 @@ ppcalando = #(make-dynamic-script (markup #:dynamic "pp" #:normal-text #:italic 
 ptranquillo = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "tranquillo"))
 sfpp = #(make-dynamic-script "sfpp")
 
-crescTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-crescTextCrescMolto =
-{
-  \set crescendoText = \markup { \italic "cresc. molto" }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-crescJustTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-crescJustTextUnPocoCresc =
-{
-  \set crescendoText = \markup { \italic "un poco cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimJustTextDecresc =
-{
-  \set decrescendoText = \markup { \italic "decresc." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimTextDecresc =
-{
-  \set decrescendoText = \markup { \italic "decresc." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-dimTextSempreDim =
-{
-  \set decrescendoText = \markup { \italic "sempre dim." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
+justUnPocoCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "un poco cresc." 'tweaks '((dash-period . -1)))
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justDecresc = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "decresc." 'tweaks '((dash-period . -1)))
+sempreDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "sempre dim.")
+crescMolto = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc. molto")
 
 outlineMvtI =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
-  \set Score.skipBars = ##t
   \time 4/4
   \tempo "Allegro moderato" 4=120
   s1*2 |
@@ -152,9 +103,6 @@ outlineMvtI =
 
 outlineMvtII =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
-  \set Score.skipBars = ##t
   \time 6/8
   \tempoMark "Scherzo"
   \tempo "Molto vivace" 4.=116
@@ -170,9 +118,6 @@ outlineMvtII =
 
 outlineMvtIII =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
-  \set Score.skipBars = ##t
   \time 4/4
   \tempo "Adagio" 4=60
   s1*42 |
@@ -189,9 +134,6 @@ outlineMvtIII =
 
 outlineMvtIV =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
-  \set Score.skipBars = ##t
   \time 4/4
   \tempoMark "Finale"
   \tempo "Allegro ma non troppo" 4=152
@@ -209,6 +151,7 @@ afterGraceFraction = #(cons 15 16)
   \context
   {
     \Score
+    \accepts "SoloStaff"
     skipBars = ##t
     extraNatural = ##f
     \override PaperColumn #'keep-inside-line = ##t
@@ -217,6 +160,24 @@ afterGraceFraction = #(cons 15 16)
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+  }
+
+  \context
+  {
+    \Staff
+    \type "Engraver_group"
+    \name "SoloStaff"
+
+    \alias "Staff"
+
+    fontSize = #-3
+    \override StaffSymbol #'staff-space = #(magstep -3)
+  }
+
+  \context
+  {
+    \Dynamics
+    \consists "Tweak_engraver"
   }
 }
 

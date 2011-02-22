@@ -1,6 +1,4 @@
-\version "2.13.16"
-
-\include "defs.ily"
+\version "2.13.50"
 
 oboeMvtI = \relative c''
 {
@@ -37,9 +35,7 @@ oboeMvtI = \relative c''
   R1*16 |
   eis4--(\p fis-- eis-- fis--) |
   a( gis8.) b16 gis2~ |
-  \crescTextCresc
-  gis4-.\< a-.( gis-. a-.) |
-  \crescHairpin
+  gis4-.\cresc a-.( gis-. a-.) |
   c4( b8.) d16 b2~ |
   b4 d( bis) cis |
   e( cis) d f |
@@ -87,9 +83,7 @@ oboeMvtI = \relative c''
   f4\! r r2 |
   R1*3 |
   r4 b,\mf d cis |
-  \crescTextCresc
-  e4(\< dis8.) g16 g4( fis8.) bes16 |
-  \crescHairpin
+  e4(\cresc dis8.) g16 g4( fis8.) bes16 |
   bes8-.\ff\> a-. c4.( a8^\markup{\italic "a piacere"} fis ees |
   \times 2/3 {c8\mf a fis} \times 2/3 {ees d f)} ees8( d) g-.( ees-.) |
   ees4-.(^\mdolce f-. ees-. f-.) |
@@ -100,17 +94,13 @@ oboeMvtI = \relative c''
   g4--(\f fis-- g-- fis--) |
   a( gis8.) b16 a2 |
   b4( ais) b-.( ais-.) |
-  \crescTextCresc
-  cis4(\< c8.) c16 ees4( d) |
-  \crescHairpin
+  cis4(\cresc c8.) c16 ees4( d) |
   f( e8.) aes16 aes4( g8.) b16 |
   b8-.\ff ais-. cis4-. r2 |
   R1*5 |
   gis,4--(\pp a-- gis-- a--) |
   c4( b8.) d16 b2~ |
-  \crescTextCresc
-  b4 c--(\< b-- c--) |
-  \crescHairpin
+  b4 c--(\cresc b-- c--) |
   e4( d8.) f16 d4 c~ |
   c( b8.) d16 b4 a |
   f'( e8.) g16 e4 d~ |
@@ -119,9 +109,7 @@ oboeMvtI = \relative c''
   c( b) c-. a-. g( f) a-. f-. |
   e4 r r2 |
   r r4 e'8.\mf a16 |
-  \dimTextDecr
-  e4( c8.)\> a16 c4( a8.) c,16 |
-  \dimHairpin
+  e4( c8.)\decr a16 c4( a8.) c,16 |
   e4 e2( d8 c) |
   b(\p\< d f b) d8.(\! e32 d c8 b) |
   c4(\> e2) e8.\p a16 |
@@ -140,9 +128,7 @@ oboeMvtI = \relative c''
   f4( d8.) bes16 d4( bes8.) d,16 |
   f4\> f2 e8-.( d-.) |
   c(\p e) a-.( c-.) b4.( gis8) |
-  \crescTextCresc
-  c4.(\< a8) d4.( b8) |
-  \crescHairpin
+  c4.(\cresc a8) d4.( b8) |
   e,( a) c-.( e-.) d4.( b8) |
   e4.( c8) fis4.( dis8) |
   gis1~\f\> |
@@ -168,9 +154,7 @@ oboeMvtI = \relative c''
   dis(\< eis) gis2~ |
   gis4 a--(\p gis-- a--) |
   cis4( b8.) d16 b2~ |
-  \crescTextCresc
-  b4 b(\< ais) b |
-  \crescHairpin
+  b4 b(\cresc ais) b |
   d4( cis8.) e16 cis4 d |
   f cis( d) f |
 
@@ -182,9 +166,7 @@ oboeMvtI = \relative c''
   R1*4 |
   r2 r4 e'8.\p a16 |
   e4( c8.) e16 c4( a8.) c,16 |
-  \dimTextDim
-  e1~(\> |
-  \dimHairpin
+  e1~(\dim |
   e2 gis |
   a4)\pp r r2 |
   R1*4 |
@@ -396,9 +378,7 @@ oboeMvtIII = \relative c''
   d2 c8( d e a) |
   g4(\> f) c2~ |
   c1~\p |
-  \dimTextDecresc
-  c4\> c bes4.( a8) |
-  \dimHairpin
+  c4\decresc c bes4.( a8) |
   a1~\pp |
   a |
 }
@@ -430,9 +410,7 @@ oboeMvtIV = \relative c'
   a4( gis8) fis eis4 eis8( a) |
   a2.-> gis8-. fis-. |
   fis4( e8-.) d-. cis4 r |
-  \crescTextCresc
-  r g'8-.\p\< g-. g( fis) r4\! |
-  \crescHairpin
+  r g'8-.\p\cresc g-. g( fis) r4\! |
   r b8-.\mf b-. b(\< ais) ais( b) |
   b2.\f b8( bis) |
   bis2. bis8( a') |
@@ -457,9 +435,7 @@ oboeMvtIV = \relative c'
   b2.\! r4 |
   R1*2 |
   r2 r4 gis''(\f |
-  \dimTextDecresc
-  e cis gis) e'(\> |
-  \dimHairpin
+  e cis gis) e'(\decresc |
   b gis e) gis |
   gis2( fis4) e |
   dis4\p r r2 |
@@ -538,9 +514,7 @@ oboeMvtIV = \relative c'
   a2.-> gis8-. fis-. |
   fis4( e8-.) d-. cis4 r |
   r g'8-.\mf g-. g( fis) r4 |
-  \dimTextDecr
-  r b8-. b-. b(\> ais) ais( b) |
-  \dimHairpin
+  r b8-. b-. b(\decr ais) ais( b) |
   b2. r4 |
   r2 r4 b8( bis) |
   bis1~ |
@@ -577,9 +551,7 @@ oboeMvtIV = \relative c'
   cis4( b8 ais) ais4 fis8(\< fis') |
   fis2.\> e8( d) |
   d4(\! cis8 b) b4 e,8(\p e') |
-  \crescTextCresc
-  e2.\< d8( cis) |
-  \crescHairpin
+  e2.\cresc d8( cis) |
   cis4 b8( ais) ais4 fis8(\f fis') |
   fis2. e8( d) |
   d4->(\f cis8 b) b4.->( a8) |
@@ -587,10 +559,7 @@ oboeMvtIV = \relative c'
   r4 fis\mf a( gis) |
   a2 r |
   r4 fis\p a( gis) |
-  \set decrescendoText = \markup {\italic "sempre dim."}
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  a2.( gis4\> |
+  a2.( gis4\sempreDim |
   a gis a gis |
   a1 |
   bis,)\pp |
@@ -604,9 +573,7 @@ oboeMvtIV = \relative c'
   e2 eis( |
   fis) fis |
   g1~-> |
-  \crescTextCresc
-  g2 gis\< |
-  \crescHairpin
+  g2 gis\cresc |
   a1~-> |
   a2 ais( |
   b) bis( |
@@ -624,4 +591,3 @@ oboeMvtIV = \relative c'
   cis~ |
   cis4 r r2 |
 }
-

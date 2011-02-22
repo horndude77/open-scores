@@ -470,8 +470,8 @@ leftMvtI = \relative c,
   <<
     {
       r8 a'4 a a a8~ |
-      r8 a4 a a a8~ |
-      r8 a4 a a a8 |
+      a8 a4 a a a8~ |
+      a8 a4 a a a8 |
     }
     \\
     {
@@ -661,26 +661,21 @@ dynamicsMvtI =
     s2 s4 s\f |
     s1*3 |
     s1\> |
-    \dimJustTextDecresc
-    s2\mf s4 s\> |
+    s2\mf s4 s\justDecresc |
     s1 |
     s\p |
-    \crescHairpin
     s2 s4 s\< |
     s2 s\! |
-    \dimHairpin
     s1\> |
     s2\f\< s\> |
     s1\mf |
     s\f |
     s1-\colFuoco |
-    \dimHairpin
     s1\> |
     s |
     s\p |
     s\f |
-    \dimTextDecresc
-    s\> |
+    s\decresc |
     s1*3 |
     s1\p |
     s1 |
@@ -690,31 +685,26 @@ dynamicsMvtI =
     s4 s\< s s |
     s2\p s\< |
     s1 |
-    \dimHairpin
     s\> |
     s4\! s\p s2 |
     s8*3 s8*5\< |
     s1\> |
     s\p |
     s1 |
-    \crescTextCrescMolto
-    s2 s\< |
+    s2 s\crescMolto |
     s1*3 |
     s1\f |
     s1*2 |
     s2 s\mf |
     s1\p |
     s1*3 |
-    \crescHairpin
     s1\< |
     s1\f |
-    \dimHairpin
     s2 s\> |
     s1 |
     s4\! s2.\p |
     s1*3 |
-    \dimTextDecresc
-    s4 s2.\> |
+    s4 s2.\decresc |
     s1 |
   }
   \alternative
@@ -725,10 +715,8 @@ dynamicsMvtI =
   s1\mf |
   s\f |
   s1*5 |
-  \dimHairpin
   s2.\> s4\ptranquillo |
   s1*7 |
-  \crescHairpin
   s2 s\< |
   s1\piuf |
   s1 |
@@ -736,39 +724,33 @@ dynamicsMvtI =
   s |
   s\sempref |
   s1*4 |
-  s1\crescTextCresc |
+  s1\cresc |
   s1\ff |
   s1-\calando |
   %a tempo
   s1\p |
   s2. s4\pp |
-  \crescHairpin
   s1\< |
-  \dimHairpin
   s\> |
   s1\p |
   s1*2 |
-  \crescTextCresc
-  s1\< |
+  s1\cresc |
   s1 |
   s2 s\f |
   s1*6 |
   s1\ff |
   s1-\calando |
   %a tempo
-  \crescHairpin
   s2\p s\< |
   s s\f\> |
   s1 |
   s\! |
   s\p |
   s |
-  \crescTextCresc
-  s4 s2.\< |
+  s4 s2.\cresc |
   s1*4 |
   s1\f |
   s |
-  \dimHairpin
   s2 s\> |
   s s\! |
   s1\p |
@@ -776,15 +758,12 @@ dynamicsMvtI =
   s2. s4\f |
   s1*11 |
   s1\p |
-  \crescTextCresc
-  s\< |
+  s\cresc |
   s |
   s\f |
   s2 s\p |
   s1*2 |
-  \crescHairpin
   s1\< |
-  \dimHairpin
   s2.\> s4\! |
   s1*2 |
   s1\ppcalando |
@@ -794,32 +773,27 @@ dynamicsMvtI =
   s1*8 |
   s1\mfconagitazione |
   s1 |
-  \crescTextCresc
-  s4 s2.\< |
+  s4 s2.\cresc |
   s1*2 |
-  \dimHairpin
   s2 s\> |
   s1\p |
   s1*3 |
   s1\pdolce |
   s1 |
-  \crescTextCresc
-  s8 s8*7\< |
+  s8 s8*7\cresc |
   s1*2 |
   %a minor
   s1\f |
   s1*4 |
   s1\mf |
   s1 |
-  \dimTextDecresc
-  s1\> |
+  s1\decresc |
   s1\p |
   s1*2 |
   s2 s\pp |
   s4 s2.\p |
   s1*3 |
-  \dimTextDecresc
-  s4 s2.\> |
+  s4 s2.\decresc |
   s2 s\pp |
   s1*3 |
 }
@@ -1028,7 +1002,8 @@ rightMvtII = \relative c'
   << {f4.( d)} \\ b2. >> |
   g'4.( <e bes>) |
   << {f4.( d)} \\ b2. >> |
-  <g g'>4.->( c~) |
+  <g g'>4.->( c) |
+  %NOTE: The source shows a tie ending on the c without a beginning. I've left the tie out.
   << c2. \\ {gis4.->( a)} >> |
   cis4.->( d) |
   << <d f>2. \\ {ais4.(-> b)} >>
@@ -1837,10 +1812,8 @@ leftMvtIII = \relative c'
 dynamicsMvtIII =
 {
   s1\p |
-  \crescJustTextUnPocoCresc
-  s\< |
+  s\justUnPocoCresc |
   s |
-  \crescHairpin
   s\<
   s\f\> |
   s |
@@ -1879,8 +1852,7 @@ dynamicsMvtIII =
   s |
   s8*7 s8\pp |
   s1*2 |
-  \crescTextCresc
-  s1\< |
+  s1\justCresc |
   s2 %{ rit %} s |
   %a tempo
   s1\ff |
@@ -1888,7 +1860,6 @@ dynamicsMvtIII =
   s4 s2.\p |
   s1\mf |
   s1*3 |
-  \crescHairpin
   s1\< |
   s1\> |
   s\! |
@@ -1898,8 +1869,7 @@ dynamicsMvtIII =
   s\> |
   s\! |
   s |
-  \dimTextDecresc
-  s\> |
+  s\decresc |
   s\pp |
   s |
 }
@@ -2177,7 +2147,7 @@ rightMvtIV = \relative c''
   <cis cis'> <fis fis'> |
   <<
     \new Voice {\voiceTwo b1 | <fis a> |}
-    {\voiceOne <fis fis'>2->( <eis~ eis'>) | eis' bis |}
+    {\voiceOne <fis fis'>2->( <eis eis'~>) | eis' bis |}
   >> \oneVoice |
   <fis a bis dis>1( |
   <eis gis cis>) |
@@ -2679,28 +2649,24 @@ dynamicsMvtIV =
   s |
   s\! |
   s |
-  \crescTextCresc
-  s2 s\< |
+  s2 s\cresc |
   s2. s4\f |
   s1*3 |
   s2. s4\p |
   s1*2 |
-  \crescHairpin
   s1\< |
   s\> |
   s\f |
   s1*2 |
   s2. s4\f |
   s1 |
-  \dimTextDecresc
-  s\> |
+  s\dim |
   s |
   s2.\p s4\ff |
   s1 |
   s2\mf s\ff |
   s2. s4\f |
   s1 |
-  \dimHairpin
   s\> |
   s2.\! s4\p |
   s2 s\< |
@@ -2726,9 +2692,7 @@ dynamicsMvtIV =
   s1 |
   s\< |
   s\f |
-  \crescJustTextCresc
-  s2. s4\< |
-  \crescHairpin
+  s2. s4\justCresc |
   s1\< |
   s2. s4\ff |
   s1*3 |
@@ -2738,13 +2702,11 @@ dynamicsMvtIV =
   s1*6 |
   s2. s4\f |
   s1 |
-  \dimHairpin
   s2. s4\> |
   s1*2 |
   s1\mf |
   s |
-  \dimTextDecresc
-  s\> |
+  s\decresc |
   s |
   s\p |
   s1*2 |
@@ -2766,7 +2728,6 @@ dynamicsMvtIV =
   s1*2 |
   s2. s4\p |
   s2. s4\mf |
-  \crescHairpin
   s2\< s2\! |
   s1\f |
   s1*2 |
@@ -2779,7 +2740,6 @@ dynamicsMvtIV =
   s1 |
   s1\f |
   s1*4 |
-  \dimHairpin
   s2 s\> |
   s1*2 |
   s1\p |
@@ -2814,35 +2774,30 @@ dynamicsMvtIV =
   s |
   s\> |
   s\p |
-  \crescTextCresc
-  s\< |
+  s\cresc |
   s\f |
   s |
   s4 s2.\mf |
   s1 |
   s2. s4\p |
   s1 |
-  \dimTextSempreDim
-  s2. s4\> |
+  s2. s4\sempreDim |
   s1 |
   s2. s4\pp |
   s1 |
-  \crescJustTextCresc
-  s2. s4\< |
+  s2. s4\justCresc |
   s1 |
   s |
-  \crescTextCresc
-  s\< |
+  s\cresc |
   s1*2 |
   s1\f |
   s1 |
-  s2 s\< |
+  s2 s\cresc |
   s1 |
   s\! |
   s1*6 |
   s1\ff |
   s1 |
-  \dimHairpin
   s2 s\> |
   s1 |
   s4 s2.\p |
@@ -3066,4 +3021,3 @@ pedalsMvtIV =
   s1 |
   s4 s2.\sustainOff |
 }
-

@@ -1,7 +1,21 @@
-\version "2.13.16"
+\version "2.13.50"
 
 \include "defs.ily" 
 \include "horn.ily" 
+
+\paper
+{
+  #(define page-breaking ly:page-turn-breaking)
+}
+
+\layout
+{
+  \context
+  {
+    \Staff
+    \consists "Page_turn_engraver"
+  }
+}
 
 instrument = "Horn"
 
@@ -10,28 +24,28 @@ instrument = "Horn"
   \include "header.ily"
   \score
   {
-    \new Staff %\with { \consists "Page_turn_engraver" }
+    \new Staff
     {
       << \hornMvtI \outlineMvtI >>
     }
   }
   \score
   {
-    \new Staff %\with { \consists "Page_turn_engraver" }
+    \new Staff
     {
       << \hornMvtII \outlineMvtII >>
     }
   }
   \score
   {
-    \new Staff %\with { \consists "Page_turn_engraver" }
+    \new Staff
     {
       << \hornMvtIII \outlineMvtIII >>
     }
   }
   \score
   {
-    \new Staff %\with { \consists "Page_turn_engraver" }
+    \new Staff
     {
       << \hornMvtIV \outlineMvtIV >>
     }
