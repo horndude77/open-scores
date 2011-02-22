@@ -1,6 +1,4 @@
-\version "2.13.16"
-
-\include "defs.ily"
+\version "2.13.50"
 
 rightMvtI = \relative c'
 {
