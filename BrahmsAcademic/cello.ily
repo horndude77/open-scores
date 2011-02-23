@@ -1,14 +1,11 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 cello = \relative c,
 {
   \set Staff.midiInstrument = "string ensemble 1"
   \clef bass
   \key c \minor
-  \grace {s16*3}
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \graceSync
   c4-._\ppSempreESottoVoce f-. c-. f-. |
   c4-. d-. ees-.
   s1*0^\div
@@ -28,7 +25,7 @@ cello = \relative c,
   aes[-. r r aes]-.  a[-. r r a]-.
   bes[-. r r bes]-.  b[-. r r b]-.
   c4-.\pp f,-. c'-. f,-. |
-  \dimTextDim c'-.\> \dimHairpin d,-.\> ees-. aes-. |
+  c'-.\dim d,-.\> ees-. aes-. |
   g-. aes-. ees-. bes'-. |
 
   %A
@@ -52,8 +49,8 @@ cello = \relative c,
   f1~( |
   f~ |
   f2 aes |
-  \dimTextDim des\> ges,~ |
-  \dimHairpin ges\> bes |
+  des\dim ges,~ |
+  ges\> bes |
   aes des4 c |
   bes2\!
   <<
@@ -75,8 +72,7 @@ cello = \relative c,
       bes b) |
     }
   >> \oneVoice |
-  \crescTextCresc
-  c4-.\p\< aes-. c-. f,-. |
+  c4-.\p\cresc aes-. c-. f,-. |
   c'-. f,-> c'-> a-> |
   g-> a-> e-> a'-.\f |
   g-. c,-. g'-. c,-. |
@@ -107,7 +103,6 @@ cello = \relative c,
   g g~ |
   g c,~) |
   c( c~ |
-  \crescHairpin
   c\< f~ |
   f\> a) |
   c1\! |
@@ -118,15 +113,13 @@ cello = \relative c,
   des\> c bes g)\! |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  f2\< f |
+  f2\justCrescPocoAPoco f |
   f f |
   c c |
   c' e, |}
   g4 g16(\f a b c d4) r |
   r16 g,( a b c d e f g4) r |
-  \crescJustTextCresc
-  r g,16(\< a b c d-.) g,( a b c d e f |
+  r g,16(\justCresc a b c d-.) g,( a b c d e f |
   g-.) g,( a b c d e f g8-.) r g16( f e d) |
 
   %4/4
@@ -154,10 +147,8 @@ cello = \relative c,
     \repeat unfold 2 {g,8-. g-. a-. fis-.} |
     \repeat unfold 2 {g[-. r r fis]-.} |
   }
-  \crescHairpin
   g[-. r r fis]-.\< g[-. r r g]-. |
   gis[-. r r gis]-. a[-. r r a]-. |
-  \dimHairpin
   f4-.\> d-. g-. g-. |
 
   %E
@@ -167,8 +158,7 @@ cello = \relative c,
   bes b c g) |
   c^\pizz g c g |
   c g c a |
-  \crescTextCrescPocoAPoco
-  d g, gis a\< |
+  d g, gis a\crescPocoAPoco |
   d b e b |
   e a, ais b |
   e d g d,\f^\arco |
@@ -178,7 +168,6 @@ cello = \relative c,
   b-. fis'-. b-. fis,-. |
 
   \key g \major
-  \crescHairpin
   b2(\fp\< a |
   g fis) |
   e8\pocoF^\pizz gis b e gis, b e gis |
@@ -194,19 +183,14 @@ cello = \relative c,
   b\< dis fis b a, dis fis b |
   g,\> d' g b d,,\! d' fis c' |
   g,\p b d g b, d g b |
-  \dimJustTextDim
-  c, e g b c e g g,\> |
+  c, e g b c e g g,\justDim |
   c,2.^\arco g4 |
   bes( a f g) |
   r4 cis-.(\pDolce r c-.) |
-  \crescHairpin
-  \dimHairpin
   r b(\< a\> g) s1*0\! |
   r4 fis-.( r f-.) |
   r e(\< d\> c) s1*0\! |
-  \dimJustTextDim
-  r4 b'-.( r c-.)\> |
-  \dimHairpin
+  r4 b'-.( r c-.)\justDim |
   r4 d-.(\> r e-.) |
   cis8\p^\pizz e g b e r r4 |
   d,8 g b d g r r4 |
@@ -214,8 +198,7 @@ cello = \relative c,
   a,8 c ees a c a fis d |
   cis4_\dolce^\arco r r2 |
   d4 r r2 |
-  \dimJustTextDim
-  gis,4\> r r2 |
+  gis,4\justDim r r2 |
   a4 r d,\! r |
 
   %2/4
@@ -261,15 +244,12 @@ cello = \relative c,
   dis4 e |
   fis8 fis fis gis |
   fis e e4 |
-  \dimJustTextDim
-  r dis\> |
+  r dis\justDim |
   r d |
-  \dimHairpin
   r cis\> |
   r fis,\! |
   \clef bass |
-  \dimJustTextDim
-  r8 fis,\>^\arco fis4~ |
+  r8 fis,\justDim^\arco fis4~ |
   \repeat unfold 5 {fis8 fis fis4~} |
   fis8 r fis4~ |
   fis8 r r d(\p |
@@ -283,13 +263,11 @@ cello = \relative c,
   g4 a |
   b2~ |
   b4 a |
-  \crescHairpin
   cis d(\< |
   d' cis8\! d |
   a4) d( |
   cis a8 b |
-  \crescTextCresc
-  fis4) d'(\p\< |
+  fis4) d'(\p\cresc |
   cis4 a8 b |
   fis4) c'( |
   bes g8 a |
@@ -313,8 +291,7 @@ cello = \relative c,
   e4-.) r \times 4/7 {des''8( bes g e des bes g} |
   e4-.) f-. g-. aes-. |
   bes-. b-. c-. b'8-. c-. |
-  \crescJustTextCresc
-  << {s1 s s\< s} \repeat unfold 4 {c2. b8-. c-.} >> |
+  << {s1 s s\justCresc s} \repeat unfold 4 {c2. b8-. c-.} >> |
   c4. c8 c4. c8 |
   c4. c8 c4. aes'8-.\ff |
 
@@ -324,15 +301,11 @@ cello = \relative c,
   f4-. r8 aes-. des4-. r8 bes-. |
   c4.( c,8-.) f4-. r |
   r4 r8 f-.\p_\mezzaVoce ees4-. r |
-  \crescHairpin
-  \dimHairpin
   r4 r8 des-. c4-. r8 bes-.\< |
   beses2(\> aes~\! |
   aes des4) r |
-  \dimJustTextDim
-  r r8 dis-.\> cis4-. r |
+  r r8 dis-.\justDim cis4-. r |
   r4 r8 b-. ais4-. r8 gis-. |
-  \dimHairpin
   g2(\> fis~ |
   fis g4)\! r |
   R1 |
@@ -343,8 +316,7 @@ cello = \relative c,
     \repeat unfold 2 {g'8-. g-. aes-. fis-.} |
     \repeat unfold 2 {g'8[-. r r fis]-.} |
   }
-  \crescJustTextCrescMolto
-  g[-.\< r r fis]-. g[-. r r g]-. |
+  g[-.\justCrescMolto r r fis]-. g[-. r r g]-. |
   aes[-. r r aes]-. a[-. r r a]-. |
   bes[-. r r bes]-. ees[-. r r ees]-. |
   aes4-. d,-. g-. g,-. |
@@ -393,7 +365,6 @@ cello = \relative c,
   fis8 e, e'4. d,8 d'4 |
 
   %L
-  \crescHairpin
   g,2(\fp\< f |
   ees d) |
   c8\pocoF^\pizz g' c e e, c' e g |
@@ -407,7 +378,6 @@ cello = \relative c,
 
   %M
   g, b d g f,\< b d g |
-  \dimHairpin
   ees,\> bes' ees g bes,\! d f bes |
   ees,,\p bes' ees r g, ees' g r |
   aes, c ees r r4 bes |
@@ -415,15 +385,13 @@ cello = \relative c,
   aes ees' g, r f ees' ees, r |
   d bes' ees, r f ees' g, r |
   aes c ees r r4 f, |
-  \dimJustTextDim
-  g8\> bes d r r4 \dimHairpin ees4(\>^\arco |
+  g8\justDim bes d r r4 ees4(\>^\arco |
   f ees b c) s1*0\! |
   r4 fis\pDolce r f |
   r e(\< d\> c) s1*0\! |
   r4 b r bes |
   r a( g f) |
-  \dimJustTextDim
-  r e-.(\> r f-.) |
+  r e-.(\justDim r f-.) |
   R1 |
   fis8\p^\pizz a c e a r r4 |
   g,8 c e g c r r4 |
@@ -447,8 +415,7 @@ cello = \relative c,
   g2~ |
   g4 g~ |
   g2~ |
-  \crescTextCresc
-  g4 g''(\p\< |
+  g4 g''(\p\cresc |
   fis4 d8 e |
   b4) f'( |
   ees c8 d |

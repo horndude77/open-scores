@@ -1,19 +1,16 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 bassoonTwo = \relative c
 {
   \set Staff.midiInstrument = "bassoon"
   \clef bass
   \key c \minor
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceTwo
     \dynamicDown
   }
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees4-.\ppSempreESottoVoce f-. ees-. f-. |
   ees-. f-. ees-. c-. |
   b4-. c-. b-. c-. |
@@ -21,7 +18,7 @@ bassoonTwo = \relative c
   R1*8 |
   r4 r8 d' g4( f) |
   ees4-.\pp f-. ees-. f-. |
-  \dimTextDim ees-.\> \dimHairpin bes-.\> bes-. c-. |
+  ees-.\dim bes-.\> bes-. c-. |
   b-. c-. bes4.\! r8 |
 
   %A
@@ -36,18 +33,15 @@ bassoonTwo = \relative c
   aes2(\pp c |
   aes c |
   aes1~)( |
-  \dimJustTextDim
-  aes2\> bes4 aes |
+  aes2\justDim bes4 aes |
   ges2 f |
   aes des,) s1*0\! |
   R1 |
   f2( e |
   f e |
-  \dimJustTextDim
-  f\> g4 f |
+  f\justDim g4 f |
   f1) |
-  \crescTextCresc
-  e4-.\p\< f-. e-. f-. |
+  e4-.\p\cresc f-. e-. f-. |
   e-> d-> e-> e8-. fis-. |
   g4-> a-> e-> a,-.\f |
   g-. c,-. g'-. c,-. |
@@ -74,21 +68,17 @@ bassoonTwo = \relative c
   \key c \major
   R1*13 |
   r2 g,~\p |
-  \crescHairpin
   g4(\< a bes c |
-  \dimHairpin
   des\> c bes g)\! |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  f'2-.(\< f-. |
+  f'2-.(\justCrescPocoAPoco f-. |
   a-. f-.) |
   e1 |
   c2 e, |
   g4 g16(\f a b c d4) r |
   r16 g,( a b c d e f g4) r |
-  \crescJustTextCresc
-  r g,16(\< a b c d-.) g,( a b c d e f |
+  r g,16(\justCresc a b c d-.) g,( a b c d e f |
   g-.) g,( a b c d e f g8-.) r g16( f e d) |
 
   %4/4
@@ -134,7 +124,6 @@ bassoonTwo = \relative c
   cis( b) cis( b) |
   a( gis fis e) |
   dis( e fis gis |
-  \crescHairpin
   a) r r fis(\< |
   b) r r gis |
   cis2\! fis, |
@@ -143,15 +132,12 @@ bassoonTwo = \relative c
   b4 r r2 |
   R1 |
   r2 r4 g'~(\mp |
-  \dimJustTextDim
-  g fis e d)\> |
+  g fis e d)\justDim |
   g( f ees d) |
   R1*7 |
   cis1(\p |
   d |
   gis,) |
-  \crescHairpin
-  \dimHairpin
   r4 a(\< d2)\> s1*0\! |
   R1 |
   r2 \times 2/3 {r4 r f(} |
@@ -201,8 +187,7 @@ bassoonTwo = \relative c
   d2~ |
   d4 d~( |
   d e |
-  \crescTextCresc
-  fis) d4\p\< |
+  fis) d4\p\cresc |
   \repeat unfold 7 {d d~} |
   d4 r8 d-.\ff |
   g,-. g-. g-. g-. |
@@ -242,8 +227,7 @@ bassoonTwo = \relative c
   c4.( c,8) f4-. r |
   R1*10 |
   << s1*0\p \repeat unfold 8 {g,8[-. r r fis]-.} >> |
-  \crescJustTextCresc
-  g[-.\< r r fis]-. g[-. r r g]-. |
+  g[-.\justCresc r r fis]-. g[-. r r g]-. |
   aes[-. r r aes]-. a[-. r r a]-. |
   bes[-. r r bes]-. ees[-. r r ees]-. |
   aes4-. d,-. g-. g,-. |
@@ -292,8 +276,6 @@ bassoonTwo = \relative c
   c2\mf e, |
   f2. g4 |
   a( g) a( g) |
-  \crescHairpin
-  \dimHairpin
   f'(\< e d\> c) s1*0\! |
   b4( c d e |
   f)\< r r d( |
@@ -304,12 +286,9 @@ bassoonTwo = \relative c
   g,4 r r2 |
   R1*6 |
   ees'4(\mp d c) f( |
-  \dimJustTextDim
-  d\> c bes) ees( |
+  d\justDim c bes) ees( |
   f ees b c) s1*0\! |
   R1*9 |
-  \crescHairpin
-  \dimHairpin
   r4 aes'2(\< g4)\> |
   fis\! r r2 |
   g4 r r2 |
@@ -321,8 +300,7 @@ bassoonTwo = \relative c
   R2*10 |
   r4 \clef bass g,~(\p |
   g a |
-  \crescTextCresc
-  b) g'~\p\< |
+  b) g'~\p\cresc |
   \repeat unfold 3 {g g~} |
   g g,~ |
   \repeat unfold 3 {g g~} |

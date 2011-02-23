@@ -1,12 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 fluteOne = \relative c''
 {
   \set Staff.midiInstrument = "flute"
   \key c \minor
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceOne
@@ -55,8 +53,7 @@ fluteOne = \relative c''
   e4 r c2 |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  a'-.(\< a-. |
+  a'-.(\justCrescPocoAPoco a-. |
   c-. a-.) |
   g1 |
   e2 g' |
@@ -91,8 +88,7 @@ fluteOne = \relative c''
   r2 r8 g,,(\p a b) |
   c4( d8 b c4 f |
   e4 f8 d e4) a8( g |
-  \crescJustTextCrescPocoAPoco
-  f4 e8 d e4) a8(\< g |
+  f4 e8 d e4) a8(\justCrescPocoAPoco g |
   f4 fis g) b8( a |
   g4 fis8 e fis4) b8( a |
   g4 a b) a\f |
@@ -109,13 +105,10 @@ fluteOne = \relative c''
   R1 |
   r4 r8 d,(\mpEspress d4. d'8) |
   d4.( b8 g4 g') |
-  \dimJustTextDim
-  e2.( g4)\> |
+  e2.( g4)\justDim |
   ees2.( g4) |
   d( cis c bes)\! |
   R1*4 |
-  \crescHairpin
-  \dimHairpin
   g4.(\p\< a8\> g4) r\! |
   g4.(\< a8\> g4) r\! |
   R1*3 |
@@ -159,8 +152,7 @@ fluteOne = \relative c''
   fis g |
   a) fis'~( |
   fis g |
-  \crescTextCresc
-  a) d,~\p\< |
+  a) d,~\p\cresc |
   \repeat unfold 7 {d4 d~} |
   d4 r8 d,-.\ff |
   g g g g |
@@ -194,8 +186,7 @@ fluteOne = \relative c''
   aes4-. r8 c-. bes4-. r8 aes'-. |
   g4.( aes8) f4-. r |
   R1*16 |
-  \crescJustTextCresc
-  r4 d4.\sf r8 g4~\< |
+  r4 d4.\sf r8 g4~\justCresc |
   g8 r aes2-> g4-. |
 
   %K
@@ -206,8 +197,7 @@ fluteOne = \relative c''
   e4-> fis8-. dis-. e4-> dis8-. bis-. |
   cis4-> b8-. a-. gis4-> e-> |
   cis'1( |
-  \crescJustTextCresc
-  e2.) d4(\< |
+  e2.) d4(\justCresc |
   f2) dis4->( fis~ |
   fis) e->( g2) |
   aes1 |
@@ -247,18 +237,13 @@ fluteOne = \relative c''
   bes4.( g8 ees4 ees') |
   c( bes aes g) |
   f4.( g8) f4.( g8) |
-  \crescHairpin
-  \dimHairpin
   f4(\< g aes\> c) |
   bes4.(\! g8 ees4 ees') |
   c2.( d4) |
-  \dimJustTextDim
-  bes2.(\> c4) |
+  bes2.(\justDim c4) |
   aes4( g f ees)\! |
   R1*2 |
   g4.(\pDolce a8) g4.( a8) |
-  \crescHairpin
-  \dimHairpin
   g4(\< a bes\> d) s1*0\! |
   R1 |
   c4.(\> d8 c4) r\! |
@@ -281,8 +266,7 @@ fluteOne = \relative c''
   r8 c,( f) c( |
   d4) r |
   R2*3 |
-  \crescTextCresc
-  r4 g'~\p\< |
+  r4 g'~\p\cresc |
   \repeat unfold 7 {g4 g~} |
   g4 r8 g-.\ff |
   r e-. r c-. |

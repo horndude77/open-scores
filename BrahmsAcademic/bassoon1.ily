@@ -1,19 +1,16 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 bassoonOne = \relative c'
 {
   \set Staff.midiInstrument = "bassoon"
   \clef bass
   \key c \minor
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceOne
     \dynamicUp
   }
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   g4-.\ppSempreESottoVoce aes-. g-. aes-. |
   g-. bes-. g-. ees8-. f-. |
   g4-. ees8-. f-. g4-. ees8-. f-. |
@@ -26,7 +23,7 @@ bassoonOne = \relative c'
   g8 g f4. f8 ees4~ |
   ees8 d( g f) ees4( d) |
   g4-.\pp aes-. g-. aes-. |
-  \dimTextDim g-.\> \dimHairpin f-.\> g-. ees-. |
+  g-.\dim f-.\> g-. ees-. |
   g-. ees-. ees4.\! r8 |
 
   %A
@@ -40,9 +37,8 @@ bassoonOne = \relative c'
   R1*5 |
   des2(\pp aes |
   f aes |
-  \dimJustTextDim
   des1~ |
-  des\> |
+  des\justDim |
   bes |
   c2 des) |
   R1 |
@@ -50,8 +46,7 @@ bassoonOne = \relative c'
   f g |
   aes\> bes4 aes |
   g1) |
-  \crescTextCresc
-  g4-.\p\< aes-. g-. aes-. |
+  g4-.\p\cresc aes-. g-. aes-. |
   g-> f-> g-> e8-. fis-. |
   g4-> c-> b-> a-.\f |
   g-. c,-. g'-. c,-. |
@@ -78,21 +73,17 @@ bassoonOne = \relative c'
   \key c \major
   R1*13 |
   r2 g,,2~\p |
-  \crescHairpin
   g4(\< a bes c |
-  \dimHairpin
   des\> c bes g) s1*0\! |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  a'2-.(\< a-. |
+  a'2-.(\justCrescPocoAPoco a-. |
   c-. a-.) |
   g1 |
   e2 e |
   g4 g,16(\f a b c d4) r |
   r16 g,( a b c d e f g4) r |
-  \crescJustTextCresc
-  r g,16(\< a b c d-.) g,( a b c d e f |
+  r g,16(\justCresc a b c d-.) g,( a b c d e f |
   g-.) g,( a b c d e f g8-.) r g16( f e d) |
 
   %4/4
@@ -118,10 +109,8 @@ bassoonOne = \relative c'
   r8 d'-.\p e4. e8-. d4 |
   R1 |
   r8 d-. g4. g8-. f4 |
-  \crescHairpin
   r8 d-. a'4. a8-. g4~\< |
   g8 g f4. f8 e4~ |
-  \dimHairpin
   e8 a4\> a8 g4 f |
 
   %E
@@ -142,7 +131,6 @@ bassoonOne = \relative c'
   b4-. r r2 |
   R1*5 |
   r2 r4 b'(\mf |
-  \crescHairpin
   cis) r r cis(\< |
   dis) r r dis |
   e1\! |
@@ -151,15 +139,12 @@ bassoonOne = \relative c'
   dis4 r r2 |
   R1 |
   r2 r4 d(\mp |
-  \dimJustTextDim
-  e d c\> b) |
+  e d c\justDim b) |
   ees( d c bes) |
   d( cis c bes)\! |
   R1*6 |
   e,1(\p |
   g b) |
-  \crescHairpin
-  \dimHairpin
   r4 << c2. {s4\< s\> s\!} >> |
   R1 |
   r2 \times 2/3 {r4 r a(} |
@@ -203,8 +188,7 @@ bassoonOne = \relative c'
   \clef tenor
   r4 r8 fis'(\p |
   fis'2~) |
-  \dimJustTextDim
-  fis4.\> fis,8( |
+  fis4.\justDim fis,8( |
   fis'2~ |
   fis4. fis,8( |
   fis'2~ |
@@ -220,8 +204,7 @@ bassoonOne = \relative c'
   d2~ |
   d4 fis~( |
   fis g |
-  \crescTextCresc
-  a) d,~\p\< |
+  a) d,~\p\cresc |
   \repeat unfold 7 {d d~} |
   d4 r8 d-.\ff |
   g-. g-. g-. g-. |
@@ -259,15 +242,11 @@ bassoonOne = \relative c'
   f4-. r8 aes-. des4-. r8 bes-. |
   c4.( c,8) f4-. r |
   R1 |
-  \crescHairpin
-  \dimHairpin
   r4 r8 f-.\p^\mezzaVoce ees4-. r8 des8~(\< |
   des2\> c |
   des2)\! r |
   R1 |
-  \dimJustTextDim
-  r4 r8 dis-.\> cis4-. r8 b~( |
-  \dimHairpin
+  r4 r8 dis-.\justDim cis4-. r8 b~( |
   b2\> ais |
   b) r\! |
   R1*2 |
@@ -275,8 +254,7 @@ bassoonOne = \relative c'
   \repeat unfold 2 {g8[-. r r fis]-.} |
   \repeat unfold 2 {g8-. g-. aes-. fis-.} |
   \repeat unfold 2 {g8[-. r r fis]-.} |
-  \crescJustTextCresc
-  g8[-.\< r r fis]-. g8[-. r r g]-. |
+  g8[-.\justCresc r r fis]-. g8[-. r r g]-. |
   aes8[-. r r aes]-. a8[-. r r a]-. |
   bes8[-. r r bes]-. ees,8[-. r r ees]-. |
   aes4-. d,-. g-. g,-. |
@@ -324,7 +302,6 @@ bassoonOne = \relative c'
   g,8-. r r4 r2 |
   R1*5 |
   r2 r4 g'(\mf |
-  \crescHairpin
   a)\< r r a( |
   b) r\! r b( |
   c1) |
@@ -338,13 +315,10 @@ bassoonOne = \relative c'
   c4(\< bes aes\> ges) s1*0\! |
   f4( g aes bes) |
   c( bes aes) aes( |
-  \dimJustTextDim
-  bes\> aes g) g( |
+  bes\justDim aes g) g( |
   aes g aes g) |
   R1*2 |
   g4.(\pDolce a8) g4.( a8) |
-  \crescHairpin
-  \dimHairpin
   g4(\< a bes\> d) s1*0\! |
   r2 c4.(\< d8)\> |
   c4 r\! r2 |
@@ -363,8 +337,7 @@ bassoonOne = \relative c'
   \clef bass
   r4 b,~(\p |
   b c |
-  \crescTextCresc
-  d) g~\p\< |
+  d) g~\p\cresc |
   \repeat unfold 7 {g g~} |
   g4 r8 g,-.\ff |
   r c-. r e-. |

@@ -1,12 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 hornTwo = \relative c'
 {
   \set Staff.midiInstrument = "french horn"
   \transposition c
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceTwo
@@ -65,8 +63,7 @@ hornTwo = \relative c'
   r4 c,2 c4~ |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  c2\< c |
+  c2\justCrescPocoAPoco c |
   c c' |
   c1 |
   c,2 c' |
@@ -94,7 +91,6 @@ hornTwo = \relative c'
   r8^\solo g'-.\p c4. c8-. g4 |
   R1 |
   r8 g-. e'4. e8-. d4 |
-  \crescHairpin
   r8 g,-. f'4. f8-. e4~\< |
   e8 e d4. d8 cis4~ |
   cis8 d(\> cis d) c4 g s1*0\! |
@@ -129,8 +125,7 @@ hornTwo = \relative c'
   %H
   R2*12 |
   r4 d~\p |
-  \crescTextCresc
-  d\< d~ |
+  d\cresc d~ |
   \repeat unfold 6 {d d~}
   d r8 d-.\ff |
   d d d d |
@@ -169,21 +164,17 @@ hornTwo = \relative c'
   ges2..-+ ges8-+ |
   ges2..-+ ges8~-+( |
   ges1-+ |
-  \dimJustTextDim
-  f2)-+ r4 r8 e\>^\open |
+  f2)-+ r4 r8 e\justDim^\open |
   e2.. e8 |
-  \dimHairpin
   e2.. e8~(\> |
   e1 |
-  \crescHairpin
   d2\!) r4 ees~\p\< |
   ees1~ |
   ees1\> |
   d4\! r4 r2 |
   R1*2 |
   r4 ees'2\p d4 |
-  \crescJustTextCresc
-  r4 f2\< ees4 |
+  r4 f2\justCresc ees4 |
   r4 d2 c4 |
   r4 bes4. r8 d4~ |
   d8 r d2-> g,4-. |
@@ -217,8 +208,7 @@ hornTwo = \relative c'
   c4 c c c |
   c1 |
   c4 c c c |
-  \crescJustTextCresc
-  c4\< c c c |
+  c4\justCresc c c c |
   c c c' c |
   a r r2 |
   R1 |
@@ -226,7 +216,6 @@ hornTwo = \relative c'
   c c'4-. c-. |
 
   %L
-  \crescHairpin
   g,1~\fp\< |
   g |
   g4(\p c2.~) |
@@ -243,8 +232,7 @@ hornTwo = \relative c'
 
   %2/4
   R2*12
-  \crescTextCresc
-  r4 g~\p\< |
+  r4 g~\p\cresc |
   g g~ |
   g g~ |
   g g~ |

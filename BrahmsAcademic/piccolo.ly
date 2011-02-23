@@ -1,7 +1,7 @@
-\version "2.13.15"
+\version "2.13.51"
 
-\include "piccolo.ily"
 \include "defs.ily"
+\include "piccolo.ily"
 
 instrument = "Piccolo"
 

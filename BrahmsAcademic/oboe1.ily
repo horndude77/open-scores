@@ -1,12 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 oboeOne = \relative c'''
 {
   \set Staff.midiInstrument = "oboe"
   \key c \minor
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceOne
@@ -47,8 +45,7 @@ oboeOne = \relative c'''
   e4 r c2 |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  a'-.(\< a-. |
+  a'-.(\justCrescPocoAPoco a-. |
   c-. a-.) |
   g1 |
   e2 g |
@@ -82,8 +79,7 @@ oboeOne = \relative c'''
   r2 r8 g,(\p a b) |
   c4( d8 b c4 f |
   e4 f8 d e4) a8( g |
-  \crescJustTextCrescPocoAPoco
-  f4 e8 d e4) a8(\< g |
+  f4 e8 d e4) a8(\justCrescPocoAPoco g |
   f4 fis g) b8( a |
   g4 fis8 e fis4) b8( a |
   g4 a b) fis\f |
@@ -100,14 +96,11 @@ oboeOne = \relative c'''
   R1 |
   r4 r8 d,(\mpEspress d4. d'8) |
   d4.( b8 g4 g') |
-  \dimJustTextDim
-  e2.( g4)\> |
+  e2.( g4)\justDim |
   ees2.( g4) |
   d4( cis c bes) |
   R1*2 |
   d4.(_\dolce e8) d4.( e8) |
-  \crescHairpin
-  \dimHairpin
   d4(\< e f\> a) s1*0\! |
   R1*5 |
   r4 a,(\< g\> fis) s1*0\! |
@@ -162,8 +155,7 @@ oboeOne = \relative c'''
 
   %H
   R2*12 |
-  \crescTextCresc
-  r4 d~\p\< |
+  r4 d~\p\cresc |
   \repeat unfold 7 {d d~} |
   d4 r8 d-.\ff |
   g g g g |
@@ -199,8 +191,7 @@ oboeOne = \relative c'''
   aes4-. r8 c8-. bes4-. r8 aes-. |
   g4.( aes8) f4-. r |
   R1*15 |
-  \crescJustTextCresc
-  r4 f2\p\< ees4 |
+  r4 f2\p\justCresc ees4 |
   r4 d4. r8 g4~ |
   g8 r aes2-> g4-. |
 
@@ -212,8 +203,7 @@ oboeOne = \relative c'''
   cis'4-> dis8-. bis-. cis4-> fis,8-. dis-. |
   e4-> b8-. a-. gis4-> e-> |
   cis'1( |
-  \crescJustTextCresc
-  e2.) d4(\< |
+  e2.) d4(\justCresc |
   f2) dis4->( fis~ |
   fis) e4(-> g2) |
   aes1 |
@@ -252,17 +242,12 @@ oboeOne = \relative c'''
   r2 r4 ees4~\mpEspress |
   ees1~ |
   ees~ |
-  \crescHairpin
-  \dimHairpin
   ees4\< ees( d\> a) s1*0\! |
   bes4.( g8 ees4 ees') |
   c2.( d4) |
-  \dimJustTextDim
-  bes2.(\> c4) s1*0\! |
+  bes2.(\justDim c4) s1*0\! |
   R1 |
   d4.(\pDolce^\solo e8) d4.( e8) |
-  \crescHairpin
-  \dimHairpin
   d4(\< e f\> a) s1*0\! |
   R1*2 |
   c4.(\< d8)\> c4 r\! |
@@ -282,8 +267,7 @@ oboeOne = \relative c'''
   g' fis8 g |
   d4) g( |
   fis d8 e |
-  \crescTextCresc
-  b4) g'~\p\< |
+  b4) g'~\p\cresc |
   \repeat unfold 7 {g g~} |
   g4 r8 g,-.\ff |
   c-. c-. c-. c-. |

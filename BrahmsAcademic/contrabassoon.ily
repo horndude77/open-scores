@@ -1,14 +1,11 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 contrabassoon = \relative c,
 {
   \set Staff.midiInstrument = "bassoon"
   \clef "bass_8"
   \key c \minor
-  \grace {s16*3}
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \graceSync
   c4-.\ppSempreESottoVoce f-. c-. f-. |
   c-. d-. ees-. aes,-. |
   g-. aes-. g-. c-. |
@@ -19,7 +16,7 @@ contrabassoon = \relative c,
   aes[-. r r aes]-. a[-. r r a]-. |
   bes[-. r r bes]-. b[-. r r b]-. |
   c4-.\pp f,-. c'-. f,-. |
-  \dimTextDim c'-.\> \dimHairpin d-.\> ees-. aes-. |
+  c'-.\dim d-.\> ees-. aes-. |
   g-. aes-. ees4.\! r8 |
 
   %A
@@ -33,8 +30,7 @@ contrabassoon = \relative c,
 
   %B
   R1*16 |
-  \crescTextCresc
-  c2->\p\< c-> |
+  c2->\p\cresc c-> |
   c-> c4-> a-> |
   g-> a-> e-> a'-.\f |
   g-. c,-. g'-. c,-. |
@@ -63,7 +59,6 @@ contrabassoon = \relative c,
   g g~ |
   g c~ |
   c c~ |
-  \crescHairpin
   c\< f,~ |
   f\> a |
   c1\! |
@@ -74,8 +69,7 @@ contrabassoon = \relative c,
   des\> c2 c4~)\! |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  c2\< f,~ |
+  c2\justCrescPocoAPoco f,~ |
   f f |
   c' c~ |
   c e, |

@@ -1,12 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 fluteTwo = \relative c''
 {
   \set Staff.midiInstrument = "flute"
   \key c \minor
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceTwo
@@ -53,8 +51,7 @@ fluteTwo = \relative c''
   c4 r c2 |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  f-.(\< f-. |
+  f-.(\justCrescPocoAPoco f-. |
   a-. f-.) |
   e1 |
   c2 c' |
@@ -98,8 +95,6 @@ fluteTwo = \relative c''
 
   %f
   R1*15 |
-  \crescHairpin
-  \dimHairpin
   r4 << {ees2( d4)} {s4\< s\> s s1*0\!} >> |
   R1 |
   r2 \times 2/3 {r4 r a'(_\dolce} |
@@ -133,8 +128,7 @@ fluteTwo = \relative c''
   d e |
   fis) d'~( |
   d e |
-  \crescTextCresc
-  fis) d~\p\< |
+  fis) d~\p\cresc |
   \repeat unfold 7 {d d~} |
   d4 r8 d,-.\ff |
   g g g g |
@@ -170,8 +164,7 @@ fluteTwo = \relative c''
   f4-. r8 aes-. g4-. r8 f'-. |
   e2 f4-. r |
   R1*16 |
-  \crescJustTextCresc
-  r4 bes,4.\mf r8 d4~\< |
+  r4 bes,4.\mf r8 d4~\justCresc |
   d8 r c2-> b4-. |
 
   %K
@@ -182,8 +175,7 @@ fluteTwo = \relative c''
   \repeat unfold 2 {cis4-> dis8-. bis-.} |
   cis4-> fis,-> e-> e-> |
   a1( |
-  \crescJustTextCresc
-  cis2 a4) bes~\< |
+  cis2 a4) bes~\justCresc |
   bes2 b~-> |
   b4 c2.-> |
   c4( g' f ees) |
@@ -224,8 +216,7 @@ fluteTwo = \relative c''
 
   %2/4
   R2*12 |
-  \crescTextCresc
-  r4 g~\p\< |
+  r4 g~\p\cresc |
   \repeat unfold 7 {g g~} |
   g4 r8 b-.\ff |
   r c-. r g-. |

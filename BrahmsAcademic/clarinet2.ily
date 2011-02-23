@@ -1,13 +1,11 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 clarinetTwo = \relative c
 {
   \set Staff.midiInstrument = "clarinet"
   \transposition bes
   \key d \minor
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceTwo
@@ -85,7 +83,6 @@ clarinetTwo = \relative c
   eis4-. r r2 |
   R1*5 |
   r2 r4 fis~\mf |
-  \crescHairpin
   fis r r c'(\< |
   gis) r r d'( |
   bes2.\! c4) |
@@ -94,13 +91,11 @@ clarinetTwo = \relative c
   gis4 r r2 |
   R1 |
   r2 r4 a~(\mp |
-  \dimJustTextDim
-  a gis fis e\> |
+  a gis fis e\justDim |
   a( g f e) |
   R1*11 |
   \times 2/3 {c4(_\dolce^\solo b c} \times 2/3 {b c b} |
   \times 2/3 {a) r r} \times 2/3 {r r b'(} |
-  \dimHairpin
   \times 2/3 {cis bis cis} \times 2/3 {bis cis d)\>} |
   cis4( b) r gis s1*0\! |
 
@@ -131,8 +126,7 @@ clarinetTwo = \relative c
   e fis |
   gis) e'~( |
   e fis |
-  \crescTextCresc
-  gis) e~\p\< |
+  gis) e~\p\cresc |
   \repeat unfold 7 {e e~} |
   e4 r8 e-.\ff |
   cis8 cis cis cis |
@@ -168,13 +162,10 @@ clarinetTwo = \relative c
   bes4-. r8 d-. c4-. r8 g'-. |
   fis2-> g4-. r |
   R1*9 |
-  \crescHairpin
   gis,,1\p\< |
-  \dimHairpin
   a4\> r\! r2 |
   R1*4 |
-  \crescJustTextCresc
-  r4 e''2\p\< d4 |
+  r4 e''2\p\justCresc d4 |
   r4 c4. r8 c4~ |
   c8 r8 d2-> cis4-. |
 
@@ -186,8 +177,7 @@ clarinetTwo = \relative c
   ges4-> aes8-. f-. ees4-> f8-. d-. |
   fis,4-> gis-> fis-> fis-> |
   b4 a'( g fis |
-  \crescJustTextCresc
-  c' b a) g(\< |
+  c' b a) g(\justCresc |
   c bes aes) cis( |
   b a) d( c |
   bes a g f) |
@@ -221,7 +211,6 @@ clarinetTwo = \relative c
   %L
   e,8-. r r4 r2 |
   R1*5 |
-  \crescHairpin
   r2 r4 d~\mf\< |
   d r r fis( |
   e) r r ais( |
@@ -231,8 +220,7 @@ clarinetTwo = \relative c
   e4 r r2 |
   R1*6 |
   g4( e d) g( |
-  \dimJustTextDim
-  e\> d c) f( |
+  e\justDim d c) f( |
   d) r\! r2 |
   R1*10 |
   \times 2/3 {fis4(\p^\solo e fis} \times 2/3 {e fis e} |
@@ -242,8 +230,7 @@ clarinetTwo = \relative c
 
   %2/4
   R2*12 |
-  \crescTextCresc
-  r4 a\p\< |
+  r4 a\p\cresc |
   \repeat unfold 7 {a a~} |
   a4 r8 a-.\ff |
   fis-. fis-. fis-. fis-. |

@@ -1,14 +1,11 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 bass = \relative c,
 {
   \set Staff.midiInstrument = "string ensemble 1"
   \clef "bass_8"
   \key c \minor
-  \grace {s16*3}
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \graceSync
   c4-.\ppSempreESottoVoce f-. c-. f-. |
   c-. d-. ees-. aes,-. |
   g-. aes-. g-. c-. |
@@ -19,7 +16,7 @@ bass = \relative c,
   aes[-. r r aes]-. a[-. r r a]-. |
   bes[-. r r bes]-. b[-. r r b]-. |
   c4-.\pp f,-. c'-. f,-. |
-  \dimTextDim c'-.\> \dimHairpin d-.\> ees-. aes-. |
+  c'-.\dim d-.\> ees-. aes-. |
   g-. aes-. ees4.\! r8 |
 
   %A
@@ -40,16 +37,15 @@ bass = \relative c,
   f1~( |
   f~ |
   f2 aes |
-  \dimTextDim des\> ges,~ |
-  \dimHairpin ges\> bes |
+  des\dim ges,~ |
+  ges\> bes |
   aes des4 c |
   bes2\! c2~) |
   c1~( |
   c |
   f2 bes,~ |
   bes b) |
-  \crescTextCresc
-  c2->\p\< c-> |
+  c2->\p\cresc c-> |
   c-> c4-> a-> |
   g-> a-> e-> a'-.\f |
   g-. c,-. g'-. c,-. |
@@ -82,7 +78,6 @@ bass = \relative c,
   g g~ |
   g c~) |
   c( c~ |
-  \crescHairpin
   c\< f,~ |
   f\> a) |
   c1\! |
@@ -93,8 +88,7 @@ bass = \relative c,
   des\> c2 c4~)\! |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  c2\< f,~ |
+  c2\justCrescPocoAPoco f,~ |
   f f |
   c' c~ |
   c e, |
@@ -120,10 +114,8 @@ bass = \relative c,
   fis8 e, e'4. d8 d4 |
   g,8[-.\sf r r fis]-. g[-. r r fis]-. |
   \repeat unfold 6 {g[-. r r fis]-.} |
-  \crescHairpin
   g[-. r r fis]-.\< g[-. r r g]-. |
   gis[-. r r gis]-. a[-. r r a]-. |
-  \dimHairpin
   f4-.\> d'-. g,-. g-. |
 
   %E
@@ -133,8 +125,7 @@ bass = \relative c,
   bes b c g |
   c g c g |
   c g c a |
-  \crescTextCrescPocoAPoco
-  d g, gis a\< |
+  d g, gis a\crescPocoAPoco |
   d b e b |
   e a, ais b |
   e d g d\f^\arco |
@@ -144,7 +135,6 @@ bass = \relative c,
   b-. fis'-. b-. fis,-. |
 
   \key g \major
-  \crescHairpin
   b2(\fp\< a |
   g fis) |
   e\pf gis |
@@ -152,7 +142,6 @@ bass = \relative c,
   cis4( b) cis( b) |
   a( gis fis e) |
   dis'( e fis gis) |
-  \crescHairpin
   a,2.\< fis4 |
   b2. gis4 |
   cis2\! fis, |
@@ -161,8 +150,7 @@ bass = \relative c,
   b2(\< a |
   g\> d') |
   g,\p b |
-  \dimJustTextDim
-  c2. g4\> |
+  c2. g4\justDim |
   c2. g4 |
   bes4( a f g) s1*0\! |
   R1*6 |
@@ -202,8 +190,7 @@ bass = \relative c,
   d2~ |
   d4 d,~ |
   d2~ |
-  \crescTextCresc
-  d4 d'(\p\< |
+  d4 d'(\p\cresc |
   cis4 a8 b |
   fis4) c'( |
   bes g8 a |
@@ -237,22 +224,17 @@ bass = \relative c,
   f4-. r8 aes-. des4-. r8 bes-. |
   c4.( c,8-.) f4-. r |
   r4 r8 f-.\p_\mezzaVoce ees4-. r |
-  \crescHairpin
-  \dimHairpin
   r4 r8 des-. c4-. r8 bes-.\< |
   beses2(\> aes~\! |
   aes des4) r |
-  \dimJustTextDim
-  r r8 dis-.\> cis4-. r |
+  r r8 dis-.\justDim cis4-. r |
   r4 r8 b-. ais4-. r8 gis-. |
-  \dimHairpin
   g2(\> fis~ |
   fis g4)\! r |
   R1 |
   << {s4\< s s\> s s1*0\!} c1 >> |
   s1*0\p \repeat unfold 8 {g8[-. r r fis]-.} |
-  \crescJustTextCrescMolto
-  g[-.\< r r fis]-. g[-. r r g]-. |
+  g[-.\justCrescMolto r r fis]-. g[-. r r g]-. |
   aes[-. r r aes]-. a[-. r r a]-. |
   bes[-. r r bes]-. ees[-. r r ees]-. |
   aes4-. d,-. g-. g,-. |
@@ -297,7 +279,6 @@ bass = \relative c,
   fis8 e, e'4. d8 d4 |
 
   %L
-  \crescHairpin
   g2(\fp\< f |
   ees d) |
   c\pocoF e |
@@ -311,8 +292,7 @@ bass = \relative c,
 
   %M
   g2(\< f |
-  \dimHairpin
-  ees2\> bes) |
+  ees2\justDim bes) |
   ees\p g, |
   aes2. bes4 |
   c( bes) c( bes) |
@@ -335,8 +315,7 @@ bass = \relative c,
   R2*10 |
   r4 g~\p |
   g2~ |
-  \crescTextCresc
-  g4 g''(\p\< |
+  g4 g''(\p\cresc |
   fis4 d8 e |
   b4) f'( |
   ees c8 d |

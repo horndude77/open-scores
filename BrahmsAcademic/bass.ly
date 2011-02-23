@@ -1,7 +1,7 @@
-\version "2.13.15"
+\version "2.13.51"
 
-\include "bass.ily"
 \include "defs.ily"
+\include "bass.ily"
 
 instrument = "Bass"
 

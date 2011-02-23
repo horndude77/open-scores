@@ -1,10 +1,8 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 bassDrum = \drummode
 {
-  \grace {s16*3}
+  \graceSync
   bd4-.\pp r bd-. r |
   bd r r2 |
   R1 |
@@ -99,7 +97,7 @@ bassDrum = \drummode
 
 cymbals = \drummode
 {
-  \grace {s16*3}
+  \graceSync
   cymr4-.\pp r cymr-. r |
   cymr r r2 |
   R1 |
@@ -188,7 +186,7 @@ cymbals = \drummode
 
 triangle =
 {
-  \grace {s16*3}
+  \graceSync
   R1*16 |
 
   %A

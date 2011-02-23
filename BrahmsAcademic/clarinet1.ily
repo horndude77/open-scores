@@ -1,13 +1,11 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 clarinetOne = \relative c''
 {
   \set Staff.midiInstrument = "clarinet"
   \transposition bes
   \key d \minor
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceOne
@@ -81,7 +79,6 @@ clarinetOne = \relative c''
   cis4-. r r2 |
   R1*5 |
   r2 r4 cis(\mf |
-  \crescHairpin
   dis) r r dis(\< |
   eis) r r eis( |
   fis2.\! dis4) |
@@ -90,8 +87,7 @@ clarinetOne = \relative c''
   cis r r2 |
   R1 |
   r2 r4 e(\mp |
-  \dimJustTextDim
-  fis e d cis)\> |
+  fis e d cis)\justDim |
   f( e d c) |
   R1 |
   b4.(\pDolce^\solo cis8) b4.( cis8) |
@@ -99,7 +95,6 @@ clarinetOne = \relative c''
   R1*8 |
   \times 2/3 {a,4(_\dolce^\solo gis a} \times 2/3 {gis a b} |
   \times 2/3 {cis) r r} \times 2/3 {r r d(} |
-  \dimHairpin
   \times 2/3 {e dis e} \times 2/3 {dis e fis)\>} |
   e4( d) r b\! |
 
@@ -137,8 +132,7 @@ clarinetOne = \relative c''
   gis a |
   b) gis'~( |
   gis a |
-  \crescTextCresc
-  b) e~\p\< |
+  b) e~\p\cresc |
   \repeat unfold 7 {e e~} |
   e4 r8 e,\ff |
   a a a a |
@@ -174,13 +168,10 @@ clarinetOne = \relative c''
   g4-. r8 bes-. a4-. r8 g-. |
   a4.( bes8) g4-. r |
   R1*9 |
-  \crescHairpin
   b,,1\p\< |
-  \dimHairpin
   cis4\> r\! r2 |
   R1*4 |
-  \crescJustTextCresc
-  r4 g''2\p\< f4 |
+  r4 g''2\p\justCresc f4 |
   r4 e4. r8 e4~ |
   e8 r g2-> e4-. |
 
@@ -192,8 +183,7 @@ clarinetOne = \relative c''
   ees'4-> f8-. d-. ges,4-> aes8-. f-. |
   ees4-> cis8-. b-. ais4-> fis-> |
   dis'4 a'( g fis |
-  \crescJustTextCresc
-  c' b a) g(\< |
+  c' b a) g(\justCresc |
   c bes aes) cis( |
   b a) d( c |
   bes a g f) |
@@ -227,7 +217,6 @@ clarinetOne = \relative c''
   %L
   cis8-. r r4 r2 |
   R1*5 |
-  \crescHairpin
   r2 r4 a(\mf\< |
   b) r r b( |
   cis) r r cis( |
@@ -242,13 +231,10 @@ clarinetOne = \relative c''
   g4(\< a bes\> aes) s1*0\! |
   g4( a bes c) |
   d( c bes) bes( |
-  \dimJustTextDim
-  c\> bes a) a( |
+  c\justDim bes a) a( |
   bes a g f) s1*0\! |
   R1*2 |
   a4.(\pDolce b8) a4.( b8) |
-  \crescHairpin
-  \dimHairpin
   a4(\< b c\> e) s1*0\! |
   r2 a4.(\< e8)\> |
   d4\! r r2 |
@@ -269,8 +255,7 @@ clarinetOne = \relative c''
   a d,( |
   b) r |
   R2*3 |
-  \crescTextCresc
-  r4 a'~\p\< |
+  r4 a'~\p\cresc |
   \repeat unfold 7 {a a~} |
   a4 r8 a,-.\ff |
   d-. d-. d-. d-. |

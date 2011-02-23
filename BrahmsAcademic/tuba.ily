@@ -1,13 +1,11 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 tuba = \relative c,,
 {
   \set Staff.midiInstrument = "tuba"
   \clef "bass_8"
   \key c \minor
-  \grace {s16*3}
+  \graceSync
   R1*16 |
 
   %A
@@ -48,8 +46,7 @@ tuba = \relative c,,
   des c2) c4~ |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  c2\< c |
+  c2\justCrescPocoAPoco c |
   f1 |
   R1 |
   r2 e, |
@@ -77,7 +74,6 @@ tuba = \relative c,,
   R1*7 |
 
   %F
-  \crescHairpin
   b'2(\p\< a |
   g\> d) |
   g4\p r r2 |

@@ -1,13 +1,11 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 tromboneThree = \relative c
 {
   \set Staff.midiInstrument = "trombone"
   \clef bass
   \key c \minor
-  \grace {s16*3}
+  \graceSync
   R1*16 |
 
   %A
@@ -37,8 +35,7 @@ tromboneThree = \relative c
   bes |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  a1~\< |
+  a1~\justCrescPocoAPoco |
   a2 f, |
   c'1~ |
   c2 e |
@@ -63,7 +60,6 @@ tromboneThree = \relative c
   R1*14 |
 
   \key g \major
-  \crescHairpin
   dis1(\p\< |
   d2 b) |
   b4\p r r2 |

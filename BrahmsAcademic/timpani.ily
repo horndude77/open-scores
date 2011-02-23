@@ -1,12 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 timpani = \relative c
 {
   \set Staff.midiInstrument = "timpani"
   \clef bass
-  \grace {s16*3}
+  \graceSync
   c4-.\pp r c-. r |
   c-. r r2 |
   g4-. r g-. r |
@@ -50,8 +48,7 @@ timpani = \relative c
   c\> |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  c\!\< |
+  c\justCrescPocoAPoco |
   c c c |
   g g g g\stopTrillSpan |
 
@@ -86,8 +83,7 @@ timpani = \relative c
   %G
   R2*22 |
   R2*16 |
-  \crescTextCresc
-  r4 \times 2/3 {d8\p\< d d} |
+  r4 \times 2/3 {d8\p\cresc d d} |
   \repeat unfold 6 {\times 2/3 {\repeat tremolo 3 d8}} |
   d4-. r8 d-.\ff |
   r g,-. r g-. |
@@ -138,8 +134,7 @@ timpani = \relative c
 
   %2/4
   R2*12 |
-  \crescTextCresc
-  r4 \times 2/3 {g8\p\< g g} |
+  r4 \times 2/3 {g8\p\cresc g g} |
   \repeat unfold 7 {\times 4/6 {\repeat tremolo 6 g8}} |
   g4 r8 g-.\ff |
   r8 c-. r c-. |

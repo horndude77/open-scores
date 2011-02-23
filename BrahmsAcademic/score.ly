@@ -1,6 +1,6 @@
-\version "2.13.15"
+\version "2.13.51"
 
-\include "merge_rests.ily"
+\include "merge-rests.ily"
 \include "defs.ily"
 \include "flute1.ily"
 \include "flute2.ily"
@@ -31,30 +31,13 @@
 \include "viola.ily"
 \include "bass.ily"
 
+#(set-global-staff-size 14)
+
 \layout
 {
-  \context
-  {
-    \RemoveEmptyStaffContext
-  }
-
-  \context
-  {
-    \RemoveEmptyRhythmicStaffContext
-  }
-
-  %Ugh. The remove staff stuff above kills all previous settings.
-  \context
-  {
-    \RhythmicStaff
-
-    %Workaround bug. Without this the multimeasure rest would be placed above
-    %the staffline.
-    \override MultiMeasureRest #'staff-position = #0.01
-  }
+  \mergeRests
 }
 
-#(set-global-staff-size 14)
 instrument = "Orchestra"
 
 \include "header.ily"
@@ -79,7 +62,6 @@ instrument = "Orchestra"
           \piccolo
         }
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = "Flutes I,II"
           \set Staff.shortInstrumentName = "Fl.I,II"
@@ -88,21 +70,18 @@ instrument = "Orchestra"
             {
               \voiceOne
               \dynamicUp
-              \revert MultiMeasureRest #'staff-position
               \fluteOne
             }
             \new Voice
             {
               \voiceTwo
               \dynamicDown
-              \revert MultiMeasureRest #'staff-position
               \fluteTwo
             }
           >>
         }
       >>
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = "Oboes I,II"
         \set Staff.shortInstrumentName = "Ob.I,II"
@@ -111,20 +90,17 @@ instrument = "Orchestra"
           {
             \voiceOne
             \dynamicUp
-            \revert MultiMeasureRest #'staff-position
             \oboeOne
           }
           \new Voice
           {
             \voiceTwo
             \dynamicDown
-            \revert MultiMeasureRest #'staff-position
             \oboeTwo
           }
         >>
       }
       \new Staff
-      \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
       {
         \set Staff.instrumentName = \markup{\center-column {\line {Clarinets I,II} \line {in B\flat}}}
         \set Staff.shortInstrumentName = "Cl.I,II"
@@ -133,14 +109,12 @@ instrument = "Orchestra"
           {
             \voiceOne
             \dynamicUp
-            \revert MultiMeasureRest #'staff-position
             \clarinetOne
           }
           \new Voice
           {
             \voiceTwo
             \dynamicDown
-            \revert MultiMeasureRest #'staff-position
             \clarinetTwo
           }
         >>
@@ -148,7 +122,6 @@ instrument = "Orchestra"
       \new GrandStaff
       <<
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = "Bassoons I,II"
           \set Staff.shortInstrumentName = "Bsn.I,II"
@@ -176,7 +149,6 @@ instrument = "Orchestra"
       \new GrandStaff
       <<
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = ""
           \set Staff.instrumentName = \markup{\center-column {\line {Horns I,II} \line {in C}}}
@@ -186,20 +158,17 @@ instrument = "Orchestra"
             {
               \voiceOne
               \dynamicUp
-              \revert MultiMeasureRest #'staff-position
               \hornOne
             }
             \new Voice
             {
               \voiceTwo
               \dynamicDown
-              \revert MultiMeasureRest #'staff-position
               \hornTwo
             }
           >>
         }
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = \markup{\center-column {\line {Horns III,IV} \line {in E}}}
           \set Staff.shortInstrumentName = "Hn.III,IV"
@@ -208,14 +177,12 @@ instrument = "Orchestra"
             {
               \voiceOne
               \dynamicUp
-              \revert MultiMeasureRest #'staff-position
               \hornThree
             }
             \new Voice
             {
               \voiceTwo
               \dynamicDown
-              \revert MultiMeasureRest #'staff-position
               \hornFour
             }
           >>
@@ -224,7 +191,6 @@ instrument = "Orchestra"
       \new GrandStaff
       <<
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = \markup{\center-column {\line {Trumpets I,II} \line {in C}}}
           \set Staff.shortInstrumentName = "Tpt.I,II"
@@ -233,14 +199,12 @@ instrument = "Orchestra"
             {
               \voiceOne
               \dynamicUp
-              \revert MultiMeasureRest #'staff-position
               \trumpetOne
             }
             \new Voice
             {
               \voiceTwo
               \dynamicDown
-              \revert MultiMeasureRest #'staff-position
               \trumpetTwo
             }
           >>
@@ -255,7 +219,6 @@ instrument = "Orchestra"
       \new GrandStaff
       <<
         \new Staff
-        \with { \override RestCollision #'positioning-done = #merge-rests-on-positioning }
         {
           \set Staff.instrumentName = "Trombone I,II"
           \set Staff.shortInstrumentName = "Tb.I,II"
@@ -264,14 +227,12 @@ instrument = "Orchestra"
             {
               \voiceOne
               \dynamicUp
-              \revert MultiMeasureRest #'staff-position
               \tromboneOne
             }
             \new Voice
             {
               \voiceTwo
               \dynamicDown
-              \revert MultiMeasureRest #'staff-position
               \tromboneTwo
             }
           >>
@@ -384,4 +345,3 @@ instrument = "Orchestra"
     }
   }
 }
-

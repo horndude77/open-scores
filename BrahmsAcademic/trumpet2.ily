@@ -1,11 +1,9 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 trumpetTwo = \relative c'
 {
   \set Staff.midiInstrument = "trumpet"
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceTwo
@@ -48,8 +46,7 @@ trumpetTwo = \relative c'
   g4 r c2 |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  c1~\< |
+  c1~\justCrescPocoAPoco |
   c~ |
   c2 g |
   c e |
@@ -100,8 +97,7 @@ trumpetTwo = \relative c'
 
   %H
   R2*16 |
-  \crescTextCresc
-  r4 d4~\p\< |
+  r4 d4~\p\cresc |
   \repeat unfold 3 {d d~ |}
   d r8 d-.\f |
   r g,,-. r g-. |
@@ -121,8 +117,7 @@ trumpetTwo = \relative c'
   c2.\mf r4 |
   c2. r4 |
   R1*2 |
-  \crescJustTextCresc
-  c4.\p\< c8 c4. c8 |
+  c4.\p\justCresc c8 c4. c8 |
   c4. c8 c4. c8 |
 
   %I
@@ -165,8 +160,7 @@ trumpetTwo = \relative c'
 
   %2/4
   R2*12 |
-  \crescTextCresc
-  r4 g'~\p\< |
+  r4 g'~\p\cresc |
   g g~ |
   g g~ |
   g g~ |

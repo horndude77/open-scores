@@ -1,11 +1,9 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 trumpetThree = \relative c''
 {
   \set Staff.midiInstrument = "trumpet"
-  \grace {s16*3}
+  \graceSync
   R1*16 |
 
   %A
@@ -34,8 +32,7 @@ trumpetThree = \relative c''
   c4 r c2 |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  c1~\< |
+  c1~\justCrescPocoAPoco |
   c~ |
   c2 e |
   g c |

@@ -1,12 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 oboeTwo = \relative c'''
 {
   \set Staff.midiInstrument = "oboe"
   \key c \minor
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceTwo
@@ -44,8 +42,7 @@ oboeTwo = \relative c'''
   c4 r c2 |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  f2-.(\< f-. |
+  f2-.(\justCrescPocoAPoco f-. |
   a-. f-.) |
   e1 |
   c2 c |
@@ -118,8 +115,7 @@ oboeTwo = \relative c'''
 
   %H
   R2*12 |
-  \crescJustTextCresc
-  r4 d~\p\< |
+  r4 d~\p\justCresc |
   \repeat unfold 7 {d d~} |
   d4 r8 d-.\ff |
   b b b b |
@@ -155,8 +151,7 @@ oboeTwo = \relative c'''
   f4-. r8 aes-. g4-. r8 f-. |
   e2 f4-. r |
   R1*15 |
-  \crescJustTextCresc
-  r4 d2\p\< c4 |
+  r4 d2\p\justCresc c4 |
   r4 bes4. r8 d4~ |
   d8 r c2-> b4-. |
 
@@ -168,8 +163,7 @@ oboeTwo = \relative c'''
   e4-> fis8-. dis-. e4-> dis8-. bis-. |
   cis4-> fis,-> e-> e-> |
   a1( |
-  \crescJustTextCresc
-  cis2 a4) bes~\< |
+  cis2 a4) bes~\justCresc |
   bes2 b~-> |
   b4 c2.-> |
   c4( g' f ees) |
@@ -215,8 +209,7 @@ oboeTwo = \relative c'''
 
   %2/4
   R2*12 |
-  \crescTextCresc
-  r4 g~\p\< |
+  r4 g~\p\cresc |
   \repeat unfold 7 {g g~} |
   g4 r8 g-.\ff |
   e-. e-. e-. e-. |

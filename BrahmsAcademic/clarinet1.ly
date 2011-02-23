@@ -1,7 +1,7 @@
-\version "2.13.15"
+\version "2.13.51"
 
-\include "clarinet1.ily"
 \include "defs.ily"
+\include "clarinet1.ily"
 
 instrument = \markup {Clarinet I in B\flat}
 

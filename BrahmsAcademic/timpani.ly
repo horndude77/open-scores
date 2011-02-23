@@ -1,7 +1,7 @@
-\version "2.13.15"
+\version "2.13.51"
 
-\include "timpani.ily"
 \include "defs.ily"
+\include "timpani.ily"
 
 instrument = "Timpani G,C,D"
 

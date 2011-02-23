@@ -1,7 +1,7 @@
-\version "2.13.15"
+\version "2.13.51"
 
-\include "trumpet2.ily"
 \include "defs.ily"
+\include "trumpet2.ily"
 
 instrument = "Trumpet II in C"
 

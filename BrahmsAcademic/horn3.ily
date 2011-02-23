@@ -1,12 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 hornThree = \relative c''
 {
   \set Staff.midiInstrument = "french horn"
   \transposition e
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceOne
@@ -33,7 +31,7 @@ hornThree = \relative c''
   ees2. r4 |
   R1*12 |
   R1*8 |
-  f'2-.(\p^\markup{\italic dolce}\< f-. |
+  f'2-.(\p^\dolce\< f-. |
   f-.\> f-.) |
   ees1\! |
   c2 ees |
@@ -43,12 +41,12 @@ hornThree = \relative c''
   c4 r r2 |
 
   %D
-  f2_\markup{\italic{cresc. poco a poco}} f |
+  f2\justCrescPocoAPoco f |
   aes f |
   ees1 |
   c2 ees |
   ees des4-.( c-.) |
-  des1~ | des | bes |
+  des1~ | des | bes s1*0\! |
 
   %\time 4/4
   R1*7 |
@@ -56,7 +54,7 @@ hornThree = \relative c''
   g'4-> f8-. d-. ees4-. r |
   g4-> f8-. d-. ees4-. r |
   R1*2 |
-  f4_\markup{\italic marc.} f f f |
+  f4_\marc f f f |
   ees2 c4 ees |
   ees des8 c des2 |
   des4 c8 b c2 |
@@ -79,13 +77,13 @@ hornThree = \relative c''
   g1(\< |
   bes~\>) |
   bes2\p ees~ |
-  ees1~_\markup{\italic dim.}
+  ees1~\justDim
   ees~ |
-  ees4( c ces bes) |
+  ees4(\! c ces bes) |
   R1*4 |
   r2 ees4.\p\<( f8)\> |
   ees4\! r ees4.( f8) |
-  g2.(_\markup{\italic espr.} f4) |
+  g2.(_\espr f4) |
   ees2.( d4) |
   des2.( c4~) |
   c\< ces2(\> bes4)\! |
@@ -154,9 +152,9 @@ hornThree = \relative c''
   ees2 c4 ees~ |
   ees des des des |
   c2 r |
-  f4_\markup{\italic cresc.} f aes f |
+  f4\justCresc f aes f |
   ees2 c4 ees |
-  ees des8 c des2 |
+  ees des8 c\! des2 |
   des4 c8 b c2 |
   R1*2 |
 
@@ -165,7 +163,7 @@ hornThree = \relative c''
 
   %M
   R1*10 |
-  bes4.(_\markup{\dynamic p \italic dolce} c8) bes4.( c8) |
+  bes4.(\pDolce c8) bes4.( c8) |
   bes4(\< c des\> f)\! |
   R1*12 |
 

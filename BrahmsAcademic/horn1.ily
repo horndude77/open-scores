@@ -1,12 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 hornOne = \relative c''
 {
   \set Staff.midiInstrument = "french horn"
   \transposition c
-  \grace {s16*3}
+  \graceSync
   \tag #'score
   {
     \voiceOne
@@ -25,8 +23,7 @@ hornOne = \relative c''
   g8 g8 f4. f8 ees4~ |
   ees8\< d\! (g\> f\!) ees4 d |
   c4-.\pp d-. c-. d-. |
-  \dimJustTextDim
-  c-.\> bes-. g-. ees-. |
+  c-.\justDim bes-. g-. ees-. |
   g-. ees-. g4.-. r8 |
 
   %A
@@ -43,8 +40,7 @@ hornOne = \relative c''
   f ees |
   des ees |
   f1~ |
-  \dimJustTextDim
-  f2\> ges4 f |
+  f2\justDim ges4 f |
   ees2 des |
   ees des) |
   R1*5 |
@@ -85,8 +81,7 @@ hornOne = \relative c''
   r4 c2 c4~ |
 
   %D
-  \crescJustTextCrescPocoAPoco
-  c2\< c |
+  c2\justCrescPocoAPoco c |
   c d |
   e1 |
   c2 g' |
@@ -118,10 +113,8 @@ hornOne = \relative c''
   r8^\solo d'8-.\p e4. e8-. d4 |
   R1 |
   r8 d8-. g4. g8-. f4 |
-  \crescHairpin
   r8 d8-. a'4. a8-. g4~\< |
   g8 g8 f4. f8 e4~ |
-  \dimHairpin
   e8 d(\> g f) c4 d s1*0\! |
 
   %E
@@ -159,8 +152,7 @@ hornOne = \relative c''
   e4) r |
   R2*3
   r4 d~\p |
-  \crescTextCresc
-  d\< d~ |
+  d\cresc d~ |
   d d~ |
   d d~ |
   d d~ |
@@ -204,21 +196,17 @@ hornOne = \relative c''
   ges2..-+ ges8-+ |
   ges2..-+ ges8~-+( |
   ges1-+ |
-  \dimJustTextDim
-  f2)-+ r4 r8 e\>^\open |
+  f2)-+ r4 r8 e\justDim^\open |
   e2.. e8 |
-  \dimHairpin
   e2.. e8~(\> |
   e1 |
-  \crescHairpin
   d2\!) r4 ees~\p\< |
   ees1~ |
   ees1 \> |
   d4\! r4 r2 |
   R1*2 |
   r4 g2\p f4 |
-  \crescJustTextCresc
-  r4 aes2\< g4 |
+  r4 aes2\justCresc g4 |
   r4 f2 ees4 |
   r4 d4. r8 g4~ |
   g8 r8 f2-> d4-. |
@@ -253,8 +241,7 @@ hornOne = \relative c''
   c4 c c c |
   c1 |
   c4 c c c |
-  \crescJustTextCresc
-  c\< c c c |
+  c\justCresc c c c |
   c c e e |
   e2 e4 d8 cis |
   d2 d4 c!8 b |
@@ -262,7 +249,6 @@ hornOne = \relative c''
   c d4-. d-. |
 
   %L
-  \crescHairpin
   g,1~\fp\< |
   g |
   g2(\p c~) |
@@ -275,9 +261,7 @@ hornOne = \relative c''
   e2 c) |
 
   %M
-  \crescHairpin
   g1(\< |
-  \dimHairpin
   bes1~)\> |
   bes2.\! ees4~\mpEspr |
   ees1~ |
@@ -285,12 +269,9 @@ hornOne = \relative c''
   ees4 ees4( d a) |
   bes4( ees2) ees4~ |
   ees2. d4~ |
-  \dimJustTextDim
-  d2.\>( c4~) |
+  d2.\justDim( c4~) |
   c c( d c) |
   R1*4 |
-  \crescHairpin
-  \dimHairpin
   c4.\p^\solo(\< d8)\> c4\! r4 |
   c4.(\< d8)\> c4\! r4 |
   e2.(\pEspr d4) |
@@ -302,8 +283,7 @@ hornOne = \relative c''
   %2/4
   R2*12 |
   r4 g~\p |
-  \crescTextCresc
-  g\< g~ |
+  g\cresc g~ |
   g g~ |
   g g~ |
   g g~ |

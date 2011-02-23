@@ -1,13 +1,11 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 piccolo = \relative c'''
 {
   \set Staff.midiInstrument = "flute"
   \clef "treble^8"
   \key c \minor
-  \grace {s16*3}
+  \graceSync
   R1*16 |
 
   %A
@@ -83,8 +81,7 @@ piccolo = \relative c'''
   cis'4-> dis8-. bis-. cis4-. r |
   R1 |
   r4 g( f e |
-  \crescJustTextCresc
-  bes' a g) f(\< |
+  bes' a g) f(\justCresc |
   bes aes ges) b( |
   a g) c( bes |
   aes g f ees) |

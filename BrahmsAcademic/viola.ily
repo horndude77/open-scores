@@ -1,14 +1,11 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 viola = \relative c
 {
   \set Staff.midiInstrument = "string ensemble 1"
   \clef alto
   \key c \minor
-  \grace {s16*3}
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \graceSync
   ees4-.\ppSempreESottoVoce f-. ees-. f-. |
   ees-. f-. ees-. ees8-. f-. |
   g4-> ees8-. f-. g4-> c-. |
@@ -24,8 +21,7 @@ viola = \relative c
   aes[-. r r aes]-.  a[-. r r a]-.
   bes4-. r g-. r |
   r8 c-. d-. b-. r8 c-. d-. b-. |
-  \dimTextDim
-  r c-.\> bes-. aes-. r \dimHairpin g-.\> ees-. f-. |
+  r c-.\dim bes-. aes-. r g-.\> ees-. f-. |
   r g-. ees-. f-.\! r4 <ees g>-. |
 
   %A
@@ -48,15 +44,13 @@ viola = \relative c
   g f~ |
   f4) r r2 |
   R1*4 |
-  \dimJustTextDim
-  r2 des,~(\pp\> |
+  r2 des,~(\pp\justDim |
   des c~ |
   c1~ |
   c~ |
   c2 des~ |
   des d) |
-  \crescTextCresc
-  e4-.\p\< f-. e-. f-. |
+  e4-.\p\cresc f-. e-. f-. |
   e-. d-> e-> e8-. fis-. |
   g4-> c-> b-> c'-.\f |
   \repeat unfold 2 {<d, b'>-. <ees c'>-.} |
@@ -88,8 +82,7 @@ viola = \relative c
   R1*4 |
   r4 g16(\f a b c d4) r |
   r16 g,( a b c d e f g4) r |
-  \crescJustTextCresc
-  r g,16(\< a b c d-.) g,( a b c d e f |
+  r g,16(\justCresc a b c d-.) g,( a b c d e f |
   g-.) g,( a b c d e f g8-.) r g16( f e d) |
 
   %4/4
@@ -115,10 +108,8 @@ viola = \relative c
   R1 |
   r8 g-. a-. fis-. r g-. a-. fis-. |
   R1 |
-  \crescHairpin
   g8[-. r r fis]-.\< g[-. r r g]-. |
   gis8[-. r r gis]-. a[-. r r a]-. |
-  \dimHairpin
   f4-.\> d-. g-. f-. |
 
   %E
@@ -128,8 +119,7 @@ viola = \relative c
   d\> g2 f4) s1*0\! |
   e4( f e g |
   g) b( c\< cis |
-  \crescTextCrescPocoAPoco
-  d)\! g,8( f e4) e'(\< |
+  d)\! g,8( f e4) e'(\crescPocoAPoco |
   a, b8 a g4) dis'( |
   e) a,8( g fis4) fis'( |
   b, d8 c b4) <a' fis>\f |
@@ -138,7 +128,6 @@ viola = \relative c
   <fis dis> fis8( e) dis4-. <cis ais'>-. |
 
   \key g \major
-  \crescHairpin
   <dis fis>-.\fp r8 b8(\< b4. b'8) |
   b2.( a4) |
   gis2(\pocoFEspr\< b4 e,) |
@@ -146,14 +135,12 @@ viola = \relative c
   ais4.( b8) ais4.( b8) |
   cis4(\< b a\> g) s1*0\! |
   fis4( gis a b) |
-  \crescHairpin
   e(\< dis cis ais) |
   fis'( e dis bis) s1*0\! |
   gis'2.( e4) |
 
   %F
   dis4 r8 b(\< b2~ |
-  \dimHairpin
   b fis) |
   g1~\p |
   g4 r r2 |
@@ -163,9 +150,7 @@ viola = \relative c
   r4 d(\< e2)\> s1*0\! |
   r4 d-.( r d-.) |
   r4 g(\< a2)\> s1*0\! |
-  \dimJustTextDim
-  r4 g-.( r g-.)\> |
-  \dimHairpin
+  r4 g-.( r g-.)\justDim |
   r f-.(\> r g-.) s1*0\! |
   r8 cis,\p^\pizz e g b r r4 |
   r8 d, g b d r r4 |
@@ -173,8 +158,7 @@ viola = \relative c
   e a, ees' d |
   e,_\dolce^\arco r r2 |
   g4 r r2 |
-  \dimJustTextDim
-  e4\> r r2 |
+  e4\justDim r r2 |
   e4 r fis r |
 
   %2/4
@@ -220,16 +204,13 @@ viola = \relative c
   dis4 e |
   fis8-. fis-. fis-. gis-. |
   fis-. e-. e4~ |
-  \dimJustTextDim
-  e8 dis dis4~\> |
+  e8 dis dis4~\justDim |
   dis8 d d4~ |
-  \dimHairpin
   d8\> cis cis4~ |
   cis8 fis, fis4~\! |
   fis r8 fis( |
   fis'2~) |
-  \dimJustTextDim
-  fis4.\> fis,8( |
+  fis4.\justDim fis,8( |
   fis'2~) |
   fis4. fis,8( |
   fis'2~) |
@@ -244,14 +225,12 @@ viola = \relative c
   r8 d( g4~) |
   g r |
   r8 g( d'4~) |
-  g r8 g,( |
-  \crescHairpin
+  d r8 g,( |
   a4) d,(\< |
   d' cis8\! d |
   a4) d( |
   cis a8 b |
-  \crescTextCresc
-  fis4) d''(\p\< |
+  fis4) d''(\p\cresc |
   cis a8 b |
   fis4) c'( |
   bes4 g8 a |
@@ -289,9 +268,8 @@ viola = \relative c
       ees4-. <des f>-. <c e>-.
     }
   >> \oneVoice b8-.^\unis c-. |
-  \crescJustTextCresc
   <<
-    {s1 s s\< s}
+    {s1 s s\justCresc s}
     \repeat unfold 4 {c2. b8-. c-. |}
   >> |
   c4. c8 c4. c8 |
@@ -303,22 +281,18 @@ viola = \relative c
   aes4-. r8 c-. bes4-. r8 aes-. |
   g4.->( c8-.) f,4-. r |
   R1 |
-  \crescHairpin
   r4 r8 f8-.\p_\mezzaVoce ees4-. r8 des8~(\< |
-  \dimHairpin
   des2\> c |
   des2)\! r |
   R1 |
-  \dimJustTextDim
-  r4 r8 dis-.\> cis4-. r8 \dimHairpin b~(\> |
+  r4 r8 dis-.\justDim cis4-. r8 b~(\> |
   b2 ais |
   b)\! r |
   R1*3 |
   r8 d,\p ees4. ees8 d4 |
   R1 |
   r8 d g4. g8 f4 |
-  \crescJustTextCrescMolto
-  r8 d\< aes'4. aes8 g4~ |
+  r8 d\justCrescMolto aes'4. aes8 g4~ |
   g8 f <d' f>4. <d f>8 <c ees>4~ |
   <c ees>8 <b d> <d bes'>4. <g bes>8 <g bes>4~ |
   <g bes>8 <aes c> <aes f'>4. <aes f'>8-. <g d'>4-. |
@@ -363,7 +337,6 @@ viola = \relative c
   g'4. g8 fis4-. <d a'>-. |
 
   %L
-  \crescHairpin
   <g, d' b'>-.\fp r8 g(\< g4. g'8) |
   g4.( g,8) g4.( f'8) |
   e2(\pocoFEspr\< g4 c,) |
@@ -384,23 +357,17 @@ viola = \relative c
   r c ees bes r aes c ges |
   r f r g r aes r bes |
   r4 ees,8 g aes c aes f |
-  \dimJustTextDim
-  r4 d8 f g bes g ees |
+  r4 d8\justDim f g bes g ees |
   r c' g c aes d g, c |
   r4 c\pDolce^\arco r b |
-  \crescHairpin
-  \dimHairpin
   r cis(\< d\> a) s1*0\! |
   r4 d r d |
   r c( bes2) |
-  \dimJustTextDim
-  r4 <c e,>4-.(\> r f,-.) |
+  r4 <c e,>4-.(\justDim r f,-.) |
   r g-.( r a-.) |
   R1 |
   e'4.(_\dolce d8 e4 f) |
   g4.( fis8 g4 a) |
-  \crescHairpin
-  \dimHairpin
   << {g4( f2 d4)} {s4\< s s\> s s1*0\!} >>
   fis,4_\dolce r r2 |
   g4 r r2 |
@@ -420,8 +387,7 @@ viola = \relative c
   R2 |
   r4 g,~( |
   g a |
-  \crescTextCresc
-  b) g'(\p\< |
+  b) g'(\p\cresc |
   fis d8 e |
   b4) f'( |
   ees c8 d |
@@ -447,7 +413,7 @@ viola = \relative c
   s1*0\ff \times 2/3 {\repeat unfold 3 <e g>16} \times 2/3 {\repeat unfold 3 <f b>}
     \times 4/6 {\repeat tremolo 6 <g c>}
     \times 4/6 {\repeat tremolo 6 <g e'>} |
-  \tupletNumberOff
+  \tupletOff
   \times 2/3 {\repeat tremolo 3 <a c>} \times 2/3 {\repeat tremolo 3 <g cis>}
     \times 4/6 {\repeat tremolo 6 <f d'>}
     \times 4/6 {\repeat tremolo 6 <a d>} |
@@ -462,10 +428,10 @@ viola = \relative c
   g d' g fis g g, g' fis g f e d |
   c g' c b c c, c' b c b} a8-. |
   g-. r
-  \tupletNumberOn
+  \tupletOn
     \times 2/3 {\repeat unfold 3 <b, d>16} \times 2/3 {\repeat unfold 3 <c fis>16}
     \times 4/6 {\repeat tremolo 6 <d g>} |
-  \tupletNumberOff
+  \tupletOff
   \tremolos #16 {\times 4/6 {<e g>4.}
     \times 2/3 {<d g>8.} \times 2/3 {<d b'>}
     \times 2/3 {<d d'>8.} \times 2/3 {<fis d'>}} |

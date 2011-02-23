@@ -1,13 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 violinOne = \relative c'
 {
   \set Staff.midiInstrument = "string ensemble 1"
   \key c \minor
   \appoggiatura {g16[ a b]}
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   c8-.->\ppSempreESottoVoce c-. d-. b-. c-.-> c-. d-. b-. |
   c4-> bes8-> aes-. g4 r |
   g r g ees'8-. f-. |
@@ -36,15 +33,13 @@ violinOne = \relative c'
   e f4 ees |
   des) r r2 |
   R1*4 |
-  \dimJustTextDim
-  r2 des~(\pp\> |
+  r2 des~(\pp\justDim |
   des c~ |
   c1~ |
   c1~ |
   c2 bes4 aes |
   g1) |
-  \crescTextCresc
-  c8-.\p\< c-. des-. b-. c8-. c-. des-. b-. |
+  c8-.\p\cresc c-. des-. b-. c8-. c-. des-. b-. |
   c4-> b8-. a-. g4 c-> |
   b-> e8-. fis-. g4-> e'8-.\f fis-. |
   \repeat unfold 2 {g-. g-. a-. fis-.} |
@@ -76,8 +71,7 @@ violinOne = \relative c'
   R1*4 |
   r4 g,16(\f^\arco a b c d4) r |
   r16 g,( a b c d e f g4) r |
-  \crescJustTextCresc
-  r g16(\< a b c d-.) g,( a b c d e f |
+  r g16(\justCresc a b c d-.) g,( a b c d e f |
   g-.) g,( a b c d e f \times 4/5 {g16-.) g,( a b c} \times 4/6 {d e f g a b)} |
 
   %4/4
@@ -104,15 +98,12 @@ violinOne = \relative c'
 
   %E
   c4( d8 b c4 f |
-  \crescHairpin
   e4\< f8 d e4 a8 g |
   f4 e8 d e4 a8 g) |
-  \dimHairpin
   f4(\> e8 d e4 d) s1*0\! |
   c4( d8 b c4 f |
   e f8 d e4) a8( g |
-  \crescTextCrescPocoAPoco
-  f4 d8 d e4) a8(\< g |
+  f4 d8 d e4) a8(\crescPocoAPoco g |
   f4 fis g) b8( a |
   g4 fis8 e fis4) b8( a |
   g4 a b) d'8(\f c) |
@@ -122,11 +113,9 @@ violinOne = \relative c'
   dis4-. ais-. b-. fis-. |
 
   \key g \major
-  \crescHairpin
   b,4-.\fp r8 b,(\< b4. b'8) |
   b2~( b4. b'8) |
   b4.(\pocoF\< gis8 e4 e'~) |
-  \dimHairpin
   e1~\> |
   e~\! |
   e4.\< e8( dis4\> ais) s1*0\! |
@@ -139,12 +128,9 @@ violinOne = \relative c'
   b4 r8 b,,(\< b4. b'8) |
   b2.(\> a4) s1*0\! |
   g1~\p |
-  \dimJustTextDim
-  g4 r r d(\> |
+  g4 r r d(\justDim |
   ees) r r d~( |
   d e a d,) r e-.(\pDolce r d-.) |
-  \crescHairpin
-  \dimHairpin
   r d(\< c\> cis) s1*0\! |
   r4 d-.( r d-.) |
   r d(\< f2)\> s1*0\! |
@@ -153,13 +139,10 @@ violinOne = \relative c'
   g'4.(\pDolce fis8 g4 a) |
   b4.( a8 b4 c) |
   d4.( cis8 d4 e) |
-  \crescHairpin
-  \dimHairpin
   d4(\< c2\> a4\!) |
   e,_\dolce r r2 |
   d4 r r2 |
-  \dimJustTextDim
-  e4\> r r2 |
+  e4\justDim r r2 |
   a,4 r r2\! |
 
   %2/4
@@ -180,9 +163,7 @@ violinOne = \relative c'
   fis8 e-. e-. e'-. |
 
   %G
-  \crescHairpin
   dis-. r b,4(\p\< |
-  \dimHairpin
   e\> ais,)\! |
   r b(\< |
   gis'\> ais,)\! |
@@ -195,9 +176,8 @@ violinOne = \relative c'
   fis\> |
   eis |
   e |
-  cis)
-  \dimJustTextDim |
-  b2(\> |
+  cis) |
+  b2(\justDim |
   fis |
   e |
   d |
@@ -219,8 +199,7 @@ violinOne = \relative c'
   a2~ |
   a4 a~ |
   a2~ |
-  \crescTextCresc
-  a4 d'(\p\< |
+  a4 d'(\p\cresc |
   cis a8 b |
   fis4) c'( |
   bes g8 a |
@@ -245,9 +224,8 @@ violinOne = \relative c'
   des4-.) r \times 4/7 {e,,8( g bes des e g bes} |
   des4-.) c8-. c-. bes4-. aes8-. aes-. |
   g4-. g-. g-. b,8-. c-. |
-  \crescJustTextCresc
   <<
-    {s1 s s\< s}
+    {s1 s s\justCresc s}
     \repeat unfold 4 {c2. b8-. c-.}
   >> |
   c4. c8 c4. c8 |
@@ -262,8 +240,7 @@ violinOne = \relative c'
   r8 d,\p ees4. ees8 d4 |
   R1 |
   r8 d g4. g8 f4 |
-  \crescJustTextCrescMolto
-  r8 d\< aes'4. aes8 g4~ |
+  r8 d\justCrescMolto aes'4. aes8 g4~ |
   g8 f f'4. f8 ees4~ |
   ees8 d d'4. g,8 g'4~ |
   g8 c, \ottava #1 c'4. c8-. b4-. |
@@ -312,11 +289,9 @@ violinOne = \relative c'
   \repeat unfold 3 {e4-> d8-. cis-.} d-. dis-. e-. fis-. |
 
   %L
-  \crescHairpin
   g4-.\fp r8 g,,,(\< g4. g'8) |
   g2~( g4. g'8) |
   g4.(\pocoF\< e8 c4 c'~) |
-  \dimHairpin
   c1~\> |
   c~\! |
   c4. c8(\< b4\> fis)\! |
@@ -338,14 +313,11 @@ violinOne = \relative c'
   r g(\< f\> ees)\! |
   r d r d |
   r fis,( g2) |
-  \dimJustTextDim
-  r4 bes-.(\> r a-.) |
+  r4 bes-.(\justDim r a-.) |
   r e-.( r f-.)\! |
   c''4.(_\dolce b8 c4 d) |
   e4.( d8 e4 f) |
   g4.( fis8 g4 a) |
-  \crescHairpin
-  \dimHairpin
   g4(\< f2\> d4)\! |
   c,4_\dolce r r2 |
   e,4 r r2 |
@@ -365,8 +337,7 @@ violinOne = \relative c'
   b c |
   d) b'~( |
   b c |
-  \crescTextCresc
-  d) g(\p\< |
+  d) g(\p\cresc |
   fis d8 e |
   b4) f'( |
   ees c8 d |
@@ -391,7 +362,7 @@ violinOne = \relative c'
 
   %3/4
   c32\ff c,, d e f g a b c c d e f g a b c d e f \ottava #1 g a b c |
-  c16 c8 c16~ a32 g f e \ottava #0 d c b a d c b a g f e d |
+  a16 a8 a16~ a32 g f e \ottava #0 d c b a d c b a g f e d |
   g g,, a b c d e fis g g a b c d e fis g a b c d e f g |
   c,16 c8 e c c' g a16 |
   g16-. r r g,-> g4-> c-> |

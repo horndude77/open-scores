@@ -1,35 +1,58 @@
-\version "2.13.15"
+\version "2.13.51"
 
-pfMarkup = \markup {\dynamic pf}
-pf = #(make-dynamic-script pfMarkup)
-pEsprMarkup = \markup {\dynamic p \normal-text \italic { espr. } }
-pEspr = #(make-dynamic-script pEsprMarkup)
-pSempreMarkup = \markup {\dynamic p \normal-text \italic { sempre } }
-pSempre = #(make-dynamic-script pSempreMarkup)
-pLegatoMarkup = \markup {\dynamic p \normal-text \italic { legato } }
-pLegato = #(make-dynamic-script pLegatoMarkup)
-pLeggieroMarkup = \markup {\dynamic p \normal-text \italic { leggiero } }
-pLeggiero = #(make-dynamic-script pLeggieroMarkup)
-pppSempreMarkup = \markup {\dynamic ppp \normal-text \italic { sempre } }
-pppSempre = #(make-dynamic-script pppSempreMarkup)
-pDolceMarkup = \markup {\dynamic p \normal-text \italic { dolce } }
-pDolce = #(make-dynamic-script pDolceMarkup)
-ppDolceMarkup = \markup {\dynamic pp \normal-text \italic { dolce } }
-ppDolce = #(make-dynamic-script ppDolceMarkup)
-moltoPMarkup = \markup {\normal-text \italic { molto } \dynamic p }
-moltoP = #(make-dynamic-script moltoPMarkup)
-fBenMarcMarkup = \markup {\dynamic f \normal-text \italic { ben marc. } }
-fBenMarc = #(make-dynamic-script fBenMarcMarkup)
+graceSync = \grace {s16*3}
+
+#(define-markup-command (align-dyn-text layout props dyn text) (string? markup?)
+  (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
+         (dyn-stencil (interpret-markup layout props (markup #:dynamic dyn)))
+         (text-x-ext (ly:stencil-extent text-stencil X))
+         (dyn-x-ext (ly:stencil-extent dyn-stencil X))
+         (text-x (- (cdr text-x-ext) (car text-x-ext)))
+         (dyn-x (- (cdr dyn-x-ext) (car dyn-x-ext)))
+         (hspace 0.5)
+         (x-align (- (/ (/ dyn-x 2.0) (+ text-x dyn-x hspace)) 1.0)))
+    (interpret-markup layout props (markup #:halign x-align #:whiteout #:concat (#:dynamic dyn #:hspace hspace #:normal-text #:italic text)))))
+
+#(define-markup-command (align-text-dyn layout props text dyn) (markup? string?)
+  (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
+         (dyn-stencil (interpret-markup layout props (markup #:dynamic dyn)))
+         (text-x-ext (ly:stencil-extent text-stencil X))
+         (dyn-x-ext (ly:stencil-extent dyn-stencil X))
+         (text-x (- (cdr text-x-ext) (car text-x-ext)))
+         (dyn-x (- (cdr dyn-x-ext) (car dyn-x-ext)))
+         (hspace 0.5)
+         (x-align (- 1.0 (/ (/ dyn-x 2.0) (+ text-x dyn-x hspace)))))
+    (interpret-markup layout props (markup #:halign x-align #:whiteout #:concat (#:normal-text #:italic text #:hspace hspace #:dynamic dyn)))))
+
+#(define (make-dynamic-script-dyn-text dyn text)
+  (let ((dynamic (make-dynamic-script (markup #:align-dyn-text dyn text))))
+        (ly:music-set-property! dynamic 'tweaks (acons 'X-offset 0 (ly:music-property dynamic 'tweaks)))
+    dynamic))
+
+#(define (make-dynamic-script-text-dyn text dyn)
+  (let ((dynamic (make-dynamic-script (markup #:align-text-dyn text dyn))))
+        (ly:music-set-property! dynamic 'tweaks (acons 'X-offset 0 (ly:music-property dynamic 'tweaks)))
+    dynamic))
+
+pf = #(make-dynamic-script "pf")
+pEspr = #(make-dynamic-script-dyn-text "p" "espr.")
+pSempre = #(make-dynamic-script-dyn-text "p" "sempre")
+pLegato = #(make-dynamic-script-dyn-text "p" "legato")
+pLeggiero = #(make-dynamic-script-dyn-text "p" "leggiero")
+pppSempre = #(make-dynamic-script-dyn-text "ppp" "sempre")
+pDolce = #(make-dynamic-script-dyn-text "p" "dolce")
+ppDolce = #(make-dynamic-script-dyn-text "pp" "dolce")
+mpEspress = #(make-dynamic-script-dyn-text "mp" "espress.")
+mpEspr = #(make-dynamic-script-dyn-text "mp" "espr.")
+ppSempreESottoVoce = #(make-dynamic-script-dyn-text "pp" "sempre e sotto voce")
+fBenMarc = #(make-dynamic-script-dyn-text "f" "ben marc.")
+
+moltoP = #(make-dynamic-script-text-dyn "molto" "p")
+pocoF = #(make-dynamic-script-text-dyn "poco" "f")
+
 pocoFEsprMarkup = \markup {\normal-text \italic { poco } \dynamic f \normal-text \italic { espr. } }
 pocoFEspr = #(make-dynamic-script pocoFEsprMarkup)
-pocoFMarkup = \markup {\normal-text \italic { poco } \dynamic f }
-pocoF = #(make-dynamic-script pocoFMarkup)
-mpEspressMarkup = \markup {\dynamic mp \normal-text \italic { espress. } }
-mpEspress = #(make-dynamic-script mpEspressMarkup)
-mpEsprMarkup = \markup {\dynamic mp \normal-text \italic { espr. } }
-mpEspr = #(make-dynamic-script mpEsprMarkup)
-ppSempreESottoVoceMarkup = \markup {\dynamic pp \normal-text \italic { sempre e sotto voce } }
-ppSempreESottoVoce = #(make-dynamic-script ppSempreESottoVoceMarkup)
+
 div = \markup { "div." }
 unis = \markup { "unis." }
 stopped = \markup { "gestopft" }
@@ -42,8 +65,17 @@ arco = \markup { \italic "arco" }
 mezzaVoce = \markup { \italic {mezza voce} }
 solo = \markup { Solo }
 
-tupletNumberOff = \override TupletNumber #'stencil = ##f
-tupletNumberOn = \revert TupletNumber #'stencil
+tupletOff =
+{
+  \override TupletNumber #'stencil = ##f
+  \override TupletBracket #'stencil = ##f
+}
+
+tupletOn =
+{
+  \revert TupletNumber #'stencil
+  \revert TupletBracket #'stencil
+}
 
 stop =
 #(define-music-function (parser location music) (ly:music?)
@@ -76,49 +108,12 @@ stop =
 #(define (tchaik-mark-formatter mark context)
   (make-bold-markup (make-box-markup (make-tchaik-markletter-markup (1- mark)))))
 
-crescTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-crescJustTextCrescPocoAPoco =
-{
-  \set crescendoText = \markup { \italic "cresc. poco a poco" }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-crescTextCrescPocoAPoco =
-{
-  \set crescendoText = \markup { \italic "cresc. poco a poco" }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'dash-period = #3.0
-}
-
-crescJustTextCrescMolto =
-{
-  \set crescendoText = \markup { \italic "cresc. molto" }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-crescJustTextCresc =
-{
-  \set crescendoText = \markup { \italic "cresc." }
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
-
-dimJustTextDim =
-{
-  \set decrescendoText = \markup { \italic "dim." }
-  \set decrescendoSpanner = #'text
-  \override DynamicTextSpanner #'dash-period = #-1.0
-}
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
+justCrescMolto = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc. molto" 'tweaks '((dash-period . -1)))
+justCrescPocoAPoco = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc. poco a poco" 'tweaks '((dash-period . -1)))
+crescPocoAPoco = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc. poco a poco")
+justCrescMolto = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc. molto" 'tweaks '((dash-period . -1)))
 
 % tremolo functions
 #(define (tremolo-repeat-count dur music)
@@ -224,11 +219,12 @@ outline =
   \time 3/4
   \set Score.tempoHideNote = ##t
   \tempo \markup {\bold {Maestoso
-    (
+    \concat
+    {(
       \smaller \general-align #Y #DOWN \note #"8" #1
       " = "
       \smaller \general-align #Y #DOWN \note #"4" #1
-    ) }} 8=92
+    )}}} 8=92
   s2.*23 | \bar "|."
 }
 
@@ -256,6 +252,18 @@ afterGraceFraction = #(cons 15 16)
     %Workaround bug. Without this the multimeasure rest would be placed above
     %the staffline.
     \override MultiMeasureRest #'staff-position = #0.01
+  }
+
+  \context
+  {
+    \Staff
+    \RemoveEmptyStaves
+  }
+
+  \context
+  {
+    \RhythmicStaff
+    \RemoveEmptyStaves
   }
 }
 

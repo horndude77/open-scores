@@ -1,13 +1,10 @@
-\version "2.13.15"
-
-\include "defs.ily"
+\version "2.13.51"
 
 violinTwo = \relative c'
 {
   \set Staff.midiInstrument = "string ensemble 1"
   \key c \minor
-  \grace {s16*3}
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
+  \graceSync
   g4-._\ppSempreESottoVoce aes-. g-. aes-. |
   g4 r g r |
   g4 r g r |
@@ -35,8 +32,7 @@ violinTwo = \relative c'
   c a |
   aes4) r r2 |
   R1*10 |
-  \crescTextCresc
-  g4-.\p\< aes-. g-. aes-. |
+  g4-.\p\cresc aes-. g-. aes-. |
   g b8-. a-. g4 c-> |
   b-> e8-. fis-. g4-> e8-.\f fis-. |
   \repeat unfold 2 {g-. g-. a-. fis-.} |
@@ -68,8 +64,7 @@ violinTwo = \relative c'
   R1*4 |
   r4 g16(\f^\arco a b c d4) r |
   r16 g,( a b c d e f g4) r |
-  \crescJustTextCresc
-  r g,16(\< a b c d-.) g,( a b c d e f |
+  r g,16(\justCresc a b c d-.) g,( a b c d e f |
   g-.) g,( a b c d e f \times 4/5 {g16-.) g,( a b c} \times 4/6 {d e f g a b)} |
 
   %4/4
@@ -95,15 +90,12 @@ violinTwo = \relative c'
 
   %E
   g,4(\p g g d'8 b |
-  \crescHairpin
   c4 g g) a(\< |
-  \dimHairpin
   bes b2) cis4(\> |
   d4 g,2 g4) s1*0\! |
   g4( g g d'8 b |
   c4 g g) a(\< |
-  \crescTextCrescPocoAPoco
-  bes b2)\! cis4(\< |
+  bes b2)\! cis4(\crescPocoAPoco |
   d dis b) b( |
   c cis2) dis4( |
   e fis d) d'8(\f c) |
@@ -114,7 +106,6 @@ violinTwo = \relative c'
 
   \key g \major
   <dis b>-. r r2 |
-  \crescHairpin
   r4 r8 b(\p\< b4. b'8) |
   b4.(\pocoFEspr\< gis8 e4 e') |
   cis4( b a gis) s1*0\! |
@@ -129,30 +120,22 @@ violinTwo = \relative c'
   b4 r8 b,(\< b4. b8) |
   d2.(\> c4) s1*0\! |
   b2(\p d |
-  \dimJustTextDim
-  e4) r r b(\> |
+  e4) r r b(\justDim |
   c) r r2 |
   r4 cis( ees d) |
   r a-.(\pDolce r a-.) |
-  \crescHairpin
-  \dimHairpin
   r gis(\< a\> bes) s1*0\! |
   r4 a-.( r a-.) |
   r cis(\< d2\>) s1*0\! |
-  \dimJustTextDim
-  r4 d-.( r c-.)\> |
-  \dimHairpin
+  r4 d-.( r c-.)\justDim |
   r4 b-.(\> r c-.) |
   g'4.(\pDolce fis8 g4 a) |
   b4.( a8 b4 c) |
   d4.( cis8 d4 e) |
-  \crescHairpin
-  \dimHairpin
   d4(\< c2\> a4\!) |
   bes,_\dolce r r2 |
   b4 r r2 |
-  \dimJustTextDim
-  b4\> r r2 |
+  b4\justDim r r2 |
   a4 r r2\! |
 
   %2/4
@@ -180,9 +163,7 @@ violinTwo = \relative c'
   fis8 e-. e-. <e cis'>-. |
 
   %G
-  \crescHairpin
   <dis b'>-. r fis4(\p\< |
-  \dimHairpin
   gis\> fis)\! |
   r fis(\< |
   gis\> fis)\! |
@@ -199,8 +180,7 @@ violinTwo = \relative c'
     {b2 | gis( | g)( | e) |}
   >>
   s1*0^\unis
-  \dimJustTextDim |
-  dis2(\> |
+  dis2(\justDim |
   d |
   cis |
   b |
@@ -222,8 +202,7 @@ violinTwo = \relative c'
   a2~ |
   a4 a,~ |
   a2~ |
-  \crescTextCresc
-  a4 d'(\p\< |
+  a4 d'(\p\cresc |
   cis a8 b |
   fis4) c'( |
   bes g8 a |
@@ -248,9 +227,8 @@ violinTwo = \relative c'
   \times 4/7 {des'8( bes g e des b g} e4-.) r |
   bes''4-. aes8-. aes-. g4-. f8-. f-. |
   <g, ees'>4-. <f des'>-. <e c'>-. b'8-. c-. |
-  \crescJustTextCresc
   <<
-    {s1 s s\< s}
+    {s1 s s\justCresc s}
     \repeat unfold 4 {c2. b8-. c-.}
   >> |
   c4. c8 c4. c8 |
@@ -265,8 +243,7 @@ violinTwo = \relative c'
   r8 g,,\p c4. c8 g4 |
   R1 |
   r8 g ees'4. ees8 d4 |
-  \crescJustTextCrescMolto
-  r8 g,\< f'4. f8 ees4~ |
+  r8 g,\justCrescMolto f'4. f8 ees4~ |
   ees8 d d'4. d8 c4~ |
   c8 bes bes'4. d,8 d'4~ |
   d8 g, <c, aes'>4. <c aes'>8-. <b g'>4-. |
@@ -322,11 +299,9 @@ violinTwo = \relative c'
   \repeat unfold 3 {c4. c,8} <c' a'>4-. <c a'>-. |
 
   %L
-  \crescHairpin
   <d, b' g'>4-.\fp r8 g,(\< g4. g'8) |
   g4.( g,8) g4.( g'8) |
-  g4.(\pocoFEspr\< e8 c4 c'~) |
-  \dimHairpin
+  g4.(\pocoFEspr\< e8 c4 c') |
   a( g f e)\! |
   \repeat unfold 2 {d4.( e8)} |
   d4(\< e f\> a) s1*0\! |
@@ -348,13 +323,11 @@ violinTwo = \relative c'
   r bes(\< a\> fis)\! |
   r g r g |
   r fis( d2) |
-  \dimJustTextDim
-  r4 g-.(\> r c,-.) |
+  r4 g-.(\justDim r c,-.) |
   r bes-.( r c-.)\! |
   c'4.(_\dolce b8 c4 d) |
   e4.( d8 e4 f) |
   g4.( fis8 g4 a) |
-  \dimHairpin
   g4(\< f2\> d4)\! |
   c,4_\dolce r r2 |
   c4 r r2 |
@@ -362,9 +335,7 @@ violinTwo = \relative c'
   a4 r b r |
 
   %2/4
-  \crescHairpin
   r4 r8 c(\p\< |
-  \dimHairpin
   a4\> g) s1*0\! |
   r4 r8 c(\< |
   a4\> g) s1*0\! |
@@ -376,8 +347,7 @@ violinTwo = \relative c'
   g a |
   b) b~( |
   b c |
-  \crescTextCresc
-  d) g'(\p\< |
+  d) g'(\p\cresc |
   fis d8 e |
   b4) f'( |
   ees c8 d |
