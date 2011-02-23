@@ -1,15 +1,14 @@
-\version "2.13.44"
+\version "2.13.51"
 
+\include "defs.ily"
 \include "horn1.ily"
 \include "horn2.ily"
 \include "horn3.ily"
 \include "horn4.ily"
-\include "defs.ily"
 
 \paper
 {
   #(define page-breaking ly:minimal-breaking)
-  %ragged-last-bottom = ##f
 }
 
 instrument = "Horns"
@@ -91,9 +90,6 @@ instrument = "Horns"
       }
     >>
     \midi { }
-    \layout
-    {
-      %\context { \Staff \RemoveEmptyStaves }
-    }
+    \layout { }
   }
 }

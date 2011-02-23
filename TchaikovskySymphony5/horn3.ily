@@ -1,6 +1,4 @@
-\version "2.13.44"
-
-\include "defs.ily"
+\version "2.13.51"
 
 hornThreeMvtI = \relative c'
 {

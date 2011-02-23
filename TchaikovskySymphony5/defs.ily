@@ -1,3 +1,5 @@
+\version "2.13.51"
+
 %Custom markup stuff
 %A, B, ..., H, I, K, ..., Z, AA, BB, .., ZZ, AAA, ...
 #(define (num->tchaik-letter num)
@@ -126,31 +128,42 @@ twelvex =  #(define-music-function (parser location x) (ly:music?)
   \repeat unfold 12 $x
 #})
 
-sempreff = \markup{\italic sempre \dynamic ff}
-semprefff = \markup{\italic sempre \dynamic fff}
-pcrescmolto = \markup{\dynamic p \italic "cresc. molto"}
-pmamarcato = \markup{\dynamic p \italic "ma marcato"}
-piuf = \markup{\italic "più" \dynamic f}
-mfespr = \markup{\dynamic mf \italic "espr."}
+sfff = #(make-dynamic-script "sfff")
+sempreffMarkup = \markup{\normal-text \italic sempre \dynamic ff}
+sempreff = #(make-dynamic-script sempreffMarkup)
+semprefffMarkup = \markup{\normal-text \italic sempre \dynamic fff}
+semprefff = #(make-dynamic-script semprefffMarkup)
+pmamarcatoMarkup = \markup{\dynamic p \normal-text \italic "ma marcato"}
+pmamarcato = #(make-dynamic-script pmamarcatoMarkup)
+piufMarkup = \markup{\normal-text \italic "più" \dynamic f}
+piuf = #(make-dynamic-script piufMarkup)
+mfesprMarkup = \markup{\dynamic mf \normal-text \italic "espr."}
+mfespr = #(make-dynamic-script mfesprMarkup)
+
 ten = \markup{\italic "ten."}
 pesante = \markup{\italic "pesante"}
 simile = \markup{\italic "simile"}
 marcatissimo = \markup{\italic "marcatissimo"}
-sfff = #(make-dynamic-script "sfff")
+
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
+justCrescMolto = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc. molto" 'tweaks '((dash-period . -1)))
+crescPocoAPoco = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc. poco a poco" 'tweaks '((dash-period . -1)))
+
+lengthenHairpin = #(define-music-function (parser location x) (number?)
+  #{ \once \override Hairpin #'minimum-length = $x #})
 
 outlineMvtI =
 {
-  \tempo "Andante"
+  \tempo "Andante" 4=80
   \time 4/4
-  \tempo 4 = 80
   s1*20 |
 
   \mark \default
   s1*17 | \bar "||"
 
-  \tempo "Allegro con anima"
+  \tempo "Allegro con anima" 4=104
   \time 6/8
-  \tempo 4 = 104
   s2.*19 |
 
   \mark \default
@@ -615,6 +628,7 @@ afterGraceFraction = #(cons 15 16)
                                ,(make-accidental-rule 'same-octave 1))
     markFormatter = #tchaik-mark-formatter
     \override Beam #'breakable = ##t
+    tempoHideNote = ##t
   }
 
   \context

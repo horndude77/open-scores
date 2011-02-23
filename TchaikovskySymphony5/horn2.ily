@@ -1,6 +1,4 @@
-\version "2.13.44"
-
-\include "defs.ily"
+\version "2.13.51"
 
 hornTwoMvtI = \relative c'
 {
@@ -49,7 +47,7 @@ hornTwoMvtI = \relative c'
   r4. b\ff |
   R2. |
   r4. b\ff |
-  r4. cis,8._\sempreff cis16 cis8 |
+  r4. cis,8.\sempreff cis16 cis8 |
   \lss fis \lss cis |
   R2. |
   r4. e' |
@@ -125,20 +123,17 @@ hornTwoMvtI = \relative c'
   R2. |
 
   %H
-  \crescTextCresc
-  r8 e4~\p\< e8 e'( e,) |
+  r8 e4~\p\cresc e8 e'( e,) |
   r8 e4~ e8 e'( e,) |
   r8 e'( e,~) e\f e'( e,) |
   r8 b( b') b,( b' b,) |
   e4\f e8~ e e4 |
   e4 e8~ e e4 |
-  d4_\pcrescmolto d8~ d a'4 |
+  d4\p\justCrescMolto d8~ d a'4 |
   gis4 gis8~ gis gis4 |
-  \crescTextCresc
-  e4\mf\< e8 d d4 |
+  e4\mf\cresc e8 d d4 |
   dis4 dis8 d d4 |
-  \crescTextCresc
-  cis4\f\< cis8~ cis cis cis |
+  cis4\f\cresc cis8~ cis cis cis |
   d4 d8~ d a'4 |
   cis,8[\fff r16 cis cis8] cis e a |
   b a e cis e a |
@@ -179,8 +174,7 @@ hornTwoMvtI = \relative c'
   ees8\f r r r4. |
   R2.*10 |
   cis2.\p |
-  \crescTextCresc
-  cis\< | s1*0\!
+  cis\cresc | s1*0\!
   R2. |
   cis'2.\f |
 
@@ -231,8 +225,7 @@ hornTwoMvtI = \relative c'
   gis8. gis16 gis8~ gis4. |
   g8.\mf g16 g8~ g4. |
   g8. g16 g8~ g4. |
-  \dimTextDim
-  g4.\> g |
+  g4.\dim g |
   g g |
   g2.\p |
   g |
@@ -309,18 +302,16 @@ hornTwoMvtI = \relative c'
   R2. |
 
   %V
-  \crescTextCresc
-  r8 fis4~\p\< fis8 fis'( fis,) |
+  r8 fis4~\p\cresc fis8 fis'( fis,) |
   \twox {r8 fis4~ fis8 fis'( fis,) |}
   r8 cis(\f cis') cis,( cis' cis,) |
   fis4\f fis8~ fis fis4 |
   fis4 fis8~ fis fis4 |
-  e4_\pcrescmolto e8~ e b'4 |
+  e4\p\justCrescMolto e8~ e b'4 |
   bes bes8~ bes bes4 |
   fis4 fis8 e e4 |
   f4 f8 e e4 |
-  \crescTextCresc
-  dis4\f\< dis8~ dis dis dis |
+  dis4\f\cresc dis8~ dis dis dis |
   e4 e8~ e b'4 |
   dis,8[\ff r16 dis dis8] dis fis b |
   cis b fis dis fis b |
@@ -365,13 +356,11 @@ hornTwoMvtI = \relative c'
   fis8 r r fis r r |
   e r r fis r b, |
   b r r fis' r r |
-  \crescTextCresc
-  r4. e8\< r r |
+  r4. e8\cresc r r |
   e r r fis r r |
   g r r d r r |
   g r r g r r |
-  \crescTextCresc
-  fis\f\< r r f r r |
+  fis\f\cresc r r f r r |
   fis r r fis r r |
   fis r r fis r r |
   e r r g r r |
@@ -392,8 +381,7 @@ hornTwoMvtI = \relative c'
 
   %AA
   d r r d,\mf r r |
-  \dimTextDim
-  b\> r r e r r |
+  b\dim r r e r r |
   d r r d r r |
   b r r e r r |
   d r r d\p r r |
@@ -421,9 +409,7 @@ hornTwoMvtII = \relative c'
   fis e |
   r4. d2.\p\> d4. |
   cis8\pp \fivex cis b\< b b cis cis d |
-  \crescTextCresc
-  cis\p\< \fivex cis \sixx gis' |
-  \crescHairpin
+  cis\p\cresc \fivex cis \sixx gis' |
   a\mf\< \fivex a a\f\> a a fis\mf fis fis |
   fis\> \fivex fis \sixx d |
   cis\pp \fivex cis b\< b b b cis d |
@@ -431,12 +417,7 @@ hornTwoMvtII = \relative c'
   a\mf \fivex a fis r r r fis fis |
 
   %C
-  \set crescendoText = \markup {\italic "cresc. poco a poco"}
-  \set crescendoSpanner = #'text
-  \override DynamicTextSpanner #'style = #'dashed-line
-  \override DynamicTextSpanner #'style = #'none
-  fis\mf\< \fivex fis \sixx c |
-  \crescHairpin
+  fis\mf\crescPocoAPoco \fivex fis \sixx c |
   \twelvex cis |
   \sixx cis \sixx b' |
   \sixx b \sixx d |
@@ -500,9 +481,7 @@ hornTwoMvtII = \relative c'
   %H
   cis4.~\p cis8 r r r2. |
   b4.~\p b8 r r r2. |
-  \crescTextCresc
-  a4.\mf\< a a e' |
-  \crescHairpin
+  a4.\mf\cresc a a e' |
   e\f dis d\> \times 3/2 {cis8\mf a} |
   d2. d8( cis d) d4. |
   \set Staff.timeSignatureFraction = #'(4 . 4)
@@ -512,9 +491,7 @@ hornTwoMvtII = \relative c'
     a8\< d4 fis8 fis4( e) |
     e\f cis e2\>
     d2\mf \times 2/3 {d8( cis d)} d4 |
-    \crescTextCresc
-    e8(\< cis~ cis4) c8( cis~ cis4) |
-    \crescHairpin
+    e8(\cresc cis~ cis4) c8( cis~ cis4) |
   }
   \set Staff.timeSignatureFraction = #'(12 . 8)
   dis4.\f dis4 dis8 dis4. r4. |
@@ -529,22 +506,17 @@ hornTwoMvtII = \relative c'
   \scaleDurations #'(3 . 2)
   {
     cis'16\ff e,\f \sixx e \fourx d cis cis b b |
-    \crescTextCresc
-    \eightx cis cis\< \sevenx cis
-    \crescHairpin
+    \eightx cis cis\cresc \sevenx cis
     a'16 a \fourx fis a a fis\ff fis a a \fourx fis |
     \twelvex fis \fourx d |
     e\fff e\f \sixx e \fourx d cis cis b b |
-    \crescTextCresc
-    \eightx cis cis\< \sevenx cis
+    \eightx cis cis\cresc \sevenx cis
     a'16 a \fourx fis a a \eightx fis |
     fis\ff fis fis fis \twelvex fis |
     \eightx gis \eightx a |
-    \crescTextCresc
 
     %K
-    bes\< \sevenx bes \eightx b |
-    \crescHairpin
+    bes\cresc \sevenx bes \eightx b |
     \eightx b \eightx d |
     cis\ffff cis cis cis fis, fis a a gis\> gis gis gis a a b b |
     a\ff a \fourx d, fis fis f\> f f f fis fis gis gis |
