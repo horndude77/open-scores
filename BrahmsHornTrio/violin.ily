@@ -1,11 +1,9 @@
-\version "2.13.14"
-
-\include "defs.ily"
+\version "2.13.51"
 
 violinMvtI = \relative c'
 {
   \key ees \major
-  \partial 4 bes4(\downbow_\mPDolceEspr |
+  bes4(\downbow\pDolceEspress |
   f' e8-.( f-.) |
   f4 g8-.( f-.) |
   f4 d8-.( c-.) |
@@ -34,7 +32,7 @@ violinMvtI = \relative c'
   c4(\> ges4) |
   f4\! r |
   R2 |
-  des''2_\mCresc | ces2 |
+  des''2\justCresc | ces2\! |
   r8 bes8-.( bes-. des-.) |
   ees4( aes,) |
   r8 ges-.( ges-. aes-.) |
@@ -44,7 +42,7 @@ violinMvtI = \relative c'
   ges,2~(\f\> | ges4 f4)\! |
   r8 ees-.( ees-. f-.) |
   ees-.( des-. des-. ees-.) |
-  des4(_\mDim ces~ | ces bes) |
+  des4(\justDim ces~ | ces bes) |
   r8 aes-.(\< aes-. bes-.) |
   aes-.( a-.\> a-. bes-.) |
   a4(\! bes) |
@@ -55,8 +53,8 @@ violinMvtI = \relative c'
   r4 bes(\< | ees\> d)\! |
   f e8-.( f-.) |
   f4 cis8-.( d-.) |
-  d4^\mPocoCresc bes8-.( ees-.) |
-  ees( g) fis-.( g-.) |
+  d4\justPocoCresc bes8-.( ees-.) |
+  ees(\! g) fis-.( g-.) |
   g( ees) ees4~ |
   ees ees~ |
   ees ces~ |
@@ -64,10 +62,10 @@ violinMvtI = \relative c'
   bes bes~ |
   bes bes |
   R2*5 |
-  \once \override TupletBracket #'direction = #UP
+  %\once \override TupletBracket #'direction = #UP
   \times 2/3 {r8 r
-    \once \override Script #'extra-offset = #'(0.0 . 1.3)
-    fis'~(\<\upbow_\mMPEspr} \times 2/3 {fis4\> g8)\!} |
+    %\once \override Script #'extra-offset = #'(0.0 . 1.3)
+    fis'~(\upbow^\mpEspressMarkup\<} \times 2/3 {fis4\> g8)\!} |
 
   \key bes \major
   %"Poco più animato"
@@ -97,7 +95,7 @@ violinMvtI = \relative c'
   R4.*3 |
   r4 d'8~_\espressivo d r ees( f4\< aes8~ |
   aes4\> g8)\! r4. r |
-  r4 g8~_\mCresc g r aes( bes4\< des8~ |
+  r4 g8~\justCresc g r aes( bes4\< des8~ |
   des4\> c8)\! r4 d,8( ees4\< g8~ |
   g4\> f8)\! r fis8(\< g) r g( bes) |
   aes2.\f aes4.( |
@@ -108,7 +106,7 @@ violinMvtI = \relative c'
   a( a, a' a, a' a, g' g, g') |
   ces( ces, ces' ces, ces' ces, bes' bes, bes') |
   b( b, b' b, b' b, c'\< c, c') |
-  g(\> ees g)\! <fis a,>4 cis'8~(\<^\mDolce cis4\> d8)\! |
+  g(\> ees g)\! <fis a,>4 cis'8~(\<^\dolce cis4\> d8)\! |
 
   %D
   e4. r4 cis8~( cis4 d8) |
@@ -125,8 +123,8 @@ violinMvtI = \relative c'
   g( a\< bes4 d8) |
   d2.(\sf\> c4.) |
   bes2.~\p bes4. |
-  a2.~_\mDimPocoRit a4. |
-  g2.~ g4. |
+  a2.~\justDimin a4. |
+  g2.~_\pocoAPocoRit g4. |
   fis2.~ fis4. |
   f2.~ f4 r8 |
   r4. r bes,(\< |
@@ -136,7 +134,7 @@ violinMvtI = \relative c'
   \key ees \major
   %"Tempo I"
   R2*7 |
-  r4 bes_\mDolce |
+  r4 bes_\dolce |
 
   %E
   f'8( e) e-.( f-.) |
@@ -162,7 +160,7 @@ violinMvtI = \relative c'
   bes bes~ |
   bes bes |
   R2*5 |
-  \times 2/3 {r4 a'8~_(_\mMPEspr} \times 2/3 {a4 bes8)} |
+  \times 2/3 {r4 a'8~_(\mpEspr} \times 2/3 {a4 bes8)} |
 
   \key des \major
   %"Poco più animato"
@@ -182,7 +180,7 @@ violinMvtI = \relative c'
   %F
   R4.*3 |
   r4. r cis,(\< |
-  gis'2.~)\!^\mSempreCresc gis4.~\< |
+  gis'2.~)\!^\sempreCrescMarkup gis4.~\< |
   gis(\> fis4)\! r8 e4.~(\< |
   e\> d4)\! r8 c4.~(\< |
   c\> bes4)\! r8 des4( c8) |
@@ -196,8 +194,8 @@ violinMvtI = \relative c'
   bes(\< c d4 f8) |
   f2.(\sf\> ees4.) |
   des2.~\p des4. |
-  c2.~_\mDimPocoRit c4. |
-  bes2.~ bes4. |
+  c2.~\justDimin c4. |
+  bes2.~\!_\pocoAPocoRit bes4. |
   a2.~ a4. |
   aes2.~ aes4 r8 |
   r4. r des,(\p\< |
@@ -207,18 +205,17 @@ violinMvtI = \relative c'
   \key ges \major
   %"Tempo I"
   R2*8 |
-  \override Hairpin #'to-barline = ##f
   r4 des,(\p\< | beses'\> aes)\! |
   r des(\< | beses\> aes)\! |
-  r ees(_\mPocoCresc | ces' bes) |
-  r ees( | ces bes) |
+  r ees(\justPocoCresc | ces' bes) |
+  r\! ees( | ces bes) |
   r f'( | des c) |
   ces( bes) |
   beses( aes) |
 
   %H
-  ces4_\mEspr bes8-.( ces-.) |
-  ces2~(_\mSempreCrescAnimato | \noBreak
+  ces4_\espress bes8-.( ces-.) |
+  ces2~(\justSempreCrescEUnPocoAnimato | \noBreak
   ces8 c) c( des) |
   des( ees) ees( e) |
   e4 dis8-.( e-.) |
@@ -233,7 +230,7 @@ violinMvtI = \relative c'
   aes8 bes) bes( aes) |
 
   \key ees \major
-  aes8(_\mFEspr g) g-.( aes-.) |
+  aes8(\fEspr g) g-.( aes-.) |
   aes( bes) bes-.( aes-.) |
   aes( f) f-.( ees-.) |
   ees( d) f-.( a-.) |
@@ -246,9 +243,9 @@ violinMvtI = \relative c'
   fes(_\espressivo d) d-.( ees-.) |
 
   %I
-  r4_\mEspr <d ees,>8-.(\> <ees ees,>-.)\! |
+  r4_\espress <d ees,>8-.(\> <ees ees,>-.)\! |
   r4 <d ees,>8-.(\> <ees ees,>-.)\! |
-  r4_\mSempreDimRitPoco <d ees,>8-.(\> <ees ees,>-.)\! |
+  r4^\sempreDimERitPocoAPoco <d ees,>8-.(\> <ees ees,>-.)\! |
   r4 <c ees,>8-.(\> <des ees,>-.)\! |
   r4 <b ees,>8-.(\> <c ees,>-.)\! |
   r4 <ais dis,>8-.(\> <b dis,>-.)\! |
@@ -273,7 +270,7 @@ violinMvtII = \relative c'''
   R2.*12 |
 
   %A
-  <g b, \stop d, \stop g,>2.~\f |
+  <g~ b,~ \stop d, \stop g,>2.\f |
   \times 3/2 {<g b,>4 d-.} |
   \times 3/2 {e( f)} |
   \afterGrace d2.\trill {c16[( d])} |
@@ -302,8 +299,8 @@ violinMvtII = \relative c'''
 
   %B
   R2.*8 |
-  des4(_\mMFCresc ges bes) |
-  ges( bes des) |
+  des4(\mf\justCresc ges bes) |
+  ges(\! bes des) |
   bes( des ges) |
   ges( f e) |
   f( d bes) |
@@ -328,8 +325,8 @@ violinMvtII = \relative c'''
   cis-. a-. r |
 
   \key b \major
-  <a cis,>2._\mCresc |
-  <gis bis,> |
+  <a cis,>2.\justCresc |
+  <gis bis,>\! |
   <gis e> |
   <fisis ais,>2 <gis fis>4-. |
   <gis e>4-.\f r r |
@@ -344,7 +341,7 @@ violinMvtII = \relative c'''
   R2.*8 |
 
   %C
-  b4(_\mPDolce cis e~) | e2. |
+  b4(\pDolce cis e~) | e2. |
   dis4( cis dis~) | dis2. |
   cis4( b cis~) | cis2. |
   b4( fis b~) | b2. |
@@ -369,10 +366,12 @@ violinMvtII = \relative c'''
   ees4 r r |
   \repeat unfold 2
   {
-    ees8 ges ges ees' ees ges | ges4 r r |
+    ees8 ges ges ees' ees ges |
+    ges4 r r |
   }
   ges,8 ees' ees ges ges ees' |
-  ees4(_\mCresc d ees~) | ees( d ees~) |
+  ees4(\justCresc d ees~) |
+  ees(\! d ees~) |
   ees d8 d ees\< ees |
   d d ees ees d d | ees4\f r r |
   R2.*3 |
@@ -412,7 +411,8 @@ violinMvtII = \relative c'''
   g( f g | f ees f) |
   ees( f g | a bes c) |
   d( ees f | g a bes) |
-  c2.~_\mPocoAPocoCresc | \noBreak c |
+  c2.~\justPocoAPocoCresc | \noBreak
+  c |
   bes2.~( | bes4 aes g) |
   bes2.~( | bes4 aes g) |
   bes( aes g) |
@@ -454,7 +454,7 @@ violinMvtII = \relative c'''
   fes |
   aes2( fes4) |
   ees2( d4) |
-  bes'2(_\mCresc g4) |
+  bes'2(\justCresc g4) |
   f2( e4) |
   c'2( aes4) |
   g2( f4) |
@@ -477,7 +477,7 @@ violinMvtII = \relative c'''
   des, |
 
   \key ces \major
-  ces2.(_\mPEspr |
+  ces2.(\pEspress |
   aes4 bes ces) |
   ees2( des4) |
   bes2. |
@@ -508,7 +508,7 @@ violinMvtII = \relative c'''
   <a' b,>2~^(\espressivo <gis b,>4) |
   d2(\< aes4~ | aes2\> bes4~) | bes2\! r4 |
   R2. |
-  des2(^\mPEspr\< bes4)\> |
+  des2(^\pEsprMarkup\< bes4)\> |
   aes4(\! bes ces) |
   ees2( des4) |
   bes2. |
@@ -516,7 +516,8 @@ violinMvtII = \relative c'''
   bes4( c des) |
   fes2( ees4) |
   c2. |
-  ees~(_\mCresc | ees4 des c) |
+  ees~(\justCresc |
+  ees4\! des c) |
   ees2.~( | ees4 des c) |
   f2( des4) |
   des( c bes) |
@@ -524,11 +525,11 @@ violinMvtII = \relative c'''
   beses'( aes ges) |
   fes2. |
   c2( des4) |
-  des2._\mDim |
+  des2.\justDim |
   beses2( aes4) |
   ces2.\p |
   R2. |
-  bes2._\mDim |
+  bes2.\justDim s1*0\! |
   R2. |
   aes2. |
   R2. |
@@ -536,14 +537,14 @@ violinMvtII = \relative c'''
   R2.*8 |
   R2.^\fermataMarkup |
   %d.c.
-  \key ges \major
+  %\key ges \major
 }
 
 violinMvtIII = \relative c'''
 {
   \key ges \major
   R2.*4 |
-  ges8(_\mPEspr d ees) ces4( bes8) |
+  ges8(\pEspress d ees) ces4( bes8) |
   ges'( d ees) e4(_\espressivo f8) |
   g8(\< aes bes) bes4(\> aes8)\! |
   ees8( des ees fes\> des aes) |
@@ -558,24 +559,24 @@ violinMvtIII = \relative c'''
 
   %A
   R2.*2 |
-  f,8(_\mSempreP bes ces bes ees, ges |
+  f,8(\sempreP bes ces bes ees, ges |
   aes ges ees ges aes bes~) |
   bes bes,( a bes f' bes~) |
   bes f( ges f bes, des~) |
   des( aes' bes aes des, f~) |
   f( c' des c f, aes~ aes) aes4 |
   R2. |
-  a8(\p e' fis e a, cis_\mDim |
-  d cis) r r4. |
+  a8(\p e' fis e a, cis\justDim |
+  d cis) r\! r4. |
   \repeat unfold 2 {d,8( a' bes a) r r |}
 
   %B
-  d,(\< aes' bes ces\> bes)\! r^\mCresc |
+  d,(\< aes' bes ces\> bes)\! r^\crescMarkup |
   r bes( d f ees) r |
   r8 ees(\< c' ges' f bes,) |
   ces( ees bes des bes a\! |
   aes-.) aes,(\p\< bes ces\> bes)\! r |
-  r_\mDim bes( d, f ees) r |
+  r\justDim bes( d, f ees) r\! |
   r c'( a ges f des) |
   ces(\< ees bes\> des bes a |
   aes-.)\! r r r4. |
@@ -583,7 +584,7 @@ violinMvtIII = \relative c'''
   ees'8(\ppp bes' ces bes ees, ges |
   aes\> ges ees ges aes bes)\! |
   R2.*2 |
-  ges'8(_\mPEspr d ees) ces4( bes8) |
+  ges'8(\pEspress d ees) ces4( bes8) |
   ges'( d ees) e4(_\espressivo f8) |
   g8(\< aes bes) bes4(\> aes8)\! |
   ees8( des ees fes\> des aes) |
@@ -596,16 +597,16 @@ violinMvtIII = \relative c'''
   R2.*2 |
 
   %C
-  bes,8(^\mMoltoP g bes ees4 f8 |
+  bes,8(\moltoP g bes ees4 f8 |
   ees4 bes8 g4 g'8) |
   g,2.~ | g |
   c8(\pp f g a4 c8 |
   a4 g8 f4 e8) |
   d2.~ |
   d8( a' bes a d, f |
-  g f) d( f4) r8^\mPocoAccel |
+  g f) d( f4) r8^\pocoAccel |
   R2. |
-  g'8(_\mFPassionato d ees) ces4( bes8) |
+  g'8(\fPassionato d ees) ces4( bes8) |
   ees4( aes,8) ees'4( ges,8) |
   ces4( fes,8) ces'4( ees,8) |
   aes-.( ges-. f-.) ees4( d8) |
@@ -631,12 +632,12 @@ violinMvtIV = \relative c'
   \key ees \major
   \repeat volta 2
   {
-    \partial 8 bes8\p |
+    bes8\p |
     ees ees f g g bes |
     g g f ees ees d |
     c c g'-> c, c d |
     c c g'-> c, c g' |
-    f f g aes_\mCresc aes c |
+    f f g aes\justCresc aes c |
     g g a bes bes d |
     f4.~ f4 bes,8 |
     f'4.~ f4 bes,8\mf |
@@ -646,7 +647,7 @@ violinMvtIV = \relative c'
     g g f ees ees d |
     c c g'-> c, c d |
     c c g'-> c, c g' |
-    f f g aes_\mCresc aes c |
+    f f g aes\justCresc aes c |
     ees4( c8) ees4 c8 |
     g8 g a bes bes d |
     f4( d8) f4 d8(\f |
@@ -712,7 +713,7 @@ violinMvtIV = \relative c'
     bes4. e,) |
     d2.~\> |
     d4.~ d4 r8 |
-    r4 f8(^\mDim ges4 a8 |
+    r4 f8(\justDim ges4 a8 |
     bes4.\< e, |
     f2.~)\> |
     f4\! r8 r4. |
@@ -721,7 +722,7 @@ violinMvtIV = \relative c'
     R2.*2 |
     c''4.(\pp bes4 g8)
     f4.( ees4 c8) |
-    d4-.(_\mPDolce f8~ f-. bes,4-. |
+    d4-.(\pDolce f8~ f-. bes,4-. |
     d-. g,8~ g-. bes4-.) |
     c4. g4( c8) |
     f4. c4( f8) |
@@ -732,9 +733,9 @@ violinMvtIV = \relative c'
       bes4 r8 r4. |
       R2.*3 |
       r4. r4 bes,,8-.\mf |
-      bes'-._\mCresc bes-. c-. d-. d-. ees-. |
+      bes'-.\justCresc bes-. c-. d-. d-. ees-. |
       f8-. f-.( g-.) <aes bes,>4.~\f
-      \partial 8*5 <aes bes,>~ <aes bes,>8 r
+      <aes bes,>~ <aes bes,>8 r
     }
     {
       bes4 r8
@@ -753,7 +754,7 @@ violinMvtIV = \relative c'
   d4.~ d4 a8 |
   d8 r r r4. |
   R2.*2 |
-  r4. a(_\mPEspr |
+  r4. a(\pEspress |
   g2. |
   e4. g,) |
   b2.( |
@@ -770,9 +771,9 @@ violinMvtIV = \relative c'
   cis8 cis cis' cis, cis d |
   d d d' d, d ees |
   ees ees ees' r4. |
-  r cis'(_\mPocoAPocoCresc |
+  r cis'(\justPocoAPocoCresc |
   b gis |
-  b,4 r8 d'4.( |
+  b,4 r8\! d'4.( |
   c a |
   c,4) r8 ees'4.( |
   des4) r8 e4.( |
@@ -792,7 +793,7 @@ violinMvtIV = \relative c'
   g g f ees ees d |
   c c g'-> c, c d |
   c c g'-> c, c g' |
-  f_\mCresc f g aes aes c |
+  f\justCresc f g aes aes c |
   g g a bes bes d |
   f4.~ f4 bes,8 |
   f'4.~ f4 bes,8\mf |
@@ -800,7 +801,7 @@ violinMvtIV = \relative c'
   g g f ees ees d |
   c c g'-> c, c d |
   c c g'-> c, c g' |
-  f f g aes_\mCresc aes c |
+  f f g aes\justCresc aes c |
   ees4( c8) ees4 c8 |
   g8 g a bes bes d |
   f4( d8) f4 d8(\f |
@@ -853,7 +854,7 @@ violinMvtIV = \relative c'
   ges f ges~ ges f ees |
 
   %H
-  bes-. r cis(_\mPDolce d4 e8) |
+  bes-. r cis(\pDolce d4 e8) |
   f4.~( f4 fis8 |
   aes4 g8 c4) r8 |
   R2. |
@@ -861,16 +862,16 @@ violinMvtIV = \relative c'
   ees4.~( ees4\< e8 |
   g4\> f8 bes4)\! r8 |
   R2. |
-  r4 ais,8(_\mPiuP b4 d8 |
+  r4 ais,8(\piuP b4 d8 |
   dis4. a |
   g2.~) |
   g4 r8 r4. |
-  r4 ais8(_\mDim b4 d8 |
+  r4 ais8(\justDim b4 d8 |
   ees4. a,) |
   bes2.~ |
-  bes4 r8 r4. |
+  bes4 r8\! r4. |
   R2.*2 |
-  f'4.(_\mPDolce ees4 c8) |
+  f'4.(\pDolce ees4 c8) |
   bes'4.( aes4 f8) |
   g4( bes8~ bes ees,4 |
   g c,8~ c ees4) |
@@ -878,8 +879,8 @@ violinMvtIV = \relative c'
   bes4. f4( bes8) |
   ees,4 r8 r4. |
   R2.*3 |
-  r4. r4 ees,8\mf |
-  ees'_\mCresc ees f g g bes |
+  r4. r4 ees,8\mf\justCresc |
+  ees' ees f g g bes |
   bes4.~\f bes4 ees,8 |
   g g aes bes bes ees |
 
@@ -914,4 +915,3 @@ violinMvtIV = \relative c'
   <ees ees'>4 r8 r4. |
   <ees, g,>2.\fermata |
 }
-

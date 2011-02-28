@@ -1,22 +1,20 @@
-\version "2.13.14"
-
-\include "defs.ily"
+\version "2.13.51"
 
 hornMvtI = \relative c''
 {
   \key c \major
   \transposition ees
-  \partial 4 r4 |
+  r4 |
   R2*7 |
-  r4 g(_\mPDolceEspr |
+  r4 g(\pDolceEspress |
   d') cis8-.( d-.) |
   d4 e8-.( d-.) |
   d4 b8-.( a-.) |
   a4 g8-.( a-.) |
   a4 g8-.( a-.) |
   a4 g8-.(\< c-.) |
-  \override Hairpin #'to-barline = ##f
-  c4( d~)\> | d4\! r |
+  c4( d~)\> |
+  d4 r\! |
   \repeat unfold 2 {r4 g,(\< | c\> b\!) |}
   f'4 e8-.( f-.) |
   f4 g8-.( f-.) |
@@ -29,8 +27,8 @@ hornMvtI = \relative c''
   %A
   f4( e)\! |
   R2*7 |
-  g'2 | f_\mCresc |
-  r8 ees-.( ees-. f-.) |
+  g'2 | f\justCresc |
+  r8\! ees-.( ees-. f-.) |
   ees4( d) |
   ees ees,8( ees') |
   ees2 |
@@ -41,7 +39,7 @@ hornMvtI = \relative c''
   g2~\f | g4(\> f)\! |
   r8 ees-.( ees-. f-.) |
   ees-.( d-. d-. ees-.) |
-  d4(_\mDim c~) | c( bes) |
+  d4(\justDim c~) | c( bes) |
   r8 aes-.( aes-. bes-.)\< |
   aes-.( a-. a-.\> b-.) |
   a4(\! g) |
@@ -50,26 +48,21 @@ hornMvtI = \relative c''
   r4 g(\p |
   aes g\< |
   ees'\> d)\! |
-  <<
-    {aes'4(\( g)}
-    {
-      \tupletTransparent
-      \times 2/3 {s4\< s\> s\!}
-    } >> |
-  ees( d)\) |
+  << {aes'4(\( g)} {s4*2/3\< s\> s\!} >> |
+  ees4( d)\) |
   f e8-.( f-.) |
   f4 g8-.( f-.) |
-  f4_\mPocoCresc fis8-.( g-.) |
+  f4\justPocoCresc fis8-.( g-.) |
   g4 a8-.( g-.) |
   g4 e8-.( f-.) |
   f4 e8-.( f-.) |
-  f4_\mDim c8-.( f,-.) |
+  f4\justDim c8-.( f,-.) |
   c'4 b8-.( c-.) |
   c4 b8-.( c-.) |
   c4 g8-.(\< c,-.) |
   g'4 g~\> |
   g f~( |
-  f^\mSenzaRit e)\! |
+  f^\senzaRit e)\! |
   r e |
   R2*2 |
 
@@ -86,7 +79,7 @@ hornMvtI = \relative c''
   R4.*3 |
   r4. r4 f'8~(\< f4\> e8)\! |
   R4.*3 |
-  r4^\mCresc c8~(\< c4\> b8)\! r4. |
+  r4^\crescMarkup c8~(\< c4\> b8)\! r4. |
   r4 f'8~( f4 e8) r4 g8 |
   f4\f r8 r4. r |
   R4.*3 |
@@ -100,7 +93,7 @@ hornMvtI = \relative c''
   %D
   R4.*3 |
   r2. g'4.(\p\< |
-  aes2.~\!^\mSempreCresc) aes4.(\< |
+  aes2.~\!^\sempreCrescMarkup) aes4.(\< |
   g2.)\> ees4.~\< |
   ees2.\> b4.~\< |
   b2.\> c4.(\! |
@@ -112,7 +105,7 @@ hornMvtI = \relative c''
   g( b\< e4 g8) |
   g2.(\sf\> fis4.) |
   e2.(\p b4.) |
-  a2.~_\mDimPocoRit a4. |
+  a2.~\justDimPocoAPocoRit a4. |
   g2.~ g4. |
   fis2.~ fis4. |
   f2.~ f4. |
@@ -127,7 +120,7 @@ hornMvtI = \relative c''
   a4 g8-.( a-.) |
   a4 g8-.( c-.) |
   c4(\< d~)\> |
-  d4\! r8 g,_\mDolce |
+  d4\! r8 g,_\dolce |
 
   %E
   f'( e) e-.( f-.) |
@@ -141,17 +134,17 @@ hornMvtI = \relative c''
   \repeat unfold 2 {r g(\< | c\> b)\! |}
   f'4 e8-.( f-.) |
   f4 g8-.( f-.) |
-  f4_\mPocoCresc fis8-.( g-.) |
+  f4\justPocoCresc fis8-.( g-.) |
   g4 a8-.( g-.) |
   g4 e8-.( f-.) |
-  f4 e8-.(_\mDim f-.) |
+  f4 e8-.(\justDimin f-.) |
   f4 c8-.( f,-.) |
   c'4 b8-.( c-.) |
   c4 b8-.( c-.) |
   c4 g8-.( c,-.) |
   g'4 g~\< |
   g f~\> |
-  f( e-.\!)\(^\mSenzaRit |
+  f( e-.\!)\(^\senzaRit |
   r4 e-.\) |
   r4 ees-.\>\( |
   r4 ees-.\!\) |
@@ -170,7 +163,7 @@ hornMvtI = \relative c''
   %F
   ees4.\> r4\! cis8~( cis4 d8) |
   f4. r4 d8~(\< d4 ees8)\! |
-  gis2.~_\mSempreCresc gis4.~\< |
+  gis2.~_\sempreCrescMarkup gis4.~\< |
   gis(\> fis4)\! r8 e4.~(\< |
   e\> d4)\! r8 c4.~(\< |
   c\> bes4)\! r8 d4( c8) |
@@ -184,7 +177,7 @@ hornMvtI = \relative c''
   bes4.(\< d g4 bes,8) |
   bes2.(\sf\> a4.) |
   d2.~\p d4. |
-  c2.~_\mDimPocoRit c4. |
+  c2.~\justDimPocoAPocoRit c4. |
   bes2.~ bes4. |
   a2.~ a4. |
   aes2.~ aes4. |
@@ -201,10 +194,7 @@ hornMvtI = \relative c''
   ees4( f~) |
   f r |
   \repeat unfold 2 {r bes,(\< | ees\> d)\! |}
-  \set crescendoText = \markup { \italic "poco cresc." }
-  \set crescendoSpanner = #'text
-  r c(\< | f e) |
-  \crescHairpin
+  r c(\pocoCresc | f e) |
   r c( | f e) |
   r d( | g fis) |
   f( e) |
@@ -212,31 +202,32 @@ hornMvtI = \relative c''
 
   %H
   <<
-    {d(\!^\mEsprSempreCresc_\mAdlib ees | f ees | d) r |}
+    {d(\justSempreCresc^\espress_\adlib ees | f ees | d) r\! |}
     \new Voice {\voiceTwo R2*3 |}
   >>
-  s1*0_\mPocoAnimatoPoiAPoi R2 |
+  s1*0_\pocoAnimatoPoiAPoi
+  R2 |
   r4 ees( | g aes | bes) r |
   R2 |
   r4 g(\f | aes f | des) r |
   r bes'( | b aes | g f) |
   <<
-    {d(_\mAdlib g,~ | g) d'(\< | f\> g,)\! |}
+    {d(_\adlib g,~ | g) d'(\< | f\> g,)\! |}
     \new Voice {\voiceTwo R2*3 |}
   >>
   r4 d'(\< | g\> c,)\! |
   r g'(\< | bes\> c,)\! |
   r e(\< | f\> c)\! |
-  r_\mDim e(\< | f\> c)\! |
+  r\justDim e(\< | f\> c)\! |
   
   %I
-  r4 << c-_ \fade >> |
-  r4 << e-_ \fade >> |
-  r4_\mSempreDimRitPoco << e-_ \fade >> |
-  r4 << e-_ \fade >> |
-  r4 << f-_ \fade >> |
-  r4 << f-_ \fade >> |
-  r4 << ees-_ \fade >> |
+  r4 c-_\> s1*0\! |
+  r4 e-_\> s1*0\! |
+  r4_\sempreDimERitPocoAPoco e-_\> s1*0\! |
+  r4 e-_\> s1*0\! |
+  r4 f-_\> s1*0\! |
+  r4 f-_\> s1*0\! |
+  r4 ees-_\> s1*0\! |
   r4 e8-.(\> f-.)\! |
   r4 e8-.(\> f-.)\! |
   r4 dis8-.(\> e-.)\! |
@@ -286,17 +277,13 @@ hornMvtII = \relative c''
   g~ | g) |
 
   %B
-  \crescTextCresc
-  bes(\mf\< | ees) |
-  \crescHairpin
+  bes(\mf\cresc | ees) |
   g2( ees4) |
   d2( cis4) |
   d2.( | g,2)\! r4 |
   d'2.( | a2) r4 |
 
-  \crescTextCresc
-  bes2.(\< | ees) |
-  \crescHairpin
+  bes2.(\cresc | ees) |
   g2( ees4) |
   d2( cis4) |
   d2.( | g,2)\! r4 |
@@ -319,9 +306,7 @@ hornMvtII = \relative c''
   ces-. bes-. ces-. |
   bes-. r r |
 
-  \crescTextCresc
-  ees2.\< | c | bes | g2 c4-. | bes-.\f r r |
-  \crescHairpin
+  ees2.\cresc | c | bes | g2 c4-. | bes-.\f r r |
   R2.*3 |
   f'2.~ | \times 3/2 {f4 f} |
   \times 3/2 {e4( f)} | d2. |
@@ -330,7 +315,7 @@ hornMvtII = \relative c''
   R2.*8 |
 
   %C
-  c4(_\mPDolce des f~) | f2. |
+  c4(\pDolce des f~) | f2. |
   ees4( des ees~) | ees2. |
   des4( c des~) | des2. |
   c4( ees c~) | c2. |
@@ -379,10 +364,7 @@ hornMvtII = \relative c''
   g2.(\p fis) |
   fis~ | fis |
   g~( | g4 a b) |
-  \crescTextCresc
-  \set crescendoText = \markup { \italic "poco a poco cresc." }
-  b2.~\< | b |
-  \crescHairpin
+  b2.~\pocoAPocoCresc | b |
   c2.~ | c4( g c) |
   c2.~ | c4( g c) |
   c( g c) |
@@ -415,9 +397,7 @@ hornMvtII = \relative c''
   c4 r r |
   R2.*6 |
   g2.\f |
-  \crescTextCresc
-  c\< | e | d | c |
-  \crescHairpin
+  c\cresc | e | d | c |
   c4( g) e |
   g( c) e |
   g2.\f |
@@ -434,7 +414,7 @@ hornMvtII = \relative c''
 
   %Molto meno Allegro
   \key aes \major
-  c2.(_\mPEspr | aes4 bes c) |
+  c2.(\pEspr | aes4 bes c) |
   ees2( des4) | bes2. |
   des2.( | bes4 c des) |
   f2( ees4) |
@@ -460,16 +440,14 @@ hornMvtII = \relative c''
   ees2.~( ees2 f4) |
   f2.~ | f( | b,2) r4 |
   R2. |
-  c2.\espressivo_\mPEspr |
+  c2.\espressivo\pEspr |
   aes4( bes c) |
   ees2( des4) |
   bes2. | des |
   bes4( c des) |
   f2( ees4) |
   c2. |
-  \crescTextCresc
-  ees2.~(\< | ees4 des c) |
-  \crescHairpin
+  ees2.~(\cresc | ees4 des c) |
   ees2.~( | ees4 des c) |
   e2.\! |
   g4( f e) |
@@ -477,24 +455,24 @@ hornMvtII = \relative c''
   ees4( des c) |
   f2. |
   c2( des4) |
-  des2._\mDim |
+  des2.\justDim |
   a2( bes4) |
   c,2.\p |
   R2. |
-  c2._\mDim |
+  c2.\justDim |
   R2. |
   c2. |
   R2. |
-  c2. |
+  c2.\! |
   R2.*8 |
   R2.^\fermataMarkup |
-  \key ees \major
+  %\key ees \major
 }
 
 startIIIHorn = \relative c'''
 {
   R2.*4 |
-  g8(_\mPEspr d ees) f( d ees) |
+  g8(\pEspr d ees) f( d ees) |
   g( d ees) e4(_\espressivo f8) |
   g(\< f e) e4(\! f8) |
   aes( g aes) f4(\> bes,8) |
@@ -528,7 +506,7 @@ hornMvtIII = \relative c''
   %6/8
   bes'8(\p f' ges f bes, des |
   ees des) r r4. |
-  ees,8(^\mDim bes' ces bes ees, ges |
+  ees,8(\justDim bes' ces bes ees, ges |
   aes ges) r fis( b c |
   b) r r fis( b c |
   
@@ -537,7 +515,7 @@ hornMvtIII = \relative c''
   d\> c)\! r r c(\< ees |
   g\> fis)\! r r g( d |
   ees4.\< d |
-  b8-.)\! r r r g(_\mDim b |
+  b8-.)\! r r r g(\justDim b |
   d c) r r c( ees, |
   g fis) r r4. |
   R2. |
@@ -548,22 +526,19 @@ hornMvtIII = \relative c''
   R2.*3 |
 
   %C
-  g'8(_\mMoltoP c d e4 g8 |
+  g'8(\moltoP c d e4 g8 |
   e4 d8 c4 b8) |
   a2.~ | a |
   a8(\pp fis a d4 e8 |
   d4 a8 fis4.) |
   fis2.~ | fis4 r8 r4. |
-  r4 b8(_\mPocoAccel d4) r8 |
+  r4 b8(_\pocoAccel d4) r8 |
   R2. |
-  g4(_\mFPassionato e8) des4. |
+  g4(\fPassionato e8) des4. |
   c4 r8 c4 r8 |
   des4 r8 c4 r8 |
   c,4.( g')\espressivo |
-  e'8[(\< b c])
-    \set Score.beatLength = #(ly:make-moment 3 16)
-    des8.( c16) f aes |
-    \set Score.beatLength = #(ly:make-moment 3 8)
+  e'8[(\< b c]) des8.( c16) f aes |
 
   %D
   c4(\ff c,8) g'4( g,8) |
@@ -588,7 +563,7 @@ hornMvtIV = \relative c''
 
   \repeat volta 2
   {
-    \partial 8 r8 |
+    r8 |
     R2.*7 |
     r4. r4 g8\mf |
 
@@ -655,7 +630,7 @@ hornMvtIV = \relative c''
     g2. |
     aes~)\> |
     aes4.~ aes4\! r8 |
-    r4._\mDim ees4.(\< |
+    r4._\dimMarkup ees4.(\< |
     g2.~) |
     g2.~\> |
     g4\! r8 r4. |
@@ -670,12 +645,10 @@ hornMvtIV = \relative c''
       g4 r8 r4. |
       R2.*2 |
       r4. r4 c8\mf
-      \crescTextCresc
-      g'\< g a b4 g8 |
-      \crescHairpin
+      g'\cresc g a b4 g8 |
       b b c d d f |
       d d c b4.~\f
-      \partial 8*5 b~ b8 r8
+      b~ b8 r8
     }
     {
       g,4\repeatTie r8
@@ -691,7 +664,7 @@ hornMvtIV = \relative c''
   b'4.~ b4 fis8 | b4.~ b4 fis8 |
   b8 r r r4. |
   R2.*2 |
-  r4. c4.(_\mPEspr |
+  r4. c4.(\pEspr |
   des2. |
   e4. des) |
   c2.( |
@@ -705,10 +678,7 @@ hornMvtIV = \relative c''
   b4-. r8 b4-. r8 |
   c4-. r8 r4. |
   r e( |
-  \crescTextCresc
-  \set crescendoText = \markup { \italic "poco a poco cresc." }
-  f2.~)\< |
-  \crescHairpin
+  f2.~)\pocoAPocoCresc |
   f4 r8 f4.( |
   fis2.~) |
   fis4 r8 fis4.( |
@@ -806,7 +776,7 @@ hornMvtIV = \relative c''
   r4 e8(\< f4.~) |
   f~\> f4\! r8 |
   R2.*2 |
-  c2.(_\mPiuP |
+  c2.(\piuP |
   des~) |
   des4 r8 r4. |
   R2. |
@@ -816,9 +786,7 @@ hornMvtIV = \relative c''
   c,,~ | c~ | c~ | c~ | c4 r8 r4. |
   R2.*3 |
   \clef treble
-  \crescTextCresc
-  c'''8\mf\< c d e e g |
-  \crescHairpin
+  c'''8\mf\cresc c d e e g |
   g4.~ g4 c,8 |
   e\f e f g g c |
   c2.~ |
@@ -850,4 +818,3 @@ hornMvtIV = \relative c''
   e4 r8 r4. |
   c,2.\fermata |
 }
-

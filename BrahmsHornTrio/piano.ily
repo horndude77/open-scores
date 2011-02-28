@@ -1,6 +1,4 @@
-\version "2.13.14"
-
-\include "defs.ily"
+\version "2.13.51"
 
 funkyPart = \relative c'
 {
@@ -13,7 +11,7 @@ funkyPart = \relative c'
   \clef treble
   \set tieWaitForNote = ##t
   \times 2/3 {r8 << {\voiceOne \tieNeutral bes''~ <f bes, aes>~} \new Voice="two" {\voiceTwo bes4} >> } \oneVoice <bes f bes, aes>4 |
-  \tupletTransparent
+  \tupletOff
   \times 2/3 {r8 << {\voiceOne \tieNeutral bes~ <d, bes aes>~} \context Voice="two" {\voiceTwo bes'4} >> } \oneVoice <bes d, bes aes>4 |
   \times 2/3 {r8 << {\voiceOne \tieNeutral bes~ <ees, bes>~} \context Voice="two" {\voiceTwo bes'4} >> } \oneVoice <bes ees, bes>4 |
   \times 2/3 {r8 << {\voiceOne \tieNeutral ees~ <bes g ees>~} \context Voice="two" {\voiceTwo ees4} >> } \oneVoice <ees bes g ees>4 |
@@ -40,14 +38,14 @@ funkyPart = \relative c'
     \times 2/3 {r8 << {\voiceOne ees4~ } \context Voice="two" {\voiceTwo ees8 ees,~} >> }
       << ees'4 \context Voice="two" ees,4 >> \oneVoice |
   }
-  \tupletVisible
+  \tupletOn
 }
 
 pianoRightMvtI = \relative c''
 {
   %2/4
   \key ees \major
-  \partial 4 r4 |
+  r4 |
   r <bes d, bes aes>^.^( |
   r <bes f bes, aes>^.) |
   r <bes d, bes aes>^.^( |
@@ -332,7 +330,7 @@ pianoLeftMvtI = \relative c
   %2/4
   \key ees \major
   \clef bass
-  \partial 4 r4 |
+  r4 |
   r <bes bes,> |
   r <d bes d,> |
   r <f bes, f> |
@@ -664,32 +662,32 @@ pianoLeftMvtI = \relative c
 pianoDynamicsMvtI =
 {
   %2/4
-  \partial 4 s4 |
-  s s-\mPDolce |
+  s4 |
+  s s\pDolce |
   s2*15 |
   \repeat unfold 2 {s4 s\< | s\> s\! |}
   s s\p |
   s2*3 |
-  s4 s-\mDim |
+  s4 s\justDim |
   s2*3 |
 
   %A
-  s8\p s4.-\mEspr |
+  s8\p s4.-\espress |
   s2*8 |
-  s8 s4-\mCresc s8 |
+  s8 s4\justCresc s8 |
   s2*12 |
-  s2-\mDim |
+  s2\justDim |
   s2
   s2\< | s4\! s\> | s s\! |
 
   %B
   s4 s\p |
   s2*6 |
-  s2-\mPocoCresc |
+  s2-\justPocoCresc |
   s2*3 |
-  s2-\mDim |
+  s2-\justDim |
   s2*5 |
-  s2-\mSenzaRit |
+  s2-\senzaRit |
   s4 s\> | s2 | s4 s\! |
 
   %poco più animato
@@ -702,27 +700,27 @@ pianoDynamicsMvtI =
   s4. s\< s8 s s\! |
   s4. s\> s8 s s\! |
   s4.*3*3 |
-  s4.*3-\mFLegato |
+  s4.*3-\fLegato |
   s4.*3*2 |
 
   %C
   s4.*3\p |
   s4. s\< s8\> s s\!
   s4.*3 |
-  s4.-\mCresc s\< s8\> s s\! |
+  s4.\justCresc s\< s8\> s s\! |
   s4.*3*2 |
-  s4.*3-\mFLegato |
+  s4.*3\fLegato |
   s4.*3 |
   s8*5 s8\< s s s\! |
   s4.\f s s |
-  s s4 s8-\mPDolce s4. |
+  s s4 s8\pDolce s4. |
   s4.*3*2 |
   s4.*3\< | s4.\> s4 s8\! s4. |
 
   %D
-  s4.*3-\mLegato |
+  s4.*3-\legato |
   s |
-  s-\mSempreCresc |
+  s\justSempreCresc |
   s4.\< s s |
   s s s |
   s s s\! |
@@ -734,21 +732,21 @@ pianoDynamicsMvtI =
   s\< s s8 s s\! |
   s4.\sf\> s s8 s s\! |
   s4.\p s s |
-  s-\mDim s s |
-  s-\mPocoAPocoRit s s |
+  s\justDim s s |
+  s-\pocoAPocoRit s s |
   s4.*3*5 |
 
   %Tempo I
-  s2-\mPDolce |
+  s2\pDolce |
   s2*7
 
   %E
   s2*14
-  s2-\mPocoCresc
+  s2\justPocoCresc
   s2*2 |
-  s4 s-\mDim |
+  s4 s\justDim |
   s2*6 |
-  s4 s-\mSenzaRit |
+  s4 s-\senzaRit |
   s8 s4.\> |
   s2 |
   s4. s8\! |
@@ -761,11 +759,11 @@ pianoDynamicsMvtI =
   s4. s\< s8 s s\! |
   s4.*3 |
   s8 s\> s s4. s8 s s\! |
-  s8*4 s8*5-\mLeggiero
+  s8*4 s8*5-\leggiero
 
   %F
   s4.*3*2 |
-  s4.-\mSempreCresc s s8 s s\< |
+  s4.\justSempreCresc s s8 s s\< |
   s4.*3*2 |
   s4. s8 s s\! s4.\> |
   s4. s s8 s s\! |
@@ -778,25 +776,25 @@ pianoDynamicsMvtI =
   s4.\< s s8 s s\! |
   s4.\sf\> s s8 s s\! |
   s4.*3\p |
-  s-\mDim |
-  s-\mPocoAPocoRit |
+  s\justDim |
+  s-\pocoAPocoRit |
   s4.*3*5 |
 
   %Tempo I
   s4 s\pp |
   s2*11 |
-  s2-\mPocoCresc |
+  s2\justPocoCresc |
   s2*7 |
 
   %H
-  s2-\mPSempre |
-  s-\mCresc |
+  s2\pSempre |
+  s\justCresc |
   s |
-  s-\mPocoAnimatoPoiAPoi |
+  s-\pocoAnimatoPoiAPoi |
   s2*10 |
 
   %ees major
-  s2-\mFLegato |
+  s2-\fLegato |
   s2*7 |
   s4 s\> | s s8*2/3 s s\! |
   s2\> |
@@ -804,7 +802,7 @@ pianoDynamicsMvtI =
   %I
   s4\! s\p |
   s2 |
-  s-\mSempreDimRitPoco |
+  s\justSempreDimERitPocoAPoco |
   s2*13 |
   s4 s\< | s\! s\> | s\! s |
   s s\pp |
@@ -813,7 +811,7 @@ pianoDynamicsMvtI =
 
 pianoPedalsMvtI =
 {
-  \partial 4 s4 | s2*28 |
+  s4 | s2*28 |
 
   %A
   s2*27 |
@@ -854,8 +852,8 @@ pianoPedalsMvtI =
 
   %H
   s2*4 |
-  s2*10_\mColPed |
-  s2*11_\mColPed |
+  s2*10_\colPed |
+  s2*11_\colPed |
 
   %I
   s2*11 |
@@ -1755,7 +1753,7 @@ pianoDynamicsMvtII =
   s2.*3 |
   s2.\f |
   s |
-  s-\mStacc |
+  s-\stacc |
   s2.*22 |
   s2.\p |
   s2.*6 |
@@ -1765,7 +1763,7 @@ pianoDynamicsMvtII =
   s2. |
 
   %B
-  s2.-\mCresc |
+  s2.\justCresc |
   s2.*15 |
   s2.\f |
   s4 s\> s |
@@ -1781,7 +1779,7 @@ pianoDynamicsMvtII =
   s2. |
 
   %key change
-  s2.*4-\mCresc
+  s2.*4\justCresc
   s2.*4\f |
   s2.*4\p |
   s2.*2\f |
@@ -1790,7 +1788,7 @@ pianoDynamicsMvtII =
 
   %C
   s2. |
-  s2.*15-\mPLeggiero |
+  s2.*15\pLeggiero |
   s2.*6\p |
   s4\< s s\! |
   s4\> s s\! |
@@ -1802,16 +1800,16 @@ pianoDynamicsMvtII =
 
   %key change
   s2.*6 |
-  s2.*2-\mCresc |
+  s2.*2\justCresc |
   s4 s s\< | s s s\! |
   s2.*4\f |
 
   %E
   s2.*4\f |
   s2.*2\f |
-  s2.*19-\mStacc |
+  s2.*19-\stacc |
   s2.*23\p |
-  s2.*8-\mPocoCresc |
+  s2.*8\justPocoCresc |
 
   %F
   s2.*4\f |
@@ -1830,13 +1828,13 @@ pianoDynamicsMvtII =
   s2.\f |
   s2.\< | s4 s s\! |
   s2.*5 |
-  s2.*4-\mCresc |
+  s2.*4\justCresc |
   s2.*5\f |
   s2.*6\f |
   %fine
 
   s2. |
-  s2.*8-\mPRitPocoAPoco |
+  s2.*8\pRitPocoAPoco |
 
   %key change
   s2.*21\p |
@@ -1844,22 +1842,21 @@ pianoDynamicsMvtII =
   s2.\> |
   s4 s s\! |
   s2.*3 |
-  s2.*5-\mPocoAPocoCresc |
+  s2.*5\justPocoAPocoCresc |
 
   %H
   s2.*4 |
   s4\< s s\! |
   s s s\> | s2. | s4 s s\p\< | s\> s s\! |
   s2.*7 |
-  \crescTextCresc
-  s2.*3\< | s2.\! |
-  \crescHairpin
+  s2.*3\cresc | s2.\! |
   s2.*3 |
   s2.*2\f |
-  s4 s s-\mDim |
+  s4 s s\justDim |
   s2.*9 |
-  s2.*3-\mPRit |
-  s2.*4\> | s2.\! |
+  s2.*3\pRit |
+  s2.*4\> |
+  s2.\! |
 }
 
 pianoPedalsMvtII =
@@ -1898,7 +1895,7 @@ pianoPedalsMvtII =
 
   %Molto meno Allegro
   s2.*12\sustainOff |
-  s2.*20_\mColPed |
+  s2.*20_\colPed |
 
   %H
   s2.*44 |
@@ -2256,7 +2253,7 @@ pianoDynamicsMvtIII =
   s4. s8\> s s\! |
   s4.\p s8 s\> s |
   s4. s8 s s\! |
-  s2.-\mEspr |
+  s2.-\espress |
   s2.*2 |
   s8\> s s s s s\! |
   s2.\p |
@@ -2265,27 +2262,27 @@ pianoDynamicsMvtIII =
 
   %A
   s2.*4 |
-  s2.*3-\mPSempreELegato |
+  s2.*3\pSempreELegato |
 
   %9/8
   s4.*3 |
 
   %6/8
   s2.\pp |
-  s4. s8 s4-\mDim |
+  s4. s8 s4\justDim |
   s2.*3 |
 
   %B
-  s4.\pp s4.-\mUnPocoStringendoCresc
+  s4.\pp s4.-\unPocoStringendo\justCresc
   s2. |
   s2.\< |
   \times 2/3 {s16*17 s16\!} |
-  s4.\sfp s8.-\mDim s8. |
+  s4.\sfp s8.\justDim s8. |
   s2.*2 |
   s16*11\> s16\! |
-  s4. s-\mDim |
+  s4. s\justDim |
   s16*11\> s16\! |
-  s2.*2-\mInTempo |
+  s2.*2-\inTempo |
   s4. s\> | s4. s8 s s\! |
   s2.*3\p |
   s4. s8\> s s\! |
@@ -2300,9 +2297,7 @@ pianoDynamicsMvtIII =
   s2.*2\p |
   s2.*4\pp |
   s2.*2\pp |
-  \crescTextCresc
-  s2.\< | s4. s\! |
-  \crescHairpin
+  s2.\cresc | s4. s\! |
   s2.*4\f |
   s8. s\< s8 s s\! |
 
@@ -2310,7 +2305,7 @@ pianoDynamicsMvtIII =
   s2.*2\ff |
   s8\fp s s\> s s s\! |
   s2.\p |
-  s4 s8-\mDim s4. |
+  s4 s8\justDim s4. |
   s4.*2 |
   s4. s\< | s s8 s s\! |
   s2.\sf |
@@ -2337,11 +2332,11 @@ pianoPedalsMvtIII =
   s2.*5 |
 
   %B
-  s2.*11_\mColPed |
+  s2.*11_\colPed |
   s2.*16\unaCorda
 
   %C
-  s2.*11_\mColPed |
+  s2.*11_\colPed |
   s2.*4 |
 
   %D
@@ -2455,7 +2450,7 @@ pianoRightMvtIV = \relative c'
 
   \repeat volta 2
   {
-    \partial 8 bes8-. |
+    bes8-. |
     \pianoRightMvtIVBeginning
     r4. r4 bes8 |
     bes( des ges bes des ges) |
@@ -2534,7 +2529,7 @@ pianoRightMvtIV = \relative c'
       bes,( bes' ges ges' ees,, ees') |
       \repeat unfold 2 {bes( bes' bes bes') bes,, bes' |}
       bes, bes' bes~ <bes f' aes bes>4.~
-      \partial 8*5 <bes f' aes bes>4.~ <bes f' aes bes>8 r |
+      <bes f' aes bes>4.~ <bes f' aes bes>8 r |
     }
     {
       d,8( d' f,
@@ -2769,7 +2764,7 @@ pianoLeftMvtIV = \relative c,
 
   \repeat volta 2
   {
-    \partial 8 bes8-. |
+    bes8-. |
     \pianoLeftMvtIVBeginning
     r4. r4 bes'8 |
     bes( des ges \clef treble bes des ges) |
@@ -2833,7 +2828,7 @@ pianoLeftMvtIV = \relative c,
       bes ges'8~ ges ees,4 |
       \repeat unfold 2 {bes' bes'8~ bes bes,,4 |}
       bes'4. <bes' d f aes>~
-      \partial 8*5 <bes d f aes>~ <bes d f aes>8 r
+      <bes d f aes>~ <bes d f aes>8 r
     }
     {
       d,4 f8~
@@ -2994,9 +2989,9 @@ pianoDynamicsMvtIV =
 {
   \repeat volta 2
   {
-    \partial 8 s8\p |
+    s8\p |
     s2.*2 |
-    s2.*2-\mStacc |
+    s2.*2-\stacc |
     s8 s\< s s4. |
     s4. s8 s s\! |
     s2.\f |
@@ -3004,12 +2999,12 @@ pianoDynamicsMvtIV =
 
     %A
     s2. |
-    s2.*3-\mStacc |
-    s4. s-\mCresc |
+    s2.*3-\stacc |
+    s4. s\justCresc |
     s2.*2 |
     s4. s8 s s\f |
     s2.*16 |
-    s2.*4-\mNonLegato |
+    s2.*4-\nonLegato |
 
     %B
     s4. s8 s\< s |
@@ -3021,7 +3016,7 @@ pianoDynamicsMvtIV =
     s4. s8 s s\f |
     s2. |
     s4.\f\< s8 s s\! |
-    s2.*11-\mMarcato |
+    s2.*11-\marcatoMarkup |
 
     %C
     s2.*5\fp |
@@ -3029,24 +3024,25 @@ pianoDynamicsMvtIV =
     s2.*2 |
     s2.*2\p |
     s8\< s s\! s\> s s\! |
-    s4.\pp s8 s s-\mDim |
+    s4.\pp s8 s s\justDim |
     s2. |
     s4. s\< |
     s\> s4\! s8\pp |
     s2. |
 
     %D
-    s2.*4-\mPDolce |
+    s2.*4\pDolce |
     s2.*4-\p |
   }
   \alternative
   {
     {
       s2. |
-      s2.*5-\mCresc |
-      s4. s\f \partial 8*5 s8*5 |
+      s2.*5\justCresc |
+      s4. s\f |
+      s8*5 |
     }
-    {s4.-\mPCresc}
+    {s4.\p\justCresc}
   }
   s4. |
   s2.*3 |
@@ -3056,14 +3052,14 @@ pianoDynamicsMvtIV =
   s4. s\fz |
   s2. |
   s4. s\fz |
-  s2.*2-\mFNonLegato |
+  s2.*2\fNonLegato |
   s2.*2\fp |
   s2.*2\p |
-  s2.*16-\mStacc |
+  s2.*16-\stacc |
   s2.*3\p |
-  s4. s-\mPocoAPocoCresc |
+  s4. s\justPocoAPocoCresc |
   s2. |
-  s2.*7-\mStacc |
+  s2.*7-\stacc |
   s2.*2\f |
 
   %F
@@ -3076,23 +3072,23 @@ pianoDynamicsMvtIV =
   s2.*2\f |
   s8\p\< s s s s s\! |
   s2. |
-  s2.*6-\mDim |
+  s2.*6\justDim |
   s2.*6\p |
   s4.\f s8 s s\> |
   s4. s8 s s\p |
   s2.*2 |
-  s2.*2-\mStacc |
+  s2.*2-\stacc |
   s8 s\< s s4. |
   s4. s8 s s\! |
   s2.*2\f |
   s2.*4\mf |
-  s4. s-\mCresc |
+  s4. s\justCresc |
   s2.*2 |
   s4. s8 s s\f |
   s2.*16 |
 
   %G
-  s2.*4-\mNonLegato |
+  s2.*4-\nonLegato |
   s4. s\< |
   s4. s8 s s\! |
   s2.*6\f |
@@ -3104,16 +3100,16 @@ pianoDynamicsMvtIV =
   s2. |
   s8\< s s s s s\! |
   s2.\f |
-  s2.*5-\mMarcato |
+  s2.*5-\marcatoMarkup |
   s2.*6\f |
 
   %H
   s2.\fp |
   s8\< s s\! s\> s s\! |
-  s2.*6-\mPDolce |
+  s2.*6\pDolce |
   s2.*7\pp |
-  s2.*8-\mPDolce |
-  s2.*8-\mPCresc |
+  s2.*8\pDolce |
+  s2.*8\p\justCresc |
 
   %I
   s2.*10\f |

@@ -1,9 +1,9 @@
-\version "2.13.14"
+\version "2.13.51"
 
+\include "defs.ily"
 \include "piano.ily"
 \include "horn.ily"
 \include "violin.ily"
-\include "defs.ily"
 
 instrument = "Piano"
 threeToFourPadding = {r8*5}
@@ -223,11 +223,11 @@ threeToFourPadding = {r8*5}
         }
       >>
       {
-        << \midiOutlineMvtI \outlineMvtI >>
-        << \midiOutlineMvtII \outlineMvtII >>
-        << \midiOutlineMvtIII \outlineMvtIII >>
+        \outlineMvtI
+        \outlineMvtII
+        \outlineMvtIII
         \threeToFourPadding
-        << \midiOutlineMvtIV \outlineMvtIV >>
+        \outlineMvtIV
       }
     >>
     \midi { }
