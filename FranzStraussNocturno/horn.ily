@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.52"
 
 horn = \relative c''
 {
@@ -15,9 +15,7 @@ horn = \relative c''
   c2. r4 |
   r ees\(\pp des8 c bes a( |
   c4\< bes2)\) f'4~( |
-  f\! g,)
-    \once \override Beam #'positions = #'(3.5 . 3.5) %Avoid beam collisions
-    aes8[\( \grace {bes32[( aes])} g16 aes] des8 c\) |
+  f\! g,) aes8[\( \grace {bes32[( aes])} g16 aes] des8 c\) |
   bes2~ bes8 bes(\cresc
     \once \override Stem #'stroke-style = #"grace"
     \grace d8 c8 bes) |
@@ -48,9 +46,7 @@ horn = \relative c''
   c bes aes g aes) r f4 |
   a8. f16 e( f) a-. c-. f4.( ees8) |
   ees4( des2) c4-> |
-  bes-> aes-> g->
-    \once \override Beam #'positions = #'(2.5 . 2.5)
-    f8[\( \grace {g32[( f])} e16 f]\) |
+  bes-> aes-> g-> f8[\( \grace {g32[( f])} e16 f]\) |
 
   %Tempo I
   g2 r4 g\pp |

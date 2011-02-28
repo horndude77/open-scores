@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.52"
 
 aTempo = \markup{\normal-text \italic "a tempo"}
 
@@ -71,12 +71,26 @@ afterGraceFraction = #(cons 15 16)
 
     fontSize = #-3
     \override StaffSymbol #'staff-space = #(magstep -3)
-    \override RehearsalMark #'font-size = #0
   }
 }
 
 \midi
 {
+  \context
+  {
+    \Score
+    \accepts "SoloStaff"
+  }
+
+  \context
+  {
+    \Staff
+    \type "Engraver_group"
+    \name "SoloStaff"
+
+    \alias "Staff"
+  }
+
   \context
   {
     \Voice

@@ -1,4 +1,4 @@
-\version "2.13.33"
+\version "2.13.52"
 
 righthand = \relative c
 {
@@ -244,7 +244,7 @@ lefthand = \relative c
   <des, aes' des>16 r r8 r4 <des, des'>2 |
   <des des'> <des des'> |
   \repeat unfold 5 {<des des'>1 |}
-  aes'2~ <aes,~ aes'> |
+  aes'2~ <aes, aes'~> |
   <des aes'> r |
   <<
     {\voiceOne aes'16(\< d ees f ges d f ees des\> c f ees des c bes aes~)\!}
