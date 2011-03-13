@@ -1,6 +1,4 @@
-\version "2.13.17"
-
-\include "defs.ily"
+\version "2.13.53"
 
 clarinetOneMvtI = \relative c''
 {
@@ -13,9 +11,7 @@ clarinetOneMvtI = \relative c''
   {
     R2.*8 |
     r4 r c~\p |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    c(\< d e) |
+    c(\justCresc d e) |
     f2(\p a4 |
     f2 c4) |
     f( a c |
@@ -23,7 +19,7 @@ clarinetOneMvtI = \relative c''
     R2. |
     r4 r a,(\p |
     bes d f) |
-    bes,2(\< b4 |
+    bes,2(\justCresc b4 |
     c2)\fp g'4( |
     e c g') |
     f4-. f2\sf |
@@ -36,8 +32,7 @@ clarinetOneMvtI = \relative c''
     f\sf f4~\sf |
     f e-. e~\sf |
     e f-. f(\sf |
-    e) c,8-.\< d-. e-. f-. |
-    \crescHairpin
+    e) c,8-.\justCresc d-. e-. f-. |
     g-. a-. bes-. c-. d-. e-. |
     f2(\ff a4 |
     f2 c4) |
@@ -48,9 +43,7 @@ clarinetOneMvtI = \relative c''
     bes4( f) f |
     fis2.( |
     g4) r r |
-    r
-      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-      g4.(\pDolce f8 |
+    r g4.(\pDolce f8 |
     d4) r r |
     R2.*2 |
     r4 g4.( e8 |
@@ -80,23 +73,19 @@ clarinetOneMvtI = \relative c''
     c4 r r |
     R2.*5 |
     r4 e-.(\p e-.) |
-    \crescTextCresc
-    e-.(\< e-. e-.) |
+    e-.(\justCresc e-. e-.) |
     e-.( e-. e-.)\sf\> |
     e2( d4)\! |
     R2.*4 |
     r4 ees-.( ees-.) |
-    ees-.(\< ees-. ees-.) |
-    \crescHairpin
+    ees-.(\justCresc ees-. ees-.) |
     ees-.( ees-. ees-.) |
     ees2(\sf\> d4)\! |
     R2.*3 |
     r4 d-.(\< d-.)\> |
     d4\p r r |
     R2.*7 |
-    \crescTextCresc
-    r4 r f,8-.\< g-. |
-    \crescHairpin
+    r4 r f,8-.\justCresc g-. |
     a-. b-. c-. d-. e-. f-. |
     g4\f c,2\sf |
     r4 c2\sf |
@@ -121,9 +110,7 @@ clarinetOneMvtI = \relative c''
     d-. r d-. |
     r f-. r |
     e-. r e-. |
-    \crescTextCresc
-    a,2.~\< |
-    \crescHairpin
+    a,2.~\justCresc |
     a4. d8( cis d) |
     c e g e e e |
     f2.\ff |
@@ -147,9 +134,7 @@ clarinetOneMvtI = \relative c''
     }
   }
   R2.*31 |
-  \crescTextCresc
-  r4 r g~\< |
-  \crescHairpin
+  r4 r g~\justCresc |
   g b,-.\ff b-. |
   b-. b-. b-. |
   b2.~ | b |
@@ -205,12 +190,8 @@ clarinetOneMvtI = \relative c''
   R2. |
   r4 f'(\p e | f4.\sf g8 aes4) |
   g( c b | c4.\sf bes8 aes g) |
-  \dimTextDecresc
-  f4 f( g | aes4.\sf\> g8 f4) |
-  \dimHairpin
-  \crescTextCresc
-  ees2.~_\mDolce\< | ees8( des c des ees des) |
-  \crescHairpin
+  f4 f( g | aes4.\sf\justDecresc g8 f4) |
+  ees2.~_\mDolce\justCresc | ees8( des c des ees des) |
   c4\p r r |
   R2.*8 |
   c2(\p e4 | c2 g4) |
@@ -221,9 +202,7 @@ clarinetOneMvtI = \relative c''
   bes4( f' aes) | g4 r r |
   ees2( g4 | ees2 bes4) |
   bes( ees g) | g r r |
-  \crescTextCresc
-  c,2(\< g'4 | c,2 bes4) |
-  \crescHairpin
+  c,2(\justCresc g'4 | c,2 bes4) |
   c( g' bes) |
   R2. |
   f2(\sf aes4) |
@@ -233,8 +212,7 @@ clarinetOneMvtI = \relative c''
   f4 f f | f f f | f r r |
   R2.*3 |
   b,2.\p | b | b | b |
-  \dimTextDecresc
-  bes\> | bes | aes | aes |
+  bes\justDecresc | bes | aes | aes |
   bes\pp | bes | bes | bes |
   R2.*2 |
   des2.\pp | des |
@@ -245,18 +223,14 @@ clarinetOneMvtI = \relative c''
   R2.*17 |
   bes,2.~\p | bes~ | bes~ | bes
   bes2.~ |
-  \crescTextCresc
-  bes | bes2.~\< | bes~\> | bes4\pp r r |
-  \dimHairpin
+  bes | bes2.~\justCresc | bes~\justDecresc | bes4\pp r r |
   R2.*2 |
-  r4 r d8-.\< c-. |
-  \crescHairpin
+  r4 r d8-.\justCresc c-. |
   bes-. c-. bes-. a-. bes-. a-. |
   g-. f-. e-. f-. g-. bes-. |
   a4\sf c c | c2 c4 |
   c c c | c2 c4\sf |
   d d d | d2 d4\sf |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees2.\piuF | d2. |
   des2.~ | des4 c c |
   c2\ff f4\sf |
@@ -283,26 +257,22 @@ clarinetOneMvtI = \relative c''
   ees4-. ees-. r | r r r8 ees-. |
   d-. r r4 r |
   R2.*7 |
-  \crescTextCresc
-  c2.~\< | c~ |
+  c2.~\justCresc | c~ |
   c8\ff b-. bes-. a-. g-. f-. |
   e-. d'-. c-. bes-. a-. g-. |
   f4 a'-.(\p a-.) |
-  a-.(\< a-. a-.) |
+  a-.(\justCresc a-. a-.) |
   a-.( a-.) a~\sf\> |
   a2( g4)\! |
   R2.*4 |
   r4 aes-.( aes-.) |
-  aes-.(\< aes-. aes-.) |
-  \crescHairpin
+  aes-.(\justCresc aes-. aes-.) |
   aes-.( aes-. aes-.) |
   aes2(\sf\> g4) | s1*0\!
   R2.*2 |
   r4 f( d | c2\< b4)\> | bes4\! r r |
   R2.*7 |
-  \crescTextCresc
-  r4 r bes,8-.\< c-. |
-  \crescHairpin
+  r4 r bes,8-.\justCresc c-. |
   d-. e-. f-. g-. a-. bes-. |
   c4\f c2\sf |
   r4 c2\sf |
@@ -330,9 +300,7 @@ clarinetOneMvtI = \relative c''
   c-. r c-. |
   r c-. r |
   R2. |
-  \crescTextCresc
-  r4 r8 d(\< c bes) |
-  \crescHairpin
+  r4 r8 d(\justCresc c bes) |
   a-. f-. a-. c-. f-. a-. |
   e2.\ff |
   \repeat unfold 3 {f4\f r r |}
@@ -350,8 +318,7 @@ clarinetOneMvtI = \relative c''
   a( d) d | d2~\sf d8( c) |
   bes4 bes( c | d4.\sf c8 bes4) |
   R2. |
-  \crescTextCresc
-  c2.~\< | c4\p f( e |
+  c2.~\justCresc | c4\p f( e |
   f4.\sf g8 aes4) |
   g( c b | c4. bes8 aes g) |
   f4 f( e | f4.\sf g8 aes4) |
@@ -361,7 +328,7 @@ clarinetOneMvtI = \relative c''
   e4 e-. c-. |
   g'( f2~) |
   f4 f-. c-. |
-  aes'\<^\mEspr aes2~ |
+  aes'\justCresc^\mEspr aes2~ |
   aes4 aes2~ |
   aes4 aes-.( aes-.) |
   aes( g f) |
@@ -371,15 +338,14 @@ clarinetOneMvtI = \relative c''
   r d-. r |
   d-. r d-. |
   r d-. r |
-  c2.~\< |
+  c2.~\justCresc |
   c4 a-. a-. |
   g-. g-. g-. |
   g-.\p g-. g-. |
   a-. r r |
   R2.*7 |
   \repeat unfold 8 {c2.~ |}
-  c8 a16( bes c8-.) c-.\< d-. e-. |
-  \crescHairpin
+  c8 a16( bes c8-.) c-.\justCresc d-. e-. |
   f-. c-. d-. e-. f-. g-. |
   a-.\sf a16( g f8-.) e-. d-. c-. |
   bes-. a-. g-. f-. e-. d-. |
@@ -409,8 +375,7 @@ clarinetOneMvtI = \relative c''
   bes4-.( bes-. bes-.) |
   a r r |
   R2. |
-  \crescTextCresc
-  r4 r8 c-.\< bes-. a-. |
+  r4 r8 c-.\justCresc bes-. a-. |
   g-. a-. bes-. a-. g-. f-. |
   e4\f g2~\f |
   g4 bes2~\f |
@@ -432,41 +397,32 @@ clarinetOneMvtII = \relative c''
   a4 d8 d |
   d(\< b\> cis)\! r |
   bes4 r |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  bes8 r bes4~\<
-  \dimTextDecresc
-  bes8 bes(\> a g) |
+  bes8 r bes4~\justCresc
+  bes8 bes(\justDecresc a g) |
   a8\p bes16. bes32 a8 r |
 
   %A
   R2*20 |
   c4(\p bes8 a) |
   g2 |
-  bes4(\< a8 bes) |
+  bes4(\justCresc a8 bes) |
   c8 r16. d32-.\f d4 |
   r4 d8-.(\p d-.) |
   d-. d( f-> d |
   cis) r r4 |
   a'4( g8 f) |
-  \crescHairpin
   e4(\< a,~) |
-  \dimHairpin
   a4.(\> gis8) |
-  \crescTextCresc
-  a8\! bes(\< a d |
+  a8\! bes(\justCresc a d |
   cis f e d) |
-  \dimTextDecresc
-  cis4(\> bes |
-  a)\< a\sf |
+  cis4(\justDecresc bes |
+  a)\justCresc a\sf |
 
   %B
   g4\p r |
   bes r |
-  bes4.\< bes8 |
+  bes4.\justCresc bes8 |
   a-.\f bes-. r d~\p |
-  \crescHairpin
-  \dimHairpin
   d d(\< cis)\> cis16.( e32) |
   d8\p r r4 |
   R2*3 |
@@ -486,8 +442,7 @@ clarinetOneMvtII = \relative c''
 
   %C
   R2*18 |
-  \crescTextCresc
-  cis2\f\< |
+  cis2\f\justCresc |
   d4.\ff fis8-.\sf |
   d4. fis8-.\sf |
   d8-. fis-.\sf d8-. fis-.\sf |
@@ -543,28 +498,24 @@ clarinetOneMvtII = \relative c''
   a'4 g32( f16.) e32( d16.) |
   f4( e8) r |
   e4 e16.( f32 g16. a32) |
-  bes2~\< |
-  \dimTextDecresc
-  bes8\> bes( a g) |
+  bes2~\justCresc |
+  bes8\justDecresc bes( a g) |
   a8\p bes16. bes32 a8 r |
   R2*4 |
   d4\p d8 d~ |
-  \dimHairpin
-  d4\< d8..(\sf\> gis,32) |
+  d4\justCresc d8..(\sf\> gis,32) |
   a8\p r r4 |
   a4( g8 f) |
-  \crescHairpin
   e4(\< a8) a'~ |
   a4.(\> gis8) |
   a8\! r r4 |
   R2*2 |
-  \crescTextCresc
-  r16 b,-.(\< c-. cis-. d-. dis-. e-. fis-.) |
+  r16 b,-.(\justCresc c-. cis-. d-. dis-. e-. fis-.) |
 
   %G
   g8\p r \appoggiatura a,8\( g16. fis32 g16. a32\) |
   bes4( g8) r |
-  cis4.\< bes'8 |
+  cis4.\justCresc bes'8 |
   a-.\f d,-. r d~\p |
   d d(\> cis) cis16.( a32) |
   a8\! r r4 |
@@ -575,7 +526,7 @@ clarinetOneMvtII = \relative c''
   f4.(\sf\> e16 d) |
   d4(\p cis) |
   d8 gis,4(\> a8) |
-  d4(\< cis8.. d32) |
+  d4(\justCresc cis8.. d32) |
 
   %H
   d8\f r r4 |
@@ -589,10 +540,9 @@ clarinetOneMvtII = \relative c''
   d,8 r r4 |
   r r8 cis'8(\p |
   d4 a8 c) |
-  \crescTextCresc
-  bes4(\< a8 g) |
+  bes4(\justCresc a8 g) |
   fis d' d d |
-  d2\p\< |
+  d2\p\justCresc |
   r4\! ees8\p r |
   r4 d8 r |
   R2 |
@@ -625,9 +575,7 @@ clarinetOneMvtIII = \relative c''
     f2. |
     e4( g) e-. |
     d( f) d-. |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    c-.\< d-. e-. |
+    c-.\justCresc d-. e-. |
 
     %A
     f\ff f' f |
@@ -680,10 +628,10 @@ clarinetOneMvtIII = \relative c''
     d r r |
     d r r |
     e r r |
-    e-.\< dis-. e-. |
+    e-.\justCresc dis-. e-. |
     f-. g-. a-. |
     bes-. r r |
-    r c,\< c |
+    r c,\justCresc c |
     c\ff e e |
     e g g |
     g g g |
@@ -759,7 +707,7 @@ clarinetOneMvtIII = \relative c''
   f2. |
   e4( g) e |
   d( f) d-. |
-  c-.\< d-. e-. |
+  c-.\justCresc d-. e-. |
 
   %C
   f\ff f' f |
@@ -816,7 +764,7 @@ clarinetOneMvtIII = \relative c''
   d r r |
   d r r |
   e r r |
-  e-.\< dis-. e-. |
+  e-.\justCresc dis-. e-. |
   f-. g-. a-. |
   bes r r |
   r c, c |
@@ -829,17 +777,15 @@ clarinetOneMvtIII = \relative c''
 
   %coda
   R2.*2 |
-  \crescHairpin
   ees2.(\pp\< |
   e\> |
   f4)\! r r |
   R2. |
   ees2.(\pp\< |
-  \crescTextCresc
   e\> |
   f4)\! r r |
   R2.*3 |
-  r4 g,\< a |
+  r4 g,\justCresc a |
   g a g |
   a\f e' f |
   e f e |
@@ -919,12 +865,9 @@ clarinetOneMvtIV = \relative c''
   bes4.( e,8) |
   e4.( bes'8) |
   c4.( a8) |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  c4-.(\< c-.) |
+  c4-.(\justCresc c-.) |
   a8( c4\sf d8~) |
-  \dimTextDecresc
-  d(\> c4 d8) |
+  d(\justDecresc c4 d8) |
   c(\p b c) r |
   r8 c-.\f c-. c-. |
   \repeat unfold 3 {r8 c-. c-. c-. |}
@@ -964,9 +907,9 @@ clarinetOneMvtIV = \relative c''
   d,4. d8 |
   d d d d |
   d4. d8 |
-  d\< d d d |
+  d\justCresc d d d |
   d r r4 |
-  d'2\< |
+  d'2\justCresc |
   a'~\f |
   a4 d, |
   d d |
@@ -1032,13 +975,9 @@ clarinetOneMvtIV = \relative c''
   c4 r |
   a r |
   R2*18 |
-  \crescHairpin
   g2\p\< |
-  \crescTextCresc
   c |
-  \dimHairpin
   c,\> |
-  \dimTextDecresc
   f8\! r r4 |
   R2*36 |
   r4 f'~\ff |
@@ -1085,27 +1024,22 @@ clarinetOneMvtIV = \relative c''
   c4.( d16 c) |
   bes4 bes8..(\sf a32) |
   a4. a8 |
-  c4-.(\< c-.) |
-  \dimHairpin
+  c4-.(\justCresc c-.) |
   c4.\sf\> f8 |
   f(\p c) c( b16 f')
-  \crescHairpin
   << {s8\< s\> s\!} {f4( e8) r} >> |
   R2 |
   r8 c16( d) e-.( f-. g-. a-.) |
   bes8 r r4 |
   R2 |
-  \crescTextCresc
-  r4 bes8..(\< a32) |
+  r4 bes8..(\justCresc a32) |
   a4.\sf\> a8~ |
   a\p g4 f8~ |
-  \crescHairpin
   << {s8\< s\> s\!} {f4( e8) r} >> |
   \repeat unfold 4 {\times 2/3 {g,,16 bes c} \times 2/3 {e c bes}} |
   \repeat unfold 2 {\times 2/3 {bes c e} \times 2/3 {g e c}} |
   \times 2/3 {bes c e} \repeat unfold 3 {\times 2/3 {g e c}} |
-  \crescTextCresc
-  \times 2/3 {c\< f a} \times 2/3 {c f a} \times 2/3 {c a f} \times 2/3 {c a f} |
+  \times 2/3 {c\justCresc f a} \times 2/3 {c f a} \times 2/3 {c a f} \times 2/3 {c a f} |
   \times 2/3 {d g bes} \times 2/3 {d g bes} \times 2/3 {d bes g} \times 2/3 {d bes g} |
   \times 2/3 {a c f} \times 2/3 {a g f} \times 2/3 {e d c} \times 2/3 {bes a g} |
   a8 r r4 |
@@ -1113,11 +1047,9 @@ clarinetOneMvtIV = \relative c''
   f-. e8-> f16-. g-. a-. bes-. c-. |
   cis-. d8-> c16-. c-. bes8-> a16-. |
   a-. g8-> fis16-. g-. gis-. a-. bes-. |
-  b-.\< c8 c16-. r4 |
+  b-.\justCresc c8 c16-. r4 |
   cis16-. d8 d16-. r4 |
-  \crescHairpin
   b16\p\< c8 c16 b\> c8 c16 |
-  \crescTextCresc
   f,8\! r r f\ff |
 
   %F
@@ -1140,28 +1072,24 @@ clarinetOneMvtIV = \relative c''
   %G
   f8\fp r a4(\p |
   c f) |
-  e2~\< |
+  e2~\justCresc |
   e |
   f16\p f, f f f( a) a-. a-. |
   a( c) c-. c-. c( f) f-. f-. |
-  e2(\< |
+  e2(\justCresc |
   ees |
   d8)\p r r4 |
   r16 f f f g8->( f16) r |
   R2 |
-  \crescHairpin
-  \dimHairpin
   \repeat unfold 2 {r16 f(\< g\> f)\!} |
-  \crescTextCresc
-  f4-.\< f-. |
+  f4-.\justCresc f-. |
   f2 |
   f4-. f-. |
   f2 |
-  aes4-.\< aes-. |
+  aes4-.\justCresc aes-. |
   aes2 |
   aes4-.\f aes-. |
   aes2 |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   b,4-.\semprePiuF b-. |
   d2 |
   c\ff |
@@ -1194,7 +1122,6 @@ clarinetOneMvtIV = \relative c''
   a-. f-. a-. f-. a f c'\sf a |
   c a f'\sf c f c a'\sf f |
   a f a\sf f a f a\sf f |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   a2\semprePiuF |
   a |
   a16 f, g a bes c d e |

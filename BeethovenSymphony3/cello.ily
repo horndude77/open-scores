@@ -1,6 +1,4 @@
-\version "2.13.17"
-
-\include "defs.ily"
+\version "2.13.53"
 
 celloMvtI = \relative c
 {
@@ -14,14 +12,12 @@ celloMvtI = \relative c
   {
     ees4( g bes) |
     ees,2( d4 |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    cis2.~)\< |
+    cis2.~)\justCresc |
     cis |
     d2.~\sf |
     d2\> d4( ees2.\p) |
     aes,4( bes c) |
-    bes2.~\< |
+    bes2.~\justCresc |
     bes4 bes-. bes-. |
     ees4\p r r |
     R2.*2 |
@@ -29,7 +25,7 @@ celloMvtI = \relative c
     f aes c) |
     f, r r |
     R2. |
-    r4 c(\< ces) |
+    r4 c(\justCresc ces) |
     bes8\fp bes( d f bes d |
     f4) r bes,,~ |
     bes bes2\sf |
@@ -42,7 +38,7 @@ celloMvtI = \relative c
     g\sf g4~\sf |
     g aes-. aes~\sf |
     aes g-. g(\sf |
-    f8)\< f-. f-. f-. f-. f-. |
+    f8)\justCresc f-. f-. f-. f-. f-. |
     bes, bes' \repeat tremolo 4 bes8 |
     ees,2(\ff g4 |
     ees2 bes4) |
@@ -64,7 +60,6 @@ celloMvtI = \relative c
     R2. |
     r4 g4.\ff f8 |
     ees4-. d-. c-. |
-    \crescHairpin
     bes'2(\p\< a8 aes |
     g4\> f ees) |
     d8-.\! f-. ees-. d-. c-. bes-. |
@@ -109,8 +104,7 @@ celloMvtI = \relative c
     f-. f-. f-. |
     r r ees'8-. d-. |
     c-. d-. ees-. d-. c-. bes-. |
-    \crescTextCresc
-    a-.\< bes-. c-. d-. ees-. d-. |
+    a-.\justCresc bes-. c-. d-. ees-. d-. |
     c-. d-. ees-. d-. c-. bes-. |
     a-. bes-. c-. d-. c-. bes-. |
     a-. g-. f-. ees-. d-. c-. |
@@ -142,7 +136,7 @@ celloMvtI = \relative c
     aes,4 r8 aes-. c-. ees-. |
     a,4 r8 a-. c-. f-. |
     bes,4 r8 bes'-. f-. d-. |
-    << {s1*0\<} {\repeat tremolo 6 ees8} >> |
+    << {s1*0\justCresc} {\repeat tremolo 6 ees8} >> |
     c8 c c c( d ees) |
     \repeat tremolo 4 f8 d8 bes |
     f\ff f' \repeat tremolo 4 f8 |
@@ -152,8 +146,7 @@ celloMvtI = \relative c
     bes-. bes-. bes-. |
     bes2.~\fp |
     bes~ |
-    \dimTextDecresc
-    bes~\> |
+    bes~\justDecresc |
     bes~ |
   }
   \alternative
@@ -179,7 +172,7 @@ celloMvtI = \relative c
   g' r r |
   g r r |
   g r r |
-  g\< r r |
+  g\justCresc r r |
   g,\sf r r |
   g\p r r |
   R2. |
@@ -199,7 +192,7 @@ celloMvtI = \relative c
   cis2(\p e4 |
   cis2 gis4) |
   cis4 r r |
-  r r a4\< |
+  r r a4\justCresc |
   d2(\ff f4 | d2 a4) |
   d2( f4 | d2 a4) |
   e'2( g4 | e2 a,4) |
@@ -208,7 +201,7 @@ celloMvtI = \relative c
   fis8-.\p c'-. c-. r r4 |
   r8 bes-. bes-. r r4 |
   fis4 r r |
-  r8 fis\< \repeat tremolo 4 fis8 |
+  r8 fis\justCresc \repeat tremolo 4 fis8 |
   g2(\ff bes4\sf | g2 d4) |
   g2( bes4\sf | g2 d4) |
   a'2( c4\sf | a2 d,4) |
@@ -217,10 +210,10 @@ celloMvtI = \relative c
   b8\p f'-. f-. r r4 |
   r8 ees-. ees-. r r4 |
   b4 r r |
-  r8 b\< \repeat tremolo 4 b8 |
+  r8 b\justCresc \repeat tremolo 4 b8 |
   bes8-.\p bes-. bes-. r r4 |
   r8 aes-. aes-. r r4 |
-  r8 e-.\< e-. r r4 |
+  r8 e-.\justCresc e-. r r4 |
   r8 e \repeat tremolo 4 e8 |
   ees8-.\f ees'-. ees-. r r4 |
   r8 des-. des-. r r4 |
@@ -250,7 +243,7 @@ celloMvtI = \relative c
   c-. c16( b) c8-. d-. ees-. fis-. |
   g4 r r |
   r r r8 c,, |
-  bes4 g'4.\sf\< bes,8 |
+  bes4 g'4.\sf\justCresc bes,8 |
   a-. fis'-. g,-. g'-. ees-. d-. |
   cis4 cis'4.\sf cis8 |
   d4 r8 d,16( cis) d8-. c-. |
@@ -295,12 +288,12 @@ celloMvtI = \relative c
   e4 e( fis |
   g4.\sfp fis8 e4) |
   dis( d cis) |
-  b2(\< e4) |
+  b2(\justCresc e4) |
   a,\p r r |
   r4 a^\pizz a | e r r |
   r e e | a r r |
   r4 a a | e r r |
-  r8 e(^\arco\< g f e d) |
+  r8 e(^\arco\justCresc g f e d) |
   c2(\f e4 | c2 g4) |
   c-. e-. g-. |
   c,2( g4) |
@@ -326,7 +319,7 @@ celloMvtI = \relative c
   d4( des c | bes2\sf c8 d) |
   ees4 r r |
   r ees,\> ees |
-  f2.(\< | des) |
+  f2.(\justCresc | des) |
   ges2.~\p | ges |
   aes( | des,) |
   ges4 ges( aes |
@@ -348,12 +341,11 @@ celloMvtI = \relative c
   aes'-. des,-. des'-. |
   des,-. f'-. des,-. |
   aes''2.\sfp |
-  d,,4-.\< f-. d-. |
+  d,,4-.\justCresc f-. d-. |
   bes'-. d,-. d'-. |
   d,-. f'-. d,-. |
   bes''2.\sf |
-  \crescTextSempreCresc
-  ees,,4-.\< ges-. ees-. |
+  ees,,4-.\justSempreCresc ges-. ees-. |
   bes'-. ees,-. ees'-. |
   ees,-. ges'-. ees,-. |
   bes''2.\sf |
@@ -384,10 +376,8 @@ celloMvtI = \relative c
   bes8\f^\arco bes' \repeat tremolo 4 bes8 |
   \repeat tremolo 6 bes8\ff |
   ees,2(\fp g4 | ees2 bes4) |
-  \crescTextCresc
   ees( g bes | ees,2 d4) |
-  cis2.~\< | cis |
-  \dimHairpin
+  cis2.~\justCresc | cis |
   c~\sf\> | c\! |
   c~ |
   c4 c^\pizz c |
@@ -405,22 +395,17 @@ celloMvtI = \relative c
   aes f des |
   c r c |
   ees aes c |
-  des\< r8 des,^\arco des des |
-  \dimTextDecresc
-  << {s1*0\>} {\repeat tremolo 6 ces8} >> |
+  des\justCresc r8 des,^\arco des des |
+  << {s1*0\justDecresc} {\repeat tremolo 6 ces8} >> |
   bes2(\pp d4 | bes2 f4) |
-  bes8-.\< d-. f-. bes,-. d-. f-. |
+  bes8-.\justCresc d-. f-. bes,-. d-. f-. |
   aes-. d,-. f-. aes-. c-. bes-. |
-  \crescHairpin
   aes-.\< bes-. aes-. g-. f-. ees-. |
   d-. c-. bes-. bes'-. bes-. bes-. |
   \tremolos #8 {ees,2.\f |
   ees} |
   \repeat unfold 2 { \tremolos #8 {ees2. | ees2} ees8\sf ees |}
-  \tremolos #8 {
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    ees2.\piuF
-  } |
+  \tremolos #8 { ees2.\piuF } |
   \tremolos #8 {\repeat unfold 3 {ees |}}
   \tremolos #8 {ees2\ff} g8\sf g |
   \tremolos #8 {ees2} bes8\sf bes |
@@ -443,7 +428,6 @@ celloMvtI = \relative c
   r4 c4.\ff bes8-. |
   aes4-. g-. f-. |
   ees'2(\p\< d8 des |
-  \dimHairpin
   c4\> bes aes)\! |
   g8-. bes-. aes-. g-. f-. ees-. |
   d-. ees-. f-. bes,-. c-. d-. |
@@ -470,13 +454,11 @@ celloMvtI = \relative c
   ees4 r r |
   R2.*3 |
   r4 f'-.(\p f-.) |
-  \crescTextCresc
-  f-.(\< f-. f-.) |
+  f-.(\justCresc f-. f-.) |
   f4 f2\sf |
   f2~(\sf\> f8 d |
   ees4)\p r r |
   R2.*3 |
-  \crescHairpin
   r4 bes( ges\< | f2\> e4)\! |
   R2.*2 |
   r4 bes'-.\pp bes-. |
@@ -485,8 +467,7 @@ celloMvtI = \relative c
   bes-. bes-. bes-. |
   \repeat tremolo 4 bes8 aes'8-. g-. |
   f-. g-. aes-. g-. f-. ees-. |
-  \crescTextCresc
-  d-.\< ees-. f-. g-. aes-. g-. |
+  d-.\justCresc ees-. f-. g-. aes-. g-. |
   f-. g-. aes-. g-. f-. ees-. |
   d-. ees-. f-. g-. f-. ees-. |
   d-. c-. bes-. aes-. g-. f-. |
@@ -518,7 +499,7 @@ celloMvtI = \relative c
   des4 r8 des,-. f-. aes-. |
   d4 r8 d,-. f-. bes-. |
   ees,4 r8 ees' ees ees |
-  << {s1*0\<} {\repeat tremolo 6 aes8} >> |
+  << {s1*0\justCresc} {\repeat tremolo 6 aes8} >> |
   f8 f f f( g aes) |
   bes-. g-. ees-. bes'-. g-. ees-. |
   \repeat tremolo 6 bes8\ff |
@@ -527,13 +508,12 @@ celloMvtI = \relative c
   ees4\f r r |
   ees-. ees-. ees-. |
   ees2.~\fp | ees~ |
-  \dimTextDecresc
-  ees~\> | ees~ |
+  ees~\justDecresc | ees~ |
   ees~\p | ees |
   <aes, des,>~\f | <aes des,> |
   des~\p | des |
   \tremolos #16 {<g, c,>2.\ff | <g c,>} |
-  c~\p | c~\> | c~\pp | c~ | c~ | c |
+  c~\p | c~\justDecresc | c~\pp | c~ | c~ | c |
   \repeat unfold 3 {b~ |}
   b |
   bes( | bes') |
@@ -544,7 +524,7 @@ celloMvtI = \relative c
   r f f | c r r |
   r c c | f r r |
   r f f |
-  r bes,(^\arco\< c |
+  r bes,(^\arco\justDecresc c |
   d4.\sf c8 bes4) |
   ees4\p ees'( f |
   ges4.\sf f8 ees4) |
@@ -564,13 +544,13 @@ celloMvtI = \relative c
   aes'2.~\sfp |
   aes4 g-. bes,-. |
   bes'2.~\sfp |
-  bes4\<
+  bes4\justCresc
   \repeat unfold 6 {a-. bes,-.}
-  bes'-.\< bes,-. | bes'-. bes,-. bes'-. |
-  bes,-.\> bes'-. bes,-. | bes'-. bes,-. bes'-. |
+  bes'-.\justCresc bes,-. | bes'-. bes,-. bes'-. |
+  bes,-.\justDecresc bes'-. bes,-. | bes'-. bes,-. bes'-. |
   c,-.\p c'-. c,-. | c'-. c,-. c'-. |
   aes,-. aes'-. aes,-. | aes'-. aes,-. aes'-. |
-  bes,-.\< bes'-. bes,-. | bes'-. bes,-. bes'-. |
+  bes,-.\justCresc bes'-. bes,-. | bes'-. bes,-. bes'-. |
   bes,-. bes'-. bes,-. | bes'-.\p bes,-. bes'-. |
   ees,-. r r |
   R2. |
@@ -584,7 +564,7 @@ celloMvtI = \relative c
   \repeat unfold 3 {g( bes ees bes g bes) |}
   \repeat unfold 2 {aes( bes f' bes, aes bes) |}
   \repeat unfold 2 {aes( bes d bes aes bes) |}
-  ees2(\< g4 | ees2 bes4) |
+  ees2(\justCresc g4 | ees2 bes4) |
   ees( g) bes | bes2. |
   f2( aes4 | f2 bes,4) |
   f'( aes) bes-. |
@@ -607,13 +587,10 @@ celloMvtI = \relative c
   aes, c f aes, c f |
   bes,\ff ees g bes, ees g |
   bes bes, \repeat tremolo 4 bes8 |
-  \crescHairpin
-  \dimHairpin
   ees'2(\p\< d8 des | c4\> bes aes)\! |
   g8( bes) aes-. g-. f-. ees-. |
   d-. ees-. f-. bes,-. c-. d-. |
-  \crescTextCresc
-  ees-. ees'-.\< ees-. ees-. d-. des-. |
+  ees-. ees'-.\justCresc ees-. ees-. d-. des-. |
   c-. bes-. aes-. c-. bes-. aes-. |
   g-. bes-. aes-. g-. f-. ees-. |
   d-. ees-. f-. ees-. d-. c-. |
@@ -644,19 +621,12 @@ celloMvtII = \relative c
   c8 r16 \times 2/3 {c32 c c} ees8 r16 \times 2/3 {ees32 ees ees} |
   g8\< r16 \times 2/3 {g32 g g} g8\> r16 \times 2/3 {g32\! g g} |
   f8 r r8. \times 2/3 {b,32 b b} |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  b8 r r8. \times 2/3 {b32\< b b} |
-  \crescHairpin
-  \dimTextDecresc
-  bes8 r16 \times 2/3 {bes32\> bes bes} bes8 r16 \times 2/3 {bes32 bes bes} |
-  \dimHairpin
+  b8 r r8. \times 2/3 {b32\justCresc b b} |
+  bes8 r16 \times 2/3 {bes32\justDecresc bes bes} bes8 r16 \times 2/3 {bes32 bes bes} |
   ees8\p r r4 |
   bes4\p bes8-.( bes-.) |
   d r r4 |
-  \crescTextCresc
-  c4(\< bes8 aes) |
-  \crescHairpin
+  c4(\justCresc bes8 aes) |
   g8 r16. e'32\f e4 |
   r f8(\p g) |
   aes4 aes(\sf\> |
@@ -665,37 +635,31 @@ celloMvtII = \relative c
   b4.(\< d8 |
   c4\> bes8 aes) |
   g8(\! aes_\mEspr g c |
-  \dimTextDecresc
-  b ees d c)\> |
-  \dimHairpin
+  b ees d c)\justDecresc |
   b4( aes |
   g4~) <g c,>\sf |
   f4\p r8. f'32( ees
   des4) r8. des32( c |
-  \crescTextCresc
-  b8)\< r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
-  ees8-.\f f-. r ees~\p\< |
-  ees c4(\sf\> b8) |
+  b8)\justCresc r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
+  ees8-.\f f-. r ees~\p\justCresc |
+  ees c4(\sf\justDecresc b8) |
   c8-.\p aes'16.-. aes32-. d,8-. bes'16.-. bes32-. |
   ees,8 r r8. \times 2/3 {ees32 ees ees} |
   bes8 r r8. \times 2/3 {bes32 bes bes} |
-  c8\< r16 \times 2/3 {c32 c c} bes8 r16 \times 2/3 {aes32 aes aes} |
-  \crescHairpin
+  c8\justCresc r16 \times 2/3 {c32 c c} bes8 r16 \times 2/3 {aes32 aes aes} |
   g8 r16 \times 2/3 {e'32 e e} e8\f r16 \times 2/3 {e32 e e} |
   e8\p r16 \times 2/3 {e32 e e} f8 r16 \times 2/3 {g32 g g} |
   aes8 r16 \times 2/3 {aes,32 aes aes} aes8-> r16 \times 2/3 {aes32 aes aes} |
   g8 r r8. \times 2/3 {g32 g g} |
   g8 r r8. \times 2/3 {g32 g g} |
   g8\< r r8. \times 2/3 {g32 g g} |
-  g8\> r16 \times 2/3 {g32 g g} g8 r16 \times 2/3 {g32 g g} |
+  g8\justDecresc r16 \times 2/3 {g32 g g} g8 r16 \times 2/3 {g32 g g} |
   g8\! r r4 |
   R2*2 |
   r4 r8. \times 2/3 {c32\sf c c} |
   f8\p r r8. \times 2/3 {f32 f f} |
   des8 r8 r8. \times 2/3 {des32 des des} |
-  \crescTextCresc
-  b8\< r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
-  \crescHairpin
+  b8\justCresc r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
   ees8-.\f f-. r8. \times 2/3 {aes32\p aes aes} |
   aes8\< r16 \times 2/3 {g32 g g} g8\> r16 \times 2/3 {g,32 g g} |
   c8\p r16 c64( d ees f g8-.) r16 \times 2/3 {g32( a b)} |
@@ -719,9 +683,7 @@ celloMvtII = \relative c
   f2~ |
   f8 d-. e-. f-. |
   g2 |
-  \crescTextCresc
-  gis8-. d'-.\< b-. gis-. |
-  \crescHairpin
+  gis8-. d'-.\justCresc b-. gis-. |
   a-. c,-. d-. d-. |
   \times 4/6 {g,32\ff g g g g g} \times 4/6 {\repeat tremolo 6 g32} g8-. r |
   \times 4/6 {\repeat tremolo 6 <g g'>32} \times 4/6 {\repeat tremolo 6 <g g'>32} g8-. r |
@@ -729,9 +691,7 @@ celloMvtII = \relative c
   <g g'>8-. r r4 |
   bes'4(\p g8 e) |
   c8( e g bes) |
-  \crescTextCresc
-  a(\< f e bes') |
-  \crescHairpin
+  a(\justCresc f e bes') |
   a( f e bes') |
   a-.\p cis,-. d-. e-. |
   f-. e-. f-. fis-. |
@@ -744,15 +704,11 @@ celloMvtII = \relative c
     \times 2/3 {f-. e-. f-.} |
   e8\p r r4 |
   \repeat unfold 4 {\times 2/3 {c16( e) g-.}} |
-  \crescTextCresc
-  << {s1*0\<} {\repeat unfold 4 {\times 2/3 {a,16( c) f-.}}} >> |
-  \crescHairpin
+  << {s1*0\justCresc} {\repeat unfold 4 {\times 2/3 {a,16( c) f-.}}} >> |
   \repeat unfold 4 {\times 2/3 {f,16( a) d-.}} |
   \repeat unfold 2 {\times 2/3 {g,16( c) e-.}} \repeat unfold 2 {\times 2/3 {g,16( b) d-.}} |
   \repeat unfold 2 {\times 2/3 {e,16( g) c-.}} \repeat unfold 2 {\times 2/3 {f,16( a) d-.}} |
-  \times 2/3 {g,16\f g' g}
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    \times 2/3 {g\semprePiuF g g} \times 4/6 {\repeat tremolo 6 g16} |
+  \times 2/3 {g,16\f g' g} \times 2/3 {g\semprePiuF g g} \times 4/6 {\repeat tremolo 6 g16} |
   \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 g,16}} |
   <<
     \repeat unfold 2
@@ -764,9 +720,7 @@ celloMvtII = \relative c
   c,8-. r c-. r |
   c'2(\fp |
   aes4. f8) |
-  \crescTextCresc
-  des8(\< aes'16. f32) des8-. c-. |
-  \crescHairpin
+  des8(\justCresc aes'16. f32) des8-. c-. |
   b8\p r r4 |
 
   %Minore
@@ -814,9 +768,7 @@ celloMvtII = \relative c
   fis8( g16 a bes8 g16 f) |
   e8-. r cis4~\sf |
   cis8 cis-. cis-. cis-. |
-  \dimTextDecresc
-  d2\> |
-  \dimHairpin
+  d2\justDecresc |
   <a d,>\p |
   g4 r |
   g' r |
@@ -847,43 +799,28 @@ celloMvtII = \relative c
     g( ees'-> g, g'->) |
   }
   f,( b-> f d'->) |
-  \crescTextCresc
-  b( f'\< d b)
-  \crescHairpin
-  \dimTextDecresc
-  bes\> bes' bes, bes' |
-  \dimHairpin
-  ees,\p aes
-    \times 2/3 {ees16 c bes} \times 2/3 {aes g f} |
+  b( f'\justCresc d b)
+  bes\justDecresc bes' bes, bes' |
+  ees,\p aes \times 2/3 {ees16 c bes} \times 2/3 {aes g f} |
     g'4( f8 ees) |
-  \crescTextCresc
-  d2\< |
-  \crescHairpin
+  d2\justCresc |
   ees4(\> d8 c) |
   des8\! r16. e32-.\f e4 |
   r4 f8(\p g) |
-  \crescTextCresc
-  aes4(\< aes,\sf)\> |
-  \crescHairpin
+  aes4(\justCresc aes,\sf)\> |
   g'4(\p d8 f |
   ees4 d8 c) |
   b4.(\< d8 |
   c4\> bes8 aes) |
   g8(\! aes g c |
   b ees d c) |
-  \crescTextCresc
-  b4(\< aes |
-  \crescHairpin
+  b4(\justCresc aes |
   g4~) <g c,>\sf |
   f8-.\p aes-. f-. f'-. |
   des-. f-. des-. des'-. |
-  \crescTextCresc
-  b,-.\< b'-. f,-. f'-. |
-  \crescHairpin
+  b,-.\justCresc b'-. f,-. f'-. |
   ees-.\f f-. r aes~\p
-  \crescTextCresc
-  aes\<( g)\> g,\p g' |
-  \crescHairpin
+  aes\justCresc( g)\> g,\p g' |
   c, r16 c64( d ees f g8) r16 \times 2/3 {g32( a b)} |
   c8( g ees c) |
   b( g c ees) |
@@ -892,27 +829,19 @@ celloMvtII = \relative c
   fis,8\sf\> fis' fis fis |
   g,8\p g' g, g' |
   c,( g' ees c) |
-  \crescTextCresc
-  g8\< g' g, g' |
-  \crescHairpin
+  g8\justCresc g' g, g' |
   aes,8\f r r4 |
   R2*6 |
   r4 r8 c-.\pp |
   des-. aes'-. des,-. aes'-. |
   b,-. aes'-. b,-. g'-. |
   c,-. ees-. c-. ees-. |
-  \crescTextCresc
-  aes,-.\< c-. aes-. c-. |
-  \crescHairpin
-  \dimTextDecresc
-  f,-.\> aes-. f-. aes-. |
-  \dimHairpin
+  aes,-.\justCresc c-. aes-. c-. |
+  f,-.\justDecresc aes-. f-. aes-. |
   fis-.\pp g-. fis-. g-. |
   c4(\pp g'8 bes) |
   aes4( g8 f) |
-  \crescTextCresc
-  c4(\< e8( g) |
-  \crescHairpin
+  c4(\justCresc e8( g) |
   f4( g8 aes) |
   g8( f e f)
   c8\p r r4 |
@@ -924,12 +853,8 @@ celloMvtII = \relative c
     c8)\! r r4 |
   }
   b2~ |
-  \crescTextCresc
-  b\< |
-  \crescHairpin
-  \dimTextDecresc
-  b\> |
-  \dimHairpin
+  b\justCresc |
+  b\justDecresc |
   r4\! c8^\pizz r |
   g r ees' r |
   c r r4 |
@@ -975,7 +900,6 @@ celloMvtIII = \relative c
 
   \repeat volta 2
   {
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     bes-.\semprePP ces-. bes-. |
     ces-. ces-. c-. |
     c-. des-. c-. |
@@ -994,7 +918,6 @@ celloMvtIII = \relative c
     R2.*2 |
     d,2.-> |
     g4( bes) g-. |
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     fis-.\semprePP d-. c'-. |
     bes-. g-. ees-. |
     d-. a'-. fis-. |
@@ -1015,10 +938,7 @@ celloMvtIII = \relative c
     c g a |
     bes f g |
     ees c f |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    bes,-.\< c-. d-. |
-    \crescHairpin
+    bes,-.\justCresc c-. d-. |
 
     %A
     ees\ff g bes |
@@ -1076,9 +996,7 @@ celloMvtIII = \relative c
     ees-. b-. c-. |
     aes-. aes'-. e-. |
     f-. cis-. d-. |
-    \crescTextCresc
-    bes-.\< bes'-. fis-. |
-    \crescHairpin
+    bes-.\justCresc bes'-. fis-. |
     g-. d-. ees-. |
     c-. g-. aes-. |
     f-. cis'-. d-. |
@@ -1132,9 +1050,7 @@ celloMvtIII = \relative c
     r4 g(\p f) |
     aes( f ees |
     d) r r |
-    \crescTextCresc
-    r aes'(\< f |
-    \crescHairpin
+    r aes'(\justCresc f |
     d) r r |
     r aes'( f |
     d) bes'(\f g |
@@ -1214,7 +1130,6 @@ celloMvtIII = \relative c
   R2.*2 |
   d,2.-> |
   g4( bes) g-. |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   fis-.\semprePP d-. c'-. |
   bes-. g-. ees-. |
   d-. a'-. fis-. |
@@ -1235,9 +1150,7 @@ celloMvtIII = \relative c
   c g a |
   bes f g |
   ees c f |
-  \crescTextCresc
-  bes,\< c d |
-  \crescHairpin
+  bes,\justCresc c d |
 
   %C
   ees\ff g bes |
@@ -1299,9 +1212,7 @@ celloMvtIII = \relative c
   ees-. b-. c-. |
   aes-. aes'-. e-. |
   f-. cis-. d-. |
-  \crescTextCresc
-  bes-. bes'-.\< fis-. |
-  \crescHairpin
+  bes-. bes'-.\justCresc fis-. |
   g-. d-. ees-. |
   c-. g-. aes-. |
   f-. cis'-. d-. |
@@ -1314,9 +1225,7 @@ celloMvtIII = \relative c
 
   %coda
   R2.*12 |
-  \crescTextCresc
-  r4 bes\< ees |
-  \crescHairpin
+  r4 bes\justCresc ees |
   bes ees bes |
   ees\f bes ees |
   bes ees bes |
@@ -1372,9 +1281,7 @@ celloMvtIV = \relative c'
   aes8 r r4 |
   bes8 r bes r |
   ees, r r4 |
-  r8
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    ees-.\pDolce ees-. ees-. |
+  r8 ees-.\pDolce ees-. ees-. |
 
   \repeat volta 2
   {
@@ -1400,10 +1307,7 @@ celloMvtIV = \relative c'
     bes'8( |
     aes bes b c) |
     ees,4( d8) r |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    r bes(\< d f) |
-    \crescHairpin
+    r bes(\justCresc d f) |
     aes4.\fermata\p bes8(\p |
     ees bes g ees) |
     c4.( ces8 |
@@ -1416,9 +1320,7 @@ celloMvtIV = \relative c'
     r8 |
     R2*3 |
     \times 2/3 {r8 c'-.\p bes-.} \times 2/3 {aes-. g-. f-.} |
-    \crescTextCresc
-    \times 2/3 {ees-.\< ees'-. ees-.} \times 2/3 {f-. f-. f-.} |
-    \crescHairpin
+    \times 2/3 {ees-.\justCresc ees'-. ees-.} \times 2/3 {f-. f-. f-.} |
     \times 2/3 {ees-. ees-. des-.} \times 2/3 {c-. c-. c-.} |
     \times 2/3 {c-. c-. ces-.} \times 2/3 {bes-. bes-. bes-.} |
     \times 2/3 {bes-. a-. bes-.} bes,8-.
@@ -1429,13 +1331,9 @@ celloMvtIV = \relative c'
     bes16( c) |
     \times 2/3 {d8-. d( ees)} \times 2/3 {f-. f( g)} |
     aes4 r8 bes16( c) |
-    \crescTextCresc
-    \times 2/3 {d8-.\< d( ees)} \times 2/3 {f-. f( g)} |
-    \crescHairpin
+    \times 2/3 {d8-.\justCresc d( ees)} \times 2/3 {f-. f( g)} |
     aes4.\fermata\p bes,8 |
-    \crescTextCresc
-    \times 2/3 {ees8\< ees ees} \times 2/3 {ees8 ees ees} |
-    \crescHairpin
+    \times 2/3 {ees8\justCresc ees ees} \times 2/3 {ees8 ees ees} |
     \times 2/3 {ees8 ees ees} \times 2/3 {ees8 ees ees} |
     \times 2/3 {ees8\p ees ees} \times 2/3 {ees8 ees ees} |
     ees4 r8
@@ -1446,13 +1344,9 @@ celloMvtIV = \relative c'
   bes' r |
   bes, r |
   ees r |
-  \crescTextCresc
-  ees\< d |
-  \crescHairpin
+  ees\justCresc d |
   ees r8\! e |
-  \dimTextDecresc
-  f\> d ees a, |
-  \dimHairpin
+  f\justDecresc d ees a, |
   bes\p bes' bes, r |
   ees,16\f^\arco f g aes bes c d ees |
   f g aes g f ees d c |
@@ -1479,9 +1373,7 @@ celloMvtIV = \relative c'
   bes ees g bes bes, bes' bes, bes |
   ees8 r r4 |
   g2(\sfp | aes) | bes\sf |
-  \crescTextCresc
-  c16\< c c c d d d d |
-  \crescHairpin
+  c16\justCresc c c c d d d d |
   ees ees ees ees fis, fis fis fis |
   g\f g g g fis fis fis fis |
   g g g g fis fis fis fis |
@@ -1496,9 +1388,7 @@ celloMvtIV = \relative c'
   f4. aes8-. |
   g-. f-. e-. g-. |
   f4. c'8-. |
-  \crescTextCresc
-  bes-.\< aes-. g-. bes-. |
-  \crescHairpin
+  bes-.\justCresc aes-. g-. bes-. |
   aes-. g-. f-. aes-. |
   g-. f-. ees-. g-. |
   f-.\f ees-. d-. f~ |
@@ -1522,7 +1412,6 @@ celloMvtIV = \relative c'
   ees c'16 b c bes aes g |
   fis8 d16 cis d c bes a |
   g8 g'16 fis g a bes g |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees8\piuF ees16 d ees f ees d |
   cis8 cis16 b cis d e cis |
   d8 e16 f g a b cis |
@@ -1537,9 +1426,7 @@ celloMvtIV = \relative c'
   fis^\pizz r |
   fis r |
   b r |
-  \crescTextCresc
-  cis\< a |
-  \crescHairpin
+  cis\justCresc a |
   d r8\> d, |
   cis\p a d fis |
   a, a' a, r |
@@ -1566,7 +1453,6 @@ celloMvtIV = \relative c'
   d8 r r4 |
   <<
     {
-      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
       s2*4_\mSempreF
       s2*4_\moltoMarcato
     }
@@ -1618,9 +1504,7 @@ celloMvtIV = \relative c'
   g'8 r r4 |
   g,8 r r4 |
   c8 r r4 |
-  \crescTextCresc
-  c'4\< g |
-  \crescHairpin
+  c'4\justCresc g |
   e4\sf\> r8 c |
   b\p g c e |
   g, g' g, r |
@@ -1636,9 +1520,7 @@ celloMvtIV = \relative c'
   bes' |
   ees,4. c8-. |
   d-. ees-. f-. d-. |
-  \crescTextCresc
-  ees4. aes8-.\< |
-  \crescHairpin
+  ees4. aes8-.\justCresc |
   f-. g-. aes-. f-. |
   g4-.\! r |
   r g-. |
@@ -1693,9 +1575,7 @@ celloMvtIV = \relative c'
   bes4.( aes16 g) |
   f4( b8..\sf c32) |
   c4.( bes16 aes) |
-  \crescTextCresc
-  g4(\< d'8.. ees32) |
-  \crescHairpin
+  g4(\justCresc d'8.. ees32) |
   ees4.\sf\> des8 |
   c(\p d ees c) |
   bes-. bes'-. bes,-. r |
@@ -1703,17 +1583,13 @@ celloMvtIV = \relative c'
   f r bes r |
   bes, r d r |
   f r aes, r |
-  \crescTextCresc
-  g\< r g' r |
-  \crescHairpin
+  g\justCresc r g' r |
   aes, r aes' r |
   bes\p\< r bes,\> r |
   ees\! r r4 |
   s1*0\p \repeat unfold 7 { \times 2/3 {bes16 d f} \times 2/3 {aes f d} }
     \times 2/3 {bes d f} \times 2/3 {aes, d f} |
-  \crescTextCresc
-  s1*0\< \repeat unfold 2 { \times 2/3 {g,16 bes ees} \times 2/3 {g ees bes} } |
-  \crescHairpin
+  s1*0\justCresc \repeat unfold 2 { \times 2/3 {g,16 bes ees} \times 2/3 {g ees bes} } |
   \repeat unfold 2 { \times 2/3 {aes c f} \times 2/3 {aes f c} } |
   \times 2/3 {bes\p ees g} \times 2/3 {bes g ees} \times 2/3 {bes bes' bes,} \times 2/3 {bes bes bes} |
   ees8 r r ees\ff |
@@ -1740,30 +1616,22 @@ celloMvtIV = \relative c'
   %G
   ees8 r r4 |
   ees8\p r r4 |
-  \crescTextCresc
-  bes8 r \times 4/6 {f'16-.\< g-. aes-. g-. f-. ees-.} |
-  \crescHairpin
+  bes8 r \times 4/6 {f'16-.\justCresc g-. aes-. g-. f-. ees-.} |
   \times 4/6 {d-. ees-. f-. ees-. d-. c-.} \times 4/6 {bes-. c-. bes-. aes-. g-. f-.} |
   ees4\p r |
   ees'8 r ees r |
-  \crescTextCresc
-  bes\< r r4 |
-  \crescHairpin
+  bes\justCresc r r4 |
   \times 2/3 {ees,16-. ees-. f-.} \times 2/3 {g-. g-. aes-.}
     \times 2/3 {bes-. c-. des-.} \times 2/3 {ees-. f-. g-.} |
   aes8[-.\p r16 ees,]-. aes8[-. r16 ees]-. |
   bes'8[-. r16 ees,]-.  bes'8[-. r16 ees,]-. |
   g8[-. r16 ees]-.  g8[-. r16 ees]-. |
   aes8[-. r16 ees]-. aes-. aes'-. ees-. c-. |
-  \crescTextCresc
-  aes8-.\< c-. des-. g,-. |
-  \crescHairpin
+  aes8-.\justCresc c-. des-. g,-. |
   aes-. c-. ees-. aes,-. |
   a-. c-. ees-. bes-. |
   a-. c-. ees-. a,-. |
-  \crescTextCresc
-  bes-.\< ees-. ges-. ces,-. |
-  \crescHairpin
+  bes-.\justCresc ees-. ges-. ces,-. |
   bes-. ees-. ges-. bes,-. |
   ces-. ees-. ges-. ces,-. |
   c-. fis-. a-. c,-. |
@@ -1775,16 +1643,10 @@ celloMvtIV = \relative c'
   <<
     {
       s2 | s |
-      \crescTextCresc
-      \dimTextDecresc
-      s\< | s\> |
-      \crescHairpin
-      \dimHairpin
+      s\justCresc | s\justDecresc |
       s\p | s |
       s\< | s\> |
-      \dimTextDecresc
-      s\> | s\pp |
-      \dimHairpin
+      s\justDecresc | s\pp |
     }
     { \repeat unfold 20 {\times 4/6 {\repeat tremolo 6 g16}} | }
   >>

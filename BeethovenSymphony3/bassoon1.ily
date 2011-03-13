@@ -1,6 +1,4 @@
-\version "2.13.17"
-
-\include "defs.ily"
+\version "2.13.53"
 
 bassoonOneMvtI = \relative c'
 {
@@ -15,9 +13,7 @@ bassoonOneMvtI = \relative c'
     R2.*15 |
     r4 r ees,(\p |
     aes c ees) |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    aes,2(\< a4) |
+    aes,2(\justCresc a4) |
     bes2.\fp( |
     d2)( f4) |
     ees4-. c2\sf |
@@ -30,7 +26,7 @@ bassoonOneMvtI = \relative c'
     ees\sf ees4~\sf |
     ees d-. d~\sf |
     d ees-. ees(\sf |
-    d) bes,8-.\< c-. d-. ees-. |
+    d) bes,8-.\justCresc c-. d-. ees-. |
     f-. g-. aes-. bes-. c-. d-. |
     ees2(\ff g4 |
     ees2 bes4) |
@@ -45,15 +41,13 @@ bassoonOneMvtI = \relative c'
     r4 ges'4.(\sf f8 |
     ees4) g4.\ff f8 |
     ees4-. d-. c-. |
-    \crescHairpin
     bes2.~\p\< |
     bes4(\> a g) |
     f2(\! ees8 d) |
     c4 a'-.( a-.) |
     bes r r|
     R2. |
-    \crescTextCresc
-    r8 f'-.\< ees-. d-. c-. bes-. |
+    r8 f'-.\justCresc ees-. d-. c-. bes-. |
     a-. d-. ees-. d-. c-. bes-. |
     a4-.\f a-. r |
     r r r8 a-. |
@@ -74,24 +68,22 @@ bassoonOneMvtI = \relative c'
     f8\ff e-. ees-. d-. c-. bes-. |
     a-. g'-. f-.ees-. d-. c-. |
     bes4 d-.(\p d-.) |
-    d-.(\< d-. d-.) |
+    d-.(\justCresc d-. d-.) |
     d-.( d-.) bes~\sf\> |
     bes( b c) |
     s1*0\! R2.*2 |
     r4 r g'~\sf\> |
     g( f8 ees d c)\! |
     bes4 des-.( des-.) |
-    des-.(\< des-. des-.) |
+    des-.(\justCresc des-. des-.) |
     des-.( des-. des-.) |
     des2(\sf\> c4)\! |
     R2.*2 |
     c4 r r |
-    \crescHairpin
     r4 g'-.(\< g-.)\> |
     f\p r r |
     R2.*7 |
-    \crescTextCresc
-    r4 r ees8-.\< d-. |
+    r4 r ees8-.\justCresc d-. |
     c-. bes-. a-. g-. f-. ees-. |
     d4\f bes'2\sf |
     r4 bes2\sf |
@@ -119,7 +111,7 @@ bassoonOneMvtI = \relative c'
     r c-. r |
     c-. r c-. |
     r d-. r |
-    ees2.\< |
+    ees2.\justCresc |
     c4. g8( b c) |
     bes f' f f d bes |
     c2.\ff |
@@ -145,7 +137,7 @@ bassoonOneMvtI = \relative c'
   f4 r r |
   R2.*2 |
   g,2.~ | g~ | g~ |
-  g2(\< aes4 |
+  g2(\justCresc aes4 |
   a2.)\sf\> |
   b4\p r r |
   r g'4.(_\mDolce f8 |
@@ -161,7 +153,7 @@ bassoonOneMvtI = \relative c'
   b-. a-. g-. f-. e-. d-. |
   c4 r r |
   R2.*6 |
-  r4 r f'~\< |
+  r4 r f'~\justCresc |
   f d-.\ff d-. |
   d-. d-. d-. |
   d2.~ | d |
@@ -170,7 +162,7 @@ bassoonOneMvtI = \relative c'
   e2.~ | e2 e4 |
   d8\p r r d d r |
   r4 r8 d d r |
-  r d\< \repeat tremolo 4 d8 |
+  r d\justCresc \repeat tremolo 4 d8 |
   d4 r r |
   bes-.\ff \repeat unfold 5 {bes-.} |
   bes2.~ | bes |
@@ -179,7 +171,7 @@ bassoonOneMvtI = \relative c'
   R2.*3 |
   r4 r8 c\p c r |
   r4 r8 c c r |
-  r c\< \repeat tremolo 4 c8 |
+  r c\justCresc \repeat tremolo 4 c8 |
   c4 r r |
   r r8 f\f f r |
   r4 r8 bes,\f bes r |
@@ -202,7 +194,7 @@ bassoonOneMvtI = \relative c'
   r4 g-. g'~\sf | g2 r4 |
   R2. |
   r4 g,-. g'~\sf |
-  g8( f)\< f-. e-. d-. c-. |
+  g8( f)\justCresc f-. e-. d-. c-. |
   b4 b2~\ff | b2.~ | b4 b2\sf |
   b\sf b4~\sf | b b2\sf |
   b2\sf b4\sf |
@@ -220,7 +212,7 @@ bassoonOneMvtI = \relative c'
   \repeat unfold 3 {c2\f r4 |}
   c2\f c4-.\f |
   R2.*11 |
-  r4 r8 d(\< c b) |
+  r4 r8 d(\justCresc c b) |
   a4 c(\p d |
   e4.\sf d8 c4) |
   b4( b a | gis2\sf a8 b) |
@@ -248,10 +240,8 @@ bassoonOneMvtI = \relative c'
   ees-. ges-. bes-. |
   ees ees(\p f | ges4.\sf f8 ees4) |
   d4( des c | bes2\sf c8 d) |
-  \dimTextDecresc
-  ees4 ees( f | ges4.\sf\> f8 ees4) |
-  \crescTextDolceCresc
-  des2.~\< |
+  ees4 ees( f | ges4.\sf\justDecresc f8 ees4) |
+  des2.~\justDolceCresc |
   des8( ces bes ces des ces) |
   bes4\p r r |
   R2.*7 |
@@ -263,8 +253,7 @@ bassoonOneMvtI = \relative c'
   c( ees ges) | ges2. |
   des2( f4 | des2 aes4) |
   aes( des f) | f2. |
-  \crescTextCresc
-  d2(\< f4 | d2 bes4) |
+  d2(\justCresc f4 | d2 bes4) |
   bes( d f) | f2. |
   ees4 r r |
   ees2(\sf ges4) |
@@ -274,7 +263,7 @@ bassoonOneMvtI = \relative c'
   \repeat unfold 4 {ees2.\f |}
   ees2.\p |
   \repeat unfold 3 {ees2. |}
-  bes2.\> |
+  bes2.\justDecresc |
   \repeat unfold 3 {bes2. |}
   bes2.\pp |
   \repeat unfold 3 {bes2. |}
@@ -282,9 +271,9 @@ bassoonOneMvtI = \relative c'
   R2.*6 |
   d2.\f | d\ff | ees4 r r |
   R2.*23 |
-  f,2.(\< | ees)(\> | f4)\pp r r |
+  f,2.(\justCresc | ees)(\justDecresc | f4)\pp r r |
   R2.*2 |
-  r4 r c'8-.\< bes-. |
+  r4 r c'8-.\justCresc bes-. |
   aes-. bes-. aes-. g-. aes-. g-. |
   f-. ees-. d-. bes'-. bes-. bes-. |
   bes4\f bes bes |
@@ -293,7 +282,6 @@ bassoonOneMvtI = \relative c'
   bes2 des4\sf |
   c c c |
   c2 c4\sf |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   des2.\piuF |
   ees |
   d~ | d4 d f |
@@ -307,8 +295,6 @@ bassoonOneMvtI = \relative c'
   aes4) ces4.(\sf bes8 |
   aes4) r r |
   R2. |
-  \crescHairpin
-  \dimHairpin
   ees'2(\p\< d8 des | ees4)(\> d c)\! |
   bes2( aes8 g) | f4-.( bes-. bes-.) | bes4 r r |
   R2.*3 |
@@ -328,23 +314,20 @@ bassoonOneMvtI = \relative c'
   bes'8-.\ff a-. aes-. g-. f-. ees-. |
   d-. c-. bes-. aes-. g-. f-. |
   ees4 g''-.(\p g-.) |
-  \crescTextCresc
-  g-.(\< g-. g-.) |
+  g-.(\justCresc g-. g-.) |
   g-.( g-.)  ees4~\sf\> |
   ees( e f)\! |
   R2.*2 |
   r4 r c~\sf\> |
   c4( bes8 aes g f |
   ees4)\! ges'-.( ges-.)
-  ges-.(\< ges-. ges-.) |
+  ges-.(\justCresc ges-. ges-.) |
   ges-.( ges-.  ges-.) |
   ges2(\sf\> f4) | s1*0\!
   R2.*3 |
-  \crescHairpin
   r4 c-.(\p\< c-.)\> | bes4\! r r |
   R2.*8 |
-  \crescTextCresc
-  r4 r8 c-.\< bes-. aes-. |
+  r4 r8 c-.\justCresc bes-. aes-. |
   g4\f ees'2\sf |
   r4 ees2\sf |
   r4 d2\sf |
@@ -370,7 +353,7 @@ bassoonOneMvtI = \relative c'
   f-.\p r f-. |
   r f-. r |
   g-. r g-. |
-  c,2.\< |
+  c,2.\justCresc |
   c4. c8( e f) |
   ees-. ees,-. g-. bes-. ees-. g-. |
   bes,2.\ff |
@@ -388,13 +371,12 @@ bassoonOneMvtI = \relative c'
   R2.*20 |
   c2(\p d8 e) |
   f4 f( g | aes4.\sf g8 f4) |
-  f2.~\< | f |
+  f2.~\justCresc | f |
   ees4\p ees( f |
   ges4.\sf f8 ees4) |
   d( des c | bes2\sf c8 d) |
   ees4 ees( f | ges4.\sf f8 ees4) |
-  \dimTextDecresc
-  d2.( des c ces bes)\> |
+  d2.( des c ces bes)\justDecresc |
   bes( a aes | aes4)\pp r r |
   R2. |
   bes2.~\pp | bes2( b4 | c) r r |
@@ -403,25 +385,25 @@ bassoonOneMvtI = \relative c'
   d2.~) |
   d4 d-. bes-. |
   f'( ees2~) | ees4 ees-. bes-. |
-  ges'4_\mEspr\< ges2~ |
+  ges'4_\mEspr\justCresc ges2~ |
   ges4 ges2~ |
   ges4 ges-.( ges-.) |
   ges( f ees) |
-  d f2~\< |
+  d f2~\justCresc |
   f4 f2~ |
-  f4\> f f |
+  f4\justDecresc f f |
   f( ees d) |
   ees-.\p r ees-. |
   r ees-. r |
   c-. r c-. |
   r c-. r |
-  ees2.~\< |
+  ees2.~\justCresc |
   ees4 bes-. bes-. |
   bes-. bes-. bes-. |
   bes-.\p bes-. bes-. |
   bes-. r r |
   R2.*15 |
-  r8 g16( aes bes8-.) bes-.\< c-. d-. |
+  r8 g16( aes bes8-.) bes-.\justCresc c-. d-. |
   ees-. bes-. c-. d-. ees-. f-. |
   g-.\sf g16( f ees8-.) d-. c-. bes-. |
   aes-. g-. f-. ees-. d-. c-. |
@@ -446,13 +428,10 @@ bassoonOneMvtI = \relative c'
   r4 c2 |
   r4 aes2 |
   bes2.~\ff | bes4 bes bes |
-  \crescHairpin
-  \dimHairpin
   ees2(\p\< d8 des | ees4)(\> d c)\! |
   bes2( aes8 g) | f4-.( bes-. bes-.) | bes4 r r |
   R2. |
-  \crescTextCresc
-  r4 r8 bes-.\< aes-. g-. |
+  r4 r8 bes-.\justCresc aes-. g-. |
   f-. g-. aes-. g-. f-. ees-. |
   d4\f bes'2~\f |
   bes4 bes2~\f |
@@ -473,41 +452,31 @@ bassoonOneMvtII = \relative c'
   ees8\<( fis\> g)\! r |
   b,4 r |
   b r |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \dimTextDecresc
-  bes8( f\> g aes) |
+  bes8( f\justDecresc g aes) |
   g8\p c16. c32 bes8 r | 
   R2*8 |
   g2~\p\< |
-  \dimHairpin
   g4.(\> fis8 |
   g8)\! r r4 |
   R2*9 |
   ees2\p |
   bes' |
-  \crescTextCresc
-  ees4(\< d8 c) |
+  ees4(\justCresc d8 c) |
   des8 r16. c32-.\f c4 |
   r4 c8-.\p( c-.) |
   c8-. c( ees-> c |
   g'4)( d8 f |
   ees4 d8 c) |
-  \crescHairpin
   b4\< b8( d |
-  \dimHairpin
   c4\> bes8 aes) | 
-  \crescTextCresc
-  g8\! r r ees'(\< |
+  g8\! r r ees'(\justCresc |
   d g f ees) |
-  \dimTextDecresc
-  d4(\> c |
-  b4)\< bes\sf | 
+  d4(\justDecresc c |
+  b4)\justCresc bes\sf | 
   aes\p r |
   des r |
-  b4.\< f'8 |
+  b4.\justCresc f'8 |
   ees-.\f f r ees~\p |
-  \crescHairpin
-  \dimHairpin
   ees8 ees8(\< d) d16.(\> b32) |
   c8\p ees,( g b) |
   c( g ees c) |
@@ -527,8 +496,7 @@ bassoonOneMvtII = \relative c'
   \key c \major
   R2*4 |
   b'4\p( d) |
-  \crescTextCresc
-  f4.(\< e16 d) |
+  f4.(\justCresc e16 d) |
   d16( c b a) g g( a c) |
   b4.\ff d8-.\sf |
   b4. d8-.\sf |
@@ -536,8 +504,7 @@ bassoonOneMvtII = \relative c'
   b8-. r r4 |
   bes4\p( g8 e) |
   c8( e g bes) | 
-  \crescTextCresc
-  a8(\< f e bes') |
+  a8(\justCresc f e bes') |
   a( f e bes') |
   a8\p r r4 |
   r8 g'8( f d) |
@@ -547,13 +514,11 @@ bassoonOneMvtII = \relative c'
   g,4.( a16 b) |
   c8 r r4 |
   R2 |
-  f,4(\< a) |
+  f,4(\justCresc a) |
   c4~ c16( a f' d) |
   d8( c4 b16 g') | 
   g16( fis g gis a f e d) |
-  c8\f
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    e4\semprePiuF( g8) |
+  c8\f e4\semprePiuF( g8) |
   g4. f16.( d32) |
   c4.\ff g8-.\sf |
   c4. g8-.\sf |
@@ -565,7 +530,6 @@ bassoonOneMvtII = \relative c'
   \key c \minor
   \grace {s32*3}
   R2*8 |
-  \crescHairpin
   r8 f4\< c8\> |
   f2\f |
   des\sf |
@@ -590,7 +554,7 @@ bassoonOneMvtII = \relative c'
   r16 f'-. f-. g-. f-. ees-. d-. c-. |
   b8 r r16 d-. c-. b-. |
   c8 cis~ cis g-. |
-  d'8 r d4~\sf |
+  d'8 r d4\sf |
   ees2 |
   d |
   c~ |
@@ -611,26 +575,23 @@ bassoonOneMvtII = \relative c'
   g,8( aes-> g c->) |
   g8( ees'-> g, g'->) |
   r8 d16. d32 d8 d |
-  \crescTextCresc
-  r8 d16.\< d32 d8 d |
+  r8 d16.\justCresc d32 d8 d |
   d8 f,( g aes) |
   g8\p c16. c32 bes8 r | 
   R2*4 |
   c4\p( c8 c) |
-  c4\< aes\sf\> |
+  c4\justCresc aes\sf\> |
   g8\p r r4 |
   c4( b8 c) |
-  \crescHairpin
   b4.(\< f'8 |
   ees4\> d8 c) |
   b8\! r r4 |
   R2*1 |
-  \crescTextCresc
-  r16 d-.(\< ees-. d-. ees-. e-. f-. fis-.) |
+  r16 d-.(\justCresc ees-. d-. ees-. e-. f-. fis-.) |
   g4. bes,8 |
   aes8\p c16. c32 c8 c |
   r8 des16. des32 des8 des |
-  r8 f16.\< f32 f8 f |
+  r8 f16.\justCresc f32 f8 f |
   ees8-.\f c-. r c~\p |
   c8[ ees(\> d]) d16.\![ b32] |
   c8 ees,( g b) |
@@ -641,7 +602,7 @@ bassoonOneMvtII = \relative c'
   ees4.\sf(\> d16 c) |
   c4\p( b) |
   c8 g'( ees c) |
-  ees4(\< d8.. c32) |
+  ees4(\justCresc d8.. c32) |
   c8\f r r4 | 
   R2*10 |
   r4 c\pp( |
@@ -649,9 +610,9 @@ bassoonOneMvtII = \relative c'
   g4 r8. g16 |
   c,8 r r4 |
   R2*2 | 
-  c'4(\p\< bes8 aes) |
+  c'4(\p\justCresc bes8 aes) |
   bes( aes g f) |
-  c'4(\p\< ees) |
+  c'4(\p\justCresc ees) |
   r4 des8\p r |
   r4 c8 r | 
   R2*15 |
@@ -678,7 +639,6 @@ bassoonOneMvtIII = \relative c'
     d4 r r |
     R2.*2 |
     d2.-> |
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     d4-.\semprePP d,-. c'-. |
     bes-. g-. ees-. |
     d-. c'-. a-. |
@@ -690,9 +650,7 @@ bassoonOneMvtIII = \relative c'
     c-. bes-. d-. |
     ees r r |
     R2.*8 |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    bes4-.\< c-. d-. |
+    bes4-.\justCresc c-. d-. |
     ees\ff ees ees |
     ees ees ees |
     ees( f8 ees d c) |
@@ -753,7 +711,7 @@ bassoonOneMvtIII = \relative c'
     c-. d-. ees-. |
     f-. c-. cis-. |
     d-. e-. f-. |
-    g\< r r |
+    g\justCresc r r |
     g, r r |
     c, g aes |
     f cis' d |
@@ -794,9 +752,7 @@ bassoonOneMvtIII = \relative c'
     c2 c4 |
     c2 c4 |
     c( aes g |
-    f-.) r
-      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-      d'\pDolce |
+    f-.) r d'\pDolce |
     f(^\mSempreLegato d c |
     bes d c |
     ees a, c |
@@ -828,7 +784,6 @@ bassoonOneMvtIII = \relative c'
   d4 r r |
   R2.*2 |
   d2.-> |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   d4-.\semprePP d,-. c'-. |
   bes-. g-. ees-. |
   d-. c'-. a-. |
@@ -840,7 +795,7 @@ bassoonOneMvtIII = \relative c'
   c-. bes-. d-. |
   ees-. r r |
   R2.*8 |
-  bes4-.\< c-. d-. |
+  bes4-.\justCresc c-. d-. |
   ees\ff ees ees |
   ees ees ees |
   ees( f8 ees d c) |
@@ -905,7 +860,7 @@ bassoonOneMvtIII = \relative c'
   c-. d-. ees-. |
   f-. c-. cis-. |
   d-. e-. f-. |
-  g-.\< r r |
+  g-.\justCresc r r |
   g, r r |
   c,-. g-. aes-. |
   f-. cis'-. d-. |
@@ -918,7 +873,6 @@ bassoonOneMvtIII = \relative c'
 
   %coda |
   R2.*2 |
-  \crescHairpin
   des'2.(\pp\< |
   d\> |
   ees4)\! r r |
@@ -927,8 +881,7 @@ bassoonOneMvtIII = \relative c'
   aes(\> |
   g4)\! r r |
   R2.*3 |
-  \crescTextCresc
-  r4 bes\< ees |
+  r4 bes\justCresc ees |
   bes ees bes |
   ees\f bes ees |
   bes ees bes |
@@ -1010,12 +963,9 @@ bassoonOneMvtIV = \relative c'
   f4.( bes,8) |
   bes4.( f'8) |
   g4.( ees8) |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  ees4-.(\< d-.) |
+  ees4-.(\justCresc d-.) |
   ees4.\sf e8-. |
-  \dimTextDecresc
-  f-.\> d-. ees-. a,-. |
+  f-.\justDecresc d-. ees-. a,-. |
   bes4\p r |
   r8 bes-.\f bes-. bes-. |
   r bes-. bes-. bes-. |
@@ -1054,7 +1004,7 @@ bassoonOneMvtIV = \relative c'
   g,2\p |
   c |
   <<
-    {s2 s s\< s}
+    {s2 s s\justCresc s}
     \repeat unfold 2
     {
       c,4. c8 |
@@ -1101,7 +1051,6 @@ bassoonOneMvtIV = \relative c'
   d16 d,( e fis g a bes c) | %Made slur start on second note like other parts
   \repeat unfold 2
   {
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     d4-.\sempreF d8.-. d16-. |
     d4-. d8.-. d16-. |
     d8.-. c16-. bes8.-. a16-. |
@@ -1148,9 +1097,7 @@ bassoonOneMvtIV = \relative c'
   g,4 r |
   g r |
   R2*3 |
-  r8
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    g(\pDolce b d) |
+  r8 g(\pDolce b d) |
   f r r4 |
   r8 g,( c e) |
   g r r4 |
@@ -1193,15 +1140,13 @@ bassoonOneMvtIV = \relative c'
   bes4.( c8) |
   c4( d8..\sf ees32) |
   ees4. ees8 |
-  ees4(\< f8.. g32) |
-  \dimHairpin
+  ees4(\justCresc f8.. g32) |
   g4.\sf\> ees8 |
   ees8(\p f g ees) |
   ees4( d8) r |
   R2*12 |
   r8. d16\< d8( ees16) r |
   r8. d16 d8( ees16) r |
-  \crescHairpin
   <<
     {s4\p\< s\>}
     \repeat unfold 2 {r16. a,32 a16( bes)}
@@ -1211,10 +1156,8 @@ bassoonOneMvtIV = \relative c'
   aes8 r r4 |
   r16 f-. \repeat unfold 3 {aes-. f-.} |
   R2 |
-  \crescTextCresc
-  r16 g\< bes g r4 |
+  r16 g\justCresc bes g r4 |
   r16 f aes f r4 |
-  \crescHairpin
   g4(\p\< bes8.\> aes16) |
   g8\! r r ees\ff |
   g4.\sf ees8 |
@@ -1236,40 +1179,32 @@ bassoonOneMvtIV = \relative c'
   ees,4(\sf g8. f16) |
   ees8 r bes'4(\p |
   ees g) |
-  \crescTextCresc
-  f2~\< |
+  f2~\justCresc |
   f8 bes, bes bes |
   ees16\p g, g g g( bes) bes-. bes-. |
   bes( ees) ees-. ees-. ees( g) g-. g-. |
-  f2\< |
+  f2\justCresc |
   ees8\~ r r4 |
   R2 |
   r16 ees\p ees ees f8->( ees16) r |
   R2 |
-  \crescHairpin
   \repeat unfold 2 {r16 ees(\< f\> ees)\!} |
   R2*6 |
   ces4-.\f ces-. |
   c2 |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   cis4-.\semprePiuF cis-. |
   d2 |
   d4.\ff bes16 g |
   d'4 d |
   g,8 r d'16\p d r8 |
   \repeat unfold 2 {ees16 ees r8 fis,16 fis r8 |}
-  \crescTextCresc
-  f'16\< f r8 b,16 b r8 |
-  \dimTextDecresc
-  f'16\> f r8 b,16 b r8 |
+  f'16\justCresc f r8 b,16 b r8 |
+  f'16\justDecresc f r8 b,16 b r8 |
   d16\p d r8 c16 c r8 |
   ees16 ees r8 fis,16 fis r8 |
-  \crescHairpin
   g16\< g r8 d'16 d r8 |
-  \dimHairpin
   ees16\> ees r8 fis,16 fis r8\! |
-  \dimTextDecresc
-  g16\> g r8 g'16 g r8 |
+  g16\justDecresc g r8 g'16 g r8 |
   g16\pp g r8 fis16 fis r8 |
 
   %presto
@@ -1304,7 +1239,6 @@ bassoonOneMvtIV = \relative c'
   g-. ees-. g-. ees-. g ees bes'\sf g |
   bes g ees\sf bes ees bes g'\sf ees |
   g ees bes'\sf g bes g ees'\sf bes |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees-.\semprePiuF ees-. d-. c-. bes-. aes-. g-. f-. |
   ees-. ees-. d-. c-. bes-. aes-. g-. f-. |
   ees-. ees-. f-. g-. aes-. bes-. c-. d-. |

@@ -1,5 +1,7 @@
-\version "2.13.17"
+\version "2.13.53"
 
+\include "merge-rests.ily"
+\include "defs.ily"
 \include "flute1.ily"
 \include "flute2.ily"
 \include "cello.ily"
@@ -19,12 +21,24 @@
 \include "bass.ily"
 \include "trumpet1.ily"
 \include "trumpet2.ily"
-\include "defs.ily"
 
 #(set-global-staff-size 14)
-%#(set-default-paper-size "a3")
+#(set-default-paper-size "a3")
+
+\paper
+{
+  %short-indent = 5\mm
+  top-system-spacing #'stretchability = #0
+  last-bottom-spacing #'stretchability = #0
+  system-system-spacing #'stretchability = #2
+}
 
 instrument = "Orchestra"
+
+\layout
+{
+  \mergeRests
+}
 
 \book
 {

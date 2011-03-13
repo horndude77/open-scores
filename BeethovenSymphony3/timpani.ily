@@ -1,6 +1,4 @@
-\version "2.13.17"
-
-\include "defs.ily"
+\version "2.13.53"
 
 timpaniMvtI = \relative c
 {
@@ -97,16 +95,13 @@ timpaniMvtI = \relative c
   bes\ff |
   ees4\stopTrillSpan r r |
   R2.*29 |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  r4 r bes\< |
+  r4 r bes\justCresc |
   bes bes bes |
   \repeat unfold 2 {\repeat tremolo 6 ees8 |}
   ees4 ees ees |
   ees r r |
   r ees ees |
   ees r ees\sf |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees\piuF r r |
   ees r r |
   ees r r |
@@ -172,13 +167,13 @@ timpaniMvtI = \relative c
   bes r r |
   R2.*31 |
   bes4\pp r r |
-  bes\< r r |
+  bes\justCresc r r |
   bes r r |
   bes\p r r |
   ees r r |
   R2.*14 |
   r4 r \times 2/3 {bes8\p bes bes} |
-  bes4\< r \times 2/3 {\repeat tremolo 3 bes8} |
+  bes4\justCresc r \times 2/3 {\repeat tremolo 3 bes8} |
   \repeat unfold 7 {bes4 r \times 2/3 {\repeat tremolo 3 bes8} |}
   ees2.~\f\startTrillSpan |
   ees~ |
@@ -258,21 +253,17 @@ timpaniMvtII = \relative c
   g8 r r4 |
   c8\p c r4 |
   c8 r r c |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  c\< r c r |
+  c\justCresc r c r |
   c r c r |
   c\p r r4 |
   R2*5 |
   c8\p r r4 |
   c8 r r4 |
   c8 r r4 |
-  r8 c16.\< c32 c8 c |
+  r8 c16.\justCresc c32 c8 c |
   c r g r |
   c r c r |
-  g\f
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    r\semprePiuF \repeat unfold 3 {\times 4/6 {\repeat tremolo 6 g16}} |
+  g\f r\semprePiuF \repeat unfold 3 {\times 4/6 {\repeat tremolo 6 g16}} |
   c4\trill\ff c8 r |
   c4\trill c8 r |
   c2\trill |
@@ -323,20 +314,19 @@ timpaniMvtII = \relative c
   r4 r8 g\f |
   c-. c-. r c16.\p c32 |
   c8 g r8. \times 2/3 {g32 g g} |
-  \dimTextDecresc
   <<
     {\repeat unfold 6 {g8 r r8. \times 2/3 {g32 g g} |}}
-    {s2*4 | s2\f | s4 s8. s16\> |}
+    {s2*4 | s2\f | s4 s8. s16\justDecresc |}
   >>
   g8\p r16 \times 2/3 {g32 g g} g8 r16 \times 2/3 {g32 g g} |
   g8 r r8. \times 2/3 {g32 g g} |
-  g8\< r16 \times 2/3 {g32 g g} g8 r16 \times 2/3 {g32 g g} |
+  g8\justCresc r16 \times 2/3 {g32 g g} g8 r16 \times 2/3 {g32 g g} |
   c8\f r r4 |
   R2*13 |
   c8\pp r r4 |
   c8 r r4 |
   c4 c8 c |
-  c\< r c c |
+  c\justCresc r c c |
   c2\trill |
   c8\p r r4 |
   r4 c8\p r |
@@ -379,9 +369,7 @@ timpaniMvtIII = \relative c
     ees4\p r r |
     ees r r |
     R2.*2 |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    bes4\< r r |
+    bes4\justCresc r r |
     bes r r |
     ees r r |
     bes bes bes |
@@ -438,7 +426,7 @@ timpaniMvtIII = \relative c
   ees4\p r r |
   ees4 r r |
   R2.*2 |
-  bes4\< r r |
+  bes4\justCresc r r |
   bes r r |
   ees r r |
   bes bes bes |
@@ -446,8 +434,8 @@ timpaniMvtIII = \relative c
   ees4\f\stopTrillSpan r r |
   bes\f r r |
   ees4\pp \repeat unfold 11 {bes ees} bes |
-  ees\< \repeat unfold 5 {bes ees} bes |
-  ees8 bes ees\< bes ees bes |
+  ees\justCresc \repeat unfold 5 {bes ees} bes |
+  ees8 bes ees\justCresc bes ees bes |
   \repeat unfold 3 {ees bes} |
   ees\f bes ees bes ees bes |
   \repeat unfold 3 {ees bes} |
@@ -570,9 +558,7 @@ timpaniMvtIV = \relative c
   r4 bes8\pp bes |
   R2 |
   r4 bes8\pp bes |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  r4 bes8\< bes |
+  r4 bes8\justCresc bes |
   r4 bes8 bes |
   r8 bes\p r bes |
   bes r r4 |
@@ -613,7 +599,6 @@ timpaniMvtIV = \relative c
   ees8 r r4 |
   ees8 r ees r |
   ees8 r ees r |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees8\semprePiuF r r8. \times 2/3 {bes32 bes bes} |
   ees8 r r8. \times 2/3 {bes32 bes bes} |
   \repeat unfold 4 {ees16 bes} |

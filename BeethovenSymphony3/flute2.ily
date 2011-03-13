@@ -1,6 +1,4 @@
-\version "2.13.17"
-
-\include "defs.ily"
+\version "2.13.53"
 
 fluteTwoMvtI = \relative c'''
 {
@@ -13,9 +11,7 @@ fluteTwoMvtI = \relative c'''
   {
     R2.*16 |
     r4 r ees, |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    r4\< ees ees |
+    r4\justCresc ees ees |
     d2.~\fp |
     d2( aes'4) |
     g4-. a2\sf |
@@ -28,7 +24,7 @@ fluteTwoMvtI = \relative c'''
     bes\sf bes4~\sf |
     bes bes-. bes~\sf |
     bes bes-. bes(\sf |
-    bes) bes,8-.\< c-. d-. ees-. |
+    bes) bes,8-.\justCresc c-. d-. ees-. |
     f-. g-. aes-. bes-. c-. d-. |
     ees2(\ff g,4 |
     ees2 bes4) |
@@ -44,7 +40,7 @@ fluteTwoMvtI = \relative c'''
     ees4-. d-. c-. |
     bes4\p r r |
     R2.*3 |
-    bes2.~\< |
+    bes2.~\justCresc |
     bes2.~ |
     bes8 d-. c-. d-. a'-. bes-. |
     \repeat tremolo 6 c8 |
@@ -68,12 +64,10 @@ fluteTwoMvtI = \relative c'''
     a-. g-. f-. ees-. d-. c-. |
     bes4 r r |
     R2.*14 |
-    \crescHairpin
     r4 bes'-.(\< bes-.)\> |
     a4\p r r |
     R2.*7 |
-    \crescTextCresc
-    r4 r c,8-.\< d-. |
+    r4 r c,8-.\justCresc d-. |
     ees-. f-. g-. a-. bes-. c-. |
     d4\f d2\sf |
     r4 d2\sf |
@@ -115,7 +109,7 @@ fluteTwoMvtI = \relative c'''
     }
   }
   R2.*31 |
-  a2.~\< |
+  a2.~\justCresc |
   a4 d-.\ff d-. | d-. d-. d-. |
   d2.~ | d |
   cis4-. cis-. cis-. | cis-. cis-. cis-. |
@@ -169,7 +163,7 @@ fluteTwoMvtI = \relative c'''
   aes,2( ees'4 | aes,2 ges4) |
   f( aes des) | des r r |
   aes2( des4 | aes2 f4) |
-  f(\< aes bes) | bes r r |
+  f(\justCresc aes bes) | bes r r |
   aes2( bes4 | aes2 f4) |
   R2. |
   ees2(\sf ges4) |
@@ -181,14 +175,13 @@ fluteTwoMvtI = \relative c'''
   aes,2.\f | aes\ff | g4 r r |
   R2.*25 |
   r4 bes,(\pp d | bes2 f4) |
-  bes8-.\< d-. f-. bes,-. d-. f-. |
+  bes8-.\justCresc d-. f-. bes,-. d-. f-. |
   aes-. d,-. f-. aes-. c-. bes-. |
   aes-. bes-. aes-. g-. aes-. g-. | %QUESTION: Hairpin here? (like strings)
   f-. ees-. d-. ees-. f-. aes-. |
   g4(\f ees g | ees2 bes4) |
   ees4 ees' ees | ees2 bes4\sf |
   aes aes aes | aes2 a4\sf |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   bes2.\piuF | c |
   d~ | d4 d d |
   ees2\ff ees4\sf |
@@ -201,7 +194,7 @@ fluteTwoMvtI = \relative c'''
   R2.*9 |
   r4 c'4.\ff bes8-. | aes4-. g-. f-. | ees4\p r r |
   R2.*3 |
-  ees2.~\< |
+  ees2.~\justCresc |
   ees~ | ees8 r r ees-. f-. g-. |
   \repeat tremolo 6 aes8 |
   aes4-.\f d-. r | r r r8 d |
@@ -212,12 +205,12 @@ fluteTwoMvtI = \relative c'''
   g4 g( aes) | a( bes b) |
   c2.~ | c4 r r |
   R2.*2 |
-  bes2.~\< | bes~ |
+  bes2.~\justCresc | bes~ |
   bes8\ff a-. aes-. g-. f-. ees-. |
   d-. c-. bes-. aes'-. g-. f-. |
   ees4 r r |
   R2.*23 |
-  r4 r aes,8-.\< bes-. |
+  r4 r aes,8-.\justCresc bes-. |
   c-. d-. ees-. f-. g-. aes-. |
   bes4\f bes2\sf |
   r4 bes2\sf |
@@ -238,7 +231,7 @@ fluteTwoMvtI = \relative c'''
   r des-. c-. |
   \repeat unfold 6 {r ees-.\sf} |
   R2.*8 |
-  c,2.~\< | c4. aes'8( g f) |
+  c,2.~\justCresc | c4. aes'8( g f) |
   ees8-. ees-. ees-. g-. g-. bes-. |
   bes2.\ff |
   ees,4\f r r |
@@ -258,7 +251,7 @@ fluteTwoMvtI = \relative c'''
   g-. r r |
   R2.*11 |
   bes2.~\p | \repeat unfold 3 {bes~ |}
-  bes8 g16( aes bes8-.) bes-.\< c-. d-. |
+  bes8 g16( aes bes8-.) bes-.\justCresc c-. d-. |
   ees-. bes-. c-. d-. ees-. f-. |
   g-.\sf g16( f ees8-.) d-. c-. bes-. |
   aes-. g-. f-. ees-. d-. c-. |
@@ -284,7 +277,7 @@ fluteTwoMvtI = \relative c'''
   ees2.\ff |
   d2. | g,4\p r r |
   R2.*3 |
-  ees2.~\< | ees~ |
+  ees2.~\justCresc | ees~ |
   ees8-. ees-. d-. ees-. f-. g-. |
   \repeat tremolo 6 aes8 |
   aes4\f f2~\f |
@@ -292,7 +285,7 @@ fluteTwoMvtI = \relative c'''
   aes4 d2\f |
   d2\sf d4-.\f |
   d4-. bes-.\ff \repeat unfold 10 {bes-.} |
-  ees r r | bes r r | ees, r r | \bar "|."
+  ees r r | bes r r | ees, r r |
 }
 
 fluteTwoMvtII = \relative c'''
@@ -333,7 +326,6 @@ fluteTwoMvtII = \relative c'''
   bes2(\p |
   a8) r r4 |
   R2*13 |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   r8 c4(\semprePiuF e8) |
   b4. b16.( f32) |
   e4.\ff g8-.\sf |
@@ -383,12 +375,9 @@ fluteTwoMvtII = \relative c'''
   r8 fis4(\sf g8) |
   R2*8 |
   r4 c,4~\p |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  c8\< c( fis8\sf\> ees16 c |
+  c8\justCresc c( fis8\sf\> ees16 c |
   b8)\p r r4 |
   R2 |
-  \crescHairpin
   r4 g'~\< |
   g4.(\> fis8) |
   g8\! r r4 |
@@ -402,11 +391,10 @@ fluteTwoMvtII = \relative c'''
   c4.\sf\> r8 |
   g2\p |
   R2 |
-  \crescTextCresc
-  c4(\< f,8.. ees32) |
+  c4(\justCresc f,8.. ees32) |
   ees8 r r4 |
   R2*16 |
-  c4.\p\< c8 |
+  c4.\p\justCresc c8 |
   c-. c-. c-. c-. |
   c-.\p r r4 |
   R2*18 |
@@ -461,9 +449,7 @@ fluteTwoMvtIII = \relative c'''
     c r r |
     c r r |
     aes r r |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    d\< r r |
+    d\justCresc r r |
     bes r r |
     c r r |
     r bes bes |
@@ -560,7 +546,7 @@ fluteTwoMvtIII = \relative c'''
   c r r |
   c r r |
   aes r r |
-  d\< r r |
+  d\justCresc r r |
   bes r r |
   c r r |
   r bes bes |
@@ -570,7 +556,7 @@ fluteTwoMvtIII = \relative c'''
 
   %coda
   R2.*12 |
-  r4 f,\< g |
+  r4 f,\justCresc g |
   f g f |
   g\f d' ees |
   d ees d |
@@ -648,9 +634,7 @@ fluteTwoMvtIV = \relative c'''
 
   r8 |
   R2*4 |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  ees4(\< f) |
+  ees4(\justCresc f) |
   ees4\sf r |
   R2*2 |
   r8 bes'-.\f bes-. bes-. |
@@ -674,13 +658,13 @@ fluteTwoMvtIV = \relative c'''
   ees ees d d |
   bes r r4 |
   R2*4 |
-  r8 g\< a a |
+  r8 g\justCresc a a |
   g\f g a a |
   g g a a |
   g4-.\ff b-. |
   b-. r |
   R2*28 |
-  c2\< |
+  c2\justCresc |
   g'2~\f |
   g4 c, |
   c c |
@@ -709,7 +693,7 @@ fluteTwoMvtIV = \relative c'''
   d'\p r r4 |
   R2*10 |
   r4 r8 a |
-  a\< a a a |
+  a\justCresc a a a |
   a a a b |
   b\p a a a |
   a a a r |
@@ -727,7 +711,6 @@ fluteTwoMvtIV = \relative c'''
   d4 d( |
   fis) g, |
   fis16( d e fis g a bes c) |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   d4-.\sempreF d8.-. d16-. |
   d4-. d8.-. d16-. |
   d8.-. c16-. bes8.-. a16-. |
@@ -774,7 +757,7 @@ fluteTwoMvtIV = \relative c'''
   g r |
   g8\p r r4 |
   R2*19 |
-  bes,2\> |
+  bes,2\justCresc |
   ees8\! r r4 |
   R2*14 |
   r8 ees\p g4~\sf |
@@ -819,7 +802,6 @@ fluteTwoMvtIV = \relative c'''
   %poco andante
   r8 |
   R2*30 |
-  \crescHairpin
   g,4(\p\< bes8.\> aes16) |
   g8\! r r4 |
   r8 bes8-.\ff bes4~\sf |
@@ -837,7 +819,6 @@ fluteTwoMvtIV = \relative c'''
   \repeat tremolo 4 bes16) r16 bes bes bes |
   bes8 r r4 |
   R2*19 |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   cis4-.\semprePiuF cis-. |
   c2 |
   bes\ff |
@@ -867,7 +848,6 @@ fluteTwoMvtIV = \relative c'''
   g-. ees-. g-. ees-. g ees bes'\sf g |
   bes g ees'\sf bes ees bes g\sf ees |
   \repeat unfold 2 {g ees g\sf ees} |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees'2\semprePiuF |
   ees |
   ees |

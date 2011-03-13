@@ -1,10 +1,10 @@
-\version "2.13.17"
+\version "2.13.53"
 
 \header
 {
   title = \markup{Symphony No. 3 in E\flat Major}
   subtitle = "Eroica"
-  opus = "Op. 55"
+  opus = "Op.55"
   composer = "Ludwig van Beethoven (1770-1827)"
   copyright = "Creative Commons Attribution-ShareAlike 3.0"
   instrument = \instrument
@@ -18,7 +18,7 @@
   style = "Classical"
   maintainer = "Jay Anderson"
   maintainerEmail = "horndude77@gmail.com"
-  lastupdated = "2009/May/8"
+  lastupdated = "2011/March/7"
   footer = "Mutopia-2009/06/04-1655"
   tagline =
   \markup
@@ -41,7 +41,7 @@
           Typeset using \with-url #"http://www.LilyPond.org"
           \line
           { \teeny www. \hspace #-1.0 LilyPond \hspace #-1.0 \teeny .org }
-          by \maintainer \hspace #-1.0 . \hspace #0.5 Copyright © 2009. \hspace #0.5 Reference: \footer
+          by \maintainer \hspace #-1.0 . \hspace #0.5 Copyright © 2009-2011. \hspace #0.5 Reference: \footer
         }
       }
       \line

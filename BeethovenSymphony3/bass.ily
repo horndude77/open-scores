@@ -1,6 +1,4 @@
-\version "2.13.17"
-
-\include "defs.ily"
+\version "2.13.53"
 
 bassMvtI = \relative c
 {
@@ -18,9 +16,7 @@ bassMvtI = \relative c
     f aes c) |
     f, r r |
     R2. |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    r4 c(\< ces) |
+    r4 c(\justCresc ces) |
     bes2.~\fp |
     bes2 bes4~ |
     bes bes2\sf |
@@ -33,7 +29,7 @@ bassMvtI = \relative c
     g\sf g4~\sf |
     g aes-. aes~\sf |
     aes g-. g(\sf |
-    f8)\< f-. f-. f-. f-. f-. |
+    f8)\justCresc f-. f-. f-. f-. f-. |
     bes, bes' \repeat tremolo 4 bes8 |
     ees,2(\ff g4 |
     ees2 bes4) |
@@ -57,7 +53,7 @@ bassMvtI = \relative c
     ees4-. d-. c-. |
     bes4\p r r |
     R2.*3 |
-    bes2.~\< |
+    bes2.~\justCresc |
     bes~ |
     bes8-. f'-. ees-. d-. c-. bes-. |
     a-. bes-. c-. bes-. a-. g-. |
@@ -89,7 +85,6 @@ bassMvtI = \relative c
     bes,\p r r |
     R2.*3 |
     r4 f'(_\arco des |
-    \crescHairpin
     << {c2 b4} {s4\< s4\> s4\!} >> |
     c) r r |
     R2. |
@@ -99,8 +94,7 @@ bassMvtI = \relative c
     f-. f-. f-. |
     \tremolos #8 {f2. |
     f |
-    \crescTextCresc
-    f\< |
+    f\justCresc |
     f |
     f} |
     f8-. f-. f-. ees-. d-. c-. |
@@ -129,7 +123,7 @@ bassMvtI = \relative c
     aes r r |
     a r r |
     bes r r |
-    \repeat tremolo 6 ees8\< |
+    \repeat tremolo 6 ees8\justCresc |
     c8 c c c( d ees) |
     \repeat tremolo 4 f8 d8 bes |
     f\ff f' \repeat tremolo 4 f8 |
@@ -139,8 +133,7 @@ bassMvtI = \relative c
     bes-. bes-. bes-. |
     bes2.~\fp |
     bes~ |
-    \dimTextDecresc
-    bes~\> |
+    bes~\justDecresc |
     bes~ |
   }
   \alternative
@@ -166,7 +159,7 @@ bassMvtI = \relative c
   g' r r |
   g r r |
   g r r |
-  g\< r r |
+  g\justCresc r r |
   g,\sf r r |
   g\p r r |
   R2. |
@@ -186,7 +179,7 @@ bassMvtI = \relative c
   cis2(\p e4 |
   cis2 gis4) |
   cis4 r r |
-  r r a4\< |
+  r r a4\justCresc |
   d2(\ff f4 | d2 a4) |
   d2( f4 | d2 a4) |
   e'2( g4 | e2 a,4) |
@@ -195,7 +188,7 @@ bassMvtI = \relative c
   fis8-.\p c'-. c-. r r4 |
   r8 bes-. bes-. r r4 |
   fis4 r r |
-  r8 fis\< \repeat tremolo 4 fis8 |
+  r8 fis\justCresc \repeat tremolo 4 fis8 |
   g2(\ff bes4\sf | g2 d4) |
   g2( bes4\sf | g2 d4) |
   a'2( c4\sf | a2 d,4) |
@@ -204,10 +197,10 @@ bassMvtI = \relative c
   b8\p f'-. f-. r r4 |
   r8 ees-. ees-. r r4 |
   b4 r r |
-  r8 b\< \repeat tremolo 4 b8 |
+  r8 b\justCresc \repeat tremolo 4 b8 |
   bes8-.\p bes-. bes-. r r4 |
   r8 aes-. aes-. r r4 |
-  r8 e-.\< e-. r r4 |
+  r8 e-.\justCresc e-. r r4 |
   r8 e \repeat tremolo 4 e8 |
   ees8-.\f ees'-. ees-. r r4 |
   r8 des-. des-. r r4 |
@@ -234,7 +227,7 @@ bassMvtI = \relative c
   f4 r r |
   R2.*4
   r4 r r8 c |
-  bes4 g'4.\sf\< bes,8 |
+  bes4 g'4.\sf\justCresc bes,8 |
   a-. fis'-. g,-. g'-. ees-. d-. |
   cis4 r r |
   d4 r8 d16( cis) d8-. c-. |
@@ -269,7 +262,7 @@ bassMvtI = \relative c
   r4 a2\f |
   a2\f a4-.\f |
   r4 b,-.\f b-. |
-  b-.\> b-. b-. |
+  b-.\justDecresc b-. b-. |
   b-. b-. b-. |
   b-.\p b-. b-. |
   e r r |
@@ -280,7 +273,7 @@ bassMvtI = \relative c
   r4 a' a | e r r |
   r e e | a r r |
   r4 a a | e r r |
-  r8 e(^\arco\< g f e d) |
+  r8 e(^\arco\justCresc g f e d) |
   c2(\f e4 | c2 g4) |
   c-. e-. g-. |
   c,2( g4) |
@@ -305,8 +298,8 @@ bassMvtI = \relative c
   ees r r |
   r ees,^\pizz\p ees | bes r r |
   r bes' bes | ees r r |
-  r ees,^\arco\> ees |
-  f2.(\< | des) |
+  r ees,^\arco\justDecresc ees |
+  f2.(\justCresc | des) |
   ges2.~\p | ges |
   aes( | des,) |
   ges4 ges( aes |
@@ -328,12 +321,11 @@ bassMvtI = \relative c
   aes'-. des,-. des'-. |
   des,-. f-. des-. |
   aes'2.\sfp |
-  d,4-.\< f-. d-. |
+  d,4-.\justCresc f-. d-. |
   bes'-. d,-. d'-. |
   d,-. f-. d-. |
   bes'2.\sf |
-  \crescTextSempreCresc
-  ees,4-.\< ges-. ees-. |
+  ees,4-.\justSempreCresc ges-. ees-. |
   bes'-. ees,-. ees'-. |
   ees,-. ges-. ees-. |
   bes'2.\sf |
@@ -346,7 +338,7 @@ bassMvtI = \relative c
   ces4(\f ees ges) |
   R2.*3 |
   c,4(\p ees a) |
-  r4 r8 d,8(\> f bes) |
+  r4 r8 d,8(\justDecresc f bes) |
   r4 r8 d,8( f bes) |
   r4 r8 ees,8( ges bes) |
   r4 r8 ees,8( ges bes) |
@@ -380,20 +372,17 @@ bassMvtI = \relative c
   aes f des |
   c r c |
   ees aes c |
-  \crescTextCresc
-  des\< r8 des,^\arco des des |
-  \repeat tremolo 6 ces8\> |
+  des\justCresc r8 des,^\arco des des |
+  \repeat tremolo 6 ces8\justDecresc |
   bes2(\pp d4 | bes2 f4) |
-  bes8-.\< d-. f-. bes,-. d-. f-. |
+  bes8-.\justCresc d-. f-. bes,-. d-. f-. |
   aes-. d,-. f-. aes-. c-. bes-. |
-  \crescHairpin
   aes-.\< bes-. aes-. g-. f-. ees-. |
   d-. c-. bes-. bes'-. bes-. bes-. |
   \tremolos #8 {ees,2.\f |
   ees} |
   \repeat unfold 2 {\tremolos #8 {ees | ees2} ees8\sf ees |}
   \tremolos #8 {
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees2.\piuF |
   \repeat unfold 3 {ees |}
   ees2\ff} g8\sf g |
@@ -418,8 +407,7 @@ bassMvtI = \relative c
   aes4-. g-. f-. |
   ees4\p r r |
   R2.*3
-  \crescTextCresc
-  ees2.~\< |
+  ees2.~\justCresc |
   ees~ |
   ees8-. bes'-. aes-. g-. f-. ees-. |
   d-. ees-. f-. ees-. d-. c-. |
@@ -448,8 +436,6 @@ bassMvtI = \relative c
   r bes bes |
   r ees r |
   R2.*3 |
-  \crescHairpin
-  \dimHairpin
   r4 bes( ges\< | f2\> e4)\! |
   R2.*2 |
   r4 bes'-.\pp bes-. |
@@ -458,8 +444,7 @@ bassMvtI = \relative c
   bes-. bes-. bes-. |
   \tremolos #8 {bes2. |
   bes2. |
-  \crescTextCresc
-  bes2.\< |
+  bes2.\justCresc |
   bes2. |
   bes2.} |
   bes8-. bes-. bes-. aes'-. g-. f-. |
@@ -488,7 +473,7 @@ bassMvtI = \relative c
   des,4 r r |
   d4 r r |
   ees4 r8 ees' ees ees |
-  \repeat tremolo 6 aes8\< |
+  \repeat tremolo 6 aes8\justCresc |
   f8 f f f( g aes) |
   bes-. g-. ees-. bes'-. g-. ees-. |
   \repeat tremolo 6 bes8\ff |
@@ -497,13 +482,12 @@ bassMvtI = \relative c
   ees4\f r r |
   ees-. ees-. ees-. |
   ees2.~\fp | ees~ |
-  \dimTextDecresc
-  ees~\> | ees~ |
+  ees~\justDecresc | ees~ |
   ees~\p | ees |
   des~\f | des |
   des~\p | des |
   \tremolos #16 {c2.\ff | c |}
-  c~\p | c~\> | c~\pp | c~ | c~ | c |
+  c~\p | c~\justDecresc | c~\pp | c~ | c~ | c |
   \repeat unfold 3 {b~ |}
   b |
   bes( | bes') |
@@ -514,7 +498,7 @@ bassMvtI = \relative c
   r f f | c r r |
   r c c | f r r |
   r f f |
-  r bes,(^\arco\< c |
+  r bes,(^\arco\justCresc c |
   d4.\sf c8 bes4) |
   ees4\p r r |
   r ees^\pizz ees | bes r r |
@@ -523,7 +507,7 @@ bassMvtI = \relative c
   g4 r r8 g |
   aes4 r r8 aes |
   f4 r r8 f |
-  d4\> r r8 d |
+  d4\justDecresc r r8 d |
   ees4 r r8 ees |
   c4 r r8 c |
   ces4 r r8 ces |
@@ -539,15 +523,15 @@ bassMvtI = \relative c
   aes'2.~\sfp |
   aes4 g-. bes,-. |
   bes'2.~\sfp |
-  bes4\<
+  bes4\justCresc
   \repeat unfold 6 {a-. bes,-.}
-    bes'-.\< bes,-. | bes'-. bes,-. bes'-. |
-  bes,-.\> bes'-. bes,-. | bes'-. bes,-. bes'-. |
+    bes'-.\justCresc bes,-. | bes'-. bes,-. bes'-. |
+  bes,-.\justDecresc bes'-. bes,-. | bes'-. bes,-. bes'-. |
   c,-.\p r r |
   r c-. c-. |
   aes-. r r |
   r aes-. aes-. |
-  bes-.\< r r |
+  bes-.\justCresc r r |
   R2. |
   r4 bes-. bes-. |
   bes-.\p bes-. bes-. |
@@ -567,7 +551,7 @@ bassMvtI = \relative c
   R2. |
   bes4 r r |
   r bes bes |
-  ees2(\< g4 | ees2 bes4) |
+  ees2(\justCresc g4 | ees2 bes4) |
   ees( g) bes | bes2. |
   f2( aes4 | f2 bes,4) |
   f'( aes) bes-. |
@@ -592,7 +576,7 @@ bassMvtI = \relative c
   bes bes, \repeat tremolo 4 bes8 |
   ees4\p r r |
   R2.*3 |
-  ees2.~\< | ees~ |
+  ees2.~\justCresc | ees~ |
   ees8-. bes'-. aes-. g-. f-. ees-. |
   d-. ees-. f-. ees-. d-. c-. |
   bes4\f bes'2~\f |
@@ -622,19 +606,12 @@ bassMvtII = \relative c,
   c8 r16 \times 2/3 {c32 c c} ees8 r16 \times 2/3 {ees32 ees ees} |
   g8\< r16 \times 2/3 {g32 g g} g8\> r16 \times 2/3 {g32\! g g} |
   f8 r r8. \times 2/3 {b,32 b b} |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  b8 r r8. \times 2/3 {b32\< b b} |
-  \crescHairpin
-  \dimTextDecresc
-  bes8 r16 \times 2/3 {bes32\> bes bes} bes8 r16 \times 2/3 {bes32 bes bes} |
-  \dimHairpin
+  b8 r r8. \times 2/3 {b32\justCresc b b} |
+  bes8 r16 \times 2/3 {bes32\justDecresc bes bes} bes8 r16 \times 2/3 {bes32 bes bes} |
   ees8\p r r4 |
   g4(\p f8 ees) |
   d r r4 |
-  \crescTextCresc
-  c4(\< bes8 aes) |
-  \crescHairpin
+  c4(\justCresc bes8 aes) |
   g8 r16. e'32\f e4 |
   r f8(\p g) |
   aes4( aes,)\sf\> |
@@ -647,15 +624,13 @@ bassMvtII = \relative c,
   r4 c\sf |
   f,4\p r8. f'32( ees
   des4) r8. des32( c |
-  \crescTextCresc
-  b8)\< r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
-  ees8-.\f f-. r aes,~\p\< |
+  b8)\justCresc r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
+  ees8-.\f f-. r aes,~\p\justCresc |
   aes g4\sf\> g8 |
   c8-.\p aes'16.-. aes32-. d,8-. bes'16.-. bes32-. |
   ees,8 r r8. \times 2/3 {ees32 ees ees} |
   bes8 r r8. \times 2/3 {bes32 bes bes} |
-  c8\< r16 \times 2/3 {c32 c c} bes8 r16 \times 2/3 {aes32 aes aes} |
-  \crescHairpin
+  c8\justCresc r16 \times 2/3 {c32 c c} bes8 r16 \times 2/3 {aes32 aes aes} |
   g8 r16 \times 2/3 {e'32 e e} e8\f r16 \times 2/3 {e32 e e} |
   e8\p r16 \times 2/3 {e32 e e} f8 r16 \times 2/3 {g32 g g} |
   aes8 r16 \times 2/3 {aes,32 aes aes} aes8-> r16 \times 2/3 {aes32 aes aes} |
@@ -668,9 +643,7 @@ bassMvtII = \relative c,
   r4 r8. \times 2/3 {c32\sf c c} |
   f8\p r r8. \times 2/3 {f32 f f} |
   des8 r8 r8. \times 2/3 {des32 des des} |
-  \crescTextCresc
-  b8\< r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
-  \crescHairpin
+  b8\justCresc r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
   ees8-.\f f-. r8. \times 2/3 {aes32\p aes aes} |
   aes8\< r16 \times 2/3 {g32 g g} g8\> r16 \times 2/3 {g,32 g g} |
   c8\p r r4 |
@@ -691,9 +664,7 @@ bassMvtII = \relative c,
   f2~ |
   f8 d-. e-. f-. |
   g2 |
-  \crescTextCresc
-  gis8-. d'-.\< b-. gis-. |
-  \crescHairpin
+  gis8-. d'-.\justCresc b-. gis-. |
   a-. c,-. d-. d-. |
   \times 4/6 {g,32\ff g g g g g} \times 4/6 {\repeat tremolo 6 g32} g8-. r |
   \times 4/6 {\repeat tremolo 6 g32} \times 4/6 {\repeat tremolo 6 g32} g8-. r |
@@ -701,9 +672,7 @@ bassMvtII = \relative c,
   g8-. r r4 |
   c8\p r r4 |
   r8 g'-. e-. c-. |
-  \crescTextCresc
-  f-.\< r c-. r |
-  \crescHairpin
+  f-.\justCresc r c-. r |
   f-. r c-. r |
   f-.\p cis-. d-. e-. |
   f-. e-. f-. fis-. |
@@ -716,15 +685,11 @@ bassMvtII = \relative c,
     \times 2/3 {f-. e-. f-.} |
   e8\p r r4 |
   c8 r r4 |
-  \crescTextCresc
-  a8\< r r4 |
-  \crescHairpin
+  a8\justCresc r r4 |
   f8 r r4 |
   g'8 r f r |
   e r f r |
-  \times 2/3 {g,16\f g' g}
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    \times 2/3 {g\semprePiuF g g} \times 4/6 {\repeat tremolo 6 g16} |
+  \times 2/3 {g,16\f g' g} \times 2/3 {g\semprePiuF g g} \times 4/6 {\repeat tremolo 6 g16} |
   \repeat unfold 2 {\times 4/6 {\repeat tremolo 6 g,16}} |
   <<
     \repeat unfold 2
@@ -736,9 +701,7 @@ bassMvtII = \relative c,
   c,8-. r c-. r |
   c'2(\fp |
   aes4. f8) |
-  \crescTextCresc
-  des8(\< aes'16. f32) des8-. c-. |
-  \crescHairpin
+  des8(\justCresc aes'16. f32) des8-. c-. |
   b8\p r r4 |
 
   %Minore
@@ -777,9 +740,7 @@ bassMvtII = \relative c,
   d8( e16 fis g8 ees16 d) |
   cis8-. r cis4~\sf |
   cis8 cis-. cis-. cis-. |
-  \dimTextDecresc
-  d2~\> |
-  \dimHairpin
+  d2~\justDecresc |
   d\p |
   g,4 r |
   g' r |
@@ -810,52 +771,36 @@ bassMvtII = \relative c,
     g( ees'-> g, g'->) |
   }
   f,( b-> f d'->) |
-  \crescTextCresc
-  b( f'\< d b)
-  \crescHairpin
-  \dimTextDecresc
-  bes\> bes' bes, bes' |
-  \dimHairpin
+  b( f'\justCresc d b)
+  bes\justDecresc bes' bes, bes' |
   ees,\p aes
   \times 2/3 {ees16 c' bes} \times 2/3 {aes g f} | %In the B&H part the c does not go up an octave
   ees2 |
-  \crescTextCresc
-  bes2\< |
-  \crescHairpin
+  bes2\justCresc |
   c4(\> bes8 aes) |
   g8\! r16. e'32-.\f e4 |
   r4 f8(\p g) |
-  \crescTextCresc
-  aes4(\< aes,\sf)\> |
-  \crescHairpin
+  aes4(\justCresc aes,\sf)\> |
   g2\p | g | g\< | g\> |
   g8\! r r4 |
   R2*2 |
   r4 c\sf |
   f,8-.\p aes-. f-. f'-. |
   des-. f-. des-. des'-. |
-  \crescTextCresc
-  b,-.\< b'-. f,-. f'-. |
-  \crescHairpin
+  b,-.\justCresc b'-. f,-. f'-. |
   ees-.\f f-. r aes~\p
-  \crescTextCresc
-  aes\<( g)\> g,\p g' |
-  \crescHairpin
+  aes\justCresc( g)\> g,\p g' |
   c, r r4 |
   R2*3 |
   f,4\f r |
   fis\sf\> r |
   g8\p r g r |
   c r r4 |
-  \crescTextCresc
-  g8\< g' g, g' |
-  \crescHairpin
+  g8\justCresc g' g, g' |
   aes,8\f r r4 |
   R2*13 |
   c2~\pp | c |
-  \crescTextCresc
-  c4(\< e8( g) |
-  \crescHairpin
+  c4(\justCresc e8( g) |
   f4( g8 aes) |
   g8( f e f)
   c8\p r r4 |
@@ -867,12 +812,8 @@ bassMvtII = \relative c,
     c8)\! r r4 |
   }
   g2~ |
-  \crescTextCresc
-  g\< |
-  \crescHairpin
-  \dimTextDecresc
-  g\> |
-  \dimHairpin
+  g\justCresc |
+  g\justDecresc |
   r4\! c8^\pizz r |
   g r ees' r |
   c r r4 |
@@ -909,7 +850,6 @@ bassMvtIII = \relative c
 
   \repeat volta 2
   {
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     bes-.\semprePP ces-. bes-. |
     ces-. ces-. c-. |
     c-. des-. c-. |
@@ -928,7 +868,6 @@ bassMvtIII = \relative c
     R2.*2 |
     d,2.-> |
     g4( bes) g-. |
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     fis-.\semprePP d-. c'-. |
     bes-. g-. ees-. |
     d-. a'-. fis-. |
@@ -949,10 +888,7 @@ bassMvtIII = \relative c
     c g a |
     bes f g |
     ees c f |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    bes,-.\< c-. d-. |
-    \crescHairpin
+    bes,-.\justCresc c-. d-. |
     ees\ff g bes |
     ees, g bes |
     ees ees ees |
@@ -997,9 +933,7 @@ bassMvtIII = \relative c
     ees-. b-. c-. |
     aes-. aes'-. e-. |
     f-. cis-. d-. |
-    \crescTextCresc
-    bes-.\< bes'-. fis-. |
-    \crescHairpin
+    bes-.\justCresc bes'-. fis-. |
     g-. d-. ees-. |
     c-. g-. aes-. |
     f-. cis'-. d-. |
@@ -1053,9 +987,7 @@ bassMvtIII = \relative c
     r4 g(\p f) |
     aes( f ees |
     d) r r |
-    \crescTextCresc
-    r aes'(\< f |
-    \crescHairpin
+    r aes'(\justCresc f |
     d) r r |
     r aes'( f |
     d) bes'(\f g |
@@ -1127,7 +1059,6 @@ bassMvtIII = \relative c
   R2.*2 |
   d,2.-> |
   g4( bes) g-. |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   fis-.\semprePP d-. c'-. |
   bes-. g-. ees-. |
   d-. a'-. fis-. |
@@ -1148,9 +1079,7 @@ bassMvtIII = \relative c
   c g a |
   bes f g |
   ees c f |
-  \crescTextCresc
-  bes,\< c d |
-  \crescHairpin
+  bes,\justCresc c d |
   ees\ff g bes |
   ees, g bes |
   ees ees ees |
@@ -1199,9 +1128,7 @@ bassMvtIII = \relative c
   ees-. b-. c-. |
   aes-. aes'-. e-. |
   f-. cis-. d-. |
-  \crescTextCresc
-  bes-. bes'-.\< fis-. |
-  \crescHairpin
+  bes-. bes'-.\justCresc fis-. |
   g-. d-. ees-. |
   c-. g-. aes-. |
   f-. cis'-. d-. |
@@ -1212,9 +1139,7 @@ bassMvtIII = \relative c
   ees\f r r |
   bes,\f r r |
   R2.*12 |
-  \crescTextCresc
-  r4 bes\< ees |
-  \crescHairpin
+  r4 bes\justCresc ees |
   bes ees bes |
   ees\f bes ees |
   bes ees bes |
@@ -1309,14 +1234,9 @@ bassMvtIV = \relative c'
   bes' r |
   bes, r |
   ees r |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  ees\< d |
-  \crescHairpin
+  ees\justCresc d |
   ees r8\! e |
-  \dimTextDecresc
-  f\> d ees a, |
-  \dimHairpin
+  f\justDecresc d ees a, |
   bes\p bes' bes, r |
   ees,16\f^\arco f g aes bes c d ees |
   f g aes g f ees d c |
@@ -1354,9 +1274,7 @@ bassMvtIV = \relative c'
   f4. aes8-. |
   g-. f-. e-. g-. |
   f4. c'8-. |
-  \crescTextCresc
-  bes-.\< aes-. g-. bes-. |
-  \crescHairpin
+  bes-.\justCresc aes-. g-. bes-. |
   aes-. g-. f-. aes-. |
   g-. f-. ees-. g-. |
   f-.\f ees-. d-. f~ |
@@ -1380,7 +1298,6 @@ bassMvtIV = \relative c'
   ees c'16 b c bes aes g |
   fis8 d16 cis d c bes a |
   g8 g'16 fis g a bes g |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees8\piuF ees16 d ees f ees d |
   cis8 cis16 b cis d e cis |
   d8 e16 f g a b cis |
@@ -1393,9 +1310,7 @@ bassMvtIV = \relative c'
   fis^\pizz r |
   fis r |
   b r |
-  \crescTextCresc
-  cis\< a |
-  \crescHairpin
+  cis\justCresc a |
   d r8\> d, |
   cis\p a d fis |
   a, a' a, r |
@@ -1422,7 +1337,6 @@ bassMvtIV = \relative c'
   d8 r r4 |
   <<
     {
-      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
       s2*4_\mSempreF
       s2*4_\moltoMarcato
     }
@@ -1472,9 +1386,7 @@ bassMvtIV = \relative c'
   g'8 r r4 |
   g,8 r r4 |
   c8 r r4 |
-  \crescTextCresc
-  c'4\< g |
-  \crescHairpin
+  c'4\justCresc g |
   e4\sf\> r8 c |
   b\p g c e |
   g, g' g, r |
@@ -1490,9 +1402,7 @@ bassMvtIV = \relative c'
   bes' |
   ees,4. c8-. |
   d-. ees-. f-. d-. |
-  \crescTextCresc
-  ees4. aes8-.\< |
-  \crescHairpin
+  ees4. aes8-.\justCresc |
   f-. g-. aes-. f-. |
   g4-.\! r |
   r g-. |
@@ -1541,9 +1451,7 @@ bassMvtIV = \relative c'
   bes4.( aes16 g) |
   f4( b8..\sf c32) |
   c4.( bes16 aes) |
-  \crescTextCresc
-  g4(\< d'8.. ees32) |
-  \crescHairpin
+  g4(\justCresc d'8.. ees32) |
   ees4.\sf\> des8 |
   c(\p d ees c) |
   bes-. bes'-. bes,-. r |
@@ -1551,9 +1459,7 @@ bassMvtIV = \relative c'
   f r bes r |
   bes, r d r |
   f r aes, r |
-  \crescTextCresc
-  g\< r g' r |
-  \crescHairpin
+  g\justCresc r g' r |
   aes, r aes' r |
   bes\p\< r bes,\> r |
   ees\! r r4 |
@@ -1563,9 +1469,7 @@ bassMvtIV = \relative c'
   bes8 r r4 |
   \times 2/3 {r16 aes'-. aes-.} \times 2/3 {aes-. aes-. g-.}
     \times 2/3 {f-. ees-. d-.} \times 2/3 {c-. bes-. aes-.} |
-  \crescTextCresc
-  g8 r \times 2/3 {r16 g'-.\< ees} \times 2/3 {bes-. ees-. g,-.} |
-  \crescHairpin
+  g8 r \times 2/3 {r16 g'-.\justCresc ees} \times 2/3 {bes-. ees-. g,-.} |
   aes8\! r \times 2/3 {r16 aes'-. f} \times 2/3 {c-. f-. aes,-.} |
   bes8\p r \times 2/3 {r16 bes bes} \times 2/3 {bes bes bes} |
   ees8 r r ees\ff |
@@ -1588,30 +1492,22 @@ bassMvtIV = \relative c'
   ees,4(\sf g8. f16) |
   ees8 r r4 |
   ees8\p r r4 |
-  \crescTextCresc
-  bes8 r \times 4/6 {f'16-.\< g-. aes-. g-. f-. ees-.} |
-  \crescHairpin
+  bes8 r \times 4/6 {f'16-.\justCresc g-. aes-. g-. f-. ees-.} |
   \times 4/6 {d-. ees-. f-. ees-. d-. c-.} \times 4/6 {bes'-. c-. bes-. aes-. g-. f-.} |
   ees4\p r |
   ees8 r ees r |
-  \crescTextCresc
-  bes\< r r4 |
-  \crescHairpin
+  bes\justCresc r r4 |
   \times 2/3 {ees16-. ees-. f-.} \times 2/3 {g-. g,-. aes-.}
     \times 2/3 {bes-. c-. des-.} \times 2/3 {ees-. f-. g-.} |
   aes8[-.\p r16 ees]-. aes8[-. r16 ees]-. |
   bes'8[-. r16 ees,]-.  bes'8[-. r16 ees,]-. |
   g8[-. r16 ees]-.  g8[-. r16 ees]-. |
   aes8[-. r16 ees]-. aes-. aes-. ees-. c-. |
-  \crescTextCresc
-  aes8-.\< c-. des-. g,-. |
-  \crescHairpin
+  aes8-.\justCresc c-. des-. g,-. |
   aes-. c-. ees-. aes,-. |
   a-. c-. ees-. bes-. |
   a-. c-. ees-. a,-. |
-  \crescTextCresc
-  bes-.\< ees-. ges-. ces,-. |
-  \crescHairpin
+  bes-.\justCresc ees-. ges-. ces,-. |
   bes-. ees-. ges-. bes,-. |
   ces-. ees-. ges-. ces,-. |
   c-. fis-. a-. c,-. |
@@ -1622,19 +1518,13 @@ bassMvtIV = \relative c'
   g,,\fp r r4 |
   g8 r r4 |
   g8 r r4 |
-  \crescTextCresc
-  g8\< r r4 |
-  \dimTextDecresc
-  g8\> r r4 |
-  \crescHairpin
-  \dimHairpin
+  g8\justCresc r r4 |
+  g8\justDecresc r r4 |
   g8\p r g r |
   g r g r |
   g\< r g r |
   g\> r g r |
-  \dimTextDecresc
-  g\> r g r |
-  \dimHairpin
+  g\justDecresc r g r |
   g\pp r g r |
 
   %presto

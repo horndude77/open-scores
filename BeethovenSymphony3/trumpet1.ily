@@ -1,6 +1,4 @@
-\version "2.13.17"
-
-\include "defs.ily"
+\version "2.13.53"
 
 trumpetOneMvtI = \relative c''
 {
@@ -134,9 +132,7 @@ trumpetOneMvtI = \relative c''
   g\ff |
   c4 r r |
   R2.*29 |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  r4 r g8\< g |
+  r4 r g8\justCresc g |
   \repeat tremolo 6 g8 |
   c2.~\f |
   c2 g4 |
@@ -144,7 +140,6 @@ trumpetOneMvtI = \relative c''
   g r r |
   r c c |
   c2 c4\sf |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   c2.\piuF |
   c |
   c~ |
@@ -173,7 +168,7 @@ trumpetOneMvtI = \relative c''
   c c c |
   c r r |
   R2.*3 |
-  g2.~\< | g |
+  g2.~\justCresc | g |
   << {\repeat tremolo 6 g8 |} {s2.\ff} >>
   \repeat tremolo 6 g8 |
   c4 r r |
@@ -194,7 +189,7 @@ trumpetOneMvtI = \relative c''
   r c'-. c-. |
   \repeat unfold 6 {r c-.\sf} |
   R2.*10 |
-  r4 r8 g,\< c e |
+  r4 r8 g,\justCresc c e |
   g2.\ff |
   c,4\f r r |
   c'\f r r |
@@ -208,14 +203,14 @@ trumpetOneMvtI = \relative c''
   \repeat tremolo 6 e8 |
   e4\p r r |
   R2.*63 |
-  g2.~\pp\< |
+  g2.~\pp\justCresc |
   g4 g g |
   g g-. g-. |
   g-.\p g-. g-. |
   e-. r r |
   R2.*14 |
   r4 r \times 2/3 {g8 g g} |
-  g4\< r \times 2/3 {\repeat tremolo 3 g8} |
+  g4\justCresc r \times 2/3 {\repeat tremolo 3 g8} |
   \repeat unfold 7 {g4 r \times 2/3 {\repeat tremolo 3 g8} |}
   c2\f e4 |
   c2 g4 |
@@ -257,14 +252,10 @@ trumpetOneMvtII = \relative c''
   R2*11 |
   r8 c16.\p c32 c8 c |
   c8 r r4 |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  r8 c16.\< c32 c8 c |
-  \crescHairpin
+  r8 c16.\justCresc c32 c8 c |
   c c r g |
   r c r c |
   \times 2/3 {c16\f c, e} \times 2/3 {g e g}
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     \times 2/3 {c\semprePiuF g c} \times 2/3 {e c e} |
   g4. g,8 |
   c4.\ff g8-.\sf |
@@ -339,9 +330,7 @@ trumpetOneMvtIII = \relative c''
     c'4\p r r |
     c r r |
     R2.*2 |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    g4\< r r |
+    g4\justCresc r r |
     g r r |
     c r r |
     g g g |
@@ -406,7 +395,7 @@ trumpetOneMvtIII = \relative c''
   c'4\p r r |
   c r r |
   R2.*2 |
-  g4\< r r |
+  g4\justCresc r r |
   g r r |
   c r r |
   g g g |
@@ -415,7 +404,7 @@ trumpetOneMvtIII = \relative c''
   c\f r r |
   g\f r r |
   R2.*12 |
-  r4 g\< c |
+  r4 g\justCresc c |
   g c g |
   c g c |
   g c g |
@@ -574,7 +563,6 @@ trumpetOneMvtIV = \relative c''
   c8 r r4 |
   r8 c,16\sf g c g e'\sf c |
   e c g'\sf e g e c'\sf g |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   c2\semprePiuF |
   c2 |
   \repeat unfold 2 {\repeat tremolo 4 c8 |}

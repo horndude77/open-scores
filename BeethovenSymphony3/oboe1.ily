@@ -1,6 +1,4 @@
-\version "2.13.17"
-
-\include "defs.ily"
+\version "2.13.53"
 
 oboeOneMvtI = \relative c'''
 {
@@ -12,9 +10,7 @@ oboeOneMvtI = \relative c'''
   \repeat volta 2
   {
     R2.*8 |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    g2.(\p\< |
+    g2.(\p\justCresc |
     aes4 g f |
     ees) r r |
     R2.*7 |
@@ -30,7 +26,7 @@ oboeOneMvtI = \relative c'''
     g\sf g4~\sf |
     g f-. f~\sf |
     f g-. g(\sf |
-    aes) bes,8-.\< c-. d-. ees-. |
+    aes) bes,8-.\justCresc c-. d-. ees-. |
     f-. g-. aes,-. bes-. c-. d-. |
     ees2(\ff g4 |
     ees2 g,4) |
@@ -40,9 +36,7 @@ oboeOneMvtI = \relative c'''
     c2 bes4\sf |
     aes2. |
     bes4 r r |
-    r
-      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-      g4.(\pDolce f8 |
+    r g4.(\pDolce f8 |
     e4) r r |
     R2.*2 |
     r4 g4.( f8 |
@@ -52,8 +46,7 @@ oboeOneMvtI = \relative c'''
     e4) r r |
     r g4.\ff f8 |
     ees4-. d-. c-. |
-    \crescTextCresc
-    bes2.~\p\< |
+    bes2.~\p\justCresc |
     bes\> |
     bes2(\! c8 d) |
     ees4-.( ees-. ees-.)
@@ -90,12 +83,10 @@ oboeOneMvtI = \relative c'''
     ges2.\sf\> |
     s1*0\! R2.*2 |
     r4 bes( g |
-    \crescHairpin
     f2\< e4)\> |
     ees4\p r r |
     R2.*8 |
-    \crescTextCresc
-    r4 r8 a8-.\< bes-. c-. |
+    r4 r8 a8-.\justCresc bes-. c-. |
     d4\f f,2\sf |
     r4 f2\sf |
     r4 f2\sf |
@@ -122,7 +113,7 @@ oboeOneMvtI = \relative c'''
     ees-. r ees-. |
     r f-. r |
     f-. r f8( fis) |
-    g2.~\< |
+    g2.~\justCresc |
     g4. g8( f ees) |
     d f \repeat tremolo 4 bes8 |
     a2.\ff |
@@ -147,20 +138,16 @@ oboeOneMvtI = \relative c'''
   e2 f4) |
   f4 r r |
   R2.*7 |
-  r4
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    a4.(\pDolce g8 | fis4) r r |
+  r4 a4.(\pDolce g8 | fis4) r r |
   R2.*2 |
-  r4
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    a4.(\pDolce g8 | fis4) r r |
+  r4 a4.(\pDolce g8 | fis4) r r |
   R2.*2 |
   r4 g,2~\sf |
   g8-. a-. b-. c-. d-. e-. |
   f4 r r |
   R2.*2 |
-  r4 r g~\p | g2.( | aes~)\< | aes4\p r r |
-  r4 r gis~ | gis2.( | a~)\< |
+  r4 r g~\p | g2.( | aes~)\justCresc | aes4\p r r |
+  r4 r gis~ | gis2.( | a~)\justCresc |
   a4 f-.\ff f-. | f-. f-. f-. |
   f2.~ | f |
   g4-. g-. g-. | g-. g-. g-. |
@@ -172,7 +159,7 @@ oboeOneMvtI = \relative c'''
   fis2.~ | fis2 a4 |
   g\p r8 g g r |
   r4 r8 g g r |
-  r g\< \repeat tremolo 4 g8 |
+  r g\justCresc \repeat tremolo 4 g8 |
   g4 r r |
   R2.*4 |
   r4 r8 f\f f r |
@@ -212,7 +199,7 @@ oboeOneMvtI = \relative c'''
   r4 e,( dis | e4.\sfp fis8 g4) |
   fis( b ais | b4.\sfp a8 g fis) |
   e4 e( dis | e4.\sfp fis8 g4) |
-  fis( b ais | b2\< gis4) |
+  fis( b ais | b2\justCresc gis4) |
   a4\p r r |
   R2.*7 |
   c,2(\f e4 | c2 g4) |
@@ -241,7 +228,7 @@ oboeOneMvtI = \relative c'''
   ges2( aes4 | ges2 ees4) |
   f( aes) aes | aes r r
   f2( aes4) | aes2( f4) |
-  f(\< aes bes) | bes r r |
+  f(\justCresc aes bes) | bes r r |
   f2( aes4 | f2 bes,4) |
   ees2(\sf ges4) |
   R2. |
@@ -251,8 +238,7 @@ oboeOneMvtI = \relative c'''
   ges4 ges ges | ges ges ges |
   \repeat unfold 4 {ges2.\f |}
   ges\p | \repeat unfold 3 {ges |}
-  \dimTextDecresc
-  ges\> f f ees |
+  ges\justDecresc f f ees |
   ees\pp ees d d |
   R2.*2 | d2.\pp d |
   R2.*2 | d2.\pp d |
@@ -261,16 +247,15 @@ oboeOneMvtI = \relative c'''
   aes'\ff |
   g4 r r |
   R2.*23 |
-  f2.(\< | ees\> | d4)\pp r r |
+  f2.(\justCresc | ees\justDecresc | d4)\pp r r |
   R2.*3 |
-  r4 r bes8-.\< c-. |
+  r4 r bes8-.\justCresc c-. |
   d-. ees-. f-. g-. aes-. d,-. |
   ees2(\f g4 | ees2 bes4) |
   ees4 ees ees |
   ees2 e4\sf |
   f f f |
   f2 fis4\sf |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   g2.\piuF |
   aes |
   aes~ | aes4 aes aes |
@@ -286,8 +271,6 @@ oboeOneMvtI = \relative c'''
   r4 bes4.( g8 | ees4) r r |
   R2.*3 |
   r4 c'4.\ff bes8-. | aes4-. g-. f-. |
-  \crescHairpin
-  \dimHairpin
   ees2.~\p\< | ees~\> |
   ees2(\p f8 g) |
   aes4-.( aes-. aes-.) |
@@ -304,8 +287,7 @@ oboeOneMvtI = \relative c'''
   f8( g bes aes g f) |
   ees4 r r |
   R2. |
-  \crescTextCresc
-  bes'2.~\< | bes~ |
+  bes'2.~\justCresc | bes~ |
   bes8\ff a-. aes-. g-. f-. ees-. |
   d-. c-. bes-. aes'-. g-. f-. |
   ees4 r r |
@@ -313,15 +295,13 @@ oboeOneMvtI = \relative c'''
   r4 bes'(\p b |
   << c2.) {s4\> s s\!}>> |
   R2.*5 |
-  r4 aes-.(\< aes-.) |
+  r4 aes-.(\justCresc aes-.) |
   aes-.( aes-. aes-.) |
   aes2.\sf\> |
   s1*0\! R2.*3 |
-  \crescHairpin
   r4 ges-.(\p\< ges-.)\> | f\! r r |
   R2.*7 |
-  \crescTextCresc
-  r4 r f,8-.\< g-. |
+  r4 r f,8-.\justCresc g-. |
   aes-. bes-. c-. d-. ees-. f-. |
   g4\f g2\sf |
   r4 g2\sf |
@@ -347,7 +327,7 @@ oboeOneMvtI = \relative c'''
   r des-. r |
   f-. r f-. |
   r ees-. r |
-  c2.~\< |
+  c2.~\justCresc |
   c4. aes'8( g f) |
   ees4 r8 g-. g-. g-. |
   aes2.\ff |
@@ -372,7 +352,7 @@ oboeOneMvtI = \relative c'''
   r4 f(\p e | f4.\sf g8 aes4) |
   g( c b | c4.\sf bes8 aes g) |
   f4 f( e | f4.\sf g8 aes4) |
-  aes2.~\< | aes( |
+  aes2.~\justCresc | aes( |
   ges4)\p bes, bes |
   bes2\sf bes4 |
   bes r r |
@@ -383,16 +363,15 @@ oboeOneMvtI = \relative c'''
   R2.*9 |
   bes2.~(\pp | bes2 b4 | c) r r |
   R2.*11 |
-  r4 aes'2~\< |
+  r4 aes'2~\justCresc |
   aes4 aes2~ |
-  \dimTextDecresc
-  aes4\> aes aes |
+  aes4\justDecresc aes aes |
   aes2. |
   g4-.\p r g-. |
   r g-. r |
   f-. r f-. |
   r f-. r |
-  g2.~\< |
+  g2.~\justCresc |
   g4 ees-. ees-. |
   d-. f-. f-. |
   f-.\p f-. f-. |
@@ -404,7 +383,7 @@ oboeOneMvtI = \relative c'''
   bes2.~\p | \repeat unfold 7 {bes~ |}
   bes4 r r |
   R2. |
-  r4 r c8-.\< bes-. |
+  r4 r c8-.\justCresc bes-. |
   aes-. g-. f-. ees-. d-. c-. |
   bes4 r r |
   r8 bes16( c d8-.) ees-. f-. g-. |
@@ -428,15 +407,12 @@ oboeOneMvtI = \relative c'''
   r4 c2 |
   g2.\ff |
   aes2 f4 |
-  \crescHairpin
-  \dimHairpin
   ees2.~\p\< | ees\> |
   ees2(\! f8 g) |
   aes4-.( aes-. aes-.) |
   g4 r r |
   R2. |
-  \crescTextCresc
-  r4 r8 ees8-.\< f-. g-. |
+  r4 r8 ees8-.\justCresc f-. g-. |
   \repeat tremolo 6 aes8 |
   aes4\f d,2~\f |
   d4 f2~\f |
@@ -457,25 +433,18 @@ oboeOneMvtII = \relative c''
   g'4 f32( ees16.) d32( c16.) |
   << {s8\< s\> s\!} {ees4( d8)} >> d16. d32 |
   d4 d16.( ees32 f16. g32) |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  aes2~\< |
-  \dimTextDecresc
-  aes8 f(\> ees d) |
+  aes2~\justCresc |
+  aes8 f(\justDecresc ees d) |
   ees8\p ees16. ees32 ees8 r |
   R2*19 |
   r4 r8 bes8\p |
   ees4( d8 c) |
-  \crescHairpin
   bes4~ bes16 bes32-.\< c-. d-. ees-. f-. g-. |
-  \crescTextCresc
-  aes4(\< g8 f) |
+  aes4(\justCresc g8 f) |
   e8 r16. bes'32-.\f bes4 |
   r4 aes8(\p g) |
-  \dimHairpin
   fis4( c'8.\> fis,16) |
   g2~\p | g |
-  \crescHairpin
   g4(\< d8 f |
   ees4\> d8 c) |
   b8\! r r4 |
@@ -483,15 +452,12 @@ oboeOneMvtII = \relative c''
   r4 r8 c16.c32 |
   c4\p \acciaccatura g'8\( f16. e32 f16. g32\) |
   aes4( f8) r |
-  \crescTextCresc
-  f4\< ees32( d16.) c32( b16.) |
+  f4\justCresc ees32( d16.) c32( b16.) |
   c8-.\f aes'-. r fis~\p |
-  \crescHairpin
   fis g4(\< f16.\> d32) |
   c8\p r r4 |
   R2*3 |
   aes'4\f aes8.. aes32 |
-  \dimHairpin
   a2\sf\> |
   ees8\p g4 g8 |
   g8 r r4 |
@@ -505,8 +471,7 @@ oboeOneMvtII = \relative c''
   g4~ \times 2/3 {g16( f) e-.} \times 2/3 {d-. c-. b-.} |
   b16( a8.) r4 |
   R2*2 |
-  \crescTextCresc
-  r8 f'4(\< e16 d) |
+  r8 f'4(\justCresc e16 d) |
   d( c b a) g( d' c a) |
   b4.\ff b'8-.\sf |
   g4. b8-.\sf |
@@ -514,7 +479,7 @@ oboeOneMvtII = \relative c''
   g-. r r4 |
   c,2~\p |
   c4.( e8) |
-  \times 2/3 {f16-.\< a,-. c-.} \times 2/3 {f-. a-. c-.}
+  \times 2/3 {f16-.\justCresc a,-. c-.} \times 2/3 {f-. a-. c-.}
     \times 2/3 {r bes-. g-.} \times 2/3 {e-. c-. bes-.} |
   \times 2/3 {r16-. a-. c-.} \times 2/3 {f-. a-. c-.}
     \times 2/3 {r bes-. g-.} \times 2/3 {e-. c-. bes-.} |
@@ -526,13 +491,11 @@ oboeOneMvtII = \relative c''
   g,4.( a16 b) |
   c4(\p e |
   g2) |
-  f4(\< a) |
+  f4(\justCresc a) |
   c4~ c16( a f d) |
   d8( c4 b16 g') |
   g( fis g gis a f e d) |
-  c8\f
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    e4(\semprePiuF g8) |
+  c8\f e4(\semprePiuF g8) |
   g4. f16.( d32) |
   c4.\ff g'8-.\sf |
   e4. g8-.\sf |
@@ -583,30 +546,24 @@ oboeOneMvtII = \relative c''
   g'4 f32( ees16.) d32( c16.) |
   ees4( d8) r |
   d4 d16.( ees32 f16. g32) |
-  \crescTextCresc
-  aes2~\< |
-  \dimTextDecresc
-  aes8(\> f ees d) |
+  aes2~\justCresc |
+  aes8(\justDecresc f ees d) |
   ees8\p ees16. ees32 ees8 r |
   R2*4 |
   bes'4(\p aes8 g) |
-  \dimHairpin
   fis4(\< c'8.\sf\> fis,16) |
   g8\p r r4 |
   g4( f8 ees) |
-  \crescHairpin
   d4.(\< f8) |
   ees4(\> d8 c) |
   b8\! r r4 |
   R2 |
-  \crescTextCresc
-  r16 d-.(\< ees-. d-. ees-. e-. f-. fis-.) |
+  r16 d-.(\justCresc ees-. d-. ees-. e-. f-. fis-.) |
   g4. c,16. c32 |
   c4\p \acciaccatura g'8\( f16. e32 f16. g32\) |
   aes4( f8) r |
-  f4\< ees32( d16.) c32( b16.) |
+  f4\justCresc ees32( d16.) c32( b16.) |
   c8-.\f aes'-. r fis~\p |
-  \dimHairpin
   fis g4\p\> f16.(\! d32) |
   c8 r r4 |
   R2 |
@@ -616,20 +573,18 @@ oboeOneMvtII = \relative c''
   a2\sf\> |
   g2\p |
   g8 fis4(\> g8) |
-  ees4(\< d8.. c32) |
+  ees4(\justCresc d8.. c32) |
   c8\f r r4 |
   R2*5 |
-  \crescHairpin
   aes'2~\pp\< |
   aes~\> |
   aes8\! r r4 |
   R2*6 |
   r4 r8 b(\p |
   c4 g8 bes) |
-  \crescTextCresc
-  aes4(\< g8 f) |
+  aes4(\justCresc g8 f) |
   e( f g aes) |
-  g2\p\< |
+  g2\p\justCresc |
   r4\! f8\p r |
   r4 ees8 r |
   R2 |
@@ -679,7 +634,6 @@ oboeOneMvtIII = \relative c'''
     d4 r r |
     R2.*2 |
     d2.-> |
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
     d4\semprePP r fis-. |
     g-. bes-. g-. |
     fis-. r a-. |
@@ -698,9 +652,7 @@ oboeOneMvtIII = \relative c'''
     ees |
     d4( f) d-. |
     c( ees) c-. |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
-    bes-.\< c-. d-. |
+    bes-.\justCresc c-. d-. |
     ees\ff ees ees |
     ees ees ees |
     ees( f8 ees d c) |
@@ -756,7 +708,7 @@ oboeOneMvtIII = \relative c'''
     d-. e-. f-. |
     g-. r r |
     R2.*2 |
-    r4 aes\< aes |
+    r4 aes\justCresc aes |
     aes\ff d, d |
     d f f |
     f aes aes |
@@ -794,9 +746,7 @@ oboeOneMvtIII = \relative c'''
     r4 r c,\f |
     \repeat unfold 3 {c2 c4 |}
     c4 r r |
-    r r
-      \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-      f\pDolce |
+    r r f\pDolce |
     f(^\mSempreLegato d c |
     bes d c |
     ees a, c |
@@ -850,7 +800,6 @@ oboeOneMvtIII = \relative c'''
   d4 r r |
   R2.*2 |
   d2.-> |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   d4\semprePP r fis-. |
   g-. bes-. g-. |
   fis-. r a-. |
@@ -869,7 +818,7 @@ oboeOneMvtIII = \relative c'''
   ees |
   d4( f) d-. |
   c( ees) c-. |
-  bes\< c-. d-. |
+  bes\justCresc c-. d-. |
   ees\ff ees ees |
   ees ees ees |
   ees( f8 ees d c) |
@@ -927,7 +876,7 @@ oboeOneMvtIII = \relative c'''
   g r r |
   f-. c-. cis-. |
   d-. e-. f-. |
-  g-.\< r r |
+  g-.\justCresc r r |
   R2.*2 |
   r4 aes aes |
   aes\ff d, d |
@@ -939,7 +888,7 @@ oboeOneMvtIII = \relative c'''
 
   %coda
   R2.*10 |
-  r4 f\p\< g |
+  r4 f\p\justCresc g |
   f g f |
   g f g |
   f g f |
@@ -1007,12 +956,9 @@ oboeOneMvtIV = \relative c'''
   d4.( f8) |
   aes4.( f8) |
   ees4.( g8) |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  bes4-.(\< bes-.) |
+  bes4-.(\justCresc bes-.) |
   bes4.\sf g8 |
-  \dimTextDecresc
-  bes16(\> aes) f8-. aes16( g) ees8-. |
+  bes16(\justDecresc aes) f8-. aes16( g) ees8-. |
   g4( f8) r |
   r8 g-.\f g-. g-. |
   r aes-. aes-. aes-. |
@@ -1039,13 +985,13 @@ oboeOneMvtIV = \relative c'''
   g g f f |
   ees r r4 |
   R2*4 |
-  r8 g\< a c, |
+  r8 g\justCresc a c, |
   b\f g' a a |
   g g a a |
   g4-.\ff b-. |
   g-. r |
   R2*26 |
-  c,2\< |
+  c,2\justCresc |
   f2 |
   R2*2 |
   g,2\f |
@@ -1075,7 +1021,7 @@ oboeOneMvtIV = \relative c'''
   a8-. a-. a-. a-. |
   a8-. a-. a-. a-. |
   a a a a |
-  fis\< fis g g |
+  fis\justCresc fis g g |
   fis a a a |
   g g fis fis |
   fis fis e r |
@@ -1092,7 +1038,6 @@ oboeOneMvtIV = \relative c'''
   g4 gis( |
   a) a |
   a16 d,( e fis g a bes c) |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   d4-.\sempreF d8.-. d16-. |
   d4-. d8.-. d16-. |
   d8.-. c16-. bes8.-. a16-. |
@@ -1178,46 +1123,36 @@ oboeOneMvtIV = \relative c'''
   aes4.\fermata
 
   %poco andante
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   ees8\pConEspressione |
   g4( ees8.. d32) |
   d4.( f8) |
   aes4( f8..\sf ees32) |
   ees4.( g8) |
-  bes4-.(\< bes-.) |
-  \dimHairpin
+  bes4-.(\justCresc bes-.) |
   bes4.\sf\> g8( |
   aes\p f g ees |
-  \crescHairpin
   << {s8\< s\> s\!} {g4 f8) r} >> |
   R2*3 |
   r8 ees16( d) ees-.( f-. g-. aes-.) |
-  \crescTextCresc
-  bes4\< bes |
+  bes4\justCresc bes |
   bes4.\sf\> bes8( |
   aes)\p aes( g) g~ |
-  \crescHairpin
   << {s8\< s\> s\!} {g4( f8)} >> r16 bes,-. |
   bes( aes') r g-. g( f) r ees-. |
   ees8( d16) ees-. f-. g-. aes-. bes-. |
   b( c) r bes-. bes( aes) r g-. |
   g8( f16) e-. f-. fis-. g-. aes-. |
-  \crescTextCresc
-  a4(\< bes8 r16 bes |
+  a4(\justCresc bes8 r16 bes |
   b4( c8 r16 c |
-  \crescHairpin
   g4(\< bes8.\> aes16) |
   g8\! r r4 |
   bes,16-. aes'8-> g16-. g-. f8-> ees16-. |
   ees-. d8-> ees16-. f-. g-. aes-. bes-. |
   b16-. c8-> bes16-. bes-. aes8-> g16-. |
   g-. f8-> e16-. f-. fis-. g-. aes-. |
-  \crescTextCresc
-  a16-.\< bes8 bes16-. r4 |
+  a16-.\justCresc bes8 bes16-. r4 |
   b16-. c8 c16-. r4 |
-  \crescHairpin
   a16-.\p\< bes8 bes16-. a16-.\> bes8 bes16-. |
-  \crescTextCresc
   ees,8\! r r4 |
   r8 bes'-.\ff bes4~\sf |
   bes8 bes-. bes4~\sf |
@@ -1236,19 +1171,18 @@ oboeOneMvtIV = \relative c'''
   \repeat tremolo 4 g16 r aes aes aes |
   g8 r bes,4(\p |
   ees g) |
-  aes2~\< |
+  aes2~\justCresc |
   aes |
   g16\p g, g g g( bes) bes-. bes-. |
   bes( ees) ees-. ees-. ees( g) g-. g-. |
-  aes2(\< |
+  aes2(\justCresc |
   bes |
   aes8)\p r r4 |
   R2*7 |
-  ees4-.\< ees-. |
+  ees4-.\justCresc ees-. |
   ees2 |
   ges4-.\f ges-. |
   ges2 |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   a4-.\semprePiuF a-. |
   a2 |
   g\ff |
@@ -1291,7 +1225,6 @@ oboeOneMvtIV = \relative c'''
   g-. ees-. g-. ees-. g ees bes'\sf g |
   bes g ees\sf bes ees bes g'\sf ees |
   g ees g\sf ees g ees g\sf ees |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   g2\semprePiuF |
   g |
   g |

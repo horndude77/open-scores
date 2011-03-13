@@ -1,6 +1,4 @@
-\version "2.13.17"
-
-\include "defs.ily"
+\version "2.13.53"
 
 hornThreeMvtI = \relative c''
 {
@@ -11,8 +9,6 @@ hornThreeMvtI = \relative c''
   \repeat volta 2
   {
     R2.*17 |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
     r4 c\p\< d |
     d4\fp r r |
     r r d\p |
@@ -26,7 +22,7 @@ hornThreeMvtI = \relative c''
     c\sf c4~\sf |
     c g-. g~\sf |
     g c-. c\sf |
-    g2.~\< |
+    g2.~\justCresc |
     g4 d' d |
     c2\ff e4 |
     c2 g4 |
@@ -62,7 +58,6 @@ hornThreeMvtI = \relative c''
     d d d |
     g, r r |
     R2.*9 |
-    \crescHairpin
     r4 ees'-.(\p\< ees-.) |
     ees2.\sf\> |
     R2.*14\! |
@@ -89,8 +84,7 @@ hornThreeMvtI = \relative c''
     c-. c-. c-. |
     g2.~\fp
     g~ |
-    \dimTextDecresc
-    g~\> |
+    g~\justDecresc |
     g~ |
   }
   \alternative
@@ -145,10 +139,8 @@ hornThreeMvtI = \relative c''
   c2.~\p | c~ | c~ | c4 c c |
   c2.~ | c~ | c~ | c4 c c |
   d2.~ | d~ | d~ | d4 d d |
-  \crescTextCresc
-  d2.~\< | d~ | d~ | d4 d d |
-  \crescTextSempreCresc
-  c2.~\< | c~ |
+  d2.~\justCresc | d~ | d~ | d4 d d |
+  c2.~\justSempreCresc | c~ |
   c~ | c4 c c |
   c2.~\ff | c~ | c4 c c | c c c | c r r |
   R2.*7 |
@@ -161,15 +153,13 @@ hornThreeMvtI = \relative c''
   R2.*6 |
   d2.\f | d\ff | c4 r r |
   R2.*25 |
-  \crescTextCresc
-  g2.~\pp | g~ | g~\< | g~ |
+  g2.~\pp | g~ | g~\justCresc | g~ |
   g8 g \repeat tremolo 4 g8 |
   \repeat tremolo 4 g8 d'8 d |
   c2.~\f | c~ |c4 c c |
   c2 r4 |
   r c c |
   c2 c4\sf |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   c2.\piuF |
   c |
   c~ |
@@ -186,8 +176,6 @@ hornThreeMvtI = \relative c''
   g4 e'4. c8 |
   g4 g g |
   g2.~ | g~ | g4 g4.\ff g8 | g4 g g |
-  \crescHairpin
-  \dimHairpin
   c2.~\p\< | c~\> |
   c4(\! g') g-.( |
   g-. g-. g-.) |
@@ -206,18 +194,17 @@ hornThreeMvtI = \relative c''
   c r r |
   R2.*2 |
   r4 c c |
-  \crescTextCresc
-  g2.~\< | g |
+  g2.~\justCresc | g |
   \repeat tremolo 6 g8\ff | \repeat tremolo 6 g8 |
   c4 r r |
   R2.*9 |
-  r4 f-.(\< f-.) |
+  r4 f-.(\justCresc f-.) |
   f2.\sf\> |
   R2.*3\! |
   r4 r d\p |
   d r r |
   R2.*7 |
-  r8 g,\< \repeat tremolo 4 g8 |
+  r8 g,\justCresc \repeat tremolo 4 g8 |
   \repeat tremolo 6 g8 |
   g4\f c2\sf |
   r4 c2\sf |
@@ -239,7 +226,7 @@ hornThreeMvtI = \relative c''
   r bes-. a-. |
   r4 c-.\sf r |
   R2.*13 |
-  r8 e\< \repeat tremolo 4 e8 |
+  r8 e\justCresc \repeat tremolo 4 e8 |
   f2.\ff |
   e4\f r r |
   c\f r r |
@@ -260,20 +247,19 @@ hornThreeMvtI = \relative c''
   ees4.\sf d8 c4) |
   b r r |
   R2.*19 |
-  c2\p\< ees4 |
+  c2\p\justCresc ees4 |
   R2. |
   c2 ees4 |
   R2.*2 |
   d2 g,4 |
   R2. |
-  \dimTextDecresc
-  d'2(\> f4) |
+  d'2(\justDecresc f4) |
   r4 e-.\p r |
   e-. r e-. |
   r d-. r |
   d-. r d-. |
   e-. r r |
-  d,2.(\< |
+  d,2.(\justCresc |
   g4) g-. g-. |
   g-.\p g-. g-. |
   g-. r r |
@@ -285,7 +271,7 @@ hornThreeMvtI = \relative c''
   g,2( d'4) |
   g,2 g4 |
   g( d') f-. |
-  e2.~\< | e~ | e4 e e | e e e |
+  e2.~\justCresc | e~ | e4 e e | e e e |
   f2.~ | f | f4 f f | f f f |
   e\f g g |
   \repeat unfold 5 {g g g |}
@@ -320,30 +306,23 @@ hornThreeMvtII = \relative c''
   c2\p | c |
   c4 c8 c |
   R2*3 |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \dimTextDecresc
-  r8 g\> g g |
+  r8 g\justDecresc g g |
   c\p c16. c32 c8 r |
   R2*20 |
   c2\p |
   g |
-  \crescTextCresc
-  c4\< g |
+  c4\justCresc g |
   g8 r16. e'32-.\f e4 |
   r d8(\p c) |
-  \dimHairpin
   c4.\> c8 |
   e\! r r4 |
   R2*5 |
-  \dimTextDecresc
-  r4\> d |
-  d\< e\sf |
+  r4\justDecresc d |
+  d\justCresc e\sf |
   d8\p r r4 |
   f2 |
-  f4.\< f8 |
+  f4.\justCresc f8 |
   e-.\f d-. r4 |
-  \crescHairpin
-  \dimHairpin
   r8 c(\< d)\> d |
   c\p r r4 |
   R2*4 |
@@ -370,9 +349,7 @@ hornThreeMvtII = \relative c''
   e e |
   e8 r r4 |
   R2*7 |
-  \times 2/3 {r16 e\f e}
-    \once \override Staff.DynamicText #'self-alignment-X = #LEFT
-    \times 2/3 {e\semprePiuF e e} \times 2/3 {\repeat tremolo 6 e16} |
+  \times 2/3 {r16 e\f e} \times 2/3 {e\semprePiuF e e} \times 2/3 {\repeat tremolo 6 e16} |
   e4. e8 |
   e4.\ff e8-.\sf |
   e4. e8-.\sf |
@@ -396,7 +373,7 @@ hornThreeMvtII = \relative c''
   e r r4 |
   r f'4~\sf |
   f d~ |
-  e8 e e4~ |
+  d8 e e4~ |
   e8 e, g e |
   R2*4 |
   r8 g-. g-. g-. |
@@ -417,31 +394,27 @@ hornThreeMvtII = \relative c''
   r8 c16. c32 c8 c |
   r8 c16. c32 e8 e |
   r8 f16. f32 f8 f |
-  \crescTextCresc
-  r8 f16.\< f32 f8 f |
-  \dimTextDecresc
-  g8\> g,16. g32 g8 g16. g32 |
+  r8 f16.\justCresc f32 f8 f |
+  g8\justDecresc g,16. g32 g8 g16. g32 |
   c8\p c16. c32 c8 r |
   c2 |
-  \crescTextCresc
-  g\< |
+  g\justCresc |
   R2*2 |
   e'4(\p d8 c) |
-  \dimHairpin
-  c4\< c\> |
+  c4\justCresc c\> |
   e8\p r r4 |
   R2*6 |
   r4 e\sf\> |
   d8\p f16. f32 f8 f |
   r8 f16. f32 f8 f |
-  r8 f16.\< f32 f8 f16. f32 |
+  r8 f16.\justCresc f32 f8 f16. f32 |
   e8-.\f d-. r c~\p |
   c8 e4\> e8\! |
   e r r4 |
   R2*5 |
   c4(\p d |
   c8) r r16 e e e |
-  c4(\< d) |
+  c4(\justCresc d) |
   c8\p r r4 |
   R2*36 |
   r8 c4\sf\> c8 |
@@ -504,8 +477,6 @@ hornThreeMvtIII = \relative c''
     g2 c4 |
     b r r |
     R2. |
-    \override DynamicTextSpanner #'dash-period = #-1.0
-    \crescTextCresc
     r4 r g-.\< |
     g( e) c'-. |
     c( g) e'-. |
@@ -536,7 +507,7 @@ hornThreeMvtIII = \relative c''
     g2 c4 |
     b4 r r |
     R2. |
-    r4 r g-.\< |
+    r4 r g-.\justCresc |
     g( e) c'-. |
     c( g) c-. |
     c2.~\sf\> |
@@ -598,7 +569,7 @@ hornThreeMvtIII = \relative c''
   c\f r r 
   g\f r r |
   R2.*12 |
-  r4 g\< g |
+  r4 g\justCresc g |
   g g g |
   g\f g g |
   g g g |
@@ -661,12 +632,9 @@ hornThreeMvtIV = \relative c''
   }
   r8
   R2*4 |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  g4\< g |
+  g4\justCresc g |
   g4.\sf g8-. |
-  \dimTextDecresc
-  g-.\> g-. c-. c-. |
+  g-.\justDecresc g-. c-. c-. |
   c4(\p g8) r |
   r e'-.\f e-. e-. |
   r f-. f-. f-. |
@@ -703,8 +671,7 @@ hornThreeMvtIV = \relative c''
   R2*11 |
   \repeat unfold 6 {e4 r} |
   e2~\p | \repeat unfold 4 {e~} | e |
-  e4\< e |
-  \dimHairpin
+  e4\justCresc e |
   e2~\sf\> |
   e8\p e4 e8 |
   e4. r8 |
@@ -754,11 +721,9 @@ hornThreeMvtIV = \relative c''
   g4 r |
   r d'8..(\sf c32) |
   c4 r |
-  r f8..(\< e32) |
-  \dimHairpin
+  r f8..(\justCresc e32) |
   e4.\sf\> e8~ |
   e\p d~ d c |
-  \crescHairpin
   << {s8\< s\> s\!} {c4( g8)} >> r |
   R2*5 |
   c2 |
@@ -768,10 +733,8 @@ hornThreeMvtIV = \relative c''
   r16 d-.\p \repeat unfold 3 {f-. d-.} |
   R2 |
   r16 d-. \repeat unfold 3 {f-. d-.} |
-  \crescTextCresc
-  e8 r r16 c\< e c |
+  e8 r r16 c\justCresc e c |
   r4 r16 c d c |
-  \crescHairpin
   c4(\p\< d)\> |
   c8\! r r4 |
   r8 g-.\ff g4~\sf |
@@ -789,8 +752,7 @@ hornThreeMvtIV = \relative c''
   c16 g g g r g g g |
   g8 r r4 |
   R2*6 |
-  \crescTextCresc
-  e'2(\< |
+  e'2(\justCresc |
   f8) r r4 |
   R2*9 |
   ees4-.\f ees-. |
@@ -820,7 +782,6 @@ hornThreeMvtIV = \relative c''
   e-. c-. r8 r g16-.\sf e-. |
   g e c'\sf g c g e'\sf c |
   \repeat unfold 2 {e c e\sf c} |
-  \once \override Staff.DynamicText #'self-alignment-X = #LEFT
   c2\semprePiuF |
   c |
   \repeat tremolo 4 c8 |

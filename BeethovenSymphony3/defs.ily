@@ -1,4 +1,4 @@
-\version "2.13.17"
+\version "2.13.53"
 
 %define movement names.
 MvtI = ""
@@ -45,25 +45,69 @@ unfoldTremolos = #(define-music-function (parser location mus) (ly:music?)
   (music-map unfold-tremolos mus))
 % end tremolo functions
 
-crescTextSempreCresc = {
-    \set crescendoText = \markup { \italic {sempre cresc.} }
-    \set crescendoSpanner = #'text
-    \override DynamicTextSpanner #'style = #'dashed-line
-}
-crescTextDolceCresc = {
-    \set crescendoText = \markup { \italic {dolce cresc.} }
-    \set crescendoSpanner = #'text
-    \override DynamicTextSpanner #'style = #'dashed-line
-}
-semprePiuP = #(make-dynamic-script (markup #:normal-text #:italic "sempre più" #:dynamic "p"))
-semprePiuF = #(make-dynamic-script (markup #:normal-text #:italic "sempre più" #:dynamic "f"))
-semprePP = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "pp"))
-sempreP = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "p"))
-sempreF = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "f"))
+#(define-markup-command (align-dyn-text layout props dyn text) (string? markup?)
+  (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
+         (dyn-stencil (interpret-markup layout props (markup #:dynamic dyn)))
+         (text-x-ext (ly:stencil-extent text-stencil X))
+         (dyn-x-ext (ly:stencil-extent dyn-stencil X))
+         (text-x (- (cdr text-x-ext) (car text-x-ext)))
+         (dyn-x (- (cdr dyn-x-ext) (car dyn-x-ext)))
+         (hspace 0.5)
+         (x-align (- (/ (/ dyn-x 2.0) (+ text-x dyn-x hspace)) 1.0)))
+    (interpret-markup layout props (markup #:halign x-align #:whiteout #:concat (#:dynamic dyn #:hspace hspace #:normal-text #:italic text)))))
+
+#(define-markup-command (align-text-dyn layout props text dyn) (markup? string?)
+  (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
+         (dyn-stencil (interpret-markup layout props (markup #:dynamic dyn)))
+         (text-x-ext (ly:stencil-extent text-stencil X))
+         (dyn-x-ext (ly:stencil-extent dyn-stencil X))
+         (text-x (- (cdr text-x-ext) (car text-x-ext)))
+         (dyn-x (- (cdr dyn-x-ext) (car dyn-x-ext)))
+         (hspace 0.5)
+         (x-align (- 1.0 (/ (/ dyn-x 2.0) (+ text-x dyn-x hspace)))))
+    (interpret-markup layout props (markup #:halign x-align #:whiteout #:concat (#:normal-text #:italic text #:hspace hspace #:dynamic dyn)))))
+
+#(define (make-dynamic-script-dyn-text dyn text)
+  (let ((dynamic (make-dynamic-script (markup #:align-dyn-text dyn text))))
+    (ly:music-set-property! dynamic 'tweaks (acons 'X-offset 0 (ly:music-property dynamic 'tweaks)))
+    dynamic))
+
+#(define (make-dynamic-script-text-dyn text dyn)
+  (let ((dynamic (make-dynamic-script (markup #:align-text-dyn text dyn))))
+    (ly:music-set-property! dynamic 'tweaks (acons 'X-offset 0 (ly:music-property dynamic 'tweaks)))
+    dynamic))
+
+#(define (make-dynamic-script-text-dyn-left text dyn)
+  (let ((dynamic (make-dynamic-script (markup #:normal-text #:italic text #:dynamic dyn))))
+    (ly:music-set-property! dynamic 'tweaks (acons 'X-offset -1.5 (ly:music-property dynamic 'tweaks)))
+    (ly:music-set-property! dynamic 'tweaks (acons 'self-alignment-X LEFT (ly:music-property dynamic 'tweaks)))
+    dynamic))
+
+#(define (make-dynamic-script-dyn-text-left dyn text)
+  (let ((dynamic (make-dynamic-script (markup #:dynamic dyn #:normal-text #:italic text))))
+    (ly:music-set-property! dynamic 'tweaks (acons 'X-offset -1.5 (ly:music-property dynamic 'tweaks)))
+    (ly:music-set-property! dynamic 'tweaks (acons 'self-alignment-X LEFT (ly:music-property dynamic 'tweaks)))
+    dynamic))
+
+#(define (make-nonline-text-cresc text)
+  (make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text text 'tweaks '((dash-period . -1))))
+#(define (make-nonline-text-dim text)
+  (make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text text 'tweaks '((dash-period . -1))))
+
+justDecresc = #(make-nonline-text-dim "decresc.")
+justCresc = #(make-nonline-text-cresc "cresc.")
+justSempreCresc = #(make-nonline-text-cresc "sempre cresc.")
+justDolceCresc = #(make-nonline-text-cresc "dolce cresc.")
+
+semprePiuP = #(make-dynamic-script-text-dyn-left "sempre più" "p")
+semprePiuF = #(make-dynamic-script-text-dyn-left "sempre più" "f")
+semprePP = #(make-dynamic-script-text-dyn-left "sempre" "pp")
+sempreP = #(make-dynamic-script-text-dyn-left "sempre" "p")
+sempreF = #(make-dynamic-script-text-dyn-left "sempre" "f")
 mSempreF = \markup {\italic sempre \dynamic f}
-piuF = #(make-dynamic-script (markup #:normal-text #:italic "più" #:dynamic "f"))
-pConEspressione = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "con espressione"))
-pDolce = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce"))
+piuF = #(make-dynamic-script-text-dyn-left "più" "f")
+pConEspressione = #(make-dynamic-script-dyn-text-left "p" "con espressione")
+pDolce = #(make-dynamic-script-dyn-text-left "p" "dolce")
 mSemprePianissimoStaccato = \markup{\dynamic pp \italic {sempre pianissimo e staccato}}
 mSempreStaccato = \markup{\italic {sempre staccato}}
 mSempreLegato = \markup{\italic {sempre legato}}
@@ -73,6 +117,9 @@ pizz = \markup{\italic pizz.}
 arco = \markup{\italic arco}
 sottoVoce = \markup{\italic {sotto voce}}
 moltoMarcato = \markup{\italic {molto marcato}}
+
+partBreak = { \tag #'part \break }
+partNoBreak = { \tag #'part \noBreak }
 
 %Add multiple staccato dots for one note.
 tremoloStaccatosOn = #(define-music-function (parser location dots) (number?)
@@ -202,8 +249,6 @@ rehearsalMarksMvtI =
 outlineMvtI =
 << \rehearsalMarksMvtI
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 3/4
   \tempo "Allegro con brio" 2. = 60
   s2.*4
@@ -260,15 +305,10 @@ rehearsalMarksMvtII =
 outlineMvtII =
 << \rehearsalMarksMvtII
 {
-  \overrideBeamSettings #'Score #'(2 . 4) #'end #'(((1 . 24) . (3 3 3 3))
-                                                   ((1 . 48) . (6 6 6 6))
-                                                   ((1 . 32) . (4 4 4 4)))
-
   \override Score.SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 16)
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \tempo "Adagio assai" 8 = 80
   \time 2/4
+  \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3)) ((1 . 48) . (6 6 6 6)) ((1 . 32) . (4 4 4 4)))))
   \partial 8 s8
   s2*68 \bar "||"
   \tempoMark "Maggiore"
@@ -331,8 +371,6 @@ rehearsalMarksMvtIII =
 outlineMvtIII =
 << \rehearsalMarksMvtIII
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 3/4
   \tempo "Allegro vivace" 2. = 116
   \partial 4 s4
@@ -443,8 +481,6 @@ rehearsalMarksMvtIV =
 outlineMvtIV =
 << \rehearsalMarksMvtIV
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 2/4
   \tempo "Allegro molto" 2 = 76
   \grace {s16 s16}
@@ -497,11 +533,23 @@ afterGraceFraction = #(cons 15 16)
     \Score
     skipBars = ##t
     extraNatural = ##f
-    %\override PaperColumn #'keep-inside-line = ##t
-    %\override NonMusicalPaperColumn #'keep-inside-line = ##t
+    \override PaperColumn #'keep-inside-line = ##t
+    \override NonMusicalPaperColumn #'keep-inside-line = ##t
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+  }
+
+  \context
+  {
+    \Voice
+    \override DynamicTextSpanner #'font-size = #0
+  }
+
+  \context
+  {
+    \Staff
+    \RemoveEmptyStaves
   }
 }
 
