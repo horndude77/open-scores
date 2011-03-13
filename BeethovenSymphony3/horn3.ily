@@ -9,7 +9,7 @@ hornThreeMvtI = \relative c''
   \repeat volta 2
   {
     R2.*17 |
-    r4 c\p\< d |
+    r4 c\p\justCresc d |
     d4\fp r r |
     r r d\p |
     e-. ees2\sf |
@@ -144,7 +144,7 @@ hornThreeMvtI = \relative c''
   c~ | c4 c c |
   c2.~\ff | c~ | c4 c c | c c c | c r r |
   R2.*7 |
-  g2.\> | g | c | c |
+  g2.\justDecresc | g | c | c |
   d\pp | d | d | d |
   R2.*2 |
   d2.\pp | d |
@@ -477,7 +477,7 @@ hornThreeMvtIII = \relative c''
     g2 c4 |
     b r r |
     R2. |
-    r4 r g-.\< |
+    r4 r g-.\justCresc |
     g( e) c'-. |
     c( g) e'-. |
     e( c) g'-. |

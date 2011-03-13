@@ -78,7 +78,7 @@ fluteOneMvtI = \relative c'''
     bes4 r r |
     R2. |
     r4 d-.(\p d-.)\sf\> |
-    d2( c4)\! |
+    d2( c4) s1*0\! |
     R2.*3 |
     r4 r f~\sf\> |
     f( ees8 des c bes)\! |
@@ -390,7 +390,7 @@ fluteOneMvtII = \relative c''''
   \partial 8 r8 |
   R2*44 |
 
-  g4(\p\< d8 f\! |        
+  g4(\p\< d8 f |        
   ees4\> d8 c) |        
   b\! r r4 |        
   R2*2 |        
@@ -765,7 +765,7 @@ fluteOneMvtIII = \relative c'''
   g\ff r r |
   f\ff r r |
   ees\ff r r |
-  R2.^\fermataMarkup |
+  R2. %^\fermataMarkup |
 }
 
 fluteOneMvtIV = \relative c'''

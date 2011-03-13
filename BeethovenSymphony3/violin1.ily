@@ -862,7 +862,7 @@ violinOneMvtII = \relative c'
   bes8.(\> aes16 g8 f) |
   e8 r16. bes'32-.\f bes4 |
   r4 aes8(\p g) |
-  fis4(\< c'8.\sf\> fis,16) |
+  fis4(\justCresc c'8.\sf\> fis,16) |
   <<
     {s1*0\p}
     \repeat unfold 2
@@ -1621,7 +1621,7 @@ violinOneMvtIV = \relative c'
   bes(\< a bes a bes a bes a) |
   \repeat tremolo 4 {bes16( a)} |
   \repeat tremolo 4 {bes16(\> a)} |
-  bes16 ees'\pp f ees d ees f g |
+  bes16\! ees'\pp f ees d ees f g |
   aes bes c bes aes g f ees |
   d ees f ees d c bes aes |
   g bes ees d c bes aes g |

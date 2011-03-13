@@ -738,7 +738,7 @@ hornOneMvtIII = \relative c''
   e\ff r r |
   d\ff r r |
   c\ff r r |
-  R2.^\fermataMarkup |
+  R2. %^\fermataMarkup |
 }
 
 hornOneMvtIV = \relative c''

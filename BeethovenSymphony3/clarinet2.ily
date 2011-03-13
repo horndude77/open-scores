@@ -60,12 +60,12 @@ clarinetTwoMvtI = \relative c''
     r4 g-.(\p g-.) |
     g-.(\justCresc g-. g-.) |
     g-.( g-. gis-.)\sf\> |
-    << a2. {s4 s s\!} >> |
+    a2. s1*0\! |
     R2.*4 |
     r4 g-.( g-.) |
     g-.(\justCresc aes-. aes-.) |
     aes-.( aes-. aes-.) |
-    << aes2. {s4\sf\> s s\!} >> |
+    aes2.\sf\> s1*0\! |
     R2.*3 |
     r4 c-.(\< c-.)\> |
     b4\p r r |
@@ -190,7 +190,7 @@ clarinetTwoMvtI = \relative c''
   aes2.~ |
   aes | g2.(\justCresc | f)(\justDecresc | e4)\pp r r |
   R2.*2 |
-  r4 r d'8-.\< c-. |
+  r4 r d'8-.\justCresc c-. |
   bes-. c-. bes-. a-. bes-. a-. |
   g-. f-. e-. f-. g-. bes-. |
   a4\sf a a | a2 a4 |
@@ -223,7 +223,7 @@ clarinetTwoMvtI = \relative c''
   f4 c'-.(\p c-.) |
   c-.(\justCresc c-. c-.) |
   c-.( c-.) cis(\sf\> |
-  << d2.) {s4 s s\!} >> |
+  d2.) s1*0\! |
   R2.*4 |
   r4 c-.( c-.) |
   c-.(\justCresc des-. des-.) |
@@ -685,7 +685,7 @@ clarinetTwoMvtIII = \relative c'
   a\ff r r |
   bes\ff r r |
   a\ff r r |
-  R2.^\fermataMarkup |
+  R2. %^\fermataMarkup |
 }
 
 clarinetTwoMvtIV = \relative c''

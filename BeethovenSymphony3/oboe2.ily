@@ -66,11 +66,11 @@ oboeTwoMvtI = \relative c''
     bes'4 r r |
     R2. |
     r4 r bes\sf\> |
-    bes( b c)\! |
+    bes( b c) s1*0\! |
     R2.*5 |
     r4 ees-.(\justCresc ees-.)
     ees-.( ees-. ees-.)
-    << ees2. {s4\sf\> s s\!} >> |
+    ees2.\sf\> s1*0\! |
     R2.*13 |
     r4 r8 c8-.\justCresc d-. ees-. |
     f4\f d2\sf |
@@ -104,8 +104,8 @@ oboeTwoMvtI = \relative c''
     bes d \repeat tremolo 4 d8 |
     c2.\ff |
     d4-.\f r r |
-    bes-. r r |
-    bes-. r r |
+    bes-.\f r r |
+    bes-.\f r r |
     a-. a-. a-. |
     bes r r |
     R2.*3 |
@@ -361,8 +361,8 @@ oboeTwoMvtII = \relative c''
   c4(\p b8 c) |
   d4 r |
   R2*3 |
-  r8 f-.(\justCresc f-. f-.) |
-  f4(\justDecresc e)\sf |
+  r8 f-.(\justDecresc f-. f-.) |
+  f4(\justCresc e)\sf |
   f8\p r r4 |
   R2 |
   f,4.\justCresc d8 |
@@ -674,7 +674,7 @@ oboeTwoMvtIII = \relative c''
   g\ff r r |
   d\ff r r |
   g,\ff r r |
-  R2.^\fermataMarkup |
+  R2. %^\fermataMarkup |
 }
 
 oboeTwoMvtIV = \relative c''

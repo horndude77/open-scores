@@ -130,7 +130,7 @@ violaMvtI = \relative c'
     f,4(\p bes d) |
     ges,2.\sfp |
     f4( bes d) |
-    g,2.~ |
+    g,2.~\sfp |
     g4 r8 bes-. g-. ees-. |
     c'4 r8 c-. aes-. ees-. |
     c'4 r8 c-. a-. f-. |
@@ -547,7 +547,7 @@ violaMvtI = \relative c'
   bes,-.\justDecresc bes'-. bes,-. | bes'-. bes,-. bes'-. |
   c,-.\p c'-. c,-. | c'-. c,-. c'-. |
   aes,-. aes'-. aes,-. | aes'-. aes,-. aes'-. |
-  bes,-.\< bes'-. bes,-. | bes'-. bes,-. bes'-. |
+  bes,-.\justCresc bes'-. bes,-. | bes'-. bes,-. bes'-. |
   bes,-. bes'-. bes,-. | bes'-.\p bes,-. bes'-. |
   ees,-. r r |
   R2. |
@@ -640,7 +640,7 @@ violaMvtII = \relative c
   des'4. r8 |
   d8\justCresc r16 \times 2/3 {d32 d d} aes'8 r16 \times 2/3 {aes32 aes aes} |
   g8-.\f c,-. r ees,~\p\justCresc |
-  ees ees4(\sf\justCresc d16. f32) |
+  ees ees4(\sf\> d16. f32) |
   ees8-.\p aes16.-. aes32 d,8-. bes'16.-. bes32 |
   ees,8 r r8. \times 2/3 {g32 g g} |
   bes8 r r8. \times 2/3 {bes32 bes bes} |

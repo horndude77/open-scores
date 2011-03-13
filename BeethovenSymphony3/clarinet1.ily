@@ -75,12 +75,12 @@ clarinetOneMvtI = \relative c''
     r4 e-.(\p e-.) |
     e-.(\justCresc e-. e-.) |
     e-.( e-. e-.)\sf\> |
-    e2( d4)\! |
+    e2( d4) s1*0\! |
     R2.*4 |
     r4 ees-.( ees-.) |
     ees-.(\justCresc ees-. ees-.) |
     ees-.( ees-. ees-.) |
-    ees2(\sf\> d4)\! |
+    ees2(\sf\> d4) s1*0\! |
     R2.*3 |
     r4 d-.(\< d-.)\> |
     d4\p r r |
@@ -191,7 +191,7 @@ clarinetOneMvtI = \relative c''
   r4 f'(\p e | f4.\sf g8 aes4) |
   g( c b | c4.\sf bes8 aes g) |
   f4 f( g | aes4.\sf\justDecresc g8 f4) |
-  ees2.~_\mDolce\justCresc | ees8( des c des ees des) |
+  ees2.~\justDolceCresc | ees8( des c des ees des) |
   c4\p r r |
   R2.*8 |
   c2(\p e4 | c2 g4) |
@@ -263,7 +263,7 @@ clarinetOneMvtI = \relative c''
   f4 a'-.(\p a-.) |
   a-.(\justCresc a-. a-.) |
   a-.( a-.) a~\sf\> |
-  a2( g4)\! |
+  a2( g4) s1*0\! |
   R2.*4 |
   r4 aes-.( aes-.) |
   aes-.(\justCresc aes-. aes-.) |
@@ -792,7 +792,7 @@ clarinetOneMvtIII = \relative c''
   f\ff r r |
   g\ff r r |
   f\ff r r |
-  R2.^\fermataMarkup |
+  R2. %^\fermataMarkup |
 }
 
 clarinetOneMvtIV = \relative c''

@@ -410,7 +410,7 @@ trumpetTwoMvtIII = \relative c'
   c\ff r r |
   g\ff r r |
   c\ff r r |
-  R2.^\fermataMarkup |
+  R2. %^\fermataMarkup |
 }
 
 trumpetTwoMvtIV = \relative c'

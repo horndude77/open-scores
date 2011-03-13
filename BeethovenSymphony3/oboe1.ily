@@ -46,7 +46,7 @@ oboeOneMvtI = \relative c'''
     e4) r r |
     r g4.\ff f8 |
     ees4-. d-. c-. |
-    bes2.~\p\justCresc |
+    bes2.~\p\< |
     bes\> |
     bes2(\! c8 d) |
     ees4-.( ees-. ees-.)
@@ -72,16 +72,16 @@ oboeOneMvtI = \relative c'''
     a-. g'-. f-. ees-. d-. c-. |
     bes4 r r |
     r4 f'-.( f-.) |
-    f-.( f-. fis-.)\sf |
-    g2.\> |
-    s1*0\! R2.*2 |
+    f-.( f-. fis-.)\sf\> |
+    g2. s1*0\! |
+    R2.*2 |
     r4 r g~\sf\> |
     g( f8 ees d c) |
     bes4\p r r |
     R2. |
     r4 ges'-.( ges-.) |
-    ges2.\sf\> |
-    s1*0\! R2.*2 |
+    ges2.\sf\> s1*0\! |
+    R2.*2 |
     r4 bes( g |
     f2\< e4)\> |
     ees4\p r r |
@@ -118,8 +118,8 @@ oboeOneMvtI = \relative c'''
     d f \repeat tremolo 4 bes8 |
     a2.\ff |
     bes4-.\f r r |
-    bes,-. r r |
-    bes-. r r |
+    bes,-.\f r r |
+    bes-.\f r r |
     ges'-. ges-. ges-. |
     f r r |
     R2.*3 |
@@ -293,7 +293,7 @@ oboeOneMvtI = \relative c'''
   ees4 r r |
   R2. |
   r4 bes'(\p b |
-  << c2.) {s4\> s s\!}>> |
+  c2.)\> s1*0\! |
   R2.*5 |
   r4 aes-.(\justCresc aes-.) |
   aes-.( aes-. aes-.) |
@@ -551,7 +551,7 @@ oboeOneMvtII = \relative c''
   ees8\p ees16. ees32 ees8 r |
   R2*4 |
   bes'4(\p aes8 g) |
-  fis4(\< c'8.\sf\> fis,16) |
+  fis4(\justCresc c'8.\sf\> fis,16) |
   g8\p r r4 |
   g4( f8 ees) |
   d4.(\< f8) |
@@ -897,7 +897,7 @@ oboeOneMvtIII = \relative c'''
   bes\ff r r |
   f\ff r r |
   ees\ff r r |
-  R2.^\fermataMarkup |
+  R2. %^\fermataMarkup |
 }
 
 oboeOneMvtIV = \relative c'''

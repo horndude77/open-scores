@@ -817,7 +817,7 @@ violinTwoMvtII = \relative c'
   \repeat unfold 6 {\times 4/6 {\repeat tremolo 6 <ees g,>}} |
   \times 4/6 {\repeat tremolo 6 <ees g,>} \times 4/6 {\repeat tremolo 6 <d g,>} |
   \times 4/6 {\repeat tremolo 6 <d b>} \times 4/6 {\repeat tremolo 6 <d b>} |
-  \times 2/3 {<d b>16 <b aes'> <b aes'>} \times 2/3 {<b aes'>\< <b aes'> <b aes'>} \times 4/6 {\repeat tremolo 6 <b aes'>} |
+  \times 2/3 {<d b>16 <b aes'> <b aes'>} \times 2/3 {<b aes'>\justCresc <b aes'> <b aes'>} \times 4/6 {\repeat tremolo 6 <b aes'>} |
   \times 2/3 {<bes aes'>\justDecresc <bes aes'> <bes aes'>} \times 2/3 {r d d} \times 2/3 {r ees ees} \times 2/3 {r f f} |
   \times 2/3 {r ees\p ees} \times 2/3 {r ees ees} ees8 r |
   bes4( aes8 g) |

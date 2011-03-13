@@ -729,7 +729,7 @@ bassoonTwoMvtIII = \relative c
   ees\ff r r |
   bes\ff r r |
   ees\ff r r |
-  R2.^\fermataMarkup |
+  R2. %^\fermataMarkup |
 }
 
 bassoonTwoMvtIV = \relative c

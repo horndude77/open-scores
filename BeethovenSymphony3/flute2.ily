@@ -563,7 +563,7 @@ fluteTwoMvtIII = \relative c'''
   ees\ff r r |
   d\ff r r |
   ees\ff r r |
-  R2.^\fermataMarkup
+  R2. %^\fermataMarkup
 }
 
 fluteTwoMvtIV = \relative c'''
@@ -757,7 +757,7 @@ fluteTwoMvtIV = \relative c'''
   g r |
   g8\p r r4 |
   R2*19 |
-  bes,2\justCresc |
+  bes,2\> |
   ees8\! r r4 |
   R2*14 |
   r8 ees\p g4~\sf |

@@ -234,7 +234,7 @@ hornTwoMvtI = \relative c'
   c2.~\ff | c~ | c4 c c | c c c | c r r |
   R2.*6 |
   c2. |
-  b\> | b | c | c |
+  b\justDecresc | b | c | c |
   g\pp | g | g | g |
   R2.*2 |
   g2.\pp | g |
@@ -544,7 +544,7 @@ hornTwoMvtII = \relative c''
   r8 f16.\justCresc f32 f8 f |
   f8\p r r4 |
   R2*4 |
-  r4 \clef "bass^8" c,,~\p | c2~ | << {s4\< s\>} {c2} >> |
+  r4 \clef "bass^8" c,,~\p | c2~ | << {s4\justCresc s\>} {c2} >> |
   \clef treble g'2\p | g | g\< | g4.\> g8 |
   g\! r r4 |
   R2*2 | r4 c4\sf\> |
@@ -796,7 +796,7 @@ hornTwoMvtIII = \relative c'
   c\ff r r |
   g\ff r r |
   c,\ff r r |
-  R2.^\fermataMarkup
+  R2. %^\fermataMarkup
 }
 
 hornTwoMvtIV = \relative c'
@@ -956,13 +956,13 @@ hornTwoMvtIV = \relative c'
   c b8..(\justCresc c32) |
   c4.\sf\> c'8~ |
   c\p g~ g c, |
-  << {s8\justCresc s\> s\!} {c4(\justCresc g8)\>} >> r8 |
+  << {c4( g8)} {s8\< s\> s\!} >> r8 |
   g2~\p | g4 g8.. g32 |
   g2~ | g4 g8.. g32 |
   c2\justCresc
   c2 |
   c4(\p\< g)\> |
-  c8\! g\justCresc g g |
+  c8\! g[\justCresc g g] |
   g2~\p |
   g16 g'-. \repeat unfold 3 {d'-. g,-.} |
   g,2~ |

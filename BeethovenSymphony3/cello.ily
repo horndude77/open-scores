@@ -64,7 +64,7 @@ celloMvtI = \relative c
     g4\> f ees) |
     d8-.\! f-. ees-. d-. c-. bes-. |
     a-. bes-. c-. f,-. g-. a-. |
-    bes8-. bes'-. bes-. bes( a aes) |
+    bes8-.\justCresc bes'-. bes-. bes( a aes) |
     g( f) ees-. g-. f-. ees-. |
     d-. f-. ees-. d-. c-. bes-. |
     a-. bes-. c-. bes-. a-. g-. |
@@ -88,8 +88,8 @@ celloMvtI = \relative c
     a-. g-. f-. ees-. d-. c-. |
     bes4 r r |
     R2.*3 |
-    r4 c'-.( c-.) |
-    c-.( c-. c-.) |
+    r4 c'-.(\p c-.) |
+    c-.(\justCresc c-. c-.) |
     c c2\sf |
     c2~\sf\> c8( a |
     bes4)\p r r |
@@ -131,7 +131,7 @@ celloMvtI = \relative c
     f4(\p bes d) |
     ges,2.\sfp |
     f4( bes d) |
-    g,2.~ |
+    g,2.~\sfp |
     g4 r8 g,-. bes-. ees-. |
     aes,4 r8 aes-. c-. ees-. |
     a,4 r8 a-. c-. f-. |
@@ -278,7 +278,7 @@ celloMvtI = \relative c
   r4 a2\f |
   a2\f a4-.\f |
   r4 b,-.\f b-. |
-  b-.\> b-. b-. |
+  b-.\justDecresc b-. b-. |
   b-. b-. b-. |
   b-.\p b-. b-. |
   e e'( fis |
@@ -318,7 +318,7 @@ celloMvtI = \relative c
   ees ees(\p f | ges4.\sf f8 ees4) |
   d4( des c | bes2\sf c8 d) |
   ees4 r r |
-  r ees,\> ees |
+  r ees,\justDecresc ees |
   f2.(\justCresc | des) |
   ges2.~\p | ges |
   aes( | des,) |
@@ -358,7 +358,7 @@ celloMvtI = \relative c
   ces4(\f ees ges) |
   R2.*3 |
   c,4(\p ees a) |
-  r4 r8 d,8(\> f bes) |
+  r4 r8 d,8(\justDecresc f bes) |
   r4 r8 d,8( f bes) |
   r4 r8 ees,8( ges bes) |
   r4 r8 ees,8( ges bes) |
@@ -642,7 +642,7 @@ celloMvtII = \relative c
   des4) r8. des32( c |
   b8)\justCresc r16 \times 2/3 {b32 b b} f'8 r16 \times 2/3 {f32 f f} |
   ees8-.\f f-. r ees~\p\justCresc |
-  ees c4(\sf\justDecresc b8) |
+  ees c4(\sf\> b8) |
   c8-.\p aes'16.-. aes32-. d,8-. bes'16.-. bes32-. |
   ees,8 r r8. \times 2/3 {ees32 ees ees} |
   bes8 r r8. \times 2/3 {bes32 bes bes} |
@@ -653,7 +653,7 @@ celloMvtII = \relative c
   g8 r r8. \times 2/3 {g32 g g} |
   g8 r r8. \times 2/3 {g32 g g} |
   g8\< r r8. \times 2/3 {g32 g g} |
-  g8\justDecresc r16 \times 2/3 {g32 g g} g8 r16 \times 2/3 {g32 g g} |
+  g8\> r16 \times 2/3 {g32 g g} g8 r16 \times 2/3 {g32 g g} |
   g8\! r r4 |
   R2*2 |
   r4 r8. \times 2/3 {c32\sf c c} |
