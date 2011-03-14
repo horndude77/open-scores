@@ -140,7 +140,7 @@ bassoonOneMvtI = \relative c'
   g2(\justCresc aes4 |
   a2.)\sf\> |
   b4\p r r |
-  r g'4.(_\mDolce f8 |
+  r g'4.(_\dolce f8 |
   d4) g,2~\sfp |
   g8 g-. a-. b-. c-. d-. |
   e4 r r |
@@ -385,7 +385,7 @@ bassoonOneMvtI = \relative c'
   d2.~) |
   d4 d-. bes-. |
   f'( ees2~) | ees4 ees-. bes-. |
-  ges'4_\mEspr\justCresc ges2~ |
+  ges'4_\espress\justCresc ges2~ |
   ges4 ges2~ |
   ges4 ges-.( ges-.) |
   ges( f ees) |
@@ -438,7 +438,7 @@ bassoonOneMvtI = \relative c'
   bes4 bes2\f |
   bes2\f bes4-.\f |
   bes-. d-.\ff \repeat unfold 10 {d-.} |
-  ees4 r r | ees r r | ees, r r | \bar "|."
+  ees4 r r | ees r r | ees, r r |
 }
 
 bassoonOneMvtII = \relative c'
@@ -753,7 +753,7 @@ bassoonOneMvtIII = \relative c'
     c2 c4 |
     c( aes g |
     f-.) r d'\pDolce |
-    f(^\mSempreLegato d c |
+    f(^\sempreLegato d c |
     bes d c |
     ees a, c |
     f, ees' d |
@@ -958,7 +958,7 @@ bassoonOneMvtIV = \relative c'
     r4 r8
   }
 
-  bes'8(_\mDolce |
+  bes'8(_\dolce |
   bes4. ees8) |
   f4.( bes,8) |
   bes4.( f'8) |

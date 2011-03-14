@@ -586,7 +586,7 @@ bassMvtI = \relative c
   bes-. bes,-.\ff \repeat unfold 10 {bes-.} |
   ees r r |
   ees' r r |
-  ees, r r | \bar "|."
+  ees, r r |
 }
 
 bassMvtII = \relative c,
@@ -832,7 +832,7 @@ bassMvtIII = \relative c
   \clef bass
   r4 |
   R2.*13 |
-  r4 bes-. bes-._\mSempreStaccato |
+  r4 bes-. bes-._\sempreStaccato |
   \repeat unfold 3 {bes-. bes-. bes-.} |
   bes-. bes-. aes'-. |
   g-. d-. d-. |
@@ -1337,7 +1337,7 @@ bassMvtIV = \relative c'
   d8 r r4 |
   <<
     {
-      s2*4_\mSempreF
+      s2*4_\sempreFMarkup
       s2*4_\moltoMarcato
     }
     \repeat unfold 2

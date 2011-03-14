@@ -628,7 +628,7 @@ violinTwoMvtI = \relative c''
   aes2 <d' f,>4 |}
   <ees g,>4 r r |
   <g bes, ees, g,> r r |
-  <ees, g,> r r | \bar "|."
+  <ees, g,> r r |
 }
 
 violinTwoMvtII = \relative c'
@@ -885,7 +885,7 @@ violinTwoMvtII = \relative c'
 violinTwoMvtIII = \relative c'
 {
   \key ees \major
-  g4-._\mSemprePianissimoStaccato
+  g4-.\ppSemprePianissimoEStaccato
   \repeat unfold 6 {g-. aes-.} |
   bes-. bes-. bes-. |
   bes-. f'-. ees-. |
@@ -896,7 +896,7 @@ violinTwoMvtIII = \relative c'
   ees-. bes'-. c-. |
   d-. a-. bes-. |
   g-. g-. ees-. |
-  d r g,-._\mSempreStaccato |
+  d r g,-._\sempreStaccato |
   \repeat unfold 5 {g-. aes-.} g bes |
   bes bes bes |
   bes f' ees |
@@ -1119,7 +1119,7 @@ violinTwoMvtIII = \relative c'
   c bes aes |
   bes bes bes |
   bes f' ees |
-  d\pp_\mSempreStaccato f ees |
+  d\pp_\sempreStaccato f ees |
   d f ees |
   d d ees |
   f c d |

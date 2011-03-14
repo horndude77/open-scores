@@ -601,7 +601,7 @@ celloMvtI = \relative c
   bes-. bes,-.\ff \repeat unfold 10 {bes-.} |
   ees r r |
   ees' r r |
-  ees, r r | \bar "|."
+  ees, r r |
 }
 
 celloMvtII = \relative c
@@ -634,7 +634,7 @@ celloMvtII = \relative c
   ees4 d8 c)
   b4.(\< d8 |
   c4\> bes8 aes) |
-  g8(\! aes_\mEspr g c |
+  g8(\! aes_\espress g c |
   b ees d c)\justDecresc |
   b4( aes |
   g4~) <g c,>\sf |
@@ -871,7 +871,7 @@ celloMvtIII = \relative c
 {
   \key ees \major
   \clef bass
-  ees4-._\mSemprePianissimoStaccato
+  ees4-.\ppSemprePianissimoEStaccato
   \repeat unfold 4 {ees-. ees-. ees-.} |
   ees-. ees-. d-. |
   ees-. d-. c-. |
@@ -882,7 +882,7 @@ celloMvtIII = \relative c
   c-. g-. a-. |
   bes-. f-. g-. |
   ees-. c-. f-. |
-  bes,-.\p bes-. bes-._\mSempreStaccato |
+  bes,-.\p bes-. bes-._\sempreStaccato |
   \repeat unfold 3 {bes-. bes-. bes-.} |
   bes-. bes-. aes'-. |
   g-. d-. d-. |
@@ -1090,7 +1090,7 @@ celloMvtIII = \relative c
   ees ees ees |
   ees ees d |
   ees d c |
-  bes\pp_\mSempreStaccato d' c |
+  bes\pp_\sempreStaccato d' c |
   bes d c |
   bes bes c |
   d a b |
@@ -1453,7 +1453,7 @@ celloMvtIV = \relative c'
   d8 r r4 |
   <<
     {
-      s2*4_\mSempreF
+      s2*4_\sempreFMarkup
       s2*4_\moltoMarcato
     }
     \repeat unfold 2

@@ -2,7 +2,7 @@
 
 hornThreeMvtI = \relative c''
 {
-  \transposition ees
+  \transpositionPrint ees
   c4-.\f r r |
   c4-. r r |
   R2.*2 |
@@ -295,12 +295,12 @@ hornThreeMvtI = \relative c''
   g-. d'-.\ff \repeat unfold 10 {d-.} |
   c r r |
   c r r |
-  c r r | \bar "|."
+  c r r |
 }
 
 hornThreeMvtII = \relative c''
 {
-  \transposition ees
+  \transpositionPrint ees
   r8 |
   R2*8 |
   c2\p | c |
@@ -423,7 +423,7 @@ hornThreeMvtII = \relative c''
 
 hornThreeMvtIII = \relative c''
 {
-  \transposition ees
+  \transpositionPrint ees
   r4
   R2.*30 |
 
@@ -581,8 +581,8 @@ hornThreeMvtIII = \relative c''
 
 hornThreeMvtIV = \relative c''
 {
-  \transposition ees
   \grace {s16 s}
+  \transpositionPrint ees
   R2*6 |
   g4\ff r |
   g-. g-. |

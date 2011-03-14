@@ -2,7 +2,7 @@
 
 hornOneMvtI = \relative c''
 {
-  \transposition ees
+  \transpositionPrint ees
   c4-.\f r r |
   c4-. r r |
   R2.*2 |
@@ -237,16 +237,16 @@ hornOneMvtI = \relative c''
   c,2\sf ees4 |
   ees2.~\ff | ees~ | ees4 ees ees | ees ees ees | ees r r |
   R2.*41 |
-  \transposition f
-  c2(_\mDolce^\markup{\bold {in F}} e4 |
+  \transpositionPrint f
+  c2(_\dolce e4 |
   c2 g4) |
   c( e g) |
   g2.~ |
   g4 g g |
   g2.~ | g~\< | g( | aes4)\p r r |
-  \transposition ees
   R2.*89 |
-  g,2.~\pp^\markup{\bold {in E\flat}} | g~ | g~\justCresc | g~ |
+  \transpositionPrint ees
+  g,2.~\pp | g~ | g~\justCresc | g~ |
   g8 g'\justCresc g g g g |
   \repeat tremolo 6 g8 |
   g,4\f e'2\sf |
@@ -383,7 +383,7 @@ hornOneMvtI = \relative c''
 
 hornOneMvtII = \relative c'''
 {
-  \transposition c
+  \transpositionPrint c
   r8 |
   R2*8 |
   g2\p | g |
@@ -528,7 +528,7 @@ hornOneMvtII = \relative c'''
 
 hornOneMvtIII = \relative c''
 {
-  \transposition ees
+  \transpositionPrint ees
   \partial 4 r4
   R2.*30 |
   \repeat volta 2
@@ -743,9 +743,9 @@ hornOneMvtIII = \relative c''
 
 hornOneMvtIV = \relative c''
 {
-  \transposition ees
   \grace {s16 s}
   \tag #'score \voiceOne
+  \transpositionPrint ees
   R2*6 |
   d4\ff r |
   d-. d-. |
@@ -835,14 +835,14 @@ hornOneMvtIV = \relative c''
   c2 |
   g'4 g, |
   R2*108 |
-  \transposition f
-  c2\p^\markup{\bold {in F}} |
+  \transpositionPrint f
+  c2\p |
   g' |
   g, |
   c4 r |
-  \transposition ees
   R2*68 |
-  d2~^\markup{\bold {in E\flat}} |
+  \transpositionPrint ees
+  d2~ |
   d~ |
   d4 r |
   R2 |

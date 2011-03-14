@@ -3,8 +3,8 @@
 trumpetOneMvtI = \relative c''
 {
   \time 3/4
-  \transposition ees
   \key c \major
+  \transpositionPrint ees
   c4-.\f r r |
   c4-. r r |
   R2.*2 |
@@ -233,13 +233,13 @@ trumpetOneMvtI = \relative c''
   d-. g,-.\ff \repeat unfold 10 {g-.} |
   e r r |
   c' r r |
-  c r r | \bar "|."
+  c r r |
 }
 
 trumpetOneMvtII = \relative c''
 {
   \key c \major
-  \transposition c
+  \transpositionPrint c
   \partial 8 r8 |
   R2*68 |
 
@@ -304,7 +304,7 @@ trumpetOneMvtII = \relative c''
 
 trumpetOneMvtIII = \relative c''
 {
-  \transposition ees 
+  \transpositionPrint ees 
   r4
   R2.*30 |
   \repeat volta 2
@@ -416,9 +416,9 @@ trumpetOneMvtIII = \relative c''
 
 trumpetOneMvtIV = \relative c''
 {
-  \transposition ees
   \grace {s16 s}
   \tag #'score \voiceOne
+  \transpositionPrint ees
   R2*6 |
   g4\ff r |
   g-. g-. |

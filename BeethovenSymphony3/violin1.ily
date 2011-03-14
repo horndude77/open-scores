@@ -654,7 +654,7 @@ violinOneMvtI = \relative c'''
   f'' bes,, bes''} |
   g4 r r |
   <g bes, ees, g,> r r |
-  <ees, g,> r r | \bar "|."
+  <ees, g,> r r |
 }
 
 violinOneMvtII = \relative c'
@@ -933,7 +933,7 @@ violinOneMvtII = \relative c'
 violinOneMvtIII = \relative c'
 {
   \key ees \major
-  bes4-._\mSemprePianissimoStaccato |
+  bes4-.\ppSemprePianissimoEStaccato |
   bes-. c-. bes-. |
   c-. bes-. c-. |
   bes-. c-. bes-. |
@@ -946,7 +946,7 @@ violinOneMvtIII = \relative c'
   ees |
   d4( f) d-. |
   c( ees) c-. |
-  bes r bes-._\mSempreStaccato |
+  bes r bes-._\sempreStaccato |
   \repeat unfold 5 {bes-. c-.} bes-. d-. |
   ees-. f-. fis-. |
   g-. aes-. a-. |
@@ -1164,7 +1164,7 @@ violinOneMvtIII = \relative c'
   ees ees d |
   ees f fis |
   g aes a |
-  bes\pp_\mSempreStaccato bes bes |
+  bes\pp_\sempreStaccato bes bes |
   bes bes bes |
   bes( c8 bes a g) |
   f2. |
@@ -1605,7 +1605,7 @@ violinOneMvtIV = \relative c'
   \repeat unfold 3 {<g bes, d, g,> <fis a, d,> |}
   \repeat unfold 2 {<g bes, d, g,> r |}
   <g, g,>8\p r r4 |
-  r4 r8 c(_\mDolce |
+  r4 r8 c(_\dolce |
   e4. c8) |
   b4.( d8) |
   f4.( d8) |

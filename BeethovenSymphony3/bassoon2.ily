@@ -349,8 +349,8 @@ bassoonTwoMvtI = \relative c
   bes4 bes2~\f |
   bes4 bes2\f |
   bes2\f bes4-.\f |
-  bes-. bes-.\ff \repeat unfold 10{bes-.} |
-  ees4 r r | ees r r | ees r r | \bar "|."
+  bes-. bes-.\ff \repeat unfold 10 {bes-.} |
+  ees4 r r | ees r r | ees r r |
 }
 
 bassoonTwoMvtII = \relative c
@@ -799,7 +799,7 @@ bassoonTwoMvtIV = \relative c
     r4 r8
   }
 
-  r8_\mDolce |
+  r8_\dolce |
   ees2 |
   bes' |
   bes, |

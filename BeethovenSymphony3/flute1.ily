@@ -331,7 +331,7 @@ fluteOneMvtI = \relative c'''
   R2. |
   c2.~ | c2( cis4 | d4) r r |
   R2.*7 |
-  r4 d2~_\mEspr |
+  r4 d2~_\espress |
   d4 d2~ |
   d4\justDecresc d d |
   d( ees f~) |
@@ -380,7 +380,7 @@ fluteOneMvtI = \relative c'''
   d4 f2\f |
   f2\sf f4-.\f |
   f4-. f-.\ff \repeat unfold 10 {f-.} |
-  g r r | g r r | ees, r r | \bar "|."
+  g r r | g r r | ees, r r |
 }
 
 fluteOneMvtII = \relative c''''
@@ -649,7 +649,7 @@ fluteOneMvtIII = \relative c'''
     c2 c4 |
     c( aes g |
     f-.) r f'\pDolce |
-    f(^\mSempreLegato d c |
+    f(^\sempreLegato d c |
     bes d c |
     ees a, c |
     f, ees' d |
@@ -964,7 +964,7 @@ fluteOneMvtIV = \relative c'''
   g4 r |
   g, r |
   g8\p r r4 |
-  r4 r8 c8(_\mDolce |
+  r4 r8 c8(_\dolce |
   e4. c8) |
   b4.( d8) |
   f4.( d8) |

@@ -600,7 +600,7 @@ violaMvtI = \relative c'
   \repeat unfold 3 {bes2.} } |
   ees4 r r |
   <ees' ees, g,> r r |
-  ees,, r r | \bar "|."
+  ees,, r r |
 }
 
 violaMvtII = \relative c
@@ -873,7 +873,7 @@ violaMvtIII = \relative c
 {
   \key ees \major
   \clef alto
-  ees4-._\mSemprePianissimoStaccato
+  ees4-.\ppSemprePianissimoEStaccato
   \repeat unfold 3 {ees-. ees-. ees-.} |
   ees-. ees-. f-. |
   g-. ees'-. d-. |
@@ -884,7 +884,7 @@ violaMvtIII = \relative c
   c-. g-. a-. |
   bes-. f-. g-. |
   ees-. c-. a'-. |
-  bes r ees,-._\mSempreStaccato |
+  bes r ees,-._\sempreStaccato |
   \repeat unfold 3 {ees-. ees-. ees-.} |
   ees ees f |
   g aes d, |
@@ -1110,7 +1110,7 @@ violaMvtIII = \relative c
   aes g f |
   g ees' d |
   ees d c |
-  bes\pp_\mSempreStaccato d c |
+  bes\pp_\sempreStaccato d c |
   bes d c |
   bes bes c |
   d a b |

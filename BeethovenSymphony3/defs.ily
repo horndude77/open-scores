@@ -45,37 +45,19 @@ unfoldTremolos = #(define-music-function (parser location mus) (ly:music?)
   (music-map unfold-tremolos mus))
 % end tremolo functions
 
-#(define-markup-command (align-dyn-text layout props dyn text) (string? markup?)
-  (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
-         (dyn-stencil (interpret-markup layout props (markup #:dynamic dyn)))
-         (text-x-ext (ly:stencil-extent text-stencil X))
-         (dyn-x-ext (ly:stencil-extent dyn-stencil X))
-         (text-x (- (cdr text-x-ext) (car text-x-ext)))
-         (dyn-x (- (cdr dyn-x-ext) (car dyn-x-ext)))
-         (hspace 0.5)
-         (x-align (- (/ (/ dyn-x 2.0) (+ text-x dyn-x hspace)) 1.0)))
-    (interpret-markup layout props (markup #:halign x-align #:whiteout #:concat (#:dynamic dyn #:hspace hspace #:normal-text #:italic text)))))
-
-#(define-markup-command (align-text-dyn layout props text dyn) (markup? string?)
-  (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
-         (dyn-stencil (interpret-markup layout props (markup #:dynamic dyn)))
-         (text-x-ext (ly:stencil-extent text-stencil X))
-         (dyn-x-ext (ly:stencil-extent dyn-stencil X))
-         (text-x (- (cdr text-x-ext) (car text-x-ext)))
-         (dyn-x (- (cdr dyn-x-ext) (car dyn-x-ext)))
-         (hspace 0.5)
-         (x-align (- 1.0 (/ (/ dyn-x 2.0) (+ text-x dyn-x hspace)))))
-    (interpret-markup layout props (markup #:halign x-align #:whiteout #:concat (#:normal-text #:italic text #:hspace hspace #:dynamic dyn)))))
-
-#(define (make-dynamic-script-dyn-text dyn text)
-  (let ((dynamic (make-dynamic-script (markup #:align-dyn-text dyn text))))
-    (ly:music-set-property! dynamic 'tweaks (acons 'X-offset 0 (ly:music-property dynamic 'tweaks)))
-    dynamic))
-
-#(define (make-dynamic-script-text-dyn text dyn)
-  (let ((dynamic (make-dynamic-script (markup #:align-text-dyn text dyn))))
-    (ly:music-set-property! dynamic 'tweaks (acons 'X-offset 0 (ly:music-property dynamic 'tweaks)))
-    dynamic))
+transpositionPrint = #(define-music-function (parser location note) (ly:music?)
+  (define note-map '((0 . "C") (1 . "D") (2 . "E") (3 . "F") (4 . "G") (5 . "A") (6 . "B")))
+  (define alt-map '((-1/2 . flat) (1/2 . sharp)))
+  (define (pitch-to-markup pitch)
+    (let ((name (assq-ref note-map (ly:pitch-notename pitch)))
+          (alt (assv-ref alt-map (ly:pitch-alteration pitch))))
+      (cond ((eq? alt 'sharp) (markup #:bold "in" #:bold name #:bold (#:sharp)))
+            ((eq? alt 'flat) (markup #:bold "in" #:bold name #:bold (#:flat)))
+            (else (markup #:bold "in" #:bold name)))))
+  (make-music 'SequentialMusic 'elements
+    (list (context-spec-music
+            (make-property-set 'instrumentTransposition (ly:pitch-negate (pitch-of-note note))) 'Staff)
+          (make-music 'TextScriptEvent 'direction 1 'text (pitch-to-markup (pitch-of-note note))))))
 
 #(define (make-dynamic-script-text-dyn-left text dyn)
   (let ((dynamic (make-dynamic-script (markup #:normal-text #:italic text #:dynamic dyn))))
@@ -104,15 +86,15 @@ semprePiuF = #(make-dynamic-script-text-dyn-left "sempre più" "f")
 semprePP = #(make-dynamic-script-text-dyn-left "sempre" "pp")
 sempreP = #(make-dynamic-script-text-dyn-left "sempre" "p")
 sempreF = #(make-dynamic-script-text-dyn-left "sempre" "f")
-mSempreF = \markup {\italic sempre \dynamic f}
+sempreFMarkup = \markup {\italic sempre \dynamic f}
 piuF = #(make-dynamic-script-text-dyn-left "più" "f")
 pConEspressione = #(make-dynamic-script-dyn-text-left "p" "con espressione")
+ppSemprePianissimoEStaccato = #(make-dynamic-script-dyn-text-left "pp" "sempre pianissimo e staccato")
 pDolce = #(make-dynamic-script-dyn-text-left "p" "dolce")
-mSemprePianissimoStaccato = \markup{\dynamic pp \italic {sempre pianissimo e staccato}}
-mSempreStaccato = \markup{\italic {sempre staccato}}
-mSempreLegato = \markup{\italic {sempre legato}}
-mEspr = \markup{\italic espress.}
-mDolce = \markup{\italic dolce}
+sempreStaccato = \markup{\italic {sempre staccato}}
+sempreLegato = \markup{\italic {sempre legato}}
+dolce = \markup{\italic dolce}
+espress = \markup{\italic espress.}
 pizz = \markup{\italic pizz.}
 arco = \markup{\italic arco}
 sottoVoce = \markup{\italic {sotto voce}}
@@ -153,9 +135,9 @@ tremoloStaccatosOff =
   \revert Script #'X-offset
 }
 
-tempoMark = #(define-music-function (parser location markp) (string?)
+sectionMark = #(define-music-function (parser location markp) (string?)
 #{
-  \once \override Score . RehearsalMark #'self-alignment-X = #left
+  \once \override Score.RehearsalMark #'self-alignment-X = #left
   \once \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
   \mark \markup { \smaller \bold $markp }
 #})
@@ -250,7 +232,7 @@ outlineMvtI =
 << \rehearsalMarksMvtI
 {
   \time 3/4
-  \tempo "Allegro con brio" 2. = 60
+  \tempo "Allegro con brio" 2.=60
   s2.*4
   \repeat volta 2
   {
@@ -306,14 +288,14 @@ outlineMvtII =
 << \rehearsalMarksMvtII
 {
   \override Score.SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 16)
-  \tempo "Adagio assai" 8 = 80
+  \tempo "Adagio assai" 8=80
   \time 2/4
   \set beamExceptions = #'((end . (((1 . 24) . (3 3 3 3)) ((1 . 48) . (6 6 6 6)) ((1 . 32) . (4 4 4 4)))))
   \partial 8 s8
   s2*68 \bar "||"
-  \tempoMark "Maggiore"
+  \sectionMark "Maggiore"
   s2*36 \bar "||"
-  \tempoMark "Minore"
+  \sectionMark "Minore"
   \grace {s32*3}
   s2*142 |
   s4. \bar "|."
@@ -372,7 +354,7 @@ outlineMvtIII =
 << \rehearsalMarksMvtIII
 {
   \time 3/4
-  \tempo "Allegro vivace" 2. = 116
+  \tempo "Allegro vivace" 2.=116
   \partial 4 s4
   s2.*30 |
   \repeat volta 2
@@ -385,7 +367,7 @@ outlineMvtIII =
     { s2.*3 | s4 s \bar "||" }
   }
 
-  \tempoMark "Trio"
+  \sectionMark "Trio"
   s4 |
   s2.*32 |
   \repeat volta 2
@@ -401,15 +383,15 @@ outlineMvtIII =
   s2.*125 \bar "||"
 
   \time 2/2
-  \tempo "Alla breve" 1 = 116
+  \tempo "Alla breve" 1=116
   s1*4 \bar "||"
 
   \time 3/4
   \set Score.tempoHideNote = ##t
-  \tempo 2. = 116
+  \tempo 2.=116
   s2.*38 |
 
-  \tempoMark "Coda"
+  \sectionMark "Coda"
   s2.*20 | \bar "|."
 }
 >>
@@ -482,7 +464,7 @@ outlineMvtIV =
 << \rehearsalMarksMvtIV
 {
   \time 2/4
-  \tempo "Allegro molto" 2 = 76
+  \tempo "Allegro molto" 2=76
   \grace {s16 s16}
   s2*44 |
 
@@ -516,10 +498,10 @@ outlineMvtIV =
   s8 |
   s2*272
   s4.
-  \tempo "Poco Andante" 8 = 108
+  \tempo "Poco Andante" 8=108
   s8 | \noBreak
   s2*82 | \bar "||"
-  \tempo "Presto" 4 = 116
+  \tempo "Presto" 4=116
   s2*43 | \bar "|."
 }
 >>

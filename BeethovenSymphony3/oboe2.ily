@@ -339,7 +339,7 @@ oboeTwoMvtI = \relative c''
   d4 f2\f |
   f\f f4-.\f |
   f4-. d-.\ff \repeat unfold 10 {d-.} |
-  ees r r | ees r r | ees r r | \bar "|."
+  ees r r | ees r r | ees r r |
 }
 
 oboeTwoMvtII = \relative c''

@@ -331,7 +331,7 @@ clarinetTwoMvtI = \relative c''
   bes-. bes-.\ff \repeat unfold 10 {bes-.} |
   a4 r r |
   a r r |
-  f r r | \bar "|."
+  f r r |
 }
 
 clarinetTwoMvtII = \relative c'

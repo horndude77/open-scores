@@ -201,7 +201,7 @@ timpaniMvtI = \relative c
   bes-. bes-.\ff \repeat unfold 10 {bes-.} |
   ees r r |
   ees r r |
-  ees r r | \bar "|."
+  ees r r |
 }
 
 timpaniMvtII = \relative c

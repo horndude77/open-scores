@@ -2,7 +2,7 @@
 
 hornTwoMvtI = \relative c'
 {
-  \transposition ees
+  \transpositionPrint ees
   c4-.\f r r |
   c4-. r r |
   R2.*2 |
@@ -441,7 +441,7 @@ hornTwoMvtI = \relative c'
 
 hornTwoMvtII = \relative c''
 {
-  \transposition c
+  \transpositionPrint c
   r8 |
   R2*8 |
   g2\p | g |
@@ -583,7 +583,7 @@ hornTwoMvtII = \relative c''
 
 hornTwoMvtIII = \relative c'
 {
-  \transposition ees
+  \transpositionPrint ees
   r4
   R2.*30 |
 
@@ -801,9 +801,9 @@ hornTwoMvtIII = \relative c'
 
 hornTwoMvtIV = \relative c'
 {
-  \transposition ees
   \grace {s16 s}
   \tag #'score \voiceTwo
+  \transpositionPrint ees
   R2*6 |
   g4\ff r |
   g-. g-. |

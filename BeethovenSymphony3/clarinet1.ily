@@ -328,7 +328,7 @@ clarinetOneMvtI = \relative c''
   e4 e-. c-. |
   g'( f2~) |
   f4 f-. c-. |
-  aes'\justCresc^\mEspr aes2~ |
+  aes'\justCresc^\espress aes2~ |
   aes4 aes2~ |
   aes4 aes-.( aes-.) |
   aes( g f) |
@@ -384,7 +384,7 @@ clarinetOneMvtI = \relative c''
   e-. g-.\ff \repeat unfold 10 {g-.} |
   f4 r r |
   f r r |
-  f, r r | \bar "|."
+  f, r r |
 }
 
 clarinetOneMvtII = \relative c''
@@ -546,7 +546,7 @@ clarinetOneMvtII = \relative c''
   r4\! ees8\p r |
   r4 d8 r |
   R2 |
-  r8 a4(_\mEspr bes8) |
+  r8 a4(_\espress bes8) |
   bes(\> cis,16) r\! r4 |
   r8 a'~ a16( bes) bes-.( bes-.) |
   bes8(\> cis,16) r\! r4 |
@@ -860,7 +860,7 @@ clarinetOneMvtIV = \relative c''
     R2*3 |
     r4 r8
   }
-  a8(_\mDolce |
+  a8(_\dolce |
   c4. a8) |
   bes4.( e,8) |
   e4.( bes'8) |

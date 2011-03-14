@@ -419,7 +419,7 @@ oboeOneMvtI = \relative c'''
   f4 aes2\f |
   aes\f aes4-.\f |
   aes4-. aes-.\ff \repeat unfold 10 {aes-.} |
-  g r r | ees r r | ees r r | \bar "|."
+  g r r | ees r r | ees r r |
 }
 
 oboeOneMvtII = \relative c''
@@ -588,7 +588,7 @@ oboeOneMvtII = \relative c''
   r4\! f8\p r |
   r4 ees8 r |
   R2 |
-  r8 g4(_\mEspr aes8) |
+  r8 g4(_\espress aes8) |
   aes8(\> b,16)\! r r4 |
   r8 g'~ g16( aes) aes-.( aes-.) |
   aes8(\> b,16)\! r r4 |
@@ -747,7 +747,7 @@ oboeOneMvtIII = \relative c'''
     \repeat unfold 3 {c2 c4 |}
     c4 r r |
     r r f\pDolce |
-    f(^\mSempreLegato d c |
+    f(^\sempreLegato d c |
     bes d c |
     ees a, c |
     f, ees' d |
@@ -951,7 +951,7 @@ oboeOneMvtIV = \relative c'''
     R2*3 |
     r4 r8
   }
-  ees,8(_\mDolce |
+  ees,8(_\dolce |
   g4. ees8) |
   d4.( f8) |
   aes4.( f8) |
@@ -1078,7 +1078,7 @@ oboeOneMvtIV = \relative c'''
   g r |
   g,8\p r r4 |
   R2*2 |
-  r8 g(_\mDolce b d) |
+  r8 g(_\dolce b d) |
   f8 r r4 |
   r8 g,( c e) |
   g8 r r4 |
