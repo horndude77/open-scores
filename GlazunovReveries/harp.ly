@@ -7,6 +7,8 @@ instrument = "Harp"
 
 \include "header.ily"
 
+\pageBreak \allowPageTurn
+
 \score
 {
   \new PianoStaff

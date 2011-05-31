@@ -22,7 +22,7 @@ justCrescPocoAPoco = #(make-music 'CrescendoEvent 'span-direction START 'span-ty
 
 boxMark = #(define-music-function (parser location markp) (string?)
 #{
-  \mark \markup { \box \bold $markp }
+  \mark \markup { \rounded-box \pad-markup #0.05 \bold $markp }
 #})
 
 rehearsalMarks =
@@ -108,4 +108,37 @@ afterGraceFraction = #(cons 15 16)
   ragged-last = ##f
   ragged-bottom = ##f
   ragged-last-bottom = ##f
+
+  #(set-paper-size "letter")
+  %two-sided = ##t
+  %page-breaking = #ly:page-turn-breaking
+  scoreTitleMarkup = ##f
+  bookTitleMarkup = \markup
+  \column
+  {
+    \vspace #12
+    \fill-line { \fontsize #10 {\fromproperty #'header:title } }
+    \vspace #2
+    \fill-line { \fontsize #4 {\fromproperty #'header:composer } }
+    \vspace #2
+    \fill-line { \fontsize #2 {\fromproperty #'header:opus } }
+    \vspace #5
+    \fill-line { \fontsize #5 \rounded-box \pad-markup #1.0 {\fromproperty #'header:instrument } }
+  }
+
+  oddHeaderMarkup = \markup
+  \fill-line
+  {
+    ""
+    \on-the-fly #not-first-page \rounded-box \pad-markup #0.5 \fromproperty #'header:instrument
+    \on-the-fly #print-page-number-check-first \fromproperty #'page:page-number-string
+  }
+
+  evenHeaderMarkup = \markup
+  \fill-line
+  {
+    \on-the-fly #print-page-number-check-first \fromproperty #'page:page-number-string
+    \on-the-fly #not-first-page \rounded-box \pad-markup #0.5 \fromproperty #'header:instrument
+    ""
+  }
 }

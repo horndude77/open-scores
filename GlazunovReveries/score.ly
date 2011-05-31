@@ -30,6 +30,8 @@
 instrument = "Orchestra"
 \include "header.ily"
 
+\pageBreak \allowPageTurn
+
 \score
 {
   <<

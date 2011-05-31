@@ -9,6 +9,9 @@ instrument = "Piano"
 \book
 {
   \include "header.ily"
+
+  \pageBreak \allowPageTurn
+
   \score
   {
     <<
