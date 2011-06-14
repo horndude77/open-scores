@@ -1,7 +1,7 @@
 \header
 {
   title = \markup{Concerto for Horn, Op.8}
-  composer = "Franz Strauss"
+  composer = "Franz Strauss (1822-1905)"
   instrument = \instrument
 
   mutopiatitle = ""
