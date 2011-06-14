@@ -27,14 +27,14 @@ stop =
 
 tupletOff =
 {
-  \override TupletNumber #'transparent = ##t
-  \override TupletBracket #'transparent = ##t
+  \override TupletNumber #'stencil = ##f
+  \override TupletBracket #'stencil = ##f
 }
 
 tupletOn =
 {
-  \revert TupletNumber #'transparent
-  \revert TupletBracket #'transparent
+  \revert TupletNumber #'stencil
+  \revert TupletBracket #'stencil
 }
 
 boxMark = #(define-music-function (parser location markp) (string?)
