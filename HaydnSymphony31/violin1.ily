@@ -1,6 +1,4 @@
-\version "2.13.34"
-
-\include "defs.ily"
+\version "2.14.1"
 
 violinOneMvtI = \relative c'
 {

@@ -1,9 +1,23 @@
-\version "2.13.34"
+\version "2.14.1"
 
 solo = \markup {Solo}
 pizz = \markup {pizz.}
 arco = \markup {arco}
 tacet = \markup {\large \smallCaps Tacet}
+
+transpositionPrint = #(define-music-function (parser location note) (ly:music?)
+  (define note-map '((0 . "C") (1 . "D") (2 . "E") (3 . "F") (4 . "G") (5 . "A") (6 . "B")))
+  (define alt-map '((-1/2 . flat) (1/2 . sharp)))
+  (define (pitch-to-markup pitch)
+    (let ((name (assq-ref note-map (ly:pitch-notename pitch)))
+          (alt (assv-ref alt-map (ly:pitch-alteration pitch))))
+      (cond ((eq? alt 'sharp) (markup #:bold "in" #:bold name #:bold (#:sharp)))
+            ((eq? alt 'flat) (markup #:bold "in" #:bold name #:bold (#:flat)))
+            (else (markup #:bold "in" #:bold name)))))
+  (make-music 'SequentialMusic 'elements
+    (list (context-spec-music
+            (make-property-set 'instrumentTransposition (ly:pitch-negate (pitch-of-note note))) 'Staff)
+          (make-music 'TextScriptEvent 'direction 1 'text (pitch-to-markup (pitch-of-note note))))))
 
 outlineMvtI =
 {
@@ -193,7 +207,11 @@ outlineMvtIV =
   }
   \alternative
   {
-    {s4 \partial 8 s8}
+    {
+      \set Timing.measureLength = #(ly:make-moment 3 8)
+      s4.
+      \set Timing.measureLength = #(ly:make-moment 2 4)
+    }
     {s2 |}
   }
   s2*7 | \bar "||"

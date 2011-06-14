@@ -1,7 +1,7 @@
-\version "2.13.34"
+\version "2.14.1"
 
-\include "merge-rests.ily"
 \include "defs.ily"
+\include "merge-rests.ily"
 \include "flute.ily"
 \include "oboe1.ily"
 \include "oboe2.ily"
@@ -22,6 +22,9 @@ instrument = "Orchestra"
 {
   short-indent = 5\mm
   system-separator-markup = \slashSeparator
+  top-system-spacing #'stretchability = #0
+  last-bottom-spacing #'stretchability = #0
+  system-system-spacing #'stretchability = #2
 }
 
 \layout

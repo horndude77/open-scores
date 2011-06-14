@@ -1,10 +1,8 @@
-\version "2.13.34"
-
-\include "defs.ily"
+\version "2.14.1"
 
 hornFourMvtI = \relative c''
 {
-  \transposition d
+  \transpositionPrint d
   \repeat volta 2
   {
     c4\f r8 c16 c c8 c |
@@ -109,7 +107,7 @@ hornFourMvtI = \relative c''
 
 hornFourMvtII = \relative c''
 {
-  \transposition g
+  \transpositionPrint g
   \repeat volta 2
   {
     r8 |
@@ -146,7 +144,7 @@ hornFourMvtII = \relative c''
 
 hornFourMvtIII = \relative c'
 {
-  \transposition d
+  \transpositionPrint d
   \repeat volta 2
   {
     c4\f c c |
@@ -211,7 +209,7 @@ hornFourMvtIII = \relative c'
 
 hornFourMvtIV = \relative c''
 {
-  \transposition d
+  \transpositionPrint d
   %Intro
   \repeat volta 2
   {
