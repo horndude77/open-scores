@@ -1,8 +1,10 @@
-\version "2.13.50"
+\version "2.14.1"
 
 \include "defs.ily"
 \include "piano.ily"
 \include "horn.ily"
+
+#(set-global-staff-size 17)
 
 instrument = "Piano"
 

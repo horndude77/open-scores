@@ -1,4 +1,4 @@
-\version "2.13.50"
+\version "2.14.1"
 
 #(define-markup-command (align-dyn-text layout props dyn text) (string? markup?)
   (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
@@ -88,8 +88,6 @@ boxMark = #(define-music-function (parser location markp) (string?)
 
 outline =
 {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.NonMusicalPaperColumn #'keep-inside-line = ##t
   \time 6/8
   \tempo "Très modéré" 4.=60
   s2.*18
