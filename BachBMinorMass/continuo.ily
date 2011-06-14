@@ -1,4 +1,4 @@
-\version "2.13.13"
+\version "2.14.1"
 
 continuoAria = \relative c
 {
@@ -269,4 +269,3 @@ continuoAriaFiguredBass = \figuremode
   %vivace
   r2. |
 }
-
