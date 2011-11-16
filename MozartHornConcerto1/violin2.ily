@@ -273,8 +273,8 @@ violinIIMvtII = \relative c'
   f8) r r d4.(\p |
   cis8) r r << {\voiceOne bes'4.(} \new Voice {\voiceTwo g4.\sf} >> \oneVoice |
   a8) r r f4.(\p |
-  e8) r f'(\sf e4\p f8\sf |
-  e4\p f8\sf e4)\p r8 |
+  e8) r f'(\sf\invisibleCresc e4\p f8\sf\invisibleCresc |
+  e4\p f8\sf\invisibleCresc e4)\p r8 |
   r fis,\p fis fis4 r8 |
   r8 d d d4 r8 |
   r8 fis fis r g g |

@@ -195,7 +195,7 @@ bassMvtII = \relative c
   d8 a a a a a |
   d d, d e e e |
   fis fis cis fis fis b, |
-  e4 r8 r4 cis'8(\dolce |
+  e4 r8 r4 cis'8\dolce |
   d4.( b |
   gis4 e8 a4 a,8) |
   e'4 r8 e,4 r8 |

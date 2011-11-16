@@ -253,8 +253,8 @@ violaMvtII = \relative c'
   d8) r r b4.(\p |
   e,8) r r << {\voiceOne e'4.(} \new Voice {\voiceTwo cis4.\sf} >> \oneVoice |
   d8) r r d4.(\p |
-  cis8) r d'(\sf cis4\p d8\sf |
-  cis4\p d8\sf cis4)\p r8 |
+  cis8) r d'(\sf\invisibleCresc cis4\p d8\sf\invisibleCresc |
+  cis4\p d8\sf\invisibleCresc cis4)\p r8 |
   r8 a,\p a a4 r8 |
   r8 a a a4 r8 |
   r8 a a r a a |

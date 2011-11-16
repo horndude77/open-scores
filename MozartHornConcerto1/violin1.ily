@@ -265,7 +265,7 @@ violinIMvtII = \relative c''
   f4 r8 r4. |
   f4.( g) |
   \repeat unfold 6 a8 |
-  bes4.( a~ | a( g) |
+  bes4.( a~) | a( g) |
   a4 r8 r4. |
   a4 a8 a g a |
   bes4.( g | f e | f g) |
@@ -282,8 +282,8 @@ violinIMvtII = \relative c''
   f r r f,4.(\p |
   e8) cis'(\f e a a, g') |
   f8 r r gis,4.(\p |
-  a8) r gis'(\sf a)(\p a,) gis'(\sf |
-  a)(\p a,) gis'(\sf a)(\p a,) r |
+  a8) r gis'(\sf\invisibleCresc a)(\p a,) gis'(\sf\invisibleCresc |
+  a)(\p a,) gis'(\sf\invisibleCresc a)(\p a,) r |
   r4. r8 gis'16(\p a gis a) |
   r4. r8 eis16( fis eis fis) |
   r8 cis16( d cis d) r8 dis16( e dis e) |
