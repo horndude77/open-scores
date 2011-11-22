@@ -6,6 +6,7 @@
 \paper
 {
   #(define page-breaking ly:page-turn-breaking)
+  auto-first-page-number = ##t
 }
 
 \layout
@@ -31,7 +32,7 @@ instrument = "Horn"
     \new Staff = horn
     {
       \clef treble
-      << \horn \outline >>
+      \removeWithTag #'piano << \horn \outline >>
     }
   }
 }

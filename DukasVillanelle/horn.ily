@@ -56,7 +56,7 @@ horn = \relative c''
   c2-> g-> |
   c,4~-> \times 2/3 {c16 r g'8-_( c-_}
     \times 2/3 {d-_ c-_ d-_}
-    \times 2/3 {d-_ e-_ c-_} |
+    \times 2/3 {d-_ e-_ c-_)} |
   \repeat unfold 2
   {
     e8.->(\> d16) c4~\! \breathe c16\< d-_( c-_ d-_ d-_ e-_ c-_ d-_) |
@@ -81,7 +81,20 @@ horn = \relative c''
 
   %2/2
   g1~->)\mfp | g~ | g~ | g~ | g4 r r2 |
-  R1*19 |
+  \tag #'horn \pageBreak
+  R1*15 |
+  \tag #'piano R1*4 |
+  \tag #'horn
+  <<
+    {s1*4 |}
+    \new CueVoice
+    {
+      r4 e'8 fis g a b cis |
+      e d cis d cis b ais b |
+      ais b c b ais b c b |
+      d c bes g e c bes g |
+    }
+  >>
 
   %B
   r4 g(\p^"(avec les Pistons)" c d |
@@ -89,9 +102,9 @@ horn = \relative c''
   c g e a |
   g f8 e d4 c |
   g1~-> |
-  g8[) r8 a(\justPocoCresc b] c d e fis |
+  g8) r8 a(\justPocoCresc b c d e fis |
   g1~\! |
-  g8[) r d( e] fis g a b |
+  g8) r d( e fis g a b |
   c4) b8-. c-. a4-. d-. |
   c-. b8-. c-. a4-. d-. |
   c-. b-. a-. d-. |
@@ -115,15 +128,15 @@ horn = \relative c''
   bes g a c |
   bes a8 g f4 g |
   a1~ |
-  a8[ r b,( cis] d e fis g |
+  a8 r b,( cis d e fis g |
   a1~ |
-  a8[) r e( fis] g a b cis |
+  a8) r e( fis g a b cis |
   d4) cis8-. d-. b4-. e-. |
   d4-. cis8-. d-. b4-. e-. |
   d-. cis-. b-. e-. |
   \times 2/3 {d4-| cis-| d-|} \times 2/3 {b-| cis-| d-|}
   fis1~-^ | fis~ |
-  fis8[ r g e] c g e c |
+  fis8 r g e c g e c |
   g1( |
   \clef "bass^8"
     c,4) r r2 |
@@ -192,10 +205,20 @@ horn = \relative c''
   d4-.\! r d2-_(\p |
   d-_\> d-_ |
   ees2~\pp ees8) r r4 |
-  R1*3_"Mettez la Sourdine" |
+  \tag #'piano R1*3_"Mettez la Sourdine"
+  \tag #'horn
+  <<
+    {s1*2_"Mettez la Sourdine" | R1 |}
+    \new CueVoice
+    {
+      aes4 ges8 f ees4 f |
+      des aes f bes |
+      aes
+    }
+  >>
 
   %F
-  r4\p ees,-._\markup{\italic "léger (en forçant un peu le son)"} aes-. bes-. |
+  r4\p ees-._\markup{\italic "léger (en forçant un peu le son)"} aes-. bes-. | \tag #'horn \noBreak
   ees-. des8-. c-. bes4-. c-. |
   aes-. ees-. c-. f-. |
   ees-. des8-. c-. bes4-. aes-. |
@@ -203,7 +226,7 @@ horn = \relative c''
   r4 ges-. ces-. des-. |
   ges-. r r2 |
   r4 bes,-. ees-. f-. |
-  bes-. r r des8(_\scherzando c |
+  bes-. r r des8(_\scherzando c | \tag #'horn \noBreak
   bes4-.) r r des8( c |
   bes4-.) r r cis8( b |
   a4-.) r r cis8( b |
@@ -236,7 +259,7 @@ horn = \relative c''
   c-. g-. e-. a-. |
   g4( f8 e d4) e-. |
   c-. g-. e-. a-. |
-  g1~\fp | g~ | g2 r |
+  g1~\fp | \tag #'horn \noBreak g~ | g2 r |
   r_\markup{\column{"(sans les" "Pistons)"}} g'(\( |
   
   %6/8

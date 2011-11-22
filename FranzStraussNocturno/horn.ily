@@ -10,7 +10,7 @@ horn = \relative c''
   ees' g,) bes8(\< aes g aes) |
   bes2.\> ees,4~\! |
   ees4. aes,8(\< c ees aes c) |
-  c4.(\> bes8 aes4)\! aes(\< |
+  c4.(\> bes8 aes4)\! aes\< |
   g8(\mf ees' d c) b4\( \grace {c16[( b])} a8 b\) |
   c2. r4 |
   r ees\(\pp des8 c bes a( |

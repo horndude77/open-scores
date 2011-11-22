@@ -168,9 +168,8 @@ outline =
   s1*2 | \bar "||"
 
   \time 6/8
-  \tempo 4.=144
   \boxMark "R"
-  \tempo \markup{\bold {Tempo I} \normal-text \italic {un poco più mosso}}
+  \tempo \markup{\bold {Tempo I} \normal-text \italic {un poco più mosso}} 4.=144
   s2.*53 | \bar "|."
 }
 

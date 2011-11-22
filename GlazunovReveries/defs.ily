@@ -85,12 +85,6 @@ afterGraceFraction = #(cons 15 16)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
   }
-
-  \context
-  {
-    \Dynamics
-    \consists "Tweak_engraver"
-  }
 }
 
 \midi

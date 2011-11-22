@@ -44,7 +44,7 @@ instrument = "Piano"
     \new Staff
     {
       \set Staff.midiInstrument = "french horn"
-      \horn
+      \removeWithTag #'horn \horn
     }
     \new PianoStaff
     <<
