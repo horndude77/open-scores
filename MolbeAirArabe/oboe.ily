@@ -1,6 +1,4 @@
-\version "2.13.18"
-
-oboe = \relative c''
+\relative c''
 {
   R2.*3 |
   r4 r e\pp\< |
@@ -14,7 +12,13 @@ oboe = \relative c''
   bes8.( g16\! d'2)\> |
   gis,8.\< gis16 c4(\! b) |
   a8.(\> c,16 e2) s1*0\! |
-  R2.*5 |
+  \tag #'piano { R2.*5 | }
+  \tag #'part
+  {
+    R2.*3 |
+    s1*0_\markup {\tiny "Horn"}
+    \cueDuring "horn" #DOWN { R2.*2 } |
+  }
   r8 e'~\pp\< e4 r\! |
   r8 d~ d4 r |
   r8 bes~\> bes4 r\! |
@@ -31,34 +35,40 @@ oboe = \relative c''
   c2) b8.( g16) |
   bes8.( aes16 fis8. a16 g8. ees16) |
   fis8.(\> d16 a'2)\! |
-  R2.*4 |
+  \tag #'piano { R2.*4 | }
+  \tag #'part
+  {
+    R2.*2 |
+    s1*0_\markup {\tiny "Horn"}
+    \cueDuring "horn" #DOWN { R2.*2 } |
+  }
   cis8.\pp\< cis16 f4( e) |
   d4.\> a8( a'4)\! |
   cis,8.\< cis16 f4(\> e) |
   d2\! r4 |
   R2.*3 |
-  fis,8(\p\<^\dolcissimo g a\> b a g) |
+  fis,8(\pp\<^\dolcissimo g a\> b a g) |
   fis2\< e4( |
   g2)\> e4( |
   a2)\! r4 |
-  fis8(\p\<^\dolcissimo g a\> b a g) |
+  fis8(\< g a\> b a g) |
   fis2\< e4( |
   g2)\> e4( |
   f2)\! r4 |
   R2.*3 |
-  bes4(\p\< aes4.)\! g8( |
+  bes4(\p\< aes4.)\! e8( |
   g4.)\> f8\! c'4~\< |
   c4. d8(\< ees d) |
-  ees2. |
+  ees2.\> |
   aes,4.\< bes8(\! ces bes) |
   ces2.\> |
   b4.\p\< ais8(\! b ais) |
   b2.(\> |
-  ais)\! |
+  ais) |
   gis8(\p\< a b\> cis b a) |
   gis2\< fis4( |
   a2)\! fis4(\> |
-  gis2)\! r4 |
+  gis2) r4\! |
   R2.*3 |
   bes'8(\pp\<^\espressivo g ees c bes4) |
   c4(\> d f) |
@@ -78,15 +88,30 @@ oboe = \relative c''
   c4.(\pp^\dolcissimo a8 c4) |
   c8(\< a gis\! a c a) |
   c2.\> |
-  a'2\fz e4(\<^\espressivo |
+  a'2\fz e4(\<^\espressivo | \tag #'part \noBreak
   g4.)\! f8( d bes) |
   a2\p\>^\rall gis8( c |
-  a2)\> \times 2/3 {gis8(^\marc\< c-_ c-_)} |
+  a2)\> \times 2/3 {gis8(^\marc\< c-- c--)} |
   a2.\> |
   aes2(\p\> g4) s1*0\! |
   R2.*4 |
   R2.^\fermataMarkup |
-  R2.*6^\aTempo |
+  \tag #'piano { R2.*6^\aTempo | }
+  \tag #'part
+  {
+    R2.*4^\aTempo |
+    <<
+      {
+        \voiceOne
+        R2.*2 |
+      }
+      \new CueVoice
+      {
+        r4_"Piano" <e c a> <a e c> |
+        r <e c a> <a e c> |
+      }
+    >> \oneVoice
+  }
   a'4(\pp\< gis4.) e8(\! |
   g4 fis4.) d8( |
   f ees cis e d bes) |
@@ -95,8 +120,20 @@ oboe = \relative c''
   a4.)\! e8( e'4) |
   R2.*2^\rit |
   R2.*2 |
-  R2.^\rall |
-  R2.^\fermataMarkup |
+  \tag #'piano
+  {
+    R2.^\rall |
+    R2.^\fermataMarkup |
+  }
+  \tag #'part
+  {
+    s1*0_\markup {\tiny "Horn"}
+    \transposedCueDuring "horn" #DOWN c''
+    {
+      R2.^\rall |
+      R2.^\fermataMarkup |
+    }
+  }
   r4^\aTempo e2\p |
   d4\< a'2 s1*0\! |
   R2.*2 |

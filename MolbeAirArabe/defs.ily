@@ -24,20 +24,10 @@ wipeNote =
   \once \override Stem #'transparent = ##t
 }
 
-outline =
-{
-  #(set-accidental-style 'modern 'Score)
-  \set Score.skipBars= ##t
-  \time 3/4
-  \tempo "Andantino pensieroso" 4=88
-  s2.*102 |
-
-  %a tempo
-  s2.*18 |
-
-  %a tempo
-  s2.*14 | \bar "|."
-}
+rMark = #(define-music-function (parser location markp) (string?)
+#{
+  \mark \markup { \box \bold $markp }
+#})
 
 afterGraceFraction = #(cons 15 16)
 
@@ -46,6 +36,7 @@ afterGraceFraction = #(cons 15 16)
   \context
   {
     \Score
+    \accepts "SoloStaff"
     skipBars = ##t
     extraNatural = ##f
     \override PaperColumn #'keep-inside-line = ##t
@@ -54,6 +45,19 @@ afterGraceFraction = #(cons 15 16)
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+  }
+
+  \context
+  {
+    \Staff
+    \type "Engraver_group"
+    \name "SoloStaff"
+
+    \alias "Staff"
+
+    fontSize = #-3
+    \override StaffSymbol #'staff-space = #(magstep -3)
+    \override RehearsalMark #'font-size = #0
   }
 }
 
@@ -72,4 +76,6 @@ afterGraceFraction = #(cons 15 16)
   ragged-last = ##f
   ragged-bottom = ##f
   ragged-last-bottom = ##f
+
+  #(set-paper-size "letter")
 }

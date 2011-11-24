@@ -1,9 +1,20 @@
-\version "2.13.18"
-
-horn = \relative c''
+\relative c''
 {
   \transposition f
-  R2.*15 |
+  \tag #'piano { R2.*15 | }
+  \tag #'part
+  {
+    R2.*12 |
+    s1*0^\markup {\teeny "Oboe"}
+    \cueDuring "oboe" #UP { R2.*2 | }
+    <<
+      {\voiceTwo R2. | }
+      \new CueVoice \transpose f c \relative c'''
+      {
+        a8.(^"Piano" c,16 e4) r
+      }
+    >> \oneVoice
+  }
   r4 b2\pp\< |
   << c2( {s4 s\>} >> b4) |
   r4\! b2\< |
@@ -52,7 +63,13 @@ horn = \relative c''
   fis2\< f4( |
   e2) e4(\> |
   dis2)\! r4 |
-  R2.*4 |
+  \tag #'piano { R2.*4 | }
+  \tag #'part
+  {
+    R2.*3 |
+    s1*0^\markup {\teeny "Oboe"}
+    \transposedCueDuring "oboe" #UP c' { R2. | }
+  }
   ees'8(\pp\>^\espressivo d c a f4)\! |
   R2. |
   ees'8(\p\> c bes a fis4)\! |
@@ -79,7 +96,22 @@ horn = \relative c''
   r8 b,(\p\< g'2) |
   fis4(\! e\> fis) |
   e2\! r4\fermata |
-  R2.*6^\aTempo |
+  \tag #'piano { R2.*6^\aTempo | }
+  \tag #'part
+  {
+    R2.*4^\aTempo |
+    <<
+      {
+        \voiceOne
+        R2.*2 |
+      }
+      \new CueVoice \transpose f c' \relative c'
+      {
+        r4_"Piano" <e c a> <a e c> |
+        r <e c a> <a e c> |
+      }
+    >> \oneVoice
+  }
   b'2.(\pp |
   a)\! |
   a( |
