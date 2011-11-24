@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFive = \relative c''
+\relative c''
 {
   \transposition f
   \time 4/4

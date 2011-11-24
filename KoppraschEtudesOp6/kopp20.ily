@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwenty = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Molto risoluto" 4=80

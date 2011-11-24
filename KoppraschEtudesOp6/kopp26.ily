@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentySix = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Allegro vivace" 4=96

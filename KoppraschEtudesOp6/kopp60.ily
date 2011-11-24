@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppSixty = \relative c
+\relative c
 {
   \transposition f
   \tempo "Moderato" 4=80
@@ -10,7 +8,7 @@ koppSixty = \relative c
     c16-.\f c'32( e g e c16) c'-> c,32( e g e c16) e'-> c,32( e g e c16) c'-> c,32( e g e c16) |
     g16-. g'32( b d b g16) b,16-. g'32( b d b g16) d16-. g32( b d b g16) b,16-. g'32( b d b g16) |
     c,16-. c'32( d e d c16) f,-. d'32( e f e d16) g,-. c32( d e d c16) g,-. b'32( c d c b16) |
-    c-. c,32( e g e c16 e'-. e,32( g c g e16) c4 r |
+    c-. c,32( e g e c16) e'-. e,32( g c g e16) c4 r |
     c16-.\p c'32( d e d c16) e,-. c'32( d e d c16) g-. c32( d e d c16) e,-. c'32( d e d c16) |
     g,-.\f b'32( c d c b16) g'-. b,32( c d c b16) e-. a,32( b c b a16) fis-. c'32( d e d c16) |
     g-. b32( c d c b16) c,-. a'32( b c b a16) d,-. g32( a b a g16) d'-. fis,32( g a g fis16) |
@@ -37,7 +35,7 @@ koppSixty = \relative c
   g16-. g'32( a b a g16) f'-. g,32( a b a g16) c,,-. c'32( e g e c16) e'-. c,32( e g e c16) |
   g-. b'32( c d c b16) g,-. c'32( d e d c16) g,-. g'32( a b a g16) g'8 r |
   c,,,16-. e'32( g bes g e16) c,-. c'32( e g e c16) c,-. c'32( f a f c16) fis,-. a'32( c ees c a16) |
-  g,-. g'32( c e c g16) g'8-. r g,,16( g'32( b d b g16) g'8-. r |
+  g,-. g'32( c e c g16) g'8-. r g,,16 g'32( b d b g16) g'8-. r |
   e,16-. c'32( e g e c16) c,-. g'32( c e c g16) d-. b'32( d f d b16) g,-. g'32( b d b g16) |
   c,-. c'32( e g e c16) e,-. g32( c e c g16) d-. b'32( d f d b16) g,-. g'32( b d b g16) |
   c,,-. c'32( e g e c16) e'-. c,32( e g e c16) c,4 r | \bar "|."

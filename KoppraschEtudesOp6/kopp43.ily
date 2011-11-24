@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFortyThree = \relative c'
+\relative c'
 {
   \transposition f
   \key ees \major
@@ -47,7 +45,7 @@ koppFortyThree = \relative c'
     c( aes) f aes( f) d |
     ees(\f g) bes bes bes bes |
     c( bes) bes a(\p bes) bes |
-    bes(\< c d \appoggiatura f16 ees8 d ees |
+    bes\< c d \appoggiatura f16 ees8 d ees |
     g\> f ees d\! c b |
     c d e f g aes |
     bes, c d ees f g |

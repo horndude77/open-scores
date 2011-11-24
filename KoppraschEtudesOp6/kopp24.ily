@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentyFour = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Allegro risoluto" 4=72

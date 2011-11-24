@@ -1,12 +1,12 @@
-\version "2.13.31"
-
-koppThirtyThree = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Adagio" 4=60
   \time 2/4
   \partial 8 g8(\p
-  \override Beam #'auto-knee-gap = #1
+  % TODO: Consider playing with beaming and knee gap to make this look more
+  %       similar to source.
+  %\override Beam #'auto-knee-gap = #1
   c16) r c'8( e16) r c,8( |
   b16) r d'8( f16) r g,,8( |
   c16) r e'8( g16) r e,8( |

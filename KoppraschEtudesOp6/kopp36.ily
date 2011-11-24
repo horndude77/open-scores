@@ -1,26 +1,4 @@
-\version "2.13.31"
-
-koppThirtySixArticulations = \relative c''
-{
-  \time 2/4
-  \mark "1"
-  \partial 8 c8 | \noBreak
-  f16( d) e-. c-. d[( bes) c-. a]-. | \bar "||" \noBreak
-
-  \mark "2"
-  \partial 8 c8 | \noBreak
-  f16-. d-. e( c) d[-. bes-. c( a]) | \bar "||" \noBreak
-
-  \mark "3"
-  \partial 8 c8( | \noBreak
-  f16) d( e) c( d[) bes( c) a]\laissezVibrer | \bar "||" \noBreak
-
-  \mark "4"
-  \partial 8 c8 | \noBreak
-  f16-. d( e c) d[-. bes( c a]) | \bar "||"
-}
-
-koppThirtySix = \relative c''
+\relative c''
 {
   \transposition f
   \key f \major

@@ -1,25 +1,4 @@
-\version "2.13.31"
-
-koppTenArticulations = \relative c'
-{
-  \time 4/4
-  \mark "1"
-  e8-. c-. d( e) f-. d-. e( f) | \bar "||" \noBreak
-
-  \mark "2"
-  e8-. c( d) e-. f-. d( e) f-. | \bar "||" \noBreak
-
-  \mark "3"
-  e8-. c( d) e( f) d( e) f\laissezVibrer | \bar "||" \noBreak
-
-  \mark "4"
-  e8( c d) e-. f( d e) f-. | \bar "||" \noBreak
-
-  \mark "5"
-  e8( c) d( e) f( d) e( f) | \bar "||"
-}
-
-koppTen = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Allegro vivace" 4=88

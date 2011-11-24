@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentyNine = \relative c''
+\relative c''
 {
   \transposition f
   \key c \major
@@ -36,7 +34,9 @@ koppTwentyNine = \relative c''
 
   \repeat volta 2
   {
-    \partial 4 \times 2/3 {e8(\mf fis gis)} |
+    \set Timing.measureLength = #(ly:make-moment 1 4)
+    \times 2/3 {e8(\mf fis gis)} |
+    \set Timing.measureLength = #(ly:make-moment 4 4)
     \times 2/3 {a( e) a} \times 2/3 {c( b) a} \times 2/3 {b( e,) b'} \times 2/3 {d( c) b} |
     \times 2/3 {c( e) a,-.} \times 2/3 {c( e) a,-.} \times 2/3 {b( e) e,-.} \times 2/3 {b'( e) e,-.} |
     \times 2/3 {a( e) a} \times 2/3 {c( b) a} \times 2/3 {b( e,) b'} \times 2/3 {d( c) b} |
@@ -50,7 +50,8 @@ koppTwentyNine = \relative c''
     \times 2/3 {a,( e) a-.} \times 2/3 {c( b) a-.} \times 2/3 {b( e,) b'-.} \times 2/3 {d( c) b-.} |
     \times 2/3 {c( e) e,-.} \times 2/3 {b'( e) e,-.} a4
   }
-  \partial 8*5 r2\fermata r8 \bar "|."
+  \set Timing.measureLength = #(ly:make-moment 5 8)
+  r2\fermata r8 \bar "|."
   \once \override Staff.RehearsalMark #'break-visibility = #begin-of-line-invisible
   \once \override Staff.RehearsalMark #'direction = #DOWN
   \once \override Staff.RehearsalMark #'font-size = 0

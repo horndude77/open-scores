@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppSixteen = \relative c'
+\relative c'
 {
   \transposition f
   \key c \major

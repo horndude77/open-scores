@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentySeven = \relative c''
+\relative c''
 {
   \transposition f
   \key f \major
@@ -30,7 +28,11 @@ koppTwentySeven = \relative c''
   }
   \alternative
   {
-    {\partial 8*3 c4 r8}
+    {
+      \set Timing.measureLength = #(ly:make-moment 3 8)
+      c4 r8
+      \set Timing.measureLength = #(ly:make-moment 2 4)
+    }
     {c4 r4}
   }
   \repeat volta 2

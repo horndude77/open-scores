@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppSeven = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Adagio" 4=88

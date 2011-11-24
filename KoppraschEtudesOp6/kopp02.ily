@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwo = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Moderato" 2=72

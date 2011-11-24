@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppThree = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Poco allegro" 4=72

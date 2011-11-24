@@ -1,27 +1,4 @@
-\version "2.13.31"
-
-koppTwelveArticulations = \relative c''
-{
-  \key g \major
-  \time 4/4
-  \mark "1"
-  \partial 8 d8 | \noBreak
-  e16-. d-. c( b) d-. c-. b( a) c-. b-. a( g) b-. a-. g( fis) | \bar "||" \noBreak
-
-  \mark "2"
-  << {s16 \partial 16 s} d'8 >> | \noBreak
-  e16( d c) b-. d( c b) a-. c( b a) g-. b( a g) fis-. | \bar "||" \noBreak
-
-  \mark "3"
-  << {s16 \partial 16 s} d'8 >> | \noBreak
-  e16-. d( c b) d-. c( b a) c-. b( a g) b-. a( g fis) | \bar "||" \noBreak
-
-  \mark "4"
-  << {s16 \partial 16 s} d'8 >> | \noBreak
-  e16-. d( c) b( d) c( b) a( c) b( a) g( b) a( g) fis\laissezVibrer | \bar "||"
-}
-
-koppTwelve = \relative c''
+\relative c''
 {
   \transposition f
   \key g \major

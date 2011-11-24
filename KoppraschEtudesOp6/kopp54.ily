@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFiftyFour = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Allegro con spirito" 4=92

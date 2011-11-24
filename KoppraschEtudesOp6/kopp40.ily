@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppForty = \relative c'
+\relative c'
 {
   \transposition f
   \tempo "Presto" 4.=80
