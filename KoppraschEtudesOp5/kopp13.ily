@@ -1,11 +1,4 @@
-\version "2.13.31"
-
-rhythm = #(define-music-function (parser location music) (ly:music?)
-#{
-  \makeRhythm $music "8. 16"
-#})
-
-koppThirteen = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Maestoso" 4=96
@@ -13,14 +6,14 @@ koppThirteen = \relative c''
   \key g \minor
   \repeat volta 2
   {
-    \rhythm
+    \dottedEightSixteenthRhythm
     {
       g a bes c d g ees g |
       d g c, g' bes, g' a, g' |
       g, bes a c bes ees d cis |
       d fis a fis
     } d4 r |
-    \rhythm
+    \dottedEightSixteenthRhythm
     {
       g\p fis g a bes g ees d |
       fis e fis g a fis d c |
@@ -33,24 +26,24 @@ koppThirteen = \relative c''
       d g bes, ees d c a fis |
     }
   }
-  \rhythm
+  \dottedEightSixteenthRhythm
   {
     g\f ees bes' g ees' bes g' ees |
     bes' aes f d
   } bes4 r |
-  \rhythm
+  \dottedEightSixteenthRhythm
   {
     f'\p d f c f bes, f' aes, |
     g bes ees g
   } e4( f8) r |
-  \rhythm
+  \dottedEightSixteenthRhythm
   {
     g\f d ees c f c d bes |
     ees bes c a d a bes g |
     fis d' a fis' bes, g' d bes' |
     a d a fis
   } d4 r\fermata |
-  \rhythm
+  \dottedEightSixteenthRhythm
   {
     g,\p a bes c d g ees g |
     d\< g c, g' bes, g' a, g' |
@@ -60,7 +53,7 @@ koppThirteen = \relative c''
     c\p ees bes ees a, ees' g, ees' |
   }
   fis,8. ees'16 r4 g,8. d'16 r4 |
-  \rhythm
+  \dottedEightSixteenthRhythm
   {
     ees,\f fis a c ees fis a fis |
     g d ees c bes g d' fis, |

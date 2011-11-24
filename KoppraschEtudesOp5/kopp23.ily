@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentyThree = \relative c'' \new Voice
+\relative c'' \new Voice
 {
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \transposition f

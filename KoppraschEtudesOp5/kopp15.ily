@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFifteen = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Moderato" 4=100

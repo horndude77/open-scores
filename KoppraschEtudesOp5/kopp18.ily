@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppEighteen = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Poco andante" 4=100

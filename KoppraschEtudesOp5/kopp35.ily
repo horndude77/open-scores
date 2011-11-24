@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppThirtyFive = \relative c''
+\relative c''
 {
   \override Staff.NoteHead #'style = #'baroque
   \transposition f

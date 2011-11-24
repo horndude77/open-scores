@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppThirtyNine = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Larghetto" 4.=60

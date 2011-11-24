@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFiftyThree = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Allegretto" 4.=72

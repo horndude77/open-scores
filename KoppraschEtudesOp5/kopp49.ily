@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFortyNine = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Allegro molto" 4=112

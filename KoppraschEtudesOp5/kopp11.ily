@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppEleven = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Adagio" 8=88

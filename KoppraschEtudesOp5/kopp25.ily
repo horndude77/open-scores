@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentyFive = \relative c''
+\relative c''
 {
   \tempo "Presto" 4=132
   \transposition f
@@ -9,8 +7,6 @@ koppTwentyFive = \relative c''
   \partial 8*3
   \repeat volta 2
   {
-    % NOTE: This version of lilypond doesn't beam these three pick-up notes
-    % together. Consider manually beaming.
     g8-.\f fis-. g-. |
     a-. b-. c-. d-. e-. fis-. |
     g-. a-. b-. a-. g-. fis-. |

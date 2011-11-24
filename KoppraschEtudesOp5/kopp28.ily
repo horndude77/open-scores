@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentyEight = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Andantino" 8=100

@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppThirtyOne = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Adagio" 4=72

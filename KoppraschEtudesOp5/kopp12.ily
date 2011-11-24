@@ -1,23 +1,4 @@
-\version "2.13.31"
-
-koppTwelveArticulations = \relative c'' \new Voice
-{
-  \transposition f
-  \time 4/4
-  <<
-    \repeat unfold 6 {e16 f g a d, e f g \bar "||"}
-    {
-      s16-. s-. s( s) s-. s-. s( s)
-      s-. s( s) s-. s-. s( s) s-.
-      s( s) s( s) s( s) s( s)
-      s-. s( s s) s-. s( s s)
-      s( s s) s-. s( s s) s-.
-      s( s s s) s( s s s)
-    }
-  >>
-}
-
-koppTwelve = \relative c''
+\relative c''
 {
   \tempo "Allegro" 4=88
   e16(\f f) g-. a-. d,( e) f-. g-. c,( d) e-. f-. b,( c) d-. e-. |

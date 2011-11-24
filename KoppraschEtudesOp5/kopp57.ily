@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFiftySeven = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Allegro non tanto" 4=100

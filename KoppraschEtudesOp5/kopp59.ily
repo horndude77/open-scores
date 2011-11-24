@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFiftyNine = \relative c''
+\relative c''
 {
   \transposition f
   \key f \major

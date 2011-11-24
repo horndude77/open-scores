@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentySix = \relative c''
+\relative c''
 {
   \tupletOff
   \set tupletSpannerDuration = #(ly:make-moment 1 4)

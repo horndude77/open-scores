@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentyTwo = \relative c''
+\relative c''
 {
   \tempo "Moderato risoluto" 4=120
   \transposition f

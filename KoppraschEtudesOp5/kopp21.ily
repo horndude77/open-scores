@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppTwentyOne = \relative c'
+\relative c'
 {
   \tempo "Presto" 2=80
   \set tupletSpannerDuration = #(ly:make-moment 1 4)

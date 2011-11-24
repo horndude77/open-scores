@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppThirtySix = \relative c''
+\relative c''
 {
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
   \transposition f

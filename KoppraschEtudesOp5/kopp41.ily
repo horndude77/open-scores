@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFortyOne = \relative c''
+\relative c''
 {
   \transposition f
   \key f \major
@@ -9,8 +7,6 @@ koppFortyOne = \relative c''
   \partial 8*3
   \repeat volta 2
   {
-    % NOTE: This version of lilypond doesn't beam these three pick-up notes.
-    % Consider manually beaming them.
     c8\f a bes |
     c f a, bes c f |
     a, bes c f a, bes |

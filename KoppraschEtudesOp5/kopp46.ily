@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFortySix = \relative c''
+\relative c''
 {
   \transposition f
   \tempo "Andante espressivo" 4=88

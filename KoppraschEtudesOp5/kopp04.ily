@@ -1,6 +1,4 @@
-\version "2.13.31"
-
-koppFour = \relative c''
+\relative c''
 {
   \transposition f
   \tempo 4=100
