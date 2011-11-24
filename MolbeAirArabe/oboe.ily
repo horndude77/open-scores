@@ -69,7 +69,7 @@ oboe = \relative c''
   ees2(\p\> c4) |
   ees8(\pp\< c a gis a c) |
   ees2~\! ees8 c8(\> |
-  ees2\! r4 |
+  ees2)\! r4 |
   c2(\pp\< gis4) |
   c4.\! a8( gis a) |
   c4. a8(\> c4) |
@@ -101,13 +101,13 @@ oboe = \relative c''
   d4\< a'2 s1*0\! |
   R2.*2 |
   r4 a2~\mf^\espressivo |
-  a4 gis4.\> e8( |
+  a4 gis4.\> e8(\! |
   g f c) f( e b) |
-  e( d a) d(\> c a) |
-  c(^\dolcissimo_\semprePiuDimERall a g) a( d a) |
+  e( d a) d(\> c a) s1*0\! |
+  c8(^\dolcissimo_\semprePiuDimERall a g) a( d a) |
   c( a g) a( d a) |
   c(\> a g) a( d a)\! |
-  c(_\moltoRall a g) a( c a) |
+  c(\>_\moltoRall a g) a( c a) |
   a'2.\pp |
   R2. |
 }

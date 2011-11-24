@@ -98,8 +98,8 @@ horn = \relative c''
   R2. |
   g4( e b) |
   e(\> b g) |
-  b(\!_\dolcissimo g e) |
-  b'(_\semprePiuDimERall g e) |
+  b(\!^\dolcissimo_\semprePiuDimERall g e) |
+  b'( g e) |
   b'(\> g e) |
   b'(\>_\moltoRall g e) |
   e'2.\pp |

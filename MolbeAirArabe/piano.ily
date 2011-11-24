@@ -208,16 +208,18 @@ leftHand = \relative c
   <b e,> |
   <b e,>~ |
   <<
+    \new Voice
     {
+      \voiceOne
       b'2( bes4) |
       a2
     }
-    \\
     {
+      \voiceTwo
       <b, e,>2.~ |
       <b e,>2
     }
-  >> <e e,>8( <b b,>) |
+  >> \oneVoice <e e,>8( <b b,>) |
   <bes bes,>2. |
   <bes bes,> |
   <bes bes,>2 <ees ees,>4~ |
