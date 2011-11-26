@@ -1,7 +1,9 @@
 \relative c''
 {
   \transposition f
+  \tempoTextLengthOn
   R1*8 |
+  \tempoTextLengthOff
   r4 g-.\p d'2~ |
   d4 b8( a g4) a-. |
   g-. \times 2/3 {d8 g b} d2~ |

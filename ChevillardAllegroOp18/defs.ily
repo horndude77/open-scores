@@ -13,6 +13,18 @@ justSempreCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 
 
 cantabile = \markup {\italic cantabile}
 
+tempoTextLengthOn =
+{
+  \override Score.MetronomeMark #'extra-spacing-width = #'(0 . 0)
+  \override Score.MetronomeMark #'extra-spacing-height = #'(-inf.0 . +inf.0)
+}
+
+tempoTextLengthOff =
+{
+  \override Score.MetronomeMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \override Score.MetronomeMark #'extra-spacing-height = #'(0 . 0)
+}
+
 afterGraceFraction = #(cons 15 16)
 
 \layout
