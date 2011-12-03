@@ -28,6 +28,8 @@ outline =
   s1*4 | \bar "|."
 }
 
+\pointAndClickOff
+
 afterGraceFraction = #(cons 15 16)
 
 \layout
