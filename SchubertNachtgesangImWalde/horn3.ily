@@ -146,7 +146,7 @@ hornThree = \relative c'
   c4\mf g'8 g e4 g8 g |
   c,4 e8 e g4\< c8 c |
   e4\> c8 c g4\! c8 c |
-  e,4\justDecresc g8 g c,4 e8 e |
+  e,4 g8\justDecresc g c,4 e8 e |
   c1\p |
   g\pp |
   g~ |
