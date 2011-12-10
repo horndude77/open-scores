@@ -1,6 +1,4 @@
-\version "2.13.42"
-
-hornTwo = \relative c''
+\relative c''
 {
   \transposition e
   g4\f |
@@ -158,5 +156,5 @@ hornTwo = \relative c''
   R1 |
   r2 c\< |
   e g |
-  << {c1\fermata} {s2..\f\> s8\!} >> |
+  c1\fermata\f\> s1*0\! |
 }

@@ -1,6 +1,3 @@
-\version "2.13.43"
-
-vocalDynamics =
 {
   s4 |
   s2.*11 |
@@ -90,5 +87,5 @@ vocalDynamics =
   s1*8 |
   s1\< |
   s1 |
-  s2..\f\> s8\! |
+  s\f\> s1*0\! |
 }

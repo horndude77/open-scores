@@ -1,6 +1,4 @@
-\version "2.13.42"
-
-bassOne = \relative c'
+\relative c'
 {
   \clef bass
   \key e \major

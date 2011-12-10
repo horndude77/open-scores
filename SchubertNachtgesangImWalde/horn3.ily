@@ -1,6 +1,4 @@
-\version "2.13.42"
-
-hornThree = \relative c'
+\relative c'
 {
   \transposition e
   e4\f |
@@ -160,5 +158,5 @@ hornThree = \relative c'
   R1 |
   r2 \clef treble c'\< |
   c g |
-  << {g1\fermata} {s2..\f\> s8\!} >> |
+  g1\fermata\f\> s1*0\! |
 }

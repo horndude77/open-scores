@@ -1,6 +1,4 @@
-\version "2.13.42"
-
-tenorOne = \relative c'
+\relative c'
 {
   \clef "treble_8"
   \key e \major

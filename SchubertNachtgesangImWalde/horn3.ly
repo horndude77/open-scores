@@ -1,9 +1,9 @@
-\version "2.13.43"
+\version "2.15.21"
 
 \include "defs.ily"
-\include "horn3.ily"
 
-notes = \hornThree
 instrument = "Horn III in E"
 
-\include "part.ily"
+\include "header.ily"
+
+\score { \hornStaff #3 "E" ##t ##t }

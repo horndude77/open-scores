@@ -1,6 +1,4 @@
-\version "2.13.42"
-
-hornOne = \relative c''
+\relative c''
 {
   \transposition e
   g4\f |
@@ -167,5 +165,5 @@ hornOne = \relative c''
   R1 |
   r2 e\< |
   g c |
-  << {e1\fermata} {s2..\f\> s8\!} >> |
+  e1\fermata\f\> s1*0\! |
 }

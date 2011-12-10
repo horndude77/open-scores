@@ -1,6 +1,4 @@
-\version "2.13.42"
-
-hornFour = \relative c'
+\relative c'
 {
   \transposition e
   c4\f |
@@ -190,5 +188,5 @@ hornFour = \relative c'
   R1 |
   r2 c'\< |
   g e |
-  << {c1\fermata} {s2..\f\> s8\!} >> |
+  c1\fermata\f\> s1*0\! |
 }
