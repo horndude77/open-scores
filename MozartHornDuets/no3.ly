@@ -13,7 +13,7 @@ hornIThree =  \relative c'
     f2 a4 |
     \appoggiatura a16 g8( f16 g)  f8 c' \appoggiatura d16 c8( bes16 a) |
     g2 bes4 \appoggiatura bes16 a8( g16 a g4) r |
-    c2 \appoggiatura bes16 a8)( g16 f)|
+    c2 \appoggiatura bes16 a8( g16 f)|
     e (g f a g bes a c) bes8 r |
     a16( c bes a bes c d e ) f( c) a f|
     e ( g f a g bes a c) bes8 r

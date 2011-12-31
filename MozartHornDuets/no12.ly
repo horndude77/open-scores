@@ -4,7 +4,31 @@ globalTwelve =
 {
   \time 2/4
   \key c \major
-  \partial 8    
+  \partial 8
+  \repeat volta 2 { s8 | s2*7 | }
+  \alternative
+  {
+    {
+      \set Timing.measureLength = #(ly:make-moment 3 8)
+      s4.
+      \set Timing.measureLength = #(ly:make-moment 2 4)
+    }
+    { s4 }
+  }
+  \repeat volta 2
+  {
+    s4 | s2*32 |
+  }
+  \alternative
+  {
+    {
+      \set Timing.measureLength = #(ly:make-moment 1 4)
+      s4
+      \set Timing.measureLength = #(ly:make-moment 2 4)
+    }
+    { s2 }
+  }
+  \bar "|."
 }
 
 hornITwelve =  \relative c''
@@ -17,7 +41,7 @@ hornITwelve =  \relative c''
   \alternative
   {
     { f4 r8 }
-    { \partial 4*0 f4 }
+    { f4 }
   }
 
   \repeat volta 2
@@ -47,8 +71,8 @@ hornITwelve =  \relative c''
   }
   \alternative
   {
-    { \partial 4 bes4 }
-    {bes4 r }
+    { bes4 }
+    { bes4 r }
   }
 
 }
@@ -64,7 +88,7 @@ hornIITwelve =  \relative c'
   \alternative
   {
     { f,4 r8 }
-    {\partial 4*0 f4 }
+    { f4 }
   }
   \repeat volta 2
   {
