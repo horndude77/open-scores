@@ -1,8 +1,8 @@
-fiveNotes = \relative c''
+\relative c''
 {
+  \key c \major
   \repeat volta 2
   {
-    \key c \major
     c8-. |
     c-. g-. a-. f-. |
     g-. e-. f-. d-. |
@@ -23,11 +23,11 @@ fiveNotes = \relative c''
     c8-. b16( c) d8-. c16( d) |
     e8-. c-. f-. d-. |
     g-.(\< a-. b-. c-.) |
-    <g b>4.\(\sfz d16(\p e)\) |
+    b4.\(\sfz d,16(\p e)\) |
     f8-. e16( f) g8-. a-. |
     g-.( f-. e-. d-. |
     e-. c-. a-. b-.) |
-    <c c,>4.
+    c4.
   }
   \repeat volta 2
   {
@@ -51,10 +51,10 @@ fiveNotes = \relative c''
     c( b c a d c d b) |
     e( d e c f e f d) |
     g(\< f g a b a b c) |
-    <g b>4.\sfz\( d16(\mf e)\) |
+    b4.\sfz\( d,16(\mf e)\) |
     f( e f d g a f a) |
     g( a g f e d e c) |
     e(\< d c b) a( g a b) |
-    <c c,>4.\!
+    c4.\!
   }
 }
