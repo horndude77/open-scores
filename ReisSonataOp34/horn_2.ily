@@ -1,5 +1,6 @@
 \relative c''
 {
+  \transposition f
   R4.*3*4 |
   r4 r16. b32\pp b4. r4. |
   r4 r16. b32 b4. r4. |

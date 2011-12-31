@@ -1,13 +1,16 @@
 {
-  \tempo "Larghetto"
+  \tempo "Larghetto" 4=60
   \time 3/4
-  \partial 16
-  s16 |
+  \partial 32
+  s32 |
   s2.*7 |
+  \tempo "Allegro molto" 4=108
   \time 2/2
+  \set Timing.beamExceptions =
+  #'((end . (((1 . 8) . (4 4)) ((1 . 12) . (3 3 3 3)) ((1 . 16) . (4 4 4 4)))))
   \repeat volta 2
   {
-    s1*114 |
+    s1*115 |
   }
   s1*196 |
   \tempo \rit

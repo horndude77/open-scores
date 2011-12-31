@@ -1,9 +1,9 @@
 \relative c'
 {
   \transposition f
-  r16 |
-  r4 r8. e16\f e4 |
-  r4 r8. e16 e4 |
+  r32 |
+  r4 r8.. e32\f e4 |
+  r4 r8.. e32 e4 |
   e'2.(\p |
   f2 e4 |
   d2 c4 |
@@ -78,7 +78,7 @@
     d'1~\f |
     d4 d\p d d |
     d r r2 |
-    R1*8 |
+    R1*9 |
     r8 d-.\p d-. d-. e4->( d8) r |
     r8 d-. d-. d-. e4->( d8) r |
     r8 d-. d-. d-. e->( d) e->( d) |

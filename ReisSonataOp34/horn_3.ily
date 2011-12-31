@@ -1,5 +1,6 @@
 \relative c''
 {
+  \transposition f
   g8(\p c) |
   e( d c b) d(\> c)\! b-| a-| |
   g4.( e8 c') r g( c) |
