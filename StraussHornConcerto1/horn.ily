@@ -158,13 +158,11 @@ hornMvtII = \relative c''
   aes4^\unPocoAccelerando\< aes16( bes |
   c d ees8) d( | g4) ees16(\f f |
   <<
-    {
-      \stemUp g16 a bes8) fis(\dim | g)
-    }
+    { \tag #'alt \voiceOne g16 a bes8) fis(\dim | g) }
     %This new Voice breaks quoting anything else in this part. Remove this tag
     %when quoting.
-    \tag #'alt \new Voice {\smaller \stemDown g16 g, bes8 a( | g)}
-  >> \stemNeutral d'4~ | d8 d4~ | d8 bes4 | bes8 r r |
+    \tag #'alt \new CueVoice { \voiceTwo g16 g, bes8 a( | g) }
+  >> \oneVoice d'4~ | d8 d4~ | d8 bes4 | bes8 r r |
   bes4.(^\aTempo\pp | ees4) ees8( |
   bes4. | ges4) ees8( | bes4) bes8(\< |
   bes'4) aes8 | aes8(\> ges~ \times 2/3 {ges16 f ees} |

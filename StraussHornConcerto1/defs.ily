@@ -60,7 +60,7 @@ setCue = #(define-music-function (parser location name) (string?)
 
 namedCueDuring = #(define-music-function (parser location cuevoice cuename direction cuemusic) (string? string? number? ly:music?)
 #{
-  \tag #'part {\cueDuring #$cuevoice #$direction { \setCue #$cuename $cuemusic }}
+  \tag #'part {\cueDuring $cuevoice $direction { \setCue $cuename $cuemusic }}
   \tag #'score $cuemusic
 #})
 

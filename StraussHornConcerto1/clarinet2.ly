@@ -2,7 +2,7 @@
 
 \include "clarinet2.ily"
 
-instrument = "clarinet II"
+instrument = "Clarinet II"
 notes = \clarinetTwo
 
 \include "part.ily"

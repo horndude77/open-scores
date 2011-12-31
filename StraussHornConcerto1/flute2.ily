@@ -63,7 +63,7 @@ fluteTwoMvtI = \relative c'''
   bes bes4-. bes-. bes-.) bes8~( |
   bes c4-. c-. c-.) c8(\( |
   d) d4-. d-. d-.\) bes8~( |
-  bes bes4-. bes-. bes-.) bes8~( |
+  bes bes4-. bes-. bes-.) bes8~ |
   bes bes( a g a) ees'( d c |
   bes4) r r2 |
   r8 bes'(\pp d c bes) f-.( d-. bes-. |

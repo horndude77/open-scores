@@ -183,7 +183,7 @@ violaMvtII = \relative c
   ees~ |
   ees |
   ees'8~ \times 2/3 {ees16 ees-.( aes-.} ces8 |
-  bes4 \times 2/3 {ees,,16-.( ees-. ees-.)} |
+  bes4) \times 2/3 {ees,,16-.( ees-. ees-.)} |
   ees4.( |
   f) |
   ees\< |
