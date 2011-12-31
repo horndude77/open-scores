@@ -1,3 +1,5 @@
+\version "2.15.23"
+
 \header
 {
   title = \markup{Concerto for Horn, Op.8}
@@ -15,7 +17,7 @@
   maintainer = "Jay Anderson"
   maintainerEmail = "horndude77@gmail.com"
   maintainerWeb = "http://open-scores.blogspot.com/"
-  lastupdated = "2009/May/18"
+  lastupdated = "2011 December 30"
   footer = "Mutopia-"
   tagline =
   \markup
@@ -38,7 +40,7 @@
           Typeset using \with-url #"http://www.LilyPond.org"
           \line
           { \teeny www. \hspace #-1.0 LilyPond \hspace #-1.0 \teeny .org }
-          by \maintainer \hspace #-1.0 . \hspace #0.5 Copyright © 2009. \hspace #0.5 Reference: \footer
+          by \maintainer \hspace #-1.0 . \hspace #0.5 Copyright © 2009-2011. \hspace #0.5 Reference: \footer
         }
       }
       \line

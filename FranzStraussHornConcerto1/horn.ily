@@ -1,6 +1,4 @@
-\version "2.12.2"
-
-\include "defs.lyi"
+\version "2.15.23"
 
 hornMvtI = \relative c''
 {
@@ -36,9 +34,7 @@ hornMvtI = \relative c''
   d'4.(\< c8 b c d c) |
   f2(\> d) |
   bes2(\! a4 g) |
-  \crescTextCresc
-  f4 ees~\< ees8. ees'16-. d-. c-. bes-. a-. |
-  \crescHairpin
+  f4 ees~\cresc ees8. ees'16-. d-. c-. bes-. a-. |
   g4( fis8 g a4) d8( c) |
   bes4 r d4..( f32) ees( |
   d4) g,-> g'2-> |
@@ -87,9 +83,7 @@ hornMvtI = \relative c''
   ees4( g16 f) ees-. d-. c( b) c-. d-. ees( d) c-. bes-. |
   a( g) a-. bes-. c( bes) a-. g-. f8[\( \appoggiatura {g16[ f]} e16\) f]-. a( g) f-. ees-. |
   d4 r f8(\p g16) f-. e( f) g-. aes-. |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  bes( c bes) aes-. g8\< r g( a16) g-. fis( g) a-. bes-. |
+  bes( c bes) aes-. g8\justCresc r g( a16) g-. fis( g) a-. bes-. |
   c( d c) bes-. a8 r a( bes16) a-. gis( a) bes-. c-. |
   d( ees d) c-. bes8 r16 bes b-. g( fis g) a-. b-. c-. d-. |
   ees4\! r8 b \acciaccatura d8 c16( b c) d-. ees-. f-. fis( g) |
@@ -129,7 +123,6 @@ hornMvtII = \relative c''
   \key ees \major
   R4.*3 |
   g2.( aes4 f8) |
-  \crescHairpin
   ees2. g4(\< bes8 |
   << {s4. s\>} {ees2.} >> d4 c8) |
   c4.(\! bes2.) |
@@ -212,16 +205,13 @@ hornMvtIII = \relative c''
   g2\! r |
   R1*10 |
   d'1~\sfp |
-  \override DynamicTextSpanner #'dash-period = #-1.0
-  \crescTextCresc
-  d4\< d,( d'2~) |
+  d4\justCresc d,( d'2~) |
   d4 d,( d'2~) |
   d4 d,( d'2~) |
   d2.( c4) |
 
   \key g \major
   b2~\! b8( c b a |
-  \crescHairpin
   g2~) g8(\< a b c) |
   d4.( dis8 e4\> cis) |
   d2( b)\! |
@@ -253,8 +243,7 @@ hornMvtIII = \relative c''
     c4 d16( c) b-. c-. d( c) fis-. e-. d-. c-. b-. a-. |
   }
   g4 r g8( fis16) g-. fis( g) a-. b-. |
-  \crescTextCresc
-  c(\< b) c-. d-. e4 a,8( b16) a-. gis( a) b-. cis-. |
+  c(\justCresc b) c-. d-. e4\! a,8( b16) a-. gis( a) b-. cis-. |
   d( cis) d-. e-. fis4 b,8( c16) b-. ais( b) c-. dis-. |
   e( dis) e-. fis-. g8-. g,-. gis4~ gis16( b e) d-. |
   c4~ c16( b) a-. gis-. a( gis) a-. b-. c-. d-. dis( e) |
@@ -281,7 +270,6 @@ hornMvtIII = \relative c''
   b2~ b8. fis16-. g-. a-. b-. c-. |
   d2~ d8. b16-. c-. d-. e-. fis-. |
   g8 cis,( d) ais( b) g( c b) |
-  \crescHairpin
   \afterGrace a1\startTrillSpan {gis16[(\stopTrillSpan a])} |
   e'2-> fis,-> |
   g4\f c16( b) a-. g-. fis-. g-. a-. b-. c-. d-. e-. fis-. |
@@ -296,4 +284,3 @@ horn =
   \hornMvtII
   \hornMvtIII
 }
-

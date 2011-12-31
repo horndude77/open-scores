@@ -1,6 +1,4 @@
-\version "2.12.2"
-
-\include "defs.lyi"
+\version "2.15.23"
 
 pianoRHMvtI = \relative c'
 {

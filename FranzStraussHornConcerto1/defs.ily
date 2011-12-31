@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.15.23"
 
 %Octave
 #(define (octave-up m t)
@@ -48,6 +48,9 @@ eightx =  #(define-music-function (parser location x) (ly:music?)
 #{
   \repeat unfold 8 $x
 #})
+
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((style . none)))
 
 piuLento = \markup {\italic {più lento}}
 animato = \markup {\italic {animato}}
@@ -145,6 +148,7 @@ afterGraceFraction = #(cons 15 16)
   \context
   {
     \Score
+    \accepts "SoloStaff"
     skipBars = ##t
     extraNatural = ##f
     \override PaperColumn #'keep-inside-line = ##t
@@ -152,6 +156,19 @@ afterGraceFraction = #(cons 15 16)
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+  }
+
+  \context
+  {
+    \Staff
+    \type "Engraver_group"
+    \name "SoloStaff"
+
+    \alias "Staff"
+
+    fontSize = #-3
+    \override StaffSymbol #'staff-space = #(magstep -3)
+    \override RehearsalMark #'font-size = #0
   }
 }
 
@@ -161,5 +178,20 @@ afterGraceFraction = #(cons 15 16)
   {
     \Voice
     \remove "Dynamic_performer"
+  }
+
+  \context
+  {
+    \Score
+    \accepts "SoloStaff"
+  }
+
+  \context
+  {
+    \Staff
+    \type "Performer_group"
+    \name "SoloStaff"
+
+    \alias "Staff"
   }
 }

@@ -1,30 +1,23 @@
-\version "2.12.2"
+\version "2.15.23"
 
-\include "piano_notes.lyi"
-\include "horn_notes.lyi"
-\include "defs.lyi"
+\include "defs.ily"
+\include "piano.ily"
+\include "horn.ily"
 
 #(set-global-staff-size 18)
 
 \paper
 {
-  %#(define page-breaking ly:page-turn-breaking)
   ragged-last-bottom = ##f
 }
 
 instrument = "Piano"
 
-\include "header.lyi"
+\include "header.ily"
 \score
 {
   <<
-    \new Staff
-    \with
-    {
-      fontSize = #-3
-      \override StaffSymbol #'staff-space = #(magstep -3)
-    }
-    { \horn }
+    \new SoloStaff { \horn }
     \new PianoStaff
     <<
       \set PianoStaff.connectArpeggios = ##t
@@ -38,11 +31,8 @@ instrument = "Piano"
 \score
 {
   <<
-    \new Staff
-    {
-      \set Staff.midiInstrument = "french horn"
-      \horn
-    }
+    \new Staff \with { midiInstrument = "french horn" }
+    { \horn }
     \new PianoStaff
     <<
       \new Staff="RH" { << \pianoRH \pianoDynamics >> }
@@ -52,4 +42,3 @@ instrument = "Piano"
   >>
   \midi { }
 }
-

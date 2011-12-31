@@ -1,7 +1,7 @@
-\version "2.12.2"
+\version "2.15.23"
 
-\include "defs.lyi"
-\include "horn_notes.lyi"
+\include "defs.ily"
+\include "horn.ily"
 
 \paper
 {
@@ -10,7 +10,7 @@
 
 instrument = "Horn in F"
 
-\include "header.lyi"
+\include "header.ily"
 
 \score
 {
