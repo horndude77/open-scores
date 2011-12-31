@@ -731,7 +731,7 @@ pianoMvtIILeft = \relative c
   <d f>8) r r gis,,4.( |
   a8) r r <c e g bes>4.(\sf |
   <d f a>8) r r bes4.( |
-  a8 r \clef treble <f'' d>8( <e cis>4 <f d>8
+  a8) r \clef treble <f'' d>8( <e cis>4 <f d>8
   <e cis>4 <f d>8 <e cis>4) r8 \clef bass
 
   %K

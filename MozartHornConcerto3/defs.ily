@@ -94,7 +94,9 @@ outlineRondo =
 {
   \time 6/8
   \tempo "Allegro" 4.=112
-  \partial 8 s8 |
+  \set Timing.measureLength = #(ly:make-moment 1 8)
+  s8 |
+  \set Timing.measureLength = #(ly:make-moment 6 8)
   s2.*33 |
 
   \rMark "A"

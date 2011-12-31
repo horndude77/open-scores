@@ -159,7 +159,7 @@ bassoonIRomanze = \relative c'
   c2( bes4) r |
   R1*6 |
   r2 r8 ees,(\p aes bes) |
-  c4.( des16 c) bes8-. g( bes c |
+  c4.( des16 c) bes8-. g( bes c) |
   des4.( ees16 des) c8-. r f-. r |
   ees r des r c4 r |
   R1*2 |

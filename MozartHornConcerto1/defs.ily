@@ -91,7 +91,9 @@ outlineMvtII =
 {
   \time 6/8
   \tempo "Allegro" 4.=80
-  \partial 8 s8 |
+  \set Timing.measureLength = #(ly:make-moment 1 8)
+  s8 |
+  \set Timing.measureLength = #(ly:make-moment 6 8)
   %s2.*141 |
   s2.*24 |
 

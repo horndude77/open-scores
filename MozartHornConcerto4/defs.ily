@@ -13,29 +13,37 @@ stop =
   music)
 
 %Add multiple staccato dots for one note.
-tremoloStaccatosOn = #(define-music-function (parser location dots) (number?)
-#{
-   \override Script #'stencil = #ly:text-interface::print
-   %TODO: Remove eval. Automatically figure out how many dots to add.
-   \override Script #'text =
-   #(lambda (grob)
-     (define (build-lst count)
-       (let ((lst (list #:musicglyph "scripts.staccato")))
-         (if (> count 1) (append lst '(#:hspace 0.4) (build-lst (- count 1))) lst)))
-     (eval (list markup #:concat (build-lst $dots)) (interaction-environment)))
-   \override Script #'X-offset =
-   #(lambda (grob)
-     (let* ((parent (ly:grob-parent grob X))
-            (parent-extent (ly:grob-property parent 'X-extent '(0 . 0)))
-            (parent-start (car parent-extent))
-            (parent-end (cdr parent-extent))
-            (parent-center (/ (+ parent-start parent-end) 2.0))
-            (extent (ly:grob-property grob 'X-extent '(0 . 0)))
-            (start (car extent))
-            (end (cdr extent))
-            (val (- parent-center (/ (- end start) 2.0))))
-       val))
-#})
+tremoloStaccatosOn =
+#(define-music-function (parser location dots) (number?)
+  (let ((text-function
+          (lambda (grob)
+            (define (build-lst count)
+              (let ((lst (list #:musicglyph "scripts.staccato")))
+                (if
+                  (> count 1)
+                  (append lst '(#:hspace 0.4) (build-lst (- count 1)))
+                  lst)))
+            ;TODO: Remove eval. Automatically figure out how many dots to add.
+            (eval
+              (list markup #:concat (build-lst dots))
+              (interaction-environment))))
+        (x-offset-function
+          (lambda (grob)
+            (let* ((parent (ly:grob-parent grob X))
+                   (parent-extent (ly:grob-property parent 'X-extent '(0 . 0)))
+                   (parent-start (car parent-extent))
+                   (parent-end (cdr parent-extent))
+                   (parent-center (/ (+ parent-start parent-end) 2.0))
+                   (extent (ly:grob-property grob 'X-extent '(0 . 0)))
+                   (start (car extent))
+                   (end (cdr extent))
+                   (val (- parent-center (/ (- end start) 2.0))))
+              val))))
+    #{
+      \override Script #'stencil = #ly:text-interface::print
+      \override Script #'text = $text-function
+      \override Script #'X-offset = $x-offset-function
+    #}))
 
 tremoloStaccatosOff =
 {
@@ -145,7 +153,9 @@ outlineMvtIII =
 {
   \time 6/8
   \tempo "Allegro vivace" 4.=120
-  \partial 8 s8 |
+  \set Timing.measureLength = #(ly:make-moment 1 8)
+  s8 |
+  \set Timing.measureLength = #(ly:make-moment 6 8)
   s2.*16 |
 
   \rMark "R"

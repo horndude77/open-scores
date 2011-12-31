@@ -5,7 +5,7 @@ pianoRightAllegro = \relative c'
   \key ees \major
   bes4 |
   g'4.( ees8) aes( f ees d) |
-  ees4( bes r8 bes( ees g) |
+  ees4( bes) r8 bes( ees g) |
   bes2. bes16( aes g aes) |
   <fis d>4( <g ees>) r8 ees'16(\f f g aes bes g) |
   <ees ges c>4. <ees, c>8 d4 <bes' bes'> |
@@ -907,7 +907,7 @@ pianoRightRondo = \relative c'
   q4. ees,8( bes' des) |
   c( aes <ees' c>) <des bes>( <bes g> <f' des>) |
   <ees c>4( f16 g) aes8( ees c) |
-  bes4( des16( ees) f8 f,( g) |
+  bes4( des16 ees) f8 f,( g) |
   <bes g>4.( aes8) r r |
   \repeat unfold 2 {r <bes, aes f> <bes g ees>} |
   des'( bes g ees des) r |

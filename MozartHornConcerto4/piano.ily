@@ -615,7 +615,7 @@ pianoLeftMvtI = \relative c
       g'4 r <des' bes>2( |
       <c aes> <aes f> |
       g) <des' bes>( |
-      <c aes> aes8( g aes bes) |
+      <c aes>) aes8( g aes bes) |
     }
     \\
     {
