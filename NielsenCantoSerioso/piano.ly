@@ -1,8 +1,6 @@
 \version "2.13.50"
 
 \include "defs.ily"
-\include "piano.ily"
-\include "horn.ily"
 
 instrument = "Piano"
 
@@ -12,18 +10,14 @@ instrument = "Piano"
   \score
   {
     <<
-      \new Staff
-      \with
-      {
-        fontSize = #-3
-        \override StaffSymbol #'staff-space = #(magstep -3)
-      }
-      { \horn }
+      \new SoloStaff
+      { \include "horn.ily" }
       \new PianoStaff
       <<
-        \new Staff="RH" { \pianoRight }
-        \new Dynamics { \pianoDynamics }
-        \new Staff="LH" { << \pianoLeft \pianoPedals \outline >> }
+        \new Staff="RH" { \include "piano_right.ily" }
+        \new Dynamics { \include "piano_dynamics.ily" }
+        \new Staff="LH"
+        << { \include "piano_left.ily" } { \include "outline.ily" } >>
       >>
     >>
     \layout { }
@@ -33,23 +27,22 @@ instrument = "Piano"
   \score
   {
     <<
-      \new Staff
-      {
-        \set Staff.midiInstrument = "french horn"
-        \horn
-      }
+      \new Staff \with { midiInstrument = "french horn" }
+      { \include "horn.ily" }
       \new PianoStaff
       <<
         \new Staff="RH"
-        {
-          << \pianoRight \pianoDynamics \pianoPedals >>
-        }
+        <<
+          { \include "piano_right.ily" }
+          { \include "piano_dynamics.ily" }
+        >>
         \new Staff="LH"
-        {
-          << \pianoLeft \pianoDynamics \pianoPedals >>
-        }
+        <<
+          { \include "piano_left.ily" }
+          { \include "piano_dynamics.ily" }
+        >>
       >>
-      \outline
+      { \include "outline.ily" }
     >>
     \midi { }
   }

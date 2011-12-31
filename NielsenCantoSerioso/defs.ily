@@ -4,45 +4,15 @@ rall = \markup {\italic rall.}
 pocorall = \markup {\italic {poco rall.} }
 sempref = #(make-dynamic-script (markup #:normal-text #:italic "sempre" #:dynamic "f"))
 
-justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1)))
-justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((dash-period . -1)))
-
-outline =
-{
-  \time 4/4
-  \tempo "Andante sostenuto" 4=52
-  s1*14 | \bar "||"
-
-  \tempo "Adagio molto"
-  s1*14 | \bar "||"
-
-  \tempo "Andante sostenuto"
-  s1*8 | \bar "||"
-
-  \tempo "Allegro"
-  s1*3 |
-
-  \tempo "Andante"
-  s1 |
-
-  \tempo "Allegro"
-  s1*3 |
-
-  \tempo "Andante"
-  s1 |
-
-  \tempo "Allegro"
-  s1*3 |
-
-  \tempo "Andante"
-  s1*2 | \bar "|."
-}
+justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
+justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((style . none)))
 
 \layout
 {
   \context
   {
     \Score
+    \accepts "SoloStaff"
     skipBars = ##t
     extraNatural = ##f
     \override PaperColumn #'keep-inside-line = ##t
@@ -55,13 +25,15 @@ outline =
 
   \context
   {
-    \Dynamics
-    \consists "Tweak_engraver"
-  }
+    \Staff
+    \type "Engraver_group"
+    \name "SoloStaff"
 
-  \context
-  {
-    \Staff \RemoveEmptyStaves
+    \alias "Staff"
+
+    fontSize = #-3
+    \override StaffSymbol #'staff-space = #(magstep -3)
+    \override RehearsalMark #'font-size = #0
   }
 }
 
@@ -71,6 +43,21 @@ outline =
   {
     \Voice
     \remove "Dynamic_performer"
+  }
+
+  \context
+  {
+    \Score
+    \accepts "SoloStaff"
+  }
+
+  \context
+  {
+    \Staff
+    \type "Performer_group"
+    \name "SoloStaff"
+
+    \alias "Staff"
   }
 }
 

@@ -1,7 +1,6 @@
-\version "2.13.50"
+\version "2.15.23"
 
 \include "defs.ily"
-\include "horn.ily"
 
 instrument = "Horn in F"
 
@@ -11,10 +10,9 @@ instrument = "Horn in F"
   \score
   {
     \new Staff
-    {
-      << \horn \outline >>
-    }
+    <<
+      { \include "horn.ily" }
+      { \include "outline.ily" }
+    >>
   }
 }
-
-

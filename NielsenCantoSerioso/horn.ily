@@ -1,6 +1,4 @@
-\version "2.13.50"
-
-horn = \relative c'
+\relative c'
 {
   \transposition f
   R1*2 |
