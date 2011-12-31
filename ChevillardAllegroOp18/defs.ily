@@ -1,7 +1,6 @@
 \version "2.15.21"
 
-%pocoF = #(make-dynamic-script (markup #:normal-text #:italic "poco" #:dynamic "f"))
-pocoF = #(make-dynamic-script #{ \markup {\normal-text \italic "poco" \dynamic "f"} #})
+pocoF = #(make-dynamic-script #{ \markup { \normal-text \italic "poco" \dynamic "f" } #})
 pDolce = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dolce"))
 pTresTranquille = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "très tranquille"))
 
@@ -39,6 +38,13 @@ afterGraceFraction = #(cons 15 16)
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
+  }
+
+  \context
+  {
+    \PianoStaff
+    %TODO: Remove this later. It currently causes a segfault.
+    \remove "Span_bar_stub_engraver"
   }
 }
 
