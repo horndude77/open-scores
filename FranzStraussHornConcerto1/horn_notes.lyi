@@ -17,7 +17,7 @@ hornMvtI = \relative c''
   a4\! r r2 |
   d2.( bes8 c |
   d2.) g,4~\< |
-  \times 4/6 {g8[ \acciaccatura a8 g( fis-. g-. bes-. d]-.} g4\sf\> ees,(
+  \times 4/6 {g8[ \acciaccatura a8 g( fis-. g-. bes-. d]-.} g4)\sf\> ees,(
   d2~)\! d8 f( bes d) |
   f(\< ees d c b c d ees) |
   cis( d g4~\> g8) d( ees) c-. |
@@ -92,7 +92,7 @@ hornMvtI = \relative c''
   bes( c bes) aes-. g8\< r g( a16) g-. fis( g) a-. bes-. |
   c( d c) bes-. a8 r a( bes16) a-. gis( a) bes-. c-. |
   d( ees d) c-. bes8 r16 bes b-. g( fis g) a-. b-. c-. d-. |
-  ees4 r8 b \acciaccatura d8 c16( b c) d-. ees-. f-. fis( g) |
+  ees4\! r8 b \acciaccatura d8 c16( b c) d-. ees-. f-. fis( g) |
   f4~ f16 a( bes) f-. d-. bes-. f-. d-. bes8-. d'-. |
   ees4~ ees16 fis( g) ees-. c-. a-. f-. ees-. c8. a16 |
   bes2-> d'-> |

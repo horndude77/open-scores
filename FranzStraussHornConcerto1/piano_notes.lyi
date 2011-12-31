@@ -91,17 +91,17 @@ pianoRHMvtI = \relative c'
   <c g ees> c8. c16 <ees g,>2~ |
   \repeat unfold 3 {<ees g,>4 c8. c16 <ees g,>2~ |}
   <ees g,>4 c8. c16 <f aes,>2( |
-  <ees g,>4 c8. c16 <ees g,~>2( |
-  <d g,>4) b8. d16 <f~ d g,~>2( |
+  <ees g,>4) c8. c16 <ees g,~>2^( |
+  <d g,>4) b8. d16 <f~ d g,~>2^( |
   <f c g>4) << {ees2 d4} \\ {s4 <b g>2} >> |
   <c g>4 <d b>8( <ees c>) << {f4( fis)} \\ {<d c>2} >> |
-  <b d g>4 <b d>8. <c ees>16 <f d g~>2( |
+  <b d g>4 <b d>8. <c ees>16 <f d g,~>2( |
   <ees c g>4) c8. c16 <ees g,>2~ |
   <ees g,>4 c8. c16  <ees g,>2~ |
   <ees g,>4 <ees c>8. <ees c>16 <aes ees~ c>2( |
   <g ees bes>4) ees8. ees16 <g ees bes~>2( |
-  <aes f bes,>4) bes,8. bes16 <d aes>2~ |
-  <ees g,>4 c8. c16 <f c aes>2 |
+  <aes f bes,>4) bes,8. bes16 <d aes>2( |
+  <ees g,>4) c8. c16 <f c aes>2 |
   <ees bes g>4 <g bes,>8. <ees g,>16 <d bes~ aes>2( |
   <ees bes g>4) <bes g>( << {\voiceOne g'4 <f aes,>8 <ees g,>)} \new Voice {\voiceTwo bes2} >> \oneVoice |
   <<

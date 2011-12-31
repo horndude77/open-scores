@@ -14,21 +14,5 @@ instrument = "Horn in F"
 
 \score
 {
-  \new Staff
-  {
-    #(set-accidental-style 'modern)
-    \set Score.skipBars = ##t
-    << \outline \horn >>
-  }
-  \layout
-  {
-  }
-  \midi
-  {
-    \context
-    {
-      \Voice
-      \remove Dynamic_performer
-    }
-  }
+  \new Staff << \outline \horn >>
 }
