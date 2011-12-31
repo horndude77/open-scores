@@ -1020,8 +1020,10 @@ pianoRightMvtIII = \relative c'
 
   %F
   r8 <g, e>-. <c g>-. r <c g>-. <g' c,>-. |
+  \revert Beam #'auto-knee-gap
   <f c> \repeat unfold 3 {\acciaccatura e'8 f8} r <g, des>-. |
   <f c>-. q-. q-. r <e bes>-. q-. |
+  \override Beam #'auto-knee-gap = #2
   <f aes,> \repeat unfold 5 {\acciaccatura b'8 c8} |
   r8 <d,, bes>-. <f d>-. r <f d>-. <bes f>-. |
   <bes ees,>-. \repeat unfold 3 {\acciaccatura d8 ees8} r <f, c>-. |
@@ -1159,10 +1161,10 @@ pianoLeftMvtIII = \relative c
   \clef bass <a, a'>4.( <bes f'>8) r r |
   <ees, ees'>4.( <d d'>8) r r |
   <a'' c>4.( bes4) r8 |
-  <g bes>2.( |
 
   %B
-  <f~ c'>( |
+  <g bes>2.( |
+  <f~ c'> |
   << \new Voice {\voiceOne d'4. e} {\voiceTwo f,2.} >> |
   << {\voiceOne f'8)} \new Voice {\voiceTwo f,} >> \oneVoice r8 r <a, a'>4.-^ |
   <bes bes'>4 q8 <ees, ees'>( <f f'>) q-. |

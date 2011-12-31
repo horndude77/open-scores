@@ -119,8 +119,9 @@ outlineMvtIII =
 {
   \time 6/8
   \tempo "Rondo" 4.=108
-  \partial 8
+  \set Timing.measureLength = #(ly:make-moment 1 8)
   s8 |
+  \set Timing.measureLength = #(ly:make-moment 6 8)
   s2.*14 |
 
   \rMark "A"

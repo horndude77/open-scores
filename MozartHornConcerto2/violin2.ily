@@ -364,7 +364,7 @@ violinIIMvtIII = \relative c'
   d8( f) d-. \appoggiatura d16 c8 bes-. a-. |
   bes4.( f) |
   ees2.( |
-  d8 r r f4. |
+  d8) r r f4. |
   g4( f8 g4 ees8) |
   d4. f |
   g4( f8 g4 ees8) |

@@ -429,7 +429,7 @@ violinIMvtIII = \relative c'
   ees8 ees, ees ees ees ees |
   ees4\p ees8 ees4 g8 |
   bes4( aes8) f4.( |
-  g8 r r r4. |
+  g8) r r r4. |
 
   g4.( a) |
   bes4 r8 r4. |
