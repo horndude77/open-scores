@@ -55,6 +55,6 @@ fiveNotes = \relative c''
     f( e f d g a f a) |
     g( a g f e d e c) |
     e(\< d c b) a( g a b) |
-    <c c,>4.
+    <c c,>4.\!
   }
 }

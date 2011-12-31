@@ -1,7 +1,7 @@
-\version "2.11.54"
+\version "2.15.23"
 
-\include "solo_notes.lyi"
-\include "defs.lyi"
+\include "defs.ily"
+\include "solo.ily"
 
 \paper
 {
@@ -11,7 +11,7 @@
 
 instrument = "Horn in F"
 
-\include "header.lyi"
+\include "header.ily"
 
 \book
 {
