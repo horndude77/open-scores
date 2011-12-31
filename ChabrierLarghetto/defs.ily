@@ -25,10 +25,12 @@ justCrescSempre = #(make-music 'CrescendoEvent 'span-direction START 'span-type 
 justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((dash-period . -1.0)))
 justDimMolto = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim. molto" 'tweaks '((dash-period . -1.0)))
 
+partNoBreak = { \tag #'part \noBreak }
+
 lengthenHairpin = #(define-music-function (parser location len) (number?)
 #{
   \once \override Hairpin #'to-barline = ##f
-  \once \override Hairpin #'minimum-length = #$len
+  \once \override Hairpin #'minimum-length = $len
 #})
 
 stop =
@@ -45,7 +47,7 @@ stop =
 
 outline =
 {
-  \tempo 4=92
+  \tempo "Très modéré" 4=92
   \time 3/4
 
   s2.*5 \bar "||"
@@ -119,6 +121,7 @@ afterGraceFraction = #(cons 15 16)
                                ,(make-accidental-rule 'same-octave 1))
     markFormatter = #format-mark-numbers
     \override Beam #'breakable = ##t
+    tempoHideNote = ##t
   }
 
   \context

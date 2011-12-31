@@ -47,7 +47,7 @@ instrument = "Orchestra"
         \set Staff.shortInstrumentName = "Fl."
         <<
           \new Voice {\voiceOne \dynamicUp \fluteOne}
-          \new Voice {\voiceTwo \dynamicDown \fluteTwo}
+          \new Voice {\voiceTwo \dynamicDown \removeWithTag #'part \fluteTwo}
         >>
       }
       \new Staff
@@ -100,7 +100,7 @@ instrument = "Orchestra"
       {
         \set Staff.instrumentName = "Solo Horn en Fa"
         \set Staff.shortInstrumentName = "Hn."
-        << \horn \outline >>
+        << \removeWithTag #'part \horn \outline >>
       }
       \new GrandStaff
       <<

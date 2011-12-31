@@ -103,7 +103,7 @@ fluteTwo = \relative c'
   a c f) |
 
   %M
-  r8 ees,4-.(^\soli ees-. ees8[~-. |
+  r8 ees,4-.(-\tag #'part ^\soli ees-. ees8[~-. |
   ees] ees4-. ees-. ees8-.) |
   R2.*2 |
   r8 aes'4-.( aes-. aes8[~-. |
@@ -114,7 +114,7 @@ fluteTwo = \relative c'
 
   %N
   R2.*11 |
-  f2.~\p^\soli |
+  f2.~\p-\tag #'part ^\soli |
   f~ |
   f( |
   e~)\pp |
@@ -122,7 +122,7 @@ fluteTwo = \relative c'
   R2.*5 |
   r4\fermata r r |
   R2. |
-  r8 bes'4(_\dolce f d8) |
+  r8 bes'4(-\tag #'part _\dolce f d8) |
   d~ d16 r r4 r |
   R2. |
   f4.~(\sf f8 bes d |

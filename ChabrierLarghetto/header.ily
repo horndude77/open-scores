@@ -4,7 +4,6 @@
   title = "Larghetto"
   subtitle = "pour Cor et Orchestre"
   composer = "Emmanuel Chabrier"
-  meter = "Très modéré"
   instrument = \instrument
 
   mutopiatitle = "Larghetto for Horn and Orchestra"

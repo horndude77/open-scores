@@ -54,7 +54,7 @@ violinTwo = \relative c''
   ees] ees4-.( ees-. ees8[~ |
   ees] ees4-.) a,( c8[~ |
   c] cis4 d bes8[~\sf |
-  bes] bes4 b f'8[~ |
+  bes] bes4 b f'8[~) |
   f] c4 b8[\ppp c cis]~( |
   cis] d4 ees e8[ |
   g]) c,4( c c8[~ |

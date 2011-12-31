@@ -12,7 +12,7 @@ clarinetOne = \relative c''
   %A
   R2.*2 |
   r8 c4-.(\f c-. c8[~-.) |
-  c]( cis4-. cis-. d8[( |
+  c]( cis4-. cis-. d8[)( |
   f d]) r4 r |
 
   r4\fermata r r |

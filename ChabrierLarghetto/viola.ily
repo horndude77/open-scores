@@ -10,7 +10,7 @@ viola = \relative c'
     <<
       {f2.~ | f~ | f4~ f8}
       \\
-      {g,2.~ | gis~ | a4~ a8}
+      {g,2.( | gis)( | a4) a8}
     >>
   >> r8 r4 |
 
@@ -85,7 +85,7 @@ viola = \relative c'
   des4 f, g) |
   r8 ees4( ees ees8[~ |
   \repeat unfold 3 {ees] ees4 ees ees8[~ |}
-  ees] ees4-.( ees-. ees8[~-. |
+  ees]) ees4-.( ees-. ees8[~-. |
   ees] d'4-. d-. d8-.) |
   r8 g,( b d g b) |
   R2.*8 |
@@ -162,7 +162,7 @@ viola = \relative c'
   f4(\f \times 2/3 {e8 f cis} d8 dis~->) |
   dis e( fis g b c) |
   \repeat unfold 2 {\times 2/3 {\repeat tremolo 3 <a g'>8}} \times 2/3 {\repeat tremolo 3 a8} |
-  \times 2/3 {d4( cis8} \times 2/3 {bis( cis a} e'8 d) |
+  \times 2/3 {d4( cis8)} \times 2/3 {bis( cis a} e'8 d) |
   \repeat unfold 2 {\times 2/3 {\repeat tremolo 3 ees8}} \times 2/3 {\repeat tremolo 3 d8} |
   \repeat unfold 2 {\times 2/3 {\repeat tremolo 3 b'8}} \times 2/3 {\repeat tremolo 3 b8} |
 

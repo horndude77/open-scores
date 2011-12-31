@@ -115,7 +115,7 @@ violinOne = \relative c''
   r8 a( b, a' cis, a') |
   r8 a( cis, a' d, d') |
   r4 a,(\f a') |
-  a2( a,4~ |
+  a2( a,4~) |
   a8 e'( f a, a' a,) |
   r8 ees'(\f f a, a' a,) |
   r8 <ees' a,>4-> q-> <d a>8-> |
@@ -192,7 +192,7 @@ violinOne = \relative c''
 
   %L
   ees2.(\pppEspressivo |
-  f2( d4 |
+  f2 d4 |
   c2.~)( |
   c2\< g'4)\sf |
   g2( bes,4) |

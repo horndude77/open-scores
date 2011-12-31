@@ -41,7 +41,7 @@ horn =  \relative c' \context Voice = "horn"
   d2( f,4) |
   f2 d'4\sfz |
   d2( e,4) |
-  e2 e'4(\sf\justCresc |
+  e2 e'4(\sf\justCresc | \partNoBreak
   f4 e d |
   c4 g c |
   c4 a) a(\sf |
