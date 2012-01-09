@@ -389,7 +389,7 @@ hornMvtIII = \relative c''
   g r r2 |
   R1*7 |
   bes1(\pDolce |
-  aes2 g |
+  aes2 g) |
   c1(\> |
   bes2 aes) s1*0\! |
   g2-. g--\< |
