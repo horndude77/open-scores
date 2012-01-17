@@ -1,8 +1,13 @@
 \version "2.15.23"
 
+\pointAndClickOff
+
 pocoRit = \markup { \normal-text \italic "poco rit." }
 piuDolce = \markup { \normal-text \italic "più dolce" }
 sottoVoce = \markup { \normal-text \italic "sotto voce" }
+
+pizz = \markup { \normal-text \italic "pizz." }
+arco = \markup { \normal-text \italic "arco" }
 
 justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
 justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((style . none)))
@@ -23,10 +28,41 @@ tupletOn =
   \revert TupletBracket #'stencil
 }
 
-rMark = #(define-music-function (parser location markp) (string?)
+tempoTextLengthOn =
+{
+  \override Score.MetronomeMark #'extra-spacing-width = #'(0 . 0)
+  \override Score.MetronomeMark #'extra-spacing-height = #'(-inf.0 . +inf.0)
+}
+
+tempoTextLengthOff =
+{
+  \override Score.MetronomeMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \override Score.MetronomeMark #'extra-spacing-height = #'(0 . 0)
+}
+
+markTextLengthOn =
+{
+  \override Score.RehearsalMark #'extra-spacing-width = #'(0 . 0)
+  \override Score.RehearsalMark #'extra-spacing-height = #'(-inf.0 . +inf.0)
+}
+
+markTextLengthOff =
+{
+  \override Score.RehearsalMark #'extra-spacing-width = #'(+inf.0 . -inf.0)
+  \override Score.RehearsalMark #'extra-spacing-height = #'(0 . 0)
+}
+
+verse = #(define-music-function (parser location verse) (string?)
 #{
-  \mark \markup { \box \bold $markp }
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \mark \markup { \box \concat { \bold { "Verse " $verse } } }
 #})
+
+includeScore = #(define-music-function (parser location file) (string?)
+#{ \keepWithTag #'score { \include $file } #})
+
+includePart = #(define-music-function (parser location file) (string?)
+#{ \keepWithTag #'part { \include $file } #})
 
 afterGraceFraction = #(cons 15 16)
 
@@ -46,6 +82,12 @@ afterGraceFraction = #(cons 15 16)
     \override Beam #'breakable = ##t
     \override NoteCollision #'merge-differently-dotted = ##t
     tempoHideNote = ##f
+  }
+
+  \context
+  {
+    \Staff
+    \RemoveEmptyStaves
   }
 }
 

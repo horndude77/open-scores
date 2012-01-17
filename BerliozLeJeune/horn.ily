@@ -2,11 +2,14 @@
 {
   \transposition ees
   %Verse 1
-  R2.*25 | R2.^\fermataMarkup
+  \tag #'part \tempoTextLengthOn
+  R2.*25 |
+  R2.^\fermataMarkup |
+  \tag #'part \tempoTextLengthOff
 
   %Verse 2
   R2. |
-  r4 e8\pp e( g) c |
+  r4 e8\pp^"On Stage" e( g) c |
   e4( c8) e4( c8) |
   f4.(\> e~)\! |
   e8 r c c( g) e |
@@ -32,11 +35,13 @@
   R2.^\fermataMarkup |
 
   %Verse 3
+  \tag #'part \markTextLengthOn
   R2.*24 | R2.^\fermataMarkup
+  \tag #'part \markTextLengthOff
 
   %Verse 4
   R2. |
-  r4 e,8\pp e( g) c |
+  r4 e,8\pp^"Off Stage" e( g) c |
   e4( c8) e4( c8) |
   f4.(\> e~)\! |
   e8 r c c( g) e |
@@ -54,7 +59,7 @@
   bes(\< a4 g8) |
   fis2.~\> |
   fis4. fis4 fis8 |
-  g\! r a\ppp a c( f) |
+  g\! r a\pppp a c( f) |
   f4.~( f4 e8) |
   e2.~\> |
   e~ |

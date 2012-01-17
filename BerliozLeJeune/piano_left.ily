@@ -94,7 +94,7 @@
       des,8( g e) c( aes' f) |
       \once \override Slur #'control-points =
       #'((1 . 5) (12 . 8.5) (20 . 3) (36 . 9))
-      c( ges' ees a ees c' |
+      c( ges' ees a ees c' | \noBreak
       a \change Staff=up \voiceTwo ees' c a' f ees') |
       \change Staff=down
     }

@@ -4,29 +4,31 @@
 
 \include "header.ily"
 
+#(set-global-staff-size 18)
+
 \score
 {
   <<
-    \new Staff \with { instrumentName = \markup { Horn in E\flat } }
-    { \include "horn.ily" }
+    \new Staff \with { instrumentName = \markup { \center-column {Horn \line { in E\flat } } } }
+    { \includeScore "horn.ily" }
     \new Staff \with { instrumentName = \markup { \center-column {Soprano or Tenor} } }
     {
       \new Voice=solo
       <<
-        { \include "voice.ily" }
-        { \include "outline.ily" }
+        { \includeScore "voice.ily" }
+        { \includeScore "outline.ily" }
       >>
     }
-    \new Lyrics \lyricsto solo { \include "lyrics.ily" }
+    \new Lyrics \lyricsto solo { \includeScore "lyrics.ily" }
     \new PianoStaff \with { instrumentName = "Piano" }
     <<
-      \new Dynamics { \include "piano_dynamics_above.ily" }
-      \new Staff=up { \include "piano_right.ily" }
-      \new Dynamics { \include "piano_dynamics.ily" }
+      \new Dynamics { \includeScore "piano_dynamics_above.ily" }
+      \new Staff=up { \includeScore "piano_right.ily" }
+      \new Dynamics { \includeScore "piano_dynamics.ily" }
       \new Staff=down
       <<
-        { \include "piano_left.ily" }
-        { \include "piano_pedals.ily" }
+        { \includeScore "piano_left.ily" }
+        { \includeScore "piano_pedals.ily" }
       >>
     >>
   >>
@@ -38,20 +40,20 @@
   \unfoldRepeats
   <<
     \new Staff \with { midiInstrument = "french horn" }
-    { \include "horn.ily" }
+    { \includeScore "horn.ily" }
     \new Staff \with { midiInstrument = "choir aahs" }
     {
       \new Voice=solo
       <<
-        { \include "voice.ily" }
-        { \include "outline.ily" }
+        { \includeScore "voice.ily" }
+        { \includeScore "outline.ily" }
       >>
     }
-    \new Lyrics \lyricsto solo { \include "lyrics.ily" }
+    \new Lyrics \lyricsto solo { \includeScore "lyrics.ily" }
     \new PianoStaff \with { midiInstrument = "acoustic grand" }
     <<
-      \new Staff=up { \include "piano_right.ily" }
-      \new Staff=down { \include "piano_left.ily" }
+      \new Staff=up { \includeScore "piano_right.ily" }
+      \new Staff=down { \includeScore "piano_left.ily" }
     >>
   >>
   \midi {}
