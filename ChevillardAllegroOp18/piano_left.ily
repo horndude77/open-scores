@@ -212,9 +212,9 @@
   \key aes \major
   \repeat unfold 2 { <aes aes,>4 <ees' aes>8~ q4 q8~ q4 q8~ q4 <f aes>8 | }
   <aes, aes,>4 <ees' aes>8~ q4 q8 <f, f,>4 <ees' aes>8~ q4 q8 |
-  <ges, ges,>4 <ees' ges>8~ q4 q8 <ges, ges,>4 <fes' ges>8 q4 q8 |
+  <ges, ges,>4 <ees' ges>8~ q4 q8 <ges, ges,>4 <fes' ges>8~ q4 q8 |
   \key b \major
-  b,,4 <fis'' b>8~ q4 q8 e,4 <gis' b>8 q4 q8 |
+  b,,4 <fis'' b>8~ q4 q8 e,4 <gis' b>8~ q4 q8 |
   <b, b,>4 <fis' b>8~ q4 q8 <e, e,>4 <b' e gis>8~ q4 q8 |
   <b b,>4 <fis' b>8~ q4 q8 <gis, gis,>4 <fis' b>8~ q4 q8 |
   <a, a,>4 <fis' a>8~ q4 q8 <a, a,>4 <g' a>8~ q4 q8 |
@@ -224,7 +224,7 @@
   d( a' fis cis' a e') <g g,>4( d8 cis e b) |
   cis8( e a, fis' b, d) b( d g, e' a, g) |
   \key f \major
-  f( c' g' f c' f) << \new Voice {\voiceOne s8 f,( c' \change Staff=RH d e f)} {\voiceTwo bes,,4( a8~ a g f)} >> \oneVoice |
+  f( c' g' f c' f) << \new Voice {\voiceOne s8 f,_( c' \change Staff=RH d e f)} {\voiceTwo bes,,4( a8~ a g f)} >> \oneVoice |
   e8( g') a,( c') d,( a') d,,( f') g,( bes') << {a8( g)} \\ c,4 >> |
   <c, c,>2. <bes' bes'>4( <a a'>8) r <g g'> <f f'> |
   <e e'>4 <ees ees'>-- <d d'>-- <c c'>2 <c c,>4-> |

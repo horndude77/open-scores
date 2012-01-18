@@ -5,12 +5,16 @@ pDolce = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "dol
 pTresTranquille = #(make-dynamic-script (markup #:dynamic "p" #:normal-text #:italic "très tranquille"))
 
 justDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "dim." 'tweaks '((style . none)))
+justMoltoDim = #(make-music 'DecrescendoEvent 'span-direction START 'span-type 'text 'span-text "molto dim." 'tweaks '((style . none)))
 justCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "cresc." 'tweaks '((style . none)))
 justMoltoCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "molto cresc." 'tweaks '((style . none)))
 justPocoCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "poco cresc." 'tweaks '((style . none)))
 justSempreCresc = #(make-music 'CrescendoEvent 'span-direction START 'span-type 'text 'span-text "sempre cresc." 'tweaks '((style . none)))
 
 cantabile = \markup {\italic cantabile}
+espress = \markup {\italic espress.}
+murmure = \markup {\italic murmure}
+dolce = \markup {\italic dolce}
 
 tempoTextLengthOn =
 {
@@ -38,13 +42,6 @@ afterGraceFraction = #(cons 15 16)
     autoAccidentals = #`(Staff ,(make-accidental-rule 'same-octave 0)
                                ,(make-accidental-rule 'any-octave 0)
                                ,(make-accidental-rule 'same-octave 1))
-  }
-
-  \context
-  {
-    \PianoStaff
-    %TODO: Remove this later. It currently causes a segfault.
-    \remove "Span_bar_stub_engraver"
   }
 }
 

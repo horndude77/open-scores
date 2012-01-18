@@ -8,37 +8,37 @@
   d4 b8( a g4) a-. |
   g-. \times 2/3 {d8 g b} d2~ |
   d4 b8( a g4) a-. |
-  g-. a2\justCresc bes8( a |
-  g bes) b2 c8( b |
-  a c) cis2\sf e8( d |
+  g-. a2\justCresc bes8[( a |
+  g bes]) b2 c8[( b |
+  a c]) cis2\sf e8( d |
   c4 b)\justDim a4-.( g-.) |
   e2\p \breathe g~ |
-  g4 e8( d c e) g4 |
-  e8(\< d c e) a2~\! |
+  g4 e8[( d c e]) g4 |
+  e8[(\< d c e]) a2~\! |
   a4(\> g f e) s1*0\! |
   d4. g8 e4. c8 |
   d4. g8 e4. c8 |
   b8( a) g-. b-. e2~(\< |
   e8 d)\! c-. e-. a4(\> g) |
   e2\! \breathe g~ |
-  g4 e8( d c e) g4 |
-  e8(\< d c e) a2~\! |
+  g4 e8[( d c e]) g4 |
+  e8[(\< d c e]) a2~\! |
   a4\> g( f e) |
   d4.\justCresc g8 e4. c8 |
   d4. g8 e4. c8 |
   c8(\justMoltoCresc e) a-. c-. e2~ |
   e4 g,2 d'4 |
-  c\f e8-. d-. c( e) e4-> |
-  e-> e8-. d-. c( e) e4-> |
+  c\f e8[-. d-. c( e]) e4-> |
+  e-> e8[-. d-. c( e]) e4-> |
   e-> r r2 |
   R1 |
-  r4 g,8-. fis-. e( g) g4-> |
-  g-> g8-. fis-. e( g) g4-> |
+  r4 g,8[-. fis-. e( g]) g4-> |
+  g-> g8[-. fis-. e( g]) g4-> |
   g-> r4 r2 |
   R1 |
   r4 b8(\> d) d( b) b( d) |
 
-  d2(\pDolce gis,~ |
+  d2(\p gis,~_\dolce |
   gis4 a b c) |
   d2( gis,2~ |
   gis4\< a b c) |
@@ -131,18 +131,18 @@
   R1. |
   cis,4(\p e8~ e b e) fis4( e8~ e d cis) |
   b4-_ e-_ cis-_ a-_\justDim d-_ b-_ |
-  g-_\pp g'-_ c-_ c-_ g8~( g f e) |
+  g-_^\pp g'-_ c-_ c-_ g8~( g f e) |
   d4-- g-- e-- c--\justCresc f-- d-- |
-  c'8(\f d) bes( a) g( fis) f( g,) c( g') f-. e-. |
-  f( g) e-. c-. c16( b) a-. c-. e8 e16( d) c-. e-. \afterGrace g4.\trill {fis16[ g]} |
+  c'8(\f b) bes( a) g( fis) f( g,) c( g') f-. e-. |
+  d( g) e-. c-. c16( b) a-. c-. e8 e16( d) c-. e-. \afterGrace g4.\trill {fis16[ g]} |
 
   %2/2
-  c8 r c-.\f b-. a( c) c4-> |
-  c4-> c8-. b-. a( c) c4-> |
+  c8 r c[-.\f b-. a( c]) c4-> |
+  c4-> c8[-. b-. a( c]) c4-> |
   c-> r r2 |
   R1 |
-  r4 e8-. d-. c( e) e4-> |
-  e-> e8-. d-. c( e) e4-> |
+  r4 e8[-. d-. c( e]) e4-> |
+  e-> e8[-. d-. c( e]) e4-> |
   e-> r r2 |
   R1*2 |
   e,2.(\p g4) |
@@ -212,7 +212,7 @@
   e4\f r \times 2/3 {c4 a c} |
   c2 \times 2/3 {a4 f a} |
   a2 \times 2/3 {f4 a, f'} |
-  \times 2/3 {e4\justSempreCresc r e} \times 2/3 {d c e} |
+  \times 2/3 {e4\justSempreCresc r e} \times 2/3 {d c e} s1*0\! |
   \times 2/3 {g2 g4} \times 2/3 {fis e g} |
   \times 2/3 {b2 b4} \times 2/3 {a g b} |
   \times 2/3 {c2\ff c4} \times 2/3 {b a c} |

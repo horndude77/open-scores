@@ -281,8 +281,8 @@
   \times 2/3 {<bes' ees, bes>4( aes ges} \times 2/3 {f ges ees)} |
   <ees' ces aes>4 r <d bes aes d,> r |
   <ees bes ges ees> r <des ges,! des> r |
-  s1*3 |
-  <aes' aes,>2. \voiceOne cis,4 |
+  s1*0^\markup { \bold "Ritmo di tre battute" } s1*3 |
+  <a' a,>2. \voiceOne cis,4 |
   <d f,>2.( a'4 |
   <g g,>2. f4 |
   <e e,>2. g4 |
@@ -291,12 +291,12 @@
   <ees ees,>2.( g,4 |
   <aes ces,>2. ees'4 |
   <des des,>2. ces4) |
-  <bes bes,>2.( des4 |
+  s1*0^\markup { \bold "Due battute" } <bes bes,>2.( des4 |
   <c c,>2. bes4) |
   <bes' bes,>2.( des4 |
   <c c,>2. bes4) |
   \oneVoice
-  \times 2/3 {<a f>4 a, <a' f>} <f d>2 |
+  s1*0^\markup { \bold "Tre battute" } \times 2/3 {<a f>4 a, <a' f>} <f d>2 |
   \times 2/3 {<f cis>4 f, <f' cis>} <d bes>2 |
   \times 2/3 {<d bes>4 d, <d' bes>} <bes g>2 |
   s1*3 |
