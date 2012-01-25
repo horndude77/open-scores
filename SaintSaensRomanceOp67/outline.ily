@@ -1,5 +1,5 @@
 {
-  \tempo "Adagio"
+  \tempo "Adagio" 8=72
   \time 6/8
   s2.*53 |
 
