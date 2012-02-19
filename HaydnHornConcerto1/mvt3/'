@@ -1,0 +1,77 @@
+\relative c''
+{
+  \key d \major
+  d2\f |
+  e4.\trill d16 e |
+  fis8 g a a, |
+  b a b cis |
+  d4 r8 a |
+  b a b cis |
+  d a16( fis) d8-| r |
+  g'16( e) cis( g) e8-| r |
+  fis'16( d) a( fis) d8-| r |
+  g'16( e) cis( g) e8-| r |
+  fis16 a d fis a8 a, |
+  b b'16 a g fis e d |
+  cis e a cis e8 g, |
+  fis a g16 fis e d |
+  a8 a g16 fis e d |
+  a4 r |
+  cis2\p |
+  cis' |
+  d |
+  fis |
+  g4 d,~ |
+  d8 b' a g |
+  fis d' d d |
+  d d cis cis |
+  d16\f a a a e' a, a a |
+  d a a a e' a, a a |
+  fis' d e fis g a b cis |
+  d8 a a a |
+  b4 a16 g fis e |
+  d4. a8 |
+  e'2\trill |
+  d4 <fis a, d,> |
+  q r |
+  r fis,\p |
+  g a8 b16 cis |
+  d8 e fis a, |
+  b a b cis |
+  d e fis a, |
+  b a b cis |
+  d fis,4\f e8 |
+  d fis4 e8 |
+  d4 r8 a(\p |
+  d4) r8 d( |
+  fis4) r8 fis( |
+  d4) r |
+  fis'( e8) d |
+  cis4 fis8 fis |
+  fis4( e8) d |
+  cis4 r |
+  a8 a a a |
+  a a a a |
+  a a a a |
+  a a a a |
+  a a a a |
+  b4 \appoggiatura b16 a8( gis16 a) |
+  gis4 <e b' e>\f |
+  q r |
+  R2 |
+  cis2\p |
+  d4 r |
+  fis8 fis fis d |
+  cis4 r8 a' |
+  a-| r d-| r |
+  cis-| r e,-| r |
+  e e a a |
+  a4~ a16 d cis b |
+  a8 a gis gis |
+  a e e e |
+  e e e e |
+  fis4 d'(\fz |
+  cis b) |
+  a8\p a cis cis |
+  b b b b |
+}
