@@ -10,23 +10,23 @@ instrument = "Horn in F"
 {
   \new Staff
   <<
-    { \include "horn_1.ily" }
-    { \include "outline_1.ily" }
+    { \include "mvt1/horn.ily" }
+    { \include "mvt1/outline.ily" }
   >>
 }
 \score
 {
   \new Staff
   <<
-    { \include "horn_2.ily" }
-    { \include "outline_2.ily" }
+    { \include "mvt2/horn.ily" }
+    { \include "mvt2/outline.ily" }
   >>
 }
 \score
 {
   \new Staff
   <<
-    { \include "horn_3.ily" }
-    { \include "outline_3.ily" }
+    { \include "mvt3/horn.ily" }
+    { \include "mvt3/outline.ily" }
   >>
 }

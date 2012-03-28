@@ -11,33 +11,15 @@ instrument = "Piano"
   <<
     \new SoloStaff \with { midiInstrument = "french horn" }
     <<
-      { \include "horn_1.ily" }
-      { \include "outline_1.ily" }
+      { \include "mvt1/horn.ily" }
+      { \include "mvt1/outline.ily" }
     >>
     \new PianoStaff
     <<
-      \new Staff { \include "right_hand_1.ily" }
-      \new Staff { \include "left_hand_1.ily" }
+      \new Staff { \include "mvt1/right_hand.ily" }
+      \new Staff { \include "mvt1/left_hand.ily" }
     >>
   >>
   \layout { }
   \midi { }
 }
-%{
-\score
-{
-  \new Staff
-  <<
-    { \include "horn_2.ily" }
-    { \include "outline_2.ily" }
-  >>
-}
-\score
-{
-  \new Staff
-  <<
-    { \include "horn_3.ily" }
-    { \include "outline_3.ily" }
-  >>
-}
-%}

@@ -152,4 +152,51 @@
   d <d a' c> q q \repeat tremolo 4 q |
   g,4 r r2 |
   R1 |
+  r8 <c c,>-| <d d,>-| <e e,>-| <f f,>-| <g g,>-| <aes aes,>4~ |
+  <aes aes,>8 <g g,>-| <f f,>-| <ees ees,>-| <d d,>-| <c c,>-| <bes bes,>-| <aes aes,>-| |
+  <g g,> <bes' ees> q q g <bes ees> q q |
+  g <aes c ees> q q f <aes d f> q q |
+  f <g b d> q q  ees <g c ees> q q |
+  c, <c ees g> q q bes <c ees> q q |
+  <a c ees>4 r8. <a a'>16 <bes bes'>4 r8. <e, e'>16 |
+  <f f'>4 r8. <f f'>16 <aes aes'>4 r8. <f f'>16 |
+  c8-| r bes'4( fis g) |
+  c,-| e'( a, bes) |
+  c,-| r r2 |
+  R1 |
+  r4 c'( gis a) |
+  c,-| f'( b, c) |
+  c,-| r r2 |
+  R1 |
+  \times 2/3 {c8 g'' c}
+  <<
+    {
+      s8*2/3( s8*2/3*7 s8*2/3) |
+      s8*2/3( s8*2/3*10 s8*2/3) |
+    }
+    {
+      \repeat unfold 7 {\times 2/3 {e,8 g c} } |
+    }
+  >>
+  e,8 r bes2( a4 |
+  g f e d |
+  c) r r2 |
+  R1 |
+  c4 d e f |
+  g a bes c |
+  \repeat unfold 4
+  {
+    f,8( c' a' c, a' c, a' c,) |
+  }
+  \repeat unfold 4
+  {
+    g( c bes' c, bes' c, bes' c,) |
+  }
+  a4 r a2 |
+  bes c |
+  bes1 |
+  b |
+  c |
+  c, |
+  f4 r r2 |
 }
