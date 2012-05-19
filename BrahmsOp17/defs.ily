@@ -1,5 +1,7 @@
 \version "2.15.23"
 
+\pointAndClickOff
+
 dolce = \markup {\italic dolce}
 pEspressMarkup = \markup {\dynamic p \normal-text \italic espress.}
 pEspress = #(make-dynamic-script pEspressMarkup)

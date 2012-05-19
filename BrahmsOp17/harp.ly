@@ -16,7 +16,6 @@
   \new PianoStaff \with
   {
     connectArpeggios = ##t
-    instrumentName = "Harp"
   }
   <<
     \new Staff=up
@@ -50,7 +49,6 @@
   \new PianoStaff \with
   {
     connectArpeggios = ##t
-    instrumentName = "Harp"
   }
   <<
     \new Staff=up
@@ -68,7 +66,6 @@
   \new PianoStaff \with
   {
     connectArpeggios = ##t
-    instrumentName = "Harp"
   }
   <<
     \new Staff=up
@@ -86,7 +83,6 @@
   \new PianoStaff \with
   {
     connectArpeggios = ##t
-    instrumentName = "Harp"
   }
   <<
     \new Staff=up
