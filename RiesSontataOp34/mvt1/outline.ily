@@ -12,7 +12,7 @@
   {
     s1*115 |
   }
-  s1*196 |
+  s1*193 |
   \tempo \rit
   s1*4 |
   \tempo \aTempo

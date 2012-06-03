@@ -194,4 +194,167 @@
   <g e c>8 q q q \repeat tremolo 4 q |
   <aes f c>8 q q q \repeat tremolo 4 q |
   <f d bes>8 q q q \repeat tremolo 4 q |
+  r8 <bes bes'>-. <c c'>-. <d d'>-. <ees ees'>-. <f f'>-. <g g'>4 |
+  r8 <aes, aes'>-. <bes bes'>-. <c c'>-. <d d'>-. <ees ees'>-. <f f'>4 |
+  r8 <g, g'>-. <a a'>-. <b b'>-. <c c'>-. <d d'>-. <ees ees'>4-.~ |
+  <ees ees'>8 <f f'>-. <ees ees'>-. <d d'>-. <c c'>-. <bes bes'>-. <aes aes'>-. <g g'>-. |
+  <fis fis'>4 r8. <f c' ees f>16 <g c e g>4 r8. <g bes c g'>16 |
+  <aes c aes'>4 r8. <aes c aes'>16 <aes c f>4 r8. <aes c f>16 |
+  <g c e>8 r \repeat unfold 7 {\times 2/3 {g,8 bes e}} |
+  \times 2/3 {g, bes e} \times 2/3 {bes d bes} \times 2/3 {d bes d} \times 2/3 {a c a} |
+  \clef bass
+  \times 2/3 {g bes g} \times 2/3 {f a f} \times 2/3 {e g c} \times 2/3 {e, g c} |
+  \times 2/3 {f, a c} \repeat unfold 7 {\times 2/3 {a c f}} |
+  \times 2/3 {a, c f} \times 2/3 {c f c} \times 2/3 {f c f} \times 2/3 {bes, d bes} |
+  \times 2/3 {a c a} \times 2/3 {c a c} \times 2/3 {bes d bes} \times 2/3 {fis a d} |
+  g,8 r \clef treble <bes' bes'>2( <a a'>4 |
+  <g g'> <f f'> <e e'> <d d'> |
+  \times 2/3 {<c c'>8) g c} \repeat unfold 23 {\times 2/3 {e, g c}} |
+  a8 r c'4( gis a |
+  f-.) f'( b, c |
+  gis4-.)( a8) c-. f-. a-. c-. f-. |
+  a2 r | % Source has a b-flat
+  r4 bes,,( fis g |
+  e-.) g'( dis e |
+  bes)( c8) e-. g-. bes-. \times 2/3 {c e g} |
+  bes2 r |
+  r8 a,,,8( c f) f,( a cis f) |
+  f,( bes d f) f,( a ees' f) |
+  f,( bes d f) f,( bes d f) |
+  f,( aes d f) f,( aes d f) |
+  f,( a c f) f,( a c f) |
+  a, c f c a c g e' |
+  r16 f g a bes c d e f g a bes c d ees e |
+  <f d f,>2 <e c f,>4-| <d bes f>-| |
+  <c a f>16 f,, g a bes c d e f g a bes c d ees e |
+  <f d f,>2 <e c f,>4-| <d bes f>-| |
+  c16 d c b c a' f c b c b a b g' e b |
+  a f' d a g e' cis g f d' bes f ees c' a ees |
+  \times 2/3 {d8( cis e} \times 2/3 {d g fis} \times 2/3 {a g bes} \times 2/3 {a c bes)} |
+  \times 2/3 {des( c bes} \times 2/3 {aes g f} \times 2/3 {ees des c} \times 2/3 {bes aes g)} |
+  \times 2/3 {fis( a g} \times 2/3 {bes a c} bes8 d4 c8) |
+  b( c d c b c d c) |
+  c4( <a a'>2 <g g'>8 <f f'>) |
+  <e e'>4( <d d'>2 <e e'>8 <f f'>) |
+  <f f'>4 a-.( a-. a-.) |
+  c( b bes g) |
+  f8 <f a c> q q <f a c f>2 |
+  r8 <f a c> q q <a c f a>2 |
+  r16 c, e g bes c e g bes c e g bes g e c |
+  bes' a g f e d c b bes a g f e d c bes |
+  a8 <f a c> q q <f a c f>2 |
+  r8 <f a c> q q <a c f a>2 |
+  r16 a cis e a cis, e a cis e, a cis e a, cis e |
+  a4-| a,,2\sf f4 |
+  r16 f a c f a, c f a c, f a c f, a c |
+  f4-| f,,2\sf r4 |
+  r <g bes, g>2 <f bes, g>8 r |
+  <e bes g> r <bes g> r <g' bes, g> r <f bes, g> r |
+  <e bes g>( g e g e g c, f) |
+  bes,( d a c g bes g bes) |
+  \repeat unfold 2 {\times 4/6 {aes8( f' c aes' f c)}} |
+  \repeat unfold 2 {\times 4/6 {bes8( g' des bes' g des)}} |
+  \repeat unfold 2 {\times 4/6 {c8( aes' ees c' aes ees)}} |
+  \times 4/6 {bes8( g' des bes' g des)} \times 4/6 {bes8( g' c, bes' g c,)}
+  \repeat unfold 2 {\times 4/6 {aes8( f' c aes' f c)}} |
+  \repeat unfold 2 {\times 4/6 {bes8( g' c, bes' g c,)}} |
+  \times 4/6 {aes8( f' c aes' f c)} \times 4/6 {aes8( f' des aes' f des)} |
+  \times 4/6 {g,8( f' des g f des)} \times 4/6 {g,8( e' bes g' e bes)} |
+  \repeat unfold 2
+  {
+    r8 <c' c'>-| <d d'>-| <e e'>-| <f f'>-| <g g'>-| <a a'>4~ |
+    q8 <bes bes'>-| <g g'>-| <f f'>-| <e e'>-| <f f'>-| <g g'>4 |
+  }
+  r8 <c, c'> <d d'> <e e'> <f f'> <g g'> <a a'> <fis fis'> |
+  <g g'> <d d'> <e e'> <fis fis'> <g g'> <a a'> <bes bes'> <gis gis'> |
+  <a a'> <f, f'> <g g'> <a a'> <bes bes'> <c c'> <d d'> <b b'> |
+  <c c'> <a a'> <bes bes'> <c c'> <d d'> <c c'> <d d'> <e e'> |
+  <f aes b d f>2 r8 d16 d' r8 b,16 b' |
+  r8 aes,16 aes' r8 f,16 f' r8 d,16 d' r8 b,16 b' |
+  r4 <f, aes d f> r q |
+  r q r q |
+  r <f aes des f> r q |
+  r q-.( q-. q-.) |
+  \repeat unfold 2
+  {
+    \times 4/6 {ges8 des' bes ges' des bes} \times 4/6 {f des' aes f' des aes} |
+  }
+  \times 4/6 {ges des' bes ges' des bes} \clef bass \times 4/6 {e, c' g e' c g} |
+  \repeat unfold 2 {\times 4/6 {f c' aes f' c aes}} |
+  \repeat unfold 2 {\times 4/6 {g des' bes f' des bes}} |
+  \times 4/6 {aes c aes f' c aes} \times 4/6 {bes c bes e c bes} |
+  a8 \clef treble <c' c'>8-| q-| q-| <d d'>4( <c c'>8) r |
+  r8 <c c'>8-| q-| q-| <d d'>4( <c c'>8) r |
+  r8 <c c'>8 q q \repeat unfold 6 {<d d'>( <c c'>)-|} |
+  <f aes b d f>2 r8 \times 2/3 {f'16 d b} aes8-| \times 2/3 {d16 b aes} |
+  f8-| \times 2/3 {b16 aes f} d8-| \times 2/3 {aes'16 f d} b8-| \times 2/3 {f'16 d b} aes8-| \times 2/3 {d16 b aes} |
+  f8 \times 2/3 {b16 aes f} d8 \times 2/3 {aes'16 f d} b8 \times 2/3 {f'16 d b} aes8 r |
+  \times 4/6 {r8 <a c f>[ r q r q]} \times 4/6 {r8 <c f a>[ r q r q]} |
+  \times 4/6 {r8 <f a c>[ r q r q]} \times 4/6 {r8 <a c f>[ r q r q]} |
+  \times 4/6 {r8 a bes c d b} \times 4/6 {c a bes c d b} |
+  \times 4/6 {c a' bes c d b} \times 4/6 {c a bes c d b} |
+  \times 4/6 {c a c d d, c'} \times 4/6 {bes g bes c c, bes'} |
+  \times 4/6 {a f a bes bes, a'} \times 4/6 {g e g a a, g'} |
+  \times 4/6 {f d f g g, f'} \times 4/6 {e c e f f, e'} |
+  \times 4/6 {d bes d e e, d'} \times 4/6 {c a c d d, c'} |
+  \repeat unfold 2
+  {
+    \times 4/6 {bes d, d' bes des, des'} \times 4/6 {bes c, c' bes des, des'} |
+  }
+  \times 2/3 {c( b c} \times 2/3 {e dis e} \times 2/3 {g fis g} \times 2/3 {bes a bes} |
+  \times 2/3 {e dis e} \times 2/3 {g fis f} \times 2/3 {e d cis} \times 2/3 {c b bes)} |
+  <<
+    {s4 s\turn} %TODO: sharp below, inside slur
+    {a2( c8 bes a g)}
+  >>
+  <<
+    {s2 s\turn} %TODO: inside slur
+    {a8( g f2 a8 g)}
+  >>
+  f4 r r8 <e, bes g>-| q-| q-| |
+  <f a,>4 r r8 <e bes g>-| q-| q-| |
+  <f a,>4 r \repeat unfold 3 {<e bes g>8 r <f a,> r} |
+  r8 ees'-| c-| a-| f-| ees-| c-| a-| |
+  f4 r r2 |
+  \repeat unfold 2 {r4 <f' bes d> r <f c' ees> |}
+  r4 <f bes d> <d' bes' d>2( |
+  <c bes' a>4) r r2 |
+  r8 c,( f a) r bes,( d g) |
+  r a,( c f) r g,( c e) |
+  r4 <c' c'>2( <d d'>8.-.)-| <bes bes'>16-| |
+  <a a'>4( <c c'>8.-.)-| <a a'>16-| <g g'>4( <bes bes'>8.-.)-| <g g'>16-| |
+  <f f'>8 r <f cis a>4( <f d bes>8) r <bes, d bes'> r |
+  r a c f r bes, d e |
+  <f c a>4 r r8 <f a c> q q |
+  <f a c f>2 r8 <a c f> q q |
+  <a c f a>2 r8 <c f a> q q |
+  <f a c>4 r <f a d f> r |
+  \ottava #1
+  <a'~ e cis a>2 a16 g bes a g f e d |
+  \ottava #0
+  cis d e d cis bes a g f e d cis bes a g a |
+  f a d f a d f r f,, aes d f aes d f r |
+  R1 |
+  \times 2/3 {a,,8 f' c} \times 2/3 {a' f c'} \times 2/3 {a f' c} \ottava #1 \times 2/3 {a' f c'} |
+  c4 \ottava #0 r <e,,, bes g>2~ |
+  q4 q q q |
+  <f a,>4 r r8 <f a c> q q |
+  <f a c f>2 r8 <a c f> q q |
+  <a c f a>2 r8 <c f a> q q |
+  <f a c>4 r <f a d f> r |
+  \ottava #1
+  <a'~ e cis a>2 a16 g bes a g f e d |
+  \ottava #0
+  cis d e d cis bes a g f e d cis bes a g a |
+  f a d f a d f r f,, aes d f aes d f r |
+  R1 |
+  \times 2/3 {a,,8-| f'-| c-|} \times 2/3 {a'-| f-| c'-|} \times 2/3 { a-| f'-| c-|} \ottava #1 \times 2/3 {a'-| f-| c'-|} |
+  c4 \ottava #0 r <e,,, bes g>2~ |
+  q4 q q q |
+  <f a,>8 c'( <c c'>4~) q8( <bes bes'> <a a'> <g g'>) |
+  <f f'>4-.( q-. q-. q-.) |
+  <e e'>8 g,( bes g bes g bes g) |
+  bes( g bes g bes g bes g) |
+  a4 r <f' a c f> r |
+  <f' a c f> r r2 |
 }
