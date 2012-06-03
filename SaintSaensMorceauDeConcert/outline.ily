@@ -1,6 +1,3 @@
-\version "2.13.62"
-
-outline =
 {
   \time 3/4
   \tempo "Allegro Moderato" 4=112

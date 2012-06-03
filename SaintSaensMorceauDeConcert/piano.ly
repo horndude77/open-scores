@@ -1,9 +1,6 @@
-\version "2.13.62"
+\version "2.15.39"
 
 \include "defs.ily"
-\include "outline.ily"
-\include "piano.ily"
-\include "horn.ily"
 
 instrument = "Piano"
 
@@ -21,12 +18,17 @@ instrument = "Piano"
   \score
   {
     <<
-      \new SoloStaff \with {instrumentName = "Horn in F"} { \removeWithTag #'part \horn }
+      \new SoloStaff \with {instrumentName = "Horn in F"}
+      { \removeWithTag #'part { \include "horn.ily" } }
       \new PianoStaff \with {instrumentName = "Piano"}
       <<
-        \new Staff="top" { \pianoRight }
-        \new Dynamics { \pianoDynamics }
-        \new Staff="bot" { << \pianoLeft \pianoPedals \outline >> }
+        \new Staff="top" { \include "piano_right.ily" }
+        \new Dynamics { \include "piano_dynamics.ily" }
+        \new Staff="bot"
+        <<
+          { \include "piano_left.ily" }
+          { \include "outline.ily" }
+        >>
       >>
     >>
     \header { piece = " " }
@@ -37,15 +39,22 @@ instrument = "Piano"
   {
     \unfoldRepeats
     <<
-      \new SoloStaff \with { midiInstrument = "french horn" } { \horn }
+      \new SoloStaff \with { midiInstrument = "french horn" }
+      { \include "horn.ily" }
       \new PianoStaff
       <<
         \new Staff="top" \with { midiInstrument = "acoustic grand" }
-        { << \pianoRight \pianoDynamics \pianoPedals >> }
+        <<
+          { \include "piano_right.ily" }
+          { \include "piano_dynamics.ily" }
+        >>
         \new Staff="bot" \with { midiInstrument = "acoustic grand" }
-        { << \pianoLeft \pianoDynamics \pianoPedals >> }
+        <<
+          { \include "piano_left.ily" }
+          { \include "piano_dynamics.ily" }
+        >>
       >>
-      \outline
+      { \include "outline.ily" }
     >>
     \midi { }
   }

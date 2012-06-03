@@ -1,7 +1,7 @@
-\version "2.13.62"
-
-themeAndVarations = \relative c'
+\relative c'
 {
+  \set tupletSpannerDuration = #(ly:make-moment 1 4)
+  \transposition f
   \key c \minor
   R2.*4 |
   g'8.\f c16 ees8. d16 c8. bes32 aes |
@@ -108,10 +108,7 @@ themeAndVarations = \relative c'
 
   %4
   R2.*14 |
-}
 
-adagio = \relative c''
-{
   %5
   r16\p bes( c bes a bes d c bes2) |
   r16\pp bes( c bes a bes d c bes2) |
@@ -149,10 +146,7 @@ adagio = \relative c''
   bes4) r \clef bass g2 |
   ees1\fermata |
   R1^\fermataMarkup |
-}
 
-finale = \relative c
-{
   %7
   \tag #'part \tempoTextLengthOn
   R1*16 |
@@ -229,13 +223,4 @@ finale = \relative c
   r4 g,8-. c-. e-. g-. c-. e-. |
   g4 c,,8-. e-. g-. c-. e-. g-. c4 r r2 |
   R1 |
-}
-
-horn =
-{
-  \set tupletSpannerDuration = #(ly:make-moment 1 4)
-  \transposition f
-  \themeAndVarations
-  \adagio
-  \finale
 }

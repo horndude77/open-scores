@@ -1,4 +1,4 @@
-\version "2.13.62"
+\version "2.15.39"
 
 #(define-markup-command (align-dyn-text layout props dyn text) (string? markup?)
   (let* ((text-stencil (interpret-markup layout props (markup #:normal-text #:italic text)))
