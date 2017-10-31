@@ -37,7 +37,7 @@ violinTwo = \relative c'
   b-> e8-. fis-. g4-> e8-.\f fis-. |
   \repeat unfold 2 {g-. g-. a-. fis-.} |
   g2->( g,4-.) r8 <b' g'>-.\fBenMarc |
-  <b g'>4-. r8 <g b'>-. <g b'>4-. r8 b-. |
+  <b g'>4-. r8 <b g'>-. <b g'>4-. r8 b-. |
   d2-> b4-. r8 dis-. |
   e4-. r8 dis-. e4-. r8 e-. |
   dis4.->( g,8-.) e'4-. r |
