@@ -1,4 +1,4 @@
-\version "2.13.51"
+\version "2.18.2"
 
 viola = \relative c
 {
@@ -318,7 +318,7 @@ viola = \relative c
   <e c'>4 <f d'>8 <d b'> <e c'>4 <a f'> |
   <g e'> <f d'> <e c'> <d bes'> | }
   <cis a'>4-> c8-. e-. a-. e-. cis-. a-. |
-  a'4-| g-| <d a'>-| <d c'>-| |
+  a'4-! g-! <d a'>-! <d c'>-! |
   \tremolos #16 {
   \repeat unfold 2 {<d b'>2 <fis a> |}
   <g b>4 <fis a>8 <dis fis> <e g>4 <e a> |
@@ -403,8 +403,8 @@ viola = \relative c
   r <g e' c'>-. r <a e' cis'>-. |
   r <a f' d'>-. r <g f' b>-. |
   r <g e' c'>-. r <g e' c'>-. |
-  r <g d' b'>-. r <g g'>-|\sf |
-  r4 r8 <g g'>-|\sf |
+  r <g d' b'>-. r <g g'>-!\sf |
+  r4 r8 <g g'>-!\sf |
   r4 r8 <g g'>-. |
   <g e' c'>-. r <g e' c'>-. r |
   <g d' c'>-. r <g d' b'>-. r |

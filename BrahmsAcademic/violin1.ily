@@ -1,4 +1,4 @@
-\version "2.13.51"
+\version "2.18.2"
 
 violinOne = \relative c'
 {
@@ -269,7 +269,7 @@ violinOne = \relative c'
   \tremolos #16 {g2. f4 |
   e d c bes |}
   a'4-> e8-. cis-. a-. e-. cis-. a-. |
-  f'4-| e-| d-| a'-| |
+  f'4-! e-! d-! a'-! |
   \repeat tremolo 8 g'16 g g, a b c d ees fis |
   \repeat tremolo 8 g16 g g, a b cis dis e fis |
   \ottava #1
@@ -354,8 +354,8 @@ violinOne = \relative c'
   r f-. r d-. |
   \ottava #0
   r e-. r c-. |
-  r d-. r g-|\sf |
-  r4 r8 g-|\sf |
+  r d-. r g-!\sf |
+  r4 r8 g-!\sf |
   r4 r8 g-.\ff |
   e-. r e-. r |
   d-. r d-. r |
