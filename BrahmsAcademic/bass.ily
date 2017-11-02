@@ -1,4 +1,4 @@
-\version "2.13.51"
+\version "2.18.2"
 
 bass = \relative c,
 {
@@ -331,8 +331,8 @@ bass = \relative c,
   r c'-. r a-. |
   r d-. r g,-. |
   r c-. r e-. |
-  r g-. r g,-|\sf |
-  r4 r8 g-|\sf |
+  r g-. r g,-!\sf |
+  r4 r8 g-!\sf |
   r4 r8 g-.\ff |
   c-. r e-. r |
   g-. r g,-. r |

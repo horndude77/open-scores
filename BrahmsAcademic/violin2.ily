@@ -1,4 +1,4 @@
-\version "2.13.51"
+\version "2.18.2"
 
 violinTwo = \relative c'
 {
@@ -37,7 +37,7 @@ violinTwo = \relative c'
   b-> e8-. fis-. g4-> e8-.\f fis-. |
   \repeat unfold 2 {g-. g-. a-. fis-.} |
   g2->( g,4-.) r8 <b' g'>-.\fBenMarc |
-  <b g'>4-. r8 <g b'>-. <g b'>4-. r8 b-. |
+  <b g'>4-. r8 <b g'>-. <b g'>4-. r8 b-. |
   d2-> b4-. r8 dis-. |
   e4-. r8 dis-. e4-. r8 e-. |
   dis4.->( g,8-.) e'4-. r |
@@ -275,7 +275,7 @@ violinTwo = \relative c'
   >>}
   s1*0^\unis
   <cis a'>4-> e8-. cis-. a-. e-. cis-. a-. |
-  d'4-| cis-| d-| a'-| |
+  d'4-! cis-! d-! a'-! |
   \repeat tremolo 8 g16 g g, a b c d ees fis |
   \repeat tremolo 8 g16 g g, a b cis dis e fis |
   \tremolos #16 {g4 b2
@@ -363,8 +363,8 @@ violinTwo = \relative c'
   r <e c' g'>-. r <a cis e>-. |
   r <d, d' f>-. r <g, b' d>-. |
   r <g g' c e>-. r <g e' c'>-. |
-  r <g b' d>-. r <g' g'>-|\sf |
-  r4 r8 <g g'>-|\sf |
+  r <g b' d>-. r <g' g'>-!\sf |
+  r4 r8 <g g'>-!\sf |
   r4 r8 <g g'>-.\ff |
   <g c e>-. r <g c e>-. r |
   <g, c' d>-. r <g b' d>-. r |
