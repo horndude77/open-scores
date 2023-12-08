@@ -13,7 +13,10 @@ globalTwelve =
       s4.
       \set Timing.measureLength = #(ly:make-moment 2 4)
     }
-    { s4 }
+    {
+      s4
+      \set Timing.measureLength = #(ly:make-moment 2 4)
+    }
   }
   \repeat volta 2
   {
@@ -21,17 +24,12 @@ globalTwelve =
   }
   \alternative
   {
-    {
-      \set Timing.measureLength = #(ly:make-moment 1 4)
-      s4
-      \set Timing.measureLength = #(ly:make-moment 2 4)
-    }
-    { s2 }
+    { s4 } { s2 }
   }
   \bar "|."
 }
 
-hornITwelve =  \relative c''
+hornITwelve = \relative c''
 {
   \repeat volta 2
   {
